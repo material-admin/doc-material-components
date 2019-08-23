@@ -23,22 +23,17 @@ Add a concise description of the component here. for example:
 > Buttons allow users to take actions and make choices using a tap to press the button.
 > Buttons can be customized to meet your style requirements.
 
-Insert any related graphics. **Don't say if you can show**
+If there are component subtypes, list them here and link to the relevant article.
+
+Insert any related graphics. **Don't say what you can show**
+
+**Note** if there component subtypes, do not describe them in this article: create a separate article in its own folder.
 
 <!-- Note that the iOS team has added a TOC to their repo, and it appears to be from https://github.com/jonschlinkert/markdown-toc -->
 <!-- toc -->
 
 <!-- design-and-api -->
 
-## Overview of \[Component name\] (Object: Required)
-
-
-Summary statement for this object goes here. A summary statement should be a short two to three line statement about the object and the subsections within it.
-
-Example:
-> `Material Button` is a customizable button that supports several built-in styles to show different actions and different levels of emphasis that include:
-> * **raised button**: A rectangular material button that lifts and displays ink reactions upon button press
-> * **unelevated button**: A button made of ink that displays ink reactions upon button press but does not lift when the button pressed is released.
 
 ## Installation/Importation (Object: optional according to platform)
 
@@ -54,3 +49,10 @@ example:
 > ```bash
 >    pod install
 >    ```
+
+## Using \[Component Name\]
+
+Describe how the component is used. Provide images of its relative position, if relevant.
+
+
+### Example: \[Describe a way to use the Component\]
