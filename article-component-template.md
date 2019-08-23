@@ -1,6 +1,20 @@
+<!--docs:
+title: ""
+layout: detail
+section: components
+excerpt: "This is the template for the developer articles for material.io."
+iconId: 
+path: /
+api_doc_root: 
+-->
+
 <!-- this is a draft of a an article template for the material.io developer site.
-This template is based on the design article template at 
-https://spec.googleplex.com/m2-spec-guide/authoring-content/component-article-template.html-->
+This template is based on the current design article template at 
+https://spec.googleplex.com/m2-spec-guide/authoring-content/component-article-template.html
+The API documentation formatting is roughly based on https://cloud.google.com/service-usage/docs/overview
+-->
+
+**Reminder** This is a template. Delete this paragraph and review any and all information within the comments.
 
 # \[Component Name\]
 
@@ -9,7 +23,7 @@ Add a concise description of the component here. for example:
 > Buttons allow users to take actions and make choices using a tap to press the button.
 > Buttons can be customized to meet your style requirements.
 
-Insert any related graphics.
+Insert any related graphics. **Don't say if you can show**
 
 <!-- Note that the iOS team has added a TOC to their repo, and it appears to be from https://github.com/jonschlinkert/markdown-toc -->
 <!-- toc -->
