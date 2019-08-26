@@ -36,11 +36,10 @@ Insert any related graphics. **Don't say what you can show**
 
 Describe how the component is used. Provide images of its relative position, if relevant. Use collapsible tags for examples that require more than a page of text.
 
-Divide the component API into categories according to its TOC on its corresponsoding material.io/components page.
+Divide the component API into categories according to its TOC on its corresponsoding material.io/components page. Following a similar outline will help cross-link the pages between the design documents and the developer pages.
 
 For example [buttons](material.io/components/buttons/) is divided into the following 3rd tier sections:
 * Anatomy
-* Hierarchy and placement
 * Text button
 * Outlined button
 * Contained button
@@ -69,10 +68,6 @@ Each section should have a 3rd tier header. Within each section, there should be
 > Attributes | Related elements | Attribute description | API
 > ---|---|---|---
 > MDCFloatingButtonShape | Container | Determines container shape for floating buttons | https://material.io/develop/ios/components/buttons/api-docs/Enums/MDCFloatingButtonShape.html
->
-> ### Hierarchy and Placement
-> Attributes| Attribute description | Values 
-> ---|---|---
 >  |  | 
 > ### Text button
 > Property| Related elements | Attribute description | Values 
@@ -95,10 +90,6 @@ Each section should have a 3rd tier header. Within each section, there should be
 > android:text | Text label | allows labels for button text | @string/button_label_disabled </br> @string/button_label_enabled </br> @string/unelevated_button_label_enabled
 > android:iconGravity | Icon | determines the position of an icon within the button | https://developer.android.com/reference/com/google/android/material/R.attr.html#icon
 > 
-> ### Hierarchy and Placement
-> Attributes| Attribute description | Values 
-> ---|---|---
->  |  | 
 > ### Text button
 > Property| Related elements | Attribute description | Values 
 > ---|---|---|---
