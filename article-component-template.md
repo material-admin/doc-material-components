@@ -14,7 +14,7 @@ https://spec.googleplex.com/m2-spec-guide/authoring-content/component-article-te
 The API documentation formatting is roughly based on https://cloud.google.com/service-usage/docs/overview
 -->
 
-**Reminder** This is a template. Delete this paragraph and review any and all information within the comments.
+**Reminder** This is a template. Delete this paragraph and update and review all information requestsw within the comments.
 
 # \[Component Name\]
 
@@ -52,7 +52,26 @@ example:
 
 ## Using \[Component Name\]
 
-Describe how the component is used. Provide images of its relative position, if relevant.
+Describe how the component is used. Provide images of its relative position, if relevant. Use collapsible tags for examples that require more than a page of text.
 
-
-### Example: \[Describe a way to use the Component\]
+<details>
+  <summary>Click to view an example</summary>
+  
+  ### Example: \[Describe a way to use the Component\]
+  Describe the example: 
+  * What functions/objects does it use?
+  * How does the example use the objects/functions?
+  * Are there any special settings/options used in this example, and why?
+  
+  If the example entails multiple steps, use a numbered list for each step.
+  
+  Example:
+  > 1. 
+  > ```
+  > code sample here
+  > ```
+  > 1. 
+  > ```
+  > code sampe here
+  > ```
+</details>
