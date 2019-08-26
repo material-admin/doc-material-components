@@ -32,14 +32,85 @@ Insert any related graphics. **Don't say what you can show**
 <!-- Note that the iOS team has added a TOC to their repo, and it appears to be from https://github.com/jonschlinkert/markdown-toc -->
 <!-- toc -->
 
-<!-- design-and-api -->
-
 ## Using \[Component Name\]
 
 Describe how the component is used. Provide images of its relative position, if relevant. Use collapsible tags for examples that require more than a page of text.
 
+Divide the component API into categories according to its TOC on its corresponsoding material.io/components page.
+
+For example [buttons](material.io/components/buttons/) is divided into the following 3rd tier sections:
+* Anatomy
+* Hierarchy and placement
+* Text button
+* Outlined button
+* Contained button
+* Toggle button
+* Theming
+* Specs
+
+Whereas [cards](https://material.io/components/cards/) is divided into:
+* Anatomy
+* Behavior
+* Actions
+* Card collections
+* Theming
+* Specs
+
+Each section should have a 3rd tier header. Within each section, there should be a table that contains:
+* classes, parameters, enums related to the section
+* a general description
+* links applicable classes, constants, typedefs, etc. 
+
+
+**Example: iOS button anatomy**
+
+> ### Anatomy
+> 
+> Attributes | Related elements | Attribute description | API
+> ---|---|---|---
+> MDCFloatingButtonShape | Container | Determines container shape for floating buttons | https://material.io/develop/ios/components/buttons/api-docs/Enums/MDCFloatingButtonShape.html
+>
+> ### Hierarchy and Placement
+> Attributes| Attribute description | Values 
+> ---|---|---
+>  |  | 
+> ### Text button
+> Property| Related elements | Attribute description | Values 
+> ---|---|---|---
+> | | | 
+> ...
+> ### Specs
+> Property| Related elements | Property description | Values 
+> ---|---|---|---
+> | | | 
+
+**Example: Android Button Anatomy**
+
+> ### Anatomy
+>
+> Attributes| Related elements | Attribute description | Values | API
+> ---|---|---|--- | ---
+> android:id | Text label, Container, Icon identifies type of button | @+id/material_button</br>@+id/disabled_material_button/@+id/material_unelevated_button
+> android:layout_width | Text label | declares how button text is formatted | wrap_content
+> android:text | Text label | allows labels for button text | @string/button_label_disabled </br> @string/button_label_enabled </br> @string/unelevated_button_label_enabled
+> android:iconGravity | Icon | determines the position of an icon within the button | https://developer.android.com/reference/com/google/android/material/R.attr.html#icon
+> 
+> ### Hierarchy and Placement
+> Attributes| Attribute description | Values 
+> ---|---|---
+>  |  | 
+> ### Text button
+> Property| Related elements | Attribute description | Values 
+> ---|---|---|---
+> | | | 
+> ...
+> ### Specs
+> Property| Related elements | Property description | Values 
+> ---|---|---|---
+> | | | 
+
    
-### Example: \[Describe a way to use the Component\]
+## Example: \[Describe a way to use the Component\]
 * What functions/objects does it use?
 * How does the example use the objects/functions?
 * Are there any special settings/options used in this example, and why?
