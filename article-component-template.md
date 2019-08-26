@@ -39,7 +39,7 @@ Describe how the component is used. Provide images of its relative position, if 
 Divide the component API into categories according to its TOC on its corresponsoding material.io/components page. Following a similar outline will help cross-link the pages between the design documents and the developer pages.
 
 For example [buttons](material.io/components/buttons/) is divided into the following 3rd tier sections:
-* Anatomy
+
 * Text button
 * Outlined button
 * Contained button
@@ -48,7 +48,7 @@ For example [buttons](material.io/components/buttons/) is divided into the follo
 * Specs
 
 Whereas [cards](https://material.io/components/cards/) is divided into:
-* Anatomy
+
 * Behavior
 * Actions
 * Card collections
@@ -60,45 +60,35 @@ Each section should have a 3rd tier header. Within each section, there should be
 * a general description
 * links applicable classes, constants, typedefs, etc. 
 
+If possible, each section should have its own example(s) with code snippets/settings relevant to the section.
 
-**Example: iOS button anatomy**
+**Example: iOS button**
 
-> ### Anatomy
 > 
-> Attributes | Related elements | Attribute description | API
-> ---|---|---|---
-> MDCFloatingButtonShape | Container | Determines container shape for floating buttons | https://material.io/develop/ios/components/buttons/api-docs/Enums/MDCFloatingButtonShape.html
->  |  | 
 > ### Text button
-> Property| Related elements | Attribute description | Values 
-> ---|---|---|---
-> | | | 
+> Related element | Parameter(s) | Parameter value | Attribute description | API link
+> ---|---|---|---|---
+> MCDButton | underlyingColorHint | hex (?) |Determines a button's background color and surrounding area. | https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html
 > ...
 > ### Specs
-> Property| Related elements | Property description | Values 
-> ---|---|---|---
-> | | | 
+> Related element | Parameter(s) | Parameter value | Attribute description | API link
+> ---|---|---|---|---
+> | | | |
 
-**Example: Android Button Anatomy**
+
+**Example: Android Button**
 
 > ### Anatomy
 >
-> Attributes| Related elements | Attribute description | Values | API
-> ---|---|---|--- | ---
-> android:id | Text label, Container, Icon identifies type of button | @+id/material_button</br>@+id/disabled_material_button/@+id/material_unelevated_button
-> android:layout_width | Text label | declares how button text is formatted | wrap_content
-> android:text | Text label | allows labels for button text | @string/button_label_disabled </br> @string/button_label_enabled </br> @string/unelevated_button_label_enabled
-> android:iconGravity | Icon | determines the position of an icon within the button | https://developer.android.com/reference/com/google/android/material/R.attr.html#icon
-> 
 > ### Text button
-> Property| Related elements | Attribute description | Values 
-> ---|---|---|---
-> | | | 
+> Related element | Parameter(s) | Parameter value | Attribute description | API link
+> ---|---|---|---|---
+> | | | |
 > ...
 > ### Specs
-> Property| Related elements | Property description | Values 
-> ---|---|---|---
-> | | | 
+> Related element | Parameter(s) | Parameter value | Attribute description | API link
+> ---|---|---|---|---
+> | | | |
 
    
 ## Example: \[Describe a way to use the Component\]
