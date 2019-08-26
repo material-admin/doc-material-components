@@ -66,27 +66,29 @@ If possible, each section should have its own example(s) with code snippets/sett
 
 > 
 > ### Text button
-> Related element | Parameter(s) | Parameter value | Attribute description | API link
+> Related element | Parameter(s) | Parameter value | Element description | API link
 > ---|---|---|---|---
 > MCDButton | underlyingColorHint | hex (?) |Determines a button's background color and surrounding area. | https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html
+>
 > ...
+>
 > ### Specs
-> Related element | Parameter(s) | Parameter value | Attribute description | API link
+> Related element | Parameter(s) | Parameter value | Element description | API link
 > ---|---|---|---|---
 > | | | |
 
 
 **Example: Android Button**
 
-> ### Anatomy
->
 > ### Text button
-> Related element | Parameter(s) | Parameter value | Attribute description | API link
+> Related element | Parameter(s) | Parameter value | Element description | API link
 > ---|---|---|---|---
-> | | | |
+> MaterialButton | android:id </br> style </br> android:layout_width </br> android: layout_height </br> android:text | "@+id/material_text_button" </br> "@style/Widget.MaterialComponents.Button.TextButton" </br> "wrap_content" </br> "wrap_content" </br> "@string/text_button_label_enabled" | | https://developer.android.com/reference/com/google/android/material/button/MaterialButton
+>
 > ...
+>
 > ### Specs
-> Related element | Parameter(s) | Parameter value | Attribute description | API link
+> Related element | Parameter(s) | Parameter value | Element description | API link
 > ---|---|---|---|---
 > | | | |
 
