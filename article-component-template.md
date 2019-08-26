@@ -27,51 +27,77 @@ If there are component subtypes, list them here and link to the relevant article
 
 Insert any related graphics. **Don't say what you can show**
 
-**Note** if there component subtypes, do not describe them in this article: create a separate article in its own folder.
+**Note** if there component subtypes that require more than a page to describe/require examples, do not describe them in this article: create a separate article in its own folder.
 
 <!-- Note that the iOS team has added a TOC to their repo, and it appears to be from https://github.com/jonschlinkert/markdown-toc -->
 <!-- toc -->
 
 <!-- design-and-api -->
 
-
-## Installation/Importation (Object: optional according to platform)
-
-If the component needs to be installed or imported, include the instructions in a numbered list.
-
-example:
-> ### Installation Using CocoaPods
-> 1. Add the following to your `Podfile`:
-> ```bash
->    pod 'MaterialComponents/Buttons'
->    ```
-> 1. Run the `install` command:
-> ```bash
->    pod install
->    ```
-
 ## Using \[Component Name\]
 
 Describe how the component is used. Provide images of its relative position, if relevant. Use collapsible tags for examples that require more than a page of text.
 
+   
+### Example: \[Describe a way to use the Component\]
+* What functions/objects does it use?
+* How does the example use the objects/functions?
+* Are there any special settings/options used in this example, and why?
+
 <details>
-  <summary>Click to view an example</summary>
+  <summary><b>Click to View Examples without Steps</b></summary>
   
-  ### Example: \[Describe a way to use the Component\]
-  Describe the example: 
-  * What functions/objects does it use?
-  * How does the example use the objects/functions?
-  * Are there any special settings/options used in this example, and why?
+  Describe the example and its components, including specific settings and instructions.
   
-  If the example entails multiple steps, use a numbered list for each step.
+  > ### Example: Add a Filled and Elevated Button
+  > The following code adds a filled and elevated button to your app. Your theme's `colorPrimary` is the default background color and your theme's `colorOnPrimary` is the default text color.
+  >   ```xml
+  >    <com.google.android.material.button.MaterialButton
+  >      android:id="@+id/material_button"
+  >      android:layout_width="wrap_content"
+  >      android:layout_height="wrap_content"
+  >      android:text="@string/button_label_enabled"/>
+  >  ```
+  >  ### Example: Add a Filled and Unlevated Button
+  > The following code adds a filled and unelevated button. Your theme's `colorPrimary` is the default background color and your theme's `colorOnPrimary` is the default text color.
+  >  ```xml
+  >    <com.google.android.material.button.MaterialButton
+  >      android:id="@+id/disabled_material_button"
+  >      android:layout_width="wrap_content"
+  >      android:layout_height="wrap_content"
+  >      android:enabled="false"
+  >      android:text="@string/button_label_disabled"/>
+  >  ```
   
-  Example:
-  > 1. 
-  > ```
-  > code sample here
-  > ```
-  > 1. 
-  > ```
-  > code sampe here
-  > ```
+</details>
+  
+<details>
+  <summary><b>Click to View Examples with Steps</b></summary>
+  
+  If the example entails multiple steps, use a numbered list for each step. Break out iny installation/importation steps into its own list.
+ 
+ List the steps to use the compnent. Include any installation/importation instructions in a separate list.
+> ### Install `MaterialButton`
+> Follow the steps below to add the `MaterialButton` component in your iOS application:
+>
+> 1. Add the following to your `Podfile`:
+>   ```bash
+>   pod 'MaterialComponents/Buttons'
+>   ```
+> 1. Run the `install` command:
+>   ```bash
+>    pod install
+>    ```
+>  1. Import `MaterialButton` component
+>    ```swift
+>      import MaterialComponents.MaterialButtons
+>    ```
+> ### Add a Floating Action Button
+> `DCFloatingButton` is a subclass of `MDCButton` that implements the Material Design floating action button style and behavior. Floating action buttons should be provided with a templated image for their normal state and then themed accordingly.
+> ```swift
+> // Note: you'll need to provide your own image - the following is just an example.
+> let plusImage = UIImage(named: "plus").withRenderingMode(.alwaysTemplate)
+> let button = MDCFloatingButton()
+> button.setImage(plusImage, forState: .normal)
+>```
 </details>
