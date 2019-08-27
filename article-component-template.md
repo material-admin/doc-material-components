@@ -128,7 +128,8 @@ If possible, each section should have its own example(s) with code snippets/sett
 >    android:layout_width="wrap_content"
 >    android:layout_height="wrap_content"
 >    android:text="@string/text_button_label_enabled"/>
-    > ```
+> ```
+>
 > ...
 >
 > ### Specs
