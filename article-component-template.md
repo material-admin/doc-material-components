@@ -40,8 +40,6 @@ Insert any related graphics. **Don't say what you can show**
 <!-- Note that the iOS team has added a TOC to their repo, and it appears to be from https://github.com/jonschlinkert/markdown-toc -->
 <!-- toc -->
 
-**Add anchors for all section titles: ```[Title name](#title-name)```**
-
 ## Using \[Component Name\]
 
 Use 1-2 sentences to describe how the component is used. Provide images of its relative position, if relevant. Use collapsible tags for examples that require more than a page of text.
