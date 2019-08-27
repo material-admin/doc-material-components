@@ -30,27 +30,24 @@ The `MaterialButton` component provides a complete implementation of Material De
 
 ### Related APIs
 
-If relevant, insert all the related component code and link to its API.
-
-For example, from the [iOS Button component](https://material.io/components/ios/catalog/buttons/api-docs/Classes.html#/c:objc(cs)MDCRaisedButton):
-
-> ### Class: [MCDRaisedButton](https://material.io/components/ios/catalog/buttons/api-docs/Classes.html#/c:objc(cs)MDCRaisedButton)
-> 
-> #### Interface Class
-> ```obj-C
-> @interface MDCButton : UIButton <MDCElevatable, MDCElevationOverriding>
-> ```
->
-> #### Properties
-> <details>
-   >   <summary><pre>inkStyle</pre></summary>
-   > stuff
-   > </details>
->   <details>
-   > <summary><pre>inkColor</pre></summary>
-   > stuff
->   </detalis>
-
+#### Material button element
+```xml
+<com.google.android.material.button.MaterialButton
+  android:<property>="<property value>"
+   ...
+   style="@style/widget.MaterialComponents.<style value>"
+/>
+```
+#### Material button propery values
+Property | Description | Possible values
+---|---|---
+`android:id` | | `"@+id/material_button"` </br> `"@+id/disabled_material_button"` </br> `"@+id/material_unelevated_button"`
+`android:layout_width` | | `"wrap_content"`
+`android:layout_height` | | `"wrap_content"`
+`android:enabled` | | `true`\|`false`
+`android:text` | | `"@string/button_label_enabled"`</br> `"@string/button_label_disabled"`
+`style`| | `"@style/Widget.MaterialComponents.Button.UnelevatedButton"` </br> `"@style/Widget.MaterialComponents.Button.TextButton"`
+   
 ### Text button
 Related element | Parameter(s) | Parameter value | Element description | API link
 ---|---|---|---|---
