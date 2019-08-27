@@ -120,6 +120,15 @@ If possible, each section should have its own example(s) with code snippets/sett
 > ---|---|---|---|---
 > MaterialButton | android:id </br> style </br> android:layout_width </br> android: layout_height </br> android:text | "@+id/material_text_button" </br> "@style/Widget.MaterialComponents.Button.TextButton" </br> "wrap_content" </br> "wrap_content" </br> "@string/text_button_label_enabled" | | https://developer.android.com/reference/com/google/android/material/button/MaterialButton
 >
+> #### Text button example
+> ```xml
+> <com.google.android.material.button.MaterialButton
+>    android:id="@+id/material_text_button"
+>    style="@style/Widget.MaterialComponents.Button.TextButton"
+>    android:layout_width="wrap_content"
+>    android:layout_height="wrap_content"
+>    android:text="@string/text_button_label_enabled"/>
+    > ```
 > ...
 >
 > ### Specs
