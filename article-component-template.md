@@ -11,14 +11,14 @@ api_doc_root:
 <!-- this is a draft of a an article template for the material.io developer site.
 This template is based on the current design article template at 
 https://spec.googleplex.com/m2-spec-guide/authoring-content/component-article-template.html
-The API documentation formatting is roughly based on https://cloud.google.com/service-usage/docs/overview
+The API documentation formatting is roughly based on https://developers.google.com/android-publisher/api-ref/inappproducts
 -->
 
 **Reminder** This is a template. Delete this paragraph and update and review all information requestsw within the comments.
 
 # \[Component Name\]
 
-Add a concise description of the component here. for example:
+Add a concise description of the component here. For example:
 
 > Buttons allow users to take actions and make choices using a tap to press the button.
 > Buttons can be customized to meet your style requirements.
@@ -36,6 +36,30 @@ Insert any related graphics. **Don't say what you can show**
 
 Describe how the component is used. Provide images of its relative position, if relevant. Use collapsible tags for examples that require more than a page of text.
 
+### Related APIs
+
+If relevant, insert all the related component code and link to its API.
+
+For example, from the [iOS Button component](https://material.io/components/ios/catalog/buttons/api-docs/Classes.html#/c:objc(cs)MDCRaisedButton):
+
+> ### Class: [MCDRaisedButton](https://material.io/components/ios/catalog/buttons/api-docs/Classes.html#/c:objc(cs)MDCRaisedButton)
+> 
+> #### Interface Class
+> ```obj-C
+> @interface MDCButton : UIButton <MDCElevatable, MDCElevationOverriding>
+> ```
+>
+> #### Properties
+> <details>
+   >   <summary><pre>inkStyle</pre></summary>
+   > stuff
+   > </details>
+>   <details>
+   > <summary><pre>inkColor</pre></summary>
+   > stuff
+>   </detalis>
+
+### \[Component section\]
 Divide the component API into categories according to its TOC on its corresponsoding material.io/components page. Following a similar outline will help cross-link the pages between the design documents and the developer pages.
 
 For example [buttons](material.io/components/buttons/) is divided into the following 3rd tier sections:
@@ -70,12 +94,23 @@ If possible, each section should have its own example(s) with code snippets/sett
 > ---|---|---|---|---
 > MCDButton | underlyingColorHint | hex (?) |Determines a button's background color and surrounding area. | https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html
 >
+> #### Text button example
+> **Swift**
+> ```swift
+> let button = MCDButton()
+> ```
+> **Objective-C**
+> ```obj-c
+> MDCButton *button = [[MDCButton alloc] init];
+> ```
 > ...
 >
 > ### Specs
 > Related element | Parameter(s) | Parameter value | Element description | API link
 > ---|---|---|---|---
 > | | | |
+> 
+> ###
 
 
 **Example: Android Button**
