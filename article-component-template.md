@@ -18,23 +18,33 @@ The API documentation formatting is roughly based on https://developers.google.c
 
 # \[Component Name\]
 
-Add a concise description of the component here. For example:
+Add a concise (1-2 sentence) description of the component here. The corresponding design document should have a full description.
+
+For example:
 
 > Buttons allow users to take actions and make choices using a tap to press the button.
 > Buttons can be customized to meet your style requirements.
 
-If there are component subtypes, list them here and link to the relevant article.
+## \[Component types\]
+If there are component subtypes, list them here and link to local anchor. Use the list described in the material.io/components pages.
+
+For example, from [Buttons](https://material.io/components/buttons/#usage):
+
+> * [Text button](#ios-text-button)
+> * [Outlined button](#ios-outlined-button)
+> * [Contained button](#ios-contained-button)
+> * [Toggle button](#ios-toggle-button)
 
 Insert any related graphics. **Don't say what you can show**
-
-**Note** if there component subtypes that require more than a page to describe/require examples, do not describe them in this article: create a separate article in its own folder.
 
 <!-- Note that the iOS team has added a TOC to their repo, and it appears to be from https://github.com/jonschlinkert/markdown-toc -->
 <!-- toc -->
 
+**Add anchors for all section titles: ```[Title name](#title-name)```**
+
 ## Using \[Component Name\]
 
-Describe how the component is used. Provide images of its relative position, if relevant. Use collapsible tags for examples that require more than a page of text.
+Use 1-2 sentences to describe how the component is used. Provide images of its relative position, if relevant. Use collapsible tags for examples that require more than a page of text.
 
 ### Related APIs
 
@@ -89,7 +99,8 @@ If possible, each section should have its own example(s) with code snippets/sett
 **Example: iOS button**
 
 > 
-> ### Text button
+> ### [iOS Text button](#ios-text-button)
+>
 > Related element | Parameter(s) | Parameter value | Element description | API link
 > ---|---|---|---|---
 > MCDButton | underlyingColorHint | hex (?) |Determines a button's background color and surrounding area. | https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html
@@ -103,7 +114,11 @@ If possible, each section should have its own example(s) with code snippets/sett
 > ```obj-c
 > MDCButton *button = [[MDCButton alloc] init];
 > ```
-> ...
+> ### [iOS Outlined button](#ios-outlined-button)
+>
+> ### [iOS Contained button](#ios-contained-button)
+>
+> ### [iOS Toggle button](#ios-toggle-button)
 >
 > ### Specs
 > Related element | Parameter(s) | Parameter value | Element description | API link
