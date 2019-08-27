@@ -99,7 +99,7 @@ If possible, each section should have its own example(s) with code snippets/sett
 **Example: iOS button**
 
 > 
-> ### [iOS Text button](#ios-text-button)
+> ### iOS Text button
 >
 > Related element | Parameter(s) | Parameter value | Element description | API link
 > ---|---|---|---|---
@@ -114,11 +114,11 @@ If possible, each section should have its own example(s) with code snippets/sett
 > ```obj-c
 > MDCButton *button = [[MDCButton alloc] init];
 > ```
-> ### [iOS Outlined button](#ios-outlined-button)
+> ### iOS Outlined button
 >
-> ### [iOS Contained button](#ios-contained-button)
+> ### iOS Contained button
 >
-> ### [iOS Toggle button](#ios-toggle-button)
+> ### iOS Toggle button
 >
 > ### Specs
 > Related element | Parameter(s) | Parameter value | Element description | API link
