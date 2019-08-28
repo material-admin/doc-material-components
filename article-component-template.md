@@ -68,7 +68,7 @@ For example, from the [iOS Button component](https://material.io/components/ios/
 >   </detalis>
 
 ### \[Component section\]
-Divide the component API into categories according to its TOC on its corresponsoding material.io/components page. Following a similar outline will help cross-link the pages between the design documents and the developer pages.
+Divide the component API into categories according to its TOC on its corresponsoding material.io/components page. Following a similar outline will help cross-link the pages between the design documents and the developer pages. You can skip **Theming** and **Specs** sections unless the component APIs deal specifically with either.
 
 For example [buttons](material.io/components/buttons/) is divided into the following 3rd tier sections:
 
@@ -76,16 +76,14 @@ For example [buttons](material.io/components/buttons/) is divided into the follo
 * Outlined button
 * Contained button
 * Toggle button
-* Theming
-* Specs
+
 
 Whereas [cards](https://material.io/components/cards/) is divided into:
 
 * Behavior
 * Actions
 * Card collections
-* Theming
-* Specs
+
 
 Each section should have a 3rd tier header. Within each section, there should be a table that contains:
 * classes, parameters, enums related to the section
@@ -114,17 +112,13 @@ If possible, each section should have its own example(s) with code snippets/sett
 > MDCButton *button = [[MDCButton alloc] init];
 > ```
 > ### iOS Outlined button
+> ...
 >
 > ### iOS Contained button
->
+> ...
 > ### iOS Toggle button
->
-> ### Specs
-> Attribute | Attribute value | Element description | API link
-> ---|---|---|---
-> | | | 
-> 
-> ###
+> ...
+
 
 
 **Example: Android Button**
@@ -154,10 +148,6 @@ If possible, each section should have its own example(s) with code snippets/sett
 >
 > ...
 >
-> ### Specs
-> Attribute | Attribute value | Element description 
-> ---|---|---
-> | | | 
 
    
 ## Example: \[Describe a way to use the Component\]
