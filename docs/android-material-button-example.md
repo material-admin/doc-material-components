@@ -30,7 +30,7 @@ The `MaterialButton` component provides a complete implementation of Material De
 
 #### Material button element
 
- https://developer.android.com/reference/com/google/android/material/button/MaterialButton
+ Go  to the [Android MaterialButton API](https://developer.android.com/reference/com/google/android/material/button/MaterialButton) for more details.
 ```xml
 <com.google.android.material.button.MaterialButton
   android:<property>="<property value>"
