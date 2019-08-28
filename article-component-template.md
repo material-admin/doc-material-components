@@ -16,7 +16,7 @@ The API documentation formatting is roughly based on https://developers.google.c
 
 **Reminder** This is a template. Delete this paragraph and update and review all information requestsw within the comments.
 
-# \[Component Name\]
+# \[Canonical Component Name\] (TK Component Name)
 
 Add a concise (1-2 sentence) description of the component here. The corresponding design document should have a full description.
 
@@ -25,8 +25,8 @@ For example:
 > Buttons allow users to take actions and make choices using a tap to press the button.
 > Buttons can be customized to meet your style requirements.
 
-## \[Component types\]
-If there are component subtypes, list them here and link to local anchor. Use the list described in the material.io/components pages.
+## \[Component variants\]
+If there are component variants, list them here and link to local anchor. Use the list described in the material.io/components pages.
 
 For example, from [Buttons](https://material.io/components/buttons/#usage):
 
@@ -40,7 +40,7 @@ Insert any related graphics. **Don't say what you can show**
 <!-- Note that the iOS team has added a TOC to their repo, and it appears to be from https://github.com/jonschlinkert/markdown-toc -->
 <!-- toc -->
 
-## Using \[Component Name\]
+## Using \[Component Name \]
 
 Use 1-2 sentences to describe how the component is used. Provide images of its relative position, if relevant. Use collapsible tags for examples that require more than a page of text.
 
@@ -70,7 +70,7 @@ For example, from the [iOS Button component](https://material.io/components/ios/
 ### \[Component section\]
 Divide the component API into categories according to its TOC on its corresponsoding material.io/components page. Following a similar outline will help cross-link the pages between the design documents and the developer pages. You can skip **Theming** and **Specs** sections unless the component APIs deal specifically with either.
 
-For example [buttons](material.io/components/buttons/) is divided into the following 3rd tier sections:
+For example [buttons](material.io/components/buttons/) is divided into the following 3rd tier sections based on its variants:
 
 * Text button
 * Outlined button
@@ -86,8 +86,8 @@ Whereas [cards](https://material.io/components/cards/) is divided into:
 
 
 Each section should have a 3rd tier header. Within each section, there should be a table that contains:
-* classes, parameters, enums related to the section
 * a general description
+* classes, parameters, enums related to the section
 * links applicable classes, constants, typedefs, etc. 
 
 If possible, each section should have its own example(s) with code snippets/settings relevant to the section.
@@ -111,6 +111,7 @@ If possible, each section should have its own example(s) with code snippets/sett
 > ```obj-c
 > MDCButton *button = [[MDCButton alloc] init];
 > ```
+>
 > ### iOS Outlined button
 > ...
 >
