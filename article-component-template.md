@@ -98,10 +98,11 @@ If possible, each section should have its own example(s) with code snippets/sett
 
 > 
 > ### iOS Text button
+>| https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html
 >
-> Related element | Parameter(s) | Parameter value | Element description | API link
-> ---|---|---|---|---
-> MCDButton | underlyingColorHint | hex (?) |Determines a button's background color and surrounding area. | https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html
+> Attribute | Attribute value | Element description 
+> ---|---|---
+>  underlyingColorHint | hex (?) |Determines a button's background color and surrounding area. 
 >
 > #### Text button example
 > **Swift**
@@ -119,9 +120,9 @@ If possible, each section should have its own example(s) with code snippets/sett
 > ### iOS Toggle button
 >
 > ### Specs
-> Related element | Parameter(s) | Parameter value | Element description | API link
-> ---|---|---|---|---
-> | | | |
+> Attribute | Attribute value | Element description | API link
+> ---|---|---|---
+> | | | 
 > 
 > ###
 
@@ -129,26 +130,34 @@ If possible, each section should have its own example(s) with code snippets/sett
 **Example: Android Button**
 
 > ### Text button
-> Related element | Parameter(s) | Parameter value | Element description | API link
-> ---|---|---|---|---
-> MaterialButton | android:id </br> style </br> android:layout_width </br> android: layout_height </br> android:text | "@+id/material_text_button" </br> "@style/Widget.MaterialComponents.Button.TextButton" </br> "wrap_content" </br> "wrap_content" </br> "@string/text_button_label_enabled" | | https://developer.android.com/reference/com/google/android/material/button/MaterialButton
+>
+> The `TextButton` style has a transparent background with colored text. Text buttons are used for low-priority actions, especially when presenting multiple options.
+> https://developer.android.com/reference/com/google/android/material/button/MaterialButton
+>
+> Attribute | Attribute value | Element description
+> ---|---|---
+> android:id | `"@+id/material_text_button"` | 
+> style | `"@style/Widget.MaterialComponents.Button.TextButton"` | 
+> android:layout_width | `"wrap_content" ` |
+> android: layout_height | `"wrap_content"` |
+> android:text | `"@string/text_button_label_enabled"`| 
 >
 > #### Text button example
 > ```xml
-> <com.google.android.material.button.MaterialButton
+>  <com.google.android.material.button.MaterialButton
 >    android:id="@+id/material_text_button"
 >    style="@style/Widget.MaterialComponents.Button.TextButton"
 >    android:layout_width="wrap_content"
 >    android:layout_height="wrap_content"
 >    android:text="@string/text_button_label_enabled"/>
-> ```
+>```
 >
 > ...
 >
 > ### Specs
-> Related element | Parameter(s) | Parameter value | Element description | API link
-> ---|---|---|---|---
-> | | | |
+> Attribute | Attribute value | Element description 
+> ---|---|---
+> | | | 
 
    
 ## Example: \[Describe a way to use the Component\]
