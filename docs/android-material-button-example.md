@@ -8,11 +8,11 @@ path: /
 api_doc_root: 
 -->
 
-# Material button
+# Material button (Buttons)
 
 `Material Button` is a customizable button component with updated visual styles. This button component has several built-in styles to support different levels of emphasis, as typically any UI will contain a few different buttons to indicate different actions. 
 
-## Material button types
+## Material button variants
 
 * [Text button](#text-button)
 * [Outlined button](#outlined-button)
@@ -41,6 +41,7 @@ The `MaterialButton` component provides a complete implementation of Material De
 />
 ```
 #### Material button attributes without icons
+
 Attribute | Description | Possible values
 ---|---|---
 `android:id` | | `"@+id/material_button"` </br> `"@+id/disabled_material_button"` </br> `"@+id/material_unelevated_button"`
@@ -49,19 +50,21 @@ Attribute | Description | Possible values
 `android:enabled` | | `true`\|`false`
 `android:text` | | `"@string/button_label_enabled"`</br> `"@string/button_label_disabled"`
 `app:icon` | adds an icon to the button | `"@drawable/icon_24px"`
-`style`| | `"@style/Widget.MaterialComponents.Button.UnelevatedButton"` </br> `"@style/Widget.MaterialComponents.Button.TextButton"`
+`style`| |`"@style/Widget.MaterialComponents.Button.UnelevatedButton"` </br> `"@style/Widget.MaterialComponents.Button.TextButton"`
 
 #### Material button attributes with icons
-**Note:** The .Icon style should only be used for start-gravity icon buttons. If your icon is end-gravity, you cannot use a .Icon style and must instead manually adjust your padding such that the visual adjustment is mirrored.
+
+The .Icon style should only be used for start-gravity icon buttons. If your icon is end-gravity, you cannot use a .Icon style and must instead manually adjust your padding such that the visual adjustment is mirrored.
+ 
 Attribute | Description | Possible values
 ---|---|---
-`android:id` | | `"@+id/material_icon_button"` </br> `"@+id/disabled_icon_material_button"` </br> `"@+id/material_icon_unelevated_button"`
-`android:layout_width` | | `"wrap_content"`
-`android:layout_height` | | `"wrap_content"`
-`android:enabled` | | `true`\|`false`
-`android:text` | | `"@string/icon_button_label_enabled"`</br> `"@string/icon_button_label_disabled"`
+`android:id` |  | `"@+id/material_icon_button"` </br> `"@+id/disabled_icon_material_button"` </br> `"@+id/material_icon_unelevated_button"`
+`android:layout_width` |  | `"wrap_content"`
+`android:layout_height` |  | `"wrap_content"`
+`android:enabled` |  | `true`\|`false`
+`android:text` |  | `"@string/icon_button_label_enabled"`</br> `"@string/icon_button_label_disabled"`
 `app:icon` | adds an icon to the button | `"@drawable/icon_24px"`
-`style`| | `"@style/Widget.MaterialComponents.Button.Icon"` </br> `"@style/Widget.MaterialComponents.Button.TextButton.Icon"`
+`style`|  | `"@style/Widget.MaterialComponents.Button.Icon"` </br> `"@style/Widget.MaterialComponents.Button.TextButton.Icon"`
 
 ### Text button
 
@@ -114,8 +117,7 @@ The contained button is an elevated button with a background color in `colorPrim
 Attribute | Attribute value | Element description 
 ---|---|---
 android:id | `"@+id/material_button"` | 
-style | `"@style/Widget.MaterialComponents.Button"` </br> `"@style/Widget.MaterialComponents.Button.Icon"` </br>
- `"@style/Widget.MaterialComponents.Button.UnelevatedButton"` </br> `"@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"` | 
+style | `"@style/Widget.MaterialComponents.Button"` </br> `"@style/Widget.MaterialComponents.Button.Icon"` </br> `"@style/Widget.MaterialComponents.Button.UnelevatedButton"` </br> `"@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"` | 
 android:layout_width | `"wrap_content"` | 
 android: layout_height | `"wrap_content"`| 
 android:text | `"@string/text_button_label_enabled"` |  
@@ -150,7 +152,7 @@ android:text | `"@string/text_button_label_enabled"` |
 
     <Space/>
   </GridLayout>
-``
+```
 
 ### Toggle button
 
