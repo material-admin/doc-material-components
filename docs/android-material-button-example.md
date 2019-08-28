@@ -31,6 +31,8 @@ The `MaterialButton` component provides a complete implementation of Material De
 ### Related APIs
 
 #### Material button element
+
+ https://developer.android.com/reference/com/google/android/material/button/MaterialButton
 ```xml
 <com.google.android.material.button.MaterialButton
   android:<property>="<property value>"
@@ -51,12 +53,11 @@ Attribute | Description | Possible values
 ### Text button
 
 The `TextButton` style has a transparent background with colored text. Text buttons are used for low-priority actions, especially when presenting multiple options.
-https://developer.android.com/reference/com/google/android/material/button/MaterialButton
 
 Attribute | Attribute value | Element description
 ---|---|---
  android:id | `"@+id/material_text_button"` | 
- style | `"@style/Widget.MaterialComponents.Button.TextButton"` | 
+ style | `"@style/Widget.MaterialComponents.Button.TextButton"` </br> `"@style/Widget.MaterialComponents.Button.TextButton.Icon"` | 
  android:layout_width | `"wrap_content" ` |
  android: layout_height | `"wrap_content"` |
  android:text | `"@string/text_button_label_enabled"`| 
@@ -74,12 +75,11 @@ Attribute | Attribute value | Element description
 
 The `OutlinedButton` style has a transparent background with colored text, and a small stroke around the button. Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
-https://developer.android.com/reference/com/google/android/material/button/MaterialButton
 
  Attribute | Attribute value | Element description 
 ---|---|--- 
  android:id | `"@+id/material_text_button"` | 
- style | `"@style/Widget.MaterialComponents.Button.TextButton"` | 
+ style | `"@style/Widget.MaterialComponents.Button.TextButton"` </br>`"@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"` | 
  android:layout_width | `"wrap_content"`| 
  android: layout_height | `"wrap_content"`| 
  android:text | `"@string/text_button_label_enabled"` |  
@@ -94,24 +94,29 @@ https://developer.android.com/reference/com/google/android/material/button/Mater
     android:text="@string/outlined_button_label_enabled"/>
 ```
 ### Contained button
+The contained button is an elevated button with a colored background. This should be used for important, final actions that complete a flow, like ‘Save’ or ‘Confirm’. If no style attribute is specified for a MaterialButton, this is the style that will be used.
 
-https://developer.android.com/reference/com/google/android/material/button/MaterialButton
 
 Attribute | Attribute value | Element description 
 ---|---|---
-android:id | `"@+id/material_text_button"` | 
-style | `"@style/Widget.MaterialComponents.Button.TextButton"`| 
+android:id | `"@+id/material_button"` | 
+style | `"@style/Widget.MaterialComponents.Button"` </br> `"style="@style/Widget.MaterialComponents.Button.Icon"` </br>
+ `style="@style/Widget.MaterialComponents.Button.UnelevatedButton"` </br> `style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"` | 
 android:layout_width | `"wrap_content"` | 
 android: layout_height | `"wrap_content"`| 
 android:text | `"@string/text_button_label_enabled"` |  
 
 #### Contained button example
 ```xml
-
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/material_button"
+    style="@style/Widget.MaterialComponents.Button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/button_label_enabled"/>
 ```
 ### Toggle button
 
- https://developer.android.com/reference/com/google/android/material/button/MaterialButton
  
 Attribute | Attribute value | Element description 
 ---|---|---
@@ -126,9 +131,9 @@ android:text | `"@string/text_button_label_enabled"` |
 
 ```
 ### Specs
-Attribute| Attribute value | Element description 
----|---|---
- | | 
+
+#### Contained button
+
 
    
 ## Examples
