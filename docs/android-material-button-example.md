@@ -40,7 +40,7 @@ The `MaterialButton` component provides a complete implementation of Material De
    style="@style/widget.MaterialComponents.<style value>"
 />
 ```
-#### Material button attributes
+#### Material button attributes without icons
 Attribute | Description | Possible values
 ---|---|---
 `android:id` | | `"@+id/material_button"` </br> `"@+id/disabled_material_button"` </br> `"@+id/material_unelevated_button"`
@@ -48,11 +48,24 @@ Attribute | Description | Possible values
 `android:layout_height` | | `"wrap_content"`
 `android:enabled` | | `true`\|`false`
 `android:text` | | `"@string/button_label_enabled"`</br> `"@string/button_label_disabled"`
+`app:icon` | adds an icon to the button | `"@drawable/icon_24px"`
 `style`| | `"@style/Widget.MaterialComponents.Button.UnelevatedButton"` </br> `"@style/Widget.MaterialComponents.Button.TextButton"`
-   
+
+#### Material button attributes with icons
+**Note:** The .Icon style should only be used for start-gravity icon buttons. If your icon is end-gravity, you cannot use a .Icon style and must instead manually adjust your padding such that the visual adjustment is mirrored.
+Attribute | Description | Possible values
+---|---|---
+`android:id` | | `"@+id/material_icon_button"` </br> `"@+id/disabled_icon_material_button"` </br> `"@+id/material_icon_unelevated_button"`
+`android:layout_width` | | `"wrap_content"`
+`android:layout_height` | | `"wrap_content"`
+`android:enabled` | | `true`\|`false`
+`android:text` | | `"@string/icon_button_label_enabled"`</br> `"@string/icon_button_label_disabled"`
+`app:icon` | adds an icon to the button | `"@drawable/icon_24px"`
+`style`| | `"@style/Widget.MaterialComponents.Button.Icon"` </br> `"@style/Widget.MaterialComponents.Button.TextButton.Icon"`
+
 ### Text button
 
-The `TextButton` style has a transparent background with colored text. Text buttons are used for low-priority actions, especially when presenting multiple options.
+The `TextButton` style has a transparent background with text in `colorPrimary`. Text buttons are used for low-priority actions, especially when presenting multiple options.
 
 Attribute | Attribute value | Element description
 ---|---|---
@@ -73,7 +86,7 @@ Attribute | Attribute value | Element description
 ```
 ### Outlined button
 
-The `OutlinedButton` style has a transparent background with colored text, and a small stroke around the button. Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
+The `OutlinedButton` style has a transparent background with text color in `colorPrimary`, and a small stroke around the button. Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
 
  Attribute | Attribute value | Element description 
@@ -94,14 +107,15 @@ The `OutlinedButton` style has a transparent background with colored text, and a
     android:text="@string/outlined_button_label_enabled"/>
 ```
 ### Contained button
-The contained button is an elevated button with a colored background. This should be used for important, final actions that complete a flow, like ‘Save’ or ‘Confirm’. If no style attribute is specified for a MaterialButton, this is the style that will be used.
+The contained button is an elevated button with a background color in `colorPrimary` and text color in `colorOnPrimary`. This should be used for important, final actions that complete a flow, like ‘Save’ or ‘Confirm’. This style is the default and will be used if no style attribute is specified for a `MaterialButton`.
 
+**Note** Elevated `MaterialButtons` have a shadow that can extend outside the bounds of the button. For this reason, the wrapping parent element should set to `android:clipToPadding="false"` in cases where the button shadow could be clipped by the parent bounds.
 
 Attribute | Attribute value | Element description 
 ---|---|---
 android:id | `"@+id/material_button"` | 
-style | `"@style/Widget.MaterialComponents.Button"` </br> `"style="@style/Widget.MaterialComponents.Button.Icon"` </br>
- `style="@style/Widget.MaterialComponents.Button.UnelevatedButton"` </br> `style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"` | 
+style | `"@style/Widget.MaterialComponents.Button"` </br> `"@style/Widget.MaterialComponents.Button.Icon"` </br>
+ `"@style/Widget.MaterialComponents.Button.UnelevatedButton"` </br> `"@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"` | 
 android:layout_width | `"wrap_content"` | 
 android: layout_height | `"wrap_content"`| 
 android:text | `"@string/text_button_label_enabled"` |  
@@ -115,6 +129,29 @@ android:text | `"@string/text_button_label_enabled"` |
     android:layout_height="wrap_content"
     android:text="@string/button_label_enabled"/>
 ```
+
+#### Contained button example with wrappign parent element `GridLayout`
+
+```xml
+<GridLayout
+      android:id="@+id/grid"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:padding="16dp"
+      android:clipToPadding="false"
+      android:columnCount="2">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/material_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_label_enabled"/>
+
+    <Space/>
+  </GridLayout>
+``
+
 ### Toggle button
 
  
@@ -132,7 +169,7 @@ android:text | `"@string/text_button_label_enabled"` |
 ```
 ### Specs
 
-#### Contained button
+## Theming
 
 
    
