@@ -27,7 +27,7 @@ api_doc_root:
 The `MDCButtons` component provides a complete implementation of Material Design’s button component.
 
 Before using the `MDCButtons' component to implements its variants you must install or import the component, and then apply your theme:
- 1. Install or import `MDCButtons`
+ 1. Install `MDCButtons`
      * Use CocoaPods to install `MDCButtons`
        1. Add the following to your `Podfile`:
          ```bash
@@ -37,27 +37,23 @@ Before using the `MDCButtons' component to implements its variants you must inst
          ```bash
          pod install
          ```
-     * Import `MDCButtons`
+ 1. Import `MDCButtons` and MDC buttons theming and initialize `MDCButtons` using `alloc`/`init`:
        
        **Swift**
        ```swift
        import MaterialComponents.MaterialButtons
+       import MaterialComponents.MaterialButtons_Theming
+       ...
+        let button = MDCButton()
        ```
        **Objective-C**
        ```obj-c
        #import "MaterialButtons.h"
-       ```
- 1. Initialize `MDCButtons` using `alloc`/`init` to create an instance:
-     
-     **Swift**
-     ```swift
-     let button = MDCButton()
-     ```
-     **Objective-C**
-     ```obj-c
+       #import <MaterialComponentsBeta/MaterialButtons+Theming.h>
+       ...
+       
      MDCButton *button = [[MDCButton alloc] init];
-     ```
-
+       ```
 
 ### Related APIs
 
