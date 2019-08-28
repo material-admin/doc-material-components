@@ -14,15 +14,13 @@ api_doc_root:
 
 ## Material button variants
 
-* [Text button](#text-button)
-* [Outlined button](#outlined-button)
-* [Contained button](#contained-button)
-* [Toggle button](#toggle-button)
+1. [Text button](#text-button)
+1. [Outlined button](#outlined-button)
+1. [Contained button (Filled and raised)](#contained-button)
+1. [Toggle button](#toggle-button)
 
-Insert any related graphics. **Don't say what you can show**
+<img src="buttons-types-all.png">
 
-<!-- Note that the iOS team has added a TOC to their repo, and it appears to be from https://github.com/jonschlinkert/markdown-toc -->
-<!-- toc -->
 
 ## Using `MaterialButton`
 
@@ -49,7 +47,6 @@ Attribute | Description | Possible values
 `android:layout_height` | | `"wrap_content"`
 `android:enabled` | | `true`\|`false`
 `android:text` | | `"@string/button_label_enabled"`</br> `"@string/button_label_disabled"`
-`app:icon` | adds an icon to the button | `"@drawable/icon_24px"`
 `style`| |`"@style/Widget.MaterialComponents.Button.UnelevatedButton"` </br> `"@style/Widget.MaterialComponents.Button.TextButton"`
 
 #### Material button attributes with icons
@@ -69,6 +66,8 @@ Attribute | Description | Possible values
 ### Text button
 
 The `TextButton` style has a transparent background with text in `colorPrimary`. Text buttons are used for low-priority actions, especially when presenting multiple options.
+
+<img src="text-button-usage.png">
 
 Attribute | Attribute value | Element description
 ---|---|---
@@ -91,6 +90,7 @@ Attribute | Attribute value | Element description
 
 The `OutlinedButton` style has a transparent background with text color in `colorPrimary`, and a small stroke around the button. Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
+<img src="outlined-button-usage.png">
 
  Attribute | Attribute value | Element description 
 ---|---|--- 
@@ -114,6 +114,8 @@ The contained button is an elevated button with a background color in `colorPrim
 
 **Note** Elevated `MaterialButtons` have a shadow that can extend outside the bounds of the button. For this reason, the wrapping parent element should set to `android:clipToPadding="false"` in cases where the button shadow could be clipped by the parent bounds.
 
+<img src="/docs/contained-button-usage.png">
+
 Attribute | Attribute value | Element description 
 ---|---|---
 android:id | `"@+id/material_button"` | 
@@ -132,7 +134,7 @@ android:text | `"@string/text_button_label_enabled"` |
     android:text="@string/button_label_enabled"/>
 ```
 
-#### Contained button example with wrappign parent element `GridLayout`
+#### Contained button example with wrapping parent element `GridLayout`
 
 ```xml
 <GridLayout
@@ -153,26 +155,6 @@ android:text | `"@string/text_button_label_enabled"` |
     <Space/>
   </GridLayout>
 ```
-
-### Toggle button
-
- 
-Attribute | Attribute value | Element description 
----|---|---
-android:id | `"@+id/material_text_button"` | 
-style  | `"@style/Widget.MaterialComponents.Button.TextButton"` | 
-android:layout_width | `"wrap_content"` | 
-android: layout_height | `"wrap_content"`| 
-android:text | `"@string/text_button_label_enabled"` | 
-
-#### Toggle button example
-```xml
-
-```
-### Specs
-
-## Theming
-
 
    
 ## Examples
