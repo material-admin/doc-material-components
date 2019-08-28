@@ -17,7 +17,7 @@ api_doc_root:
 1. [Text button](#text-button)
 1. [Outlined button](#outlined-button)
 1. [Contained button (Filled and raised)](#contained-button)
-1. [Toggle button](#toggle-button)
+1. Toggle button (no example for Android)
 
 <img src="buttons-types-all.png">
 
@@ -52,6 +52,8 @@ Attribute | Description | Possible values
 #### Material button attributes with icons
 
 The .Icon style should only be used for start-gravity icon buttons. If your icon is end-gravity, you cannot use a .Icon style and must instead manually adjust your padding such that the visual adjustment is mirrored.
+
+<img src="buttons-elements-icon-01.png">
  
 Attribute | Description | Possible values
 ---|---|---
