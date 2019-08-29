@@ -8,7 +8,7 @@ path: /
 api_doc_root: 
 -->
 
-# MDCButtons (Buttons)
+# Buttons (MDCButtons)
 
 `MDCButtons` is a customizable button component with updated visual styles. This button component has several built-in styles to support diffe/nt levels of emphasis, as typically any UI will contain a few different buttons to indicate different actions, and also supports [floating buttons](link to floating buttons here). 
 
