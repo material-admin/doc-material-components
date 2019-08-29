@@ -18,6 +18,10 @@ The API documentation formatting is roughly based on https://developers.google.c
 
 # \[Canonical Component Name\] (TK Component Name)
 
+example Android Buttons title:
+
+> # Buttons (Material Buttons)
+
 Add a concise (1-2 sentence) description of the component here. The corresponding design document should have a full description.
 
 For example:
@@ -36,6 +40,9 @@ For example, from [Buttons](https://material.io/components/buttons/#usage):
 > * [Toggle button](#ios-toggle-button)
 
 Insert any related graphics. **Don't say what you can show**
+
+example images from Buttons:
+> <img src="/docs/buttons-types-all.png" alt="Support button variants include text button in the upper left, outlined button in the upper right, contained button in the lower left, and toggle button in the lower right">
 
 <!-- Note that the iOS team has added a TOC to their repo, and it appears to be from https://github.com/jonschlinkert/markdown-toc -->
 <!-- toc -->
@@ -86,17 +93,23 @@ Whereas [cards](https://material.io/components/cards/) is divided into:
 
 
 Each section should have a 3rd tier header. Within each section, there should be a table that contains:
+* an image of the section topic
 * a general description
 * classes, parameters, enums related to the section
 * links applicable classes, constants, typedefs, etc. 
 
-If possible, each section should have its own example(s) with code snippets/settings relevant to the section.
+
+If possible, each section should have its own example(s) with code snippets/settings relevant to the section and an image showing what the code could generate.
 
 **Example: iOS button**
 
 > 
 > ### iOS Text button
->| https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html
+> <img src="/docs/text-button-usage.png" alt="example text button image">
+>
+> https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html
+>
+> 
 >
 > Attribute | Attribute value | Element description 
 > ---|---|---
@@ -126,6 +139,7 @@ If possible, each section should have its own example(s) with code snippets/sett
 
 > ### Text button
 >
+> <img src="/docs/text-button-usage.png" alt="example text button image">
 > The `TextButton` style has a transparent background with colored text. Text buttons are used for low-priority actions, especially when presenting multiple options.
 > https://developer.android.com/reference/com/google/android/material/button/MaterialButton
 >
@@ -155,14 +169,16 @@ If possible, each section should have its own example(s) with code snippets/sett
 * What functions/objects does it use?
 * How does the example use the objects/functions?
 * Are there any special settings/options used in this example, and why?
+* Provide an image of what the example could produce. Mention any themes/settings used.
 
 <details>
   <summary><b>Click to View Examples without Steps</b></summary>
   
   Describe the example and its components, including specific settings and instructions.
   
-  > ### Example: Add a Filled and Elevated Button
+  > ### Example: Add a Filled and Elevated (Contained) Button
   > The following code adds a filled and elevated button to your app. Your theme's `colorPrimary` is the default background color and your theme's `colorOnPrimary` is the default text color.
+  > <img src="/docs/contained-button-usage.png" alt="example of a filled an elevated button image">
   >   ```xml
   >    <com.google.android.material.button.MaterialButton
   >      android:id="@+id/material_button"
@@ -189,27 +205,34 @@ If possible, each section should have its own example(s) with code snippets/sett
   If the example entails multiple steps, use a numbered list for each step. Break out iny installation/importation steps into its own list.
  
  List the steps to use the compnent. Include any installation/importation instructions in a separate list.
-> ### Install `MaterialButton`
-> Follow the steps below to add the `MaterialButton` component in your iOS application:
+> ### Add a themed text button
+> Follow the steps below to add a text button in your iOS application:
+> <img src="/docs/ios-text-button.gif" alt="animated gif of a text button">
 >
 > 1. Add the following to your `Podfile`:
 >   ```bash
 >   pod 'MaterialComponents/Buttons'
 >   ```
-> 1. Run the `install` command:
+> 2. Run the `install` command:
 >   ```bash
 >    pod install
 >    ```
->  1. Import `MaterialButton` component
->    ```swift
->      import MaterialComponents.MaterialButtons
->    ```
-> ### Add a Floating Action Button
-> `DCFloatingButton` is a subclass of `MDCButton` that implements the Material Design floating action button style and behavior. Floating action buttons should be provided with a templated image for their normal state and then themed accordingly.
-> ```swift
-> // Note: you'll need to provide your own image - the following is just an example.
-> let plusImage = UIImage(named: "plus").withRenderingMode(.alwaysTemplate)
-> let button = MDCFloatingButton()
-> button.setImage(plusImage, forState: .normal)
->```
+> 3. In your source file, you will need to:
+>    * import `MaterialButtons`
+>      ```swift
+>        import MaterialComponents.MaterialButtons
+>      ```
+>    * import `MaterialButtons_Theming`
+>        ```swift
+>        import MaterialComponents.MaterialButtons_Theming
+>        ```
+>    * initialize the button
+>        ```swift
+>        let button = MDCButton()
+>        ```
+>    * apply a theme to the text button
+>        ```swift
+>        button.applyTextTheme(withScheme: containerScheme)
+>        ```
+
 </details>
