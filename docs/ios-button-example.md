@@ -17,16 +17,15 @@ api_doc_root:
 1. [Text button](#text-button)
 1. [Outlined button](#outlined-button)
 1. [Contained button (Filled and raised)](#contained-button)
-1. Toggle button 
+<img src="buttons-types-all.png" alt="Support button variants include text button in the upper left, outlined button in the upper right, contained button in the lower left, and toggle button in the lower right">
 
-<img src="buttons-types-all.png">
 
 
 ## Using `MDCButtons`
 
 The `MDCButtons` component provides a complete implementation of Material Design’s button component.
 
-Before using the `MDCButtons' component to implements its variants you must install or import the component, and then apply your theme:
+Before using the `MDCButtons` component to implements its variants you must install. In your source files import the component, and then apply your theme:
  1. Install `MDCButtons`
      * Use CocoaPods to install `MDCButtons`
        1. Add the following to your `Podfile`:
@@ -37,7 +36,7 @@ Before using the `MDCButtons' component to implements its variants you must inst
          ```bash
          pod install
          ```
- 1. Import `MDCButtons` and MDC buttons theming and initialize `MDCButtons` using `alloc`/`init`:
+ 1. Import `MDCButtons` and MDC buttons theming and initialize `MDCButtons` using `alloc`/`init`. Include :
        
        **Swift**
        ```swift
@@ -52,7 +51,7 @@ Before using the `MDCButtons' component to implements its variants you must inst
        #import <MaterialComponentsBeta/MaterialButtons+Theming.h>
        ...
        
-     MDCButton *button = [[MDCButton alloc] init];
+       MDCButton *button = [[MDCButton alloc] init];
        ```
 
 ### Related APIs
