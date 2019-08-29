@@ -135,7 +135,7 @@ If possible, each section should have its own example(s) with code snippets/sett
 
 **Example: Android Button**
 
-> ### Text button
+> ### Android text button
 >
 > <img src="/docs/text-button-usage.png" alt="example text button image">
 > The `TextButton` style has a transparent background with colored text. Text buttons are used for low-priority actions, especially when presenting multiple options.
@@ -148,7 +148,7 @@ If possible, each section should have its own example(s) with code snippets/sett
 > android: layout_height | `"wrap_content"` |
 > android:text | `"@string/text_button_label_enabled"`| 
 >
-> #### Text button example
+> #### Android text button example
 > ```xml
 >  <com.google.android.material.button.MaterialButton
 >    android:id="@+id/material_text_button"
@@ -173,8 +173,8 @@ If possible, each section should have its own example(s) with code snippets/sett
   
   Describe the example and its components, including specific settings and instructions.
   
-  > ### Example: Add a Filled and Elevated (Contained) Button
-  > The following code adds a filled and elevated button to your app. Your theme's `colorPrimary` is the default background color and your theme's `colorOnPrimary` is the default text color.
+  > ### Example: Add a contained (filled) and elevated button
+  > The following code adds a contained and elevated button to your app. Your theme's `colorPrimary` is the default background color and your theme's `colorOnPrimary` is the default text color.
   > <img src="/docs/contained-button-usage.png" alt="example of a filled an elevated button image">
   >   ```xml
   >    <com.google.android.material.button.MaterialButton
@@ -183,8 +183,8 @@ If possible, each section should have its own example(s) with code snippets/sett
   >      android:layout_height="wrap_content"
   >      android:text="@string/button_label_enabled"/>
   >  ```
-  >  ### Example: Add a Filled and Unlevated Button
-  > The following code adds a filled and unelevated button. Your theme's `colorPrimary` is the default background color and your theme's `colorOnPrimary` is the default text color.
+  >  ### Example: Add a contained (filled) and unlevated button
+  > The following code adds a contained and unelevated button. Your theme's `colorPrimary` is the default background color and your theme's `colorOnPrimary` is the default text color.
   >  ```xml
   >    <com.google.android.material.button.MaterialButton
   >      android:id="@+id/disabled_material_button"
