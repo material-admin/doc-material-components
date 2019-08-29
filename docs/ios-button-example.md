@@ -129,7 +129,7 @@ MDCButton *button = [[MDCButton alloc] init];
 
 The `OutlinedButton` style has a transparent background with text color in `colorPrimary`, and a small stroke around the button. Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
-<img src="ios-outlined-button.gif" alt="animated gif of an iOS outlined button">
+<img src="ios-outlined.gif" alt="animated gif of an iOS outlined button">
 
 **Swift**
 ```swift
@@ -162,7 +162,7 @@ MDCButton *button = [[MDCButton alloc] init];
 The contained button is an elevated button with a background color in `colorPrimary` and text color in `colorOnPrimary`. This should be used for important, final actions that complete a flow, like ‘Save’ or ‘Confirm’. This style is the default and will be used if no style attribute is specified for a `MaterialButton`.
 
 
-<img src="ios-contained-button.gif" alt="animated gif of an iOS contained button">
+<img src="ios-contained.gif" alt="animated gif of an iOS contained button">
 
 **Swift**
 ```swift
