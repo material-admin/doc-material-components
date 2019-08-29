@@ -96,7 +96,7 @@ Each section should have a 3rd tier header. Within each section, there should be
 * an image of the section topic
 * a general description
 * classes, parameters, enums related to the section
-* links applicable classes, constants, typedefs, etc. 
+* links the applicable API(s) if there any specific to the section. 
 
 
 If possible, each section should have its own example(s) with code snippets/settings relevant to the section and an image showing what the code could generate.
@@ -106,8 +106,6 @@ If possible, each section should have its own example(s) with code snippets/sett
 > 
 > ### iOS Text button
 > <img src="/docs/text-button-usage.png" alt="example text button image">
->
-> https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html
 >
 > 
 >
@@ -141,7 +139,6 @@ If possible, each section should have its own example(s) with code snippets/sett
 >
 > <img src="/docs/text-button-usage.png" alt="example text button image">
 > The `TextButton` style has a transparent background with colored text. Text buttons are used for low-priority actions, especially when presenting multiple options.
-> https://developer.android.com/reference/com/google/android/material/button/MaterialButton
 >
 > Attribute | Attribute value | Element description
 > ---|---|---
