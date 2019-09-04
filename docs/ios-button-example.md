@@ -19,7 +19,7 @@ For more information, go to the material.io [Buttons](http://material.io/compone
 1. [Text button](#text-button)
 1. [Outlined button](#outlined-button)
 1. [Contained button](#contained-button)
-<img src="/images/buttons-types-all.png" alt="Support button variants include text button in the upper left, outlined button in the upper right, contained button in the lower left, and toggle button in the lower right">
+<img src="images/buttons-types-all.png" alt="Support button variants include text button in the upper left, outlined button in the upper right, contained button in the lower left, and toggle button in the lower right">
 
 
 
@@ -93,7 +93,7 @@ Before using the `MDCButtons` component to implement its variants you must insta
 
 The `TextButton` style has a transparent background with text in `colorPrimary`. Text buttons are used for low-priority actions, especially when presenting multiple options.
 
-<img src="/images/ios-text-button.gif" alt="animated gif of an iOS text button">
+<img src="images/ios-text-button.gif" alt="animated gif of an iOS text button">
 
 **Swift**
 ```swift
@@ -139,7 +139,7 @@ MDCButton *button = [[MDCButton alloc] init];
 
 The `OutlinedButton` style has a transparent background with text color in `colorPrimary`, and a small stroke around the button. Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
-<img src="/images/ios-outlined.gif" alt="animated gif of an iOS outlined button">
+<img src="images/ios-outlined.gif" alt="animated gif of an iOS outlined button">
 
 **Swift**
 ```swift
@@ -184,7 +184,7 @@ MDCButton *button = [[MDCButton alloc] init];
 The contained button is an elevated button with a background color in `colorPrimary` and text color in `colorOnPrimary`. This should be used for important, final actions that complete a flow, like ‘Save’ or ‘Confirm’. This style is the default and will be used if no style attribute is specified for a `MaterialButton`.
 
 
-<img src="/images/ios-contained.gif" alt="animated gif of an iOS contained button">
+<img src="images/ios-contained.gif" alt="animated gif of an iOS contained button">
 
 **Swift**
 ```swift
