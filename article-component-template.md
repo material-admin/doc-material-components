@@ -8,7 +8,7 @@ path: /
 api_doc_root:
 -->
 
-<!-- this is a draft of a an article template for the material.io developer site.
+<!-- this is an article template for the material.io developer site.
 This template is based on the current design article template at
 https://spec.googleplex.com/m2-spec-guide/authoring-content/component-article-template.html
 
@@ -36,18 +36,23 @@ For example:
 > [Buttons](https://material.io/components/buttons/#usage):
 
 ## \[Component variants\]
-If there are component variants, list them here and link to local anchor. Use the list described in the material.io/components pages.
+
+### When to use
+
+Add a 1-2 sentence description of when to use the component.
+
+If there are component variants, list them here and link to local anchor. Use the list described in the material.io/components pages. For each variant, add a 1-2 sentence description of when to use the variant.
 
 
-> * [Text button](#ios-text-button)
-> * [Outlined button](#ios-outlined-button)
-> * [Contained button](#ios-contained-button)
-> * [Toggle button](#ios-toggle-button)
+> * [Text button](#ios-text-button): Text buttons are typically used for less-pronounced actions, including those located in dialogs and in cards. In cards, text buttons help maintain an emphasis on card content.
+> * [Outlined button](#ios-outlined-button): Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
+> * [Contained button](#ios-contained-button): Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
+> * [Toggle button](#ios-toggle-button): Toggle buttons can be used to group related options. To emphasize groups of related toggle buttons, a group should share a common container.
 
 Insert any related graphics. **Don't say what you can show**
 
 example images from Buttons:
-> <img src="/docs/buttons-types-all.png" alt="Support button variants include text button in the upper left, outlined button in the upper right, contained button in the lower left, and toggle button in the lower right">
+> <img src="docs/images/buttons-types-all.png" alt="Support button variants include text button in the upper left, outlined button in the upper right, contained button in the lower left, and toggle button in the lower right">
 
 <!-- Note that the iOS team has added a TOC to their repo, and it appears to be from https://github.com/jonschlinkert/markdown-toc -->
 <!-- toc -->
@@ -161,7 +166,7 @@ If possible, each section should have its own example(s) with code snippets/sett
 
 > ### Android text button
 >
-> <img src="/docs/text-button-usage.png" alt="example text button image">
+> <img src="docs/images/text-button-usage.png" alt="example text button image">
 > The `TextButton` style has a transparent background with colored text. Text buttons are used for low-priority actions, especially when presenting multiple options.
 >
 > Attribute | Attribute value | Element description
@@ -199,7 +204,7 @@ If possible, each section should have its own example(s) with code snippets/sett
 
   > ### Example: Add a contained (filled) and elevated button
   > The following code adds a contained and elevated button to your app. Your theme's `colorPrimary` is the default background color and your theme's `colorOnPrimary` is the default text color.
-  > <img src="/docs/contained-button-usage.png" alt="example of a filled an elevated button image">
+  > <img src="docs/images/contained-button-usage.png" alt="example of a filled an elevated button image">
   >   ```xml
   >    <com.google.android.material.button.MaterialButton
   >      android:id="@+id/material_button"
@@ -228,7 +233,7 @@ If possible, each section should have its own example(s) with code snippets/sett
  List the steps to use the component. Include any installation/importation instructions in a separate list.
 > ### Add a themed text button
 > Follow the steps below to add a text button in your iOS application:
-> <img src="/docs/ios-text-button.gif" alt="animated gif of a text button">
+> <img src="docs/images/ios-text-button.gif" alt="animated gif of a text button">
 >
 > 1. Add the following to your `Podfile`:
 >   ```bash

@@ -3,168 +3,159 @@ title: "Example article: Web button"
 layout: detail
 section: components
 excerpt: "This is an example of the Web Material Button developer article for material.io. It uses the template from [../article-component-template.md]"
-iconId: 
+iconId:
 path: /
-api_doc_root: 
+api_doc_root:
+@import "@material/button/mdc-button";
 -->
 # Buttons (`mdc-buttons`)
 
-`mdc-buttons` is a customizable button component with updated visual styles. This button component has several built-in styles to support different levels of emphasis, as typically any UI will contain a few different buttons to indicate different actions. 
+`mdc-buttons` is a customizable button component with updated visual styles. This button component has several built-in styles to support different levels of emphasis, as typically any UI will contain a few different buttons to indicate different actions.
 
-## Material button variants
+For more information on the buttons component, go to the material.io [Buttons](http://material.io/components/buttons) page.
 
-1. [Outlined button](#outlined-button)
-1. [Contained button](#contained-button)
+## `mcd-buttons` variants
 
-<img src="buttons-types-all.png">
+1. [Text (flat) button](#text-button): Text buttons are typically used for less-pronounced actions, including those located in dialogs and in cards. In cards, text buttons help maintain an emphasis on card content.
+1. [Contained (raised) button](#contained-button): Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
+
+<img src="images/buttons-types-all.png">
 
 
 ## Using `mdc-buttons`
 
-The `mdc-buttons` component provides a complete implementation of Material Design’s button component. 
+The `mdc-buttons` component provides a complete implementation of Material Design’s button component.
 
-=========================
-**Update the following**
+### Install `mcd-button`
+Install the `mdc-button` component before including it in your source.
+
+```bash
+npm install @material/buttons
+```
+### Add a theme (style)
+The `mdc-buttons` component works with themes (styles). Import a style into your stylesheet to apply it to your website, including buttons:
+
+```css
+@import "@material/button/mdc-button";
+```
+### Import JavaScript button effects
+You can also add a JavaScript ripple effect (see [MDC Ripple](https://github.com/material-components/material-components-web/blob/master/packages/mdc-ripple)) to your buttons by importing then instantiating `MCDRipple`. See the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md) for more information on importing JavaScript.
+
+```js
+import {MDCRipple} from '@material/ripple';
+
+const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
+```
+
+### Add icons to buttons
+
+You can add icons to your buttons.
+
+1. In your HTML file, reference the font library you would like to use (we recommend the [Material Icons](https://material.io/tools/icons/) from Google Fonts):
+    ```HTML
+    <head>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    ```
+1. Include the `mcd-button__icon` class inside your button element. Set the attribute `area-hidden="true"`.
+    **Note** The location of the icon element determines if the icon comes before (*leading*) or after (*trailing icon*) the text.
+
+    **Example using [Material Icons](https://material.io/tools/icons/)**
+    ```HTML
+    <button class="mdc-button">
+      <i class="material-icons mdc-button__icon" aria-hidden="true">favorite</i>
+      <span class="mdc-button__label">Button</span>
+    </button>
+    ```
+    **Example using SVG Icons**
+    ```html
+    <button class="mdc-button">
+      <svg class="mdc-button__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="...">
+        /*...*/
+      </svg>
+      <span class="mdc-button__label">Button</span>
+    </button>
+    ```
+
 
 ### Related APIs
 
-#### Material button element
+[Source code](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button): GitHub source repository<br>
+[Demo site](https://material-components.github.io/material-components-web-catalog/#/component/button): You can use this site to generate basic HTML source for button variants, such as text, outlined, raised, and unelevated.
 
- Go  to the [Android MaterialButton API](https://developer.android.com/reference/com/google/android/material/button/MaterialButton) for more details.
-```xml
-<com.google.android.material.button.MaterialButton
-  android:<property>="<property value>"
-   ...
-   style="@style/widget.MaterialComponents.<style value>"
-/>
+**CSS Classes**
+
+| CSS Class | Description |
+|---|---|
+| `mdc-button` | Mandatory. Defaults to a text button that is flush with the surface.|
+| `mdc-button--raised`	| Optional. Styles a contained button that is elevated above the surface. |
+| `mdc-button--unelevated` |	Optional. Styles a contained button that is flush with the surface. |
+| `mdc-button--outlined` |	Optional. Styles an outlined button that is flush with the surface. |
+| `mdc-button--dense` |	Optional. Makes the button text and container slightly smaller. |
+| `mdc-button__label` |	Optional for buttons with leading or no icon, required for buttons with trailing icons. Indicates the element containing the button’s text label. |
+| `mdc-button__icon` |	Optional. Indicates the element containing the button’s icon. |
+
+
+
+### Text (flat) button
+
+The text button style has a transparent background with text in `colorPrimary`. Text buttons are used for low-priority actions, especially when presenting multiple options.
+
+<img src="images/ios-text-button.gif">
+
+element | class | class description
+---|---|---
+button | `mdc-button` | text button
+span | `mdc-button__label` | applies the text to the button
+
+#### Text button example
+
+```html
+ <button class="mdc-button">
+  <span class="mdc-button__label">Button</span>
+</button>
 ```
-#### Material button attributes without icons
 
-Attribute | Description | Possible values
----|---|---
-`android:id` | | `"@+id/material_button"` </br> `"@+id/disabled_material_button"` </br> `"@+id/material_unelevated_button"`
-`android:layout_width` | | `"wrap_content"`
-`android:layout_height` | | `"wrap_content"`
-`android:enabled` | | `true`\|`false`
-`android:text` | | `"@string/button_label_enabled"`</br> `"@string/button_label_disabled"`
-`style`| |`"@style/Widget.MaterialComponents.Button.UnelevatedButton"` </br> `"@style/Widget.MaterialComponents.Button.TextButton"`
+### Outlined button
 
-#### Material button attributes with icons
+The outlined button has a transparent background with the text color in `colorPrimary` and a small stroke around the button. Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
-The .Icon style should only be used for start-gravity icon buttons. If your icon is end-gravity, you cannot use a .Icon style and must instead manually adjust your padding such that the visual adjustment is mirrored.
+<img src="images/ios-outlined.gif">
 
-<img src="buttons-elements-icon-01.png">
- 
-Attribute | Description | Possible values
----|---|---
-`android:id` |  | `"@+id/material_icon_button"` </br> `"@+id/disabled_icon_material_button"` </br> `"@+id/material_icon_unelevated_button"`
-`android:layout_width` |  | `"wrap_content"`
-`android:layout_height` |  | `"wrap_content"`
-`android:enabled` |  | `true`\|`false`
-`android:text` |  | `"@string/icon_button_label_enabled"`</br> `"@string/icon_button_label_disabled"`
-`app:icon` | adds an icon to the button | `"@drawable/icon_24px"`
-`style`|  | `"@style/Widget.MaterialComponents.Button.Icon"` </br> `"@style/Widget.MaterialComponents.Button.TextButton.Icon"`
+#### Outlined button example
 
+```html
+ <button class="mdc-button--outlined">
+  <span class="mdc-button__label">Button</span>
+</button>
+```
 
-### \[Component section\]
-Divide the component API into categories according to its TOC on its corresponsoding material.io/components page. Following a similar outline will help cross-link the pages between the design documents and the developer pages. You can skip **Theming** and **Specs** sections unless the component APIs deal specifically with either.
+### Contained (raised) button
 
-For example [buttons](material.io/components/buttons/) is divided into the following 3rd tier sections based on its variants:
+The contained button is an elevated button with a background color in `colorPrimary` and text color in `colorOnPrimary`. This should be used for important, final actions that complete a flow, like ‘Save’ or ‘Confirm’. This style is the default and will be used if no style attribute is specified for a MaterialButton.
 
-* Text button
-* Outlined button
-* Contained button
-* Toggle button
+<img src="images/ios-contained.gif">
+
+#### Contained button example
+
+```html
+ <button class="mdc-button--elevated">
+  <span class="mdc-button__label">Button</span>
+</button>
+```
 
 
-Whereas [cards](https://material.io/components/cards/) is divided into:
-
-* Behavior
-* Actions
-* Card collections
-
-
-Each section should have a 3rd tier header. Within each section, there should be a table that contains:
-* an image of the section topic
-* a general description
-* classes, parameters, enums related to the section
-* links the applicable API(s) if there any specific to the section. 
-
-
-If possible, each section should have its own example(s) with code snippets/settings relevant to the section and an image showing what the code could generate.
-
-**Example: iOS button**
-
-> 
-> ### iOS Text button
-> <img src="/docs/text-button-usage.png" alt="example text button image">
->
-> 
->
-> Attribute | Attribute value | Element description 
-> ---|---|---
->  underlyingColorHint | hex (?) |Determines a button's background color and surrounding area. 
->
-> #### Text button example
-> **Swift**
-> ```swift
-> let button = MCDButton()
-> ```
-> **Objective-C**
-> ```obj-c
-> MDCButton *button = [[MDCButton alloc] init];
-> ```
->
-> ### iOS Outlined button
-> ...
->
-> ### iOS Contained button
-> ...
-> ### iOS Toggle button
-> ...
-
-
-
-**Example: Android Button**
-
-> ### Android text button
->
-> <img src="/docs/text-button-usage.png" alt="example text button image">
-> The `TextButton` style has a transparent background with colored text. Text buttons are used for low-priority actions, especially when presenting multiple options.
->
-> Attribute | Attribute value | Element description
-> ---|---|---
-> android:id | `"@+id/material_text_button"` | 
-> style | `"@style/Widget.MaterialComponents.Button.TextButton"` | 
-> android:layout_width | `"wrap_content" ` |
-> android: layout_height | `"wrap_content"` |
-> android:text | `"@string/text_button_label_enabled"`| 
->
-> #### Android text button example
-> ```xml
->  <com.google.android.material.button.MaterialButton
->    android:id="@+id/material_text_button"
->    style="@style/Widget.MaterialComponents.Button.TextButton"
->    android:layout_width="wrap_content"
->    android:layout_height="wrap_content"
->    android:text="@string/text_button_label_enabled"/>
->```
->
-> ...
->
-
-   
 ## Example: \[Describe a way to use the Component\]
-* What functions/objects does it use?
-* How does the example use the objects/functions?
-* Are there any special settings/options used in this example, and why?
-* Provide an image of what the example could produce. Mention any themes/settings used.
+
+<button class="mdc-button">
+  <span class="mdc-button__label">Button</span>  
+</button>
 
 <details>
   <summary><b>Click to View Examples without Steps</b></summary>
-  
+
   Describe the example and its components, including specific settings and instructions.
-  
+
   > ### Example: Add a contained (filled) and elevated button
   > The following code adds a contained and elevated button to your app. Your theme's `colorPrimary` is the default background color and your theme's `colorOnPrimary` is the default text color.
   > <img src="/docs/contained-button-usage.png" alt="example of a filled an elevated button image">
@@ -185,14 +176,14 @@ If possible, each section should have its own example(s) with code snippets/sett
   >      android:enabled="false"
   >      android:text="@string/button_label_disabled"/>
   >  ```
-  
+
 </details>
-  
+
 <details>
   <summary><b>Click to View Examples with Steps</b></summary>
-  
+
   If the example entails multiple steps, use a numbered list for each step. Break out iny installation/importation steps into its own list.
- 
+
  List the steps to use the compnent. Include any installation/importation instructions in a separate list.
 > ### Add a themed text button
 > Follow the steps below to add a text button in your iOS application:
