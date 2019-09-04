@@ -21,7 +21,7 @@ For more information, go to the material.io [Buttons](http://material.io/compone
 1. [Contained button (Filled and raised)](#contained-button)
 1. Toggle button (no example for Android)
 
-<img src="/images/buttons-types-all.png">
+<img src="images/buttons-types-all.png">
 
 
 ## Using `MaterialButton`
@@ -55,7 +55,7 @@ Attribute | Description | Possible values
 
 The .Icon style should only be used for start-gravity icon buttons. If your icon is end-gravity, you cannot use a .Icon style and must instead manually adjust your padding such that the visual adjustment is mirrored.
 
-<img src="/images/buttons-elements-icon-01.png">
+<img src="images/buttons-elements-icon-01.png">
 
 Attribute | Description | Possible values
 ---|---|---
@@ -71,7 +71,7 @@ Attribute | Description | Possible values
 
 The `TextButton` style has a transparent background with text in `colorPrimary`. Text buttons are used for low-priority actions, especially when presenting multiple options.
 
-<img src="/images/text-button-usage.png">
+<img src="images/text-button-usage.png">
 
 Attribute | Attribute value | Element description
 ---|---|---
@@ -94,7 +94,7 @@ Attribute | Attribute value | Element description
 
 The `OutlinedButton` style has a transparent background with text color in `colorPrimary`, and a small stroke around the button. Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
-<img src="/images/outlined-button-usage.png">
+<img src="images/outlined-button-usage.png">
 
  Attribute | Attribute value | Element description
 ---|---|---
@@ -118,7 +118,7 @@ The contained button is an elevated button with a background color in `colorPrim
 
 **Note** Elevated `MaterialButtons` have a shadow that can extend outside the bounds of the button. For this reason, the wrapping parent element should set to `android:clipToPadding="false"` in cases where the button shadow could be clipped by the parent bounds.
 
-<img src="/images/contained-button-usage.png">
+<img src="images/contained-button-usage.png">
 
 Attribute | Attribute value | Element description
 ---|---|---
