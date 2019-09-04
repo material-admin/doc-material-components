@@ -3,21 +3,23 @@ title: "Example Article: iOS Button"
 layout: detail
 section: components
 excerpt: "This is an example of the iOS Button developer article for material.io. It uses the template from [../article-component-template.md]"
-iconId: 
+iconId:
 path: /
-api_doc_root: 
+api_doc_root:
 -->
 
 # Buttons (MDCButtons)
 
-`MDCButtons` is a customizable button component with updated visual styles. This button component has several built-in styles to support diffe/nt levels of emphasis, as typically any UI will contain a few different buttons to indicate different actions, and also supports [floating buttons](link to floating buttons here). 
+`MDCButtons` is a customizable button component with updated visual styles. This button component has several built-in styles to support different levels of emphasis, as typically any UI will contain a few different buttons to indicate different actions, and also supports [floating buttons](link to floating buttons here).
+
+For more information, go to the material.io [Buttons](http://material.io/components/buttons) page.
 
 ## MDCButttons variants
 
 1. [Text button](#text-button)
 1. [Outlined button](#outlined-button)
 1. [Contained button](#contained-button)
-<img src="buttons-types-all.png" alt="Support button variants include text button in the upper left, outlined button in the upper right, contained button in the lower left, and toggle button in the lower right">
+<img src="/images/buttons-types-all.png" alt="Support button variants include text button in the upper left, outlined button in the upper right, contained button in the lower left, and toggle button in the lower right">
 
 
 
@@ -25,7 +27,7 @@ api_doc_root:
 
 The `MDCButtons` component provides a complete implementation of Material Design’s button component.
 
-Before using the `MDCButtons` component to implements its variants you must install. In your source files import the component, and then apply your theme:
+Before using the `MDCButtons` component to implement its variants you must install the component. Then you must import the component into your source files:
  1. Install `MDCButtons`
      * Use CocoaPods to install `MDCButtons`
        1. Add the following to your `Podfile`:
@@ -39,12 +41,12 @@ Before using the `MDCButtons` component to implements its variants you must inst
  1. Import `MDCButtons` and MDC buttons theming and initialize `MDCButtons` using `alloc`/`init`. Initialize your theme  before applying it to your button.
 
     **Note** For more information about themes, go to the [Theming page](https://material.io/develop/ios/components/theming/) for iOS.
-       
+
        **Swift**
        ```swift
        import MaterialComponents.MaterialButtons
        import MaterialComponents.MaterialButtons_Theming
-       ...
+       /*...*/
        let <local theme name> = <theme name>
        let button = MDCButton()
        ```
@@ -52,7 +54,7 @@ Before using the `MDCButtons` component to implements its variants you must inst
        ```objc
        #import "MaterialButtons.h"
        #import <MaterialComponentsBeta/MaterialButtons+Theming.h>
-       ...
+       /*...*/
        <theme name> *<local theme name> = [[<theme name> alloc] init];       
        MDCButton *button = [[MDCButton alloc] init];
        ```
@@ -60,6 +62,7 @@ Before using the `MDCButtons` component to implements its variants you must inst
   To help ensure your buttons are accessible to as many users as possible, please
   be sure to review the following recommendations:
     * Set an appropriate [`accessibilityLabel`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) value if your button does not have a title or only have an icon.
+
         **Objective-C**
         ```objc
         button.accessibilityLabel = @"Create";
@@ -71,11 +74,15 @@ Before using the `MDCButtons` component to implements its variants you must inst
 
 ### Related APIs
 
+* [Material Design guidelines: Buttons](https://material.io/go/design-buttons)
+
 #### MDCButton classes
 
-* [Material Design guidelines: Buttons](https://material.io/go/design-buttons)
-* [MDCRaisedButton](https://material.io/components/ios/catalog/buttons/api-docs/Classes.html#/c:objc(cs)MDCRaisedButton)
 * [MDCButton](https://material.io/components/ios/catalog/buttons/api-docs/Classes/MDCButton.html)
+
+----------------------
+**Note to developers:** Is there a detailed list of available class properties and a complete example of button implementation? The API docs don't appear to have a complete description of what appear to be properties (e.g. inkColor, inkStyle, etc. aren't defined)
+---------------------
 
 #### MDCButton enumerations
 * [Enumerations](material.io/components/ios/catalog/buttons/api-docs/Enums.html)
@@ -86,7 +93,7 @@ Before using the `MDCButtons` component to implements its variants you must inst
 
 The `TextButton` style has a transparent background with text in `colorPrimary`. Text buttons are used for low-priority actions, especially when presenting multiple options.
 
-<img src="ios-text-button.gif" alt="animated gif of an iOS text button">
+<img src="/images/ios-text-button.gif" alt="animated gif of an iOS text button">
 
 **Swift**
 ```swift
@@ -102,7 +109,10 @@ MDCButton *button = [[MDCButton alloc] init];
 
 
 #### Text button example using [MDCContainerScheme](https://github.com/material-components/material-components-ios/tree/stable/components/schemes/Container) theme
-
+-----------
+Note to developers:
+The current examples appear to be fragmentary. Are there other properties that need to be declared/set, or can a user copy/paste the examples to use in their own code?
+------------
 **Swift**
 
 ```swift
@@ -129,14 +139,26 @@ MDCButton *button = [[MDCButton alloc] init];
 
 The `OutlinedButton` style has a transparent background with text color in `colorPrimary`, and a small stroke around the button. Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
-<img src="ios-outlined.gif" alt="animated gif of an iOS outlined button">
+<img src="/images/ios-outlined.gif" alt="animated gif of an iOS outlined button">
 
 **Swift**
 ```swift
+import MaterialComponents.MaterialButtons
+import MaterialComponents.MaterialButtons_Theming
+
+let containerScheme = MDCContainerScheme()
+let button = MDCButton()
 button.applyTextTheme(withScheme: containerScheme)
 ```
 **Objective-C**
 ```objc
+
+#import "MaterialButtons.h"
+#import <MaterialComponentsBeta/MaterialButtons+Theming.h>
+
+MDCContainerScheme *containerScheme = [[MDCContainerScheme alloc] init];
+MDCButton *button = [[MDCButton alloc] init];
+
 [self.button applyTextThemeWithScheme:self.containerScheme];
 ```
 
@@ -162,15 +184,23 @@ MDCButton *button = [[MDCButton alloc] init];
 The contained button is an elevated button with a background color in `colorPrimary` and text color in `colorOnPrimary`. This should be used for important, final actions that complete a flow, like ‘Save’ or ‘Confirm’. This style is the default and will be used if no style attribute is specified for a `MaterialButton`.
 
 
-<img src="ios-contained.gif" alt="animated gif of an iOS contained button">
+<img src="/images/ios-contained.gif" alt="animated gif of an iOS contained button">
 
 **Swift**
 ```swift
+import MaterialComponents.MaterialButtons
+import MaterialComponents.MaterialButtons_Theming
+
+let button = MDCButton()
 button.applyContainedTheme(withScheme: containerScheme)
 ```
 
 **Objective-C**
 ```objc
+#import <MaterialComponents/MaterialButtons.h>
+#import <MaterialComponentsBeta/MaterialButtons+Theming.h>
+
+MDCButton *button = [[MDCButton alloc] init];
 [self.button applyContainedThemeWithScheme:self.containerScheme];
 ```
 
