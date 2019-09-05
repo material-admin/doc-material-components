@@ -8,23 +8,29 @@ path: /
 api_doc_root:
 @import "@material/button/mdc-button";
 -->
-# Buttons (`mdc-buttons`)
+# Buttons (`mdc-button` and `mdc-icon-button`)
 
-`mdc-buttons` is a customizable button component with updated visual styles. This button component has several built-in styles to support different levels of emphasis, as typically any UI will contain a few different buttons to indicate different actions.
+The buttons component for the material.io web platform consists of two implementations:
+* `mdc-button` is a customizable button component with updated visual styles. This button component has several built-in styles to support different levels of emphasis, as typically any UI will contain a few different buttons to indicate different actions.
+* `mdc-icon-button` is a variant of `mdc-button` that allows users to select and toggle a button from a group of buttons with a single tap.
 
 For more information on the buttons component, go to the material.io [Buttons](http://material.io/components/buttons) page.
 
-## `mcd-buttons` variants
+## [`mdc-button` variants](#using-mdc-button)
 
-1. [Text (flat) button](#text-button): Text buttons are typically used for less-pronounced actions, including those located in dialogs and in cards. In cards, text buttons help maintain an emphasis on card content.
-1. [Contained (raised) button](#contained-button): Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
+* [Text (flat) button](#text-button)
+* [Outlined button](#outlined-buton)
+* [Contained (raised) button](#contained-raised-button)
 
-<img src="images/buttons-types-all.png">
+## [`mdc-icon-button`](#using-mdc-icon-button)
+* [Toggle (icon) button](#toggle-icon-button)
+
+<img src="images/buttons-types-all.png" title="Image showing 4 different button types: 1. text button, 2. outlined button, 3. contained button, 4, toggle button">
 
 
-## Using `mdc-buttons`
+## Using `mdc-button`
 
-The `mdc-buttons` component provides a complete implementation of Material Design’s button component.
+The `mdc-button` component provides an implementation of Material Design’s button component without the toggle capability.
 
 ### Install `mcd-button`
 Install the `mdc-button` component before including it in your source.
@@ -33,7 +39,7 @@ Install the `mdc-button` component before including it in your source.
 npm install @material/buttons
 ```
 ### Add a theme (style)
-The `mdc-buttons` component works with themes (styles). Import a style into your stylesheet to apply it to your website, including buttons:
+The `mdc-button` component works with themes (styles). Import a style into your stylesheet to apply it to your website, including buttons:
 
 ```css
 @import "@material/button/mdc-button";
@@ -47,9 +53,9 @@ import {MDCRipple} from '@material/ripple';
 const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
 ```
 
-### Add icons to buttons
+### Add an icon to `mdc-button`
 
-You can add icons to your buttons.
+Add an icon to your `mdc-button` instance using the following steps:
 
 1. In your HTML file, reference the font library you would like to use (we recommend the [Material Icons](https://material.io/tools/icons/) from Google Fonts):
     ```HTML
@@ -148,75 +154,95 @@ Contained buttons are high-emphasis, distinguished by their use of elevation and
 </button>
 ```
 
+## Using `mdc-icon-button`
 
-## Example: \[Describe a way to use the Component\]
+The `mdc-icon-button` component provides an implementation of Material Design’s [toggle button](https://material.io/components/buttons/#toggle-button) with icons.
 
-<button class="mdc-button">
-  <span class="mdc-button__label">Button</span>  
-</button>
+Toggle buttons can be used to group related options. To emphasize groups of related toggle buttons, a group should share a common container.
+<img src="images/button-toggle.png">
+<img src="images/button-icon-toggle.png">
 
-<details>
-  <summary><b>Click to View Examples without Steps</b></summary>
+### Install `mdc-icon-button`
+Install the `icon-button` before including it in your source.
+    ```bash
+    npm install @material/icon-button
+    ```
+### Add a theme (style)
+The `mdc-icon-button` component works with themes (styles). Import a style into your stylesheet to apply it to your website, including icon buttons:
+    ```js
+    @import "@material/icon-button/mdc-icon-button";
+    ```
 
-  Describe the example and its components, including specific settings and instructions.
+### Import JavaScript button effects
+You can also add a JavaScript ripple effect (see [MDC Ripple](https://github.com/material-components/material-components-web/blob/master/packages/mdc-ripple)) to your icon buttons by importing then instantiating `MCDRipple`. See the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md) for more information on importing JavaScript.
 
-  > ### Example: Add a contained (filled) and elevated button
-  > The following code adds a contained and elevated button to your app. Your theme's `colorPrimary` is the default background color and your theme's `colorOnPrimary` is the default text color.
-  > <img src="/docs/contained-button-usage.png" alt="example of a filled an elevated button image">
-  >   ```xml
-  >    <com.google.android.material.button.MaterialButton
-  >      android:id="@+id/material_button"
-  >      android:layout_width="wrap_content"
-  >      android:layout_height="wrap_content"
-  >      android:text="@string/button_label_enabled"/>
-  >  ```
-  >  ### Example: Add a contained (filled) and unlevated button
-  > The following code adds a contained and unelevated button. Your theme's `colorPrimary` is the default background color and your theme's `colorOnPrimary` is the default text color.
-  >  ```xml
-  >    <com.google.android.material.button.MaterialButton
-  >      android:id="@+id/disabled_material_button"
-  >      android:layout_width="wrap_content"
-  >      android:layout_height="wrap_content"
-  >      android:enabled="false"
-  >      android:text="@string/button_label_disabled"/>
-  >  ```
+```js
+import {MDCRipple} from '@material/ripple';
 
-</details>
+const iconButtonRipple = new MDCRipple(document.querySelector('.mdc-icon-button'));
+iconButtonRipple.unbounded = true;
+```
+### Add an icon to an `mdc-icon-button` instance
 
-<details>
-  <summary><b>Click to View Examples with Steps</b></summary>
+Add an icon to your `mdc-icon-button` instance using the following steps:
 
-  If the example entails multiple steps, use a numbered list for each step. Break out iny installation/importation steps into its own list.
+1. In your HTML file, reference the font library you would like to use (we recommend the [Material Icons](https://material.io/tools/icons/) from Google Fonts):
+    ```HTML
+    <head>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    ```
+1. Include the `mcd-icon-button__icon` class inside your icon button element.
+  You can set the default `pressed` state with the attribute `aria-pressed`. If a toggle button default is `pressed` (`aria-pressed="true"`), you will need to add `mdc-icon-button__icon--on` to the to the class `mdc-icon-button__icon`.
 
- List the steps to use the compnent. Include any installation/importation instructions in a separate list.
-> ### Add a themed text button
-> Follow the steps below to add a text button in your iOS application:
-> <img src="/docs/ios-text-button.gif" alt="animated gif of a text button">
->
-> 1. Add the following to your `Podfile`:
->   ```bash
->   pod 'MaterialComponents/Buttons'
->   ```
-> 2. Run the `install` command:
->   ```bash
->    pod install
->    ```
-> 3. In your source file, you will need to:
->    * import `MaterialButtons`
->      ```swift
->        import MaterialComponents.MaterialButtons
->      ```
->    * import `MaterialButtons_Theming`
->        ```swift
->        import MaterialComponents.MaterialButtons_Theming
->        ```
->    * initialize the button
->        ```swift
->        let button = MDCButton()
->        ```
->    * apply a theme to the text button
->        ```swift
->        button.applyTextTheme(withScheme: containerScheme)
->        ```
+    **Example using [Material Icons](https://material.io/tools/icons/)**
+    ```HTML
+    <button id="add-to-favorites"
+      class="mdc-icon-button"
+      aria-label="Add to favorites"
+      aria-hidden="true"
+      aria-pressed="false">
+     <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">favorite</i>
+     <i class="material-icons mdc-icon-button__icon">favorite_border</i>
+    </button>
+    ```
+    **Example using SVG Icons**
+    ```html
+    <button id="star-this-item"
+       class="mdc-icon-button mdc-icon-button--on"
+       aria-label="Unstar this item"
+       aria-hidden="true"
+       aria-pressed="true">
+       <svg class="mdc-icon-button__icon">
+         /*...*/
+       </svg>
+       <svg class="mdc-icon-button__icon mdc-icon-button__icon--on">
+         /*...*/
+      </svg>
+    </button>
+    ```
+    **Example using toggle button with an image**
+    ```HTML
+    <button id="star-this-item"
+      class="mdc-icon-button mdc-icon-button--on"
+      aria-label="Unstar this item"
+      aria-hidden="true"
+      aria-pressed="true">
+      <img src="" class="mdc-icon-button__icon"/>
+      <img src="" class="mdc-icon-button__icon mdc-icon-button__icon--on"/>
+    </button>
+    ```
 
-</details>
+## Related APIs
+
+[Source code](https://github.com/material-components/material-components-web/tree/master/packages/mdc-icon-button): GitHub source repository</br>
+[Demo site](https://material-components.github.io/material-components-web-catalog/#/component/icon-button): You can use this site to see examples of toggled icon buttons.
+
+**CSS classes**
+
+CSS Class |	Description
+---|---
+mdc-icon-button |	Mandatory.
+mdc-icon-button--on	| Apply this class to the root element to indicate if the icon button toggle is in the “on” state.
+mdc-icon-button__icon	| Apply this class to each icon element for the icon button toggle.
+mdc-icon-button__icon--on	| Apply this class to an icon element to indicate the toggle button icon that represents the “on” icon.
