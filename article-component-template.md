@@ -160,7 +160,10 @@ If possible, each section should have its own example(s) with code snippets/sett
 > ### Android text button
 >
 > <img src="docs/images/text-button-usage.png" alt="example text button image">
-> The `TextButton` style has a transparent background with colored text. Text buttons are used for low-priority actions, especially when presenting multiple options.
+> Text buttons are typically used for less-pronounced actions, including those located:
+>     * In dialogs
+>     * In cards
+> In cards, text buttons help maintain an emphasis on card content.
 >
 > Attribute | Attribute value | Element description
 > ---|---|---
