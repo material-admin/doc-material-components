@@ -14,19 +14,13 @@ api_doc_root:
 
 For more information, go to the material.io [Buttons](http://material.io/components/buttons) page.
 
-## MDCButttons variants
+## MDCButtons variants
 
-<<<<<<< HEAD
-* [Text button](#text-button): Text buttons are typically used for less-pronounced actions, including those located in dialogs and in cards. In cards, text buttons help maintain an emphasis on card content.
-* [Outlined button](#outlined-button): Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
-* [Contained button](#contained-button): Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
+* [Text button](#text-button)
+* [Outlined button](#outlined-button)
+* [Contained button](#contained-button)
 
 
-=======
-1. [Text button](#text-button)
-1. [Outlined button](#outlined-button)
-1. [Contained button](#contained-button)
->>>>>>> a58f3af7ec0370cb3bf39eda163ec241597cde7d
 <img src="images/buttons-types-all.png" alt="Support button variants include text button in the upper left, outlined button in the upper right, contained button in the lower left, and toggle button in the lower right">
 
 
@@ -99,7 +93,10 @@ Before using the `MDCButtons` component to implement its variants you must insta
 
 ### Text button
 
-The `TextButton` style has a transparent background with text in `colorPrimary`. Text buttons are used for low-priority actions, especially when presenting multiple options.
+Text buttons are typically used for less-pronounced actions, including those located:
+ * In dialogs
+ * In cards
+In cards, text buttons help maintain an emphasis on card content.
 
 <img src="images/ios-text-button.gif" alt="animated gif of an iOS text button">
 
@@ -145,7 +142,7 @@ MDCButton *button = [[MDCButton alloc] init];
 
 ### Outlined button
 
-The `OutlinedButton` style has a transparent background with text color in `colorPrimary`, and a small stroke around the button. Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
+Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
 <img src="images/ios-outlined.gif" alt="animated gif of an iOS outlined button">
 
@@ -189,8 +186,7 @@ MDCButton *button = [[MDCButton alloc] init];
 [self.button applyTextThemeWithScheme:self.containerScheme];
 ```
 ### Contained button
-The contained button is an elevated button with a background color in `colorPrimary` and text color in `colorOnPrimary`. This should be used for important, final actions that complete a flow, like ‘Save’ or ‘Confirm’. This style is the default and will be used if no style attribute is specified for a `MaterialButton`.
-
+Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
 <img src="images/ios-contained.gif" alt="animated gif of an iOS contained button">
 

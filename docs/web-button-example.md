@@ -99,7 +99,11 @@ You can add icons to your buttons.
 
 ### Text (flat) button
 
-The text button style has a transparent background with text in `colorPrimary`. Text buttons are used for low-priority actions, especially when presenting multiple options.
+Text buttons are typically used for less-pronounced actions, including those located:
+* In dialogs
+* In cards
+In cards, text buttons help maintain an emphasis on card content.
+
 
 <img src="images/ios-text-button.gif">
 
@@ -118,7 +122,7 @@ span | `mdc-button__label` | applies the text to the button
 
 ### Outlined button
 
-The outlined button has a transparent background with the text color in `colorPrimary` and a small stroke around the button. Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
+Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
 <img src="images/ios-outlined.gif">
 
@@ -132,7 +136,7 @@ The outlined button has a transparent background with the text color in `colorPr
 
 ### Contained (raised) button
 
-The contained button is an elevated button with a background color in `colorPrimary` and text color in `colorOnPrimary`. This should be used for important, final actions that complete a flow, like ‘Save’ or ‘Confirm’. This style is the default and will be used if no style attribute is specified for a MaterialButton.
+Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
 <img src="images/ios-contained.gif">
 

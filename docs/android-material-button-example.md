@@ -40,25 +40,6 @@ The `MaterialButton` component provides a complete implementation of Material De
    style="@style/widget.MaterialComponents.<style value>"
 />
 ```
-
-#### Material button toggle element
-
-The toggle button group lines up a group of child button elements into checkable buttons. We recommend using the outlined button type for the child buttons.
-
-```xml
-<com.google.android.material.button.MaterialButtonToggleGroup
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/toggle_button_group"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-    /*
-    Insert child button elements here
-    */
-  </com/google.android.material.button.MaterialButtonToggleGroup>
-```
-
-Go to the Android Material Button Toggle Group [class definition](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button/MaterialButtonToggleGroup.java) and [class overview](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup) for more details.
-
 #### Material button attributes without icons
 
 Attribute | Description | Possible values
@@ -88,7 +69,12 @@ Attribute | Description | Possible values
 
 ### Text button
 
-The `TextButton` style has a transparent background with text in `colorPrimary`. Text buttons are used for low-priority actions, especially when presenting multiple options.
+Text buttons are typically used for less-pronounced actions, including those located:
+* In dialogs
+* In cards
+In cards, text buttons help maintain an emphasis on card content.
+
+
 
 <img src="images/text-button-usage.png">
 
@@ -111,7 +97,7 @@ Attribute | Attribute value | Element description
 ```
 ### Outlined button
 
-The `OutlinedButton` style has a transparent background with text color in `colorPrimary`, and a small stroke around the button. Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
+Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
 <img src="images/outlined-button-usage.png">
 
@@ -133,7 +119,7 @@ The `OutlinedButton` style has a transparent background with text color in `colo
     android:text="@string/outlined_button_label_enabled"/>
 ```
 ### Contained button
-The contained button is an elevated button with a background color in `colorPrimary` and text color in `colorOnPrimary`. This should be used for important, final actions that complete a flow, like ‘Save’ or ‘Confirm’. This style is the default and will be used if no style attribute is specified for a `MaterialButton`.
+Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
 **Note** Elevated `MaterialButtons` have a shadow that can extend outside the bounds of the button. For this reason, the wrapping parent element should set to `android:clipToPadding="false"` in cases where the button shadow could be clipped by the parent bounds.
 
@@ -180,42 +166,7 @@ android:text | `"@string/text_button_label_enabled"` |
 ```
 ### Toggle button
 
-The toggle button (also called a material button toggle group, toggle button group, or a segmented selector) takes a group of child buttons and formats them to be clickable and to have cohesive styling. You can also specify that toggling a specific child button to indicate a default.
-
-<img src="images/button-toggle.png">
-
-#### Toggle button examples
-
-```xml
-<com.google.android.material.button.MaterialButtonToggleGroup
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/toggle_button_group"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-
-    <com.google.android.material.button.MaterialButton
-        style="?attr/materialButtonOutlinedStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_label_private"/>
-    <com.google.android.material.button.MaterialButton
-        style="?attr/materialButtonOutlinedStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_label_team"/>
-    <com.google.android.material.button.MaterialButton
-        style="?attr/materialButtonOutlinedStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_label_everyone"/>
-    <com.google.android.material.button.MaterialButton
-        style="?attr/materialButtonOutlinedStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_label_custom"/>
-
-</com.google.android.material.button.MaterialButtonToggleGroup>
-```
+The toggle button (also called a material button toggle group, toggle button group, or a segmented selector)
 
 
 
