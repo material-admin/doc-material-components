@@ -145,7 +145,7 @@ Whereas [cards](https://material.io/components/cards/) is divided into:
 * Card collections
 
 
-Each section should have a 3rd tier header. Within each section, there should be a table that contains:
+Each section should have a 3rd tier header. Add 1-2 sentences from the material.io website that describes when and how to use the component. Within each section, there should be a table that contains:
 * an image of the section topic
 * a general description
 * classes, parameters, enums related to the section
