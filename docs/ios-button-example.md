@@ -16,11 +16,17 @@ For more information, go to the material.io [Buttons](http://material.io/compone
 
 ## MDCButttons variants
 
+<<<<<<< HEAD
 * [Text button](#text-button): Text buttons are typically used for less-pronounced actions, including those located in dialogs and in cards. In cards, text buttons help maintain an emphasis on card content.
 * [Outlined button](#outlined-button): Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 * [Contained button](#contained-button): Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
 
+=======
+1. [Text button](#text-button)
+1. [Outlined button](#outlined-button)
+1. [Contained button](#contained-button)
+>>>>>>> a58f3af7ec0370cb3bf39eda163ec241597cde7d
 <img src="images/buttons-types-all.png" alt="Support button variants include text button in the upper left, outlined button in the upper right, contained button in the lower left, and toggle button in the lower right">
 
 

@@ -15,25 +15,24 @@ https://spec.googleplex.com/m2-spec-guide/authoring-content/component-article-te
 The API documentation formatting is roughly based on https://developers.google.com/android-publisher/api-ref/inappproducts
 
 Replace all instances of '[]' with your content (such as the component name you usually use)
--->
 
-**Reminder** This is a template. Delete this paragraph and update and review all information request within the comments.
+Replace all uses of block quotes with relevant content.
+-->
 
 # \[Canonical Component Name\] (Commonly used Component Name)
 
-example Android Buttons title:
-
+> **example Android Buttons title:**
 > # Buttons (Material Buttons)
 
-Add a concise (1-2 sentence) description of the component here. The corresponding design document should have a full description.
+Add a concise (1-2 sentence) description of the component here starting with the one-line definition from the design/guidance page. The corresponding design document should have a full description.
 
 Add a link to the corresponding design page.
 For example:
 
-> Buttons allow users to take actions and make choices using a tap to press the button.
+> Buttons allow users to take actions and make choices with a single tap.
 > Buttons can be customized to meet your style requirements.
 >
-> [Buttons](https://material.io/components/buttons/#usage):
+> [Buttons](https://material.io/components/buttons/#usage)
 
 ## \[Component variants\]
 
@@ -41,7 +40,7 @@ For example:
 
 Add a 1-2 sentence description of when to use the component.
 
-If there are component variants, list them here and link to local anchor. Use the list described in the material.io/components pages. For each variant, add a 1-2 sentence description of when to use the variant.
+If there are component variants, list them here and link to the local anchor link for its section. Use the list described in the material.io/components pages and the 1-2 sentence description of the component variant.
 
 
 > * [Text button](#ios-text-button): Text buttons are typically used for less-pronounced actions, including those located in dialogs and in cards. In cards, text buttons help maintain an emphasis on card content.
@@ -49,7 +48,7 @@ If there are component variants, list them here and link to local anchor. Use th
 > * [Contained button](#ios-contained-button): Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 > * [Toggle button](#ios-toggle-button): Toggle buttons can be used to group related options. To emphasize groups of related toggle buttons, a group should share a common container.
 
-Insert any related graphics. **Don't say what you can show**
+Insert any related graphics: show instead of say.
 
 example images from Buttons:
 > <img src="docs/images/buttons-types-all.png" alt="Support button variants include text button in the upper left, outlined button in the upper right, contained button in the lower left, and toggle button in the lower right">
@@ -65,9 +64,7 @@ If there are any instructions on using the component that applies to all compone
 
 For example, for the iOS buttons component:
 
-> The `MDCButtons` component provides a complete implementation of Material Design’s button component.
->
-> Before using the `MDCButtons` component to implements its variants you must install. In your source files import the component, and then apply your theme:
+> Before using the `MDCButtons` component to implement its variants you must install `MCDButtons`. In your source files import the component, and then apply your theme:
 >  1. Install `MDCButtons`
 >     * Use CocoaPods to install `MDCButtons`
 >       1. Add the following to your `Podfile`:
@@ -99,9 +96,8 @@ For example, for the iOS buttons component:
 >       MDCButton *button = [[MDCButton alloc] init];
 >       ```
 > 1. Apply accessibility settings
->  To help ensure your buttons are accessible to as many users as possible, please
->  be sure to review the following recommendations:
->    * Set an appropriate [`accessibilityLabel`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) value if your button does not have a title or only have an icon.
+>    To help make your buttons usable to as many users as possible:
+>    * Set an appropriate [`accessibilityLabel`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) value if your button does not have a title or only has an icon.
 >        **Objective-C**
 >        ```objc
 >        button.accessibilityLabel = @"Create";
@@ -113,7 +109,7 @@ For example, for the iOS buttons component:
 
 ### Related APIs
 
-If relevant, insert all the related component code and link to its API.
+If relevant, insert all the related component code, and link to its API.
 
 For example, from the [iOS Button component](https://material.io/components/ios/catalog/buttons/api-docs/Classes.html#/c:objc(cs)MDCRaisedButton):
 
@@ -126,18 +122,18 @@ For example, from the [iOS Button component](https://material.io/components/ios/
 >
 > #### Properties
 > <details>
-   >   <summary><pre>inkStyle</pre></summary>
-   > stuff
-   > </details>
->   <details>
-   > <summary><pre>inkColor</pre></summary>
-   > stuff
->   </detalis>
+>   <summary><pre>inkStyle</pre></summary>
+> This is a description of the inkStyle property for iOS.
+> </details>
+> <details>
+>   <summary><pre>inkColor</pre></summary>
+>     This is a description of the inkColor property for iOS.
+> </details>
 
 ### \[Component section\]
-Divide the component API into categories according to its TOC on its corresponding material.io/components page. Following a similar outline will help cross-link the pages between the design documents and the developer pages. You can skip **Theming** and **Specs** sections unless the component APIs deal specifically with either.
+Divide the component API into categories according to the TOC on its corresponding material.io/components page. Following a similar outline will help cross-link the pages between the design documents and the developer pages. You can skip **Theming** and **Specs** sections unless the component APIs deal specifically with either.
 
-For example [buttons](material.io/components/buttons/) is divided into the following 3rd tier sections based on its variants:
+For example [buttons](material.io/components/buttons/) is divided into the following 3rd tier (`###` header) sections based on its variants:
 
 * Text button
 * Outlined button
@@ -156,7 +152,7 @@ Each section should have a 3rd tier header. Within each section, there should be
 * an image of the section topic
 * a general description
 * classes, parameters, enums related to the section
-* links the applicable API(s) if there any specific to the section.
+* links to the applicable API(s) if there are any specific to the section.
 
 
 If possible, each section should have its own example(s) with code snippets/settings relevant to the section and an image showing what the code could generate. All code samples should be self-contained easy to cut and paste into a user's existing code and be expected to work.
@@ -212,7 +208,7 @@ If possible, each section should have its own example(s) with code snippets/sett
   >      android:layout_height="wrap_content"
   >      android:text="@string/button_label_enabled"/>
   >  ```
-  >  ### Example: Add a contained (filled) and unlevated button
+  >  ### Example: Add a contained (filled) and unelevated button
   > The following code adds a contained and unelevated button. Your theme's `colorPrimary` is the default background color and your theme's `colorOnPrimary` is the default text color.
   >  ```xml
   >    <com.google.android.material.button.MaterialButton
@@ -228,7 +224,7 @@ If possible, each section should have its own example(s) with code snippets/sett
 <details>
   <summary><b>Click to View Examples with Steps</b></summary>
 
-  If the example entails multiple steps, use a numbered list for each step. Break out iny installation/importation steps into its own list.
+  If the example entails multiple steps, use a numbered list for each step. Break out any installation/importation steps into its own list.
 
  List the steps to use the component. Include any installation/importation instructions in a separate list.
 > ### Add a themed text button
