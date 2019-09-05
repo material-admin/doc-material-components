@@ -38,15 +38,12 @@ For example:
 
 ### When to use
 
-Add a 1-2 sentence description of when to use the component.
+If there are component variants, list them here and link to the local anchor link for its section.
 
-If there are component variants, list them here and link to the local anchor link for its section. Use the list described in the material.io/components pages and the 1-2 sentence description of the component variant.
-
-
-> * [Text button](#ios-text-button): Text buttons are typically used for less-pronounced actions, including those located in dialogs and in cards. In cards, text buttons help maintain an emphasis on card content.
-> * [Outlined button](#ios-outlined-button): Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
-> * [Contained button](#ios-contained-button): Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
-> * [Toggle button](#ios-toggle-button): Toggle buttons can be used to group related options. To emphasize groups of related toggle buttons, a group should share a common container.
+> * [Text button](#ios-text-button)
+> * [Outlined button](#ios-outlined-button)
+> * [Contained button](#ios-contained-button)
+> * [Toggle button](#ios-toggle-button)
 
 Insert any related graphics: show instead of say.
 
