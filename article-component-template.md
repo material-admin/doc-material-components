@@ -191,7 +191,8 @@ If possible, each section should have its own example(s) with code snippets/sett
 * What functions/objects does it use?
 * How does the example use the objects/functions?
 * Are there any special settings/options used in this example, and why?
-* Provide an image of what the example could produce. Mention any themes/settings used.
+* Provide an image of what the example could produce. Mention any themes/settings used. Ideally each example will have an image or video showing a render of code example.
+
 
 <details>
   <summary><b>Click to View Examples without Steps</b></summary>
