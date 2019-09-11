@@ -26,7 +26,8 @@ Replace all uses of block quotes with relevant content.
 
 Add a concise (1-2 sentence) description of the component here starting with the one-line definition from the design/guidance page. The corresponding design document should have a full description.
 
-Add a link to the corresponding design page.
+Add a link to the corresponding design page that the component (helps) implement.
+
 For example:
 
 > Buttons allow users to take actions and make choices with a single tap.
@@ -47,6 +48,8 @@ If there are component variants, list them here and link to the local anchor lin
 
 Insert any related graphics: show instead of say.
 
+<img src="" alt="insert a desription of the graphic and any variant of the principle component variant it implements.">
+
 example images from Buttons:
 > <img src="docs/images/buttons-types-all.png" alt="Support button variants include text button in the upper left, outlined button in the upper right, contained button in the lower left, and toggle button in the lower right">
 
@@ -61,6 +64,8 @@ If there are any instructions on using the component that applies to all compone
 
 For example, for the iOS buttons component:
 
+> ### Install `mcd-button`
+>
 > Before using the `MDCButtons` component to implement its variants you must install `MCDButtons`. In your source files import the component, and then apply your theme:
 >  1. Install `MDCButtons`
 >     * Use CocoaPods to install `MDCButtons`
@@ -128,7 +133,7 @@ For example, from the [iOS Button component](https://material.io/components/ios/
 > </details>
 
 ### \[Component section\]
-Divide the component API into categories according to the TOC on its corresponding material.io/components page. Following a similar outline will help cross-link the pages between the design documents and the developer pages. You can skip **Theming** and **Specs** sections unless the component APIs deal specifically with either.
+Divide the component API into its variants, preferably as described in the [material.io/components] pages.
 
 For example [buttons](material.io/components/buttons/) is divided into the following 3rd tier (`###` header) sections based on its variants:
 
@@ -154,6 +159,7 @@ Each section should have a 3rd tier header. Add 1-2 sentences from the material.
 
 If possible, each section should have its own example(s) with code snippets/settings relevant to the section and an image showing what the code could generate. All code samples should be self-contained easy to cut and paste into a user's existing code and be expected to work.
 
+<img src="" alt="Insert your graphic showing an screenshot of the described implemented on your platform here. Make sure that the alt description is accurate">
 
 **Example: Android Button**
 
@@ -188,10 +194,11 @@ If possible, each section should have its own example(s) with code snippets/sett
 
 
 ## Example: \[Describe a way to use the Component\]
-* What functions/objects does it use?
-* How does the example use the objects/functions?
-* Are there any special settings/options used in this example, and why?
-* Provide an image of what the example could produce. Mention any themes/settings used. Ideally each example will have an image or video showing a render of code example.
+* Provide an example scenario of how the component might be used. Preferably, chose an example that implements something that resembles one of the design examples for the related [material.io/components] page, such as an [extended floating action button](https://material.io/components/buttons-floating-action-button/#extended-fab)
+    * What functions/objects/methods does it use?
+    * How does the example use the objects/functions?
+    * Are there any special settings/options used in this example, and why?
+* Provide an image of what the example could produce. Mention any themes/settings used. Ideally each example will have an image or video showing a render of code example. <img src="" alt="insert a desription of the graphic and any variant of the principle component variant it implements.">
 
 
 <details>
