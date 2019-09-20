@@ -47,7 +47,7 @@ If there are component variants, list them here and link to the local anchor lin
 
 Insert any related graphics: show instead of say.
 
-<img src="" alt="insert a desription of the graphic and any variant of the principle component variant it implements.">
+<img src="" alt="insert a description of the graphic and any variant of the principle component variant it implements.">
 
 example images from Buttons:
 > <img src="docs/images/buttons-types-all.png" alt="Support button variants include text button in the upper left, outlined button in the upper right, contained button in the lower left, and toggle button in the lower right">
@@ -106,17 +106,6 @@ For example, for the iOS buttons component:
 >        button.accessibilityLabel = "Create"
 >        ```
 
-### Related APIs
-
-Link and list related APIs.
-
-For example, for iOS
-> [MDCRaisedButton](https://material.io/components/ios/catalog/buttons/api-docs/Classes.html#/c:objc(cs)MDCRaisedButton).
-
-For example, for Android
-> * [Material Button](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
-> * [Material Button Toggle Group](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup)
-
 ### \[Component section\]
 Divide the component API into its variants, preferably as described in the [material.io/components] pages.
 
@@ -135,27 +124,38 @@ Whereas [cards](https://material.io/components/cards/) is divided into:
 * Card collections
 
 
-Each section should have a 3rd tier header. Add 1-2 sentences from the material.io website that describes when and how to use the component. Within each section, there should be:
-* Provide example code that implement the platonic ideals described on the [material.io/components] page, such as an [extended floating action button](https://material.io/components/buttons-floating-action-button/#extended-fab)
-* Provide an image of what the example could produce. Mention any themes/settings used. Ideally each example will have a screen capture or video showing a render of code example. <img src="" alt="insert a desription of the graphic and any variant of the principle component variant it implements.">
-* links to the applicable API(s) if there are any specific to the section.
+Each section should have a 3rd tier header. Add 1-2 sentences from the material.io website that describes when and how to use the component.
 
-
-**Example: Android Button**
-
+**Example: Android Text Button**
 > ### Text button
->
-> <img src="" alt="example text button image">
->
-> #### APIs used
-> * [MaterialButton](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
 >
 > Text buttons are typically used for less-pronounced actions, including those located:
 >     * In dialogs
 >     * In cards
 > In cards, text buttons help maintain an emphasis on card content.
 >
-> #### Text button sample code
+>
+#### Example: \[Component Example\]
+
+Each example should have 1-2 sentences to describe the example. The example should include an image rendering whatever sample code is included:
+
+**Example: Android Text Button**
+
+> #### Example: Text button
+>
+> <img src="" alt="example text button image">
+
+##### APIs used
+
+The APIs section should have the following:
+* Links to the applicable API(s) listed from highest level to lowest level
+* Provide example source code that can generate the example in the image. Mention any themes/settings used.
+
+**Example: Android Button**
+
+> #### APIs used
+> * [MaterialButton](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+>
 > ```xml
 >  <com.google.android.material.button.MaterialButton
 >    android:id="@+id/material_text_button"
@@ -167,12 +167,13 @@ Each section should have a 3rd tier header. Add 1-2 sentences from the material.
 >
 > ### Outline button
 >
+> Outline buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
+>
 > <img src="" alt="example outlined button image">
 >
 > #### APIs used
 > * [MaterialButton](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
 >
-> Outline buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 >
 > #### Outline button sample code
 > ```xml
@@ -185,9 +186,10 @@ Each section should have a 3rd tier header. Add 1-2 sentences from the material.
 > ```
 > ### Contained button
 >
+> Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
+>
 > <img src="" alt="example contained button image">
 >
-> Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 >
 > **Note** Elevated `MaterialButtons` have a shadow that can extend outside the bounds of the button. For this reason, the wrapping parent element should set to android:clipToPadding="false" in cases where the button shadow could be clipped by the parent bounds.
 >
