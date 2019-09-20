@@ -197,6 +197,7 @@ Each section should have a 3rd tier header. Add 1-2 sentences from the material.
 >
 > #### Contained button sample code
 > <img src="" alt="example contained button image">
+>
 > ``` xml
 > <com.google.android.material.button.MaterialButton
 >    android:id="@+id/material_button"
@@ -205,8 +206,11 @@ Each section should have a 3rd tier header. Add 1-2 sentences from the material.
 >    android:layout_height="wrap_content"
 >    android:text="@string/button_label_enabled"/>
 > ```
+>
 > <img src="" alt="example contained button image with grid layout">
+>
 > #### Contained button example with wrapping parent element GridLayout
+>
 > ```xml
 > <GridLayout
 >      android:id="@+id/grid"
@@ -226,6 +230,7 @@ Each section should have a 3rd tier header. Add 1-2 sentences from the material.
 >    <Space/>
 >  </GridLayout>
 > ```
+>
 > ### Toggle button
 >
 > The toggle button is a `ViewGroup` that groups together several `MaterialButton`
@@ -233,8 +238,9 @@ Each section should have a 3rd tier header. Add 1-2 sentences from the material.
 > ### APIs Used
 >
 > [MaterialButtonToggleGroup](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup)
+>
 > <img src="" alt="examplebutton image with grid layout">
-
+>
 > #### Toggle button sample code
 >
 > ```

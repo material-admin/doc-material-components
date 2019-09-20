@@ -8,7 +8,7 @@ path: /
 api_doc_root:
 initial_release:
 -->
-<!--initial_release field required with first plotform version supported -->
+<!--initial_release field required with first platform version supported -->
 <!-- this is an article template for the material.io developer site.
 This template is based on the current design article template at
 https://spec.googleplex.com/m2-spec-guide/authoring-content/component-article-template.html
