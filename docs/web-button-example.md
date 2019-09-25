@@ -148,9 +148,7 @@ Contained buttons are high-emphasis, distinguished by their use of elevation and
 
 #### Contained button example
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/w7Ft2ymGmfc?autoplay=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
+<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 56.2493%;"><a href="https://gist.github.com/jweir/2719090" data-iframely-url="//cdn.iframe.ly/bbI0"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
 ```html
  <button class="mdc-button--elevated">
