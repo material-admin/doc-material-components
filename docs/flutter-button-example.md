@@ -164,9 +164,8 @@ ToggleButtons(
 
 #### Toggle button example: Toggle icons on an image background
 
-The following example has toggle icon buttons over background images.
+The following example has toggle icon buttons over a filled background.
 
-<img src="" alt="There is an source available, but the image screenshot does not exist in the API.">
 
 ##### APIs used
 
@@ -174,6 +173,8 @@ The following example has toggle icon buttons over background images.
 [Container](https://api.flutter.dev/flutter/widgets/Container-class.html)
 [Ink](https://api.flutter.dev/flutter/material/Ink-class.html)
 [IconButton](https://api.flutter.dev/flutter/material/IconButton-class.html)
+
+<img src="" alt="There is source available, but the image screenshot does not exist in the article or the API documentation.">
 
 ```dart
 Widget build(BuildContext context) {
