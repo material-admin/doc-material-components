@@ -148,6 +148,8 @@ Contained buttons are high-emphasis, distinguished by their use of elevation and
 
 #### Contained button example
 
+<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 56.2493%;"><a href="https://gist.github.com/jweir/2719090" data-iframely-url="//cdn.iframe.ly/bbI0"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+
 ```html
  <button class="mdc-button--elevated">
   <span class="mdc-button__label">Button</span>
