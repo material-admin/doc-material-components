@@ -109,6 +109,8 @@ For example, for the iOS buttons component:
 ### \[Component section\]
 Divide the component API into its variants, preferably as described in the [material.io/components] pages.
 
+
+
 For example [buttons](material.io/components/buttons/) is divided into the following 3rd tier (`###` header) sections based on its variants:
 
 * Text button
@@ -126,6 +128,8 @@ Whereas [cards](https://material.io/components/cards/) is divided into:
 
 Each section should have a 3rd tier header. Add 1-2 sentences from the material.io website that describes when and how to use the component.
 
+**Important** If your platform does not support a particular variant, EXPLICITLY STATE THAT IT DOESN'T.
+
 **Example: Android Text Button**
 > ### Text button
 >
@@ -134,7 +138,18 @@ Each section should have a 3rd tier header. Add 1-2 sentences from the material.
 >     * In cards
 > In cards, text buttons help maintain an emphasis on card content.
 >
+> ...
 >
+> ### Toggle button
+> Toggle button is divided into two subvariants:
+> * Toggle button group <img src="images/button-toggle.png" alt="Toggle button group example.">
+> * Icon button <img src"images/button-icon-toggle.png" alt="Icon toggle button group example">
+>
+> **Android currently does not support toggle button groups.** If you need a framework for a toggle button group, use \<example framework\>.
+>
+> To add an icon button ...
+
+
 #### Example: \[Component Example\]
 
 Each example should have 1-2 sentences to describe the example. The example should include an image rendering whatever sample code is included:
