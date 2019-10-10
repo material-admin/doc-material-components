@@ -106,33 +106,61 @@ Add an icon to your `mdc-button` instance using the following steps:
 
 Use Sass mixins when you want to customize the look and feel of your buttons. Go to [sass-lang.com](https://sass-lang.com/install) for installation instructions.
 
+Before using Sass mixins for your project you will need to do the following:
+
+* Add the Sass package to your `*.json file` under `devDependencies`:
+```json
+"devDependencies": {
+  "sass": "^1.14.3"
+}
+````
+
+* Add a `.sassrc.js` file to your project directory:
+```js
+
+const path = require("path");
+
+const CWD = process.cwd();
+
+module.exports = {
+  includePaths: [path.resolve(CWD, "node_modules"), path.resolve(CWD, "src")]
+};
+```
+
+* In your `*.scss` file for your application, create an instance of your button with the Sass mixins settings of your choice. For example, if you have a button :
+
+```css
+.button-instance {
+  @include mdc-button-container-fill-color(orange);
+  @include mdc-button-icon-color(green);
+  ...
+}
+```
+
+<img src="images/web-sass-mixins-example.png" alt="Example button instance rendered for a contained button with an orange fill and green icon color">
+
 #### Sass mixins for `mdc-button`
 
 The following mixins are available to customize your `mdc-button` instance.
 
-| Mixin | Description |
-|---|---|
-
+Mixin | Description
+---|---
+`mdc-button-container-fill-color($color)` | Sets the container fill color to the given color.
+`mdc-button-icon-color($color)` | Sets the icon color to the given color.
+`mdc-button-ink-color($color)` | Sets the ink color to the given color, and sets the icon color to the given color unless `mdc-button-icon-color` is also used.
+`mdc-button-shape-radius($radius, $rtl-reflexive)` | Sets rounded shape to button with given radius size. Set `$rtl-reflexive` to true to flip radius values in RTL context, defaults to false.
+`mdc-button-horizontal-padding($padding)` | Sets horizontal padding to the given number.
+`mdc-button-outline-color($color)` | Sets the outline color to the given color.
+`mdc-button-outline-width($width, $padding)` | Sets the outline width to the given number (defaults to 2px) and adjusts padding accordingly. `$padding` is only required in cases where `mdc-button-horizontal-padding` is also included with a custom value.
 
 #### Sass mixins for `mdc-icon-button`
 
-### Related APIs
+The following mixins are available to customize your `mdc-icon-button` instance.
 
-
-
-**CSS Classes**
-
-| CSS Class | Description |
-|---|---|
-| `mdc-button` | Mandatory. Defaults to a text button that is flush with the surface.|
-| `mdc-button--raised`	| Optional. Styles a contained button that is elevated above the surface. |
-| `mdc-button--unelevated` |	Optional. Styles a contained button that is flush with the surface. |
-| `mdc-button--outlined` |	Optional. Styles an outlined button that is flush with the surface. |
-| `mdc-button--dense` |	Optional. Makes the button text and container slightly smaller. |
-| `mdc-button__label` |	Optional for buttons with leading or no icon, required for buttons with trailing icons. Indicates the element containing the button’s text label. |
-| `mdc-button__icon` |	Optional. Indicates the element containing the button’s icon. |
-
-
+Mixin | Description
+---|---
+`mdc-icon-button-size($width, $height, $padding)` | Sets the width, height, font-size and padding for the icon and ripple. `$height` is optional and defaults to `$width`. `$padding` is optional and defaults to `max($width, $height)/2`. `font-size` is set to `max($width, $height)`.
+`mdc-icon-button-ink-color($color)` | Sets the font color and the ripple color to the provided color value.
 
 ### Text button
 
@@ -201,7 +229,7 @@ Outlined buttons are medium-emphasis buttons. They contain actions that are impo
 </button>
 ```
 
-### Contained (raised) button
+### Contained button
 
 Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
@@ -237,15 +265,59 @@ Contained buttons are high-emphasis, distinguished by their use of elevation and
 
 Toggle buttons can be used to select from a group of choices.
 
+#### Toggle bar
+
 The Material.io framework for Web currently does not support toggle button groups, such as:
-<img src="images/button-toggle.png" alt="toggle button group example: four images arranged in an array, each with a toggle ">
+<img src="toggle-bar.png" alt="toggle button group">
 
  If your application needs a toggle button group, you will need to use a different framework such as [Vuetify](https://vuetifyjs.com/en/components/button-groups#button-groups).
 
+#### Toggle icon button
+
+The toggle icon button allows you to select from a group using an icon.
+
+##### Toggle icon bar example with background images
+
+[Source code](https://github.com/material-components/material-components-web/tree/master/packages/mdc-icon-button): GitHub source repository<br>
+[Demo site](https://glitch.com/~shadow-jobaria): This site contains example code to generate a contained button.
+
+<img src="images/web-toggle-icon-button.png" alt="4 images arranged in a 2 by 2 array, each image with a bookmark icon in the upper-right corner">
 To generate the example with background images of your choosing, you will need to do the following:
 
-1. If your images are dark, then you may need to change the icon color from the default. Use Sass mixins
-1. In your `*.js` file,
+* In your `*.scss` file:
+  1. Create containers to contain your tiled images:
+      ```css
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 450px;
+        justify-content: center;
+      }
+      ```
+  1. Create containers for your images, with the images cut to fit within the predefined height and width:
+      ```css
+        image-with-fave {
+          position: relative;
+          margin: 2px;
+        }
+
+        .image-with-fave img {
+          width: 200px;
+          height: 200px;
+          object-fit: cover;
+        }
+      ```
+  1. If your images are dark, then you may need use Sass mixins to change the icon color from the default. For example, you can create an instance of an icon button with white ink instead of the default black:
+        ```css
+            .fave-button {
+              @include mdc-icon-button-ink-color(white);
+
+              position: absolute;
+              top: 0;
+              right: 0;
+            }
+        ```
+* In your `*.js` file,
     1. Import `MDCIconButtonToggle`:
         ```js
         import {MDCIconButtonToggle} from '@material/icon-button';
@@ -255,58 +327,48 @@ To generate the example with background images of your choosing, you will need t
         const iconToggle = new MDCIconButtonToggle(document.querySelector('.mdc-icon-button'));
         iconToggle.unbounded = true;
         ```
+    1. If you want to add a ripple effect to your button press:
 
-1. Include the `mcd-icon-button__icon` class inside your icon button element.
-  You can set the default `pressed` state with the attribute `aria-pressed`. If a toggle button default is `pressed` (`aria-pressed="true"`), you will need to add `mdc-icon-button__icon--on` to the to the class `mdc-icon-button__icon`.
-
-    **Example using [Material Icons](https://material.io/tools/icons/)**
-    ```HTML
-    <button id="add-to-favorites"
-      class="mdc-icon-button"
-      aria-label="Add to favorites"
-      aria-hidden="true"
-      aria-pressed="false">
-     <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">favorite</i>
-     <i class="material-icons mdc-icon-button__icon">favorite_border</i>
-    </button>
-    ```
-    **Example using SVG Icons**
+        ```js
+        import { MDCRipple } from "@material/ripple";
+        ...
+        const iconButtonRipple = new MDCRipple(document.querySelector('.mdc-icon-button'));
+        iconButtonRipple.unbounded = true;
+        ```
+  * In you `*.html` file, you can now add the iterations of the following, which shows containers with background images:
     ```html
-    <button id="star-this-item"
-       class="mdc-icon-button mdc-icon-button--on"
-       aria-label="Unstar this item"
-       aria-hidden="true"
-       aria-pressed="true">
-       <svg class="mdc-icon-button__icon">
-         /*...*/
-       </svg>
-       <svg class="mdc-icon-button__icon mdc-icon-button__icon--on">
-         /*...*/
-      </svg>
-    </button>
+    <div class="container">
+          <div class="image-with-fave">
+            <img src="https://cdn.glitch.com/4f0b2993-dd70-46bf-916f-a6e81af58957%2Fimage1.jpeg?v=1570131499813" />
+            <button
+              id="bookmark-0"
+              class="mdc-icon-button fave-button"
+              aria-label="Add to favorites"
+              aria-hidden="true"
+              aria-pressed="false"
+            >
+              <i
+                class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on"
+                >bookmark</i
+              >
+              <i class="material-icons mdc-icon-button__icon">bookmark_border</i>
+            </button>
+          </div>
+          <div class="image-with-fave">
+            <img
+          src="https://cdn.glitch.com/4f0b2993-dd70-46bf-916f-a6e81af58957%2Fimage2.jpeg?v=1570131499876" />
+            <button
+              id="bookmark-1"
+              class="mdc-icon-button fave-button"
+              aria-label="Add to favorites"
+              aria-hidden="true"
+              aria-pressed="false"
+            >
+              <i
+                class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on"
+                >bookmark</i
+              >
+              <i class="material-icons mdc-icon-button__icon">bookmark_border</i>
+              </button>
+          </div>
     ```
-    **Example using toggle button with an image**
-    ```HTML
-    <button id="star-this-item"
-      class="mdc-icon-button mdc-icon-button--on"
-      aria-label="Unstar this item"
-      aria-hidden="true"
-      aria-pressed="true">
-      <img src="" class="mdc-icon-button__icon"/>
-      <img src="" class="mdc-icon-button__icon mdc-icon-button__icon--on"/>
-    </button>
-    ```
-
-## Related APIs
-
-[Source code](https://github.com/material-components/material-components-web/tree/master/packages/mdc-icon-button): GitHub source repository</br>
-[Demo site](https://material-components.github.io/material-components-web-catalog/#/component/icon-button): You can use this site to see examples of toggled icon buttons.
-
-**CSS classes**
-
-CSS Class |	Description
----|---
-mdc-icon-button |	Mandatory.
-mdc-icon-button--on	| Apply this class to the root element to indicate if the icon button toggle is in the “on” state.
-mdc-icon-button__icon	| Apply this class to each icon element for the icon button toggle.
-mdc-icon-button__icon--on	| Apply this class to an icon element to indicate the toggle button icon that represents the “on” icon.
