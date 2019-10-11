@@ -23,7 +23,7 @@ For the Toggle bar, please use the following icons from https://material.io/reso
 
  Implement the toggle such that multiple buttons can be simultaneously selected.
 
-
+**20191011 iOS team does not have an implementation. Refer back to Apple API: https://developer.apple.com/documentation/uikit/uisegmentedcontrol**
 
  ## Icon Button Requirements
 
