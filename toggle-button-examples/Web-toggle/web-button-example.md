@@ -335,7 +335,7 @@ To generate the example with background images of your choosing, you will need t
         const iconButtonRipple = new MDCRipple(document.querySelector('.mdc-icon-button'));
         iconButtonRipple.unbounded = true;
         ```
-  * In you `*.html` file, you can now add the iterations of the following, which shows containers with background images:
+* In your `*.html` file, you can now add the iterations of the following, which shows containers with background images:
     ```html
     <div class="container">
           <div class="image-with-fave">
@@ -371,4 +371,6 @@ To generate the example with background images of your choosing, you will need t
               <i class="material-icons mdc-icon-button__icon">bookmark_border</i>
               </button>
           </div>
+          ...
+        </div>
     ```
