@@ -14,10 +14,10 @@ The buttons component for the material.io web platform consists of two implement
 
 * [`mdc-button`](#mdc-button) is a customizable button component with updated visual styles. This button component has several built-in styles to support different levels of emphasis, as typically any UI will contain a few different buttons to indicate different actions. Use `mdc-button` can implement the following material buttons:
   * [Text button](#text-button)
-  * [Outline button](#outline-button)
-  * [Filled button](#filled-button)
+  * [Outline button](#outlined-button)
+  * [Filled button](#contained-button)
 * [`mdc-icon-button`](#mdc-icon-button) is a variant of `mdc-button` that allows users to select and toggle an icon button with a single tap.
-  * [Toggle (Icon) button](#icon-button)
+  * [Toggle (Icon) button](#toggle-button)
 
 You can customize button look and feel using [Sass Mixins](#sass-mixins)
 
