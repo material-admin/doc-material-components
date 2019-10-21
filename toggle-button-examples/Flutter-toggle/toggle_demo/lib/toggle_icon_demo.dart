@@ -23,19 +23,19 @@ class Photo {
   String get tag => assetName; // Assuming that all asset names are unique.
 }
 
-
 /// This class is each tile within the Grid. It represents the individual items
-/// you see.
+/// you see. A widget is stateless if we know that the file will not change.
 class GridDemoPhotoItem extends StatelessWidget {
   GridDemoPhotoItem({
     Key key,
     @required this.photo,
     @required this.onBannerTap,
-  }) :assert(onBannerTap != null),
+  })  : assert(onBannerTap != null),
         super(key: key);
 
   final Photo photo;
-  final BannerTapCallback onBannerTap; // User taps on the photo's header or footer.
+  final BannerTapCallback
+      onBannerTap; // User taps on the photo's header or footer.
 
   @override
   Widget build(BuildContext context) {
@@ -51,11 +51,13 @@ class GridDemoPhotoItem extends StatelessWidget {
     );
 
     final IconData icon =
-    photo.isFavorite ? Icons.favorite : Icons.favorite_border;
+        photo.isFavorite ? Icons.favorite : Icons.favorite_border;
 
     return GridTile(
         header: GestureDetector(
-          onTap: () { onBannerTap(photo); },
+          onTap: () {
+            onBannerTap(photo);
+          },
           child: GridTileBar(
             leading: Icon(
               icon,
@@ -63,11 +65,15 @@ class GridDemoPhotoItem extends StatelessWidget {
             ),
           ),
         ),
-        child: image
-    );
+        child: image);
   }
 }
 
+/// Toggle Icon Demo is a stateful widget because it is not immutable meaning
+/// that the Widget can change State. This widget is changing state each time
+/// the user clicks on the Flutter Favorite Icon. Each time the user clicks on
+/// that icon this page will build again. This is the reason this class has to
+/// extend Stateful Widget.
 class ToggleIconDemo extends StatefulWidget {
   ToggleIconDemo({Key key, this.title}) : super(key: key);
 
@@ -94,10 +100,20 @@ class ToggleIconDemoState extends State<ToggleIconDemo> {
 //    Photo(assetName: 'assets/images/image4.jpeg'),
   ];
 
-  void changePage(){
+  /// The Routes were set in the main.dart. Navigator is a tool that lets you
+  /// access these different routes.
+  void changePage() {
     Navigator.of(context).pushReplacementNamed('/toggleBarPage');
   }
 
+  /// The Build file is what is rendered in the screen. A scaffold is made of
+  /// different widget. An AppBar is a specific widget at the top part of each
+  /// screen. The AppBar in this case is being used to change demo pages.
+  /// The app bar is located at the top of the screen, in this example the
+  /// widget is blue.
+  ///
+  /// In Flutter, there are native widgets. The widget for the top part of the
+  /// screen is called an App Bar.
   @override
   Widget build(BuildContext context) {
     final Orientation orientation = MediaQuery.of(context).orientation;
@@ -106,10 +122,9 @@ class ToggleIconDemoState extends State<ToggleIconDemo> {
         title: Text(widget.title),
         actions: [
           IconButton(
-            icon: const Icon(Icons.pages),
-            tooltip: 'Change Page',
-            onPressed: changePage
-          ),
+              icon: const Icon(Icons.pages),
+              tooltip: 'Change Page',
+              onPressed: changePage),
         ],
       ),
       body: Column(
@@ -123,7 +138,8 @@ class ToggleIconDemoState extends State<ToggleIconDemo> {
                 mainAxisSpacing: 4.0,
                 crossAxisSpacing: 4.0,
                 padding: const EdgeInsets.all(4.0),
-                childAspectRatio: (orientation == Orientation.portrait) ? 1.0 : 1.3,
+                childAspectRatio:
+                    (orientation == Orientation.portrait) ? 1.0 : 1.3,
                 children: photos.map<Widget>((Photo photo) {
                   return GridDemoPhotoItem(
                     photo: photo,
