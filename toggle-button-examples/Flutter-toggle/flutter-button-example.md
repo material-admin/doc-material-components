@@ -119,11 +119,15 @@ Source code APIs:
 * [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html)
 * [StatefulWidget](https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html)
 * [GestureDetector](https://api.flutter.dev/flutter/widgets/GestureDetector-class.html)
-* [AppBar](https://api.flutter.dev/flutter/material/AppBar-class.html)
+* [GridTile](https://api.flutter.dev/flutter/material/GridTile-class.html)
 * [IconButton](https://api.flutter.dev/flutter/material/IconButton-class.html)
 * [IconData](https://api.flutter.dev/flutter/widgets/IconData-class.html)
 
 The following example allows you to select a favorite from a group of photos.
+
+The photos and icons are contained within instances of `GridDemoPhotoItem`.
+
+`GridDemoPhotoItem` is an instance of the `GridTile` API. Within `GridDemoPhotoItem` 
 
 
 <img src="toggle_demo/screenshots/toggle_icon_screenshot.png" alt="screenshot showing 4 images arranged in a 2 by 2 array, each with a heart icon in the upper-left corner">
