@@ -121,9 +121,9 @@ Source code APIs:
 * [IconButton](https://api.flutter.dev/flutter/material/IconButton-class.html)
 * [IconData](https://api.flutter.dev/flutter/widgets/IconData-class.html)
 
-The following example allows you to select a favorite from a group of photos.
+The following example allows you to select a favorite from a group of photos with a single click.
 
-The photos and icons are contained within instances of `GridDemoPhotoItem`.
+The photos and icons are contained within instances of `GridDemoPhotoItem`, which 
 
 `GridDemoPhotoItem` is an instance of the `GridTile` API. Within `GridDemoPhotoItem` 
 

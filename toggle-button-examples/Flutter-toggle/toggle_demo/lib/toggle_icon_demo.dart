@@ -4,10 +4,6 @@
 
 import 'package:flutter/material.dart';
 
-enum GridDemoTileStyle {
-  oneLine,
-}
-
 typedef BannerTapCallback = void Function(Photo photo);
 
 /// Each tile has a photo within it. The photo is used to toggle the
@@ -88,16 +84,6 @@ class ToggleIconDemoState extends State<ToggleIconDemo> {
     Photo(assetName: 'assets/images/image2.jpeg'),
     Photo(assetName: 'assets/images/image3.jpeg'),
     Photo(assetName: 'assets/images/image4.jpeg'),
-
-    /// Uncomment this to get more photos imported to the project.
-//    Photo(assetName: 'assets/images/image1.jpeg'),
-//    Photo(assetName: 'assets/images/image2.jpeg'),
-//    Photo(assetName: 'assets/images/image3.jpeg'),
-//    Photo(assetName: 'assets/images/image4.jpeg'),
-//    Photo(assetName: 'assets/images/image1.jpeg'),
-//    Photo(assetName: 'assets/images/image2.jpeg'),
-//    Photo(assetName: 'assets/images/image3.jpeg'),
-//    Photo(assetName: 'assets/images/image4.jpeg'),
   ];
 
   /// The Routes were set in the main.dart. Navigator is a tool that lets you
