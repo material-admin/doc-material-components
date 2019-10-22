@@ -2,17 +2,19 @@
 title: "Example article: Web button"
 layout: detail
 section: components
-excerpt: "This is an example of the Web Material Button developer article for material.io. It uses the template from [../dev-article-template.md]"
+excerpt: "This is an example of the Material Button developer article for the web. It uses the template from [../dev-article-template.md]"
 iconId:
 path: /
 api_doc_root:
 @import "@material/button/mdc-button";
 -->
-# Buttons
+# Button
 
-The buttons component for the material.io web platform consists of two implementations:
+Buttons allow users to take actions, and make choices, with a single tap.
 
-* [`mdc-button`](#mdc-button) is a customizable button component with updated visual styles. This button component has several built-in styles to support different levels of emphasis, as typically any UI will contain a few different buttons to indicate different actions. Use `mdc-button` can implement the following material buttons:
+The Material Design button component for the web has two implementations:
+
+* [`mdc-button`](#mdc-button) is a customizable button component with updated visual styles. It has several built-in styles to support different levels of emphasis or indicate different actions. Use `mdc-button` to implement the following material buttons:
   * [Text button](#text-button)
   * [Outline button](#outlined-button)
   * [Filled button](#contained-button)
@@ -21,7 +23,7 @@ The buttons component for the material.io web platform consists of two implement
 
 You can customize button look and feel using [Sass Mixins](#sass-mixins)
 
-For more information on the buttons component, go to the material.io [Buttons](http://material.io/components/buttons) page.
+For more information on the button component, visit [material.io/components/buttons](http://material.io/components/buttons).
 
 # Using Buttons
 
@@ -45,7 +47,7 @@ npm install @material/icon-button
 ```
 
 ### Add a theme
-Both `mdc-button` and `mdc-icon-button` components work with themes (styles). Import a style into your `*.scss*` stylesheet to apply it to your website, including buttons or toggle icon buttons:
+Both `mdc-button` and `mdc-icon-button` work with themes (styles). Import a style into your `*.scss*` stylesheet to apply it to your website, including buttons or toggle icon buttons:
 
 **mdc-button**
 ```css
@@ -58,7 +60,7 @@ Both `mdc-button` and `mdc-icon-button` components work with themes (styles). Im
 ```
 
 ### Import JavaScript effects
-You can also add a JavaScript ripple effect (see [MDC Ripple](https://github.com/material-components/material-components-web/blob/master/packages/mdc-ripple)) to your buttons by importing then instantiating `MCDRipple` in your `*.js` file. See the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md) for more information on importing JavaScript.
+You can also add a JavaScript ripple effect (see [MDC Ripple](https://github.com/material-components/material-components-web/blob/master/packages/mdc-ripple)) to your buttons by importing and then instantiating `MCDRipple` in your `*.js` file. See the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md) for more information on importing JavaScript.
 
 ```js
 import {MDCRipple} from '@material/ripple';
@@ -76,7 +78,7 @@ iconButtonRipple.unbounded = true;
 
 Add an icon to your `mdc-button` instance using the following steps:
 
-1. In your HTML file, reference the font library you would like to use (we recommend the [Material Icons](https://material.io/tools/icons/) from Google Fonts):
+1. In your HTML file, reference the icon font library you would like to use (we recommend the [Material Icons](https://material.io/tools/icons/) from Google Fonts):
     ```HTML
     <head>
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -203,7 +205,6 @@ In cards, text buttons help maintain an emphasis on card content.
 ### Outlined button
 
 Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
-
 
 
 #### Related APIs
