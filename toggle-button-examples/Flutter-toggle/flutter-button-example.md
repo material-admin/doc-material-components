@@ -34,7 +34,6 @@ The toggle bar allows you to select from a group of buttons that can be set to [
 #### Toggle bar with four icons example
 
 Source code APIs:
-* [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html)
 * [IconButton](https://api.flutter.dev/flutter/material/IconButton-class.html)
 
 <img src="toggle_demo/screenshots/toggle_bar_screenshot.png" alt="screenshot showing 4 icons arranged in a row">
@@ -116,7 +115,6 @@ The [toggle icon](https://material.io/components/buttons/#toggle-button) button 
 
 Source code APIs:
 
-* [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html)
 * [StatefulWidget](https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html)
 * [GestureDetector](https://api.flutter.dev/flutter/widgets/GestureDetector-class.html)
 * [GridTile](https://api.flutter.dev/flutter/material/GridTile-class.html)
