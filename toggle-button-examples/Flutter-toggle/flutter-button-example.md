@@ -23,6 +23,72 @@ The buttons component for the material.io web platform consists of the following
 
 # Using Buttons
 
+## Text button
+
+### Text button example
+
+Source Code APIs:
+
+* [FlatButton](https://api.flutter.dev/flutter/material/FlatButton-class.html)
+
+<img src="images/text_button.png" alt="Text button example in Flutter showing the black text \'Flat Button\' over a white background.">
+
+```dart
+FlatButton(
+  onPressed: () {
+    /*...*/
+  },
+  child: Text(
+    "Flat Button",
+  ),
+)
+```
+
+## Outlined button
+
+
+### Outlined button example
+
+
+## Contained button
+
+### Contained button example
+
+Source Code APIs:
+
+* [RaisedButton](https://api.flutter.dev/flutter/material/RaisedButton-class.html)
+
+<img src="images/contained_button.png" alt="Contained button examples in Flutter showing both a disabled button (dark gray text over a medium gray background) and an enabled button (black text over a light gray background)">
+
+
+```dart
+Widget build(BuildContext context) {
+  return Center(
+    child: Column(
+      mainAxisSize: MainAxisSize.min,
+      children: <Widget>[
+        const RaisedButton(
+          onPressed: null,
+          child: Text(
+            'Disabled Button',
+            style: TextStyle(fontSize: 20)
+          ),
+        ),
+        const SizedBox(height: 30),
+        RaisedButton(
+          onPressed: () {},
+          child: const Text(
+            'Enabled Button',
+            style: TextStyle(fontSize: 20)
+          ),
+        ),
+        const SizedBox(height: 30),
+      ],
+    ),
+  );
+}
+```
+
 ## Toggle button
 
 Toggle buttons can be used to select from a group of choices.
@@ -36,7 +102,7 @@ The toggle bar allows you to select from a group of buttons that can be set to [
 Source code APIs:
 * [IconButton](https://api.flutter.dev/flutter/material/IconButton-class.html)
 
-<img src="toggle_demo/screenshots/toggle_bar_screenshot.png" alt="screenshot showing 4 icons arranged in a row">
+<img src="toggle_demo/screenshots/toggle_bar_screenshot_cropped.png" alt="screenshot showing 4 icons arranged in a row">
 
 The following example displays 4 `IconButton`s in a widget called `buildIconButton`. It uses another widget called `iconWidget` that allows users to toggle multiple buttons to the `on` state at the same time: 
 
@@ -121,14 +187,16 @@ Source code APIs:
 * [IconButton](https://api.flutter.dev/flutter/material/IconButton-class.html)
 * [IconData](https://api.flutter.dev/flutter/widgets/IconData-class.html)
 
-The following example allows you to select a favorite from a group of photos with a single click.
+The following example allows you to select a favorite from a group of photos with a single tapped on a photo or on the icon.
 
-The photos and icons are contained within instances of `GridDemoPhotoItem`, which 
+The photos and icon buttons are contained within instances of `GridDemoPhotoItem`, which extends the `GridTile` API. `GridDemoPhotoItem` does the following:
 
-`GridDemoPhotoItem` is an instance of the `GridTile` API. Within `GridDemoPhotoItem` 
+* fits a passed image to `Photo` to the size specified in `GridView`. 
+* sets the icon displayed to `on` (`favorite`) or `off` (`favorite_border`) and sets `IconData` as determined by a call to `GestureDetector`.
+* set the icon color to white as opposed to the default black
 
 
-<img src="toggle_demo/screenshots/toggle_icon_screenshot.png" alt="screenshot showing 4 images arranged in a 2 by 2 array, each with a heart icon in the upper-left corner">
+<img src="toggle_demo/screenshots/toggle_icon_screenshot_cropped.png" alt="screenshot showing 4 images arranged in a 2 by 2 array, each with a heart icon in the upper-left corner">
 
 ```dart
 enum GridDemoTileStyle {
@@ -209,16 +277,6 @@ class ToggleIconDemoState extends State<ToggleIconDemo> {
     Photo(assetName: 'assets/images/image2.jpeg'),
     Photo(assetName: 'assets/images/image3.jpeg'),
     Photo(assetName: 'assets/images/image4.jpeg'),
-
-    /// Uncomment this to get more photos imported to the project.
-//    Photo(assetName: 'assets/images/image1.jpeg'),
-//    Photo(assetName: 'assets/images/image2.jpeg'),
-//    Photo(assetName: 'assets/images/image3.jpeg'),
-//    Photo(assetName: 'assets/images/image4.jpeg'),
-//    Photo(assetName: 'assets/images/image1.jpeg'),
-//    Photo(assetName: 'assets/images/image2.jpeg'),
-//    Photo(assetName: 'assets/images/image3.jpeg'),
-//    Photo(assetName: 'assets/images/image4.jpeg'),
   ];
 
   void changePage(){
