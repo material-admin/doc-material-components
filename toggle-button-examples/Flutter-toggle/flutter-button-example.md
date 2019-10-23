@@ -31,6 +31,8 @@ Source Code APIs:
 
 * [FlatButton](https://api.flutter.dev/flutter/material/FlatButton-class.html)
 
+The following example shows a text button with black text on white background.
+
 <img src="images/text_button.png" alt="Text button example in Flutter showing the black text \'Flat Button\' over a white background.">
 
 ```dart
@@ -57,6 +59,8 @@ FlatButton(
 Source Code APIs:
 
 * [RaisedButton](https://api.flutter.dev/flutter/material/RaisedButton-class.html)
+
+The following examples show a contained button in two states: Disabled (dark gray text on medium gray background) and enabled (black text on light gray background with a shadow).
 
 <img src="images/contained_button.png" alt="Contained button examples in Flutter showing both a disabled button (dark gray text over a medium gray background) and an enabled button (black text over a light gray background)">
 
@@ -102,9 +106,10 @@ The toggle bar allows you to select from a group of buttons that can be set to [
 Source code APIs:
 * [IconButton](https://api.flutter.dev/flutter/material/IconButton-class.html)
 
-<img src="toggle_demo/screenshots/toggle_bar_screenshot_cropped.png" alt="screenshot showing 4 icons arranged in a row">
 
 The following example displays 4 `IconButton`s in a widget called `buildIconButton`. It uses another widget called `iconWidget` that allows users to toggle multiple buttons to the `on` state at the same time: 
+
+<img src="toggle_demo/screenshots/toggle_bar_screenshot_cropped.png" alt="screenshot showing 4 icons arranged in a row" width="30%">
 
 ```dart
 class _ToggleBarDemoState extends State<ToggleBarDemo> {
@@ -184,6 +189,7 @@ Source code APIs:
 * [StatefulWidget](https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html)
 * [GestureDetector](https://api.flutter.dev/flutter/widgets/GestureDetector-class.html)
 * [GridTile](https://api.flutter.dev/flutter/material/GridTile-class.html)
+* [GridTileBar](https://api.flutter.dev/flutter/material/GridTileBar-class.html)
 * [IconButton](https://api.flutter.dev/flutter/material/IconButton-class.html)
 * [IconData](https://api.flutter.dev/flutter/widgets/IconData-class.html)
 
@@ -193,10 +199,11 @@ The photos and icon buttons are contained within instances of `GridDemoPhotoItem
 
 * fits a passed image to `Photo` to the size specified in `GridView`. 
 * sets the icon displayed to `on` (`favorite`) or `off` (`favorite_border`) and sets `IconData` as determined by a call to `GestureDetector`.
-* set the icon color to white as opposed to the default black
+* sets the icon color to white as opposed to the default black
 
+The `ToggleIconDemoState` class contains the the list of photos that become the backgrounds to the `GridDemoPhotoItem` tiles.
 
-<img src="toggle_demo/screenshots/toggle_icon_screenshot_cropped.png" alt="screenshot showing 4 images arranged in a 2 by 2 array, each with a heart icon in the upper-left corner">
+<img src="toggle_demo/screenshots/toggle_icon_screenshot_cropped.png" alt="screenshot showing 4 images arranged in a 2 by 2 array, each with a heart icon in the upper-left corner" width="50%">
 
 ```dart
 enum GridDemoTileStyle {
