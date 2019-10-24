@@ -19,8 +19,7 @@ class _ToggleBarDemoState extends State<ToggleBarDemo> {
           IconButton(
               icon: const Icon(Icons.pages),
               tooltip: 'Change Page',
-              onPressed: changePage
-          ),
+              onPressed: changePage),
         ],
       ),
       body: Center(
@@ -36,39 +35,25 @@ class _ToggleBarDemoState extends State<ToggleBarDemo> {
 
   /// The Routes were set in the main.dart. Navigator is a tool that lets you
   /// access these different routes.
-  void changePage(){
+  void changePage() {
     Navigator.of(context).pushReplacementNamed('/toggleIconPage');
   }
 
-  bool iconButtonToggle = false;
-
+  List<bool> isSelected = List<bool>.filled(4, false);
   Widget buildIconButton() {
-    return Align(
-      alignment: const Alignment(0.0, -0.2),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: <Widget>[
-          iconWidget(Icons.aspect_ratio, 'Aspect Ratio'),
-          iconWidget(Icons.assignment_ind, 'Assignment Ind'),
-          iconWidget(Icons.assignment_late, 'Assignment Late'),
-          iconWidget(Icons.bookmark_border, 'Bookmark Border'),
-        ].map<Widget>((Widget button) =>
-            SizedBox(width: 64.0, height: 64.0, child: button)).toList(),
-      ),
-    );
-  }
-  /// [iconWidget] is a class that allows the icon to toggle between on and off.
-  IconButton iconWidget(IconData iconData, String semanticLabel) {
-    return IconButton(
-      icon: Icon(
-        iconData,
-        semanticLabel: semanticLabel,
-      ),
-      onPressed: () {
-        setState(() => iconButtonToggle = !iconButtonToggle);
+    return ToggleButtons(
+      children: [
+        Icon(Icons.aspect_ratio),
+        Icon(Icons.assignment_ind),
+        Icon(Icons.assignment_late),
+        Icon(Icons.bookmark_border),
+      ],
+      onPressed: (int index) {
+        setState(() {
+          isSelected[index] = !isSelected[index];
+        });
       },
-      color: iconButtonToggle ? Theme.of(context).primaryColor : null,
+      isSelected: isSelected,
     );
-
   }
 }

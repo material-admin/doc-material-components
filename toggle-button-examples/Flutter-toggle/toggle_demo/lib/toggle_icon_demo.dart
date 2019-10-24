@@ -114,7 +114,7 @@ class ToggleIconDemoState extends State<ToggleIconDemo> {
         ],
       ),
       body: Column(
-        children: <Widget>[
+        children: [
           Expanded(
             child: SafeArea(
               top: false,
