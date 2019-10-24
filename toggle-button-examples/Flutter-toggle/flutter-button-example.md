@@ -25,6 +25,11 @@ The buttons component for the material.io web platform consists of the following
 
 ## Text button
 
+Text buttons are typically used for less-pronounced actions, including those located:
+* In dialogs
+* In cards
+In cards, text buttons help maintain an emphasis on card content.
+
 ### Text button example
 
 Source Code APIs:
@@ -48,11 +53,36 @@ FlatButton(
 
 ## Outlined button
 
+Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
 ### Outlined button example
 
+Source Code APIs:
+* [OutlineButton](https://api.flutter.dev/flutter/material/OutlineButton-class.html)
+
+<!--
+The current flutter documentation doesn't include example source or screenshots of the Outline Button
+
+The source code will need to be vetted before use.
+-->
+
+<img src="" alt="Outlined button example in Flutter">
+
+```dart
+OutlineButton(
+  onPressed() {
+    /*...*/
+  },
+  child: Test(
+    "Outlined Button",
+  )
+}
+```
+
 
 ## Contained button
+
+Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
 ### Contained button example
 
@@ -60,7 +90,7 @@ Source Code APIs:
 
 * [RaisedButton](https://api.flutter.dev/flutter/material/RaisedButton-class.html)
 
-The following examples show a contained button in two states: Disabled (dark gray text on medium gray background) and enabled (black text on light gray background with a shadow).
+The following examples show a contained button in two states: Disabled and enabled. Color schemes are typically determined by your theme.
 
 <img src="images/contained_button.png" alt="Contained button examples in Flutter showing both a disabled button (dark gray text over a medium gray background) and an enabled button (black text over a light gray background)">
 
@@ -107,11 +137,20 @@ Source code APIs:
 * [IconButton](https://api.flutter.dev/flutter/material/IconButton-class.html)
 
 
-The following example displays 4 `IconButton`s in a widget called `buildIconButton`. It uses another widget called `iconWidget` that allows users to toggle multiple buttons to the `on` state at the same time: 
+The following example displays 4 `IconButton`s in a widget called `buildIconButton`. It uses another widget called `iconWidget` that allows users to toggle an `IconButton`: 
 
 <img src="toggle_demo/screenshots/toggle_bar_screenshot_cropped.png" alt="screenshot showing 4 icons arranged in a row" width="30%">
 
 ```dart
+class ToggleBarDemo extends StatefulWidget {
+  ToggleBarDemo({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _ToggleBarDemoState createState() => _ToggleBarDemoState();
+}
+
 class _ToggleBarDemoState extends State<ToggleBarDemo> {
   @override
   Widget build(BuildContext context) {
@@ -122,8 +161,7 @@ class _ToggleBarDemoState extends State<ToggleBarDemo> {
           IconButton(
               icon: const Icon(Icons.pages),
               tooltip: 'Change Page',
-              onPressed: changePage
-          ),
+              onPressed: changePage),
         ],
       ),
       body: Center(
@@ -139,43 +177,28 @@ class _ToggleBarDemoState extends State<ToggleBarDemo> {
 
   /// The Routes were set in the main.dart. Navigator is a tool that lets you
   /// access these different routes.
-  void changePage(){
+  void changePage() {
     Navigator.of(context).pushReplacementNamed('/toggleIconPage');
   }
 
-  bool iconButtonToggle = false;
-
+  List<bool> isSelected = List<bool>.filled(4, false);
   Widget buildIconButton() {
-    return Align(
-      alignment: const Alignment(0.0, -0.2),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: <Widget>[
-          iconWidget(Icons.aspect_ratio, 'Aspect Ratio'),
-          iconWidget(Icons.assignment_ind, 'Assignment Ind'),
-          iconWidget(Icons.assignment_late, 'Assignment Late'),
-          iconWidget(Icons.bookmark_border, 'Bookmark Border'),
-        ].map<Widget>((Widget button) =>
-            SizedBox(width: 64.0, height: 64.0, child: button)).toList(),
-      ),
-    );
-  }
-  /// [iconWidget] is a class that allows the icon to toggle between on and off.
-  IconButton iconWidget(IconData iconData, String semanticLabel) {
-    return IconButton(
-      icon: Icon(
-        iconData,
-        semanticLabel: semanticLabel,
-      ),
-      onPressed: () {
-        setState(() => iconButtonToggle = !iconButtonToggle);
+    return ToggleButtons(
+      children: [
+        Icon(Icons.aspect_ratio),
+        Icon(Icons.assignment_ind),
+        Icon(Icons.assignment_late),
+        Icon(Icons.bookmark_border),
+      ],
+      onPressed: (int index) {
+        setState(() {
+          isSelected[index] = !isSelected[index];
+        });
       },
-      color: iconButtonToggle ? Theme.of(context).primaryColor : null,
+      isSelected: isSelected,
     );
-
   }
 }
-
 ```
 
 ### Toggle Icon
@@ -206,9 +229,11 @@ The `ToggleIconDemoState` class contains the the list of photos that become the 
 <img src="toggle_demo/screenshots/toggle_icon_screenshot_cropped.png" alt="screenshot showing 4 images arranged in a 2 by 2 array, each with a heart icon in the upper-left corner" width="50%">
 
 ```dart
-enum GridDemoTileStyle {
-  oneLine,
-}
+// Copyright 2016 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+import 'package:flutter/material.dart';
 
 typedef BannerTapCallback = void Function(Photo photo);
 
@@ -225,19 +250,19 @@ class Photo {
   String get tag => assetName; // Assuming that all asset names are unique.
 }
 
-
 /// This class is each tile within the Grid. It represents the individual items
-/// you see.
+/// you see. A widget is stateless if we know that the file will not change.
 class GridDemoPhotoItem extends StatelessWidget {
   GridDemoPhotoItem({
     Key key,
     @required this.photo,
     @required this.onBannerTap,
-  }) :assert(onBannerTap != null),
+  })  : assert(onBannerTap != null),
         super(key: key);
 
   final Photo photo;
-  final BannerTapCallback onBannerTap; // User taps on the photo's header or footer.
+  final BannerTapCallback
+      onBannerTap; // User taps on the photo's header or footer.
 
   @override
   Widget build(BuildContext context) {
@@ -253,11 +278,13 @@ class GridDemoPhotoItem extends StatelessWidget {
     );
 
     final IconData icon =
-    photo.isFavorite ? Icons.favorite : Icons.favorite_border;
+        photo.isFavorite ? Icons.favorite : Icons.favorite_border;
 
     return GridTile(
         header: GestureDetector(
-          onTap: () { onBannerTap(photo); },
+          onTap: () {
+            onBannerTap(photo);
+          },
           child: GridTileBar(
             leading: Icon(
               icon,
@@ -265,11 +292,15 @@ class GridDemoPhotoItem extends StatelessWidget {
             ),
           ),
         ),
-        child: image
-    );
+        child: image);
   }
 }
 
+/// Toggle Icon Demo is a stateful widget because it is not immutable meaning
+/// that the Widget can change State. This widget is changing state each time
+/// the user clicks on the Flutter Favorite Icon. Each time the user clicks on
+/// that icon this page will build again. This is the reason this class has to
+/// extend Stateful Widget.
 class ToggleIconDemo extends StatefulWidget {
   ToggleIconDemo({Key key, this.title}) : super(key: key);
 
@@ -286,10 +317,20 @@ class ToggleIconDemoState extends State<ToggleIconDemo> {
     Photo(assetName: 'assets/images/image4.jpeg'),
   ];
 
-  void changePage(){
+  /// The Routes were set in the main.dart. Navigator is a tool that lets you
+  /// access these different routes.
+  void changePage() {
     Navigator.of(context).pushReplacementNamed('/toggleBarPage');
   }
 
+  /// The Build file is what is rendered in the screen. A scaffold is made of
+  /// different widget. An AppBar is a specific widget at the top part of each
+  /// screen. The AppBar in this case is being used to change demo pages.
+  /// The app bar is located at the top of the screen, in this example the
+  /// widget is blue.
+  ///
+  /// In Flutter, there are native widgets. The widget for the top part of the
+  /// screen is called an App Bar.
   @override
   Widget build(BuildContext context) {
     final Orientation orientation = MediaQuery.of(context).orientation;
@@ -298,14 +339,13 @@ class ToggleIconDemoState extends State<ToggleIconDemo> {
         title: Text(widget.title),
         actions: [
           IconButton(
-            icon: const Icon(Icons.pages),
-            tooltip: 'Change Page',
-            onPressed: changePage
-          ),
+              icon: const Icon(Icons.pages),
+              tooltip: 'Change Page',
+              onPressed: changePage),
         ],
       ),
       body: Column(
-        children: <Widget>[
+        children: [
           Expanded(
             child: SafeArea(
               top: false,
@@ -315,7 +355,8 @@ class ToggleIconDemoState extends State<ToggleIconDemo> {
                 mainAxisSpacing: 4.0,
                 crossAxisSpacing: 4.0,
                 padding: const EdgeInsets.all(4.0),
-                childAspectRatio: (orientation == Orientation.portrait) ? 1.0 : 1.3,
+                childAspectRatio:
+                    (orientation == Orientation.portrait) ? 1.0 : 1.3,
                 children: photos.map<Widget>((Photo photo) {
                   return GridDemoPhotoItem(
                     photo: photo,
@@ -334,4 +375,5 @@ class ToggleIconDemoState extends State<ToggleIconDemo> {
     );
   }
 }
-```
+
+ ```
