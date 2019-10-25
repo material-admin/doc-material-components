@@ -12,9 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import UIKit
-
 import MaterialComponents.MaterialCards_Theming
+import UIKit
 
 class ToggleButtonCell: MDCCardCollectionCell {
 
@@ -26,10 +25,21 @@ class ToggleButtonCell: MDCCardCollectionCell {
     return imageView
   }()
 
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    setCustomToggleButton()
+  }
+
+  required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    setCustomToggleButton()
+  }
+
   func setCardImage(named imageName: String) {
 
     let bundle = Bundle(for: ToggleButtonCell.self)
-    imageView.image  = UIImage(named: imageName, in: bundle, compatibleWith: nil)
+    imageView.image = UIImage(named: imageName, in: bundle, compatibleWith: nil)
+    imageView.contentMode = .scaleAspectFill
 
     if imageView.superview == nil {
       contentView.addSubview(imageView)
@@ -37,18 +47,18 @@ class ToggleButtonCell: MDCCardCollectionCell {
     }
   }
 
+  /// Customize the toggle button icon of the cell
   func setCustomToggleButton() {
+    // Render the icon images as templates so they can be tinted.
     let bundle = Bundle(for: ToggleButtonCell.self)
-    let selectedIcon = UIImage(named: "selected", in: bundle, compatibleWith: nil)?
+    let selectedIcon = UIImage(named: "ic_favorite_24dp", in: bundle, compatibleWith: nil)?
       .withRenderingMode(.alwaysTemplate)
-    let unselectedIcon = UIImage(named: "unselected", in: bundle, compatibleWith: nil)?
+    let unselectedIcon = UIImage(named: "ic_favorite_border_24dp", in: bundle, compatibleWith: nil)?
       .withRenderingMode(.alwaysTemplate)
 
+    // Set the toggle button image and tint color.
     setImage(selectedIcon, for: .selected)
     setImage(unselectedIcon, for: .normal)
-    setImageTintColor(.white, for: .normal)
-
-    isSelectable = true
   }
 
   func addConstrains() {
@@ -57,20 +67,25 @@ class ToggleButtonCell: MDCCardCollectionCell {
         contentView.leftAnchor.constraint(equalTo: imageView.leftAnchor),
         contentView.rightAnchor.constraint(equalTo: imageView.rightAnchor),
         contentView.topAnchor.constraint(equalTo: imageView.topAnchor),
-        contentView.bottomAnchor.constraint(equalTo: imageView.bottomAnchor)])
+        contentView.bottomAnchor.constraint(equalTo: imageView.bottomAnchor)
+      ])
     } else {
       preiOS11Constraints()
     }
   }
 
   func preiOS11Constraints() {
-    imageView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[view]|",
-                                                            options: [],
-                                                            metrics: nil,
-                                                            views: ["view": contentView]))
-    imageView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[view]|",
-                                                            options: [],
-                                                            metrics: nil,
-                                                            views: ["view": contentView]))
+    imageView.addConstraints(
+      NSLayoutConstraint.constraints(
+        withVisualFormat: "H:|[view]|",
+        options: [],
+        metrics: nil,
+        views: ["view": contentView]))
+    imageView.addConstraints(
+      NSLayoutConstraint.constraints(
+        withVisualFormat: "V:|[view]|",
+        options: [],
+        metrics: nil,
+        views: ["view": contentView]))
   }
 }

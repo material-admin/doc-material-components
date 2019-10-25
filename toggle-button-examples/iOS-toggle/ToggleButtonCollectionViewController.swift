@@ -17,13 +17,11 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-/**
- This example uses a custom toggle button in Cards. It uses a custom class (ToggleButtonCell), which
- is a subclass of MDCCardCollectionCell (a UICollectionCell subclass). ToggleButtonCell sets the
- card's image, its selected and unselecte icons, and the tint color of the selected/unselected icon.
- This example then customizes the cells while enabling the goggle button in
- [collectionView:cellForItemAt:].
- */
+/// This example uses a custom toggle button in Cards. It uses a custom class (ToggleButtonCell),
+/// which is a subclass of MDCCardCollectionCell (a UICollectionCell subclass). ToggleButtonCell
+/// sets the card's image, its selected and unselecte icons, and the tint color of the selected and
+/// unselected icon. This ToggleButtonCollectionViewController class customizes the collection cells
+/// and enables the toggle button in [collectionView:cellForItemAt:].
 
 class ToggleButtonCollectionViewController: UICollectionViewController,
   UICollectionViewDelegateFlowLayout
@@ -34,14 +32,14 @@ class ToggleButtonCollectionViewController: UICollectionViewController,
   let padding: CGFloat = 8
 
   var dataSource = [
-    (image: "toggle-button-image1", accessibilityLabel: "Creek", selected: false),
-    (image: "toggle-button-image4", accessibilityLabel: "Bridge", selected: true),
-    (image: "toggle-button-image2", accessibilityLabel: "Street", selected: false),
-    (image: "toggle-button-image3", accessibilityLabel: "Vine", selected: false),
-    (image: "toggle-button-image1", accessibilityLabel: "Creek", selected: false),
-    (image: "toggle-button-image4", accessibilityLabel: "Bridge", selected: false),
-    (image: "toggle-button-image2", accessibilityLabel: "Street", selected: false),
-    (image: "toggle-button-image3", accessibilityLabel: "Vine", selected: false),
+    (image: "toggle-button-image1", accessibilityLabel: "Teapot", selected: false),
+    (image: "toggle-button-image4", accessibilityLabel: "Vases", selected: true),
+    (image: "toggle-button-image3", accessibilityLabel: "Tape", selected: true),
+    (image: "toggle-button-image2", accessibilityLabel: "Cup", selected: false),
+    (image: "toggle-button-image1", accessibilityLabel: "Teapot", selected: false),
+    (image: "toggle-button-image4", accessibilityLabel: "Vases", selected: false),
+    (image: "toggle-button-image3", accessibilityLabel: "Tape", selected: false),
+    (image: "toggle-button-image2", accessibilityLabel: "Cup", selected: false),
   ]
 
   init() {
@@ -70,6 +68,13 @@ class ToggleButtonCollectionViewController: UICollectionViewController,
     self.title = "Cards Toggle Button"
   }
 
+  override func viewWillTransition(
+    to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator
+  ) {
+    super.viewWillTransition(to: size, with: coordinator)
+    // Recalculate cell size when orientation changes
+    collectionView.collectionViewLayout.invalidateLayout()
+  }
 }
 
 // MARK: UICollectionViewDataSource
@@ -89,27 +94,38 @@ extension ToggleButtonCollectionViewController {
   override func collectionView(
     _ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath
   ) -> UICollectionViewCell {
+
+    // Get our custom cell, which is a card cell subclass, with a custom toggle icon.
     let cell = collectionView.dequeueReusableCell(
       withReuseIdentifier: String(describing: ToggleButtonCell.self), for: indexPath)
     guard let cardCell = cell as? ToggleButtonCell else { return cell }
 
+    // Get the card cell's data from the data source.
     let imagedata = dataSource[indexPath.item]
-    cardCell.applyTheme(withScheme: containerScheme) // apply the Material theme to the cards
-    cardCell.setCardImage(named: imagedata.image)    // set the card's image based on the datasource
-    cardCell.setCustomToggleButton()                 // set the custom selected & unselected icons
 
-    cardCell.isSelectable = true                     // enable toggle button behavior in the card
-    cardCell.isSelected = imagedata.selected         // set the default state of the card
+    // Set the card's image based on the datasource.
+    cardCell.setCardImage(named: imagedata.image)
+
+    // Apply the Material theme to the cards, which uses the primary color to theme the toggle
+    // button color. In this example, we've overriden it with a white color.
+    cardCell.applyTheme(withScheme: containerScheme)
+    cardCell.setImageTintColor(.white, for: .normal) // Override the default toggle color.
+
+    // Enable toggle button behavior in the card.
+    cardCell.isSelectable = true
+
+    // Select the card based on its state in the data source.
+    cardCell.isSelected = imagedata.selected
     if imagedata.selected {
       collectionView.selectItem(at: indexPath, animated: true, scrollPosition: [])
     }
 
-    cardCell.isAccessibilityElement = true           // make sure the card is accessible
+    // Ensure the card is accessible.
+    cardCell.isAccessibilityElement = true
     cardCell.accessibilityLabel = imagedata.accessibilityLabel
     return cardCell
   }
 }
-
 
 // MARK: UICollectionViewDelegate
 
@@ -133,8 +149,7 @@ extension ToggleButtonCollectionViewController {
     sizeForItemAt indexPath: IndexPath
   ) -> CGSize {
     let cardWidth = (collectionView.bounds.size.width - padding * 3) / 2
-    let cardHeight = cardWidth * 1.3
-    return CGSize(width: cardWidth, height: cardHeight)
+    return CGSize(width: cardWidth, height: cardWidth)
   }
 }
 
