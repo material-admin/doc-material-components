@@ -80,10 +80,10 @@ class ToggleIconDemo extends StatefulWidget {
 
 class ToggleIconDemoState extends State<ToggleIconDemo> {
   List<Photo> photos = <Photo>[
-    Photo(assetName: 'assets/images/image1.jpeg'),
-    Photo(assetName: 'assets/images/image2.jpeg'),
-    Photo(assetName: 'assets/images/image3.jpeg'),
-    Photo(assetName: 'assets/images/image4.jpeg'),
+    Photo(assetName: 'assets/images/img1.jpg'),
+    Photo(assetName: 'assets/images/img2.jpg'),
+    Photo(assetName: 'assets/images/img3.jpg'),
+    Photo(assetName: 'assets/images/img4.jpg'),
   ];
 
   /// The Routes were set in the main.dart. Navigator is a tool that lets you
