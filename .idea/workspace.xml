@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d015c359-67e8-4ff2-aef6-63b1003d742d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/doc-material-components.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/doc-material-components.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/assets/images/img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/assets/images/img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/assets/images/img3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/assets/images/img4.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/lib/toggle_bar_demo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/lib/toggle_bar_demo.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/lib/toggle_icon_demo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/lib/toggle_icon_demo.dart" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/lib/toggle_bar_demo.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="38" column="66" lean-forward="true" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
+            <state relative-caret-position="570">
+              <caret line="38" column="66" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -43,10 +45,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/lib/toggle_icon_demo.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1435">
-              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+            <state relative-caret-position="221">
+              <caret line="85" column="43" selection-start-line="85" selection-start-column="43" selection-end-line="85" selection-end-column="43" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/screenshots/toggle_bar_screenshot_cropped.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/screenshots/toggle_bar_screenshot.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/screenshots/toggle_icon_screenshot_cropped.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/screenshots/toggle_icon_screenshot.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -99,8 +121,8 @@
         <option value="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/example/lib/main.dart" />
         <option value="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/lib/main.dart" />
         <option value="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/pubspec.yaml" />
-        <option value="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/lib/toggle_icon_demo.dart" />
         <option value="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/lib/toggle_bar_demo.dart" />
+        <option value="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/lib/toggle_icon_demo.dart" />
       </list>
     </option>
   </component>
@@ -112,7 +134,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="210" />
     <option name="y" value="151" />
     <option name="width" value="1260" />
@@ -124,7 +146,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,13 +177,39 @@
               <item name="toggle-button-examples" type="462c0819:PsiDirectoryNode" />
               <item name="Flutter-toggle" type="462c0819:PsiDirectoryNode" />
               <item name="toggle_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="doc-material-components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doc-material-components" type="462c0819:PsiDirectoryNode" />
+              <item name="toggle-button-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="Flutter-toggle" type="462c0819:PsiDirectoryNode" />
+              <item name="toggle_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="doc-material-components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doc-material-components" type="462c0819:PsiDirectoryNode" />
+              <item name="toggle-button-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="Flutter-toggle" type="462c0819:PsiDirectoryNode" />
+              <item name="toggle_demo" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="doc-material-components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doc-material-components" type="462c0819:PsiDirectoryNode" />
+              <item name="toggle-button-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="Flutter-toggle" type="462c0819:PsiDirectoryNode" />
+              <item name="toggle_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="screenshots" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -174,14 +221,15 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/screenshots" />
-      <recent name="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo" />
-      <recent name="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/example/assets" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/example/assets" />
       <recent name="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/example" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/screenshots" />
+      <recent name="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/assets/images" />
+      <recent name="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo" />
+      <recent name="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/example/assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -216,36 +264,35 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="210" y="151" width="1260" height="771" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info id="Build Variants" side_tool="true" />
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.21264368" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15811966" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="Resources Explorer" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Android Profiler" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Logcat" />
-      <window_info active="true" anchor="bottom" id="Run" order="0" visible="true" weight="0.22533137" />
+      <window_info id="Build Variants" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="0" visible="true" weight="0.2244898" />
       <window_info anchor="bottom" id="TODO" order="1" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.32842416" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.33646813" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.23265307" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="6" />
       <window_info anchor="bottom" id="Dart Analysis" order="7" weight="0.32934132" />
       <window_info anchor="bottom" id="Find" order="8" />
-      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
+      <window_info anchor="bottom" id="Logcat" order="9" />
+      <window_info anchor="bottom" id="Android Profiler" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Flutter Inspector" order="2" />
       <window_info anchor="right" id="Flutter Outline" order="3" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
       <window_info anchor="right" id="Assistant" order="5" weight="0.33394384" />
+      <window_info anchor="right" id="Device File Explorer" order="6" side_tool="true" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -323,10 +370,29 @@
     <entry file="file://$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/example/lib/toggle_bar_demo.dart" />
     <entry file="file://$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/example/lib/toggle_icon_demo.dart" />
     <entry file="file://$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/test/widget_test.dart" />
-    <entry file="file://$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/screenshots/toggle_icon_screenshot.png">
+    <entry file="file://$USER_HOME$/flutter/packages/flutter/lib/src/material/icon_button.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="124" column="6" selection-start-line="124" selection-start-column="6" selection-end-line="124" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toggle-button-examples/image1.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/screenshots/toggle_bar_screenshot.png">
+    <entry file="file://$PROJECT_DIR$/toggle-button-examples/image2.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toggle-button-examples/image4.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toggle-button-examples/img2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toggle-button-examples/img1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toggle-button-examples/image3.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/lib/main.dart">
@@ -339,26 +405,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/lib/toggle_icon_demo.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1435">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/flutter/packages/flutter/lib/src/material/icon_button.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="124" column="6" selection-start-line="124" selection-start-column="6" selection-end-line="124" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/lib/toggle_bar_demo.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="38" column="66" lean-forward="true" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
+        <state relative-caret-position="570">
+          <caret line="38" column="66" selection-start-line="38" selection-start-column="66" selection-end-line="38" selection-end-column="66" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/lib/toggle_icon_demo.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="85" column="43" selection-start-line="85" selection-start-column="43" selection-end-line="85" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/screenshots/toggle_bar_screenshot.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/screenshots/toggle_bar_screenshot_cropped.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/screenshots/toggle_icon_screenshot.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/screenshots/toggle_icon_screenshot_cropped.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
