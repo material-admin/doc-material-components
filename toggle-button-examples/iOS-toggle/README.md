@@ -29,8 +29,8 @@ For the Toggle bar, please use the following icons from https://material.io/reso
 
  For the Icon buttons, apply the [![favorite_border](https://fonts.gstatic.com/s/i/materialicons/favorite_border/v1/24px.svg?download=true)](https://material.io/resources/icons/?icon=favorite_border&style=baseline) icon (or similar) to the top-right corner of the following images:
 
- | <img src="img1.jpg"> | <img src="img2.jpg"> |
+ | <img src="toggle-button-image1.jpg"> | <img src="toggle-button-image2.jpg"> |
  |---|---|
- | <img src="img3.jpg"> | <img src="img4.jpg"> |
+ | <img src="toggle-button-image3.jpg"> | <img src="toggle-button-image4.jpg"> |
 
 Implement the icon buttons such that multiple buttons can be simultaneously selected.

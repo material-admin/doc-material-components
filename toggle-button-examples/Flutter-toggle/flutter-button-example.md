@@ -10,6 +10,8 @@ api_doc_root:
 -->
 # Buttons
 
+Buttons allow users to take actions, and make choices, with a single tap.
+
 The buttons component for the material.io web platform consists of the following implementations are extensions of the [MaterialButton](https://api.flutter.dev/flutter/material/MaterialButton-class.html), [StatelessWidget](https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html), and [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html) classes:
 
 * [MaterialButton](https://api.flutter.dev/flutter/material/MaterialButton-class.html)
@@ -229,10 +231,6 @@ The `ToggleIconDemoState` class contains the the list of photos that become the 
 <img src="toggle_demo/screenshots/toggle_icon_screenshot_cropped.png" alt="screenshot showing 4 images arranged in a 2 by 2 array, each with a heart icon in the upper-left corner" width="50%">
 
 ```dart
-// Copyright 2016 The Chromium Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style license that can be
-// found in the LICENSE file.
-
 import 'package:flutter/material.dart';
 
 typedef BannerTapCallback = void Function(Photo photo);
@@ -311,26 +309,16 @@ class ToggleIconDemo extends StatefulWidget {
 
 class ToggleIconDemoState extends State<ToggleIconDemo> {
   List<Photo> photos = <Photo>[
-    Photo(assetName: 'assets/images/image1.jpeg'),
-    Photo(assetName: 'assets/images/image2.jpeg'),
-    Photo(assetName: 'assets/images/image3.jpeg'),
-    Photo(assetName: 'assets/images/image4.jpeg'),
+    Photo(assetName: 'assets/images/img1.jpg'),
+    Photo(assetName: 'assets/images/img2.jpg'),
+    Photo(assetName: 'assets/images/img3.jpg'),
+    Photo(assetName: 'assets/images/img4.jpg'),
   ];
 
-  /// The Routes were set in the main.dart. Navigator is a tool that lets you
-  /// access these different routes.
   void changePage() {
     Navigator.of(context).pushReplacementNamed('/toggleBarPage');
   }
 
-  /// The Build file is what is rendered in the screen. A scaffold is made of
-  /// different widget. An AppBar is a specific widget at the top part of each
-  /// screen. The AppBar in this case is being used to change demo pages.
-  /// The app bar is located at the top of the screen, in this example the
-  /// widget is blue.
-  ///
-  /// In Flutter, there are native widgets. The widget for the top part of the
-  /// screen is called an App Bar.
   @override
   Widget build(BuildContext context) {
     final Orientation orientation = MediaQuery.of(context).orientation;
@@ -375,5 +363,4 @@ class ToggleIconDemoState extends State<ToggleIconDemo> {
     );
   }
 }
-
  ```
