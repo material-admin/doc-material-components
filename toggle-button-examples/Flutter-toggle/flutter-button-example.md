@@ -40,7 +40,7 @@ Source Code APIs:
 
 The following example shows a text button with black text on white background.
 
-<img src="images/text_button.png" alt="Text button example in Flutter showing the black text \'Flat Button\' over a white background.">
+<img src="images/flutter-text.png" width="20%" alt="Text button example in Flutter showing the black text \'Flat Button\' over a white background.">
 
 ```dart
 FlatButton(
@@ -49,6 +49,7 @@ FlatButton(
   },
   child: Text(
     "Flat Button",
+    style: TextStyle(fontSize: 20)
   ),
 )
 ```
@@ -62,11 +63,6 @@ Outlined buttons are medium-emphasis buttons. They contain actions that are impo
 Source Code APIs:
 * [OutlineButton](https://api.flutter.dev/flutter/material/OutlineButton-class.html)
 
-<!--
-The current flutter documentation doesn't include example source or screenshots of the Outline Button
-
-The source code will need to be vetted before use.
--->
 
 <img src="images/flutter_outlined.png" alt="Outlined button example in Flutter" width="20%">
 
@@ -75,9 +71,11 @@ OutlineButton(
   onPressed() {
     /*...*/
   },
-  child: Test(
-    "Outlined Button",
-  )
+  child: Text(
+    "Outlined Button"
+     style: TextStyle(fontSize: 20)
+
+  ),
 }
 ```
 
@@ -92,37 +90,20 @@ Source Code APIs:
 
 * [RaisedButton](https://api.flutter.dev/flutter/material/RaisedButton-class.html)
 
-The following examples show a contained button in two states: Disabled and enabled. Color schemes are typically determined by your theme.
+The following examples show a contained button. Color schemes are typically determined by your theme.
 
-<img src="images/contained_button.png" alt="Contained button examples in Flutter showing both a disabled button (dark gray text over a medium gray background) and an enabled button (black text over a light gray background)">
+<img src="images/flutter-contained.png" width="20%" alt="Contained button examples in Flutter showing both a disabled button (dark gray text over a medium gray background) and an enabled button (black text over a light gray background)">
 
 
 ```dart
-Widget build(BuildContext context) {
-  return Center(
-    child: Column(
-      mainAxisSize: MainAxisSize.min,
-      children: <Widget>[
-        const RaisedButton(
-          onPressed: null,
-          child: Text(
-            'Disabled Button',
-            style: TextStyle(fontSize: 20)
-          ),
-        ),
-        const SizedBox(height: 30),
-        RaisedButton(
-          onPressed: () {},
-          child: const Text(
-            'Enabled Button',
-            style: TextStyle(fontSize: 20)
-          ),
-        ),
-        const SizedBox(height: 30),
-      ],
+RaisedButton(
+    onPressed: () {},
+    child: const Text(
+         'Contained Button',
+         style: TextStyle(fontSize: 20)
     ),
-  );
-}
+),
+
 ```
 
 ## Toggle button
