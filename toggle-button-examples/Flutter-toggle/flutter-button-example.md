@@ -68,7 +68,7 @@ The current flutter documentation doesn't include example source or screenshots 
 The source code will need to be vetted before use.
 -->
 
-<img src="" alt="Outlined button example in Flutter">
+<img src="images/flutter_outlined.png" alt="Outlined button example in Flutter" width="20%">
 
 ```dart
 OutlineButton(
