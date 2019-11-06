@@ -11,7 +11,7 @@ This is a checklist for developer users articles reviews to ensure that the arti
 	Use the canonical name (the name used in <a href="https://material.io/components/">material.io/components</a>\/\<component\>) instead of the API name for the platform. Reference the platform API name only when referencing the API.<br>
 
 	For example Buttons: <br>
-		 'Text button' is the canonical name, but <code>FlatButton</code> is the API name in Flutter. When describing the component or component variant in the text, use 'text button' and use 'FlatButton' only in either the API references or code samples.
+		 'Text button' is the canonical name, but <code>FlatButton</code> is the API name in Flutter. When describing the component or component variant in the text, use 'text button' and use `FlatButton` only in either the API references or code samples.
 
 
 	</details>
