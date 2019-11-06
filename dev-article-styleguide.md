@@ -1,9 +1,9 @@
-# Material Developer Users Article Stylesheet Checklist
+# Material Developer Usage Article Checklist
 
-This is a checklist for developer users articles reviews to ensure that the articles maintain stylistic and content standards.
+This is a checklist for developers to ensure that their usage articles maintain stylistic and content standards.
 
 
-- [ ]  Does the article use the Material.io component canonical name?
+- [ ]  Does the article use canonical component name from the guidelines?
 
 	<details>
 		<summary>Description</summary>
