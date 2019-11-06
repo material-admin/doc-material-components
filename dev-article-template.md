@@ -145,7 +145,7 @@ Each section should have a 3rd tier header. Add 1-2 sentences from the material.
 > * Toggle button group <img src="images/button-toggle.png" alt="Toggle button group example.">
 > * Icon button <img src"images/button-icon-toggle.png" alt="Icon toggle button group example">
 >
-> **Android currently does not support toggle button groups.** If you need a framework for a toggle button group, use \<example framework\>.
+> **Android currently does not support toggle button groups.** If you need a framework for a toggle button group, use \<example framework with link\>.
 >
 > To add an icon button ...
 
