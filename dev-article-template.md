@@ -47,7 +47,7 @@ If there are component variants, list them here and link to the local anchor lin
 
 Insert any related graphics: show instead of say.
 
-<img src="" alt="insert a description of the graphic and any variant of the principle component variant it implements.">
+<img src="" alt="Include a graphic here with all the variants for this component. If there is no graphic available, skip this. Insert a description of the graphic and any variant of the principle component variant it implements.">
 
 example images from Buttons:
 > <img src="docs/images/buttons-types-all.png" alt="Support button variants include text button in the upper left, outlined button in the upper right, contained button in the lower left, and toggle button in the lower right">
@@ -74,7 +74,7 @@ For example, for the iOS buttons component:
 >         ```bash
 >         pod install
 >         ```
-> 1. Import `MDCButtons` and MDC buttons theming and initialize `MDCButtons` using `alloc`/`init`. Initialize your theme  before applying it to your button.
+> 1. Import `MaterialButtons` and `MaterialButtons_Theming` and initialize `MDCButtons` using `alloc`/`init`. Initialize your theme  before applying it to your button.
 >
 >    **Note** For more information about themes, go to the [Theming page](https://material.io/develop/ios/components/theming/) for iOS.
 >
@@ -95,7 +95,8 @@ For example, for the iOS buttons component:
 >       MDCButton *button = [[MDCButton alloc] init];
 >       ```
 > 1. Apply accessibility settings
->    To help make your buttons usable to as many users as possible:
+>
+>    Help make your buttons usable to as many users as possible:
 >    * Set an appropriate [`accessibilityLabel`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) value if your button does not have a title or only has an icon.
 >        **Objective-C**
 >        ```objc
@@ -117,35 +118,41 @@ For example [buttons](material.io/components/buttons/) is divided into the follo
 * Outlined button
 * Contained button
 * Toggle button
+  * Toggle bar // not actually described in guidance -- need to work backwards to design to update design guidance
+  * Toggle icon // not actually described in guidance -- need to work backwards to design to update design guidance
 
 
-Whereas [cards](https://material.io/components/cards/) is divided into:
+Whereas [chips](https://material.io/components/chips/) is divided into:
 
-* Behavior
-* Actions
-* Card collections
-
+* Input chip
+* Choice chip
+* Filter clip
+* Action clip
 
 Each section should have a 3rd tier header. Add 1-2 sentences from the material.io website that describes when and how to use the component.
 
-**Important** If your platform does not support a particular variant, EXPLICITLY STATE THAT IT DOESN'T.
+**Important** If your platform does not support a particular variant, EXPLICITLY STATE THAT IT DOESN'T. Consider including a link to library that does support the variant.
 
 **Example: Android Text Button**
+
 > ### Text button
 >
 > Text buttons are typically used for less-pronounced actions, including those located:
+>
 >     * In dialogs
 >     * In cards
+>
 > In cards, text buttons help maintain an emphasis on card content.
 >
 > ...
 >
 > ### Toggle button
 > Toggle button is divided into two subvariants:
-> * Toggle button group <img src="images/button-toggle.png" alt="Toggle button group example.">
-> * Icon button <img src"images/button-icon-toggle.png" alt="Icon toggle button group example">
+> 
+> * Toggle bar <img src="images/button-toggle.png" alt="Toggle button group example.">
+> * Toggle icon <img src"images/button-icon-toggle.png" alt="Icon toggle button group example">
 >
-> **Android currently does not support toggle button groups.** If you need a framework for a toggle button group, use \<example framework\>.
+> **Android currently does not support toggle bar.** If you need a framework for a toggle bar, use \<example framework\>.
 >
 > To add an icon button ...
 
@@ -163,6 +170,7 @@ Each example should have 1-2 sentences to describe the example. The example shou
 ##### APIs used
 
 The APIs section should have the following:
+
 * Links to the applicable API(s) listed from highest level to lowest level
 * Provide example source code that can generate the example in the image. Mention any themes/settings used.
 
@@ -206,7 +214,7 @@ The APIs section should have the following:
 > <img src="" alt="example contained button image">
 >
 >
-> **Note** Elevated `MaterialButtons` have a shadow that can extend outside the bounds of the button. For this reason, the wrapping parent element should set to android:clipToPadding="false" in cases where the button shadow could be clipped by the parent bounds.
+> **Note** Elevated `MaterialButtons` have a shadow that can extend outside the bounds of the button. For this reason, the wrapping parent element should set to `android:clipToPadding="false"` in cases where the button shadow could be clipped by the parent bounds.
 >
 > #### APIs used
 > * [MaterialButton](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button)
