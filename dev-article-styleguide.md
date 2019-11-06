@@ -24,7 +24,7 @@ This is a checklist for developer users articles reviews to ensure that the arti
 	Aside from API variables and parameters, use the terminology from the component guidance pages.
 
 	For example Chips: <br>
-	The <a href="https://material.io/components/chips/#anatomy">Chips guidance</a> describes the use of 'Thumbnails' and 'Remove icon' images/icons. However, the <a href="https://material.io/develop/web/components/chips/#leading-and-trailing-icons">Web chips</a> article uses the terminology 'leading' and trailing' to describe the same images/icons.
+	The <a href="https://material.io/components/chips/#anatomy">Chips guidance</a> describes the use of 'Thumbnails' and 'Remove icon' images/icons. However, the <a href="https://material.io/develop/web/components/chips/#leading-and-trailing-icons">Web chips</a> article uses the terminology 'leading' and 'trailing' to describe the same images/icons. Because this is design article is focused on examples that resemble the examples found in the guidance for material.io/components, use the terminology in the guidance.
 
 	</details>
 
