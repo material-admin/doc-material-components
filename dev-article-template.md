@@ -45,9 +45,9 @@ If there are component variants, list them here and link to the local anchor lin
 > * [Contained button](#contained-button)
 > * [Toggle button](#toggle-button)
 
-Insert any related graphics: show instead of say.
+Insert any related graphics (such as a graphic showing all variants of this component): show instead of say. If there is no graphic available, skip this. 
 
-<img src="" alt="Include a graphic here with all the variants for this component. If there is no graphic available, skip this. Insert a description of the graphic and any variant of the principle component variant it implements.">
+<img src="" alt="Include a graphic here with all the variants for this component. Insert a description of the graphic and any variant of the principle component variant it implements.">
 
 example images from Buttons:
 > <img src="docs/images/buttons-types-all.png" alt="Support button variants include text button in the upper left, outlined button in the upper right, contained button in the lower left, and toggle button in the lower right">
@@ -118,8 +118,8 @@ For example [buttons](material.io/components/buttons/) is divided into the follo
 * Outlined button
 * Contained button
 * Toggle button
-  * Toggle bar // not actually described in guidance -- need to work backwards to design to update design guidance
-  * Toggle icon // not actually described in guidance -- need to work backwards to design to update design guidance
+  * Toggle bar <!-- not actually described in guidance -- need to work backwards to design to update design guidance -->
+  * Toggle icon <!-- not actually described in guidance -- need to work backwards to design to update design guidance-->
 
 
 Whereas [chips](https://material.io/components/chips/) is divided into:
