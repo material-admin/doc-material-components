@@ -13,28 +13,29 @@ initial_release:
 This template is based on the current design article template at
 https://spec.googleplex.com/m2-spec-guide/authoring-content/component-article-template.html
 
-The API documentation formatting is roughly based on https://developers.google.com/android-publisher/api-ref/inappproducts
-
-Replace all instances of '[]' with your content (such as the component name you usually use)
+<!--
+Replace all instances of '<>' with your content (such as the component name you usually use)
 
 Replace all uses of block quotes with relevant content.
 -->
 
 # \[Canonical Component Name\]
 
-> **example Android Buttons title:**
-> # Buttons
+> **example Android Button title:**
+> # Button
 
 Add a concise (1-2 sentence) description of the component here starting with the one-line definition from the design/guidance page. The corresponding design document should have a full description.
 
 Add a link to the corresponding design page that the component (helps) implement.
 
+[<component cannonical name>](https://material.io/components/<component>)
+
 For example:
 
-> Buttons allow users to take actions and make choices with a single tap.
-> Buttons can be customized to meet your style requirements.
+> Button allows users to take actions and make choices with a single tap.
+> Button can be customized to meet your style requirements.
 >
-> For more information, go to the [Buttons](https://material.io/components/buttons/#usage) guidance page.
+> For more information on the button component, go to the [Button](https://material.io/components/buttons/#usage) guidance page.
 
 ## \[Component variants\]
 
@@ -49,7 +50,7 @@ Insert any related graphics (such as a graphic showing all variants of this comp
 
 <img src="" alt="Include a graphic here with all the variants for this component. Insert a description of the graphic and any variant of the principle component variant it implements.">
 
-example images from Buttons:
+example images from Button:
 > <img src="docs/images/buttons-types-all.png" alt="Support button variants include text button in the upper left, outlined button in the upper right, contained button in the lower left, and toggle button in the lower right">
 
 <!-- Note that the iOS team has added a TOC to their repo, and it appears to be from https://github.com/jonschlinkert/markdown-toc -->
@@ -59,7 +60,7 @@ example images from Buttons:
 
 If there are any instructions on using the component that applies to all component variants (for example, installation or theming), include them here.
 
-For example, for the iOS buttons component:
+For example, for the iOS button component:
 
 > ### Install `mcd-button`
 >
@@ -108,11 +109,11 @@ For example, for the iOS buttons component:
 >        ```
 
 ### \[Component section\]
-Divide the component API into its variants, preferably as described in the [material.io/components] pages.
+Divide the component into its variants, preferably as described in the [material.io/components] pages.
 
 
 
-For example [buttons](material.io/components/buttons/) is divided into the following 3rd tier (`###` header) sections based on its variants:
+For example [button](material.io/components/buttons/) is divided into the following 3rd tier (`###` header) sections based on its variants:
 
 * Text button
 * Outlined button
@@ -188,9 +189,9 @@ The APIs section should have the following:
 >    android:text="@string/text_button_label_enabled"/>
 >```
 >
-> ### Outline button
+> ### Outlined button
 >
-> Outline buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
+> Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 >
 > <img src="" alt="example outlined button image">
 >
@@ -198,7 +199,7 @@ The APIs section should have the following:
 > * [MaterialButton](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
 >
 >
-> #### Outline button sample code
+> #### Outlined button sample code
 > ```xml
 > <com.google.android.material.button.MaterialButton
 >    android:id="@+id/material_text_button"
