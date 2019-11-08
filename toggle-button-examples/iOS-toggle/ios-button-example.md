@@ -21,6 +21,8 @@ The buttons component for the material.io web platform consists of the following
 * [MDCCardCollectionCell](https://material.io/develop/ios/components/cards/api-docs/Classes/MDCCardCollectionCell.html)
   * [Toggle Icon Button](#toggle-icon)
 
+For more information on the button component, visit [material.io/components/buttons](http://material.io/components/buttons).
+
 ## Using buttons
 
 If intend 
