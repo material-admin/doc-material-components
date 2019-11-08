@@ -23,6 +23,8 @@ The buttons component for the material.io web platform consists of the following
 * [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html)
   * [Toggle Icon Button](#toggle-icon) (IconButton)
 
+For more information on the button component, visit [material.io/components/buttons](http://material.io/components/buttons).
+
 # Using Buttons
 
 ## Text button
