@@ -20,6 +20,7 @@ The buttons component for the material.io web platform consists of the following
 * [Contained Button](#contained-button)
 * [Toggle Button](#toggle-button)
 
+For more information on the button component, visit [material.io/components/buttons](http://material.io/components/buttons).
 
 ## Text button
 

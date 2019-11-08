@@ -25,7 +25,7 @@ You can customize button look and feel using [Sass Mixins](#sass-mixins)
 
 For more information on the button component, visit [material.io/components/buttons](http://material.io/components/buttons).
 
-# Using Buttons
+## Using buttons
 
 Before you can use a button, you will need to install the following:
 
@@ -164,22 +164,21 @@ Mixin | Description
 `mdc-icon-button-size($width, $height, $padding)` | Sets the width, height, font-size and padding for the icon and ripple. `$height` is optional and defaults to `$width`. `$padding` is optional and defaults to `max($width, $height)/2`. `font-size` is set to `max($width, $height)`.
 `mdc-icon-button-ink-color($color)` | Sets the font color and the ripple color to the provided color value.
 
-### Text button
+## Text button
 
 Text buttons are typically used for less-pronounced actions, including those located:
+
 * In dialogs
 * In cards
+
 In cards, text buttons help maintain an emphasis on card content.
 
 
+### Text button example
 
-#### Related APIs
+Related APIs:
 [Source code](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button): GitHub source repository<br>
 [Demo site](https://glitch.com/~shadow-jobaria): This site contains example code to generate a text button.
-
-
-
-#### Text button example
 
 <img src="images/web-text-button.png" alt="Generated text button example">
 
@@ -202,16 +201,18 @@ In cards, text buttons help maintain an emphasis on card content.
 </button>
 ```
 
-### Outlined button
+## Outlined button
 
 Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
 
-#### Related APIs
+### Outlined button example
+
+
+Related APIs:
 [Source code](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button): GitHub source repository<br>
 [Demo site](https://glitch.com/~shadow-jobaria): This site contains example code to generate an outlined button.
 
-#### Outlined button example
 <img src="images/web-outlined-button.png" alt="Generated outlined button example">
 
 ```html
@@ -220,7 +221,12 @@ Outlined buttons are medium-emphasis buttons. They contain actions that are impo
 </button>
 ```
 
-#### Outlined button with icon example
+### Outlined button with icon example
+Related APIs
+[Source code](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button): GitHub source repository<br>
+[Demo site](https://glitch.com/~shadow-jobaria): This site contains example code to generate a contained button.
+
+
 <img src="images/web-outlined-icon-button.png" alt="Generated outlined button example">
 
 ```html
@@ -230,16 +236,16 @@ Outlined buttons are medium-emphasis buttons. They contain actions that are impo
 </button>
 ```
 
-### Contained button
+## Contained button
 
 Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
+#### Contained button example
 
-#### Related APIs
+Related APIs
 [Source code](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button): GitHub source repository<br>
 [Demo site](https://glitch.com/~shadow-jobaria): This site contains example code to generate a contained button.
 
-#### Contained button example
 
 <img src="images/web-contained-button.png" alt="Generated contained button example">
 
@@ -249,7 +255,11 @@ Contained buttons are high-emphasis, distinguished by their use of elevation and
 </button>
 ```
 
-#### Contained button with icon example
+### Contained button with icon example
+Related APIs
+[Source code](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button): GitHub source repository<br>
+[Demo site](https://glitch.com/~shadow-jobaria): This site contains example code to generate a contained button.
+
 
 <img src="images/web-contained-icon-button.png" alt="Generated contained button example with a bookmark icon">
 
@@ -262,22 +272,23 @@ Contained buttons are high-emphasis, distinguished by their use of elevation and
 </button>
 ```
 
-### Toggle button
+## Toggle button
 
 Toggle buttons can be used to select from a group of choices.
 
-#### Toggle bar
+### Toggle bar
 
 The Material.io framework for Web currently does not support toggle button groups, such as:
+
 <img src="toggle-bar.png" alt="toggle button group">
 
- If your application needs a toggle button group, you will need to use a different framework such as [Vuetify](https://vuetifyjs.com/en/components/button-groups#button-groups).
+If your application needs a toggle button group, you will need to use a different framework such as [Vuetify](https://vuetifyjs.com/en/components/button-groups#button-groups).
 
-#### Toggle icon button
+### Toggle icon button
 
 The toggle icon button allows you to select from a group using an icon.
 
-##### Toggle icon bar example with background images
+#### Toggle icon bar example with background images
 
 [Source code](https://github.com/material-components/material-components-web/tree/master/packages/mdc-icon-button): GitHub source repository<br>
 [Demo site](https://glitch.com/~shadow-jobaria): This site contains example code to generate a contained button.

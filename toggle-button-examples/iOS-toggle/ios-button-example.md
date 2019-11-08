@@ -12,7 +12,7 @@ api_doc_root:
 
 Buttons allow users to take actions, and make choices, with a single tap.
 
-The buttons component for the material.io web platform consists of the following implementations are extensions of the [MDCButton](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html) class: 
+The Material Design button component for iOS consists of the following implementations (which  are extensions of the [MDCButton](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html) class): 
 
 * [MDCButton](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
   * [Text Button](#text-button)
@@ -21,24 +21,24 @@ The buttons component for the material.io web platform consists of the following
 * [MDCCardCollectionCell](https://material.io/develop/ios/components/cards/api-docs/Classes/MDCCardCollectionCell.html)
   * [Toggle Icon Button](#toggle-icon)
 
-## Using buttons
+For more information on the button component, visit [material.io/components/buttons](http://material.io/components/buttons).
 
-If intend 
+## Using button
 
-### Install `mcd-button`
+### Install `mdc-button`
 
 Before using the `MDCButtons` component to implement its variants you must install `MCDButtons`. In your source files import the component, and then apply your theme:
 1. Install `MDCButtons`
    * Use CocoaPods to install `MDCButtons`
-     1. Add the following to your `Podfile`:
-       ```bash
+     1. Add the following line to your `Podfile`:
+       ```java
       pod MaterialComponents/Buttons
        ```
      1. Run the installer:
        ```bash
        pod install
        ```
-1. Import `MDCButtons` and MDC buttons theming and initialize `MDCButtons` using `alloc`/`init`. Initialize your theme  before applying it to your button.
+1. Import `MDCButtons` and MDC button theming and initialize `MDCButtons` using `alloc`/`init`. Initialize your theme  before applying it to your button.
 
   **Note** For more information about themes, go to the [Theming page](https://material.io/develop/ios/components/theming/) for iOS.
 
@@ -59,8 +59,8 @@ Before using the `MDCButtons` component to implement its variants you must insta
        MDCButton *button = [[MDCButton alloc] init];
      ```
  1. Apply accessibility settings
-    To help make your buttons usable to as many users as possible:
-    * Set an appropriate [`accessibilityLabel`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) value if your button does not have a title or only has an icon.
+    To help make your buttons usable to as many users as possible, set an appropriate [`accessibilityLabel`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) value if your button does not have a title or only has an icon:
+
         **Objective-C**
         ```objc
         button.accessibilityLabel = @"Create";
@@ -119,7 +119,7 @@ Outlined buttons are medium-emphasis buttons. They contain actions that are impo
 
 ### Outlined button example without container schemes
 
-You can apply a theme to the buttons using `Themes`.
+You can apply a theme to the button using `Themes`.
 
 Source Code APIs:
 
@@ -151,7 +151,7 @@ MDCButton *button = [[MDCButton alloc] init];
 ```
 ### Outlined button example with container schemes
 
-You can apply a theme to the buttons that applies to all elements in a container using `MDCContainerScheme`.
+You can apply a theme to the button that applies to all elements in a container using `MDCContainerScheme`.
 
 Source Code APIs:
 
@@ -202,7 +202,7 @@ The following examples show a contained button in two states: Disabled and enabl
 
 Toggle buttons can be used to select from a group of choices.
 
-### Toggle Bar
+### Toggle bar
 
 The toggle bar allows you to select from a group of buttons that can be set to [selective action](https://material.io/components/buttons/#toggle-button) where only one button in a group can be selected at one time.
 

@@ -13,28 +13,29 @@ initial_release:
 This template is based on the current design article template at
 https://spec.googleplex.com/m2-spec-guide/authoring-content/component-article-template.html
 
-The API documentation formatting is roughly based on https://developers.google.com/android-publisher/api-ref/inappproducts
-
-Replace all instances of '[]' with your content (such as the component name you usually use)
+<!--
+Replace all instances of '<>' with your content (such as the component name you usually use)
 
 Replace all uses of block quotes with relevant content.
 -->
 
 # \[Canonical Component Name\]
 
-> **example Android Buttons title:**
-> # Buttons
+> **example Android Button title:**
+> # Button
 
 Add a concise (1-2 sentence) description of the component here starting with the one-line definition from the design/guidance page. The corresponding design document should have a full description.
 
 Add a link to the corresponding design page that the component (helps) implement.
 
+[<component cannonical name>](https://material.io/components/<component>)
+
 For example:
 
-> Buttons allow users to take actions and make choices with a single tap.
-> Buttons can be customized to meet your style requirements.
+> Button allows users to take actions and make choices with a single tap.
+> Button can be customized to meet your style requirements.
 >
-> For more information, go to the [Buttons](https://material.io/components/buttons/#usage) guidance page.
+> For more information on the button component, go to the [Button](https://material.io/components/buttons/#usage) guidance page.
 
 ## \[Component variants\]
 
@@ -45,11 +46,11 @@ If there are component variants, list them here and link to the local anchor lin
 > * [Contained button](#contained-button)
 > * [Toggle button](#toggle-button)
 
-Insert any related graphics: show instead of say.
+Insert any related graphics (such as a graphic showing all variants of this component): show instead of say. If there is no graphic available, skip this. 
 
-<img src="" alt="insert a description of the graphic and any variant of the principle component variant it implements.">
+<img src="" alt="Include a graphic here with all the variants for this component. Insert a description of the graphic and any variant of the principle component variant it implements.">
 
-example images from Buttons:
+example images from Button:
 > <img src="docs/images/buttons-types-all.png" alt="Support button variants include text button in the upper left, outlined button in the upper right, contained button in the lower left, and toggle button in the lower right">
 
 <!-- Note that the iOS team has added a TOC to their repo, and it appears to be from https://github.com/jonschlinkert/markdown-toc -->
@@ -59,7 +60,7 @@ example images from Buttons:
 
 If there are any instructions on using the component that applies to all component variants (for example, installation or theming), include them here.
 
-For example, for the iOS buttons component:
+For example, for the iOS button component:
 
 > ### Install `mcd-button`
 >
@@ -74,7 +75,7 @@ For example, for the iOS buttons component:
 >         ```bash
 >         pod install
 >         ```
-> 1. Import `MDCButtons` and MDC buttons theming and initialize `MDCButtons` using `alloc`/`init`. Initialize your theme  before applying it to your button.
+> 1. Import `MaterialButtons` and `MaterialButtons_Theming` and initialize `MDCButtons` using `alloc`/`init`. Initialize your theme  before applying it to your button.
 >
 >    **Note** For more information about themes, go to the [Theming page](https://material.io/develop/ios/components/theming/) for iOS.
 >
@@ -95,7 +96,8 @@ For example, for the iOS buttons component:
 >       MDCButton *button = [[MDCButton alloc] init];
 >       ```
 > 1. Apply accessibility settings
->    To help make your buttons usable to as many users as possible:
+>
+>    Help make your buttons usable to as many users as possible:
 >    * Set an appropriate [`accessibilityLabel`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) value if your button does not have a title or only has an icon.
 >        **Objective-C**
 >        ```objc
@@ -107,45 +109,51 @@ For example, for the iOS buttons component:
 >        ```
 
 ### \[Component section\]
-Divide the component API into its variants, preferably as described in the [material.io/components] pages.
+Divide the component into its variants, preferably as described in the [material.io/components] pages.
 
 
 
-For example [buttons](material.io/components/buttons/) is divided into the following 3rd tier (`###` header) sections based on its variants:
+For example [button](material.io/components/buttons/) is divided into the following 3rd tier (`###` header) sections based on its variants:
 
 * Text button
 * Outlined button
 * Contained button
 * Toggle button
+  * Toggle bar <!-- not actually described in guidance -- need to work backwards to design to update design guidance -->
+  * Toggle icon <!-- not actually described in guidance -- need to work backwards to design to update design guidance-->
 
 
-Whereas [cards](https://material.io/components/cards/) is divided into:
+Whereas [chips](https://material.io/components/chips/) is divided into:
 
-* Behavior
-* Actions
-* Card collections
-
+* Input chip
+* Choice chip
+* Filter clip
+* Action clip
 
 Each section should have a 3rd tier header. Add 1-2 sentences from the material.io website that describes when and how to use the component.
 
-**Important** If your platform does not support a particular variant, EXPLICITLY STATE THAT IT DOESN'T.
+**Important** If your platform does not support a particular variant, EXPLICITLY STATE THAT IT DOESN'T. Consider including a link to library that does support the variant.
 
 **Example: Android Text Button**
+
 > ### Text button
 >
 > Text buttons are typically used for less-pronounced actions, including those located:
+>
 >     * In dialogs
 >     * In cards
+>
 > In cards, text buttons help maintain an emphasis on card content.
 >
 > ...
 >
 > ### Toggle button
 > Toggle button is divided into two subvariants:
-> * Toggle button group <img src="images/button-toggle.png" alt="Toggle button group example.">
-> * Icon button <img src"images/button-icon-toggle.png" alt="Icon toggle button group example">
+> 
+> * Toggle bar <img src="images/button-toggle.png" alt="Toggle button group example.">
+> * Toggle icon <img src"images/button-icon-toggle.png" alt="Icon toggle button group example">
 >
-> **Android currently does not support toggle button groups.** If you need a framework for a toggle button group, use \<example framework with link\>.
+> **Android currently does not support toggle bar.** 
 >
 > To add an icon button ...
 
@@ -163,6 +171,7 @@ Each example should have 1-2 sentences to describe the example. The example shou
 ##### APIs used
 
 The APIs section should have the following:
+
 * Links to the applicable API(s) listed from highest level to lowest level
 * Provide example source code that can generate the example in the image. Mention any themes/settings used.
 
@@ -180,9 +189,9 @@ The APIs section should have the following:
 >    android:text="@string/text_button_label_enabled"/>
 >```
 >
-> ### Outline button
+> ### Outlined button
 >
-> Outline buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
+> Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 >
 > <img src="" alt="example outlined button image">
 >
@@ -190,7 +199,7 @@ The APIs section should have the following:
 > * [MaterialButton](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
 >
 >
-> #### Outline button sample code
+> #### Outlined button sample code
 > ```xml
 > <com.google.android.material.button.MaterialButton
 >    android:id="@+id/material_text_button"
@@ -206,7 +215,7 @@ The APIs section should have the following:
 > <img src="" alt="example contained button image">
 >
 >
-> **Note** Elevated `MaterialButtons` have a shadow that can extend outside the bounds of the button. For this reason, the wrapping parent element should set to android:clipToPadding="false" in cases where the button shadow could be clipped by the parent bounds.
+> **Note** Elevated `MaterialButtons` have a shadow that can extend outside the bounds of the button. For this reason, the wrapping parent element should set to `android:clipToPadding="false"` in cases where the button shadow could be clipped by the parent bounds.
 >
 > #### APIs used
 > * [MaterialButton](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button)
