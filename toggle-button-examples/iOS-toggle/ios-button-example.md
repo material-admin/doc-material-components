@@ -25,7 +25,7 @@ For more information on the button component, visit [material.io/components/butt
 
 ## Using button
 
-### Install `mdc-button`
+### Install `MDCButtons`
 
 Before using the `MDCButtons` component to implement its variants you must install `MCDButtons`. In your source files import the component, and then apply your theme:
 1. Install `MDCButtons`
@@ -40,7 +40,7 @@ Before using the `MDCButtons` component to implement its variants you must insta
        ```
 1. Import `MDCButtons` and MDC button theming and initialize `MDCButtons` using `alloc`/`init`. Initialize your theme  before applying it to your button.
 
-  **Note** For more information about themes, go to the [Theming page](https://material.io/develop/ios/components/theming/) for iOS.
+    **Note** For more information about themes, go to the [Theming page](https://material.io/develop/ios/components/theming/) for iOS.
 
        **Swift**
        ```swift
@@ -59,6 +59,7 @@ Before using the `MDCButtons` component to implement its variants you must insta
        MDCButton *button = [[MDCButton alloc] init];
      ```
  1. Apply accessibility settings
+ 
     To help make your buttons usable to as many users as possible, set an appropriate [`accessibilityLabel`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) value if your button does not have a title or only has an icon:
 
         **Objective-C**
