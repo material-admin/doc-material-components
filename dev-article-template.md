@@ -60,6 +60,16 @@ example images from Button:
 
 If there are any instructions on using the component that applies to all component variants (for example, installation or theming), include them here.
 
+If there is a separate page that has instructions, link to that page.
+
+For example, for the Android button component:
+
+> ## Using button
+>
+> Before you can use the Material.io button, you need to install the Material.io Android library. For more information, go to the [Getting started](https://www.google.com/url?q=https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md&sa=D&ust=1573585349965000&usg=AFQjCNF75a0u6bbQ6-XftBRNV4EQevylkw) page.
+
+
+
 For example, for the iOS button component:
 
 > ### Install `mcd-button`
@@ -108,6 +118,8 @@ For example, for the iOS button component:
 >        button.accessibilityLabel = "Create"
 >        ```
 
+
+
 ### \[Component section\]
 Divide the component into its variants, preferably as described in the [material.io/components] pages.
 
@@ -130,13 +142,13 @@ Whereas [chips](https://material.io/components/chips/) is divided into:
 * Filter clip
 * Action clip
 
-Each section should have a 3rd tier header. Add 1-2 sentences from the material.io website that describes when and how to use the component.
+Each section should have a 2nd tier header. Add 1-2 sentences from the material.io website that describes when and how to use the component.
 
 **Important** If your platform does not support a particular variant, EXPLICITLY STATE THAT IT DOESN'T. Consider including a link to library that does support the variant.
 
 **Example: Android Text Button**
 
-> ### Text button
+> ## Text button
 >
 > Text buttons are typically used for less-pronounced actions, including those located:
 >
@@ -147,7 +159,7 @@ Each section should have a 3rd tier header. Add 1-2 sentences from the material.
 >
 > ...
 >
-> ### Toggle button
+> ## Toggle button
 > Toggle button is divided into two subvariants:
 > 
 > * Toggle bar <img src="images/button-toggle.png" alt="Toggle button group example.">
@@ -158,27 +170,29 @@ Each section should have a 3rd tier header. Add 1-2 sentences from the material.
 > To add an icon button ...
 
 
-#### Example: \[Component Example\]
+### \[Component Example\] example
 
-Each example should have 1-2 sentences to describe the example. The example should include an image rendering whatever sample code is included:
+The component example header should be one level below the component section header.
 
-**Example: Android Text Button**
-
-> #### Example: Text button
->
-> <img src="" alt="example text button image">
-
-##### APIs used
-
-The APIs section should have the following:
-
-* Links to the applicable API(s) listed from highest level to lowest level
-* Provide example source code that can generate the example in the image. Mention any themes/settings used.
+The Example section should have the following:
+* 1-2 sentences to describe the example
+* An image rendering whatever sample code is included
+* A list of links to the applicable API(s) listed from highest level to lowest level: include both developer source (e.g., [developer.android.com], or as available) and GitHub source
+* Provide example source code that can generate the example in the image. Mention any themes/settings used
 
 **Example: Android Button**
 
-> #### APIs used
-> * [MaterialButton](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+> ## Text button example
+>
+> The follwing example shows a text button.
+>
+> <img src="" alt="Text button for Android showing a ... text and ... background">
+>
+> Source code API:
+> * Material Button:
+>     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+>     * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
+
 >
 > ```xml
 >  <com.google.android.material.button.MaterialButton
@@ -189,17 +203,20 @@ The APIs section should have the following:
 >    android:text="@string/text_button_label_enabled"/>
 >```
 >
-> ### Outlined button
+> ## Outlined button
 >
 > Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 >
+>
+> ### Outlined button example
+>
 > <img src="" alt="example outlined button image">
 >
-> #### APIs used
-> * [MaterialButton](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+> Source code API
+> * Material Button:
+>     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+>     * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
 >
->
-> #### Outlined button sample code
 > ```xml
 > <com.google.android.material.button.MaterialButton
 >    android:id="@+id/material_text_button"
@@ -208,21 +225,29 @@ The APIs section should have the following:
 >    android:layout_height="wrap_content"
 >    android:text="@string/outlined_button_label_enabled"/>
 > ```
-> ### Contained button
+> ## Contained button
 >
 > Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
+>
+> ### Contained button example 
+>
+> The following examples show a contained button without and with a wrapping parent element, `GridLayout`.
 >
 > <img src="" alt="example contained button image">
 >
 >
 > **Note** Elevated `MaterialButtons` have a shadow that can extend outside the bounds of the button. For this reason, the wrapping parent element should set to `android:clipToPadding="false"` in cases where the button shadow could be clipped by the parent bounds.
 >
-> #### APIs used
-> * [MaterialButton](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/button)
-> * [GridLayout](https://developer.android.com/reference/com/google/android/material/)
+> Source code APIs:
+> * MaterialButton
+>     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+>     * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
+
+> * [GridLayout](https://developer.android.com/reference/com/google/android/material/) &ndash; optional
 >
-> #### Contained button sample code
 > <img src="" alt="example contained button image">
+>
+> #### Contained button example without wrapping parent element
 >
 > ``` xml
 > <com.google.android.material.button.MaterialButton
@@ -257,17 +282,26 @@ The APIs section should have the following:
 >  </GridLayout>
 > ```
 >
-> ### Toggle button
+> ## Toggle button
 >
 > The toggle button is a `ViewGroup` that groups together several `MaterialButton`
 >
-> ### APIs Used
+> ### Toggle button sample code
 >
-> [MaterialButtonToggleGroup](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup)
+> The following example shows a toggle bar.
 >
 > <img src="" alt="examplebutton image with grid layout">
 >
-> #### Toggle button sample code
+> Source code APIs:
+>
+> * MaterialButton
+>     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+>     * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
+> * MaterialButtonToggleGroup:
+>    * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup)
+>    * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButtonToggleGroup.java)
+
+>
 >
 > ```
 > <com.google.android.material.button.MaterialButtonToggleGroup

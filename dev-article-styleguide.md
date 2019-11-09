@@ -3,6 +3,9 @@
 This is a checklist for developers to ensure that their usage documents maintain stylistic and content standards.
 
 
+- [ ]  Use the Google developer documentation [style guide highlights page](https://developers.google.com/style/highlights) as a checklist. 
+
+	For a more detailed description of the Google style guidelines, go to the [Google developer documentation style guide](https://developers.google.com/style/).
 - [ ]  Documentation uses the canonical component name from the guidelines.
 
 	<details>

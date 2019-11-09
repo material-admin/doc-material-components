@@ -12,7 +12,7 @@ api_doc_root:
 
 Buttons allow users to take actions, and make choices, with a single tap.
 
-The buttons component for the material.io web platform consists of the following implementations are extensions of the [MDCButton](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html) class: 
+The buttons component for the material.io Android platform consists of the following implementations are extensions of the [MaterialButton](https://developer.android.com/reference/com/google/android/material/button/MaterialButton) class: 
 
 
 * [Text Button](#text-button)
@@ -21,6 +21,10 @@ The buttons component for the material.io web platform consists of the following
 * [Toggle Button](#toggle-button)
 
 For more information on the button component, visit [material.io/components/buttons](http://material.io/components/buttons).
+
+## Using button
+
+Before you can use the Material.io button, you need to install the Material.io Android library. For more information, go to the [Getting started](https://www.google.com/url?q=https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md&sa=D&ust=1573585349965000&usg=AFQjCNF75a0u6bbQ6-XftBRNV4EQevylkw) page.
 
 ## Text button
 
@@ -31,9 +35,11 @@ In cards, text buttons help maintain an emphasis on card content.
 
 ### Text button example
 
-Source Code API:
+Source code API:
 
-* [MaterialButton](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+* MaterialButton
+    * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+    * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
 
 The following example shows a text button with purple text on white background.
 
@@ -56,9 +62,12 @@ Outlined buttons are medium-emphasis buttons. They contain actions that are impo
 
 ### Outlined button example
 
-Source Code API:
+Source code API:
 
-* [MaterialButton](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+* MaterialButton
+    * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+    * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
+
 
 
 <img src="assets/android_outlined.png" alt="Outlined button example in Android with purple text surrounded by a gray outline">
@@ -80,9 +89,11 @@ Contained buttons are high-emphasis, distinguished by their use of elevation and
 
 ### Contained button example
 
-Source Code API:
+Source code API:
 
-* [MaterialButton](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+* MaterialButton
+    * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+    * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
 
 
 The following examples show an elevated contained button with a purple background with white text.
@@ -105,6 +116,10 @@ The following examples show an elevated contained button with a purple backgroun
 
 Toggle buttons can be used to select from a group of choices.
 
+The toggle button can be separated into two types:
+* [Toggle bar](#toggle-bar)
+* [Toggle icon button](#toggle-icon-button)
+
 ### Toggle Bar
 
 The toggle bar allows you to select from a group of buttons that can be set to [selective action](https://material.io/components/buttons/#toggle-button) where only one button in a group can be selected at one time.
@@ -119,12 +134,17 @@ The following example shows a button bar with the following icons:
 
 The example allows multiple buttons to be selected. To exclusively select a button, add `app:singleSelection="true"` to `MaterialButtonToggleGroup`. 
 
-Source Code APIs:
+Source code APIs:
 
-* [MaterialButton](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
-* [MaterialButtonToggleGroup](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup)
+* MaterialButton
+    * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+    * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
 
-<img src="assets/android_button_bar.png" alt="Androind button bar displaying the following icons: aspect ratio, assignment, late assignment, and bookmar">
+* MaterialButtonToggleGroup
+    * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup)
+    * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButtonToggleGroup.java)
+
+<img src="assets/android_button_bar.png" alt="Android button bar displaying the following icons: aspect ratio, assignment, late assignment, and bookmar">
 
 
 ```xml
@@ -164,7 +184,7 @@ Source Code APIs:
 ```
 
 
-### Toggle icon
+### Toggle icon button
 
 
 The toggle icon button allows you to select from a group using an icon.
