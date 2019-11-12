@@ -131,8 +131,8 @@ For example [button](material.io/components/buttons/) is divided into the follow
 * Outlined button
 * Contained button
 * Toggle button
-  * Toggle bar <!-- not actually described in guidance -- need to work backwards to design to update design guidance -->
-  * Toggle icon <!-- not actually described in guidance -- need to work backwards to design to update design guidance-->
+  * Toggle bar <!-- not actually described in guidance; need to work backwards to design to update design guidance -->
+  * Toggle icon <!-- not actually described in guidance; need to work backwards to design to update design guidance-->
 
 
 Whereas [chips](https://material.io/components/chips/) is divided into:
