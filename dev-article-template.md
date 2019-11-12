@@ -2,40 +2,51 @@
 title: ""
 layout: detail
 section: components
-excerpt: "This is the template for the developer articles for material.io."
+excerpt: "This is the template for the developer usage article for material.io."
 iconId:
 path: /
 api_doc_root:
 initial_release:
 -->
 <!--initial_release field required with first platform version supported -->
-<!-- this is an article template for the material.io developer site.
-This template is based on the current design article template at
-https://spec.googleplex.com/m2-spec-guide/authoring-content/component-article-template.html
-
+<!-- this is a usage article template for the material.io developer site.
 <!--
 Replace all instances of '<>' with your content (such as the component name you usually use)
 
 Replace all uses of block quotes with relevant content.
 -->
 
-# \[Canonical Component Name\]
+# \[Canonical component name\]
+<details>
+  <summary><i>Example: Android button title</i></summary>
 
-> **example Android Button title:**
-> # Button
+  <blockquote><h1>Button</h1></blockquote>
+</details>
+
+<details>
+  <summary><i>Example: Android button title in Markdown</i></summary>
+
+  <blockquote>
+    <codeblock>
+      # Button
+    </codeblock>
+  </blockquote>
+</details>
 
 Add a concise (1-2 sentence) description of the component here starting with the one-line definition from the design/guidance page. The corresponding design document should have a full description.
 
 Add a link to the corresponding design page that the component (helps) implement.
 
-[<component cannonical name>](https://material.io/components/<component>)
+[\<Component cannonical name\>](https://material.io/components/<component>)
 
-For example:
+<details>
+	<summary><i>Example button description</i></summary>
 
-> Button allows users to take actions and make choices with a single tap.
-> Button can be customized to meet your style requirements.
->
-> For more information on the button component, go to the [Button](https://material.io/components/buttons/#usage) guidance page.
+	Button allows users to take actions and make choices with a single tap.
+	Button can be customized to meet your style requirements.
+
+	For more information on the button component, go to the [Button] <a href="https://material.io/components/buttons/#usage">Button</a> guidance page.
+</details>
 
 ## \[Component variants\]
 
@@ -131,8 +142,9 @@ For example [button](material.io/components/buttons/) is divided into the follow
 * Outlined button
 * Contained button
 * Toggle button
-  * Toggle bar <!-- not actually described in guidance -- need to work backwards to design to update design guidance -->
-  * Toggle icon <!-- not actually described in guidance -- need to work backwards to design to update design guidance-->
+  * Toggle bar <!-- not actually described in guidance; need to work backwards to design to update design guidance -->
+   * Toggle icon 
+<!-- not actually described in guidance; need to work backwards to design to update design guidance -->
 
 
 Whereas [chips](https://material.io/components/chips/) is divided into:
