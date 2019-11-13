@@ -20,11 +20,80 @@ For more information, go to the [Buttons](https://material.io/components/buttons
 1. [Text button](#text-button)
 1. [Outlined button](#outlined-button)
 1. [Contained button](#contained-button)
-1. [Toggle button](#material-button-toggle-group)
+1. [Toggle button](#toggle-button)
 
+## Using buttons
 
+Before you can use buttons on Android, you need to depend on the Material Components for Android library. For more information, go to the [getting started](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md) page.
 
-## Using Buttons
+### Add a `MaterialButton` to your XML layout
+
+All standalone button variants on Android are implemented with the [`MaterialButton`](https://developer.android.com/reference/com/google/android/material/button/MaterialButton) class.
+
+They can be added to an XML layout:
+```xml
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Button"
+/>
+```
+
+_**Note:** it is also acceptable to simply use the `<Button>` XML tag. This will be automatically inflated as a `MaterialButton` by [`MaterialComponentsViewInflater`](https://developer.android.com/reference/com/google/android/material/theme/MaterialComponentsViewInflater), provided a `Theme.MaterialComponents.*` theme is in use._
+
+### Use a style to enable a variant
+
+In order to achieve a certain button variant, you need to use a style:
+```xml
+<com.google.android.material.button.MaterialButton
+    ...
+    style="@style/Widget.MaterialComponents.Button.*"
+/>
+```
+
+The available styles are mentioned below in the button variant sections. If no style is specified, the contained button variant is the default.
+
+### Use `MaterialButtonToggleGroup` for toggle buttons
+
+Toggle buttons are implemented by grouping `MaterialButton`s using the `MaterialButtonToggleGroup` class:
+
+```xml
+<com.google.android.material.button.MaterialButtonToggleGroup
+    android:id="@+id/toggleButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 1"
+        style="?attr/materialButtonOutlinedStyle"
+    />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 2"
+        style="?attr/materialButtonOutlinedStyle"
+    />
+    
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button 3"
+        style="?attr/materialButtonOutlinedStyle"
+    />
+    
+    ...
+
+</com.google.android.material.button.MaterialButtonToggleGroup>
+```
+
+_**Note:** it is recommended that the outline button variant style is applied to the child `MaterialButton`s._
 
 ### Related APIs
 
