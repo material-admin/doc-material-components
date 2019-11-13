@@ -10,9 +10,10 @@ api_doc_root:
 
 # Buttons
 
-The buttons component of Material.io can be implemented in Android OS with `Material Button` and `MaterialButtonToggleGroup`. This button component has several built-in styles to support different levels of emphasis, as typically any UI will contain a few different buttons to indicate different actions.
+Buttons allow users to take actions and make choices with a single tap.
+Buttons can be customized to meet your style requirements.
 
-For more guidance, go to the material.io [Buttons](http://material.io/components/buttons) page.
+For more information, go to the [Buttons](https://material.io/components/buttons/#usage) guidance page.
 
 ## Material button variants
 
