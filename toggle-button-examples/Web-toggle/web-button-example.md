@@ -12,14 +12,14 @@ api_doc_root:
 
 Buttons allow users to take actions, and make choices, with a single tap.
 
-The Material Design button component for the web has two implementations:
+The Material Design button component for the web consists of the following implementations:
 
-* [`mdc-button`](#mdc-button) is a customizable button component with updated visual styles. It has several built-in styles to support different levels of emphasis or indicate different actions. Use `mdc-button` to implement the following material buttons:
+
   * [Text button](#text-button)
   * [Outline button](#outlined-button)
   * [Filled button](#contained-button)
-* [`mdc-icon-button`](#mdc-icon-button) is a variant of `mdc-button` that allows users to select and toggle an icon button with a single tap.
-  * [Toggle (Icon) button](#toggle-button)
+  * [Toggle button](#toggle-button)
+    * [Toggle icon button](#toggle-icon-button)
 
 You can customize button look and feel using [Sass Mixins](#sass-mixins)
 
@@ -284,7 +284,7 @@ The Material.io framework for Web currently does not support toggle button group
 
 If your application needs a toggle button group, you will need to use a different framework such as [Vuetify](https://vuetifyjs.com/en/components/button-groups#button-groups).
 
-### Toggle icon button
+### Toggle icon
 
 The toggle icon button allows you to select from a group using an icon.
 

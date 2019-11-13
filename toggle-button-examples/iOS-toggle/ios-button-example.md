@@ -12,14 +12,13 @@ api_doc_root:
 
 Buttons allow users to take actions, and make choices, with a single tap.
 
-The Material Design button component for iOS consists of the following implementations (which  are extensions of the [MDCButton](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html) class): 
+The Material Design button component for iOS consists of the following implementations: 
 
-* [MDCButton](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
-  * [Text Button](#text-button)
-  * [Outlined Button](#outlined-button) 
-  * [Contained Button](#contained-button)
-* [MDCCardCollectionCell](https://material.io/develop/ios/components/cards/api-docs/Classes/MDCCardCollectionCell.html)
-  * [Toggle Icon Button](#toggle-icon)
+* [Text button](#text-button)
+* [Outlined button](#outlined-button) 
+* [Contained button](#contained-button)
+* [Toggle button](#toggle-button)
+  * [Toggle icon button](#toggle-icon)
 
 For more information on the button component, visit [material.io/components/buttons](http://material.io/components/buttons).
 
@@ -81,13 +80,14 @@ In cards, text buttons help maintain an emphasis on card content.
 
 ### Text button example
 
-Source Code APIs:c
-
-* [MDCButton](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
-* [Themes](https://material.io/develop/ios/components/theming/)
-
-
 The following example shows a text button with black text on white background.
+
+Source Code APIs:
+
+* MDCButton
+    * [Class description](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
+    * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
+* [Themes class description](https://material.io/develop/ios/components/theming/) <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
 <img src="assets/ios-text-button.gif" alt="Text button example in iOS showing the black text 'Text Button' over a white background.">
 
@@ -124,8 +124,10 @@ You can apply a theme to the button using `Themes`.
 
 Source Code APIs:
 
-* [MDCButton](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
-* [Themes](https://material.io/develop/ios/components/theming/)
+* MDCButton
+    * [Class description](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
+    * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
+* [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
 
 <img src="assets/ios-outlined.gif" alt="Outlined button example in iOS">
@@ -156,9 +158,11 @@ You can apply a theme to the button that applies to all elements in a container 
 
 Source Code APIs:
 
-* [MDCButton](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
-* [Themes](https://material.io/develop/ios/components/theming/)
-* [MDCContainerScheme](https://github.com/material-components/material-components-ios/tree/stable/components/schemes/Container) theme
+* MDCButton
+    * [Class description](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
+    * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
+* [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
+* [MDCContainerScheme class description](https://github.com/material-components/material-components-ios/tree/stable/components/schemes/Container) theme
 
 
 
@@ -189,8 +193,10 @@ Contained buttons are high-emphasis, distinguished by their use of elevation and
 
 Source Code APIs:
 
-* [MDCButton](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
-* [Themes](https://material.io/develop/ios/components/theming/)
+* MDCButton
+    * [Class description](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
+    * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
+* [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
 
 The following examples show a contained button in two states: Disabled and enabled. Color schemes are typically determined by your theme.
@@ -207,9 +213,9 @@ Toggle buttons can be used to select from a group of choices.
 
 The toggle bar allows you to select from a group of buttons that can be set to [selective action](https://material.io/components/buttons/#toggle-button) where only one button in a group can be selected at one time.
 
-The Material toggle bar is not supported in iOS. If your application needs a toggle bar, you can use \<link to API here\>.
+The Material toggle bar is not supported in iOS. 
 
-### Toggle icon
+### Toggle icon button
 
 
 The toggle icon button allows you to select from a group using an icon.
@@ -220,7 +226,7 @@ Source code APIs:
 
 * [MDCCardCollectionCell](https://material.io/develop/ios/components/cards/api-docs/Classes/MDCCardCollectionCell.html)
 * [UICollectionViewController]()
-* [Themes](https://material.io/develop/ios/components/theming/)
+* [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
 
 The following example shows 4 images arranged in a 2-by-2 array with a favorite icon in the upper-right corner of each image.
