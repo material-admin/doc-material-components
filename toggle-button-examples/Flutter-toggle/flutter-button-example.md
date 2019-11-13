@@ -8,35 +8,34 @@ path: /
 api_doc_root:
 @import "@material/button/mdc-button";
 -->
-# Buttons
+# Button
 
 Buttons allow users to take actions, and make choices, with a single tap.
 
-The buttons component for the material.io web platform consists of the following implementations are extensions of the [MaterialButton](https://api.flutter.dev/flutter/material/MaterialButton-class.html), [StatelessWidget](https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html), and [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html) classes:
+The buttons component for the material.io Flutter platform consists of the following implementations:
 
-* [MaterialButton](https://api.flutter.dev/flutter/material/MaterialButton-class.html)
-  * [Text Button](#text-button) (FlatButton)
-  * [Outlined Button](#outlined-button) (OutlineButton)
-  * [Contained Button](#contained-button) (RaisedButton)
-* [StatelessWidget](https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html) 
-  * [Toggle Bar](#toggle-bar) (ToggleButtons)
-* [Widget](https://api.flutter.dev/flutter/widgets/Widget-class.html)
-  * [Toggle Icon Button](#toggle-icon) (IconButton)
+  * [Text button](#text-button)
+  * [Outlined button](#outlined-button)
+  * [Contained button](#contained-button)
+  * [Toggle button](#toggle-button)
+    * [Toggle bar](#toggle-bar) 
+    * [Toggle icon button](#toggle-icon)
 
 For more information on the button component, visit [material.io/components/buttons](http://material.io/components/buttons).
 
-# Using Buttons
 
 ## Text button
 
 Text buttons are typically used for less-pronounced actions, including those located:
+
 * In dialogs
 * In cards
+
 In cards, text buttons help maintain an emphasis on card content.
 
 ### Text button example
 
-Source Code APIs:
+Source code API:
 
 * [FlatButton](https://api.flutter.dev/flutter/material/FlatButton-class.html)
 
@@ -62,7 +61,8 @@ Outlined buttons are medium-emphasis buttons. They contain actions that are impo
 
 ### Outlined button example
 
-Source Code APIs:
+Source code API:
+
 * [OutlineButton](https://api.flutter.dev/flutter/material/OutlineButton-class.html)
 
 
@@ -88,7 +88,7 @@ Contained buttons are high-emphasis, distinguished by their use of elevation and
 
 ### Contained button example
 
-Source Code APIs:
+Source code API
 
 * [RaisedButton](https://api.flutter.dev/flutter/material/RaisedButton-class.html)
 
@@ -112,7 +112,7 @@ RaisedButton(
 
 Toggle buttons can be used to select from a group of choices.
 
-### Toggle Bar
+### Toggle bar
 
 The toggle bar allows you to select from a group of buttons that can be set to [selective action](https://material.io/components/buttons/#toggle-button) where only one button in a group can be selected at one time.
 
@@ -186,7 +186,7 @@ class _ToggleBarDemoState extends State<ToggleBarDemo> {
 }
 ```
 
-### Toggle Icon
+### Toggle icon
 
 The [toggle icon](https://material.io/components/buttons/#toggle-button) button allows you to select from a group using an icon. 
 
