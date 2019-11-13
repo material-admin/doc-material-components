@@ -40,22 +40,27 @@ Add a link to the corresponding design page that the component (helps) implement
 [\<Component cannonical name\>](https://material.io/components/<component>)
 
 <details>
-	<summary><i>Example button description</i></summary>
+  <summary><i>Example button description</i></summary>
 
-	Button allows users to take actions and make choices with a single tap.
-	Button can be customized to meet your style requirements.
-
-	For more information on the button component, go to the [Button] <a href="https://material.io/components/buttons/#usage">Button</a> guidance page.
+  <blockquote>
+    Button allows users to take actions and make choices with a single tap.
+    Button can be customized to meet your style requirements.
+    </br></br>
+    For more information on the button component, go to the <a href="https://material.io/components/buttons/#usage">Button</a> guidance page.
+  </blockquote>
 </details>
-
-## \[Component variants\]
 
 If there are component variants, list them here and link to the local anchor link for its section.
 
-> * [Text button](#text-button)
-> * [Outlined button](#outlined-button)
-> * [Contained button](#contained-button)
-> * [Toggle button](#toggle-button)
+<details>
+	<summary><i>Example: list of button variants in Markdown</i></summary>
+	
+  	  * [Text button](#text-button)
+  	  * [Outlined button](#outlined-button)
+	  * [Contained button](#contained-button)
+  	  * [Toggle button](#toggle-button)
+ 	
+</details>
 
 Insert any related graphics (such as a graphic showing all variants of this component): show instead of say. If there is no graphic available, skip this. 
 
