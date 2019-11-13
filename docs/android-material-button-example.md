@@ -15,12 +15,12 @@ Buttons can be customized to meet your style requirements.
 
 For more information, go to the [Buttons](https://material.io/components/buttons/#usage) guidance page.
 
-## Material button variants
+## Button variants
 
 1. [Text button](#text-button)
 1. [Outlined button](#outlined-button)
-1. [Contained button (Filled and raised)](#contained-button)
-1. [Toggle  (Material button toggle group)](#material-button-toggle-group)
+1. [Contained button](#contained-button)
+1. [Toggle button](#material-button-toggle-group)
 
 
 
