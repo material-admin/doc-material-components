@@ -14,4 +14,5 @@
 <resources>
     <string name="app_name">Toggle Buttons</string>
     <string name="image_content_desc">Image example</string>
+    <string name="outlined">Outlined</string>
 </resources>

@@ -40,7 +40,7 @@ If there are any instructions on using the component that applies to all compone
 If there is a separate page that has instructions, link to that page.
 
 
-### \[Component section\]
+## \[Component section\]
 Divide the component into its variants, preferably as described in the [material.io/components] pages.
 
 

@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
       routes: {
         '/toggleBarPage': (context) => ToggleBarDemo(title: 'Toggle Bar Demo'),
         '/toggleIconPage': (context) => ToggleIconDemo(title: 'Toggle Icon Demo'),
+        '/outlineButton'
       },
     );
   }

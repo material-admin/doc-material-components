@@ -8,6 +8,11 @@ path: /
 api_doc_root:
 @import "@material/button/mdc-button";
 -->
+
+# DEPRECATED
+
+This file has moved to [../../button-examples/Android/android-button-example.md](../../button-examples/Android/android-button-example.md)
+
 # Buttons
 
 Buttons allow users to take actions, and make choices, with a single tap.
