@@ -127,10 +127,10 @@ _**Note:** it is recommended that the outline button variant style is applied to
 
 ### `MaterialButtonToggleGroup` attributes
 
-Description | Attribute(s)
----|---
-Single selection behavior toggle | `app:singleSelection`
-Default selected button ID | `app:checkedButton`
+Description | Attribute(s) | Related method(s)
+---|---|---
+Single selection behavior toggle | `app:singleSelection` | `isSingleSelection`<br/>`setSingleSelection`
+Default selected button ID | `app:checkedButton` | `check`<br/>`getCheckedButtonId`
 
 See the full list of available attributes [here](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
 
