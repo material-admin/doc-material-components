@@ -54,6 +54,23 @@ In order to achieve a certain button variant, you need to use a style:
 
 The available styles are mentioned below in the button variant sections. If no style is specified, the contained button variant is the default.
 
+### `MaterialButton` attributes
+
+Description | Attribute(s)
+---|---|---
+Container color | `app:backgroundTint`<br/>`app:backgroundTintMode`
+Container stroke | `app:strokeColor`<br/>`app:strokeWidth`
+Container shape | `app:shapeAppearance`
+Container elevation | `app:elevation`
+Text label | `android:text`
+Text label color | `android:textColor`
+Text label typography | `android:textAppearance`
+Icon | `app:icon`
+Icon size | `app:iconSize`
+Icon gravity (position relative to text label) | `app:iconGravity`
+Icon padding (space between icon and text label) | `app:iconPadding`
+Ripple color | `app:rippleColor`
+
 ### Use `MaterialButtonToggleGroup` for toggle buttons
 
 Toggle buttons are implemented by grouping `MaterialButton`s using the `MaterialButtonToggleGroup` class:
