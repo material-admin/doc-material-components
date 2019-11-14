@@ -58,20 +58,20 @@ See the full list of available styles [here](https://github.com/material-compone
 
 ### `MaterialButton` attributes
 
-Description | Attribute(s)
----|---
-Container color | `app:backgroundTint`<br/>`app:backgroundTintMode`
-Container stroke | `app:strokeColor`<br/>`app:strokeWidth`
-Container shape | `app:shapeAppearance`
-Container elevation | `app:elevation`
-Text label | `android:text`
-Text label color | `android:textColor`
-Text label typography | `android:textAppearance`
-Icon | `app:icon`
-Icon size | `app:iconSize`
-Icon gravity (position relative to text label) | `app:iconGravity`
-Icon padding (space between icon and text label) | `app:iconPadding`
-Ripple color | `app:rippleColor`
+Description | Attribute(s) | Related method(s)
+---|---|---
+Container color | `app:backgroundTint`<br/>`app:backgroundTintMode` | `setBackgroundColor`<br/>`setBackgroundTintList`<br/>`getBackgroundTintList`<br/>`setBackgroundTintMode`<br/>`getBackgroundTintMode`
+Container stroke | `app:strokeColor`<br/>`app:strokeWidth` | `setStrokeColor`<br/>`setStrokeColorResource`<br/>`getStrokeColor`<br/>`setStrokeWidth`<br/>`setStrokeWidthResource`<br/>`getStrokeWidth`
+Container shape | `app:shapeAppearance` | `setShapeAppearanceModel`<br/>`getShapeAppearanceModel`
+Container elevation | `app:elevation` | `setElevation`<br/>`getElevation`
+Text label | `android:text` | `setText`<br/>`getText`
+Text label color | `android:textColor` | `setTextColor`<br/>`getTextColor`
+Text label typography | `android:textAppearance` | `setTextAppearance`
+Icon | `app:icon` | `setIcon`<br/>`setIconResource`<br/>`getIcon`
+Icon size | `app:iconSize` | `setIconSize`<br/>`getIconSize`
+Icon gravity (position relative to text label) | `app:iconGravity` | `setIconGravity`<br/>`getIconGravity`
+Icon padding (space between icon and text label) | `app:iconPadding` | `setIconPadding`<br/>`getIconPadding`
+Ripple color | `app:rippleColor` | `setRippleColor`<br/>`setRippleColorResource`<br/>`getRippleColor`
 
 See the full list of available attributes [here](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
 
