@@ -54,6 +54,8 @@ In order to achieve a certain button variant, you need to use a style:
 
 The available styles are mentioned below in the button variant sections. If no style is specified, the contained button variant is the default.
 
+See the full list of available styles [here](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/styles.xml).
+
 ### `MaterialButton` attributes
 
 Description | Attribute(s)
@@ -70,6 +72,8 @@ Icon size | `app:iconSize`
 Icon gravity (position relative to text label) | `app:iconGravity`
 Icon padding (space between icon and text label) | `app:iconPadding`
 Ripple color | `app:rippleColor`
+
+See the full list of available attributes [here](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
 
 ### Use `MaterialButtonToggleGroup` for toggle buttons
 
@@ -118,6 +122,8 @@ Description | Attribute(s)
 ---|---
 Single selection behavior toggle | `app:singleSelection`
 Default selected button ID | `app:checkedButton`
+
+See the full list of available attributes [here](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
 
 ### Related APIs
 
