@@ -169,6 +169,8 @@ Text buttons are typically used for less-pronounced actions, including those loc
 * In dialogs.
 * In cards, text buttons help maintain an emphasis on card content.
 
+<img src="images/text-button-usage.png">
+
 #### Relevant styles
 
 Description | Style(s)
@@ -184,6 +186,8 @@ Text button style for dialog (when icon is present) | `Widget.MaterialComponents
 
 Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
+<img src="images/outlined-button-usage.png">
+
 #### Relevant styles
 
 Description | Style(s)
@@ -194,6 +198,8 @@ Outlined button style when icon is present (only use with start-gravity icon) | 
 ### Contained button
 
 Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
+
+<img src="images/contained-button-usage.png">
 
 #### Relevant styles
 
@@ -207,6 +213,8 @@ Contained button style with no elevation when icon is present (only use with sta
 ### Toggle button
 
 Toggle buttons can be used to group related options. To emphasize groups of related toggle buttons, a group should share a common container.
+
+<img src="images/button-toggle.png">
 
 #### Relevant styles
 
