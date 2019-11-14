@@ -57,7 +57,7 @@ The available styles are mentioned below in the button variant sections. If no s
 ### `MaterialButton` attributes
 
 Description | Attribute(s)
----|---|---
+---|---
 Container color | `app:backgroundTint`<br/>`app:backgroundTintMode`
 Container stroke | `app:strokeColor`<br/>`app:strokeWidth`
 Container shape | `app:shapeAppearance`
@@ -115,7 +115,7 @@ _**Note:** it is recommended that the outline button variant style is applied to
 ### `MaterialButtonToggleGroup` attributes
 
 Description | Attribute(s)
----|---|---
+---|---
 Single selection behavior toggle | `app:singleSelection`
 Default selected button ID | `app:checkedButton`
 
