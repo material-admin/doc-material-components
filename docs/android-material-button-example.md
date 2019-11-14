@@ -68,7 +68,17 @@ Contained button style | `materialButtonStyle` | `Widget.MaterialComponents.Butt
 Outlined button style | `materialButtonOutlinedStyle` | `Widget.MaterialComponents.Button.OutlinedButton.*`
 Toggle button style | `materialButtonToggleGroupStyle` | `Widget.MaterialComponents.MaterialButtonToggleGroup`
 
-These attributes can also be used to apply styles to individual buttons:
+These attributes can be overridden in a `Theme.MaterialComponents.*` theme:
+```xml
+<style name="Theme.App" parent="Theme.MaterialComponents.*">
+    ...
+    <item name="materialButtonStyle">@style/Widget.App.Button</item>
+    <item name="materialButtonOutlinedStyle">@style/Widget.App.Button.OutlinedButton</item>
+    <item name="materialButtonToggleGroupStyle">@style/Widget.App.MaterialButtonToggleGroup</item>
+</style>
+```
+
+They can also be used to apply styles to individual buttons:
 ```xml
 <com.google.android.material.button.MaterialButton
     ...
