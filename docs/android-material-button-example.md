@@ -75,6 +75,15 @@ Ripple color | `app:rippleColor`
 
 See the full list of available attributes [here](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
 
+### `MaterialButton` methods
+
+Description | Method(s)
+---|---
+Listen for press | `setOnClickListener`<br/>`setOnLongClickListener`
+
+
+See the full list of available methods [here](https://developer.android.com/reference/com/google/android/material/button/MaterialButton#public-methods_1).
+
 ### Use `MaterialButtonToggleGroup` for toggle buttons
 
 Toggle buttons are implemented by grouping `MaterialButton`s using the `MaterialButtonToggleGroup` class:
