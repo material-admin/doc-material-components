@@ -163,6 +163,57 @@ Programmatically add child button | `addView`
 
 See the full list of available methods [here](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup#public-methods_1).
 
+### Text button
+
+Text buttons are typically used for less-pronounced actions, including those located:
+* In dialogs.
+* In cards, text buttons help maintain an emphasis on card content.
+
+#### Relevant styles
+
+Description | Style(s)
+---|---
+Default text button style | `Widget.MaterialComponents.Button.TextButton`
+Text button style when icon is present | `Widget.MaterialComponents.Button.TextButton.Icon`
+Text button style for snackbar | `Widget.MaterialComponents.Button.TextButton.Snackbar`
+Text button style for dialog | `Widget.MaterialComponents.Button.TextButton.Dialog`
+Text button style for dialog (no leading margin) | `Widget.MaterialComponents.Button.TextButton.Dialog.Flush`
+Text button style for dialog (when icon is present) | `Widget.MaterialComponents.Button.TextButton.Dialog.Icon`
+
+### Outlined button
+
+Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
+
+#### Relevant styles
+
+Description | Style(s)
+---|---
+Default outlined button style | `Widget.MaterialComponents.Button.OutlinedButton`
+Outlined button style when icon is present (only use with start-gravity icon) | `Widget.MaterialComponents.Button.OutlinedButton.Icon`
+
+### Contained button
+
+Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
+
+#### Relevant styles
+
+Description | Style(s)
+---|---
+Default contained button style | `Widget.MaterialComponents.Button`
+Contained button style when icon is present (only use with start-gravity icon) | `Widget.MaterialComponents.Button.Icon`
+Contained button style with no elevation | `Widget.MaterialComponents.Button.UnelevatedButton`
+Contained button style with no elevation when icon is present (only use with start-gravity icon) | `Widget.MaterialComponents.Button.UnelevatedButton.Icon`
+
+### Toggle button
+
+Toggle buttons can be used to group related options. To emphasize groups of related toggle buttons, a group should share a common container.
+
+#### Relevant styles
+
+Description | Style(s)
+---|---
+Default toggle button style | `Widget.MaterialComponents.MaterialButtonToggleGroup`
+
 ### Related APIs
 
 #### Material button
