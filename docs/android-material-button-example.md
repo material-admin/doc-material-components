@@ -56,6 +56,24 @@ The available styles are mentioned below in the button variant sections. If no s
 
 See the full list of available styles [here](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/styles.xml).
 
+### Use theme attributes to set default variant styles
+
+A consistent style for all buttons of a certain variant can be applied with theme attributes. These can reference existing variant styles or a custom style you have defined.
+
+Description | Attribute | Related style(s)
+---|---|---
+Contained button style | `materialButtonStyle` | `Widget.MaterialComponents.Button.*`
+Outlined button style | `materialButtonOutlinedStyle` | `Widget.MaterialComponents.Button.OutlinedButton.*`
+Toggle button style | `materialButtonToggleGroupStyle` | `Widget.MaterialComponents.MaterialButtonToggleGroup`
+
+These attributes can also be used to apply styles to individual buttons:
+```xml
+<com.google.android.material.button.MaterialButton
+    ...
+    style="?attr/materialButtonOutlinedStyle"
+/>
+```
+
 ### `MaterialButton` attributes
 
 Description | Attribute(s) | Related method(s)
