@@ -18,9 +18,11 @@ For more information, go to the [Buttons](https://material.io/components/buttons
 ## Button variants
 
 1. [Text button](#text-button)
-1. [Outlined button](#outlined-button)
-1. [Contained button](#contained-button)
-1. [Toggle button](#toggle-button)
+2. [Outlined button](#outlined-button)
+3. [Contained button](#contained-button)
+4. [Toggle button](#toggle-button)
+
+<img src="images/buttons-types-all.png">
 
 ## Using buttons
 
