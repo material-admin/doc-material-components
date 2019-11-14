@@ -15,7 +15,7 @@ Replace all instances of '<>' with your content (such as the component name you 
 
 Replace all uses of block quotes with relevant content.
 -->
-
+<!-- How do we make sure that this template (and therefore all proceeding docs) meet accessibility guidelines -->
 # \[Canonical component name\]
 
 Add a concise (1-2 sentence) description of the component here starting with the one-line definition from the design/guidance page. The corresponding design document should have a full description.
@@ -32,13 +32,13 @@ Insert any related graphics (such as a graphic showing all variants of this comp
 
 ## Using \[Component Name \]
 
-If there are any instructions on using the component that applies to all component variants (for example, installation or theming), include them here.
+If there are any instructions on using the component that applies to all component variants (for example, installation or theming, accessiblity), include them here.
 
 * Use an ordered list for ordered steps (`1.`)
 * Use an unorered list for steps that have no particular order (`* `)
 
 If there is a separate page that has instructions, link to that page.
-
+<!-- What are the best ways to integrate component accessbility features into the template? -->
 
 ## \[Component section\]
 Divide the component into its variants, preferably as described in the [material.io/components] pages.
