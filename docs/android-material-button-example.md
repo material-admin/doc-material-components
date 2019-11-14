@@ -112,6 +112,13 @@ Toggle buttons are implemented by grouping `MaterialButton`s using the `Material
 
 _**Note:** it is recommended that the outline button variant style is applied to the child `MaterialButton`s._
 
+### `MaterialButtonToggleGroup` attributes
+
+Description | Attribute(s)
+---|---|---
+Single selection behavior toggle | `app:singleSelection`
+Default selected button ID | `app:checkedButton`
+
 ### Related APIs
 
 #### Material button
