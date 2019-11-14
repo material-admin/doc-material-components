@@ -134,6 +134,17 @@ Default selected button ID | `app:checkedButton`
 
 See the full list of available attributes [here](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
 
+### `MaterialButtonToggleGroup` methods
+
+Description | Method(s)
+---|---
+Listen for child button selection | `addOnButtonCheckedListener`<br/>`removeOnButtonCheckedListener`<br/>`clearOnButtonCheckedListeners`
+Determine selected child button(s) | `getCheckedButtonId`<br/>`getCheckedButtonIds`
+Programmatically select child button | `check`<br/>`uncheck`<br/>`clearChecked`
+Programmatically add child button | `addView`
+
+See the full list of available methods [here](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup#public-methods_1).
+
 ### Related APIs
 
 #### Material button
