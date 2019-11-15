@@ -186,7 +186,7 @@ Text buttons are typically used for less-pronounced actions, including those loc
 Description | Style(s)
 ---|---
 Default text button style | `Widget.MaterialComponents.Button.TextButton`
-Text button style when icon is present | `Widget.MaterialComponents.Button.TextButton.Icon`
+Text button style (when icon is present) | `Widget.MaterialComponents.Button.TextButton.Icon`
 Text button style for snackbar | `Widget.MaterialComponents.Button.TextButton.Snackbar`
 Text button style for dialog | `Widget.MaterialComponents.Button.TextButton.Dialog`
 Text button style for dialog (no leading margin) | `Widget.MaterialComponents.Button.TextButton.Dialog.Flush`
