@@ -56,7 +56,7 @@ In order to achieve a certain button variant, you need to use a style:
 
 The available styles are mentioned below in the button variant sections. If no style is specified, the contained button variant is the default.
 
-See the full list of available styles [here](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/styles.xml).
+To view the full list of available styles, go to the `MaterialButton` [styles](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/styles.xml).
 
 ### Use theme attributes to set default variant styles
 
@@ -103,7 +103,7 @@ Icon gravity (position relative to text label) | `app:iconGravity` | `setIconGra
 Icon padding (space between icon and text label) | `app:iconPadding` | `setIconPadding`<br/>`getIconPadding`
 Ripple color | `app:rippleColor` | `setRippleColor`<br/>`setRippleColorResource`<br/>`getRippleColor`
 
-See the full list of available attributes [here](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
+To view the full list of available atttributes, go to the `MaterialButton` [attrs](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
 
 ### `MaterialButton` methods
 
@@ -111,8 +111,7 @@ Description | Method(s)
 ---|---
 Listen for press | `setOnClickListener`<br/>`setOnLongClickListener`
 
-
-See the full list of available methods [here](https://developer.android.com/reference/com/google/android/material/button/MaterialButton#public-methods_1).
+To view the full list of available methods, go to the `MaterialButton` [API](https://developer.android.com/reference/com/google/android/material/button/MaterialButton#public-methods_1).
 
 ### Use `MaterialButtonToggleGroup` for toggle buttons
 
@@ -162,7 +161,7 @@ Description | Attribute(s) | Related method(s)
 Single selection behavior toggle | `app:singleSelection` | `isSingleSelection`<br/>`setSingleSelection`
 Default selected button ID | `app:checkedButton` | `check`<br/>`getCheckedButtonId`
 
-See the full list of available attributes [here](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
+To view the full list of available atttributes, go to the `MaterialButtonToggleGroup` [attrs](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
 
 ### `MaterialButtonToggleGroup` methods
 
@@ -173,7 +172,7 @@ Determine selected child button(s) | `getCheckedButtonId`<br/>`getCheckedButtonI
 Programmatically select child button | `check`<br/>`uncheck`<br/>`clearChecked`
 Programmatically add child button | `addView`
 
-See the full list of available methods [here](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup#public-methods_1).
+To view the full list of available methods, go to the `MaterialButtonToggleGroup` [API](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup#public-methods_1).
 
 ### Text button
 
