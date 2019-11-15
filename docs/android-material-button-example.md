@@ -205,7 +205,7 @@ Outlined buttons are medium-emphasis buttons. They contain actions that are impo
 Description | Style(s)
 ---|---
 Default outlined button style | `Widget.MaterialComponents.Button.OutlinedButton`
-Outlined button style when icon is present (only use with start-gravity icon) | `Widget.MaterialComponents.Button.OutlinedButton.Icon`
+Outlined button style (when icon is present) | `Widget.MaterialComponents.Button.OutlinedButton.Icon`
 
 ### Contained button
 
@@ -218,9 +218,11 @@ Contained buttons are high-emphasis, distinguished by their use of elevation and
 Description | Style(s)
 ---|---
 Default contained button style | `Widget.MaterialComponents.Button`
-Contained button style when icon is present (only use with start-gravity icon) | `Widget.MaterialComponents.Button.Icon`
+Contained button style (when icon is present) | `Widget.MaterialComponents.Button.Icon`
 Contained button style with no elevation | `Widget.MaterialComponents.Button.UnelevatedButton`
-Contained button style with no elevation when icon is present (only use with start-gravity icon) | `Widget.MaterialComponents.Button.UnelevatedButton.Icon`
+Contained button style with no elevation (when icon is present) | `Widget.MaterialComponents.Button.UnelevatedButton.Icon`
+
+_**Note:** `*.Icon` styles adjust padding slightly to achieve a better visual balance. This style should only be used with a start-gravity icon. If your icon is end-gravity, mirror the padding such that this adjustment happens on the other side. This applies to all button variants._
 
 ### Toggle button
 
