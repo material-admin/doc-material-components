@@ -116,7 +116,7 @@ See the full list of available methods [here](https://developer.android.com/refe
 
 ### Use `MaterialButtonToggleGroup` for toggle buttons
 
-Toggle buttons are implemented by grouping `MaterialButton`s using the `MaterialButtonToggleGroup` class:
+Toggle buttons are implemented by grouping `MaterialButton`s using the [`MaterialButtonToggleGroup`](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup) class:
 
 ```xml
 <com.google.android.material.button.MaterialButtonToggleGroup
