@@ -90,13 +90,15 @@ They can also be used to apply styles to individual buttons:
 Description | Attribute(s) | Related method(s)
 ---|---|---
 Container color | `app:backgroundTint`<br/>`app:backgroundTintMode` | `setBackgroundColor`<br/>`setBackgroundTintList`<br/>`getBackgroundTintList`<br/>`setBackgroundTintMode`<br/>`getBackgroundTintMode`
-Container stroke | `app:strokeColor`<br/>`app:strokeWidth` | `setStrokeColor`<br/>`setStrokeColorResource`<br/>`getStrokeColor`<br/>`setStrokeWidth`<br/>`setStrokeWidthResource`<br/>`getStrokeWidth`
+Container stroke color | `app:strokeColor` | `setStrokeColor`<br/>`setStrokeColorResource`<br/>`getStrokeColor`
+Container stroke width | `app:strokeWidth` | `setStrokeWidth`<br/>`setStrokeWidthResource`<br/>`getStrokeWidth`
 Container shape | `app:shapeAppearance` | `setShapeAppearanceModel`<br/>`getShapeAppearanceModel`
 Container elevation | `app:elevation` | `setElevation`<br/>`getElevation`
 Text label | `android:text` | `setText`<br/>`getText`
 Text label color | `android:textColor` | `setTextColor`<br/>`getTextColor`
 Text label typography | `android:textAppearance` | `setTextAppearance`
 Icon | `app:icon` | `setIcon`<br/>`setIconResource`<br/>`getIcon`
+Icon color | `app:iconTint`<br/>`app:iconTIntMode` | `setIconTint`<br/>`setIconTintResource`<br/>`getIconTint`<br/>`setIconTintMode`<br/>`getIconTintMode`
 Icon size | `app:iconSize` | `setIconSize`<br/>`getIconSize`
 Icon gravity (position relative to text label) | `app:iconGravity` | `setIconGravity`<br/>`getIconGravity`
 Icon padding (space between icon and text label) | `app:iconPadding` | `setIconPadding`<br/>`getIconPadding`
