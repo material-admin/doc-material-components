@@ -18,7 +18,7 @@ The Material Design button component for iOS consists of the following implement
 * [Outlined button](#outlined-button) 
 * [Contained button](#contained-button)
 * [Toggle button](#toggle-button)
-  * [Toggle icon button](#toggle-icon)
+  * [Toggle icon button](#toggle-icon-button)
 
 For more information on the button component, visit [material.io/components/buttons](http://material.io/components/buttons).
 
@@ -41,36 +41,35 @@ Before using the `MDCButtons` component to implement its variants you must insta
 
     **Note** For more information about themes, go to the [Theming page](https://material.io/develop/ios/components/theming/) for iOS.
 
-       **Swift**
-       ```swift
-       import MaterialComponents.MaterialButtons
-       import MaterialComponents.MaterialButtons_Theming
-       /*...*/
-       let <local theme name> = <theme name>
-       let button = MDCButton()
-       ```
-       **Objective-C**
-       ```objc
-       #import "MaterialButtons.h"
-       #import <MaterialComponentsBeta/MaterialButtons+Theming.h>
-       /*...*/
-       <theme name> *<local theme name> = [[<theme name> alloc] init];
-       MDCButton *button = [[MDCButton alloc] init];
+     **Swift**
+     ```swift
+     import MaterialComponents.MaterialButtons
+     import MaterialComponents.MaterialButtons_Theming
+     /*...*/
+     let <local theme name> = <theme name>
+     let button = MDCButton()
      ```
- 1. Apply accessibility settings
+     **Objective-C**
+     ```objc
+     #import "MaterialButtons.h"
+     #import <MaterialComponentsBeta/MaterialButtons+Theming.h>
+     /*...*/
+     <theme name> *<local theme name> = [[<theme name> alloc] init];
+     MDCButton *button = [[MDCButton alloc] init];
+     ```
+1. Apply accessibility settings
  
     To help make your buttons usable to as many users as possible, set an appropriate [`accessibilityLabel`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) value if your button does not have a title or only has an icon:
 
-        **Objective-C**
-        ```objc
-        button.accessibilityLabel = @"Create";
-        ```
-        **Swift**
-        ```swift
-        button.accessibilityLabel = "Create"
-        ```
-
-
+    **Objective-C**
+    ```objc
+    button.accessibilityLabel = @"Create";
+    ```
+    **Swift**
+    ```swift
+    button.accessibilityLabel = "Create"
+    ```
+    
 ## Text button
 
 Text buttons are typically used for less-pronounced actions, including those located:
