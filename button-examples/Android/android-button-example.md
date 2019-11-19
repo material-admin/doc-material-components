@@ -1,295 +1,253 @@
 <!--docs:
-title: "Example article: android button"
+title: "Example Article: Android Button"
 layout: detail
 section: components
-excerpt: "This is an example of the android Material Button developer article for material.io. It uses the template from [../dev-article-template.md]"
-iconId:
-path: /
-api_doc_root:
-@import "@material/button/mdc-button";
+excerpt: "This is an example of the Android Material Button developer article for material.io. It uses the template from [../article-component-template.md]"
 -->
+
 # Buttons
 
-Buttons allow users to take actions, and make choices, with a single tap.
+Buttons allow users to take actions and make choices with a single tap. Buttons can be customized to meet your style requirements.
 
-The buttons component for the material.io Android platform consists of the following implementations are extensions of the [MaterialButton](https://developer.android.com/reference/com/google/android/material/button/MaterialButton) class: 
+For more information, go to the [Buttons](https://material.io/components/buttons/#usage) guidance page.
 
+## Button variants
 
-* [Text Button](#text-button)
-* [Outlined Button](#outlined-button) 
-* [Contained Button](#contained-button)
-* [Toggle Button](#toggle-button)
+1. [Text button](#text-button)
+2. [Outlined button](#outlined-button)
+3. [Contained button](#contained-button)
+4. [Toggle button](#toggle-button)
 
-For more information on the button component, visit [material.io/components/buttons](http://material.io/components/buttons).
-
-## Using button
-
-Before you can use the Material.io button, you need to install the Material.io Android library. For more information, go to the [Getting started](https://www.google.com/url?q=https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md&sa=D&ust=1573585349965000&usg=AFQjCNF75a0u6bbQ6-XftBRNV4EQevylkw) page.
+<img src="assets/buttons-types-all.png" alt="Button variants">
 
 ## Text button
 
 Text buttons are typically used for less-pronounced actions, including those located:
-* In dialogs
-* In cards
-In cards, text buttons help maintain an emphasis on card content.
+* In dialogs.
+* In cards, text buttons help maintain an emphasis on card content.
 
-### Text button example
+<img src="assets/android_text.png" alt="Text button">
 
-Source code API:
+### Relevant styles
 
-* MaterialButton
-    * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
-    * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
-
-The following example shows a text button with purple text on white background.
-
-<img src="assets/android_text.png" alt="Text button example in Android showing the purple text 'Text' over a white background.">
-
-```xml
-    <Button
-        android:id="@+id/button3"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Text"
-	...
-    />
-```
+Description | Style(s)
+---|---
+Default text button style | `Widget.MaterialComponents.Button.TextButton`
+Text button style (when icon is present) | `Widget.MaterialComponents.Button.TextButton.Icon`
+Text button style for snackbar | `Widget.MaterialComponents.Button.TextButton.Snackbar`
+Text button style for dialog | `Widget.MaterialComponents.Button.TextButton.Dialog`
+Text button style for dialog (no leading margin) | `Widget.MaterialComponents.Button.TextButton.Dialog.Flush`
+Text button style for dialog (when icon is present) | `Widget.MaterialComponents.Button.TextButton.Dialog.Icon`
 
 ## Outlined button
 
 Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
-### Outlined button example
+<img src="assets/android_outlined.png" alt="Outlined button">
 
-Source code API:
+### Relevant styles
 
-* MaterialButton
-    * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
-    * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
-
-
-
-<img src="assets/android_outlined.png" alt="Outlined button example in Android with purple text surrounded by a gray outline">
-
-```xml
-    <Button
-        android:id="@+id/button2"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Outlined"
-	...
-    />
-```
+Description | Style(s)
+---|---
+Default outlined button style | `Widget.MaterialComponents.Button.OutlinedButton`
+Outlined button style (when icon is present) | `Widget.MaterialComponents.Button.OutlinedButton.Icon`
 
 ## Contained button
 
 Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
-### Contained button example
+<img src="assets/android_contained.png" alt="Contained button">
 
-Source code API:
+### Relevant styles
 
-* MaterialButton
-    * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
-    * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
+Description | Style(s)
+---|---
+Default contained button style | `Widget.MaterialComponents.Button`
+Contained button style (when icon is present) | `Widget.MaterialComponents.Button.Icon`
+Contained button style with no elevation | `Widget.MaterialComponents.Button.UnelevatedButton`
+Contained button style with no elevation (when icon is present) | `Widget.MaterialComponents.Button.UnelevatedButton.Icon`
 
-
-The following examples show an elevated contained button with a purple background with white text.
-
-<img src="assets/android_contained.png" alt="Contained button example in Android with a black background that flashes gray when pressed">
-
-```xml
-    <Button
-        android:id="@+id/button4"
-        style="@style/Widget.MaterialComponents.Button"
-        android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
-        android:text="Contained"
-	...
-    />
-
-```
+_**Note:** `*.Icon` styles adjust padding slightly to achieve a better visual balance. This style should only be used with a start-gravity icon. If your icon is end-gravity, mirror the padding such that this adjustment happens on the other side. This applies to all button variants._
 
 ## Toggle button
 
-Toggle buttons can be used to select from a group of choices.
+Toggle buttons can be used to group related options. To emphasize groups of related toggle buttons, a group should share a common container.
 
-The toggle button can be separated into two types:
-* [Toggle bar](#toggle-bar)
-* [Toggle icon button](#toggle-icon-button)
+<img src="assets/android_button_bar.png" alt="Toggle button">
 
-### Toggle Bar
+### Relevant styles
 
-The toggle bar allows you to select from a group of buttons that can be set to [selective action](https://material.io/components/buttons/#toggle-button) where only one button in a group can be selected at one time.
+Description | Style(s)
+---|---
+Default toggle button style | `Widget.MaterialComponents.MaterialButtonToggleGroup`
 
-#### Toggle bar example
+## Using buttons
 
-The following example shows a button bar with the following icons:
-* aspect ratio
-* assignment
-* late assignment
-* bookmark
+Before you can use buttons on Android, you need to depend on the Material Components for Android library. For more information, go to the [Getting started](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md) page.
 
-The example allows multiple buttons to be selected. To exclusively select a button, add `app:singleSelection="true"` to `MaterialButtonToggleGroup`. 
+### Add a `MaterialButton` to your XML layout
 
-Source code APIs:
+All standalone button variants on Android are implemented with the `MaterialButton` class:
+* [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+* [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
 
-* MaterialButton
-    * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
-    * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
+They can be added to an XML layout:
+```xml
+<com.google.android.material.button.MaterialButton
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Button"
+/>
+```
 
-* MaterialButtonToggleGroup
-    * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup)
-    * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButtonToggleGroup.java)
+_**Note:** it is also acceptable to simply use the `<Button>` XML tag. This will be automatically inflated as a `MaterialButton` by [`MaterialComponentsViewInflater`](https://developer.android.com/reference/com/google/android/material/theme/MaterialComponentsViewInflater), provided a `Theme.MaterialComponents.*` theme is in use._
 
-<img src="assets/android_button_bar.png" alt="Android button bar displaying the following icons: aspect ratio, assignment, late assignment, and bookmar">
+### Use a style to enable a variant
 
+In order to achieve a certain button variant, you need to use a style:
+```xml
+<com.google.android.material.button.MaterialButton
+    ...
+    style="@style/Widget.MaterialComponents.Button.*"
+/>
+```
+
+The available styles are mentioned above in the button variant sections. If no style is specified, the contained button variant is the default.
+
+To view the full list of available styles, go to the [`MaterialButton` styles](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/styles.xml).
+
+### Use theme attributes to set default variant styles
+
+A consistent style for all buttons of a certain variant can be applied with theme attributes. These can reference existing variant styles or a custom style you have defined.
+
+Description | Attribute | Related style(s)
+---|---|---
+Contained button style | `materialButtonStyle` | `Widget.MaterialComponents.Button.*`
+Outlined button style | `materialButtonOutlinedStyle` | `Widget.MaterialComponents.Button.OutlinedButton.*`
+Toggle button style | `materialButtonToggleGroupStyle` | `Widget.MaterialComponents.MaterialButtonToggleGroup`
+
+These attributes can be overridden in a `Theme.MaterialComponents.*` theme:
+```xml
+<style name="Theme.App" parent="Theme.MaterialComponents.*">
+    ...
+    <item name="materialButtonStyle">@style/Widget.App.Button</item>
+    <item name="materialButtonOutlinedStyle">@style/Widget.App.Button.OutlinedButton</item>
+    <item name="materialButtonToggleGroupStyle">@style/Widget.App.MaterialButtonToggleGroup</item>
+</style>
+```
+
+They can also be used to apply styles to individual buttons:
+```xml
+<com.google.android.material.button.MaterialButton
+    ...
+    style="?attr/materialButtonOutlinedStyle"
+/>
+```
+
+### `MaterialButton` attributes
+
+Description | Attribute(s) | Related method(s)
+---|---|---
+Container color | `app:backgroundTint`<br/>`app:backgroundTintMode` | `setBackgroundColor`<br/>`setBackgroundTintList`<br/>`getBackgroundTintList`<br/>`setBackgroundTintMode`<br/>`getBackgroundTintMode`
+Container stroke color | `app:strokeColor` | `setStrokeColor`<br/>`setStrokeColorResource`<br/>`getStrokeColor`
+Container stroke width | `app:strokeWidth` | `setStrokeWidth`<br/>`setStrokeWidthResource`<br/>`getStrokeWidth`
+Container shape | `app:shapeAppearance` | `setShapeAppearanceModel`<br/>`getShapeAppearanceModel`
+Container elevation | `app:elevation` | `setElevation`<br/>`getElevation`
+Text label | `android:text` | `setText`<br/>`getText`
+Text label color | `android:textColor` | `setTextColor`<br/>`getTextColor`
+Text label typography | `android:textAppearance` | `setTextAppearance`
+Icon | `app:icon` | `setIcon`<br/>`setIconResource`<br/>`getIcon`
+Icon color | `app:iconTint`<br/>`app:iconTIntMode` | `setIconTint`<br/>`setIconTintResource`<br/>`getIconTint`<br/>`setIconTintMode`<br/>`getIconTintMode`
+Icon size | `app:iconSize` | `setIconSize`<br/>`getIconSize`
+Icon gravity (position relative to text label) | `app:iconGravity` | `setIconGravity`<br/>`getIconGravity`
+Icon padding (space between icon and text label) | `app:iconPadding` | `setIconPadding`<br/>`getIconPadding`
+Ripple color | `app:rippleColor` | `setRippleColor`<br/>`setRippleColorResource`<br/>`getRippleColor`
+
+To view the full list of available atttributes, go to the [`MaterialButton` attrs](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
+
+### `MaterialButton` methods
+
+Description | Method(s)
+---|---
+Listen for press | `setOnClickListener`<br/>`setOnLongClickListener`
+
+To view the full list of available methods, go to the [`MaterialButton` API](https://developer.android.com/reference/com/google/android/material/button/MaterialButton#public-methods_1).
+
+### Use `MaterialButtonToggleGroup` for toggle buttons
+
+Toggle buttons are implemented by grouping `MaterialButton`s using the `MaterialButtonToggleGroup` class:
+* [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup)
+* [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButtonToggleGroup.java)
 
 ```xml
- <com.google.android.material.button.MaterialButtonToggleGroup
-        android:id="@+id/button_group"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-        <Button
-            style="?attr/materialButtonOutlinedIconStyle"
-            android:id="@+id/italic_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:icon="@drawable/ic_aspect_ratio" />
-        <Button
-            style="?attr/materialButtonOutlinedIconStyle"
-            android:id="@+id/bold_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:icon="@drawable/ic_assignment_ind" />
-        <Button
-            style="?attr/materialButtonOutlinedIconStyle"
-            android:id="@+id/underline_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:icon="@drawable/ic_assignment_late" />
-        <Button
-            style="?attr/materialButtonOutlinedIconStyle"
-            android:id="@+id/font_color_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:icon="@drawable/ic_bookmark_border" />
-    </com.google.android.material.button.MaterialButtonToggleGroup>
+<com.google.android.material.button.MaterialButtonToggleGroup
+    android:id="@+id/toggleButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button1"
+        ...
+    />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button2"
+        ...
+    />
+    
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button3"
+        ...
+    />
+    
+    ...
+
+</com.google.android.material.button.MaterialButtonToggleGroup>
 ```
 
-
-### Toggle icon button
-
-
-The toggle icon button allows you to select from a group using an icon.
-
-
-#### Toggle icon example
-
-Source code APIs:
-
-* [RecyclerView](https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView)
-* [FrameLayout](https://developer.android.com/reference/android/widget/FrameLayout)
-* [ImageView](https://developer.android.com/reference/android/widget/ImageView)
-* [CheckBox](https://developer.android.com/reference/android/widget/CheckBox)
-
-
-The following example shows 4 images arranged in a 2-by-2 array with a favorite icon in the upper-right corner of each image.
-
-<img src="assets/android_toggle_button.png" alt="Android toggle example showing 4 images in an array with a favorite icon in the upper-right corner of each image.">
-
-This example separates out the the image and checkbox (favorites icon) element into a separate layout xml file: 
-[`image_grid_item_layout.xml`](toggle_demo/app/src/main/res/layout/image_grid_item_layout.xml).
+For text toggle buttons, configure the child buttons like so:
 
 ```xml
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/container"
-    android:layout_width="match_parent"
-    android:layout_height="200dp"
-    android:layout_margin="2dp"
-    android:foreground="?attr/selectableItemBackground">
-
-    <ImageView
-        android:id="@+id/image_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:contentDescription="@string/image_content_desc"
-        tools:src="@drawable/img1"/>
-
-    <CheckBox
-        android:id="@+id/favorite_check_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:button="@drawable/favorite_state_list_drawable"
-        app:buttonTint="@android:color/white"
-        android:layout_gravity="top|end"
-        android:clickable="false"/>
-
-</FrameLayout>
+<com.google.android.material.button.MaterialButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Button"
+    style="?attr/materialButtonOutlinedStyle"
+/>
 ```
 
-In a separate Kotlin file &mdash; [`ImageGridAdapater.kt`](toggle_demo/app/src/main/java/io/material/togglebuttons/ImageGridAdapter.kt), the `ImageGridAdapter` interates through a list of images in the `drawable` folder referenced in [`ImageItem.kt`](toggle_demo/app/src/main/java/io/material/togglebuttons/ImageItem.kt) as the `ImageView` backgrounds.
-
-```kt
-class ImageGridAdapter(
-    private val listener: Listener
-) : ListAdapter<ImageItem, ImageGridViewHolder>(ImageItemDiffCallback) {
-
-    interface Listener {
-        fun onItemClicked(item: ImageItem)
-    }
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ImageGridViewHolder {
-        return ImageGridViewHolder(
-            LayoutInflater.from(parent.context)
-                .inflate(R.layout.image_grid_item_layout, parent, false),
-            listener
-        )
-    }
-
-    override fun onBindViewHolder(holder: ImageGridViewHolder, position: Int) {
-        holder.bind(getItem(position))
-    }
-}
-
-class ImageGridViewHolder(
-    view: View,
-    private val listener: ImageGridAdapter.Listener
-) : RecyclerView.ViewHolder(view) {
-    private val container = view.findViewById<FrameLayout>(R.id.container)
-    private val imageView = view.findViewById<ImageView>(R.id.image_view)
-    private val favoriteView = view.findViewById<CheckBox>(R.id.favorite_check_box)
-    fun bind(item: ImageItem) {
-        imageView.setImageResource(item.imageRes)
-        favoriteView.isChecked = item.isFavorite
-        container.setOnClickListener {
-            listener.onItemClicked(item)
-        }
-    }
-}
-```
-
-In the `actvity_main.xml` file, the list of images in arranged to fit into the `RecyclerView`:
+For icon toggle buttons, configure the child buttons like so:
 
 ```xml
- <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/image_recycler_view"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:paddingTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/button_group"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+<com.google.android.material.button.MaterialButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/mtrl_min_touch_target_size"
+    app:icon="@drawable/ic_button_24dp"
+    app:iconPadding="0dp"
+    style="?attr/materialButtonOutlinedStyle"
+/>
 ```
 
+_**Note:** as shown above, it is recommended that the outline button variant style is applied to the child `MaterialButton`s._
 
+### `MaterialButtonToggleGroup` attributes
+
+Description | Attribute(s) | Related method(s)
+---|---|---
+Single selection behavior toggle | `app:singleSelection` | `isSingleSelection`<br/>`setSingleSelection`
+Default selected button ID | `app:checkedButton` | `check`<br/>`getCheckedButtonId`
+
+To view the full list of available atttributes, go to the [`MaterialButtonToggleGroup` attrs](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
+
+### `MaterialButtonToggleGroup` methods
+
+Description | Method(s)
+---|---
+Listen for child button selection (see [`OnButtonCheckedListener`](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup.OnButtonCheckedListener.html)) | `addOnButtonCheckedListener`<br/>`removeOnButtonCheckedListener`<br/>`clearOnButtonCheckedListeners`
+Determine selected child button(s) | `getCheckedButtonId`<br/>`getCheckedButtonIds`
+Programmatically select child button | `check`<br/>`uncheck`<br/>`clearChecked`
+Programmatically add child button | `addView`
+
+To view the full list of available methods, go to the [`MaterialButtonToggleGroup` API](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup#public-methods_1).
