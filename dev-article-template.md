@@ -20,15 +20,19 @@ Replace all uses of block quotes with relevant content.
 
 Add a concise (1-2 sentence) description of the component here starting with the one-line definition from the design/guidance page. The corresponding design document should have a full description.
 
-Add a link to the corresponding design page that the component (helps) implement.
-
-[\<Component cannonical name\>](https://material.io/components/<component>)
+For more information on using \<component canonical name\>, go to the [design page](https://material.io/components/<component>/).
 
 If there are component variants, list them here and link to the local anchor link for its section.
+
+* [variant 1](#variant-1)
+* [variant 2](#varaint-2)
+...
+* [variant n](#variant-n)
 
 Insert any related graphics (such as a graphic showing all variants of this component): show instead of say. If there is no graphic available, skip this. 
 
 <img src="" alt="Include a graphic here with all the variants for this component. Insert a description of the graphic and any variant of the principle component variant it implements.">
+
 
 ## Using \[Component Name \]
 
@@ -48,8 +52,8 @@ For example chips](https://material.io/components/chips/) is divided into the fo
 
 * Input chip
 * Choice chip
-* Filter clip
-* Action clip
+* Filter chip
+* Action chip
 
 Each section should have a 2nd tier header. Add 1-2 sentences from the material.io website that describes when and how to use the component.
 

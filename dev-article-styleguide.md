@@ -6,6 +6,7 @@ This is a checklist for developers to ensure that their usage documents maintain
 - [ ]  Use the Google developer documentation [style guide highlights page](https://developers.google.com/style/highlights) as a checklist. 
 
 	For a more detailed description of the Google style guidelines, go to the [Google developer documentation style guide](https://developers.google.com/style/).
+- [ ]  The article meets [accessibility guidelines](https://sites.google.com/corp/google.com/greenlinesv2/how-to-greenline/greenlines-for-elements#h.p_56wIA8ABpc2P) for image alt text.
 - [ ]  Documentation uses the canonical component name from the guidelines.
 
 	<details>
@@ -66,3 +67,5 @@ This is a checklist for developers to ensure that their usage documents maintain
 	\</head\><br>
 	\`\`\`
 	</details>
+
+- [ ]  The article's component meets [accessibility guidelines](https://sites.google.com/corp/google.com/greenlinesv2/how-to-greenline/greenlines-for-elements#h.p_56wIA8ABpc2P) for labeling.
