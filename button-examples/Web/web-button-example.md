@@ -21,8 +21,6 @@ The Material Design button component for the web consists of the following imple
   * [Toggle button](#toggle-button)
     * [Toggle icon button](#toggle-icon-button)
 
-You can customize button look and feel using [Sass Mixins](#sass-mixins)
-
 For more information on the button component, visit [material.io/components/buttons](http://material.io/components/buttons).
 
 ## Using buttons
@@ -176,9 +174,11 @@ In cards, text buttons help maintain an emphasis on card content.
 
 ### Text button example
 
-Related APIs:
-[Source code](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button): GitHub source repository<br>
-[Demo site](https://glitch.com/~shadow-jobaria): This site contains example code to generate a text button.
+Source code API:
+
+* mdc-button
+    * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
+    * [Demo site](https://glitch.com/~shadow-jobaria)
 
 <img src="images/web-text-button.png" alt="Generated text button example">
 
@@ -208,11 +208,12 @@ Outlined buttons are medium-emphasis buttons. They contain actions that are impo
 
 ### Outlined button example
 
+Source code API:
 
-Related APIs:
-[Source code](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button): GitHub source repository<br>
-[Demo site](https://glitch.com/~shadow-jobaria): This site contains example code to generate an outlined button.
-
+* mdc-button
+    * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
+    * [Demo site](https://glitch.com/~shadow-jobaria):
+    
 <img src="images/web-outlined-button.png" alt="Generated outlined button example">
 
 ```html
@@ -222,10 +223,12 @@ Related APIs:
 ```
 
 ### Outlined button with icon example
-Related APIs
-[Source code](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button): GitHub source repository<br>
-[Demo site](https://glitch.com/~shadow-jobaria): This site contains example code to generate a contained button.
 
+Source code API:
+
+* mdc-button
+    * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
+    * [Demo site](https://glitch.com/~shadow-jobaria)
 
 <img src="images/web-outlined-icon-button.png" alt="Generated outlined button example">
 
@@ -242,9 +245,11 @@ Contained buttons are high-emphasis, distinguished by their use of elevation and
 
 #### Contained button example
 
-Related APIs
-[Source code](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button): GitHub source repository<br>
-[Demo site](https://glitch.com/~shadow-jobaria): This site contains example code to generate a contained button.
+Source code API:
+
+* mdc-button
+    * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
+    * [Demo site](https://glitch.com/~shadow-jobaria)
 
 
 <img src="images/web-contained-button.png" alt="Generated contained button example">
@@ -256,10 +261,12 @@ Related APIs
 ```
 
 ### Contained button with icon example
-Related APIs
-[Source code](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button): GitHub source repository<br>
-[Demo site](https://glitch.com/~shadow-jobaria): This site contains example code to generate a contained button.
 
+Source code API:
+
+* mdc-button
+    * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
+    * [Demo site](https://glitch.com/~shadow-jobaria)
 
 <img src="images/web-contained-icon-button.png" alt="Generated contained button example with a bookmark icon">
 
@@ -290,8 +297,11 @@ The toggle icon button allows you to select from a group using an icon.
 
 #### Toggle icon bar example with background images
 
-[Source code](https://github.com/material-components/material-components-web/tree/master/packages/mdc-icon-button): GitHub source repository<br>
-[Demo site](https://glitch.com/~shadow-jobaria): This site contains example code to generate a contained button.
+Source code API:
+
+* mdc-icon-button
+    * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-icon-button)
+    * [Demo site](https://glitch.com/~shadow-jobaria)
 
 <img src="images/web-toggle-icon-button.png" alt="4 images arranged in a 2 by 2 array, each image with a bookmark icon in the upper-right corner">
 To generate the example with background images of your choosing, you will need to do the following:
