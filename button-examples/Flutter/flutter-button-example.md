@@ -36,8 +36,9 @@ In cards, text buttons help maintain an emphasis on card content.
 ### Text button example
 
 Source code API:
-
-* [FlatButton](https://api.flutter.dev/flutter/material/FlatButton-class.html)
+* FlatButton
+    * [Class definition](https://api.flutter.dev/flutter/material/FlatButton-class.html)
+    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/flat_button.dart)
 
 The following example shows a text button with black text on white background.
 
@@ -63,7 +64,9 @@ Outlined buttons are medium-emphasis buttons. They contain actions that are impo
 
 Source code API:
 
-* [OutlineButton](https://api.flutter.dev/flutter/material/OutlineButton-class.html)
+* OutlineButton
+    * [Class definition](https://api.flutter.dev/flutter/material/OutlineButton-class.html)
+    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/outline_button.dart)
 
 
 <img src="images/flutter_outlined.png" alt="Outlined button example in Flutter" width="20%">
@@ -90,7 +93,9 @@ Contained buttons are high-emphasis, distinguished by their use of elevation and
 
 Source code API
 
-* [RaisedButton](https://api.flutter.dev/flutter/material/RaisedButton-class.html)
+* RaisedButton
+    * [Class definition](https://api.flutter.dev/flutter/material/RaisedButton-class.html)
+    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/raised_button.dart)
 
 The following examples show a contained button. Color schemes are typically determined by your theme.
 
@@ -119,7 +124,9 @@ The toggle bar allows you to select from a group of buttons that can be set to [
 #### Toggle bar with four icons example
 
 Source code APIs:
-* [IconButton](https://api.flutter.dev/flutter/material/IconButton-class.html)
+* IconButton
+    * [Class definition](https://api.flutter.dev/flutter/material/IconButton-class.html)
+    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/icon_button.dart)
 
 
 The following example displays 4 `IconButton`s in a widget called `buildIconButton`. It uses another widget called `iconWidget` that allows users to toggle an `IconButton`: 
@@ -194,12 +201,24 @@ The [toggle icon](https://material.io/components/buttons/#toggle-button) button 
 
 Source code APIs:
 
-* [StatefulWidget](https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html)
-* [GestureDetector](https://api.flutter.dev/flutter/widgets/GestureDetector-class.html)
-* [GridTile](https://api.flutter.dev/flutter/material/GridTile-class.html)
-* [GridTileBar](https://api.flutter.dev/flutter/material/GridTileBar-class.html)
-* [IconButton](https://api.flutter.dev/flutter/material/IconButton-class.html)
-* [IconData](https://api.flutter.dev/flutter/widgets/IconData-class.html)
+* StatefulWidget
+    * [Class definition](https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html)
+    * [GitHub source](<!-- unable to find source in GitHub -->)
+* GestureDetector
+    * [Class defintion](https://api.flutter.dev/flutter/widgets/GestureDetector-class.html)
+    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/widgets/gesture_detector.dart)
+* GridTile
+    * [Class definition](https://api.flutter.dev/flutter/material/GridTile-class.html)
+    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/grid_tile.dart)
+* GridTileBar
+    * [Class definition](https://api.flutter.dev/flutter/material/GridTileBar-class.html)
+    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/grid_tile_bar.dart)
+* IconButton
+    * [Class definition](https://api.flutter.dev/flutter/material/IconButton-class.html)
+    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/icon_button.dart)
+* IconData
+    * [Class defintion](https://api.flutter.dev/flutter/widgets/IconData-class.html)
+    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/widgets/icon_data.dart)
 
 The following example allows you to select a favorite from a group of photos with a single tap on the icon.
 
