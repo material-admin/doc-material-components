@@ -12,7 +12,7 @@ api_doc_root:
 
 Buttons allow users to take actions, and make choices, with a single tap.
 
-The buttons component for the material.io Android platform consists of the following implementations are extensions of the [MaterialButton](https://developer.android.com/reference/com/google/android/material/button/MaterialButton) class: 
+The buttons component for the material.io Android platform consists of the following variants: 
 
 
 * [Text Button](#text-button)
