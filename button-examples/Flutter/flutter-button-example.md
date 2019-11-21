@@ -1,28 +1,15 @@
-<!--docs:
-title: "Example article: Flutter button"
-layout: detail
-section: components
-excerpt: "This is an example of the Flutter Material Button developer article for material.io. It uses the template from [../dev-article-template.md]"
-iconId:
-path: /
-api_doc_root:
-@import "@material/button/mdc-button";
--->
-# Button
+# Buttons
 
-Buttons allow users to take actions, and make choices, with a single tap.
+[Buttons](https://material.io/components/buttons/) allow users to take actions, and make choices, with a single tap.
 
-The buttons component for the material.io Flutter platform consists of the following implementations:
+There are four variants of buttons:
 
-  * [Text button](#text-button)
-  * [Outlined button](#outlined-button)
-  * [Contained button](#contained-button)
-  * [Toggle button](#toggle-button)
-    * [Toggle bar](#toggle-bar) 
-    * [Toggle icon button](#toggle-icon)
+* [Text button](#text-button)
+* [Outlined button](#outlined-button) 
+* [Contained button](#contained-button)
+* [Toggle button](#toggle-button)
 
-For more information on the button component, visit [material.io/components/buttons](http://material.io/components/buttons).
-
+<!-- TODO(b/1234568): Add example image here when it is available. -->
 
 ## Text button
 

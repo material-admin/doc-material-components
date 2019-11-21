@@ -1,38 +1,22 @@
-<!--docs:
-title: ""
-layout: detail
-section: components
-excerpt: "This is the template for the developer usage article for material.io."
-iconId:
-path: /
-api_doc_root:
-initial_release:
--->
-<!--initial_release field required with first platform version supported -->
-<!-- this is a usage article template for the material.io developer site.
-<!--
-Replace all instances of '<>' with your content (such as the component name you usually use)
+_Instructions to authors: replace text [in square brackets] with the appropriate items from your component and follow the instructions in each section. See the accompanying examples for futher guidance._
 
-Replace all uses of block quotes with relevant content.
--->
-<!-- How do we make sure that this template (and therefore all proceeding docs) meet accessibility guidelines -->
-# \[Canonical component name\]
+# \[Component name\]
 
-Add a concise (1-2 sentence) description of the component here starting with the one-line definition from the design/guidance page. The corresponding design document should have a full description.
+Start with a concise (1-2 sentence) description of the component.
 
-For more information on using \<component canonical name\>, go to the [design page](https://material.io/components/<component>/).
+* If possible, copy the exact summary from the design article.
+* Do not use the name of the component's class or implementation.
+* Link the first mention of the component (e.g., "Button") to the design article.
+* If the component is known by an alias on your platform, include that in the description, e.g. "... Ripples are known as 'Ink' in MDC-iOS."
 
-If there are component variants, list them here and link to the local anchor link for its section.
+If there are any component variants, list them here in an unordered bulleted list.
 
-* [variant 1](#variant-1)
-* [variant 2](#varaint-2)
-...
-* [variant n](#variant-n)
+* Use the same ordering as in the design article.
+* Link each item in the list to the corresponding variant section below. (If a section is called "Foo The Bar", then the anchor to link to is `#foo-the-bar`.)
 
-Insert any related graphics (such as a graphic showing all variants of this component): show instead of say. If there is no graphic available, skip this. 
+Insert an image showing the component or all the component variants.
 
-<img src="" alt="Include a graphic here with all the variants for this component. Insert a description of the graphic and any variant of the principle component variant it implements.">
-
+* If no such image exists, file a bug and add a TODO with the bug in an HTML comment in the source.
 
 ## Using \[Component Name \]
 

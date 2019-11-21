@@ -1,26 +1,15 @@
-<!--docs:
-title: "Example article: iOS button"
-layout: detail
-section: components
-excerpt: "This is an example of the iOS Material Button developer article for material.io. It uses the template from [../dev-article-template.md]"
-iconId:
-path: /
-api_doc_root:
-@import "@material/button/mdc-button";
--->
 # Buttons
 
-Buttons allow users to take actions, and make choices, with a single tap.
+[Buttons](https://material.io/components/buttons/) allow users to take actions, and make choices, with a single tap.
 
-The Material Design button component for iOS consists of the following implementations: 
+There are four variants of buttons:
 
 * [Text button](#text-button)
 * [Outlined button](#outlined-button) 
 * [Contained button](#contained-button)
 * [Toggle button](#toggle-button)
-  * [Toggle icon button](#toggle-icon-button)
 
-For more information on the button component, visit [material.io/components/buttons](http://material.io/components/buttons).
+<!-- TODO(b/1234568): Add example image here when it is available. -->
 
 ## Using button
 
