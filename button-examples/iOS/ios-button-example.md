@@ -202,7 +202,7 @@ There are two types of toggle buttons:
 
 The toggle bar is a group of related toggle buttons sharing a common container.
 
-The Material toggle bar is not supported in iOS. 
+The toggle bar is not currently supported by Material Components for iOS. 
 
 ### Toggle icon button
 
