@@ -2,7 +2,7 @@
 
 [Buttons](https://material.io/components/buttons/) allow users to take actions, and make choices, with a single tap.
 
-There are four variants of buttons:
+There are four types of buttons:
 
 * [Text button](#text-button)
 * [Outlined button](#outlined-button) 
@@ -13,7 +13,7 @@ There are four variants of buttons:
 
 ## Using buttons
 
-Before you can use a button, you will need to install the following:
+Before you can implement a Material button, you will need to install the following:
 
 * [Material button(s)](#install-mdc-button-or-mdc-icon-button)
 * [Add a theme](#add-a-theme)
@@ -46,7 +46,7 @@ Both `mdc-button` and `mdc-icon-button` work with themes (styles). Import a styl
 ```
 
 ### Import JavaScript effects
-You can also add a JavaScript ripple effect (see [MDC Ripple](https://github.com/material-components/material-components-web/blob/master/packages/mdc-ripple)) to your buttons by importing and then instantiating `MCDRipple` in your `*.js` file. See the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md) for more information on importing JavaScript.
+You can also add a JavaScript ripple effect (see [MDC Ripple](https://material.io/develop/web/components/ripples/)) to your buttons by importing and then instantiating `MCDRipple` in your `*.js` file. See the [page on importing the JavaScript component](https://material.io/develop/web/docs/importing-js/) for more information on importing JavaScript.
 
 ```js
 import {MDCRipple} from '@material/ripple';
@@ -64,14 +64,14 @@ iconButtonRipple.unbounded = true;
 
 Add an icon to your `mdc-button` instance using the following steps:
 
-1. In your HTML file, reference the icon font library you would like to use (we recommend the [Material Icons](https://material.io/tools/icons/) from Google Fonts):
+1. In your HTML file, reference the icon font library you would like to use (we recommend using our open-source [Material Icons](https://material.io/tools/icons/) from Google Fonts):
     ```HTML
     <head>
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     ```
 1. Include the `mcd-button__icon` class inside your button element. Set the attribute `area-hidden="true"`.
-    **Note** The location of the icon element determines if the icon comes before (*leading*) or after (*trailing icon*) the text.
+    **Note**: The location of the icon element determines if the icon comes before the text (*leading icon*) or after the text (*trailing icon*).
 
     **Example using [Material Icons](https://material.io/tools/icons/)**
     ```HTML
@@ -80,7 +80,7 @@ Add an icon to your `mdc-button` instance using the following steps:
       <span class="mdc-button__label">Button</span>
     </button>
     ```
-    **Example using SVG Icons**
+    **Example using SVG icons**
     ```html
     <button class="mdc-button">
       <svg class="mdc-button__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="...">
@@ -92,9 +92,9 @@ Add an icon to your `mdc-button` instance using the following steps:
 
 ### Sass mixins
 
-Use Sass mixins when you want to customize the look and feel of your buttons. Go to [sass-lang.com](https://sass-lang.com/install) for installation instructions.
+Use Sass mixins when you want to customize the look and feel of your buttons. For installation instructions, see the [Install Sass page on sass-lang.com](https://sass-lang.com/install).
 
-Before using Sass mixins for your project you will need to do the following:
+Before using Sass mixins for your project, you will need to do the following:
 
 * Add the Sass package to your `*.json file` under `devDependencies`:
 ```json
@@ -150,14 +150,9 @@ Mixin | Description
 `mdc-icon-button-size($width, $height, $padding)` | Sets the width, height, font-size and padding for the icon and ripple. `$height` is optional and defaults to `$width`. `$padding` is optional and defaults to `max($width, $height)/2`. `font-size` is set to `max($width, $height)`.
 `mdc-icon-button-ink-color($color)` | Sets the font color and the ripple color to the provided color value.
 
-## Text button
+## [Text button](https://material.io/components/buttons/#text-button)
 
-Text buttons are typically used for less-pronounced actions, including those located:
-
-* In dialogs
-* In cards
-
-In cards, text buttons help maintain an emphasis on card content.
+Text buttons are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
 
 
 ### Text button example
@@ -167,8 +162,10 @@ Source code API:
 * mdc-button
     * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
     * [Demo site](https://glitch.com/~shadow-jobaria)
+    
+    The following example shows a text button with purple text on a white background.
 
-<img src="images/web-text-button.png" alt="Generated text button example">
+<img src="images/web-text-button.png" alt="Text button example for the web with the purple text 'text button' over a white background.">
 
 ```html
  <button class="mdc-button">
@@ -178,7 +175,7 @@ Source code API:
 
 #### Text button with icon example
 
-<img src="images/web-text-icon-button.png" alt="Generated text button with bookmark icon example">
+<img src="images/web-text-icon-button.png" alt="Text button with icon example for the web with a bookmark icon and the purple text 'text button plus icon' over a white background.">
 
 ```html
 <button class="mdc-button">
@@ -189,7 +186,7 @@ Source code API:
 </button>
 ```
 
-## Outlined button
+## [Outlined button](https://material.io/components/buttons/#outlined-button)
 
 Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
@@ -202,7 +199,9 @@ Source code API:
     * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
     * [Demo site](https://glitch.com/~shadow-jobaria):
     
-<img src="images/web-outlined-button.png" alt="Generated outlined button example">
+The following example shows an outlined button with purple text and a purple stroke.
+    
+<img src="images/web-outlined-button.png" alt="Outlined button example for the web with the purple text 'outlined button' surrounded by a purple outline.">
 
 ```html
 <button class="mdc-button--outlined">
@@ -217,8 +216,10 @@ Source code API:
 * mdc-button
     * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
     * [Demo site](https://glitch.com/~shadow-jobaria)
+    
+ The following example shows an outlined button with a purple icon, purple text, and a purple stroke.
 
-<img src="images/web-outlined-icon-button.png" alt="Generated outlined button example">
+<img src="images/web-outlined-icon-button.png" alt="Outlined button example for the web with a purple bookmark icon and the purple text 'outlined button plus icon' surrounded by a purple outline.">
 
 ```html
 <button class="mdc-button mdc-button--outlined">
@@ -227,7 +228,7 @@ Source code API:
 </button>
 ```
 
-## Contained button
+## [Contained button](https://material.io/components/buttons/#contained-button)
 
 Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
@@ -239,8 +240,9 @@ Source code API:
     * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
     * [Demo site](https://glitch.com/~shadow-jobaria)
 
+The following example shows a contained button with white text on a purple background.
 
-<img src="images/web-contained-button.png" alt="Generated contained button example">
+<img src="images/web-contained-button.png" alt="Contained button example for the web with the white text 'contained button' on a purple background.">
 
 ```html
 <button class="mdc-button--elevated">
@@ -255,8 +257,10 @@ Source code API:
 * mdc-button
     * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
     * [Demo site](https://glitch.com/~shadow-jobaria)
+    
+The following example shows a contained button with a white icon and text on a purple background.
 
-<img src="images/web-contained-icon-button.png" alt="Generated contained button example with a bookmark icon">
+<img src="images/web-contained-icon-button.png" alt="Contained button example for the web with a bookmark icon and the white text 'contained button plus icon' on a purple background.">
 
 ```html
 <button class="mdc-button mdc-button--raised">
@@ -267,31 +271,37 @@ Source code API:
 </button>
 ```
 
-## Toggle button
+## [Toggle button](https://material.io/components/buttons/#toggle-button)
 
-Toggle buttons can be used to select from a group of choices.
+Toggle buttons can be used to group related options. To emphasize groups of related toggle buttons, a group should share a common container.
+
+There are two types of toggle buttons:
+* [Toggle bar](#toggle-bar)
+* [Toggle icon button](#toggle-icon-button)
 
 ### Toggle bar
 
-The Material.io framework for Web currently does not support toggle button groups, such as:
+The toggle bar (also known as a toggle button group) is a group of related toggle buttons sharing a common container:
 
-<img src="toggle-bar.png" alt="toggle button group">
+<img src="toggle-bar.png" alt="Two toggle bars used for text editing. The first group shows icons for italics, bold underline, and text color. The second group shows icons for center-, left-, and right-aligned text.">
 
-If your application needs a toggle button group, you will need to use a different framework such as [Vuetify](https://vuetifyjs.com/en/components/button-groups#button-groups).
+The toggle bar is not currently supported by Material Components for the web. If your application needs a toggle bar, you can use one from a different framework such as [Vuetify](https://vuetifyjs.com/en/components/button-groups#button-groups).
 
-### Toggle icon
+### Toggle icon button
 
 The toggle icon button allows you to select from a group using an icon.
 
-#### Toggle icon bar example with background images
+#### Toggle icon button example with background images
 
 Source code API:
 
 * mdc-icon-button
     * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-icon-button)
     * [Demo site](https://glitch.com/~shadow-jobaria)
+    
+The following example shows four images arranged in a two-by-two array with a favorite icon in the upper-right corner of each image.
 
-<img src="images/web-toggle-icon-button.png" alt="4 images arranged in a 2 by 2 array, each image with a bookmark icon in the upper-right corner">
+<img src="images/web-toggle-icon-button.png" alt="Web toggle icon button example showing four images in an array with a favorite icon in the upper-right corner of each image.">
 To generate the example with background images of your choosing, you will need to do the following:
 
 * In your `*.scss` file:
