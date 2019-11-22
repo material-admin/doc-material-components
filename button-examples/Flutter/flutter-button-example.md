@@ -2,7 +2,7 @@
 
 [Buttons](https://material.io/components/buttons/) allow users to take actions, and make choices, with a single tap.
 
-There are four variants of buttons:
+There are four types of buttons:
 
 * [Text button](#text-button)
 * [Outlined button](#outlined-button) 
@@ -11,14 +11,9 @@ There are four variants of buttons:
 
 <!-- TODO(b/1234568): Add example image here when it is available. -->
 
-## Text button
+## [Text button](https://material.io/components/buttons/#text-button)
 
-Text buttons are typically used for less-pronounced actions, including those located:
-
-* In dialogs
-* In cards
-
-In cards, text buttons help maintain an emphasis on card content.
+Text buttons are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
 
 ### Text button example
 
@@ -27,7 +22,7 @@ Source code API:
     * [Class definition](https://api.flutter.dev/flutter/material/FlatButton-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/flat_button.dart)
 
-The following example shows a text button with black text on white background.
+The following example shows a text button with black text on a white background.
 
 <img src="images/flutter-text.png" width="20%" alt="Text button example in Flutter showing the black text \'Flat Button\' over a white background.">
 
@@ -43,7 +38,7 @@ FlatButton(
 )
 ```
 
-## Outlined button
+## [Outlined button](https://material.io/components/buttons/#outlined-button)
 
 Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
@@ -55,8 +50,9 @@ Source code API:
     * [Class definition](https://api.flutter.dev/flutter/material/OutlineButton-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/outline_button.dart)
 
+The following example shows an outlined button with black text on a white background surrounded by a gray outline.
 
-<img src="images/flutter_outlined.png" alt="Outlined button example in Flutter" width="20%">
+<img src="images/flutter_outlined.png" alt="Outlined button example in Flutter with black text on a white background surrounded by a gray outline." width="20%">
 
 ```dart
 OutlineButton(
@@ -72,7 +68,7 @@ OutlineButton(
 ```
 
 
-## Contained button
+## [Contained button](https://material.io/components/buttons/#contained-button)
 
 Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
@@ -84,9 +80,9 @@ Source code API
     * [Class definition](https://api.flutter.dev/flutter/material/RaisedButton-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/raised_button.dart)
 
-The following examples show a contained button. Color schemes are typically determined by your theme.
+The following example shows a contained button with black text on a gray background. Color schemes are typically determined by your theme.
 
-<img src="images/flutter-contained.png" width="20%" alt="Contained button examples in Flutter showing both a disabled button (dark gray text over a medium gray background) and an enabled button (black text over a light gray background)">
+<img src="images/flutter-contained.png" width="20%" alt="Contained button example in Flutter showing a button with black text on a gray background.">
 
 
 ```dart
@@ -100,25 +96,28 @@ RaisedButton(
 
 ```
 
-## Toggle button
+## [Toggle button](https://material.io/components/buttons/#toggle-button)
 
-Toggle buttons can be used to select from a group of choices.
+Toggle buttons can be used to group related options. To emphasize groups of related toggle buttons, a group should share a common container.
+
+There are two types of toggle buttons:
+* [Toggle bar](#toggle-bar)
+* [Toggle icon button](#toggle-icon-button)
 
 ### Toggle bar
 
-The toggle bar allows you to select from a group of buttons that can be set to [selective action](https://material.io/components/buttons/#toggle-button) where only one button in a group can be selected at one time.
+The toggle bar is a group of related toggle buttons sharing a common container.
 
-#### Toggle bar with four icons example
+#### Toggle bar example
 
 Source code APIs:
 * IconButton
     * [Class definition](https://api.flutter.dev/flutter/material/IconButton-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/icon_button.dart)
 
+The following example displays four `IconButton`s in a widget called `buildIconButton`. It uses another widget called `iconWidget` that allows users to toggle an `IconButton`: 
 
-The following example displays 4 `IconButton`s in a widget called `buildIconButton`. It uses another widget called `iconWidget` that allows users to toggle an `IconButton`: 
-
-<img src="images/toggle_bar_screenshot_cropped.png" alt="screenshot showing 4 icons arranged in a row" width="30%">
+<img src="images/toggle_bar_screenshot_cropped.png" alt="Toggle bar example for Flutter displaying the following icons: aspect ratio, assignment, late assignment, and bookmark." width="30%">
 
 ```dart
 class ToggleBarDemo extends StatefulWidget {
@@ -180,11 +179,11 @@ class _ToggleBarDemoState extends State<ToggleBarDemo> {
 }
 ```
 
-### Toggle icon
+### Toggle icon button
 
-The [toggle icon](https://material.io/components/buttons/#toggle-button) button allows you to select from a group using an icon. 
+The toggle icon button allows you to select from a group using an icon. 
 
-#### Toggle icon buttons with background images
+#### Toggle icon button example
 
 Source code APIs:
 
@@ -207,7 +206,7 @@ Source code APIs:
     * [Class defintion](https://api.flutter.dev/flutter/widgets/IconData-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/widgets/icon_data.dart)
 
-The following example allows you to select a favorite from a group of photos with a single tap on the icon.
+The following example shows four images arranged in a two-by-two array with a favorite icon in the upper-right corner of each image.
 
 The photos and icon buttons are contained within instances of `GridDemoPhotoItem`, which extends the `GridTile` API. `GridDemoPhotoItem` does the following:
 
@@ -217,7 +216,7 @@ The photos and icon buttons are contained within instances of `GridDemoPhotoItem
 
 The `ToggleIconDemoState` class contains the the list of photos that become the backgrounds to the `GridDemoPhotoItem` tiles.
 
-<img src="images/toggle_icon_screenshot_cropped.png" alt="screenshot showing 4 images arranged in a 2 by 2 array, each with a heart icon in the upper-left corner" width="50%">
+<img src="images/toggle_icon_screenshot_cropped.png" alt="Flutter toggle icon button example showing four images in an array with a favorite icon in the upper-right corner of each image." width="50%">
 
 ```dart
 import 'package:flutter/material.dart';
