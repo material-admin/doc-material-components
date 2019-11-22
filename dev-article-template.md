@@ -1,6 +1,6 @@
 _Instructions to authors: replace text [in square brackets] with the appropriate items from your component and follow the instructions in each section. See the accompanying examples for futher guidance._
 
-# \[Component name\]
+# \[Component\]
 
 Start with a concise (1-2 sentence) description of the component.
 
@@ -18,38 +18,56 @@ Insert an image showing the component or all the component variants.
 
 * If no such image exists, file a bug and add a TODO with the bug in an HTML comment in the source.
 
-## Using \[Component Name \]
+## Using \[Component\]
 
-If there are any instructions on using the component that applies to all component variants (for example, installation or theming, accessiblity), include them here.
+Include any usage instructions that are common to all variants.
 
-* Use an ordered list for ordered steps (`1.`)
-* Use an unorered list for steps that have no particular order (`* `)
+If installation instructions are required, first summarize the requirement in 1-2 sentences and then give detailed instructions in a collapsable section.
 
-If there is a separate page that has instructions, link to that page.
-<!-- What are the best ways to integrate component accessbility features into the template? -->
+If all variants use exactly the same list of API docs/source location links, or if there is a common set of links due to a superclass/etc, then include them here instead of repeating them in each variant section.
 
-## \[Component section\]
-Divide the component into its variants, preferably as described in the [material.io/components] pages.
+## \[Component Variant 1\]
 
+Start with a concise (1-2 sentence) description of the component variant.
 
-For example chips](https://material.io/components/chips/) is divided into the following 2nd tier (`##` header) sections based on its variants:
+* If possible, copy the exact summary from the design article.
 
-* Input chip
-* Choice chip
-* Filter chip
-* Action chip
+Include a list of links to at least API documentation and source location of the component.
 
-Each section should have a 2nd tier header. Add 1-2 sentences from the material.io website that describes when and how to use the component.
+* Use the class/implementation names when linking to the API docs.
+* Add other links as necessary if they would help using the component.
 
-**Important** If your platform does not support a particular variant, include the variant but EXPLICITLY STATE THAT IT ISN'T SUPPORTED. Consider including a link to library that does support the variant.
+Describe how to use this component variant in as much detail as necessary.
 
+* If your platform does not support a particular variant, include the variant but explicitly state that it isn't supported.
+* If support is planned, link to the issue tracking that feature request.
 
-### \[Component Example\] example
+### Key properties
+
+List the key properties/attributes/CSS classes of the component in a table.
+
+* The first column is the property's name as used in the design article.
+* The second column is the property's identifier in code.
+* The third column is a short description of the property.
+* If there are several related classes used together for the component, list their properties in separate tables.
+* Only list the most important properties for configuring and theming the component—the full list of properties should be in the component's API docs.
+
+### \[Component Variant 1\] example
+
+Describe the example in 1-2 sentences.
+
+Include an image of the rendered example.
+
+Include a snippet of source code illustrating the example.
+
+* Remove boilerplate code that is not necessary to understand the example.
+* Consider highlighting the most important lines of the example.
 
 The component example header should be one level below the component section header.
 
-The Example section should have the following:
-* 1-2 sentences to describe the example
-* An image rendering whatever sample code is included
-* A list of links to the applicable API(s) listed from highest level to lowest level: include both developer source (e.g., [developer.android.com], or as available) and GitHub source
-* Provide example source code that can generate the example in the image. Mention any themes/settings used
+TODO(ajsecord): Are we including API attributes here?
+
+## \[Component Variant 2\]
+...
+### \[Component Variant 2\] example
+...

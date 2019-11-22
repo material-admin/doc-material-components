@@ -13,19 +13,50 @@ There are four variants of buttons:
 
 ## Text button
 
-Text buttons are typically used for less-pronounced actions, including those located:
+[Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located:
 
 * In dialogs
 * In cards
 
 In cards, text buttons help maintain an emphasis on card content.
 
-### Text button example
+In Flutter, text buttons are known as "flat buttons".
 
-Source code API:
-* FlatButton
-    * [Class definition](https://api.flutter.dev/flutter/material/FlatButton-class.html)
-    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/flat_button.dart)
+* [API docs](https://api.flutter.dev/flutter/material/FlatButton-class.html) for `FlatButton` 
+* [Source on GitHub](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/flat_button.dart)
+* [`RawMaterialButton`](https://api.flutter.dev/flutter/material/RawMaterialButton-class.html), the widget this widget is based on
+* [`Text`](https://api.flutter.dev/flutter/painting/Text-class.html), the text object representing the button label.
+* [`TextStyle`](https://api.flutter.dev/flutter/painting/TextStyle-class.html), the style used by the button label.
+
+A flat button is a text label displayed on a (zero elevation) [Material](https://api.flutter.dev/flutter/material/Material-class.html) widget that reacts to touches by filling with color.
+
+Use flat buttons on toolbars, in dialogs, or inline with other content but offset from that content with padding so that the button's presence is obvious. Flat buttons intentionally do not have visible borders and must therefore rely on their position relative to other content for context. In dialogs and cards, they should be grouped together in one of the bottom corners. Avoid using flat buttons where they would blend in with other content, for example in the middle of lists.
+
+Material design flat buttons have an all-caps label, some internal padding, and some defined dimensions. To have a part of your application be interactive, with ink splashes, without also committing to these stylistic choices, consider using [InkWell](https://api.flutter.dev/flutter/material/InkWell-class.html) instead.
+
+If the [onPressed](https://api.flutter.dev/flutter/material/MaterialButton/onPressed.html) callback is null, then the button will be disabled, will not react to touch, and will be colored as specified by the [disabledColor](https://api.flutter.dev/flutter/material/MaterialButton/disabledColor.html) property instead of the [color](https://api.flutter.dev/flutter/material/MaterialButton/color.html) property. If you are trying to change the button's [color](https://api.flutter.dev/flutter/material/MaterialButton/color.html) and it is not having any effect, check that you are passing a non-null [onPressed](https://api.flutter.dev/flutter/material/MaterialButton/onPressed.html) handler.
+
+Flat buttons have a minimum size of 88.0 by 36.0 which can be overridden with [ButtonTheme](https://api.flutter.dev/flutter/material/ButtonTheme-class.html).
+
+The [clipBehavior](https://api.flutter.dev/flutter/material/MaterialButton/clipBehavior.html) argument must not be null.
+
+### Key properties
+
+Name | Property | Description
+-----|----------|------------
+Container color | `color` | The button's fill color.
+Text color | `textColor` | The color to use for this button's text.
+
+A text button's text is styled using the `TextStyle` passed to its child `Text` object:
+
+Name | Property | Description
+-----|----------|------------
+Text typeface | `fontFamily` | The name of the font used for the label.
+Text style | `fontStyle` | The style of the font used for the label.
+Text size | `fontSize` | The size of the label's font.
+
+
+### Text button example
 
 The following example shows a text button with black text on white background.
 
@@ -37,7 +68,7 @@ FlatButton(
     /*...*/
   },
   child: Text(
-    "Flat Button",
+    "Text Button",
     style: TextStyle(fontSize: 20)
   ),
 )
@@ -45,311 +76,12 @@ FlatButton(
 
 ## Outlined button
 
-Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
-
-### Outlined button example
-
-Source code API:
-
-* OutlineButton
-    * [Class definition](https://api.flutter.dev/flutter/material/OutlineButton-class.html)
-    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/outline_button.dart)
-
-
-<img src="images/flutter_outlined.png" alt="Outlined button example in Flutter" width="20%">
-
-```dart
-OutlineButton(
-  onPressed() {
-    /*...*/
-  },
-  child: Text(
-    "Outlined Button"
-     style: TextStyle(fontSize: 20)
-
-  ),
-}
-```
-
+_Repeat for outlined button..._
 
 ## Contained button
 
-Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
-
-### Contained button example
-
-Source code API
-
-* RaisedButton
-    * [Class definition](https://api.flutter.dev/flutter/material/RaisedButton-class.html)
-    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/raised_button.dart)
-
-The following examples show a contained button. Color schemes are typically determined by your theme.
-
-<img src="images/flutter-contained.png" width="20%" alt="Contained button examples in Flutter showing both a disabled button (dark gray text over a medium gray background) and an enabled button (black text over a light gray background)">
-
-
-```dart
-RaisedButton(
-    onPressed: () {},
-    child: const Text(
-         'Contained Button',
-         style: TextStyle(fontSize: 20)
-    ),
-),
-
-```
+_Repeat for contained button..._
 
 ## Toggle button
 
-Toggle buttons can be used to select from a group of choices.
-
-### Toggle bar
-
-The toggle bar allows you to select from a group of buttons that can be set to [selective action](https://material.io/components/buttons/#toggle-button) where only one button in a group can be selected at one time.
-
-#### Toggle bar with four icons example
-
-Source code APIs:
-* IconButton
-    * [Class definition](https://api.flutter.dev/flutter/material/IconButton-class.html)
-    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/icon_button.dart)
-
-
-The following example displays 4 `IconButton`s in a widget called `buildIconButton`. It uses another widget called `iconWidget` that allows users to toggle an `IconButton`: 
-
-<img src="images/toggle_bar_screenshot_cropped.png" alt="screenshot showing 4 icons arranged in a row" width="30%">
-
-```dart
-class ToggleBarDemo extends StatefulWidget {
-  ToggleBarDemo({Key key, this.title}) : super(key: key);
-
-  final String title;
-
-  @override
-  _ToggleBarDemoState createState() => _ToggleBarDemoState();
-}
-
-class _ToggleBarDemoState extends State<ToggleBarDemo> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-        actions: [
-          IconButton(
-              icon: const Icon(Icons.pages),
-              tooltip: 'Change Page',
-              onPressed: changePage),
-        ],
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            buildIconButton(),
-          ],
-        ),
-      ),
-    );
-  }
-
-  /// The Routes were set in the main.dart. Navigator is a tool that lets you
-  /// access these different routes.
-  void changePage() {
-    Navigator.of(context).pushReplacementNamed('/toggleIconPage');
-  }
-
-  List<bool> isSelected = List<bool>.filled(4, false);
-  Widget buildIconButton() {
-    return ToggleButtons(
-      children: [
-        Icon(Icons.aspect_ratio),
-        Icon(Icons.assignment_ind),
-        Icon(Icons.assignment_late),
-        Icon(Icons.bookmark_border),
-      ],
-      onPressed: (int index) {
-        setState(() {
-          isSelected[index] = !isSelected[index];
-        });
-      },
-      isSelected: isSelected,
-    );
-  }
-}
-```
-
-### Toggle icon
-
-The [toggle icon](https://material.io/components/buttons/#toggle-button) button allows you to select from a group using an icon. 
-
-#### Toggle icon buttons with background images
-
-Source code APIs:
-
-* StatefulWidget
-    * [Class definition](https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html)
-    * [GitHub source](<!-- unable to find source in GitHub -->)
-* GestureDetector
-    * [Class defintion](https://api.flutter.dev/flutter/widgets/GestureDetector-class.html)
-    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/widgets/gesture_detector.dart)
-* GridTile
-    * [Class definition](https://api.flutter.dev/flutter/material/GridTile-class.html)
-    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/grid_tile.dart)
-* GridTileBar
-    * [Class definition](https://api.flutter.dev/flutter/material/GridTileBar-class.html)
-    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/grid_tile_bar.dart)
-* IconButton
-    * [Class definition](https://api.flutter.dev/flutter/material/IconButton-class.html)
-    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/icon_button.dart)
-* IconData
-    * [Class defintion](https://api.flutter.dev/flutter/widgets/IconData-class.html)
-    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/widgets/icon_data.dart)
-
-The following example allows you to select a favorite from a group of photos with a single tap on the icon.
-
-The photos and icon buttons are contained within instances of `GridDemoPhotoItem`, which extends the `GridTile` API. `GridDemoPhotoItem` does the following:
-
-* fits a passed image to `Photo` to the size specified in `GridView`. 
-* sets the icon displayed to `on` (`favorite`) or `off` (`favorite_border`) and sets `IconData` as determined by a call to `GestureDetector`.
-* sets the icon color to white as opposed to the default black
-
-The `ToggleIconDemoState` class contains the the list of photos that become the backgrounds to the `GridDemoPhotoItem` tiles.
-
-<img src="images/toggle_icon_screenshot_cropped.png" alt="screenshot showing 4 images arranged in a 2 by 2 array, each with a heart icon in the upper-left corner" width="50%">
-
-```dart
-import 'package:flutter/material.dart';
-
-typedef BannerTapCallback = void Function(Photo photo);
-
-/// Each tile has a photo within it. The photo is used to toggle the
-/// icon between on and off.
-class Photo {
-  Photo({
-    this.assetName,
-    this.isFavorite = false,
-  });
-
-  final String assetName;
-  bool isFavorite;
-  String get tag => assetName; // Assuming that all asset names are unique.
-}
-
-/// This class is each tile within the Grid. It represents the individual items
-/// you see. A widget is stateless if we know that the file will not change.
-class GridDemoPhotoItem extends StatelessWidget {
-  GridDemoPhotoItem({
-    Key key,
-    @required this.photo,
-    @required this.onBannerTap,
-  })  : assert(onBannerTap != null),
-        super(key: key);
-
-  final Photo photo;
-  final BannerTapCallback
-      onBannerTap; // User taps on the photo's header or footer.
-
-  @override
-  Widget build(BuildContext context) {
-    final Widget image = GestureDetector(
-      child: Hero(
-        key: Key(photo.assetName),
-        tag: photo.tag,
-        child: Image.asset(
-          photo.assetName,
-          fit: BoxFit.cover,
-        ),
-      ),
-    );
-
-    final IconData icon =
-        photo.isFavorite ? Icons.favorite : Icons.favorite_border;
-
-    return GridTile(
-        header: GestureDetector(
-          onTap: () {
-            onBannerTap(photo);
-          },
-          child: GridTileBar(
-            leading: Icon(
-              icon,
-              color: Colors.white,
-            ),
-          ),
-        ),
-        child: image);
-  }
-}
-
-/// Toggle Icon Demo is a stateful widget because it is not immutable meaning
-/// that the Widget can change State. This widget is changing state each time
-/// the user clicks on the Flutter Favorite Icon. Each time the user clicks on
-/// that icon this page will build again. This is the reason this class has to
-/// extend Stateful Widget.
-class ToggleIconDemo extends StatefulWidget {
-  ToggleIconDemo({Key key, this.title}) : super(key: key);
-
-  final String title;
-  @override
-  ToggleIconDemoState createState() => ToggleIconDemoState();
-}
-
-class ToggleIconDemoState extends State<ToggleIconDemo> {
-  List<Photo> photos = <Photo>[
-    Photo(assetName: 'assets/images/img1.jpg'),
-    Photo(assetName: 'assets/images/img2.jpg'),
-    Photo(assetName: 'assets/images/img3.jpg'),
-    Photo(assetName: 'assets/images/img4.jpg'),
-  ];
-
-  void changePage() {
-    Navigator.of(context).pushReplacementNamed('/toggleBarPage');
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final Orientation orientation = MediaQuery.of(context).orientation;
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-        actions: [
-          IconButton(
-              icon: const Icon(Icons.pages),
-              tooltip: 'Change Page',
-              onPressed: changePage),
-        ],
-      ),
-      body: Column(
-        children: [
-          Expanded(
-            child: SafeArea(
-              top: false,
-              bottom: false,
-              child: GridView.count(
-                crossAxisCount: (orientation == Orientation.portrait) ? 2 : 3,
-                mainAxisSpacing: 4.0,
-                crossAxisSpacing: 4.0,
-                padding: const EdgeInsets.all(4.0),
-                childAspectRatio:
-                    (orientation == Orientation.portrait) ? 1.0 : 1.3,
-                children: photos.map<Widget>((Photo photo) {
-                  return GridDemoPhotoItem(
-                    photo: photo,
-                    onBannerTap: (Photo photo) {
-                      setState(() {
-                        photo.isFavorite = !photo.isFavorite;
-                      });
-                    },
-                  );
-                }).toList(),
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
- ```
+_Repeat for toggle button..._
