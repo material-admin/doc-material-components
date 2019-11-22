@@ -1,18 +1,16 @@
-# Material Developer Usage Document Checklist
+# Usage Document Checklist
 
 This is a checklist for developers to ensure that their usage documents maintain stylistic and content standards.
 
 
-- [ ]  Use the Google developer documentation [style guide highlights page](https://developers.google.com/style/highlights) as a checklist. 
-
-	For a more detailed description of the Google style guidelines, go to the [Google developer documentation style guide](https://developers.google.com/style/).
-- [ ]  The article meets [accessibility guidelines](https://sites.google.com/corp/google.com/greenlinesv2/how-to-greenline/greenlines-for-elements#h.p_56wIA8ABpc2P) for image alt text.
-- [ ]  Documentation uses the canonical component name from the guidelines.
+- [ ]  Your documentation's tone, language, grammar, and images follow the [Google developer documentation style guide highlights](https://developers.google.com/style/highlights).
+- [ ]  Your documentation meets [accessibility guidelines](https://developers.google.com/style/images#alt-text) for image alt text.
+- [ ]  Your documentation uses the canonical component name from the guidelines.
 
 	<details>
 		<summary>Description</summary>
 
-	Use the canonical name (the name used in <a href="https://material.io/components/">material.io/components</a>\/\<component\>) instead of the API name for the platform. Reference the platform API name only when referencing the API.<br>
+	Use the name used in <a href="https://material.io/components/">material.io/components</a>\/\<component\> instead of the API name for the platform. Reference the platform API name only when referencing the API.<br>
 
 	For example, buttons: <br>
 		 'Text button' is the canonical name, but <code>FlatButton</code> is the API name in Flutter. When describing the component or component variant in the text, use 'text button' and use `FlatButton` only in either the API references or code samples.
@@ -20,7 +18,7 @@ This is a checklist for developers to ensure that their usage documents maintain
 
 	</details>
 
-- [ ]  Documentation uses the same component terminology as the guidelines.
+- [ ]  Your documentation uses the same component terminology as the guidelines.
 
 	<details>
 		<summary>Description</summary>
@@ -29,32 +27,28 @@ This is a checklist for developers to ensure that their usage documents maintain
 
 
 	For example, chips: <br>
-	The <a href="https://material.io/components/chips/#anatomy">Chips guidance</a> describes the use of 'thumbnails' and 'remove icon' images/icons. However, the <a href="https://material.io/develop/web/components/chips/#leading-and-trailing-icons">Web chips</a> article uses the terminology 'leading' and 'trailing' to describe the same images/icons. 
+	The <a href="https://material.io/components/chips/#anatomy">chips guidance</a> describes the use of 'thumbnails' and 'remove icon' images/icons. However, the <a href="https://material.io/develop/web/components/chips/#leading-and-trailing-icons">chips article for the web</a> uses the terminology 'leading' and 'trailing' to describe the same images/icons. 
 	
 	Because this documentation is focused on examples resembling those found in the guidance for material.io/components, use the terminology in the guidance.
 
 	</details>
 
-- [ ]  Document includes all the component variants listed in the guidelines.<br>
-	You must include mention of all variants, including those not supported by the platform. Any variants not supported by the platform should be mentioned as 'unsupported', and mention any alternatives to Material.io.
+- [ ]  Your document includes all the component variants listed in the guidelines.<br>
+	You must include all variants, including those not supported by the platform. Any variants not supported by the platform should be mentioned as 'unsupported'.
 
 	<details>
 		<summary>Example</summary>
 
-	The [Buttons component](https://material.io/components/buttons) has 4 variants: <br>
+	The [buttons component](https://material.io/components/buttons) has 4 variants: <br>
 	<ul>
-		<li>Text</li>
-		<li>Outlined</li>
-		<li>Contained</li>
-		<li>Toggle</li>
-		<ul>
-			<li> Toggle Bar</li>
-			<li> Toggle Icon</li>
-		</ul>
+		<li>Text button</li>
+		<li>Outlined button</li>
+		<li>Contained button</li>
+		<li>Toggle button</li>
 	</ul>
 	</details>
 
-- [ ]  First word of the heading title is capitalized and the remaining words in the title (aside from proper nouns or APIs) are lower-case.
+- [ ]  The first word of all heading titles are capitalized and the remaining words in the title (aside from proper nouns or APIs) are lower-case.
 - [ ]  All instances of API names and API attribute names use <code>\`</code> or `\<code\>` tags.
 - [ ]  All code samples use <code>\`\`\`\<language\></code>.
 
@@ -67,5 +61,3 @@ This is a checklist for developers to ensure that their usage documents maintain
 	\</head\><br>
 	\`\`\`
 	</details>
-
-- [ ]  The article's component meets [accessibility guidelines](https://sites.google.com/corp/google.com/greenlinesv2/how-to-greenline/greenlines-for-elements#h.p_56wIA8ABpc2P) for labeling.
