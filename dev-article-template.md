@@ -18,7 +18,7 @@ Insert an image showing the component or all the component variants.
 
 * If no such image exists, file a bug and add a TODO with the bug in an HTML comment in the source.
 
-## Using \[Component Name \]
+## Using \[Component name\]
 
 If there are any instructions on using the component that applies to all component variants (for example, installation or theming, accessiblity), include them here.
 
@@ -28,11 +28,11 @@ If there are any instructions on using the component that applies to all compone
 If there is a separate page that has instructions, link to that page.
 <!-- What are the best ways to integrate component accessbility features into the template? -->
 
-## \[Component section\]
+## \[Component variant\]
 Divide the component into its variants, preferably as described in the [material.io/components] pages.
 
 
-For example chips](https://material.io/components/chips/) is divided into the following 2nd tier (`##` header) sections based on its variants:
+For example, [chips](https://material.io/components/chips/) is divided into the following 2nd tier (`##` header) sections based on its variants:
 
 * Input chip
 * Choice chip
@@ -41,14 +41,14 @@ For example chips](https://material.io/components/chips/) is divided into the fo
 
 Each section should have a 2nd tier header. Add 1-2 sentences from the material.io website that describes when and how to use the component.
 
-**Important** If your platform does not support a particular variant, include the variant but EXPLICITLY STATE THAT IT ISN'T SUPPORTED. Consider including a link to library that does support the variant.
+**Important** If your platform does not support a particular variant, include the variant but EXPLICITLY STATE THAT IT ISN'T SUPPORTED. Consider including a link to a library that does support the variant.
 
 
-### \[Component Example\] example
+### \[Component variant\] example
 
-The component example header should be one level below the component section header.
+The variant example header should be one level below the component variant header.
 
-The Example section should have the following:
+The example section should have the following:
 * 1-2 sentences to describe the example
 * An image rendering whatever sample code is included
 * A list of links to the applicable API(s) listed from highest level to lowest level: include both developer source (e.g., [developer.android.com], or as available) and GitHub source
