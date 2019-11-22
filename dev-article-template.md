@@ -1,4 +1,4 @@
-_Instructions to authors: replace text [in square brackets] with the appropriate items from your component and follow the instructions in each section. See the accompanying examples for futher guidance._
+_Instructions to authors: replace text \[in square brackets\] with the appropriate items from your component and follow the instructions in each section. See the accompanying examples for futher guidance._
 
 # \[Component name\]
 
