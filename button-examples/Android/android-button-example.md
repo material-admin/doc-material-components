@@ -226,7 +226,7 @@ This example separates out the the image and checkbox (favorites icon) element i
 </FrameLayout>
 ```
 
-In a separate Kotlin file &mdash; [`ImageGridAdapater.kt`](toggle_demo/app/src/main/java/io/material/togglebuttons/ImageGridAdapter.kt), the `ImageGridAdapter` interates through a list of images in the `drawable` folder referenced in [`ImageItem.kt`](toggle_demo/app/src/main/java/io/material/togglebuttons/ImageItem.kt) as the `ImageView` backgrounds.
+In a separate Kotlin file &ndash; [`ImageGridAdapater.kt`](toggle_demo/app/src/main/java/io/material/togglebuttons/ImageGridAdapter.kt), the `ImageGridAdapter` interates through a list of images in the `drawable` folder referenced in [`ImageItem.kt`](toggle_demo/app/src/main/java/io/material/togglebuttons/ImageItem.kt) as the `ImageView` backgrounds.
 
 ```kt
 class ImageGridAdapter(
