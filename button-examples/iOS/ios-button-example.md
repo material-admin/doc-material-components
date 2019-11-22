@@ -15,7 +15,7 @@ There are four variants of buttons:
 
 ### Install `MDCButtons`
 
-Before using the `MDCButtons` component to implement its variants you must install `MCDButtons`. In your source files import the component, and then apply your theme:
+Before using the `MDCButtons` API to implement its variants you must install `MCDButtons`. In your source files import the component, and then apply your theme:
 1. Install `MDCButtons`
    * Use CocoaPods to install `MDCButtons`
      1. Add the following line to your `Podfile`:
@@ -222,7 +222,7 @@ The following example shows 4 images arranged in a 2-by-2 array with a favorite 
 <img src="assets/iOS-toggle-icon.png" alt="iOS toggle example showing 4 images in an array with a favorite icon in the upper-right corner of each image.">
 
 
-It uses the class `ToggleButtonCell` &mdash;which extends the `MDCCardCollectionCell`&mdash; to display the image and the icon, and provide gesture recognition for each cell of the array.
+It uses the class `ToggleButtonCell` &ndash;which extends the `MDCCardCollectionCell`&ndash; to display the image and the icon, and provide gesture recognition for each cell of the array.
 
 ```swift
 import MaterialComponents.MaterialCards_Theming
@@ -304,7 +304,7 @@ class ToggleButtonCell: MDCCardCollectionCell {
 }
 ```
 
-The class `ToggleButtonCollectionViewController` &mdash;which extends `UICollectionViewController`&mdash; loads the images and icons in a list:
+The class `ToggleButtonCollectionViewController` &ndash;which extends `UICollectionViewController`&ndash; loads the images and icons in a list:
 
 ```swift
 class ToggleButtonCollectionViewController: UICollectionViewController,
