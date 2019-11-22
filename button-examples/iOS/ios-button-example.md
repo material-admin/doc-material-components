@@ -2,7 +2,7 @@
 
 [Buttons](https://material.io/components/buttons/) allow users to take actions, and make choices, with a single tap.
 
-There are four variants of buttons:
+There are four types of buttons:
 
 * [Text button](#text-button)
 * [Outlined button](#outlined-button) 
@@ -11,11 +11,11 @@ There are four variants of buttons:
 
 <!-- TODO(b/1234568): Add example image here when it is available. -->
 
-## Using button
+## Using buttons
 
 ### Install `MDCButtons`
 
-Before using the `MDCButtons` component to implement its variants you must install `MCDButtons`. In your source files import the component, and then apply your theme:
+Before using `MDCButtons` to implement a Material button you must install `MCDButtons`. In your source files import the component, and then apply your theme:
 1. Install `MDCButtons`
    * Use CocoaPods to install `MDCButtons`
      1. Add the following line to your `Podfile`:
@@ -28,7 +28,7 @@ Before using the `MDCButtons` component to implement its variants you must insta
        ```
 1. Import `MDCButtons` and MDC button theming and initialize `MDCButtons` using `alloc`/`init`. Initialize your theme  before applying it to your button.
 
-    **Note** For more information about themes, go to the [Theming page](https://material.io/develop/ios/components/theming/) for iOS.
+    **Note**: For more information about themes, see the [Theming page](https://material.io/develop/ios/components/theming/) for iOS.
 
      **Swift**
      ```swift
@@ -48,7 +48,7 @@ Before using the `MDCButtons` component to implement its variants you must insta
      ```
 1. Apply accessibility settings
  
-    To help make your buttons usable to as many users as possible, set an appropriate [`accessibilityLabel`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) value if your button does not have a title or only has an icon:
+    To help make your buttons usable for as many people as possible, set an appropriate [`accessibilityLabel`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) value if your button does not have a title or only has an icon:
 
     **Objective-C**
     ```objc
@@ -59,16 +59,13 @@ Before using the `MDCButtons` component to implement its variants you must insta
     button.accessibilityLabel = "Create"
     ```
     
-## Text button
+## [Text button](https://material.io/components/buttons/#text-button)
 
-Text buttons are typically used for less-pronounced actions, including those located:
-* In dialogs
-* In cards
-In cards, text buttons help maintain an emphasis on card content.
+Text buttons are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
 
 ### Text button example
 
-The following example shows a text button with black text on white background.
+The following example shows a text button with black text on a white background.
 
 Source Code APIs:
 
@@ -77,7 +74,7 @@ Source Code APIs:
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/) <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
-<img src="assets/ios-text-button.gif" alt="Text button example in iOS showing the black text 'Text Button' over a white background.">
+<img src="assets/ios-text-button.gif" alt="Text button example for iOS showing the black text 'Text Button' over a white background.">
 
 **Swift**
 
@@ -102,7 +99,7 @@ MDCButton *button = [[MDCButton alloc] init];
 ```
 
 
-## Outlined button
+## [Outlined button](https://material.io/components/buttons/#outlined-button)
 
 Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
@@ -117,8 +114,9 @@ Source Code APIs:
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
+The following example shows an outlined button with the black text 'Button' on a white background, surrounded by a gray stroke.
 
-<img src="assets/ios-outlined.gif" alt="Outlined button example in iOS">
+<img src="assets/ios-outlined.gif" alt="Outlined button example for iOS showing the black text 'Text Button' over a white background.">
 
 **Swift**
 ```swift
@@ -152,7 +150,7 @@ Source Code APIs:
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 * [MDCContainerScheme class description](https://github.com/material-components/material-components-ios/tree/stable/components/schemes/Container) theme
 
-
+The following example shows an outlined button with the black text 'Button' on a white background, surrounded by a gray stroke.
 
 <img src="assets/ios-outlined.gif" alt="Outlined button example in iOS">
 
@@ -173,7 +171,7 @@ MDCButton *button = [[MDCButton alloc] init];
 [self.button applyTextThemeWithScheme:self.containerScheme];
 ```
 
-## Contained button
+## [Contained button](https://material.io/components/buttons/#contained-button)
 
 Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
@@ -186,25 +184,27 @@ Source Code APIs:
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
+The following example shows a contained button in two states: Disabled and enabled. Color schemes are typically determined by your theme.
 
-The following examples show a contained button in two states: Disabled and enabled. Color schemes are typically determined by your theme.
-
-<img src="assets/ios-contained.gif" alt="Contained button example in iOS with a black background that flashes gray when pressed">
-
+<img src="assets/ios-contained.gif" alt="Contained button example for iOS with a black background that flashes gray when pressed">
 
 
-## Toggle button
 
-Toggle buttons can be used to select from a group of choices.
+## [Toggle button](https://material.io/components/buttons/#toggle-button)
+
+Toggle buttons can be used to group related options. To emphasize groups of related toggle buttons, a group should share a common container.
+
+There are two types of toggle buttons:
+* [Toggle bar](#toggle-bar)
+* [Toggle icon button](#toggle-icon-button)
 
 ### Toggle bar
 
-The toggle bar allows you to select from a group of buttons that can be set to [selective action](https://material.io/components/buttons/#toggle-button) where only one button in a group can be selected at one time.
+The toggle bar is a group of related toggle buttons sharing a common container.
 
 The Material toggle bar is not supported in iOS. 
 
 ### Toggle icon button
-
 
 The toggle icon button allows you to select from a group using an icon.
 
@@ -217,12 +217,12 @@ Source code APIs:
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
 
-The following example shows 4 images arranged in a 2-by-2 array with a favorite icon in the upper-right corner of each image.
+The following example shows four images arranged in a two-by-two array with a favorite icon in the upper-right corner of each image.
 
-<img src="assets/iOS-toggle-icon.png" alt="iOS toggle example showing 4 images in an array with a favorite icon in the upper-right corner of each image.">
+<img src="assets/iOS-toggle-icon.png" alt="iOS toggle icon button example showing four images in an array with a favorite icon in the upper-right corner of each image.">
 
 
-It uses the class `ToggleButtonCell` &mdash;which extends the `MDCCardCollectionCell`&mdash; to display the image and the icon, and provide gesture recognition for each cell of the array.
+It uses the class `ToggleButtonCell` &ndash; which extends the `MDCCardCollectionCell` &ndash; to display the image and the icon, and provide gesture recognition for each cell of the array.
 
 ```swift
 import MaterialComponents.MaterialCards_Theming
@@ -304,7 +304,7 @@ class ToggleButtonCell: MDCCardCollectionCell {
 }
 ```
 
-The class `ToggleButtonCollectionViewController` &mdash;which extends `UICollectionViewController`&mdash; loads the images and icons in a list:
+The class `ToggleButtonCollectionViewController` &ndash; which extends `UICollectionViewController` &ndash; loads the images and icons in a list:
 
 ```swift
 class ToggleButtonCollectionViewController: UICollectionViewController,
