@@ -13,7 +13,7 @@ There are four types of buttons:
 
 ## Using buttons
 
-Before you can implement Material buttons, you need to [install the Material Components for Android library](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md).
+Before you can implement a Material button, you need to [install the Material Components for Android library](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md).
 
 ## [Text button](https://material.io/components/buttons/#text-button)
 
