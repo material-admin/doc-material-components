@@ -130,7 +130,7 @@ Source code APIs:
     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup)
     * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButtonToggleGroup.java)
 
-<img src="assets/android_button_bar.png" width="50%" height="50%" alt="Android button bar displaying the following icons: aspect ratio, assignment, late assignment, and bookmar">
+<img src="assets/android_button_bar.png" width="50%" height="50%" alt="Toggle bar example for Android displaying the following icons: aspect ratio, assignment, late assignment, and bookmark.">
 
 
 ```xml
