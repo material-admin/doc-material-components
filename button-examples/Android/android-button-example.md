@@ -9,7 +9,7 @@ There are four types of buttons:
 1. [Contained button](#contained-button)
 1. [Toggle button](#toggle-button)
 
-![Example of the four button types](assets/mdc_usage_docs_button_types.svg)
+![Example of the four button types](assets/button-types.svg)
 
 ## Using buttons
 
@@ -29,7 +29,7 @@ Source code API:
 
 The following example shows a text button with purple text on a white background.
 
-<img src="assets/android_text.png" alt="Text button example for Android with purple text 'Text' over a white background.">
+!["Text button example for Android with purple text 'Text' over a white background."](assets/text-button.svg)
 
 ```xml
     <Button
@@ -54,9 +54,7 @@ Source code API:
     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
     * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
 
-
-
-<img src="assets/android_outlined.png" alt="Outlined button example in Android with purple text surrounded by a gray outline">
+!["Outlined button example in Android with purple text surrounded by a gray outline"](assets/outlined-button.svg)
 
 ```xml
     <Button
@@ -84,7 +82,7 @@ Source code API:
 
 The following example shows a contained button with white text on a purple background.
 
-<img src="assets/android_contained.png" alt="Contained button example for Android with the white text 'Text' on a purple background.">
+!["Contained button example for Android with the white text 'Text' on a purple background."](assets/contained-button.svg)
 
 ```xml
     <Button
@@ -130,7 +128,7 @@ Source code APIs:
     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup)
     * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButtonToggleGroup.java)
 
-<img src="assets/android_button_bar.png" width="50%" height="50%" alt="Toggle bar example for Android displaying the following icons: aspect ratio, assignment, late assignment, and bookmark.">
+!["Toggle bar example for Android displaying icons."](assets/toggle-buttons.svg)
 
 
 ```xml
