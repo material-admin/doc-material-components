@@ -5,11 +5,11 @@
 There are four types of buttons:
 
 1. [Text button](#text-button)
-1. [Outlined button](#outlined-button) 
+1. [Outlined button](#outlined-button)
 1. [Contained button](#contained-button)
 1. [Toggle button](#toggle-button)
 
-![Example of the four button types](assets/mdc_usage_docs_button_types.png)
+![Example of the four button types](assets/mdc_usage_docs_button_types.svg)
 
 ## Using buttons
 
@@ -190,7 +190,7 @@ The following example shows four images arranged in a two-by-two array with a fa
 
 <img src="assets/android_toggle_button.png" alt="Android toggle icon button example showing four images in an array with a favorite icon in the upper-right corner of each image.">
 
-This example separates out the image and checkbox (favorite icon) element into a separate layout xml file: 
+This example separates out the image and checkbox (favorite icon) element into a separate layout xml file:
 [`image_grid_item_layout.xml`](toggle_demo/app/src/main/res/layout/image_grid_item_layout.xml).
 
 ```xml
