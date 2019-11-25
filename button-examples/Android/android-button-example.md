@@ -38,13 +38,13 @@ The following example shows a text button with purple text on a white background
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Text"
-	...
+        ...
     />
 ```
 
 ## Outlined button
 
-Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
+[Outlined buttons](https://material.io/components/buttons/#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
 ### Outlined button example
 
@@ -65,13 +65,13 @@ Source code API:
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Outlined"
-	...
+        ...
     />
 ```
 
 ## Contained button
 
-Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
+[Contained buttons](https://material.io/components/buttons/#contained-button) are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
 ### Contained button example
 
@@ -82,18 +82,18 @@ Source code API:
     * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
 
 
-The following examples show an elevated contained button with a purple background with white text.
+The following example shows a contained button with white text on a purple background.
 
-<img src="assets/android_contained.png" alt="Contained button example in Android with a black background that flashes gray when pressed">
+<img src="assets/android_contained.png" alt="Contained button example for Android with the white text 'Text' on a purple background.">
 
 ```xml
     <Button
         android:id="@+id/button4"
         style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
-	android:layout_height="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Contained"
-	...
+        ...
     />
 
 ```
