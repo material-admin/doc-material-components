@@ -9,7 +9,7 @@ There are four types of buttons:
 * [Contained button](#contained-button)
 * [Toggle button](#toggle-button)
 
-<!-- TODO(b/1234568): Add example image here when it is available. -->
+![Example of the four button types](assets/mdc_usage_docs_button_types.png)
 
 ## Using buttons
 
