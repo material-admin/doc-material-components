@@ -1,10 +1,26 @@
-_Instructions to authors: replace text \[in square brackets\] with the appropriate items from your component and follow the instructions in each section. See the accompanying examples for futher guidance._
+_Instructions to authors: replace text \<in angle brackets\> with the appropriate items from your component and follow the instructions in each section. See the accompanying examples for futher guidance._
 
-# \[Component name\]
+<!--  20191125 Todo:
+* replace square brackets for fill-in content with angle brackets
+* Using <component> should start with link to a platform-specific "Getting started" page
+* tables for attributes for each type
+* (phase II) include anatomy section referencing the material.io/components
+    * table referencing anatomy mapping to attributes (test this out per platform for naming that is consistent for all variants)
+    * try to include a single image from design that diagrams attributes
+* "types" vs "variants" -- use "types" instead of "variants"
+* make sure to link first mention of component type in each type sections in m.io/components
+* "Using <component>" should use the platform-specific language ("dependencies" vs "installs" for instance)
+* component types: make sure to include information that might be specific to the platform when it conflices with guidance
+* Adding notes: **NOTE:**
+* Add in the style guide that we use &ndash; and not &mdash;
+* 
+-->
+
+# \<Component name\>
 
 Start with a concise (1-2 sentence) description of the component.
 
-* If possible, copy the exact summary from the design article.
+* Copy the exact summary from the design article.
 * Do not use the name of the component's class or implementation.
 * Link the first mention of the component (e.g., "Button") to the design article.
 * If the component is known by an alias on your platform, include that in the description, e.g. "... Ripples are known as 'Ink' in MDC-iOS."
