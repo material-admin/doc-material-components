@@ -11,9 +11,9 @@ There are four types of buttons:
 
 <!-- TODO(b/1234568): Add example image here when it is available. -->
 
-## Using button
+## Using buttons
 
-Before you can use the Material.io button, you need to install the Material.io Android library. For more information, go to the [Getting started](https://www.google.com/url?q=https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md&sa=D&ust=1573585349965000&usg=AFQjCNF75a0u6bbQ6-XftBRNV4EQevylkw) page.
+Before you can use the Material.io button, you need to add a dependency to the Material Components for Android library. For more information, go to the [Getting started](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md) page.
 
 ## Text button
 
