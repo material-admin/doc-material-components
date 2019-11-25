@@ -9,7 +9,7 @@ There are four types of buttons:
 1. [Contained button](#contained-button)
 1. [Toggle button](#toggle-button)
 
-![Example of the four button types](assets/toggle-buttons.svg)
+![Example of the four button types](assets/button-types.svg)
 
 ## Using buttons
 
