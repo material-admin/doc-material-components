@@ -8,8 +8,9 @@
 <!--  20191125 Todo:
 * tables for attributes for each type
 * (phase II) include anatomy section referencing the material.io/components
-    * table referencing anatomy mapping to attributes (test this out per platform for naming that is consistent for all variants)
+    * table referencing anatomy mapping to attributes (test this out per platform for naming that is consistent for all types)
     * try to include a single image from design that diagrams attributes
+* What are the best ways to integrate component accessbility features into the template?
 -->
 
 # \<Component name\>
@@ -33,42 +34,59 @@ Insert an image showing the component or all the component types.
 
 ## Using \<Component name\>
 
-If there is a link to a 'Getting started' page for your platform, add the link here.
+Include any usage instructions that are common to all types. If your platform includes more complete documentation elsewhere, (e.g., a "Getting Started" page), include a link to it here.
 
-If there are any instructions on using the component that applies to all component types (for example, installation or theming, accessiblity), include them here.
+If installation instructions are required, first summarize the requirement in 1-2 sentences and then give detailed instructions in a collapsable section.
 
-* Use an ordered list for ordered steps (`1.`)
-* Use an unorered list for steps that have no particular order (`* `)
+If all types use exactly the same list of API docs/source location links, or if there is a common set of links due to a superclass/etc, then include them here instead of repeating them in each type section.
 
-<!-- What are the best ways to integrate component accessbility features into the template? -->
+## \<First component type\>
 
-## \<Component type\>
+Start with a concise (1-2 sentence) description of the component type.
+* If possible, copy the exact summary from the design article.
+* Link the first mention of the component type to the appropriate section of the design article.
 
-Divide the component into its types, preferably as described in the [material.io/components] pages.
+Include a list of links to API documentation and source location of the component.
 
+* Use the class/implementation names when linking to the API docs.
+* Add other links as necessary if they would help using the component.
 
-For example, [chips](https://material.io/components/chips/) is divided into the following 2nd tier (`##` header) sections based on its types:
+Describe how to use this component type in as much detail as necessary.
 
-* Input chip
-* Choice chip
-* Filter chip
-* Action chip
+* If your platform does not support a particular type, include the type but explicitly state that it isn't supported.
+* If support is planned, link to the issue tracking that feature request.
 
-* Each section should have a 2nd tier header
-* Add 1-2 sentences from the material.io website that describes when and how to use the component
-* Add a link in the first mention of the type to the material.io/component page
-* Add any information that conflicts with the guidance descriptions
-* Preface any important notes using **NOTE:**
+### Key properties
 
-**Important** If your platform does not support a particular type, include the type but EXPLICITLY STATE THAT IT ISN'T SUPPORTED. Consider including a link to a library that does support the type.
+List the key properties/attributes/CSS classes of the component in a table.
 
+* The first column is the property's name as used in the design article.
+* The second column is the property's identifier in code.
+* The third column is a short description of the property.
+* If there are several related classes used together for the component, list their properties in separate tables.
+* Only list the _most important properties_ for configuring and theming the component—the full list of properties should be in the component's API docs.
 
-### \<Component type\> example
+### \<First component type\> example
 
-The type example header should be one level below the component type header.
+Describe the example in 1-2 sentences.
 
-The example section should have the following:
-* 1-2 sentences to describe the example
-* An image rendering whatever sample code is included
-* A list of links to the applicable API(s) listed from highest level to lowest level: include both developer source (e.g., [developer.android.com], or as available) and GitHub source
-* Provide example source code that can generate the example in the image. Mention any themes/settings used
+Include an image of the rendered example.
+
+Include a snippet of source code illustrating the example.
+
+* Remove boilerplate code that is not necessary to understand the example.
+* Consider highlighting the most important lines of the example.
+
+## \<Second component type\>
+
+...
+
+### Key properties
+
+...
+
+### \<Second component type\> example
+
+...
+
+_Continue describing the rest of the component types as necessary._
