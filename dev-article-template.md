@@ -1,7 +1,7 @@
-_**Instructions to authors: **_
-* Copy this template into your repo
-* Replace text \<in angle brackets\> with the appropriate items from your component
-* Follow the instructions in each sectio &ndash; see the accompanying examples for futher guidance: [button-examples](button-examples)
+**Instructions to authors:**
+* _Copy this template into your repo._
+* _Replace text \<in angle brackets\> with the appropriate items from your component._
+* _Follow the instructions in each section&mdash;see the [accompanying examples](button-examples) for futher guidance._
 
 <!--  20191125 Todo:
 * tables for attributes for each type
