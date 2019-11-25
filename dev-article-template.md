@@ -41,6 +41,7 @@ If there are any instructions on using the component that applies to all compone
 <!-- What are the best ways to integrate component accessbility features into the template? -->
 
 ## \<Component type\>
+
 Divide the component into its types, preferably as described in the [material.io/components] pages.
 
 
