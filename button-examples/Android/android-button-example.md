@@ -176,7 +176,7 @@ Source code APIs:
 The toggle icon button allows you to select from a group using an icon.
 
 
-#### Toggle icon example
+#### Toggle icon button example
 
 Source code APIs:
 
@@ -186,11 +186,11 @@ Source code APIs:
 * [CheckBox](https://developer.android.com/reference/android/widget/CheckBox)
 
 
-The following example shows 4 images arranged in a 2-by-2 array with a favorite icon in the upper-right corner of each image.
+The following example shows four images arranged in a two-by-two array with a favorite icon in the upper-right corner of each image.
 
-<img src="assets/android_toggle_button.png" alt="Android toggle example showing 4 images in an array with a favorite icon in the upper-right corner of each image.">
+<img src="assets/android_toggle_button.png" alt="Android toggle icon button example showing four images in an array with a favorite icon in the upper-right corner of each image.">
 
-This example separates out the the image and checkbox (favorites icon) element into a separate layout xml file: 
+This example separates out the image and checkbox (favorite icon) element into a separate layout xml file: 
 [`image_grid_item_layout.xml`](toggle_demo/app/src/main/res/layout/image_grid_item_layout.xml).
 
 ```xml
@@ -223,7 +223,7 @@ This example separates out the the image and checkbox (favorites icon) element i
 </FrameLayout>
 ```
 
-In a separate Kotlin file &ndash; [`ImageGridAdapater.kt`](toggle_demo/app/src/main/java/io/material/togglebuttons/ImageGridAdapter.kt), the `ImageGridAdapter` interates through a list of images in the `drawable` folder referenced in [`ImageItem.kt`](toggle_demo/app/src/main/java/io/material/togglebuttons/ImageItem.kt) as the `ImageView` backgrounds.
+In a separate Kotlin file &mdash; [`ImageGridAdapater.kt`](toggle_demo/app/src/main/java/io/material/togglebuttons/ImageGridAdapter.kt), the `ImageGridAdapter` interates through a list of images in the `drawable` folder referenced in [`ImageItem.kt`](toggle_demo/app/src/main/java/io/material/togglebuttons/ImageItem.kt) as the `ImageView` backgrounds.
 
 ```kt
 class ImageGridAdapter(
