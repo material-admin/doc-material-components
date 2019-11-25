@@ -1,12 +1,13 @@
-_Instructions to authors: replace text \<in angle brackets\> with the appropriate items from your component and follow the instructions in each section. See the accompanying examples for futher guidance._
+_**Instructions to authors: **_
+* Copy this template into your repo
+* Replace text \<in angle brackets\> with the appropriate items from your component
+* Follow the instructions in each sectio &ndash; see the accompanying examples for futher guidance: [button-examples](button-examples)
 
 <!--  20191125 Todo:
 * tables for attributes for each type
 * (phase II) include anatomy section referencing the material.io/components
     * table referencing anatomy mapping to attributes (test this out per platform for naming that is consistent for all variants)
     * try to include a single image from design that diagrams attributes
-* "Using <component>" should use the platform-specific language ("dependencies" vs "installs" for instance)
-* Add in the style guide that we use &ndash; and not &mdash;
 -->
 
 # \<Component name\>
