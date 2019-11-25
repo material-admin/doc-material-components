@@ -2,7 +2,7 @@
 
 [Buttons](https://material.io/components/buttons/) allow users to take actions, and make choices, with a single tap.
 
-There are four variants of buttons:
+There are four types of buttons:
 
 * [Text button](#text-button)
 * [Outlined button](#outlined-button) 

@@ -2,7 +2,7 @@
 
 [Buttons](https://material.io/components/buttons/) allow users to take actions, and make choices, with a single tap.
 
-There are four variants of buttons:
+There are four types of buttons:
 
 * [Text button](#text-button)
 * [Outlined button](#outlined-button) 
@@ -15,7 +15,7 @@ There are four variants of buttons:
 
 ### Install `MDCButtons`
 
-Before using the `MDCButtons` API to implement its variants you must install `MCDButtons`. In your source files import the component, and then apply your theme:
+Before using the `MDCButtons` API to implement its types you must install `MCDButtons`. In your source files import the component, and then apply your theme:
 1. Install `MDCButtons`
    * Use CocoaPods to install `MDCButtons`
      1. Add the following line to your `Podfile`:

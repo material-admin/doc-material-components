@@ -13,7 +13,7 @@ This is a checklist for developers to ensure that their usage documents maintain
 	Use the name used in <a href="https://material.io/components/">material.io/components</a>\/\<component\> instead of the API name for the platform. Reference the platform API name only when referencing the API.<br>
 
 	For example, buttons: <br>
-		 'Text button' is the canonical name, but <code>FlatButton</code> is the API name in Flutter. When describing the component or component variant in the text, use 'text button' and use `FlatButton` only in either the API references or code samples.
+		 'Text button' is the canonical name, but <code>FlatButton</code> is the API name in Flutter. When describing the component or component type in the text, use 'text button' and use `FlatButton` only in either the API references or code samples.
 
 
 	</details>
@@ -33,13 +33,13 @@ This is a checklist for developers to ensure that their usage documents maintain
 
 	</details>
 
-- [ ]  Your document includes all the component variants listed in the guidelines.<br>
-	You must include all variants, including those not supported by the platform. Any variants not supported by the platform should be mentioned as 'unsupported'.
+- [ ]  Your document includes all the component types listed in the guidelines.<br>
+	You must include all types, including those not supported by the platform. Any types not supported by the platform should be mentioned as 'unsupported'.
 
 	<details>
 		<summary>Example</summary>
 
-	The [buttons component](https://material.io/components/buttons) has 4 variants: <br>
+	The [buttons component](https://material.io/components/buttons) has 4 types: <br>
 	<ul>
 		<li>Text button</li>
 		<li>Outlined button</li>
