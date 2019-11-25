@@ -100,7 +100,7 @@ The following example shows a contained button with white text on a purple backg
 
 ## Toggle button
 
-Toggle buttons can be used to select from a group of choices.
+[Toggle buttons](https://material.io/components/buttons/#toggle-button) can be used to select from a group of choices.
 
 The toggle button can be separated into two types:
 * [Toggle bar](#toggle-bar)
@@ -108,17 +108,17 @@ The toggle button can be separated into two types:
 
 ### Toggle Bar
 
-The toggle bar allows you to select from a group of buttons that can be set to [selective action](https://material.io/components/buttons/#toggle-button) where only one button in a group can be selected at one time.
+The toggle bar is a group of related toggle buttons sharing a common container.
 
 #### Toggle bar example
 
-The following example shows a button bar with the following icons:
+The following example shows a toggle bar with the following icons:
 * aspect ratio
 * assignment
 * late assignment
 * bookmark
 
-The example allows multiple buttons to be selected. To exclusively select a button, add `app:singleSelection="true"` to `MaterialButtonToggleGroup`. 
+The example allows multiple buttons to be selected. If only one option in the group should be selected and active at a time, add `app:singleSelection="true"` to `MaterialButtonToggleGroup`. This ensures that selecting one option deselects any other.
 
 Source code APIs:
 
