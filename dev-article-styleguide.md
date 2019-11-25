@@ -4,6 +4,8 @@ This is a checklist for developers to ensure that their usage documents maintain
 
 
 - [ ]  Your documentation's tone, language, grammar, and images follow the [Google developer documentation style guide highlights](https://developers.google.com/style/highlights).
+- [ ]  Your document uses the language platform-specific language ("dependencies" vs "installs" for instance)
+- [ ]  Your document uses the  &ndash; ('\&ndash;') and not &mdash; ('\&mdash;')
 - [ ]  Your documentation meets [accessibility guidelines](https://developers.google.com/style/images#alt-text) for image alt text.
 - [ ]  Your documentation uses the canonical component name from the guidelines.
 

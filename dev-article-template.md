@@ -1,10 +1,17 @@
-_Instructions to authors: replace text \[in square brackets\] with the appropriate items from your component and follow the instructions in each section. See the accompanying examples for futher guidance._
+_Instructions to authors: replace text \<in angle brackets\> with the appropriate items from your component and follow the instructions in each section. See the accompanying examples for futher guidance._
 
-# \[Component name\]
+<!--  20191125 Todo:
+* tables for attributes for each type
+* (phase II) include anatomy section referencing the material.io/components
+    * table referencing anatomy mapping to attributes (test this out per platform for naming that is consistent for all variants)
+    * try to include a single image from design that diagrams attributes
+-->
+
+# \<Component name\>
 
 Start with a concise (1-2 sentence) description of the component.
 
-* If possible, copy the exact summary from the design article.
+* Copy the exact summary from the design article.
 * Do not use the name of the component's class or implementation.
 * Link the first mention of the component (e.g., "Button") to the design article.
 * If the component is known by an alias on your platform, include that in the description, e.g. "... Ripples are known as 'Ink' in MDC-iOS."
@@ -18,17 +25,20 @@ Insert an image showing the component or all the component types.
 
 * If no such image exists, file a bug and add a TODO with the bug in an HTML comment in the source.
 
-## Using \[Component name\]
+
+## Using \<Component name\>
+
+If there is a link to a 'Getting started' page for your platform, add the link here.
 
 If there are any instructions on using the component that applies to all component types (for example, installation or theming, accessiblity), include them here.
 
 * Use an ordered list for ordered steps (`1.`)
 * Use an unorered list for steps that have no particular order (`* `)
 
-If there is a separate page that has instructions, link to that page.
 <!-- What are the best ways to integrate component accessbility features into the template? -->
 
-## \[Component type\]
+## \<Component type\>
+
 Divide the component into its types, preferably as described in the [material.io/components] pages.
 
 
@@ -39,12 +49,16 @@ For example, [chips](https://material.io/components/chips/) is divided into the 
 * Filter chip
 * Action chip
 
-Each section should have a 2nd tier header. Add 1-2 sentences from the material.io website that describes when and how to use the component.
+* Each section should have a 2nd tier header
+* Add 1-2 sentences from the material.io website that describes when and how to use the component
+* Add a link in the first mention of the type to the material.io/component page
+* Add any information that conflicts with the guidance descriptions
+* Preface any important notes using **NOTE:**
 
 **Important** If your platform does not support a particular type, include the type but EXPLICITLY STATE THAT IT ISN'T SUPPORTED. Consider including a link to a library that does support the type.
 
 
-### \[Component type\] example
+### \<Component type\> example
 
 The type example header should be one level below the component type header.
 
