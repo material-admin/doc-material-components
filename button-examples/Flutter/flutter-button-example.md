@@ -4,21 +4,18 @@
 
 There are four types of buttons:
 
-* [Text button](#text-button)
-* [Outlined button](#outlined-button) 
-* [Contained button](#contained-button)
-* [Toggle button](#toggle-button)
+1. [Text button](#text-button)
+1. [Outlined button](#outlined-button) 
+1. [Contained button](#contained-button)
+1. [Toggle button](#toggle-button)
 
-<!-- TODO(b/1234568): Add example image here when it is available. -->
+![Example of the four button types](images/button-types.svg)
+
+
 
 ## Text button
 
-Text buttons are typically used for less-pronounced actions, including those located:
-
-* In dialogs
-* In cards
-
-In cards, text buttons help maintain an emphasis on card content.
+[Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
 
 ### Text button example
 
@@ -45,7 +42,7 @@ FlatButton(
 
 ## Outlined button
 
-Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
+[Outlined buttons](https://material.io/components/buttons/#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
 ### Outlined button example
 
@@ -56,7 +53,7 @@ Source code API:
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/outline_button.dart)
 
 
-<img src="images/flutter_outlined.png" alt="Outlined button example in Flutter" width="20%">
+<img src="images/toggle-buttons.svg" alt="Outlined button example in Flutter">
 
 ```dart
 OutlineButton(
@@ -74,7 +71,8 @@ OutlineButton(
 
 ## Contained button
 
-Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
+[Contained buttons](https://material.io/components/buttons/#contained-button) are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
+ntained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
 ### Contained button example
 
@@ -102,13 +100,24 @@ RaisedButton(
 
 ## Toggle button
 
-Toggle buttons can be used to select from a group of choices.
+[Toggle buttons](https://material.io/components/buttons/#toggle-button) can be used to select from a group of choices.
+
+The toggle button can be separated into two types:
+* [Toggle bar](#toggle-bar)
+* [Toggle icon button](#toggle-icon-button)
 
 ### Toggle bar
 
 The toggle bar allows you to select from a group of buttons that can be set to [selective action](https://material.io/components/buttons/#toggle-button) where only one button in a group can be selected at one time.
 
-#### Toggle bar with four icons example
+#### Toggle bar with three icons example
+
+The following example shows a toggle bar with the following icons:
+
+* favorite
+* remove red eye
+* notifications
+
 
 Source code APIs:
 * IconButton
@@ -116,7 +125,7 @@ Source code APIs:
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/icon_button.dart)
 
 
-The following example displays 4 `IconButton`s in a widget called `buildIconButton`. It uses another widget called `iconWidget` that allows users to toggle an `IconButton`: 
+The following example displays 3 `IconButton`s in a widget called `buildIconButton`. It uses another widget called `iconWidget` that allows users to toggle an `IconButton`: 
 
 <img src="images/toggle_bar_screenshot_cropped.png" alt="screenshot showing 4 icons arranged in a row" width="30%">
 
@@ -164,11 +173,9 @@ class _ToggleBarDemoState extends State<ToggleBarDemo> {
   Widget buildIconButton() {
     return ToggleButtons(
       children: [
-        Icon(Icons.aspect_ratio),
-        Icon(Icons.assignment_ind),
-        Icon(Icons.assignment_late),
-        Icon(Icons.bookmark_border),
-      ],
+        Icon(Icons.favorite),
+        Icon(Icons.remove_red_eye),
+        Icon(Icons.notifications),      ],
       onPressed: (int index) {
         setState(() {
           isSelected[index] = !isSelected[index];
