@@ -4,10 +4,10 @@
 
 There are four types of buttons:
 
-* [Text button](#text-button)
-* [Outlined button](#outlined-button) 
-* [Contained button](#contained-button)
-* [Toggle button](#toggle-button)
+1. [Text button](#text-button)
+1. [Outlined button](#outlined-button) 
+1. [Contained button](#contained-button)
+1. [Toggle button](#toggle-button)
 
 ![Example of the four button types](assets/mdc_usage_docs_button_types.png)
 
