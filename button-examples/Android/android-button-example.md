@@ -17,10 +17,7 @@ Before you can use the Material.io button, you need to add a dependency to the M
 
 ## Text button
 
-Text buttons are typically used for less-pronounced actions, including those located:
-* In dialogs
-* In cards
-In cards, text buttons help maintain an emphasis on card content.
+[Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
 
 ### Text button example
 
@@ -30,9 +27,9 @@ Source code API:
     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
     * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
 
-The following example shows a text button with purple text on white background.
+The following example shows a text button with purple text on a white background.
 
-<img src="assets/android_text.png" alt="Text button example in Android showing the purple text 'Text' over a white background.">
+<img src="assets/android_text.png" alt="Text button example for Android with purple text 'Text' over a white background.">
 
 ```xml
     <Button
