@@ -141,28 +141,22 @@ Source code APIs:
         app:layout_constraintEnd_toEndOf="parent">
         <Button
             style="?attr/materialButtonOutlinedIconStyle"
-            android:id="@+id/italic_button"
+            android:id="@+id/favorite_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:icon="@drawable/ic_aspect_ratio" />
+            app:icon="@drawable/ic_favorite" />
         <Button
             style="?attr/materialButtonOutlinedIconStyle"
-            android:id="@+id/bold_button"
+            android:id="@+id/remove_red_eye_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:icon="@drawable/ic_assignment_ind" />
+            app:icon="@drawable/ic_remove_red_eye" />
         <Button
             style="?attr/materialButtonOutlinedIconStyle"
-            android:id="@+id/underline_button"
+            android:id="@+id/notifications_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:icon="@drawable/ic_assignment_late" />
-        <Button
-            style="?attr/materialButtonOutlinedIconStyle"
-            android:id="@+id/font_color_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:icon="@drawable/ic_bookmark_border" />
+            app:icon="@drawable/ic_notifications" />
     </com.google.android.material.button.MaterialButtonToggleGroup>
 
 ```
