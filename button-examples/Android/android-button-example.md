@@ -81,7 +81,6 @@ Source code API:
     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
     * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
 
-
 The following example shows a contained button with a text label and a filled container.
 
 !["Contained button example for Android with the white text 'Text' on a purple background."](assets/contained-button.svg)
@@ -101,15 +100,15 @@ The following example shows a contained button with a text label and a filled co
 
 [Toggle buttons](https://material.io/components/buttons/#toggle-button) can be used to select from a group of choices.
 
-The toggle button can be separated into two types:
-* [Toggle bar](#toggle-bar)
-* [Toggle icon button](#toggle-icon-button)
+Toggle buttons can be separated into two types:
+* [Toggle button](#toggle-button)
+* [Icon](#icon)
 
-### Toggle Bar
+### Toggle button
 
-The toggle bar is a group of related toggle buttons sharing a common container.
+To emphasize groups of related toggle buttons, a group should share a common container.
 
-#### Toggle bar example
+#### Toggle button example
 
 The following example shows a toggle bar with the following icons:
 * aspect ratio
@@ -130,7 +129,6 @@ Source code APIs:
     * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButtonToggleGroup.java)
 
 !["Toggle bar example for Android displaying icons."](assets/toggle-buttons.svg)
-
 
 ```xml
  <com.google.android.material.button.MaterialButtonToggleGroup
@@ -162,14 +160,11 @@ Source code APIs:
 
 ```
 
+### Icon
 
-### Toggle icon button
+Icons can be used as toggle buttons when they allow selection, or deselection, of a single choice, such as marking an item as a favorite.
 
-
-The toggle icon button allows you to select from a group using an icon.
-
-
-#### Toggle icon button example
+#### Icon example
 
 Source code APIs:
 
@@ -270,5 +265,3 @@ In the `actvity_main.xml` file, the list of images in arranged to fit into the `
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 ```
-
-
