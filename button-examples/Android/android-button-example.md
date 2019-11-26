@@ -111,55 +111,52 @@ To emphasize groups of related toggle buttons, a group should share a common con
 
 #### Toggle button example
 
-The following example shows a toggle bar with the following icons:
-* aspect ratio
-* assignment
-* late assignment
-* bookmark
-
-The example allows multiple buttons to be selected. If only one option in the group should be selected and active at a time, add `app:singleSelection="true"` to `MaterialButtonToggleGroup`. This ensures that selecting one option deselects any other.
-
 Source code APIs:
-
-* `MaterialButton`
-    * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
-    * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
 
 * `MaterialButtonToggleGroup`
     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup)
     * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButtonToggleGroup.java)
+* `MaterialButton`
+    * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+    * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
+
+The following example shows a toggle button with three buttons that have icons and no text labels.
 
 !["Toggle bar example for Android displaying icons."](assets/toggle-buttons.svg)
 
 ```xml
  <com.google.android.material.button.MaterialButtonToggleGroup
-        android:id="@+id/button_group"
+    android:id="@+id/toggleButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/favoriteButton"
+        style="?attr/materialButtonOutlinedStyle"    
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-        <Button
-            style="?attr/materialButtonOutlinedIconStyle"
-            android:id="@+id/favorite_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:icon="@drawable/ic_favorite" />
-        <Button
-            style="?attr/materialButtonOutlinedIconStyle"
-            android:id="@+id/remove_red_eye_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:icon="@drawable/ic_remove_red_eye" />
-        <Button
-            style="?attr/materialButtonOutlinedIconStyle"
-            android:id="@+id/notifications_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:icon="@drawable/ic_notifications" />
-    </com.google.android.material.button.MaterialButtonToggleGroup>
-
+        android:minWidth="48dp"
+        app:icon="@drawable/ic_favorite"
+        app:iconPadding="0dp" />
+    <Button
+        android:id="@+id/removeRedEyeButton"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="48dp"
+        app:icon="@drawable/ic_remove_red_eye"
+        app:iconPadding="0dp" />
+    <Button
+        android:id="@+id/notificationsButton"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="48dp"
+        app:icon="@drawable/ic_notifications"
+        app:iconPadding="0dp" />
+</com.google.android.material.button.MaterialButtonToggleGroup>
 ```
+
+_**Note:** The example allows multiple buttons to be selected. If only one option in the group should be selected and active at a time, add `app:singleSelection="true"` to `MaterialButtonToggleGroup`. This ensures that selecting one option deselects any other._
 
 ### Icon
 
