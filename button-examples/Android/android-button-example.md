@@ -124,6 +124,7 @@ The following example shows a toggle button with three buttons that have icons a
 
 !["Toggle bar example for Android displaying icons."](assets/toggle-buttons.svg)
 
+In the XML layout:
 ```xml
  <com.google.android.material.button.MaterialButtonToggleGroup
     android:id="@+id/toggleButton"
@@ -136,7 +137,8 @@ The following example shows a toggle button with three buttons that have icons a
         android:layout_height="wrap_content"
         android:minWidth="48dp"
         app:icon="@drawable/ic_favorite"
-        app:iconPadding="0dp" />
+        app:iconPadding="0dp"
+    />
     <Button
         android:id="@+id/removeRedEyeButton"
         style="?attr/materialButtonOutlinedStyle"
@@ -144,7 +146,8 @@ The following example shows a toggle button with three buttons that have icons a
         android:layout_height="wrap_content"
         android:minWidth="48dp"
         app:icon="@drawable/ic_remove_red_eye"
-        app:iconPadding="0dp" />
+        app:iconPadding="0dp"
+    />
     <Button
         android:id="@+id/notificationsButton"
         style="?attr/materialButtonOutlinedStyle"
@@ -152,11 +155,19 @@ The following example shows a toggle button with three buttons that have icons a
         android:layout_height="wrap_content"
         android:minWidth="48dp"
         app:icon="@drawable/ic_notifications"
-        app:iconPadding="0dp" />
+        app:iconPadding="0dp"
+    />
 </com.google.android.material.button.MaterialButtonToggleGroup>
 ```
 
 _**Note:** The example allows multiple buttons to be selected. If only one option in the group should be selected and active at a time, add `app:singleSelection="true"` to `MaterialButtonToggleGroup`. This ensures that selecting one option deselects any other._
+
+In code:
+```kt
+toggleButton.addOnButtonCheckedListener { toggleButton, checkedId, isChecked ->
+    // Do something for button toggle
+}
+```
 
 ### Icon
 
@@ -164,102 +175,45 @@ Icons can be used as toggle buttons when they allow selection, or deselection, o
 
 #### Icon example
 
-Source code APIs:
+Source code API:
 
-* [`RecyclerView`](https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView)
-* [`FrameLayout`](https://developer.android.com/reference/android/widget/FrameLayout)
-* [`ImageView`](https://developer.android.com/reference/android/widget/ImageView)
-* [`CheckBox`](https://developer.android.com/reference/android/widget/CheckBox)
+* `CheckBox`
+    * [Class description](https://developer.android.com/reference/android/widget/CheckBox)
 
-
-The following example shows four images arranged in a two-by-two array with a favorite icon in the upper-right corner of each image.
+The following example shows an icon that can be used independently or in items of a `RecyclerView`.
 
 <img src="assets/android_toggle_button.png" alt="Android toggle icon button example showing four images in an array with a favorite icon in the upper-right corner of each image.">
 
-This example separates out the image and checkbox (favorite icon) element into a separate layout xml file:
-[`image_grid_item_layout.xml`](toggle_demo/app/src/main/res/layout/image_grid_item_layout.xml).
-
+In the XML layout:
 ```xml
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/container"
-    android:layout_width="match_parent"
-    android:layout_height="200dp"
-    android:layout_margin="2dp"
-    android:foreground="?attr/selectableItemBackground">
-
-    <ImageView
-        android:id="@+id/image_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:contentDescription="@string/image_content_desc"
-        tools:src="@drawable/img1"/>
-
-    <CheckBox
-        android:id="@+id/favorite_check_box"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:button="@drawable/favorite_state_list_drawable"
-        app:buttonTint="@android:color/white"
-        android:layout_gravity="top|end"
-        android:clickable="false"/>
-
-</FrameLayout>
+<CheckBox
+    android:id="@+id/icon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:button="@drawable/sl_favourite"
+    app:buttonTint="@android:color/white"
+/>
 ```
 
-In a separate Kotlin file &mdash; [`ImageGridAdapater.kt`](toggle_demo/app/src/main/java/io/material/togglebuttons/ImageGridAdapter.kt), the `ImageGridAdapter` interates through a list of images in the `drawable` folder referenced in [`ImageItem.kt`](toggle_demo/app/src/main/java/io/material/togglebuttons/ImageItem.kt) as the `ImageView` backgrounds.
+In the `res/drawable/sl_favourite.xml` file:
+```xml
+<selector>
+    <item
+        android:drawable="@drawable/ic_favourite_outlined" 
+        android:state_checked="false"
+    />
+    <item
+        android:drawable="@drawable/ic_favourite_filled" 
+        android:state_checked="true"
+    />
+    <item android:drawable="@drawable/ic_favourite_outlined" />
+</selector>
+```
+
+In code:
 
 ```kt
-class ImageGridAdapter(
-    private val listener: Listener
-) : ListAdapter<ImageItem, ImageGridViewHolder>(ImageItemDiffCallback) {
-
-    interface Listener {
-        fun onItemClicked(item: ImageItem)
-    }
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ImageGridViewHolder {
-        return ImageGridViewHolder(
-            LayoutInflater.from(parent.context)
-                .inflate(R.layout.image_grid_item_layout, parent, false),
-            listener
-        )
-    }
-
-    override fun onBindViewHolder(holder: ImageGridViewHolder, position: Int) {
-        holder.bind(getItem(position))
-    }
+icon.setOnCheckedChangeListener { checkBox, isChecked ->
+    // Do something for icon toggle     
 }
-
-class ImageGridViewHolder(
-    view: View,
-    private val listener: ImageGridAdapter.Listener
-) : RecyclerView.ViewHolder(view) {
-    private val container = view.findViewById<FrameLayout>(R.id.container)
-    private val imageView = view.findViewById<ImageView>(R.id.image_view)
-    private val favoriteView = view.findViewById<CheckBox>(R.id.favorite_check_box)
-    fun bind(item: ImageItem) {
-        imageView.setImageResource(item.imageRes)
-        favoriteView.isChecked = item.isFavorite
-        container.setOnClickListener {
-            listener.onItemClicked(item)
-        }
-    }
-}
-```
-
-In the `actvity_main.xml` file, the list of images in arranged to fit into the `RecyclerView`:
-
-```xml
- <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/image_recycler_view"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:paddingTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/button_group"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
 ```
