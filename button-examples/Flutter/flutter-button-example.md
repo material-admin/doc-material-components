@@ -26,15 +26,15 @@ Source code API:
 
 The following example shows a text button with black text on white background.
 
-<img src="images/flutter-text.png" width="20%" alt="Text button example in Flutter showing the black text \'Flat Button\' over a white background.">
+<img src="images/text-button.svg" alt="Text button example in Flutter showing the purple text \'Flat Button\' over a white background.">
 
 ```dart
 FlatButton(
+  textColor: Color(0xFF6200EE),
   onPressed: () {
     /*...*/
   },
-  child: Text(
-    "Flat Button",
+  child: Text(    "Flat Button",
     style: TextStyle(fontSize: 20)
   ),
 )
@@ -52,11 +52,11 @@ Source code API:
     * [Class definition](https://api.flutter.dev/flutter/material/OutlineButton-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/outline_button.dart)
 
-
-<img src="images/toggle-buttons.svg" alt="Outlined button example in Flutter">
+<img src="images/outlined-button.svg" alt="Outlined button example for Flutter with the words 'Outlined button' in purple">
 
 ```dart
 OutlineButton(
+  textColor: Color(0xFF6200EE),
   onPressed() {
     /*...*/
   },
@@ -84,12 +84,16 @@ Source code API
 
 The following examples show a contained button. Color schemes are typically determined by your theme.
 
-<img src="images/flutter-contained.png" width="20%" alt="Contained button examples in Flutter showing both a disabled button (dark gray text over a medium gray background) and an enabled button (black text over a light gray background)">
+<img src="images/contained-button.svg" alt="Contained button examples in Flutter showing both a disabled button (dark gray text over a medium gray background) and an enabled button (black text over a light gray background)">
 
 
 ```dart
 RaisedButton(
-    onPressed: () {},
+    textColor: Colors.white,
+    color: Color(0xFF6200EE),
+    onPressed: () {
+	/*...*/
+    },
     child: const Text(
          'Contained Button',
          style: TextStyle(fontSize: 20)
@@ -125,66 +129,28 @@ Source code APIs:
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/icon_button.dart)
 
 
-The following example displays 3 `IconButton`s in a widget called `buildIconButton`. It uses another widget called `iconWidget` that allows users to toggle an `IconButton`: 
+The following example displays 3 `IconButton`s in a widget. The `onOressed` toggles the `isSelected` boolean: 
 
-<img src="images/toggle_bar_screenshot_cropped.png" alt="screenshot showing 4 icons arranged in a row" width="30%">
+<img src="images/toggle-buttons.svg" alt="Toggle bar example showing three icons: favorites, remove red eye, and notifications">
 
 ```dart
-class ToggleBarDemo extends StatefulWidget {
-  ToggleBarDemo({Key key, this.title}) : super(key: key);
+List<bool> isSelected = List<bool>.filled(3, false);
+/*...*/
+          ToggleButtons(
 
-  final String title;
+              children: <Widget>[
+                Icon(Icons.favorite),
+                Icon(Icons.remove_red_eye),
+                Icon(Icons.notifications),
+              ],
+              onPressed: (int index) {
+                setState(() {
+                  isSelected[index] = !isSelected[index];
+                });
+              },
+              isSelected: isSelected,
 
-  @override
-  _ToggleBarDemoState createState() => _ToggleBarDemoState();
-}
-
-class _ToggleBarDemoState extends State<ToggleBarDemo> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-        actions: [
-          IconButton(
-              icon: const Icon(Icons.pages),
-              tooltip: 'Change Page',
-              onPressed: changePage),
-        ],
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            buildIconButton(),
-          ],
-        ),
-      ),
-    );
-  }
-
-  /// The Routes were set in the main.dart. Navigator is a tool that lets you
-  /// access these different routes.
-  void changePage() {
-    Navigator.of(context).pushReplacementNamed('/toggleIconPage');
-  }
-
-  List<bool> isSelected = List<bool>.filled(4, false);
-  Widget buildIconButton() {
-    return ToggleButtons(
-      children: [
-        Icon(Icons.favorite),
-        Icon(Icons.remove_red_eye),
-        Icon(Icons.notifications),      ],
-      onPressed: (int index) {
-        setState(() {
-          isSelected[index] = !isSelected[index];
-        });
-      },
-      isSelected: isSelected,
-    );
-  }
-}
+            )
 ```
 
 ### Toggle icon
