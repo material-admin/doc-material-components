@@ -5,7 +5,7 @@
 There are four types of buttons:
 
 1. [Text button](#text-button)
-1. [Outlined button](#outlined-button) 
+1. [Outlined button](#outlined-button)
 1. [Contained button](#contained-button)
 1. [Toggle button](#toggle-button)
 
@@ -24,9 +24,9 @@ Source code API:
     * [Class definition](https://api.flutter.dev/flutter/material/FlatButton-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/flat_button.dart)
 
-The following example shows a text button with black text on white background.
+The following example shows a text button with purple text.
 
-<img src="images/text-button.svg" alt="Text button example in Flutter showing the purple text \'Flat Button\' over a white background.">
+!["Example of a text button with a title of 'Text Button'."](images/text-button.svg)
 
 ```dart
 FlatButton(
@@ -34,7 +34,7 @@ FlatButton(
   onPressed: () {
     /*...*/
   },
-  child: Text(    "Flat Button",
+  child: Text("Text Button",
     style: TextStyle(fontSize: 20)
   ),
 )
@@ -52,7 +52,7 @@ Source code API:
     * [Class definition](https://api.flutter.dev/flutter/material/OutlineButton-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/outline_button.dart)
 
-<img src="images/outlined-button.svg" alt="Outlined button example for Flutter with the words 'Outlined button' in purple">
+!["Example of an outlined button with a title of 'Outlined Button'."](images/outlined-button.svg)
 
 ```dart
 OutlineButton(
@@ -84,7 +84,7 @@ Source code API
 
 The following examples show a contained button. Color schemes are typically determined by your theme.
 
-<img src="images/contained-button.svg" alt="Contained button examples in Flutter showing both a disabled button (dark gray text over a medium gray background) and an enabled button (black text over a light gray background)">
+!["Example of a contained button with a title of 'Contained Button'."](images/contained-button.svg)
 
 
 ```dart
@@ -129,35 +129,33 @@ Source code APIs:
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/icon_button.dart)
 
 
-The following example displays 3 `IconButton`s in a widget. The `onOressed` toggles the `isSelected` boolean: 
+The following example displays 3 `IconButton`s in a widget. The `onOressed` toggles the `isSelected` boolean:
 
-<img src="images/toggle-buttons.svg" alt="Toggle bar example showing three icons: favorites, remove red eye, and notifications">
+!["Example of a set of toggle buttons with three icons: favorites, remove red eye, and notifications."](images/toggle-buttons.svg)
 
 ```dart
 List<bool> isSelected = List<bool>.filled(3, false);
 /*...*/
-          ToggleButtons(
-
-              children: <Widget>[
-                Icon(Icons.favorite),
-                Icon(Icons.remove_red_eye),
-                Icon(Icons.notifications),
-              ],
-              onPressed: (int index) {
-                setState(() {
-                  isSelected[index] = !isSelected[index];
-                });
-              },
-              isSelected: isSelected,
-
-            )
+ToggleButtons(
+  children: <Widget>[
+    Icon(Icons.favorite),
+    Icon(Icons.remove_red_eye),
+    Icon(Icons.notifications),
+  ],
+  onPressed: (int index) {
+    setState(() {
+      isSelected[index] = !isSelected[index];
+    });
+  },
+  isSelected: isSelected,
+)
 ```
 
-### Toggle icon
+### Toggle icon button
 
-The [toggle icon](https://material.io/components/buttons/#toggle-button) button allows you to select from a group using an icon. 
+The [toggle icon](https://material.io/components/buttons/#toggle-button) button allows you to select from a group using an icon.
 
-#### Toggle icon buttons with background images
+#### Toggle icon button example
 
 Source code APIs:
 
@@ -180,17 +178,17 @@ Source code APIs:
     * [Class defintion](https://api.flutter.dev/flutter/widgets/IconData-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/widgets/icon_data.dart)
 
-The following example allows you to select a favorite from a group of photos with a single tap on the icon.
+The following example shows four images arranged in a two-by-two array with a favorite icon in the upper-right corner of each image.
 
 The photos and icon buttons are contained within instances of `GridDemoPhotoItem`, which extends the `GridTile` API. `GridDemoPhotoItem` does the following:
 
-* fits a passed image to `Photo` to the size specified in `GridView`. 
+* fits a passed image to `Photo` to the size specified in `GridView`.
 * sets the icon displayed to `on` (`favorite`) or `off` (`favorite_border`) and sets `IconData` as determined by a call to `GestureDetector`.
 * sets the icon color to white as opposed to the default black
 
 The `ToggleIconDemoState` class contains the the list of photos that become the backgrounds to the `GridDemoPhotoItem` tiles.
 
-<img src="images/toggle_icon_screenshot_cropped.png" alt="screenshot showing 4 images arranged in a 2 by 2 array, each with a heart icon in the upper-left corner" width="50%">
+!["Screenshot showing four images arranged in a two-by-two array, each with a heart icon in the upper-left corner"](images/toggle_icon_screenshot_cropped.png)
 
 ```dart
 import 'package:flutter/material.dart';
