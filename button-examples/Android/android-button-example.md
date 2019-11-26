@@ -23,7 +23,7 @@ Before you can use Material buttons, you need to add a dependency to the Materia
 
 Source code API:
 
-* MaterialButton
+* `MaterialButton`
     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
     * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
 
@@ -50,7 +50,7 @@ The following example shows a text button with purple text on a white background
 
 Source code API:
 
-* MaterialButton
+* `MaterialButton`
     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
     * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
 
@@ -75,7 +75,7 @@ Source code API:
 
 Source code API:
 
-* MaterialButton
+* `MaterialButton`
     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
     * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
 
@@ -120,11 +120,11 @@ The example allows multiple buttons to be selected. If only one option in the gr
 
 Source code APIs:
 
-* MaterialButton
+* `MaterialButton`
     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
     * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
 
-* MaterialButtonToggleGroup
+* `MaterialButtonToggleGroup`
     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup)
     * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButtonToggleGroup.java)
 
@@ -172,10 +172,10 @@ The toggle icon button allows you to select from a group using an icon.
 
 Source code APIs:
 
-* [RecyclerView](https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView)
-* [FrameLayout](https://developer.android.com/reference/android/widget/FrameLayout)
-* [ImageView](https://developer.android.com/reference/android/widget/ImageView)
-* [CheckBox](https://developer.android.com/reference/android/widget/CheckBox)
+* [`RecyclerView`](https://developer.android.com/reference/androidx/recyclerview/widget/RecyclerView)
+* [`FrameLayout`](https://developer.android.com/reference/android/widget/FrameLayout)
+* [`ImageView`](https://developer.android.com/reference/android/widget/ImageView)
+* [`CheckBox`](https://developer.android.com/reference/android/widget/CheckBox)
 
 
 The following example shows four images arranged in a two-by-two array with a favorite icon in the upper-right corner of each image.
