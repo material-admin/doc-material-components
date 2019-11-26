@@ -19,8 +19,10 @@ Before you can use Material buttons, you need to add a dependency to the Materia
 
 The [anatomy](https://material.io/components/buttons/#anatomy) consists of a text label, container and icon.
 
+![Button anatomy](assets/mio-components_assets_buttons-anatomy-all.png)
+
 <details>
-<summary>Text label</summary>
+<summary><b>A.</b> Text label</summary>
 <p>
 
 Description | Attribute(s) | Related method(s)
@@ -33,7 +35,7 @@ Typography | `android:textAppearance` | `setTextAppearance`
 </details>
 
 <details>
-<summary>Container</summary>
+<summary><b>B.</b> Container</summary>
 <p>
 
 Description | Attribute(s) | Related method(s)
@@ -49,7 +51,7 @@ Ripple color | `app:rippleColor` | `setRippleColor`<br/>`setRippleColorResource`
 </details>
 
 <details>
-<summary>Icon</summary>
+<summary><b>C.</b> Icon</summary>
 <p>
 
 Description | Attribute(s) | Related method(s)
@@ -96,7 +98,7 @@ The following example shows a text button with a text label.
 <summary>Styles</summary>
 <p>
 
-Description | Style(s)
+Description | Style
 ---|---
 Default style | `Widget.MaterialComponents.Button.TextButton`
 Icon style | `Widget.MaterialComponents.Button.TextButton.Icon`
@@ -109,7 +111,7 @@ Icon style | `Widget.MaterialComponents.Button.TextButton.Icon`
 <p>
 
 Description | Attribute | Default value
----|---
+---|---|---
 Text label color | `android:textColor` | `?attr/colorPrimary`
 Text label typography | `android:textAppearance` | `?attr/textAppearanceButton`
 Container ripple color | `app:rippleColor` | `?attr/colorPrimary` at 12% opacity (pressed)
@@ -153,7 +155,7 @@ The following example shows an outlined button with a text label and stroked con
 <summary>Styles</summary>
 <p>
 
-Description | Style(s)
+Description | Style
 ---|---
 Default style | `Widget.MaterialComponents.Button.OutlinedButton`
 Icon style (adjusted padding for start-gravity icon) | `Widget.MaterialComponents.Button.OutlinedButton.Icon`
@@ -166,7 +168,7 @@ Icon style (adjusted padding for start-gravity icon) | `Widget.MaterialComponent
 <p>
 
 Description | Attribute | Default value
----|---
+---|---|---
 Text label color | `android:textColor` | `?attr/colorPrimary`
 Text label typography | `android:textAppearance` | `?attr/textAppearanceButton`
 Container stroke color | `app:strokeColor` | `?attr/colorOnSurface` at 12% opacity
@@ -212,7 +214,7 @@ The following example shows a contained button with a text label and a filled co
 <summary>Styles</summary>
 <p>
 
-Description | Style(s)
+Description | Style
 ---|---
 Default style | `Widget.MaterialComponents.Button`
 Icon style (adjusted padding for start-gravity icon) | `Widget.MaterialComponents.Button.Icon`
@@ -227,7 +229,7 @@ Unelevated icon style (adjusted padding for start-gravity icon) | `Widget.Materi
 <p>
 
 Description | Attribute | Default value
----|---
+---|---|---
 Text label color | `android:textColor` | `?attr/colorOnPrimary`
 Text label typography | `android:textAppearance` | `?attr/textAppearanceButton`
 Container color | `app:backgroundTint` | `?attr/colorPrimary`
