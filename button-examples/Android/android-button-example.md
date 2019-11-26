@@ -33,11 +33,11 @@ The following example shows a text button with purple text on a white background
 
 ```xml
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/textButton"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Text"
+        android:text="Text button"
         ...
     />
 ```
@@ -58,11 +58,11 @@ Source code API:
 
 ```xml
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/outlinedButton"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Outlined"
+        android:text="Outlined button"
         ...
     />
 ```
@@ -86,14 +86,13 @@ The following example shows a contained button with white text on a purple backg
 
 ```xml
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/containedButton"
         style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Contained"
+        android:text="Contained button"
         ...
     />
-
 ```
 
 ## Toggle button
