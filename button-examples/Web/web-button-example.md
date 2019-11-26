@@ -332,36 +332,32 @@ To generate the example with background images of your choosing, you will need t
         ```js
         import {MDCIconButtonToggle} from '@material/icon-button';
         ```
-    1. Instantiate the icon button toggle:
+    1. Instantiate the icon button toggle for each button:
         ```js
-        const iconToggle = new MDCIconButtonToggle(document.querySelector('.mdc-icon-button'));
-        iconToggle.unbounded = true;
-        ```
-    1. If you want to add a ripple effect to your button press:
+        const iconToggle0 = new MDCIconButtonToggle(document.querySelector('.btn1'));
+	iconToggle0.unbounded = true;
 
-        ```js
-        import { MDCRipple } from "@material/ripple";
-        ...
-        const iconButtonRipple = new MDCRipple(document.querySelector('.mdc-icon-button'));
-        iconButtonRipple.unbounded = true;
-        ```
-* In your `*.html` file, you can now add the iterations of the following, which shows containers with background images:
+	const iconToggle1 = new MDCIconButtonToggle(document.querySelector('.btn2'));
+	iconToggle1.unbounded = true;
+	/*...*/
+	```
+ * In your `*.html` file, you can now add the iterations of the following, which shows containers with background images:
     ```html
     <div class="container">
           <div class="image-with-fave">
             <img src="https://cdn.glitch.com/4f0b2993-dd70-46bf-916f-a6e81af58957%2Fimage1.jpeg?v=1570131499813" />
             <button
               id="bookmark-0"
-              class="mdc-icon-button fave-button"
+              class="mdc-icon-button btn1 fave-button"
               aria-label="Add to favorites"
               aria-hidden="true"
               aria-pressed="false"
             >
               <i
                 class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on"
-                >bookmark</i
+                >favorite</i
               >
-              <i class="material-icons mdc-icon-button__icon">bookmark_border</i>
+              <i class="material-icons mdc-icon-button__icon">favorite_border</i>
             </button>
           </div>
           <div class="image-with-fave">
@@ -369,16 +365,15 @@ To generate the example with background images of your choosing, you will need t
           src="https://cdn.glitch.com/4f0b2993-dd70-46bf-916f-a6e81af58957%2Fimage2.jpeg?v=1570131499876" />
             <button
               id="bookmark-1"
-              class="mdc-icon-button fave-button"
+              class="mdc-icon-button btn2 fave-button"
               aria-label="Add to favorites"
               aria-hidden="true"
               aria-pressed="false"
             >
               <i
                 class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on"
-                >bookmark</i
-              >
-              <i class="material-icons mdc-icon-button__icon">bookmark_border</i>
+                >favorite</i>
+              <i class="material-icons mdc-icon-button__icon">favorite_border</i>
               </button>
           </div>
           ...
