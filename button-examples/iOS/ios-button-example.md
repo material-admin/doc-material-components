@@ -77,7 +77,7 @@ Source Code APIs:
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/) <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
-<img src="assets/ios-text-button.gif" alt="Text button example in iOS showing the black text 'Text Button' over a white background.">
+<img src="assets/ios-text-button.png" alt="Text button example in iOS showing the black text 'Text Button' over a white background.">
 
 **Swift**
 
@@ -118,7 +118,7 @@ Source Code APIs:
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
 
-<img src="assets/ios-outlined.gif" alt="Outlined button example in iOS">
+<img src="assets/ios-outlined-button.png" alt="Outlined button example in iOS">
 
 **Swift**
 ```swift
@@ -154,7 +154,7 @@ Source Code APIs:
 
 
 
-<img src="assets/ios-outlined.gif" alt="Outlined button example in iOS">
+<img src="assets/ios-outlined.png" alt="Outlined button example in iOS">
 
 **Swift**
 ```swift
@@ -189,7 +189,7 @@ Source Code APIs:
 
 The following examples show a contained button in two states: Disabled and enabled. Color schemes are typically determined by your theme.
 
-<img src="assets/ios-contained.gif" alt="Contained button example in iOS with a black background that flashes gray when pressed">
+<img src="assets/ios-contained.png" alt="Contained button example in iOS with a black background that flashes gray when pressed">
 
 
 
