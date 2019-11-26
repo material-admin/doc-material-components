@@ -27,7 +27,7 @@ Source code API:
     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
     * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
 
-The following example shows a text button with purple text on a white background.
+The following example shows a text button with a text label.
 
 !["Text button example for Android with purple text 'Text' over a white background."](assets/text-button.svg)
 
@@ -53,6 +53,8 @@ Source code API:
 * `MaterialButton`
     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
     * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
+    
+The following example shows an outlined button with a text label and stroked container.    
 
 !["Outlined button example in Android with purple text surrounded by a gray outline"](assets/outlined-button.svg)
 
@@ -80,7 +82,7 @@ Source code API:
     * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
 
 
-The following example shows a contained button with white text on a purple background.
+The following example shows a contained button with a text label and a filled container.
 
 !["Contained button example for Android with the white text 'Text' on a purple background."](assets/contained-button.svg)
 
