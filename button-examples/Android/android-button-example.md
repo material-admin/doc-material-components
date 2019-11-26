@@ -15,6 +15,54 @@ There are four types of buttons:
 
 Before you can use Material buttons, you need to add a dependency to the Material Components for Android library. For more information, go to the [Getting started](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md) page.
 
+## Button anatomy
+
+The [anatomy](https://material.io/components/buttons/#anatomy) consists of a text label, container and icon.
+
+<details>
+<summary>Text label</summary>
+<p>
+
+Description | Attribute(s) | Related method(s)
+---|---|---
+Text | `android:text` | `setText`<br/>`getText`
+Color | `android:textColor` | `setTextColor`<br/>`getTextColor`
+Typography | `android:textAppearance` | `setTextAppearance`
+
+</p>
+</details>
+
+<details>
+<summary>Container</summary>
+<p>
+
+Description | Attribute(s) | Related method(s)
+---|---|---
+Color | `app:backgroundTint`<br/>`app:backgroundTintMode` | `setBackgroundColor`<br/>`setBackgroundTintList`<br/>`getBackgroundTintList`<br/>`setBackgroundTintMode`<br/>`getBackgroundTintMode`
+Stroke color | `app:strokeColor` | `setStrokeColor`<br/>`setStrokeColorResource`<br/>`getStrokeColor`
+Stroke width | `app:strokeWidth` | `setStrokeWidth`<br/>`setStrokeWidthResource`<br/>`getStrokeWidth`
+Shape | `app:shapeAppearance` | `setShapeAppearanceModel`<br/>`getShapeAppearanceModel`
+Elevation | `app:elevation` | `setElevation`<br/>`getElevation`
+Ripple color | `app:rippleColor` | `setRippleColor`<br/>`setRippleColorResource`<br/>`getRippleColor`
+
+</p>
+</details>
+
+<details>
+<summary>Icon</summary>
+<p>
+
+Description | Attribute(s) | Related method(s)
+---|---|---
+Icon | `app:icon` | `setIcon`<br/>`setIconResource`<br/>`getIcon`
+Color | `app:iconTint`<br/>`app:iconTintMode` | `setIconTint`<br/>`setIconTintResource`<br/>`getIconTint`<br/>`setIconTintMode`<br/>`getIconTintMode`
+Size | `app:iconSize` | `setIconSize`<br/>`getIconSize`
+Gravity (position relative to text label) | `app:iconGravity` | `setIconGravity`<br/>`getIconGravity`
+Padding (space between icon and text label) | `app:iconPadding` | `setIconPadding`<br/>`getIconPadding`
+
+</p>
+</details>
+
 ## Text button
 
 [Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
@@ -41,6 +89,36 @@ The following example shows a text button with a text label.
         ...
     />
 ```
+
+### Text button anatomy
+
+<details>
+<summary>Styles</summary>
+<p>
+
+Description | Style(s)
+---|---
+Default style | `Widget.MaterialComponents.Button.TextButton`
+Icon style | `Widget.MaterialComponents.Button.TextButton.Icon`
+
+</p>
+</details>
+
+<details>
+<summary>Theme attributes</summary>
+<p>
+
+Description | Attribute | Default value
+---|---
+Text label color | `android:textColor` | `?attr/colorPrimary`
+Text label typography | `android:textAppearance` | `?attr/textAppearanceButton`
+Container ripple color | `app:rippleColor` | `?attr/colorPrimary` at 12% opacity (pressed)
+Icon color | `app:iconTint` | `?attr/colorPrimary`
+Icon gravity | `app:iconGravity` | `start`
+Icon padding (space between icon and text label) | `app:iconPadding` | `4dp`
+
+</p>
+</details>
 
 ## Outlined button
 
@@ -69,6 +147,38 @@ The following example shows an outlined button with a text label and stroked con
     />
 ```
 
+### Outlined button anatomy
+
+<details>
+<summary>Styles</summary>
+<p>
+
+Description | Style(s)
+---|---
+Default style | `Widget.MaterialComponents.Button.OutlinedButton`
+Icon style (adjusted padding for start-gravity icon) | `Widget.MaterialComponents.Button.OutlinedButton.Icon`
+
+</p>
+</details>
+
+<details>
+<summary>Theme attributes</summary>
+<p>
+
+Description | Attribute | Default value
+---|---
+Text label color | `android:textColor` | `?attr/colorPrimary`
+Text label typography | `android:textAppearance` | `?attr/textAppearanceButton`
+Container stroke color | `app:strokeColor` | `?attr/colorOnSurface` at 12% opacity
+Container stroke width | `app:strokeWidth` | `1dp`
+Container ripple color | `app:rippleColor` | `?attr/colorPrimary` at 12% opacity (pressed)
+Icon color | `app:iconTint` | `?attr/colorPrimary`
+Icon gravity | `app:iconGravity` | `start`
+Icon padding (space between icon and text label) | `app:iconPadding` | `4dp`
+
+</p>
+</details>
+
 ## Contained button
 
 [Contained buttons](https://material.io/components/buttons/#contained-button) are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
@@ -95,6 +205,40 @@ The following example shows a contained button with a text label and a filled co
         ...
     />
 ```
+
+### Contained button anatomy
+
+<details>
+<summary>Styles</summary>
+<p>
+
+Description | Style(s)
+---|---
+Default style | `Widget.MaterialComponents.Button`
+Icon style (adjusted padding for start-gravity icon) | `Widget.MaterialComponents.Button.Icon`
+Unelevated style | `Widget.MaterialComponents.Button.UnelevatedButton`
+Unelevated icon style (adjusted padding for start-gravity icon) | `Widget.MaterialComponents.Button.UnelevatedButton.Icon`
+
+</p>
+</details>
+
+<details>
+<summary>Theme attributes</summary>
+<p>
+
+Description | Attribute | Default value
+---|---
+Text label color | `android:textColor` | `?attr/colorOnPrimary`
+Text label typography | `android:textAppearance` | `?attr/textAppearanceButton`
+Container color | `app:backgroundTint` | `?attr/colorPrimary`
+Container elevation | `app:elevation` | `2dp`
+Container ripple color | `app:rippleColor` | `?attr/colorOnPrimary` at 24% opacity (pressed)
+Icon color | `app:iconTint` | `?attr/colorOnPrimary`
+Icon gravity | `app:iconGravity` | `start`
+Icon padding (space between icon and text label) | `app:iconPadding` | `8dp`
+
+</p>
+</details>
 
 ## Toggle button
 
