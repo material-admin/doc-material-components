@@ -15,9 +15,9 @@ There are four types of buttons:
 
 Before you can use Material buttons, you need to add a dependency to the Material Components for Android library. For more information, go to the [Getting started](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md) page.
 
-## Button anatomy
+## Key properties
 
-The [anatomy](https://material.io/components/buttons/#anatomy) consists of a text label, container and icon.
+The [button anatomy](https://material.io/components/buttons/#anatomy) consists of a text label, container and icon.
 
 ![Button anatomy](assets/mio-components_assets_buttons-anatomy-all.png)
 
@@ -92,7 +92,7 @@ The following example shows a text button with a text label.
     />
 ```
 
-### Text button anatomy
+### Key properties
 
 <details>
 <summary>Styles</summary>
@@ -149,7 +149,7 @@ The following example shows an outlined button with a text label and stroked con
     />
 ```
 
-### Outlined button anatomy
+### Key properties
 
 <details>
 <summary>Styles</summary>
@@ -208,7 +208,7 @@ The following example shows a contained button with a text label and a filled co
     />
 ```
 
-### Contained button anatomy
+### Key properties
 
 <details>
 <summary>Styles</summary>
