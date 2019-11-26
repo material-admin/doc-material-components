@@ -26,7 +26,7 @@ Source code API:
 
 The following example shows a text button with black text on white background.
 
-<img src="images/flutter-text.png" width="20%" alt="Text button example in Flutter showing the black text \'Flat Button\' over a white background.">
+<img src="images/text-button.svg" alt="Text button example in Flutter showing the purple text \'Flat Button\' over a white background.">
 
 ```dart
 FlatButton(
@@ -52,8 +52,7 @@ Source code API:
     * [Class definition](https://api.flutter.dev/flutter/material/OutlineButton-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/outline_button.dart)
 
-
-<img src="images/toggle-buttons.svg" alt="Outlined button example in Flutter">
+<img src="images/outlined-button.svg" alt="Outlined button example for Flutter with the words 'Outlined button' in purple">
 
 ```dart
 OutlineButton(
@@ -84,7 +83,7 @@ Source code API
 
 The following examples show a contained button. Color schemes are typically determined by your theme.
 
-<img src="images/flutter-contained.png" width="20%" alt="Contained button examples in Flutter showing both a disabled button (dark gray text over a medium gray background) and an enabled button (black text over a light gray background)">
+<img src="images/contained-button.svg" alt="Contained button examples in Flutter showing both a disabled button (dark gray text over a medium gray background) and an enabled button (black text over a light gray background)">
 
 
 ```dart
@@ -127,7 +126,7 @@ Source code APIs:
 
 The following example displays 3 `IconButton`s in a widget called `buildIconButton`. It uses another widget called `iconWidget` that allows users to toggle an `IconButton`: 
 
-<img src="images/toggle_bar_screenshot_cropped.png" alt="screenshot showing 4 icons arranged in a row" width="30%">
+<img src="images/toggle-buttons.svg" alt="Toggle bar example showing three icons: favorites, remove red eye, and notifications">
 
 ```dart
 class ToggleBarDemo extends StatefulWidget {
