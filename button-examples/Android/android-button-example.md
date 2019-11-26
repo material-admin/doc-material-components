@@ -5,9 +5,9 @@
 There are four types of buttons:
 
 1. [Text button](#text-button)
-1. [Outlined button](#outlined-button)
-1. [Contained button](#contained-button)
-1. [Toggle button](#toggle-button)
+2. [Outlined button](#outlined-button)
+3. [Contained button](#contained-button)
+4. [Toggle button](#toggle-button)
 
 ![Example of the four button types](assets/button-types.svg)
 
@@ -100,7 +100,8 @@ The following example shows a contained button with a text label and a filled co
 
 [Toggle buttons](https://material.io/components/buttons/#toggle-button) can be used to select from a group of choices.
 
-Toggle buttons can be separated into two types:
+There are two types of toggle buttons:
+
 * [Toggle button](#toggle-button)
 * [Icon](#icon)
 
