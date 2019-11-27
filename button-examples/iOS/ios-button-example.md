@@ -4,12 +4,13 @@
 
 There are four types of buttons:
 
-* [Text button](#text-button)
-* [Outlined button](#outlined-button) 
-* [Contained button](#contained-button)
-* [Toggle button](#toggle-button)
+1. [Text button](#text-button)
+2. [Outlined button](#outlined-button)
+3. [Contained button](#contained-button)
+4. [Toggle button](#toggle-button)
 
-<!-- TODO(b/1234568): Add example image here when it is available. -->
+![Example of the four button types](assets/button-types.svg)
+
 
 ## Using button
 
@@ -61,14 +62,9 @@ Before using the `MDCButtons` API to implement its types you must install `MCDBu
     
 ## Text button
 
-Text buttons are typically used for less-pronounced actions, including those located:
-* In dialogs
-* In cards
-In cards, text buttons help maintain an emphasis on card content.
+[Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
 
 ### Text button example
-
-The following example shows a text button with black text on white background.
 
 Source Code APIs:
 
@@ -77,7 +73,9 @@ Source Code APIs:
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/) <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
-<img src="assets/ios-text-button.png" alt="Text button example in iOS showing the black text 'Text Button' over a white background.">
+The following example shows a text button with a text label.
+
+!["Text button example for iOS with purple text 'Text' over a white background."](assets/text-button.svg)
 
 **Swift**
 
@@ -104,7 +102,7 @@ MDCButton *button = [[MDCButton alloc] init];
 
 ## Outlined button
 
-Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
+[Outlined buttons](https://material.io/components/buttons/#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
 ### Outlined button example without container schemes
 
@@ -117,8 +115,9 @@ Source Code APIs:
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
+The following example shows an outlined button with a text label and stroked container.    
 
-<img src="assets/ios-outlined-button.png" alt="Outlined button example in iOS">
+!["Outlined button example in Android with purple text surrounded by a gray outline"](assets/outlined-button.svg)
 
 **Swift**
 ```swift
@@ -127,7 +126,7 @@ import MaterialComponents.MaterialButtons_Theming
 
 let containerScheme = MDCContainerScheme()
 let button = MDCButton()
-button.applyTextTheme(withScheme: containerScheme)
+button.applyOutlinedTheme(withScheme: containerScheme)
 ```
 **Objective-C**
 ```objc
@@ -138,7 +137,7 @@ button.applyTextTheme(withScheme: containerScheme)
 MDCContainerScheme *containerScheme = [[MDCContainerScheme alloc] init];
 MDCButton *button = [[MDCButton alloc] init];
 
-[self.button applyTextThemeWithScheme:self.containerScheme];
+[self.button applyOutlinedThemeWithScheme:self.containerScheme];
 ```
 ### Outlined button example with container schemes
 
@@ -150,11 +149,9 @@ Source Code APIs:
     * [Class description](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
-* [MDCContainerScheme class description](https://github.com/material-components/material-components-ios/tree/stable/components/schemes/Container) theme
+* [MDCContainerScheme class description](https://github.com/material-components/material-components-ios/tree/stable/components/schemes/Container)
 
-
-
-<img src="assets/ios-outlined.png" alt="Outlined button example in iOS">
+!["Outlined button example in Android with purple text surrounded by a gray outline"](assets/outlined-button.svg)
 
 **Swift**
 ```swift
@@ -175,7 +172,7 @@ MDCButton *button = [[MDCButton alloc] init];
 
 ## Contained button
 
-Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
+[Contained buttons](https://material.io/components/buttons/#contained-button) are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
 ### Contained button example
 
@@ -186,29 +183,30 @@ Source Code APIs:
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
+The following example shows a contained button with a text label and a filled container.
 
-The following examples show a contained button in two states: Disabled and enabled. Color schemes are typically determined by your theme.
-
-<img src="assets/ios-contained.png" alt="Contained button example in iOS with a black background that flashes gray when pressed">
-
-
+!["Contained button example for Android with the white text 'Text' on a purple background."](assets/contained-button.svg)
 
 ## Toggle button
 
-Toggle buttons can be used to select from a group of choices.
+[Toggle buttons](https://material.io/components/buttons/#toggle-button) can be used to select from a group of choices.
 
-### Toggle bar
+There are two types of toggle buttons:
 
-The toggle bar allows you to select from a group of buttons that can be set to [selective action](https://material.io/components/buttons/#toggle-button) where only one button in a group can be selected at one time.
+* [Toggle button](#toggle-button)
+* [Icon](#icon)
+
+### Toggle button
+
+The toggle button allows you to select from a group of buttons that can be set to [selective action](https://material.io/components/buttons/#toggle-button) where only one button in a group can be selected at one time.
 
 The Material toggle bar is not supported in iOS. 
 
-### Toggle icon button
+### Icon
 
+Icons can be used as toggle buttons when they allow selection, or deselection, of a single choice, such as marking an item as a favorite.
 
-The toggle icon button allows you to select from a group using an icon.
-
-#### Toggle icon example
+#### Icon example
 
 Source code APIs:
 

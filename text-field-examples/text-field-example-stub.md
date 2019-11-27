@@ -1,26 +1,27 @@
-<!--docs:
-title: "Text field usage doc"
-layout: detail
-section: components
-excerpt: "Text field usage doc with examples"
-iconId:
-path: /text_field
-api_doc_root:
-initial_release:
--->
+_**Instructions**_
+* Copy this file into the platform folder for this component
+* Rename the file to "\<platform\>-text-field.md"
+* [Using text field](#using-text-field)
+    * Add a link under [Using text field](#using-text-field) to your getting started page if you have one
+    * Insert [installation](#installation) and [theming](#theming) as appropriate for your platform
+    * Insert any additional instructions that apply to your platform with a separte level 3 header
+    * If you have no getting started links or instructions, delete the [Using text field](#using-text-field) sections
+* [Filled text](#filled-text) ane [Outlined-text](#outlined-text) sections
+    * Add links to your platform 
+
 
 # Text field
 
-Text fields let users enter and edit text.
+[Text fields](https://material.io/components/text-fields) let users enter and edit text.
 
-For more information on using text fields, go to the [design page](https://material.io/components/text-fields/).
-
-The text field class consists of the following variants:
+The text field class consists of the following types:
 
 * [Filled text](#filled-text)
 * [Outlined text](#outlined-text)
 
 <img src="assets/text-field-generic.png" alt="Text field example of both filled and outlined text from material.io">
+
+_**Copy the image to your platform's assets folder**_
 
 ## Using text field
 
@@ -30,34 +31,40 @@ The text field class consists of the following variants:
 
 ## Filled text
 
-Filled text fields have more visual emphasis than outlined text fields, making them stand out when surrounded by other content and components.
+[Filled text fields](https://material.io/components/text-fields/#filled-text-field) have more visual emphasis than outlined text fields, making them stand out when surrounded by other content and components.
 
 ### Filled text example
 
 Source code API:
 
 * \<source class name\>
-  * [Class description](developer site here)
+  * [Class definition](developer site here)
   * [GitHub source](https://github.com/materials-components/)
 
 The following examples shows a filled text field with <code>color</code> text and <code>color</code> background.
 
-<img src="assets/.png" alt="filled text field for <> platform">
+<img src="assets/.png" alt="filled text field for <platform> platform">
 
 ```
 <source code example here>
+The source code example should do the following as per the video usage example (https://material.io/components/text-fields/#filled-text-field):
+* Display a filled text field with the default gray opacity of 38%
+* Display a text field label "Label" with the default gray opacity of 60%
+* Display a stroke when active along the bottom of the text field with the default color #6200EE
+* Display a trailing reduce-red-eye icon within the text field with a default opacity of 60%
+* Display helper text "Helper text" below the text field
 ```
 
 ## Outlined text
 
-Outlined text fields have less visual emphasis than filled text fields. When they appear in places like forms, where many text fields are placed together, their reduced emphasis helps simplify the layout.
+[Outlined text fields](https://material.io/components/text-fields/#outlined-text-field) have less visual emphasis than filled text fields. When they appear in places like forms, where many text fields are placed together, their reduced emphasis helps simplify the layout.
 
 ### Outlined text example
 
 Source code API:
 
 * \<source class name\>
-  * [Class description](developer site here)
+  * [Class definition](developer site here)
   * [GitHub source](https://github.com/materials-components/)
 
 The following examples shows an outlined text field with <code>color</code> text and <code>color</code> outline.
@@ -66,5 +73,12 @@ The following examples shows an outlined text field with <code>color</code> text
 
 ```
 <source code example here>
+The source code example should do the following as per the video usage example (https://material.io/components/text-fields/#outlined-text-field):
+* Display an outlined text field with the default outlined opacity of 60%
+* Display a text field label "Label" with the default gray opacity of 60%
+* Display a stroke when active along the outlined with the default color #6200EE
+* Display a trailing reduce-red-eye icon within the text field with a default opacity of 60%
+* Display helper text "Helper text" below the text field with a default opacity of 60%
+
 ```
 

@@ -4,12 +4,12 @@
 
 There are four types of buttons:
 
-* [Text button](#text-button)
-* [Outlined button](#outlined-button) 
-* [Contained button](#contained-button)
-* [Toggle button](#toggle-button)
+1. [Text button](#text-button)
+2. [Outlined button](#outlined-button)
+3. [Contained button](#contained-button)
+4. [Toggle button](#toggle-button)
 
-<!-- TODO(b/1234568): Add example image here when it is available. -->
+![Example of the four button types](images/button-types.svg)
 
 ## Using buttons
 
@@ -152,13 +152,7 @@ Mixin | Description
 
 ## Text button
 
-Text buttons are typically used for less-pronounced actions, including those located:
-
-* In dialogs
-* In cards
-
-In cards, text buttons help maintain an emphasis on card content.
-
+[Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
 
 ### Text button example
 
@@ -191,8 +185,7 @@ Source code API:
 
 ## Outlined button
 
-Outlined buttons are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
-
+[Outlined buttons](https://material.io/components/buttons/#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
 ### Outlined button example
 
@@ -229,7 +222,7 @@ Source code API:
 
 ## Contained button
 
-Contained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
+[Contained buttons](https://material.io/components/buttons/#contained-button) are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
 #### Contained button example
 
@@ -269,9 +262,15 @@ Source code API:
 
 ## Toggle button
 
-Toggle buttons can be used to select from a group of choices.
 
-### Toggle bar
+[Toggle buttons](https://material.io/components/buttons/#toggle-button) can be used to select from a group of choices.
+
+There are two types of toggle buttons:
+
+* [Toggle button](#toggle-button)
+* [Icon](#icon)
+
+### Toggle button
 
 The Material.io framework for Web currently does not support toggle button groups, such as:
 
@@ -279,9 +278,9 @@ The Material.io framework for Web currently does not support toggle button group
 
 If your application needs a toggle button group, you will need to use a different framework such as [Vuetify](https://vuetifyjs.com/en/components/button-groups#button-groups).
 
-### Toggle icon
+### Icon
 
-The toggle icon button allows you to select from a group using an icon.
+Icons can be used as toggle buttons when they allow selection, or deselection, of a single choice, such as marking an item as a favorite.
 
 #### Toggle icon bar example with background images
 
@@ -291,7 +290,7 @@ Source code API:
     * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-icon-button)
     * [Demo site](https://glitch.com/~shadow-jobaria)
 
-<img src="images/web-toggle-icon-button.png" alt="4 images arranged in a 2 by 2 array, each image with a bookmark icon in the upper-right corner">
+<img src="images/web-toggle-icon-button.png" alt="4 images arranged in a 2 by 2 array, each image with a favorite icon in the upper-right corner">
 To generate the example with background images of your choosing, you will need to do the following:
 
 * In your `*.scss` file:
@@ -334,12 +333,12 @@ To generate the example with background images of your choosing, you will need t
         ```
     1. Instantiate the icon button toggle for each button:
         ```js
-        const iconToggle0 = new MDCIconButtonToggle(document.querySelector('.btn1'));
-	iconToggle0.unbounded = true;
-
-	const iconToggle1 = new MDCIconButtonToggle(document.querySelector('.btn2'));
-	iconToggle1.unbounded = true;
-	/*...*/
+		const iconToggle0 = new MDCIconButtonToggle(document.querySelector('.btn1'));
+		iconToggle0.unbounded = true;
+		
+		const iconToggle1 = new MDCIconButtonToggle(document.querySelector('.btn2'));
+		iconToggle1.unbounded = true;
+		/*...*/
 	```
  * In your `*.html` file, you can now add the iterations of the following, which shows containers with background images:
     ```html
