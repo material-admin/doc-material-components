@@ -21,7 +21,7 @@ The text field class consists of the following types:
 
 <img src="assets/text-field-generic.png" alt="Text field example of both filled and outlined text from material.io">
 
-_**Copy the image to your platform's assets folder. Use a screenshot of your render.**_
+_**Copy the image to your platform's assets folder.**_
 
 ## Using text field
 
