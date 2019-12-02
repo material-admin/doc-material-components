@@ -1,21 +1,19 @@
-<!--docs:
-title: ""
-layout: detail
-section: components
-excerpt: "This is the stub for the bottom navigation developer usage article for material.io."
-iconId:
-path: /
-api_doc_root:
-initial_release: 0.1
--->
+_**Instructions**_
+* Copy this file into the platform folder for this component
+* Rename the file to "\<platform\>-bottom-navigation.md"
+* [Using bottom navigation](#using-bottom-navigation)
+    * Add a link under [Using bottom navigation](#using-bottom-navigation) to your getting started page if you have one
+    * Insert [installation](#installation) and [theming](#theming) as appropriate for your platform
+    * Insert any additional instructions that apply to your platform with a separte level 3 header
+    * If you have no getting started links or instructions, delete the [Using bottom navigation](#using-bottom-navigation) sections
+
 
 <!-- How do we make sure that this template (and therefore all proceeding docs) meet accessibility guidelines -->
 # Bottom navigation
 
-Bottom navigation bars allow movement between primary destinations in an app.
+[Bottom navigation](https://material.io/components/bottom-navigation/#) bars allow movement between primary destinations in an app.
 
-For more information on using the bottom navigation bar, go to the [design page](https://material.io/components/bottom-navigation/).
-
+![Example bottom navigation bar with four icons along the bottom: favorites, music, places, and news. The music icon is selected](assets/bottom-nav-generic.png)
 
 ## Using bottom navigation
 
@@ -31,24 +29,30 @@ If there is a separate page that has instructions, link to that page.
 
 ## Bottom navigation example <!-- No variants, so no need for variant sections -->
 
-The component example header should be one level below the component section header.
-
-The Example section should have the following:
-* 1-2 sentences to describe the example
-* An image rendering whatever sample code is included
-* A list of links to the applicable API(s) listed from highest level to lowest level: include both developer source (e.g., [developer.android.com], or as available) and GitHub source
-* Provide example source code that can generate the example in the image. Mention any themes/settings used
-
 Source code API:
 
 * \<source class name\>
   * [Class description](developer site here)
   * [GitHub source](https://github.com/materials-components/)
 
-The following example shows a bottom navigation bar with \<...\> icons.
+The following example shows a bottom navigation bar with four icons:
+* favorites
+* music note
+* places
+* news
 
-<img src="assets/<platform>-bottom-nav.png" alt="bottom navigation bar with <TBD> icons">
+<img src="assets/<platform>-bottom-nav.png" alt="bottom navigation bar with favorites, music note, places, and news icons">
 
 ```
 <code snippet here>
+The source code should render the following:
+* bottom navigation bar with purple fill (#6200EE)
+* four icons:
+    * favorites
+    * music note
+    * places (not part of material.io icons)
+    * news (not part of material.io icons)
+* selecting one icon disabvles the remaining icons
+    * selected icon should show up as white
+* disabled icons should be show a 38% opacity
 ```
