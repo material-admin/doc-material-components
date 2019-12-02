@@ -58,7 +58,7 @@ This is a checklist for developers to ensure that their usage documents maintain
 	<details>
 		<summary>Example</summary>
 
-	\`\`\`html
+	\`\`\`html <br>
 	\<head\> <br>
 	&nbsp;&nbsp;&nbsp;&nbsp;  \<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"\><br>
 	\</head\><br>
