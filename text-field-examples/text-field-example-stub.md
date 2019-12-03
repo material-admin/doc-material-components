@@ -21,7 +21,7 @@ The text field class consists of the following types:
 
 <img src="assets/text-field-generic.png" alt="Text field example of both filled and outlined text from material.io">
 
-_**Copy the image to your platform's assets folder**_
+_**Copy the image to your platform's assets folder.**_
 
 ## Using text field
 
@@ -43,6 +43,8 @@ Source code API:
 
 The following examples shows a filled text field with <code>color</code> text and <code>color</code> background.
 
+
+_**Copy the image to your platform's assets folder. Use a screenshot of your render.**_
 <img src="assets/.png" alt="filled text field for <platform> platform">
 
 ```
@@ -69,6 +71,7 @@ Source code API:
 
 The following examples shows an outlined text field with <code>color</code> text and <code>color</code> outline.
 
+_**Copy the image to your platform's assets folder. Use a screenshot of your render.**_
 <img src="assets/.png" alt="outlined text field for <> platform">
 
 ```
