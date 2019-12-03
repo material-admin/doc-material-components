@@ -52,7 +52,6 @@ The source code should render the following:
     * music note
     * places (not part of material.io icons)
     * news (not part of material.io icons)
-* selecting one icon disabvles the remaining icons
-    * selected icon should show up as white
-* disabled icons should be show a 38% opacity
+* active icon should show up as white
+* inactive icons should be show a 60% opacity
 ```
