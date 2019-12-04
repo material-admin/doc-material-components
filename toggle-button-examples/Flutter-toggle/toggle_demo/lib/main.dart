@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'toggle_icon_demo.dart';
 import 'toggle_bar_demo.dart';
+import 'toggle_icon_demo.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,12 +16,9 @@ class MyApp extends StatelessWidget {
       initialRoute: '/toggleIconPage',
       routes: {
         '/toggleBarPage': (context) => ToggleBarDemo(title: 'Toggle Bar Demo'),
-        '/toggleIconPage': (context) => ToggleIconDemo(title: 'Toggle Icon Demo'),
+        '/toggleIconPage': (context) =>
+            ToggleIconDemo(title: 'Toggle Icon Demo'),
       },
     );
   }
 }
-
-
-
-
