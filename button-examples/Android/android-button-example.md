@@ -21,50 +21,6 @@ The [button anatomy](https://material.io/components/buttons/#anatomy) consists o
 
 ![Button anatomy](assets/mio-components_assets_buttons-anatomy-all.png)
 
-<details>
-<summary><b>A.</b> Text label</summary>
-<p>
-
-Description | Attribute(s) | Related method(s)
----|---|---
-Text | `android:text` | `setText`<br/>`getText`
-Color | `android:textColor` | `setTextColor`<br/>`getTextColor`
-Typography | `android:textAppearance` | `setTextAppearance`
-
-</p>
-</details>
-
-<details>
-<summary><b>B.</b> Container</summary>
-<p>
-
-Description | Attribute(s) | Related method(s)
----|---|---
-Color | `app:backgroundTint`<br/>`app:backgroundTintMode` | `setBackgroundColor`<br/>`setBackgroundTintList`<br/>`getBackgroundTintList`<br/>`setBackgroundTintMode`<br/>`getBackgroundTintMode`
-Stroke color | `app:strokeColor` | `setStrokeColor`<br/>`setStrokeColorResource`<br/>`getStrokeColor`
-Stroke width | `app:strokeWidth` | `setStrokeWidth`<br/>`setStrokeWidthResource`<br/>`getStrokeWidth`
-Shape | `app:shapeAppearance` | `setShapeAppearanceModel`<br/>`getShapeAppearanceModel`
-Elevation | `app:elevation` | `setElevation`<br/>`getElevation`
-Ripple color | `app:rippleColor` | `setRippleColor`<br/>`setRippleColorResource`<br/>`getRippleColor`
-
-</p>
-</details>
-
-<details>
-<summary><b>C.</b> Icon</summary>
-<p>
-
-Description | Attribute(s) | Related method(s)
----|---|---
-Icon | `app:icon` | `setIcon`<br/>`setIconResource`<br/>`getIcon`
-Color | `app:iconTint`<br/>`app:iconTintMode` | `setIconTint`<br/>`setIconTintResource`<br/>`getIconTint`<br/>`setIconTintMode`<br/>`getIconTintMode`
-Size | `app:iconSize` | `setIconSize`<br/>`getIconSize`
-Gravity (position relative to text label) | `app:iconGravity` | `setIconGravity`<br/>`getIconGravity`
-Padding (space between icon and text label) | `app:iconPadding` | `setIconPadding`<br/>`getIconPadding`
-
-</p>
-</details>
-
 ## Text button
 
 [Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
@@ -107,17 +63,52 @@ Icon style | `Widget.MaterialComponents.Button.TextButton.Icon`
 </details>
 
 <details>
-<summary>Theme attributes</summary>
+<summary>Attributes</summary>
 <p>
 
-Description | Attribute | Default value
----|---|---
-Text label color | `android:textColor` | `?attr/colorPrimary`
-Text label typography | `android:textAppearance` | `?attr/textAppearanceButton`
-Container ripple color | `app:rippleColor` | `?attr/colorPrimary` at 12% opacity (pressed)
-Icon color | `app:iconTint` | `?attr/colorPrimary`
-Icon gravity | `app:iconGravity` | `start`
-Icon padding (space between icon and text label) | `app:iconPadding` | `4dp`
+<details>
+<summary><b>A.</b> Text label</summary>
+<p>
+
+Description | Attribute |  Default value | Related method(s)
+---|---|---|---
+Text | `android:text` | `null` | `setText`<br/>`getText`
+Color | `android:textColor` | `?attr/colorPrimary` | `setTextColor`<br/>`getTextColor`
+Typography | `android:textAppearance` | `?attr/textAppearanceButton` | `setTextAppearance`
+
+</p>
+</details>
+
+<details>
+<summary><b>B.</b> Container</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Color | `app:backgroundTint` | `@android:color/transparent` | `setBackgroundColor`<br/>`setBackgroundTintList`<br/>`getBackgroundTintList`
+Stroke color | `app:strokeColor` | `null` | `setStrokeColor`<br/>`setStrokeColorResource`<br/>`getStrokeColor`
+Stroke width | `app:strokeWidth` | `0dp` | `setStrokeWidth`<br/>`setStrokeWidthResource`<br/>`getStrokeWidth`
+Shape | `app:shapeAppearance` | `?attr/shapeAppearanceSmallComponent` | `setShapeAppearanceModel`<br/>`getShapeAppearanceModel`
+Elevation | `app:elevation` | `0dp` | `setElevation`<br/>`getElevation`
+Ripple color | `?attr/colorPrimary` at 12% opacity (pressed) | `app:rippleColor` | `setRippleColor`<br/>`setRippleColorResource`<br/>`getRippleColor`
+
+</p>
+</details>
+
+<details>
+<summary><b>C.</b> Icon</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Icon | `app:icon` | `null` | `setIcon`<br/>`setIconResource`<br/>`getIcon`
+Color | `app:iconTint` | `?attr/colorPrimary` | `setIconTint`<br/>`setIconTintResource`<br/>`getIconTint`
+Size | `app:iconSize` | `wrap_content` | `setIconSize`<br/>`getIconSize`
+Gravity (position relative to text label) | `start` | `app:iconGravity` | `setIconGravity`<br/>`getIconGravity`
+Padding (space between icon and text label) | `4dp` | `app:iconPadding` | `setIconPadding`<br/>`getIconPadding`
+
+</p>
+</details>
 
 </p>
 </details>
