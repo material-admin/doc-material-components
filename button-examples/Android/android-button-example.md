@@ -51,7 +51,7 @@ The following example shows a text button with a text label.
 ### Key properties
 
 <details>
-<summary>Styles</summary>
+<summary><b>Styles</b></summary>
 <p>
 
 Description | Style
@@ -63,7 +63,7 @@ Icon style | `Widget.MaterialComponents.Button.TextButton.Icon`
 </details>
 
 <details>
-<summary>Attributes</summary>
+<summary><b>Attributes</b></summary>
 <p>
 
 <details>
@@ -143,7 +143,7 @@ The following example shows an outlined button with a text label and stroked con
 ### Key properties
 
 <details>
-<summary>Styles</summary>
+<summary><b>Styles</b></summary>
 <p>
 
 Description | Style
@@ -155,7 +155,7 @@ Icon style (adjusted padding for start-gravity icon) | `Widget.MaterialComponent
 </details>
 
 <details>
-<summary>Attributes</summary>
+<summary><b>Attributes</b></summary>
 <p>
 
 <details>
@@ -235,7 +235,7 @@ The following example shows a contained button with a text label and a filled co
 ### Key properties
 
 <details>
-<summary>Styles</summary>
+<summary><b>Styles</b></summary>
 <p>
 
 Description | Style
@@ -249,7 +249,7 @@ Unelevated icon style (adjusted padding for start-gravity icon) | `Widget.Materi
 </details>
 
 <details>
-<summary>Attributes</summary>
+<summary><b>Attributes</b></summary>
 <p>
 
 <details>
@@ -375,7 +375,7 @@ toggleButton.addOnButtonCheckedListener { toggleButton, checkedId, isChecked ->
 #### Key properties
 
 <details>
-<summary>Styles</summary>
+<summary><b>Styles</b></summary>
 <p>
 
 Description | Style
