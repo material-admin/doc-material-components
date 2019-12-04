@@ -90,7 +90,7 @@ Stroke color | `app:strokeColor` | `null` | `setStrokeColor`<br/>`setStrokeColor
 Stroke width | `app:strokeWidth` | `0dp` | `setStrokeWidth`<br/>`setStrokeWidthResource`<br/>`getStrokeWidth`
 Shape | `app:shapeAppearance` | `?attr/shapeAppearanceSmallComponent` | `setShapeAppearanceModel`<br/>`getShapeAppearanceModel`
 Elevation | `app:elevation` | `0dp` | `setElevation`<br/>`getElevation`
-Ripple color | `?attr/colorPrimary` at 12% opacity (pressed) | `app:rippleColor` | `setRippleColor`<br/>`setRippleColorResource`<br/>`getRippleColor`
+Ripple color | `app:rippleColor` | `?attr/colorPrimary` at 12% opacity (pressed) | `setRippleColor`<br/>`setRippleColorResource`<br/>`getRippleColor`
 
 </p>
 </details>
@@ -104,8 +104,8 @@ Description | Attribute | Default value | Related method(s)
 Icon | `app:icon` | `null` | `setIcon`<br/>`setIconResource`<br/>`getIcon`
 Color | `app:iconTint` | `?attr/colorPrimary` | `setIconTint`<br/>`setIconTintResource`<br/>`getIconTint`
 Size | `app:iconSize` | `wrap_content` | `setIconSize`<br/>`getIconSize`
-Gravity (position relative to text label) | `start` | `app:iconGravity` | `setIconGravity`<br/>`getIconGravity`
-Padding (space between icon and text label) | `4dp` | `app:iconPadding` | `setIconPadding`<br/>`getIconPadding`
+Gravity (position relative to text label) | `app:iconGravity` | `start` | `setIconGravity`<br/>`getIconGravity`
+Padding (space between icon and text label) | `app:iconPadding` | `4dp` | `setIconPadding`<br/>`getIconPadding`
 
 </p>
 </details>
