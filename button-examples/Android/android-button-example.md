@@ -67,7 +67,7 @@ Icon style | `Widget.MaterialComponents.Button.TextButton.Icon`
 <p>
 
 <details>
-<summary><b>A.</b> Text label</summary>
+<summary>Text label</summary>
 <p>
 
 Description | Attribute |  Default value | Related method(s)
@@ -80,7 +80,7 @@ Typography | `android:textAppearance` | `?attr/textAppearanceButton` | `setTextA
 </details>
 
 <details>
-<summary><b>B.</b> Container</summary>
+<summary>Container</summary>
 <p>
 
 Description | Attribute | Default value | Related method(s)
@@ -96,7 +96,7 @@ Ripple color | `app:rippleColor` | `?attr/colorPrimary` at 12% opacity (pressed)
 </details>
 
 <details>
-<summary><b>C.</b> Icon</summary>
+<summary>Icon</summary>
 <p>
 
 Description | Attribute | Default value | Related method(s)
@@ -155,19 +155,52 @@ Icon style (adjusted padding for start-gravity icon) | `Widget.MaterialComponent
 </details>
 
 <details>
-<summary>Theme attributes</summary>
+<summary>Attributes</summary>
 <p>
 
-Description | Attribute | Default value
----|---|---
-Text label color | `android:textColor` | `?attr/colorPrimary`
-Text label typography | `android:textAppearance` | `?attr/textAppearanceButton`
-Container stroke color | `app:strokeColor` | `?attr/colorOnSurface` at 12% opacity
-Container stroke width | `app:strokeWidth` | `1dp`
-Container ripple color | `app:rippleColor` | `?attr/colorPrimary` at 12% opacity (pressed)
-Icon color | `app:iconTint` | `?attr/colorPrimary`
-Icon gravity | `app:iconGravity` | `start`
-Icon padding (space between icon and text label) | `app:iconPadding` | `4dp`
+<details>
+<summary>Text label</summary>
+<p>
+
+Description | Attribute |  Default value | Related method(s)
+---|---|---|---
+Text | `android:text` | `null` | `setText`<br/>`getText`
+Color | `android:textColor` | `?attr/colorPrimary` | `setTextColor`<br/>`getTextColor`
+Typography | `android:textAppearance` | `?attr/textAppearanceButton` | `setTextAppearance`
+
+</p>
+</details>
+
+<details>
+<summary>Container</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Color | `app:backgroundTint` | `@android:color/transparent` | `setBackgroundColor`<br/>`setBackgroundTintList`<br/>`getBackgroundTintList`
+Stroke color | `app:strokeColor` | `?attr/colorOnSurface` at 12% opacity | `setStrokeColor`<br/>`setStrokeColorResource`<br/>`getStrokeColor`
+Stroke width | `app:strokeWidth` | `1dp` | `setStrokeWidth`<br/>`setStrokeWidthResource`<br/>`getStrokeWidth`
+Shape | `app:shapeAppearance` | `?attr/shapeAppearanceSmallComponent` | `setShapeAppearanceModel`<br/>`getShapeAppearanceModel`
+Elevation | `app:elevation` | `0dp` | `setElevation`<br/>`getElevation`
+Ripple color | `app:rippleColor` | `?attr/colorPrimary` at 12% opacity (pressed) | `setRippleColor`<br/>`setRippleColorResource`<br/>`getRippleColor`
+
+</p>
+</details>
+
+<details>
+<summary>Icon</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Icon | `app:icon` | `null` | `setIcon`<br/>`setIconResource`<br/>`getIcon`
+Color | `app:iconTint` | `?attr/colorPrimary` | `setIconTint`<br/>`setIconTintResource`<br/>`getIconTint`
+Size | `app:iconSize` | `wrap_content` | `setIconSize`<br/>`getIconSize`
+Gravity (position relative to text label) | `app:iconGravity` | `start` | `setIconGravity`<br/>`getIconGravity`
+Padding (space between icon and text label) | `app:iconPadding` | `4dp` | `setIconPadding`<br/>`getIconPadding`
+
+</p>
+</details>
 
 </p>
 </details>
@@ -216,19 +249,52 @@ Unelevated icon style (adjusted padding for start-gravity icon) | `Widget.Materi
 </details>
 
 <details>
-<summary>Theme attributes</summary>
+<summary>Attributes</summary>
 <p>
 
-Description | Attribute | Default value
----|---|---
-Text label color | `android:textColor` | `?attr/colorOnPrimary`
-Text label typography | `android:textAppearance` | `?attr/textAppearanceButton`
-Container color | `app:backgroundTint` | `?attr/colorPrimary`
-Container elevation | `app:elevation` | `2dp`
-Container ripple color | `app:rippleColor` | `?attr/colorOnPrimary` at 24% opacity (pressed)
-Icon color | `app:iconTint` | `?attr/colorOnPrimary`
-Icon gravity | `app:iconGravity` | `start`
-Icon padding (space between icon and text label) | `app:iconPadding` | `8dp`
+<details>
+<summary>Text label</summary>
+<p>
+
+Description | Attribute |  Default value | Related method(s)
+---|---|---|---
+Text | `android:text` | `null` | `setText`<br/>`getText`
+Color | `android:textColor` | `?attr/colorOnPrimary` | `setTextColor`<br/>`getTextColor`
+Typography | `android:textAppearance` | `?attr/textAppearanceButton` | `setTextAppearance`
+
+</p>
+</details>
+
+<details>
+<summary>Container</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Color | `app:backgroundTint` | `?attr/colorPrimary` | `setBackgroundColor`<br/>`setBackgroundTintList`<br/>`getBackgroundTintList`
+Stroke color | `app:strokeColor` | `null` | `setStrokeColor`<br/>`setStrokeColorResource`<br/>`getStrokeColor`
+Stroke width | `app:strokeWidth` | `0dp` | `setStrokeWidth`<br/>`setStrokeWidthResource`<br/>`getStrokeWidth`
+Shape | `app:shapeAppearance` | `?attr/shapeAppearanceSmallComponent` | `setShapeAppearanceModel`<br/>`getShapeAppearanceModel`
+Elevation | `app:elevation` | `2dp` | `setElevation`<br/>`getElevation`
+Ripple color | `app:rippleColor` | `?attr/colorOnPrimary` at 24% opacity (pressed) | `setRippleColor`<br/>`setRippleColorResource`<br/>`getRippleColor`
+
+</p>
+</details>
+
+<details>
+<summary>Icon</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Icon | `app:icon` | `null` | `setIcon`<br/>`setIconResource`<br/>`getIcon`
+Color | `app:iconTint` | `?attr/colorOnPrimary` | `setIconTint`<br/>`setIconTintResource`<br/>`getIconTint`
+Size | `app:iconSize` | `wrap_content` | `setIconSize`<br/>`getIconSize`
+Gravity (position relative to text label) | `app:iconGravity` | `start` | `setIconGravity`<br/>`getIconGravity`
+Padding (space between icon and text label) | `app:iconPadding` | `8dp` | `setIconPadding`<br/>`getIconPadding`
+
+</p>
+</details>
 
 </p>
 </details>
@@ -305,6 +371,19 @@ toggleButton.addOnButtonCheckedListener { toggleButton, checkedId, isChecked ->
     // Do something for button toggle
 }
 ```
+
+#### Key properties
+
+<details>
+<summary>Styles</summary>
+<p>
+
+Description | Style
+---|---
+Default style | `Widget.MaterialComponents.MaterialButtonToggleGroup`
+
+</p>
+</details>
 
 ### Icon
 
