@@ -19,43 +19,52 @@ Before you can use a button, you will need to install the following:
 * [Add a theme](#add-a-theme)
 * [Import JavaScript effects](import-javascript-effects)
 
-### Install `mcd-button` or `mdc-icon-button`
+### Install
 Install the `mdc-button` component before including it in your source.
+
+TODO: Add subsection for CDN users (Who do not use any bundler).
 
 **`mdc-button`**
 ```bash
-npm install @material/buttons
+npm install @material/button
 ```
+
+If you would like to use Icons as buttons:
 
 **`mdc-icon-button`**
 ```bash
 npm install @material/icon-button
 ```
 
-### Add a theme
-Both `mdc-button` and `mdc-icon-button` work with themes (styles). Import a style into your `*.scss*` stylesheet to apply it to your website, including buttons or toggle icon buttons:
+### Add styles
+Import component styles in your  `*.scss` stylesheet to apply it to your website, including buttons or toggle icon buttons:
+
+TODO: Link reference about how to setup Sass.
 
 **mdc-button**
-```css
+```scss
 @import "@material/button/mdc-button";
 ```
 
 **mdc-icon-button**
-```css
+```scss
 @import "@material/icon-button/mdc-icon-button";
 ```
 
-### Import JavaScript effects
-You can also add a JavaScript ripple effect (see [MDC Ripple](https://github.com/material-components/material-components-web/blob/master/packages/mdc-ripple)) to your buttons by importing and then instantiating `MCDRipple` in your `*.js` file. See the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md) for more information on importing JavaScript.
+### JavaScript
+Optionally add ripple effect (see [MDC Ripple](https://github.com/material-components/material-components-web/blob/master/packages/mdc-ripple)) to your buttons by importing and then instantiating `MDCRipple` in your `*.js` file. See the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md) for more information on importing JavaScript.
+
+TODO: Link to reference how to bundle JS.
+TODO: Add usage for CDN users.
 
 ```js
 import {MDCRipple} from '@material/ripple';
 
-<!-- The following line applies to the `mdc-button` class-->
+// The following line applies to the `mdc-button` class.
 const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
 
 
-<!-- The following line applies to the `mdc-icon-button` class-->
+// The following line applies to the `mdc-icon-button` class.
 const iconButtonRipple = new MDCRipple(document.querySelector(`.mdc-icon-button`));
 iconButtonRipple.unbounded = true;
 ```
@@ -70,12 +79,13 @@ Add an icon to your `mdc-button` instance using the following steps:
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     ```
-1. Include the `mcd-button__icon` class inside your button element. Set the attribute `area-hidden="true"`.
+2. Include the `mdc-button__icon` class inside your button element. Set the attribute `area-hidden="true"`.
     **Note** The location of the icon element determines if the icon comes before (*leading*) or after (*trailing icon*) the text.
 
     **Example using [Material Icons](https://material.io/tools/icons/)**
     ```HTML
     <button class="mdc-button">
+      <span class="mdc-button__ripple"></span>
       <i class="material-icons mdc-button__icon" aria-hidden="true">favorite</i>
       <span class="mdc-button__label">Button</span>
     </button>
@@ -83,16 +93,20 @@ Add an icon to your `mdc-button` instance using the following steps:
     **Example using SVG Icons**
     ```html
     <button class="mdc-button">
+      <span class="mdc-button__ripple"></span>
       <svg class="mdc-button__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="...">
-        /*...*/
       </svg>
       <span class="mdc-button__label">Button</span>
     </button>
     ```
 
-### Sass mixins
+TODO: Add example for trailing icon.
+
+### Add themes (Optional)
 
 Use Sass mixins when you want to customize the look and feel of your buttons. Go to [sass-lang.com](https://sass-lang.com/install) for installation instructions.
+
+TODO: Move below section to separate page on how to setup Sass.
 
 Before using Sass mixins for your project you will need to do the following:
 
@@ -117,11 +131,10 @@ module.exports = {
 
 * In your `*.scss` file for your application, create an instance of your button with the Sass mixins settings of your choice. For example, if you have a button :
 
-```css
+```scss
 .button-instance {
   @include mdc-button-container-fill-color(orange);
   @include mdc-button-icon-color(green);
-  ...
 }
 ```
 
@@ -151,6 +164,8 @@ Mixin | Description
 `mdc-icon-button-ink-color($color)` | Sets the font color and the ripple color to the provided color value.
 
 ## Text button
+
+TODO: All below examples needs to have `mdc-button__ripple` element. See updated docs at [mdc-button](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button).
 
 [Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
 
@@ -194,7 +209,7 @@ Source code API:
 * mdc-button
     * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
     * [Demo site](https://glitch.com/~shadow-jobaria):
-    
+
 <img src="images/web-outlined-button.png" alt="Generated outlined button example">
 
 ```html
@@ -335,7 +350,7 @@ To generate the example with background images of your choosing, you will need t
         ```js
 		const iconToggle0 = new MDCIconButtonToggle(document.querySelector('.btn1'));
 		iconToggle0.unbounded = true;
-		
+
 		const iconToggle1 = new MDCIconButtonToggle(document.querySelector('.btn2'));
 		iconToggle1.unbounded = true;
 		/*...*/
