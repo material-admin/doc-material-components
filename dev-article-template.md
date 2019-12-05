@@ -56,13 +56,13 @@ Describe how to use this component type in as much detail as necessary.
 
 ### Key properties
 
-List the key properties/attributes/CSS classes of the component in a table.
-
-* The first column is the property's name as used in the design article.
-* The second column is the property's identifier in code.
-* The third column is a short description of the property.
-* If there are several related classes used together for the component, list their properties in separate tables.
-* Only list the _most important properties_ for configuring and theming the component—the full list of properties should be in the component's API docs.
+* Add a diagram of the component labeling key properties/attributes/CSS classes. Create the diagram in Figma if the diagram does not already exist.
+* List the key properties/attributes/CSS classes of the component in a table.
+   * The first column is the property's name as used in the design article.
+   * The second column is the property's identifier in code.
+   * The third column is a short description of the property.
+   * If there are several related classes used together for the component, list their properties in separate tables.
+   * Only list the _most important properties_ for configuring and theming the component—the full list of properties should be in the component's API docs.
 
 ### \<First component type\> example
 
