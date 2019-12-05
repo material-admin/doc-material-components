@@ -17,6 +17,82 @@ There are four types of buttons:
 
 [Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
 
+### Key properties
+
+![\<Placeholder diagram of text button attribute. Replace this text if/when there is an approved diagram\>](images/text-button-diagram.png)
+
+**1. Text button**
+
+* A. Text label
+* C. Icon
+
+
+\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
+
+<details>
+<summary><b>Styles</b></summary>
+<p>
+
+Description | Style
+---|---
+Default style | 
+Icon style | 
+
+</p>
+</details>
+
+<details>
+<summary><b>Attributes</b></summary>
+<p>
+
+<details>
+<summary>Text label</summary>
+<p>
+
+Description | Attribute |  Default value | Related method(s)
+---|---|---|---
+Text | | |
+Color | |  | 
+Typography |  |  | 
+
+</p>
+</details>
+
+<details>
+<summary>Container</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Color |  |  | 
+Stroke color |  |  | 
+Stroke width |  |  | 
+Shape |  |  | 
+Elevation |  |  | 
+Ripple color |  |  | 
+
+</p>
+</details>
+
+<details>
+<summary>Icon</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Icon | |  | 
+Color |  |  | 
+Size |  |  | 
+Gravity (position relative to text label) |  |  | 
+Padding (space between icon and text label) |  |  | 
+
+</p>
+</details>
+
+</p>
+</details>
+
+
 ### Text button example
 
 Source code API:
@@ -43,6 +119,81 @@ FlatButton(
 ## Outlined button
 
 [Outlined buttons](https://material.io/components/buttons/#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
+
+### Key properties
+
+![\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>](images/outlined-button-diagram.png)
+
+**1. Outlined button**
+
+* A. Text label
+* B. Container
+* C. Icon
+
+\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
+
+<details>
+<summary><b>Styles</b></summary>
+<p>
+
+Description | Style
+---|---
+Default style | 
+Icon style | 
+
+</p>
+</details>
+
+<details>
+<summary><b>Attributes</b></summary>
+<p>
+
+<details>
+<summary>Text label</summary>
+<p>
+
+Description | Attribute |  Default value | Related method(s)
+---|---|---|---
+Text | | |
+Color | |  | 
+Typography |  |  | 
+
+</p>
+</details>
+
+<details>
+<summary>Container</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Color |  |  | 
+Stroke color |  |  | 
+Stroke width |  |  | 
+Shape |  |  | 
+Elevation |  |  | 
+Ripple color |  |  | 
+
+</p>
+</details>
+
+<details>
+<summary>Icon</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Icon | |  | 
+Color |  |  | 
+Size |  |  | 
+Gravity (position relative to text label) |  |  | 
+Padding (space between icon and text label) |  |  | 
+
+</p>
+</details>
+
+</p>
+</details>
 
 ### Outlined button example
 
@@ -73,6 +224,83 @@ OutlineButton(
 
 [Contained buttons](https://material.io/components/buttons/#contained-button) are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 ntained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
+
+### Key properties
+
+![\<Placeholder diagram of contained button attribute. Replace this text if/when there is an approved diagram\>](images/contained-button-diagram.png)
+
+**1. Contained button**
+
+* A. Text label
+* B. Container
+* C. Icon
+
+\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
+
+
+
+<details>
+<summary><b>Styles</b></summary>
+<p>
+
+Description | Style
+---|---
+Default style | 
+Icon style | 
+
+</p>
+</details>
+
+<details>
+<summary><b>Attributes</b></summary>
+<p>
+
+<details>
+<summary>Text label</summary>
+<p>
+
+Description | Attribute |  Default value | Related method(s)
+---|---|---|---
+Text | | |
+Color | |  | 
+Typography |  |  | 
+
+</p>
+</details>
+
+<details>
+<summary>Container</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Color |  |  | 
+Stroke color |  |  | 
+Stroke width |  |  | 
+Shape |  |  | 
+Elevation |  |  | 
+Ripple color |  |  | 
+
+</p>
+</details>
+
+<details>
+<summary>Icon</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Icon | |  | 
+Color |  |  | 
+Size |  |  | 
+Gravity (position relative to text label) |  |  | 
+Padding (space between icon and text label) |  |  | 
+
+</p>
+</details>
+
+</p>
+</details>
 
 ### Contained button example
 
@@ -113,6 +341,82 @@ The toggle button can be separated into two types:
 ### Toggle bar
 
 The toggle bar allows you to select from a group of buttons that can be set to [selective action](https://material.io/components/buttons/#toggle-button) where only one button in a group can be selected at one time.
+
+####  Key properties
+
+![\<Placeholder diagram of toggle button attribute. Replace this text if/when there is an approved diagram\>](images/toggle-button-diagram.png)
+
+**1. Toggle button**
+
+* A. Text label
+* C. Icon
+
+
+\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
+
+
+<details>
+<summary><b>Styles</b></summary>
+<p>
+
+Description | Style
+---|---
+Default style | 
+Icon style | 
+
+</p>
+</details>
+
+<details>
+<summary><b>Attributes</b></summary>
+<p>
+
+<details>
+<summary>Text label</summary>
+<p>
+
+Description | Attribute |  Default value | Related method(s)
+---|---|---|---
+Text | | |
+Color | |  | 
+Typography |  |  | 
+
+</p>
+</details>
+
+<details>
+<summary>Container</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Color |  |  | 
+Stroke color |  |  | 
+Stroke width |  |  | 
+Shape |  |  | 
+Elevation |  |  | 
+Ripple color |  |  | 
+
+</p>
+</details>
+
+<details>
+<summary>Icon</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Icon | |  | 
+Color |  |  | 
+Size |  |  | 
+Gravity (position relative to text label) |  |  | 
+Padding (space between icon and text label) |  |  | 
+
+</p>
+</details>
+
+</p>
+</details>
 
 #### Toggle bar with three icons example
 
