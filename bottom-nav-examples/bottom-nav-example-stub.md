@@ -35,6 +35,61 @@ Source code API:
   * [Class description](developer site here)
   * [GitHub source](https://github.com/materials-components/)
 
+### Key properties
+
+![\<Placeholder diagram of bottom nav attributes. Replace this text if/when there is an approved diagram\>](assets.png)
+
+**1. Bottom navigation**
+
+* A. 
+* B. 
+* C. 
+
+\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
+
+
+
+<details>
+<summary><b>Styles</b></summary>
+<p>
+
+Description | Style
+---|---
+style 1... | 
+</p>
+</details>
+
+<details>
+<summary><b>Attributes</b></summary>
+<p>
+
+<details>
+<summary>attribute 1l</summary>
+<p>
+
+Description | Attribute |  Default value | Related method(s)
+---|---|---|---
+descr 1... | | |
+
+</p>
+</details>
+
+<details>
+<summary>attribute 2</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+descr 1... |  |  | 
+
+</p>
+</details>
+
+</p>
+</details>
+
+
+
 The following example shows a bottom navigation bar with four icons:
 * favorites
 * music note

@@ -32,6 +32,59 @@ _**Copy the image to your platform's assets folder.**_
 ## Filled text
 
 [Filled text fields](https://material.io/components/text-fields/#filled-text-field) have more visual emphasis than outlined text fields, making them stand out when surrounded by other content and components.
+### Key properties
+
+![\<Placeholder diagram of filled text field attributes. Replace this text if/when there is an approved diagram\>](assets.png)
+
+**1. Filled text field attributes**
+
+* A. 
+* B. 
+* C. 
+
+\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
+
+
+
+<details>
+<summary><b>Styles</b></summary>
+<p>
+
+Description | Style
+---|---
+style 1... | 
+</p>
+</details>
+
+<details>
+<summary><b>Attributes</b></summary>
+<p>
+
+<details>
+<summary>attribute 1l</summary>
+<p>
+
+Description | Attribute |  Default value | Related method(s)
+---|---|---|---
+descr 1... | | |
+
+</p>
+</details>
+
+<details>
+<summary>attribute 2</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+descr 1... |  |  | 
+
+</p>
+</details>
+
+</p>
+</details>
+
 
 ### Filled text example
 
@@ -60,6 +113,59 @@ The source code example should do the following as per the video usage example (
 ## Outlined text
 
 [Outlined text fields](https://material.io/components/text-fields/#outlined-text-field) have less visual emphasis than filled text fields. When they appear in places like forms, where many text fields are placed together, their reduced emphasis helps simplify the layout.
+### Key properties
+
+![\<Placeholder diagram of outlined teld field attributes. Replace this text if/when there is an approved diagram\>](assets.png)
+
+**1.Outlined text field*
+
+* A. 
+* B. 
+* C. 
+
+\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
+
+
+
+<details>
+<summary><b>Styles</b></summary>
+<p>
+
+Description | Style
+---|---
+style 1... | 
+</p>
+</details>
+
+<details>
+<summary><b>Attributes</b></summary>
+<p>
+
+<details>
+<summary>attribute 1l</summary>
+<p>
+
+Description | Attribute |  Default value | Related method(s)
+---|---|---|---
+descr 1... | | |
+
+</p>
+</details>
+
+<details>
+<summary>attribute 2</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+descr 1... |  |  | 
+
+</p>
+</details>
+
+</p>
+</details>
+
 
 ### Outlined text example
 

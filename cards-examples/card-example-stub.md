@@ -35,6 +35,59 @@ If there is a separate page that has instructions, link to that page.
 ## Elevated card
  
 On mobile, an [elevated card’s](https://material.io/components/cards/#specs) default elevation is 1dp, with a raised dragged elevation of 8dp.
+### Key properties
+
+![\<Placeholder diagram of elevated card attributes. Replace this text if/when there is an approved diagram\>](assets.png)
+
+**1. Elevated card attributes**
+
+* A. 
+* B. 
+* C. 
+
+\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
+
+
+
+<details>
+<summary><b>Styles</b></summary>
+<p>
+
+Description | Style
+---|---
+style 1... | 
+</p>
+</details>
+
+<details>
+<summary><b>Attributes</b></summary>
+<p>
+
+<details>
+<summary>attribute 1l</summary>
+<p>
+
+Description | Attribute |  Default value | Related method(s)
+---|---|---|---
+descr 1... | | |
+
+</p>
+</details>
+
+<details>
+<summary>attribute 2</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+descr 1... |  |  | 
+
+</p>
+</details>
+
+</p>
+</details>
+
 
 ### Elevated card example
 
@@ -62,6 +115,59 @@ The source code example should display as per the interactive example (https://m
 ## Outlined card
  
 On desktop and mobile, [outlined cards](https://material.io/components/cards/#specs) can have a resting elevation of 0dp. They elevate to 4dp on hover.
+### Key properties
+
+![\<Placeholder diagram of outlined card  attributes. Replace this text if/when there is an approved diagram\>](assets.png)
+
+**1. Outlined card attributes**
+
+* A. 
+* B. 
+* C. 
+
+\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
+
+
+
+<details>
+<summary><b>Styles</b></summary>
+<p>
+
+Description | Style
+---|---
+style 1... | 
+</p>
+</details>
+
+<details>
+<summary><b>Attributes</b></summary>
+<p>
+
+<details>
+<summary>attribute 1l</summary>
+<p>
+
+Description | Attribute |  Default value | Related method(s)
+---|---|---|---
+descr 1... | | |
+
+</p>
+</details>
+
+<details>
+<summary>attribute 2</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+descr 1... |  |  | 
+
+</p>
+</details>
+
+</p>
+</details>
+
 
 ### Outlined card example
 
