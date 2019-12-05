@@ -133,7 +133,7 @@ The following example shows a text button with a text label.
 
 
 <details>
-<summary><h4>Styles</h4></summary>
+<summary><b>Styles</b></summary>
 <p>
 
 Description | Style
@@ -145,7 +145,7 @@ Icon style (adjusted padding for start-gravity icon) | `Widget.MaterialComponent
 </details>
 
 <details>
-<summary><h4>Attributes</h4></summary>
+<summary><b>Attributes</b></summary>
 <p>
 
 <details>
@@ -235,7 +235,7 @@ The following example shows an outlined button with a text label and stroked con
 
 
 <details>
-<summary><h4>Styles</h4></summary>
+<summary><b>Styles</b></summary>
 <p>
 
 Description | Style
@@ -249,7 +249,7 @@ Unelevated icon style (adjusted padding for start-gravity icon) | `Widget.Materi
 </details>
 
 <details>
-<summary><h4>Attributes</h4></summary>
+<summary><b>Attributes</b></summary>
 <p>
 
 <details>
@@ -347,7 +347,7 @@ To emphasize groups of related toggle buttons, a group should share a common con
 
 
 <details>
-<summary><h4>Styles</h4></summary>
+<summary><p>Styles</p></summary>
 <p>
 
 Description | Style
