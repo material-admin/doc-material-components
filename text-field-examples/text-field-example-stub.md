@@ -117,7 +117,7 @@ The source code example should do the following as per the video usage example (
 
 ![\<Placeholder diagram of outlined teld field attributes. Replace this text if/when there is an approved diagram\>](assets.png)
 
-**1.Outlined text field*
+**1.Outlined text field**
 
 * A. 
 * B. 
