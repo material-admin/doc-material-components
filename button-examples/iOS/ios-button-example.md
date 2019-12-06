@@ -76,22 +76,6 @@ Before using the `MDCButtons` API to implement its types you must install `MCDBu
 \<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
 
 <details>
-<summary><b>Styles</b></summary>
-<p>
-
-Description | Style
----|---
-Default style | 
-Icon style | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Attributes</b></summary>
-<p>
-
-<details>
 <summary>Text label</summary>
 <p>
 
@@ -135,8 +119,18 @@ Padding (space between icon and text label) |  |  |
 </p>
 </details>
 
+<details>
+<summary><b>Themes (Styles)/b></summary>
+<p>
+
+Description | Theme
+---|---
+Default theme | 
+Icon theme | 
+
 </p>
 </details>
+
 
 
 ### Text button example
@@ -192,22 +186,6 @@ MDCButton *button = [[MDCButton alloc] init];
 \<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
 
 <details>
-<summary><b>Styles</b></summary>
-<p>
-
-Description | Style
----|---
-Default style | 
-Icon style | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Attributes</b></summary>
-<p>
-
-<details>
 <summary>Text label</summary>
 <p>
 
@@ -251,9 +229,17 @@ Padding (space between icon and text label) |  |  |
 </p>
 </details>
 
+<details>
+<summary><b>Themes (Styles)/b></summary>
+<p>
+
+Description | Theme
+---|---
+Default theme | 
+Icon theme | 
+
 </p>
 </details>
-
 
 ### Outlined button example without container schemes
 
@@ -338,20 +324,93 @@ MDCButton *button = [[MDCButton alloc] init];
 \<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
 
 <details>
-<summary><b>Styles</b></summary>
+<summary>Text label</summary>
 <p>
 
-Description | Style
----|---
-Default style | 
-Icon style | 
+Description | Attribute |  Default value | Related method(s)
+---|---|---|---
+Text | | |
+Color | |  | 
+Typography |  |  | 
 
 </p>
 </details>
 
 <details>
-<summary><b>Attributes</b></summary>
+<summary>Container</summary>
 <p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Color |  |  | 
+Stroke color |  |  | 
+Stroke width |  |  | 
+Shape |  |  | 
+Elevation |  |  | 
+Ripple color |  |  | 
+
+</p>
+</details>
+
+<details>
+<summary>Icon</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Icon | |  | 
+Color |  |  | 
+Size |  |  | 
+Gravity (position relative to text label) |  |  | 
+Padding (space between icon and text label) |  |  | 
+
+</p>
+</details>
+
+<details>
+<summary><b>Themes (Styles)/b></summary>
+<p>
+
+Description | Theme
+---|---
+Default theme | 
+Icon theme | 
+
+</p>
+</details>
+
+
+### Contained button example
+
+Source Code APIs:
+
+* MDCButton
+    * [Class description](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
+    * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
+* [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
+
+The following example shows a contained button with a text label and a filled container.
+
+!["Contained button example for Android with the white text 'Text' on a purple background."](assets/contained-button.svg)
+
+## Toggle button
+
+[Toggle buttons](https://material.io/components/buttons/#toggle-button) can be used to select from a group of choices.
+
+There are two types of toggle buttons:
+
+* [Toggle button](#toggle-button)
+* [Icon](#icon)
+
+### Toggle button
+
+The toggle button allows you to select from a group of buttons that can be set to [selective action](https://material.io/components/buttons/#toggle-button) where only one button in a group can be selected at one time.
+
+The Material toggle bar is not supported in iOS. 
+
+### Icon
+
+Icons can be used as toggle buttons when they allow selection, or deselection, of a single choice, such as marking an item as a favorite.
 
 <details>
 <summary>Text label</summary>
@@ -397,41 +456,18 @@ Padding (space between icon and text label) |  |  |
 </p>
 </details>
 
+<details>
+<summary><b>Themes (Styles)/b></summary>
+<p>
+
+Description | Theme
+---|---
+Default theme | 
+Icon theme | 
+
 </p>
 </details>
 
-
-### Contained button example
-
-Source Code APIs:
-
-* MDCButton
-    * [Class description](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
-    * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
-* [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
-
-The following example shows a contained button with a text label and a filled container.
-
-!["Contained button example for Android with the white text 'Text' on a purple background."](assets/contained-button.svg)
-
-## Toggle button
-
-[Toggle buttons](https://material.io/components/buttons/#toggle-button) can be used to select from a group of choices.
-
-There are two types of toggle buttons:
-
-* [Toggle button](#toggle-button)
-* [Icon](#icon)
-
-### Toggle button
-
-The toggle button allows you to select from a group of buttons that can be set to [selective action](https://material.io/components/buttons/#toggle-button) where only one button in a group can be selected at one time.
-
-The Material toggle bar is not supported in iOS. 
-
-### Icon
-
-Icons can be used as toggle buttons when they allow selection, or deselection, of a single choice, such as marking an item as a favorite.
 
 #### Icon example
 

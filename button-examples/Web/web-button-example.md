@@ -33,7 +33,7 @@ npm install @material/icon-button
 ```
 
 ### Add a theme
-Both `mdc-button` and `mdc-icon-button` work with themes (styles). Import a style into your `*.scss*` stylesheet to apply it to your website, including buttons or toggle icon buttons:
+Both `mdc-button` and `mdc-icon-button` work with themes (styles). Import a theme into your `*.scss*` stylesheet to apply it to your website, including buttons or toggle icon buttons:
 
 **mdc-button**
 ```css
@@ -166,13 +166,13 @@ Mixin | Description
 \<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
 
 <details>
-<summary><b>Styles</b></summary>
+<summary><b>Themes (Styles)</b></summary>
 <p>
 
 Description | Style
 ---|---
-Default style | 
-Icon style | 
+Default theme | 
+Icon theme | 
 
 </p>
 </details>
@@ -275,22 +275,6 @@ Source code API:
 \<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
 
 <details>
-<summary><b>Styles</b></summary>
-<p>
-
-Description | Style
----|---
-Default style | 
-Icon style | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Attributes</b></summary>
-<p>
-
-<details>
 <summary>Text label</summary>
 <p>
 
@@ -334,8 +318,18 @@ Padding (space between icon and text label) |  |  |
 </p>
 </details>
 
+<details>
+<summary><b>Themes (Styles)</b></summary>
+<p>
+
+Description | Style
+---|---
+Default theme | 
+Icon theme | 
+
 </p>
 </details>
+
 
 
 ### Outlined button example
@@ -388,22 +382,6 @@ Source code API:
 \<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
 
 <details>
-<summary><b>Styles</b></summary>
-<p>
-
-Description | Style
----|---
-Default style | 
-Icon style | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Attributes</b></summary>
-<p>
-
-<details>
 <summary>Text label</summary>
 <p>
 
@@ -447,8 +425,18 @@ Padding (space between icon and text label) |  |  |
 </p>
 </details>
 
+<details>
+<summary><b>Themes (Styles)</b></summary>
+<p>
+
+Description | Style
+---|---
+Default theme | 
+Icon theme | 
+
 </p>
 </details>
+
 
 
 #### Contained button example

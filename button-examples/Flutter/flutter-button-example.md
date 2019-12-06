@@ -30,22 +30,6 @@ There are four types of buttons:
 \<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
 
 <details>
-<summary><b>Styles</b></summary>
-<p>
-
-Description | Style
----|---
-Default style | 
-Icon style | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Attributes</b></summary>
-<p>
-
-<details>
 <summary>Text label</summary>
 <p>
 
@@ -88,6 +72,15 @@ Padding (space between icon and text label) |  |  |
 
 </p>
 </details>
+
+<details>
+<summary><b>Themes (Styles)/b></summary>
+<p>
+
+Description | Theme
+---|---
+Default theme | 
+Icon theme | 
 
 </p>
 </details>
@@ -111,7 +104,7 @@ FlatButton(
     /*...*/
   },
   child: Text("Text Button",
-    style: TextStyle(fontSize: 20)
+    theme: TextStyle(fontSize: 20)
   ),
 )
 ```
@@ -131,22 +124,6 @@ FlatButton(
 * C. Icon
 
 \<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
-
-<details>
-<summary><b>Styles</b></summary>
-<p>
-
-Description | Style
----|---
-Default style | 
-Icon style | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Attributes</b></summary>
-<p>
 
 <details>
 <summary>Text label</summary>
@@ -191,6 +168,15 @@ Padding (space between icon and text label) |  |  |
 
 </p>
 </details>
+
+<details>
+<summary><b>Themes (Styles)/b></summary>
+<p>
+
+Description | Theme
+---|---
+Default theme | 
+Icon theme | 
 
 </p>
 </details>
@@ -238,23 +224,6 @@ ntained buttons are high-emphasis, distinguished by their use of elevation and f
 \<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
 
 
-
-<details>
-<summary><b>Styles</b></summary>
-<p>
-
-Description | Style
----|---
-Default style | 
-Icon style | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Attributes</b></summary>
-<p>
-
 <details>
 <summary>Text label</summary>
 <p>
@@ -298,6 +267,15 @@ Padding (space between icon and text label) |  |  |
 
 </p>
 </details>
+
+<details>
+<summary><b>Themes (Styles)/b></summary>
+<p>
+
+Description | Theme
+---|---
+Default theme | 
+Icon theme | 
 
 </p>
 </details>
@@ -354,23 +332,6 @@ The toggle bar allows you to select from a group of buttons that can be set to [
 
 \<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
 
-
-<details>
-<summary><b>Styles</b></summary>
-<p>
-
-Description | Style
----|---
-Default style | 
-Icon style | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Attributes</b></summary>
-<p>
-
 <details>
 <summary>Text label</summary>
 <p>
@@ -415,8 +376,19 @@ Padding (space between icon and text label) |  |  |
 </p>
 </details>
 
+<details>
+<summary><b>Themes (Styles)/b></summary>
+<p>
+
+Description | Theme
+---|---
+Default theme | 
+Icon theme | 
+
 </p>
 </details>
+
+
 
 #### Toggle bar with three icons example
 

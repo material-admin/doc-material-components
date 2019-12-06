@@ -30,21 +30,7 @@ Before you can use Material buttons, you need to add a dependency to the Materia
 * A. Text label
 * C. Icon
 
-<details>
-<summary><b>Styles</b></summary>
-<p>
 
-Description | Style
----|---
-Default style | `Widget.MaterialComponents.Button.TextButton`
-Icon style | `Widget.MaterialComponents.Button.TextButton.Icon`
-
-</p>
-</details>
-
-<details>
-<summary><b>Attributes</b></summary>
-<p>
 
 <details>
 <summary>Text label</summary>
@@ -90,6 +76,15 @@ Padding (space between icon and text label) | `app:iconPadding` | `4dp` | `setIc
 </p>
 </details>
 
+<details>
+<summary><b>Themes (Styles)</b></summary>
+<p>
+
+Description | Theme
+---|---
+Default theme | `Widget.MaterialComponents.Button.TextButton`
+Icon theme | `Widget.MaterialComponents.Button.TextButton.Icon`
+
 </p>
 </details>
 
@@ -131,22 +126,6 @@ The following example shows a text button with a text label.
 * B Container
 * C Icon
 
-
-<details>
-<summary><b>Styles</b></summary>
-<p>
-
-Description | Style
----|---
-Default style | `Widget.MaterialComponents.Button.OutlinedButton`
-Icon style (adjusted padding for start-gravity icon) | `Widget.MaterialComponents.Button.OutlinedButton.Icon`
-
-</p>
-</details>
-
-<details>
-<summary><b>Attributes</b></summary>
-<p>
 
 <details>
 <summary>Text label</summary>
@@ -192,8 +171,18 @@ Padding (space between icon and text label) | `app:iconPadding` | `4dp` | `setIc
 </p>
 </details>
 
+<details>
+<summary><b>Themes (Styles)</b></summary>
+<p>
+
+Description | Theme
+---|---
+Default theme | `Widget.MaterialComponents.Button.OutlinedButton`
+Icon theme (adjusted padding for start-gravity icon) | `Widget.MaterialComponents.Button.OutlinedButton.Icon`
+
 </p>
 </details>
+
 
 ### Outlined button example
 
@@ -234,23 +223,6 @@ The following example shows an outlined button with a text label and stroked con
 * C Icon
 
 
-<details>
-<summary><b>Styles</b></summary>
-<p>
-
-Description | Style
----|---
-Default style | `Widget.MaterialComponents.Button`
-Icon style (adjusted padding for start-gravity icon) | `Widget.MaterialComponents.Button.Icon`
-Unelevated style | `Widget.MaterialComponents.Button.UnelevatedButton`
-Unelevated icon style (adjusted padding for start-gravity icon) | `Widget.MaterialComponents.Button.UnelevatedButton.Icon`
-
-</p>
-</details>
-
-<details>
-<summary><b>Attributes</b></summary>
-<p>
 
 <details>
 <summary>Text label</summary>
@@ -296,8 +268,20 @@ Padding (space between icon and text label) | `app:iconPadding` | `8dp` | `setIc
 </p>
 </details>
 
+<details>
+<summary><b>Themes (Styles)</b></summary>
+<p>
+
+Description | Theme
+---|---
+Default theme | `Widget.MaterialComponents.Button`
+Icon theme (adjusted padding for start-gravity icon) | `Widget.MaterialComponents.Button.Icon`
+Unelevated theme | `Widget.MaterialComponents.Button.UnelevatedButton`
+Unelevated icon theme (adjusted padding for start-gravity icon) | `Widget.MaterialComponents.Button.UnelevatedButton.Icon`
+
 </p>
 </details>
+
 
 ### Contained button example
 
@@ -347,12 +331,12 @@ To emphasize groups of related toggle buttons, a group should share a common con
 
 
 <details>
-<summary><p>Styles</p></summary>
+<summary><p>Themes (Styles)</p></summary>
 <p>
 
 Description | Style
 ---|---
-Default style | `Widget.MaterialComponents.MaterialButtonToggleGroup`
+Default theme | `Widget.MaterialComponents.MaterialButtonToggleGroup`
 
 </p>
 </details>
