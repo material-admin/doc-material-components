@@ -15,6 +15,51 @@ _**Instructions**_
 
 ![Example bottom navigation bar with four icons along the bottom: favorites, music, places, and news. The music icon is selected](assets/bottom-nav-generic.png)
 
+* \<Attribute A\>
+* \<Attribute B\>
+* \<Attribute C\>
+
+<details>
+<summary>\<Attribute A\></summary>
+<p>
+
+Description | Attribute |  Default value | Related method(s)
+---|---|---|---
+Desc. 1 | | |
+</p>
+</details>
+
+<details>
+<summary>\<Attribute B\></summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Desc. 1 | | | 
+
+</p>
+</details>
+
+<details>
+<summary>\<Attribute C\></summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Desc. 1 | | | 
+
+</p>
+</details>
+
+<details>
+<summary><b>Themes (Styles)</b></summary>
+<p>
+
+Description | Theme
+---|---
+Default theme | 
+Icon theme | 
+
 ## Using bottom navigation
 
 If there are any instructions on using the component that applies to all component variants (for example, installation or theming, accessiblity), include them here.
@@ -35,58 +80,7 @@ Source code API:
   * [Class description](developer site here)
   * [GitHub source](https://github.com/materials-components/)
 
-### Key properties
 
-![\<Placeholder diagram of bottom nav attributes. Replace this text if/when there is an approved diagram\>](assets.png)
-
-**1. Bottom navigation**
-
-* A. 
-* B. 
-* C. 
-
-\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
-
-
-
-<details>
-<summary><b>Styles</b></summary>
-<p>
-
-Description | Style
----|---
-style 1... | 
-</p>
-</details>
-
-<details>
-<summary><b>Attributes</b></summary>
-<p>
-
-<details>
-<summary>attribute 1l</summary>
-<p>
-
-Description | Attribute |  Default value | Related method(s)
----|---|---|---
-descr 1... | | |
-
-</p>
-</details>
-
-<details>
-<summary>attribute 2</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-descr 1... |  |  | 
-
-</p>
-</details>
-
-</p>
-</details>
 
 
 

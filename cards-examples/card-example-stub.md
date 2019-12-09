@@ -48,46 +48,46 @@ On mobile, an [elevated card’s](https://material.io/components/cards/#specs) d
 \<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
 
 
-
 <details>
-<summary><b>Styles</b></summary>
-<p>
-
-Description | Style
----|---
-style 1... | 
-</p>
-</details>
-
-<details>
-<summary><b>Attributes</b></summary>
-<p>
-
-<details>
-<summary>attribute 1l</summary>
+<summary>\<Attribute A\></summary>
 <p>
 
 Description | Attribute |  Default value | Related method(s)
 ---|---|---|---
-descr 1... | | |
+Desc. 1 | | |
+</p>
+</details>
+
+<details>
+<summary>\<Attribute B\></summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Desc. 1 | | | 
 
 </p>
 </details>
 
 <details>
-<summary>attribute 2</summary>
+<summary>\<Attribute C\></summary>
 <p>
 
 Description | Attribute | Default value | Related method(s)
 ---|---|---|---
-descr 1... |  |  | 
+Desc. 1 | | | 
 
 </p>
 </details>
 
-</p>
-</details>
+<details>
+<summary><b>Themes (Styles)</b></summary>
+<p>
 
+Description | Theme
+---|---
+Default theme | 
+Icon theme | 
 
 ### Elevated card example
 
@@ -128,46 +128,49 @@ On desktop and mobile, [outlined cards](https://material.io/components/cards/#sp
 \<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
 
 
-
 <details>
-<summary><b>Styles</b></summary>
-<p>
-
-Description | Style
----|---
-style 1... | 
-</p>
-</details>
-
-<details>
-<summary><b>Attributes</b></summary>
-<p>
-
-<details>
-<summary>attribute 1l</summary>
+<summary>\<Attribute A\></summary>
 <p>
 
 Description | Attribute |  Default value | Related method(s)
 ---|---|---|---
-descr 1... | | |
+Desc. 1 | | |
+</p>
+</details>
+
+<details>
+<summary>\<Attribute B\></summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Desc. 1 | | | 
 
 </p>
 </details>
 
 <details>
-<summary>attribute 2</summary>
+<summary>\<Attribute C\></summary>
 <p>
 
 Description | Attribute | Default value | Related method(s)
 ---|---|---|---
-descr 1... |  |  | 
+Desc. 1 | | | 
 
 </p>
 </details>
 
+<details>
+<summary><b>Themes (Styles)</b></summary>
+<p>
+
+Description | Theme
+---|---
+Default theme | 
+Icon theme | 
+
 </p>
 </details>
-
 
 ### Outlined card example
 

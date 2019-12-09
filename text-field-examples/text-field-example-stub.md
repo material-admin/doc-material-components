@@ -38,52 +38,55 @@ _**Copy the image to your platform's assets folder.**_
 
 **1. Filled text field attributes**
 
-* A. 
-* B. 
-* C. 
 
 \<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
 
-
-
-<details>
-<summary><b>Styles</b></summary>
-<p>
-
-Description | Style
----|---
-style 1... | 
-</p>
-</details>
+* \<Attribute A\>
+* \<Attribute B\>
+* \<Attribute C\>
 
 <details>
-<summary><b>Attributes</b></summary>
-<p>
-
-<details>
-<summary>attribute 1l</summary>
+<summary>\<Attribute A\></summary>
 <p>
 
 Description | Attribute |  Default value | Related method(s)
 ---|---|---|---
-descr 1... | | |
+Desc. 1 | | |
+</p>
+</details>
+
+<details>
+<summary>\<Attribute B\></summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Desc. 1 | | | 
 
 </p>
 </details>
 
 <details>
-<summary>attribute 2</summary>
+<summary>\<Attribute C\></summary>
 <p>
 
 Description | Attribute | Default value | Related method(s)
 ---|---|---|---
-descr 1... |  |  | 
+Desc. 1 | | | 
 
 </p>
 </details>
 
-</p>
-</details>
+<details>
+<summary><b>Themes (Styles)</b></summary>
+<p>
+
+Description | Theme
+---|---
+Default theme | 
+Icon theme | 
+
+
 
 
 ### Filled text example
@@ -119,52 +122,56 @@ The source code example should do the following as per the video usage example (
 
 **1.Outlined text field**
 
-* A. 
-* B. 
-* C. 
 
 \<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
 
 
 
-<details>
-<summary><b>Styles</b></summary>
-<p>
-
-Description | Style
----|---
-style 1... | 
-</p>
-</details>
+* \<Attribute A\>
+* \<Attribute B\>
+* \<Attribute C\>
 
 <details>
-<summary><b>Attributes</b></summary>
-<p>
-
-<details>
-<summary>attribute 1l</summary>
+<summary>\<Attribute A\></summary>
 <p>
 
 Description | Attribute |  Default value | Related method(s)
 ---|---|---|---
-descr 1... | | |
+Desc. 1 | | |
+</p>
+</details>
+
+<details>
+<summary>\<Attribute B\></summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Desc. 1 | | | 
 
 </p>
 </details>
 
 <details>
-<summary>attribute 2</summary>
+<summary>\<Attribute C\></summary>
 <p>
 
 Description | Attribute | Default value | Related method(s)
 ---|---|---|---
-descr 1... |  |  | 
+Desc. 1 | | | 
 
 </p>
 </details>
 
-</p>
-</details>
+<details>
+<summary><b>Themes (Styles)</b></summary>
+<p>
+
+Description | Theme
+---|---
+Default theme | 
+Icon theme | 
+
 
 
 ### Outlined text example
