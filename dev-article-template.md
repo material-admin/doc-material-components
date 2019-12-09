@@ -1,7 +1,21 @@
+<!--docs:
+title: "<component name>"
+layout: detail
+section: components
+excerpt: "<Platform name> <component name>"
+ide_version: "<cIDE name> <compatible IDE version and build number>"
+material_package_version: "<compatible Material platform package version number>"
+iconId:
+path: /
+api_doc_root:
+-->
+
 **Instructions to authors:**
 * _Copy this template into your repo._
 * _Replace text \<in angle brackets\> with the appropriate items from your component._
-* _Follow the instructions in each section&mdash;see the [accompanying examples](button-examples) for futher guidance._
+* _Add metadata in the top comment structure for Material.io site integration. Do not add `path` information &ndash; the usage docs should remain on one lavel_
+* _Follow the instructions in each section &ndash; see the [accompanying examples](button-examples) for futher guidance._
+* _Delete these instructions before submitting your document_
 
 <!--  20191125 Todo:
 * tables for attributes for each type
@@ -9,6 +23,8 @@
     * table referencing anatomy mapping to attributes (test this out per platform for naming that is consistent for all types)
     * try to include a single image from design that diagrams attributes
 * What are the best ways to integrate component accessbility features into the template?
+* What information do we need to provide the site team to update the components site?
+
 -->
 
 # \<Component name\>

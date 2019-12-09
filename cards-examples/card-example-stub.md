@@ -1,3 +1,15 @@
+<!--docs:
+title: "Cards"
+layout: detail
+section: components
+excerpt: "<platform> Cards"
+ide_version: "<cIDE name> <compatible IDE version and build number>"
+material_package_version: "<compatible Material platform package version number>"
+iconId:
+path: /
+api_doc_root:
+-->
+
 _**Instructions**_
 * Copy this file into the platform folder for this component
 * Rename the file to "\<platform\>-text-field.md"

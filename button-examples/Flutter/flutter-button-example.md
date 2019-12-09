@@ -1,3 +1,16 @@
+<!--docs:
+title: "Buttons"
+layout: detail
+section: components
+excerpt: "Flutter Buttons"
+ide_version: "<cIDE name> <compatible IDE version and build number>"
+material_package_version: "<compatible Material platform package version number>"
+iconId:
+path: /
+api_doc_root:
+-->
+
+
 # Buttons
 
 [Buttons](https://material.io/components/buttons/) allow users to take actions, and make choices, with a single tap.
