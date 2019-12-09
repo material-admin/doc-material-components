@@ -89,6 +89,9 @@ Description | Theme
 Default theme | 
 Icon theme | 
 
+</p>
+</details>
+
 ### Elevated card example
 
 Source code API:
