@@ -20,7 +20,7 @@ _**Instructions**_
 * \<Attribute C\>
 
 <details>
-<summary>\<Attribute A\></summary>
+<summary>Attribute A</summary>
 <p>
 
 Description | Attribute |  Default value | Related method(s)
@@ -30,7 +30,7 @@ Desc. 1 | | |
 </details>
 
 <details>
-<summary>\<Attribute B\></summary>
+<summary>Attribute B</summary>
 <p>
 
 Description | Attribute | Default value | Related method(s)
@@ -41,7 +41,7 @@ Desc. 1 | | |
 </details>
 
 <details>
-<summary>\<Attribute C\></summary>
+<summary>Attribute C</summary>
 <p>
 
 Description | Attribute | Default value | Related method(s)
