@@ -49,7 +49,7 @@ On mobile, an [elevated card’s](https://material.io/components/cards/#specs) d
 
 
 <details>
-<summary>\<Attribute A\></summary>
+<summary>Attribute A</summary>
 <p>
 
 Description | Attribute |  Default value | Related method(s)
@@ -59,7 +59,7 @@ Desc. 1 | | |
 </details>
 
 <details>
-<summary>\<Attribute B\></summary>
+<summary>Attribute B</summary>
 <p>
 
 Description | Attribute | Default value | Related method(s)
@@ -70,7 +70,7 @@ Desc. 1 | | |
 </details>
 
 <details>
-<summary>\<Attribute C\></summary>
+<summary>Attribute C</summary>
 <p>
 
 Description | Attribute | Default value | Related method(s)
@@ -129,7 +129,7 @@ On desktop and mobile, [outlined cards](https://material.io/components/cards/#sp
 
 
 <details>
-<summary>\<Attribute A\></summary>
+<summary>Attribute A</summary>
 <p>
 
 Description | Attribute |  Default value | Related method(s)
@@ -139,7 +139,7 @@ Desc. 1 | | |
 </details>
 
 <details>
-<summary>\<Attribute B\></summary>
+<summary>Attribute B</summary>
 <p>
 
 Description | Attribute | Default value | Related method(s)
@@ -150,7 +150,7 @@ Desc. 1 | | |
 </details>
 
 <details>
-<summary>\<Attribute C\></summary>
+<summary>Attribute C</summary>
 <p>
 
 Description | Attribute | Default value | Related method(s)
