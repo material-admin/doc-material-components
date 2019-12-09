@@ -74,7 +74,7 @@ Padding (space between icon and text label) |  |  |
 </details>
 
 <details>
-<summary><b>Themes (Styles)/b></summary>
+<summary><b>Themes (Styles)</b></summary>
 <p>
 
 Description | Theme
@@ -170,7 +170,7 @@ Padding (space between icon and text label) |  |  |
 </details>
 
 <details>
-<summary><b>Themes (Styles)/b></summary>
+<summary><b>Themes (Styles)</b></summary>
 <p>
 
 Description | Theme
@@ -269,7 +269,7 @@ Padding (space between icon and text label) |  |  |
 </details>
 
 <details>
-<summary><b>Themes (Styles)/b></summary>
+<summary><b>Themes (Styles)</b></summary>
 <p>
 
 Description | Theme
@@ -377,7 +377,7 @@ Padding (space between icon and text label) |  |  |
 </details>
 
 <details>
-<summary><b>Themes (Styles)/b></summary>
+<summary><b>Themes (Styles)</b></summary>
 <p>
 
 Description | Theme

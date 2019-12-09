@@ -165,21 +165,6 @@ Mixin | Description
 
 \<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
 
-<details>
-<summary><b>Themes (Styles)</b></summary>
-<p>
-
-Description | Style
----|---
-Default theme | 
-Icon theme | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Attributes</b></summary>
-<p>
 
 <details>
 <summary>Text label</summary>
@@ -224,6 +209,15 @@ Padding (space between icon and text label) |  |  |
 
 </p>
 </details>
+
+<details>
+<summary><b>Themes (Styles)</b></summary>
+<p>
+
+Description | Style
+---|---
+Default theme | 
+Icon theme | 
 
 </p>
 </details>
@@ -496,6 +490,63 @@ If your application needs a toggle button group, you will need to use a differen
 ### Icon
 
 Icons can be used as toggle buttons when they allow selection, or deselection, of a single choice, such as marking an item as a favorite.
+
+<details>
+<summary>Text label</summary>
+<p>
+
+Description | Attribute |  Default value | Related method(s)
+---|---|---|---
+Text | | |
+Color | |  | 
+Typography |  |  | 
+
+</p>
+</details>
+
+<details>
+<summary>Container</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Color |  |  | 
+Stroke color |  |  | 
+Stroke width |  |  | 
+Shape |  |  | 
+Elevation |  |  | 
+Ripple color |  |  | 
+
+</p>
+</details>
+
+<details>
+<summary>Icon</summary>
+<p>
+
+Description | Attribute | Default value | Related method(s)
+---|---|---|---
+Icon | |  | 
+Color |  |  | 
+Size |  |  | 
+Gravity (position relative to text label) |  |  | 
+Padding (space between icon and text label) |  |  | 
+
+</p>
+</details>
+
+<details>
+<summary><b>Themes (Styles)</b></summary>
+<p>
+
+Description | Style
+---|---
+Default theme | 
+Icon theme | 
+
+</p>
+</details>
+
 
 #### Toggle icon bar example with background images
 

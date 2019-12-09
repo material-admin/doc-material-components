@@ -65,7 +65,7 @@ Before using the `MDCButtons` API to implement its types you must install `MCDBu
 [Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
 ### Key properties
 
-![\<Placeholder diagram of text button attribute. Replace this text if/when there is an approved diagram\>](images/text-button-diagram.png)
+![\<Placeholder diagram of text button attribute. Replace this text if/when there is an approved diagram\>](assets/text-button-diagram.png)
 
 **1. Text button**
 
@@ -230,7 +230,7 @@ Padding (space between icon and text label) |  |  |
 </details>
 
 <details>
-<summary><b>Themes (Styles)/b></summary>
+<summary><b>Themes (Styles)</b></summary>
 <p>
 
 Description | Theme
@@ -368,7 +368,7 @@ Padding (space between icon and text label) |  |  |
 </details>
 
 <details>
-<summary><b>Themes (Styles)/b></summary>
+<summary><b>Themes (Styles)</b></summary>
 <p>
 
 Description | Theme
@@ -457,7 +457,7 @@ Padding (space between icon and text label) |  |  |
 </details>
 
 <details>
-<summary><b>Themes (Styles)/b></summary>
+<summary><b>Themes (Styles)</b></summary>
 <p>
 
 Description | Theme

@@ -48,6 +48,7 @@ Include a list of links to API documentation and source location of the componen
 
 * Use the class/implementation names when linking to the API docs.
 * Add other links as necessary if they would help using the component.
+* If your component has accessiblity settings (such as labels), describe how to use them and link to any guidelines on the m.io site (for example, [how to write a good accessibility label for your component](https://material.io/design/usability/accessibility.html#writing))
 
 Describe how to use this component type in as much detail as necessary.
 
