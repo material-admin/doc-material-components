@@ -13,7 +13,7 @@ api_doc_root:
 **Instructions to authors:**
 * _Copy this template into your repo._
 * _Replace text \<in angle brackets\> with the appropriate items from your component._
-* _Add metadata in the top comment structure for Material.io site integration. Do not add `path` information &ndash; the usage docs should remain on one lavel_
+* _Add metadata in the top comment structure for Material.io site integration. Do not add `path` information &ndash; the usage docs should remain on one level_
 * _Follow the instructions in each section &ndash; see the [accompanying examples](button-examples) for futher guidance._
 * _Delete these instructions before submitting your document_
 
