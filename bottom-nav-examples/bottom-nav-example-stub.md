@@ -28,12 +28,12 @@ _**Instructions**_
 
 ![Example bottom navigation bar with four icons along the bottom: favorites, music, places, and news. The music icon is selected](assets/bottom-nav-generic.png)
 
-* \<Attribute A\>
-* \<Attribute B\>
-* \<Attribute C\>
+* A
+* B
+* C
 
 <details>
-<summary>\<Attribute A\></summary>
+<summary>Attribute A</summary>
 <p>
 
 Description | Attribute |  Default value | Related method(s)
@@ -43,7 +43,7 @@ Desc. 1 | | |
 </details>
 
 <details>
-<summary>\<Attribute B\></summary>
+<summary>Attribute B</summary>
 <p>
 
 Description | Attribute | Default value | Related method(s)
@@ -54,7 +54,7 @@ Desc. 1 | | |
 </details>
 
 <details>
-<summary>\<Attribute C\></summary>
+<summary>Attribute C</summary>
 <p>
 
 Description | Attribute | Default value | Related method(s)
@@ -72,6 +72,9 @@ Description | Theme
 ---|---
 Default theme | 
 Icon theme | 
+
+</p>
+</details>
 
 ## Using bottom navigation
 

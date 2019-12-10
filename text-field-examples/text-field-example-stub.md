@@ -53,12 +53,12 @@ _**Copy the image to your platform's assets folder.**_
 
 \<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
 
-* \<Attribute A\>
-* \<Attribute B\>
-* \<Attribute C\>
+* A
+* B
+* C
 
 <details>
-<summary>\<Attribute A\></summary>
+<summary>Attribute A</summary>
 <p>
 
 Description | Attribute |  Default value | Related method(s)
@@ -68,7 +68,7 @@ Desc. 1 | | |
 </details>
 
 <details>
-<summary>\<Attribute B\></summary>
+<summary>Attribute B</summary>
 <p>
 
 Description | Attribute | Default value | Related method(s)
@@ -79,7 +79,7 @@ Desc. 1 | | |
 </details>
 
 <details>
-<summary>\<Attribute C\></summary>
+<summary>Attribute C</summary>
 <p>
 
 Description | Attribute | Default value | Related method(s)
@@ -98,7 +98,8 @@ Description | Theme
 Default theme | 
 Icon theme | 
 
-
+</p>
+</details>
 
 
 ### Filled text example
@@ -139,12 +140,12 @@ The source code example should do the following as per the video usage example (
 
 
 
-* \<Attribute A\>
-* \<Attribute B\>
-* \<Attribute C\>
+* A
+* B
+* C
 
 <details>
-<summary>\<Attribute A\></summary>
+<summary>Attribute A</summary>
 <p>
 
 Description | Attribute |  Default value | Related method(s)
@@ -154,7 +155,7 @@ Desc. 1 | | |
 </details>
 
 <details>
-<summary>\<Attribute B\></summary>
+<summary>Attribute B</summary>
 <p>
 
 Description | Attribute | Default value | Related method(s)
@@ -165,7 +166,7 @@ Desc. 1 | | |
 </details>
 
 <details>
-<summary>\<Attribute C\></summary>
+<summary>Attribute C</summary>
 <p>
 
 Description | Attribute | Default value | Related method(s)
@@ -184,6 +185,8 @@ Description | Theme
 Default theme | 
 Icon theme | 
 
+</p>
+</details>
 
 
 ### Outlined text example
