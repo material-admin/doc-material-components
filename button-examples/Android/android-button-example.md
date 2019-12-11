@@ -32,10 +32,10 @@ Update your IDE and your Material Components library to the latest version if yo
 Before you can use Material buttons, you need to add a dependency to the Material Components for Android library. For more information, go to the [Getting started](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md) page.
 
 ### Button anatomy
+<details>
+<summary>Expand for button anatomy</summary>
 
 ![Button anatomy showing four types of buttons: text, outlined, contained, and toggle bar. Each button type has arrows pointing to the text, the container, and the icon](assets/mio-components_assets_buttons-anatomy-all.png)
-
-<details><summary><b>Button anatomy details</b></summary>
 
 **1. Text button**
 
@@ -73,6 +73,9 @@ C | Icon | Icon Color | Secodary, 60%
 </details>
 
 ## Text button
+
+<details>
+<summary>Expand for more information on text button implementation</summary><br>
 
 [Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
 
@@ -145,7 +148,6 @@ Icon theme | `Widget.MaterialComponents.Button.TextButton.Icon`
 </p>
 </details>
 
-
 ### Text button example
 
 Source code API:
@@ -168,6 +170,9 @@ The following example shows a text button with a text label.
         ...
     />
 ```
+
+</details>
+
 
 
 ## Outlined button
