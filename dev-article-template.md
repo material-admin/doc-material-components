@@ -59,11 +59,11 @@ If all types use exactly the same list of API docs/source location links, or if 
 
 ### \<Component name\> anatomy
 
-* Insert the a diagram of the component's anatomy. Use the anatomy diagram(s) from the https://material.io/components/ site. If there are type-specific properties, include a diagram for each type. If there are properties specific to a component type, include a diagram and table in that component type's section.
+* Insert the a diagram of the component's anatomy. Use the anatomy diagram from the https://material.io/components/ site. If there are type-specific properties, include a diagram for each type. If there are properties specific to a component type, include a diagram and table in that component type's section.
 * Add a table of the properties represented by the diagram common to all component types. Limit the property attributes to six items of the most commonly customized attributes.
 * Include the following sentence below the table pointing the user to the API doc(s):
-    "We recommend using [Material Theming](https://material.io/components/\<component name\>/#theming) to apply your customizations across your application. For a full list of component properties, go to the API docs."
-    * Link to each component API
+    "We recommend using [Material Theming](https://material.io/components/\<component name\>/#theming) to apply your customizations across your application. For a full list of component properties, go to the API docs:"
+    * List the link to each component API
 
 ### Customizing \<Component name\>
 
