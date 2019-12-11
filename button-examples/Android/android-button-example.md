@@ -31,6 +31,12 @@ Update your IDE and your Material Components library to the latest version if yo
 
 Before you can use Material buttons, you need to add a dependency to the Material Components for Android library. For more information, go to the [Getting started](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md) page.
 
+### Making buttons accessible
+
+Android's button component APIs support labeling for accessibility. To use labels...
+
+For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
+
 ### Button anatomy
 <details>
 <summary>Expand for button anatomy</summary>
