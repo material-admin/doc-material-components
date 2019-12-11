@@ -27,7 +27,50 @@ There are four types of buttons:
 
 ## Using buttons
 
+Update your IDE and your Material Components library to the latest version if you are using Material Components for the first time.
+
 Before you can use Material buttons, you need to add a dependency to the Material Components for Android library. For more information, go to the [Getting started](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md) page.
+
+### Button anatomy
+
+![Button anatomy showing four types of buttons: text, outlined, contained, and toggle bar. Each button type has arrows pointing to the text, the container, and the icon](assets/mio-components_assets_buttons-anatomy-all.png)
+
+<details><summary><b>Button anatomy details</b></summary>
+
+**1. Text button**
+
+Diagram label | Button element | Theme element(s) | Theme baseline value(s) 
+---|---|---|---
+A | Text label | Text color<br>Text case<br>Typeface | Primary color <br>All-caps<br>Primary type
+C | Icon | Icon Color | Primary color
+
+
+**2. Outlined button**
+
+Diagram label | Button element | Theme element(s) | Theme baseline value(s) 
+---|---|---|---
+A | Text label | Text color<br>Text case<br>Typeface | Primary color <br>All-caps<br>Primary type
+B | Container | Container outline<br>Container fill | Secondary Color, 30%<br>0% Opacity
+C | Icon | Icon Color | Primary color
+
+
+**3. Contained button**
+
+Diagram label | Button element | Theme element(s) | Theme baseline value(s) 
+---|---|---|---
+A | Text label | Text color<br>Text case<br>Typeface | Secondary color <br>All-caps<br>Primary type
+B | Container | Container outline<br>Container fill | Primary color<br>Primary color
+C | Icon | Icon Color | Seconary color
+
+
+**4. Toggle button**
+
+Diagram label | Button element | Theme element(s) | Theme baseline value(s) 
+---|---|---|---
+B | Container | Container outline<br>Container fill | Secondary, 60%<br>Seondary, 30%
+C | Icon | Icon Color | Secodary, 60%
+
+</details>
 
 ## Text button
 
