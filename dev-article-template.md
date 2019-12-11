@@ -3,6 +3,7 @@ title: "<component name>"
 layout: detail
 section: components
 excerpt: "<Platform name> <component name>"
+latest_update: "<date of last update>"
 iconId:
 path: /
 api_doc_root:
@@ -46,6 +47,10 @@ Insert an image showing the component or all the component types.
 
 ## Using \<Component name\>
 
+Include the following sentence:
+   "Update your IDE and your Material Components library to the latest version if you are using Material Components for the first time."
+
+
 Include any usage instructions that are common to all types. If your platform includes more complete documentation elsewhere, (e.g., a "Getting Started" page), include a link to it here.
 
 If installation instructions are required, first summarize the requirement in 1-2 sentences and then give detailed instructions in a collapsable section.
@@ -62,7 +67,13 @@ If all types use exactly the same list of API docs/source location links, or if 
 
 ### Customizing \<Component name\>
 
-* Insert a table that maps the component attribute name with the default theme property (such as "primary color" or "secondary color"), and if the component attribute diverges from the theme baseline.
+Insert a table that maps the component attribute name with the default theme property (such as "primary color" or "secondary color"), and if the component attribute diverges from the theme baseline.
+
+### Making \<component name\> accessible
+
+List any accessiblity setting or attributes (such as labels), describe how to use them and link to any guidelines on the m.io site (for example, [how to write a good accessibility label for your component](https://material.io/design/usability/accessibility.html#writing))
+
+
 
 ## \<First component type\>
 
@@ -70,12 +81,15 @@ Start with a concise (1-2 sentence) description of the component type.
 * If possible, copy the exact summary from the design article.
 * Link the first mention of the component type to the appropriate section of the design article.
 
+Hide the component section by default using the `<details>` tag. Label the hidden section with the `<summary>` tag with the summary "Open for an implementation example and key properties table." 
+
+<details>
+<summary><b>Open for an implementation example and a key properties table</b></summary>
+
 Include a list of links to API documentation and source location of the component.
 
 * Use the class/implementation names when linking to the API docs.
 * Add other links as necessary if they would help using the component.
-* If your component has accessiblity settings (such as labels), describe how to use them and link to any guidelines on the m.io site (for example, [how to write a good accessibility label for your component](https://material.io/design/usability/accessibility.html#writing))
-
 Describe how to use this component type in as much detail as necessary.
 
 * If your platform does not support a particular type, include the type but explicitly state that it isn't supported.
@@ -93,6 +107,7 @@ Include a snippet of source code illustrating the example.
 * Remove boilerplate code that is not necessary to understand the example.
 * Consider highlighting the most important lines of the example.
 
+
 ### Key properties
 
 * If the component type uses terminology that differs from the other types, add a diagram of the component labeling key properties/attributes/CSS classes. Create the diagram in Figma if the diagram does not already exist.
@@ -104,7 +119,12 @@ Include a snippet of source code illustrating the example.
    * Only list up to six of the _most important properties_ for configuring and theming the component—the full list of properties should be in the component's API docs.
 
 
+</details>
+
 ## \<Second component type\>
+
+<details>
+<summary><b>Open for an implementation example and a key properties table</b></summary>
 
 ...
 
@@ -118,6 +138,8 @@ Include a snippet of source code illustrating the example.
 
 ...
 
+
+</details>
 
 _Continue describing the rest of the component types as necessary._
 
