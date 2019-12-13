@@ -58,7 +58,6 @@ If installation instructions are required, first summarize the requirement in 1-
 
 If all types use exactly the same list of API docs/source location links, or if there is a common set of links due to a superclass/etc, then include them here instead of repeating them in each type section.
 
-
 ### Making \<component name\> accessible
 
 List any accessiblity setting or attributes (such as labels), describe how to use them and link to any guidelines on the m.io site (for example, [how to write a good accessibility label for your component](https://material.io/design/usability/accessibility.html#writing))
