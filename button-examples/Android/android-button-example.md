@@ -43,38 +43,25 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 
 ![Button anatomy showing four types of buttons: text, outlined, contained, and toggle bar. Each button type has arrows pointing to the text, the container, and the icon](assets/mio-components_assets_buttons-anatomy-all.png)
 
-**1. Text button**
 
-Diagram label | Button element | Theme element(s) | Theme baseline value(s) 
+**Button elements**
+
+Diagram label | Button element | Theme element(s) 
 ---|---|---|---
-A | Text label | Text color<br>Text case<br>Typeface | Primary color <br>All-caps<br>Primary type
+A | Text label | Text color<br>Text case<br>Typeface 
+B | Container | Container outline<br>Container fill 
 C | Icon | Icon Color | Primary color
 
+We recommend using [Material Theming](https://material.io/components/\<component name\>/#theming) to apply your customizations across your application. For a full list of component properties, go to the API docs:
 
-**2. Outlined button**
-
-Diagram label | Button element | Theme element(s) | Theme baseline value(s) 
----|---|---|---
-A | Text label | Text color<br>Text case<br>Typeface | Primary color <br>All-caps<br>Primary type
-B | Container | Container outline<br>Container fill | Secondary Color, 30%<br>0% Opacity
-C | Icon | Icon Color | Primary color
-
-
-**3. Contained button**
-
-Diagram label | Button element | Theme element(s) | Theme baseline value(s) 
----|---|---|---
-A | Text label | Text color<br>Text case<br>Typeface | Secondary color <br>All-caps<br>Primary type
-B | Container | Container outline<br>Container fill<br>Elevation | Primary color<br>Primary color<br>Changing elevation
-C | Icon | Icon Color | Seconary color
-
-
-**4. Toggle button**
-
-Diagram label | Button element | Theme element(s) | Theme baseline value(s) 
----|---|---|---
-B | Container | Container outline<br>Container fill | Secondary, 60%<br>Seondary, 30%
-C | Icon | Icon Color | Secodary, 60%
+1. [Text button](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+2. [Outlined button](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+3. [Contained button](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+4. Toggle button
+	* Toggle button bar
+		* [Toggle group](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup)
+		* [Button](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+	* [Icon button](https://developer.android.com/reference/android/widget/CheckBox)
 
 </details>
 
