@@ -72,6 +72,8 @@ The following example shows a text button with a text label.
 
 ### Anatomy and key properties
 
+A text button has text and an optional icon.
+
 <details><summary>Expand for anatomy diagram and key text button properties</summary>
 
 ![\<Placeholder diagram of text button attribute. Replace this text if/when there is an approved diagram\>](assets/text-button-diagram.png)
@@ -82,7 +84,7 @@ The following example shows a text button with a text label.
 * C. Icon
 
 
-Diagram label | Attribute |  Theme value |  Property
+Diagram label | Design Attribute |  Theme value |  Property
 ---|---|---|---
 A | Text color | Primary color | `android:text` 
 A | Typography | Default | `android:textAppearance`
@@ -137,6 +139,8 @@ The following example shows an outlined button with a text label and stroked con
 
 ### Anatomy and key properties
 
+An outline button has text, a container, and an optional icon.
+
 <details><summary>Expand for anatomy diagram and key outlined button properties</summary>
 
 ![\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>](assets/outlined-button-diagram.png)
@@ -147,7 +151,7 @@ The following example shows an outlined button with a text label and stroked con
 * C Icon
 
 
-Diagram label | Attribute |  Theme value |  Property
+Diagram label | Design Attribute |  Theme value |  Property
 ---|---|---|---
 A | Text color | Primary color | `android:text` 
 A | Typography | Default | `android:textAppearance`
@@ -202,6 +206,8 @@ The following example shows a contained button with a text label and a filled co
 
 ### Anatomy and key attributes
 
+A contained button has text, a container, and an optional icon.
+
 <details><summary>Expand for anatomy diagram and key contained button properties</summary>
 
 ![\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>](assets/contained-button-diagram.png)
@@ -212,7 +218,7 @@ The following example shows a contained button with a text label and a filled co
 * C Icon
 
 
-Diagram label | Attribute |  Theme value |  Property
+Diagram label | Design Attribute |  Theme value |  Property
 ---|---|---|---
 A | Text color | Secondary color | `android:text` 
 A | Typography | Default | `android:textAppearance`
@@ -319,6 +325,8 @@ toggleButton.addOnButtonCheckedListener { toggleButton, checkedId, isChecked ->
 
 #### Anatomy and key properties
 
+A toggle button has a text label <!-- seems like this may be a typo, and it's a container in most implementations --> an an icon.
+
 <details><summary>Expand for anatomy diagram and key toggle button properties</summary>
 
 
@@ -396,6 +404,8 @@ icon.setOnCheckedChangeListener { checkBox, isChecked ->
 </details>
 
 #### Anatomy and key properties
+
+The icon button consists of two icons for 'on' and 'off'.
 
 <details><summary>Expand for anatomy diagram and key icon button properties</summary>
 
