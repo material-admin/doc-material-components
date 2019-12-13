@@ -47,8 +47,8 @@ Insert an image showing the component or all the component types.
 
 ## Using \<Component name\>
 
-Include the following sentence:
-   "Update your IDE and your Material Components library to the latest version if you are using Material Components for the first time."
+// Include the following sentence:
+//    "Update your IDE and your Material Components library to the latest version if you are using Material Components for the first time."
 
 
 Include any usage instructions that are common to all types. If your platform includes more complete documentation elsewhere, (e.g., a "Getting Started" page), include a link to it here.
@@ -59,11 +59,18 @@ If all types use exactly the same list of API docs/source location links, or if 
 
 ### \<Component name\> anatomy
 
+* Call out the anatomy elements in a sentence.
+
+<details>
+<summary><b>Expand for \<component name\> anatomy diagram</b></summary>
+
 * Insert the a diagram of the component's anatomy. Use the anatomy diagram from the https://material.io/components/ site. If there are type-specific properties, include a diagram for each type. If there are properties specific to a component type, include a diagram and table in that component type's section.
 * Add a table of the properties represented by the diagram common to all component types. Limit the property attributes to six items of the most commonly customized attributes.
 * Include the following sentence below the table pointing the user to the API doc(s):
     "We recommend using [Material Theming](https://material.io/components/\<component name\>/#theming) to apply your customizations across your application. For a full list of component properties, go to the API docs:"
     * List the link to each component API
+
+</details>
 
 ### Customizing \<Component name\>
 
