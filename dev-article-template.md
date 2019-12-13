@@ -63,7 +63,7 @@ If all types use exactly the same list of API docs/source location links, or if 
 * Call out the anatomy elements in a sentence.
 
 <details>
-<summary><b>Expand for \<component name\> anatomy diagram</b></summary>
+<summary><b>Expand for < component name > anatomy diagram</b></summary>
 
 * Insert the a diagram of the component's anatomy. Use the anatomy diagram from the https://material.io/components/ site. If there are type-specific properties, include a diagram for each type. If there are properties specific to a component type, include a diagram and table in that component type's section.
 * Add a table of the properties represented by the diagram common to all component types. Limit the property attributes to six items of the most commonly customized attributes.
