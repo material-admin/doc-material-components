@@ -47,8 +47,9 @@ Insert an image showing the component or all the component types.
 
 ## Using \<Component name\>
 
-// Include the following sentence:
-//    "Update your IDE and your Material Components library to the latest version if you are using Material Components for the first time."
+<!-- Include the following sentence:
+   "Update your IDE and your Material Components library to the latest version if you are using Material Components for the first time."
+-->
 
 
 Include any usage instructions that are common to all types. If your platform includes more complete documentation elsewhere, (e.g., a "Getting Started" page), include a link to it here.
