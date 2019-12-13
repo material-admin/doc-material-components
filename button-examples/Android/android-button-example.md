@@ -329,7 +329,9 @@ toggleButton.addOnButtonCheckedListener { toggleButton, checkedId, isChecked ->
 * C Icon
 
 
-##### Themes (Styles)Description | Style
+##### Themes (Styles)
+
+Description | Style
 ---|---
 Default theme | `Widget.MaterialComponents.MaterialButtonToggleGroup`
 
@@ -399,7 +401,9 @@ icon.setOnCheckedChangeListener { checkBox, isChecked ->
 
 
 
-##### Themes (Styles)Description | Style
+##### Themes (Styles)
+
+Description | Style
 ---|---
 Default theme |
 
