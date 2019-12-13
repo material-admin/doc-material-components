@@ -47,7 +47,7 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 **Button elements**
 
 Diagram label | Button element | Theme element(s) 
----|---|---|---
+---|---|---
 A | Text label | Text color<br>Text case<br>Typeface 
 B | Container | Container outline<br>Container fill 
 C | Icon | Icon Color | Primary color
@@ -67,11 +67,10 @@ We recommend using [Material Theming](https://material.io/components/\<component
 
 ## Text button
 
-<details>
-<summary>Expand for more information on text button implementation</summary><br>
-
 [Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
 
+<details>
+<summary>Expand for more information on text button implementation</summary><br>
 
 ### Text button example
 
