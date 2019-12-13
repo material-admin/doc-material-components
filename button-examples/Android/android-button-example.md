@@ -43,9 +43,6 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 
 ![Button anatomy showing four types of buttons: text, outlined, contained, and toggle bar. Each button type has arrows pointing to the text, the container, and the icon](assets/mio-components_assets_buttons-anatomy-all.png)
 
-
-**Button elements**
-
 Diagram label | Button element | Theme element(s) 
 ---|---|---
 A | Text label | Text color<br>Text case<br>Typeface 
