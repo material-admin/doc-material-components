@@ -27,7 +27,7 @@ There are four types of buttons:
 
 ## Using buttons
 
-// Update your IDE and your Material Components library to the latest version if you are using Material Components for the first time.
+<!-- Update your IDE and your Material Components library to the latest version if you are using Material Components for the first time. -->
 
 Before you can use Material buttons, you need to add a dependency to the Material Components for Android library. For more information, go to the [Getting started](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md) page.
 
