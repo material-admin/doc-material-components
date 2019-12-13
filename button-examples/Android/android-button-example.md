@@ -37,39 +37,15 @@ Android's button component APIs support labeling for accessibility. To use label
 
 For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
-### Button anatomy
-<details>
-<summary>Expand for button anatomy</summary>
-
-![Button anatomy showing four types of buttons: text, outlined, contained, and toggle bar. Each button type has arrows pointing to the text, the container, and the icon](assets/mio-components_assets_buttons-anatomy-all.png)
-
-Diagram label | Button element | Theme element(s) 
----|---|---
-A | Text label | Text color<br>Text case<br>Typeface 
-B | Container | Container outline<br>Container fill 
-C | Icon | Icon Color | Primary color
-
-We recommend using [Material Theming](https://material.io/components/\<component name\>/#theming) to apply your customizations across your application. For a full list of component properties, go to the API docs:
-
-1. [Text button](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
-2. [Outlined button](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
-3. [Contained button](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
-4. Toggle button
-	* Toggle button bar
-		* [Toggle group](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup)
-		* [Button](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
-	* [Icon button](https://developer.android.com/reference/android/widget/CheckBox)
-
-</details>
 
 ## Text button
 
 [Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
 
+### Text button example
+
 <details>
 <summary>Expand for more information on text button implementation</summary><br>
-
-### Text button example
 
 Source code API:
 
@@ -92,8 +68,11 @@ The following example shows a text button with a text label.
     />
 ```
 
-### Key properties
+</details>
 
+### Anatomy and key properties
+
+<details><summary>Expand for anatomy diagram and key text button properties</summary>
 
 ![\<Placeholder diagram of text button attribute. Replace this text if/when there is an approved diagram\>](assets/text-button-diagram.png)
 
@@ -103,64 +82,21 @@ The following example shows a text button with a text label.
 * C. Icon
 
 
-
-<details>
-<summary>Text label</summary>
-<p>
-
-Description | Attribute |  Default value | Related method(s)
+Diagram label | Attribute |  Theme value |  Property
 ---|---|---|---
-Text | `android:text` | `null` | `setText`<br/>`getText`
-Color | `android:textColor` | `?attr/colorPrimary` | `setTextColor`<br/>`getTextColor`
-Typography | `android:textAppearance` | `?attr/textAppearanceButton` | `setTextAppearance`
+A | Text color | Primary color | `android:text` 
+A | Typography | Default | `android:textAppearance`
+C | Icon | N/A | `app:icon` 
+C | Icon color | Primary color | `app:iconTint` 
 
-</p>
-</details>
+We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Text button API doc](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
 
-<details>
-<summary>Container</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Color | `app:backgroundTint` | `@android:color/transparent` | `setBackgroundColor`<br/>`setBackgroundTintList`<br/>`getBackgroundTintList`
-Stroke color | `app:strokeColor` | `null` | `setStrokeColor`<br/>`setStrokeColorResource`<br/>`getStrokeColor`
-Stroke width | `app:strokeWidth` | `0dp` | `setStrokeWidth`<br/>`setStrokeWidthResource`<br/>`getStrokeWidth`
-Shape | `app:shapeAppearance` | `?attr/shapeAppearanceSmallComponent` | `setShapeAppearanceModel`<br/>`getShapeAppearanceModel`
-Elevation | `app:elevation` | `0dp` | `setElevation`<br/>`getElevation`
-Ripple color | `app:rippleColor` | `?attr/colorPrimary` at 12% opacity (pressed) | `setRippleColor`<br/>`setRippleColorResource`<br/>`getRippleColor`
-
-</p>
-</details>
-
-<details>
-<summary>Icon</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Icon | `app:icon` | `null` | `setIcon`<br/>`setIconResource`<br/>`getIcon`
-Color | `app:iconTint` | `?attr/colorPrimary` | `setIconTint`<br/>`setIconTintResource`<br/>`getIconTint`
-Size | `app:iconSize` | `wrap_content` | `setIconSize`<br/>`getIconSize`
-Gravity (position relative to text label) | `app:iconGravity` | `start` | `setIconGravity`<br/>`getIconGravity`
-Padding (space between icon and text label) | `app:iconPadding` | `4dp` | `setIconPadding`<br/>`getIconPadding`
-
-</p>
-</details>
-
-<details>
-<summary><b>Themes (Styles)</b></summary>
-<p>
+#### Themes (Styles)
 
 Description | Theme
 ---|---
 Default theme | `Widget.MaterialComponents.Button.TextButton`
 Icon theme | `Widget.MaterialComponents.Button.TextButton.Icon`
-
-</p>
-</details>
-
-For the full list of properties, check out the full API docs.
 
 </details>
 
@@ -170,11 +106,12 @@ For the full list of properties, check out the full API docs.
 
 [Outlined buttons](https://material.io/components/buttons/#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
+
+### Outlined button example
+
 <details>
 <summary>Expand for more information on outlined button implementation</summary><br>
 
-
-### Outlined button example
 
 Source code API:
 
@@ -196,8 +133,11 @@ The following example shows an outlined button with a text label and stroked con
         ...
     />
 ```
+</details>
 
-### Key properties
+### Anatomy and key properties
+
+<details><summary>Expand for anatomy diagram and key outlined button properties</summary>
 
 ![\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>](assets/outlined-button-diagram.png)
 
@@ -207,78 +147,36 @@ The following example shows an outlined button with a text label and stroked con
 * C Icon
 
 
-<details>
-<summary>Text label</summary>
-<p>
-
-Description | Attribute |  Default value | Related method(s)
+Diagram label | Attribute |  Theme value |  Property
 ---|---|---|---
-Text | `android:text` | `null` | `setText`<br/>`getText`
-Color | `android:textColor` | `?attr/colorPrimary` | `setTextColor`<br/>`getTextColor`
-Typography | `android:textAppearance` | `?attr/textAppearanceButton` | `setTextAppearance`
+A | Text color | Primary color | `android:text` 
+A | Typography | Default | `android:textAppearance`
+B | Stroke color | Secondary color, 60% |  `app:strokeColor` 
+C | Icon | N/A | `app:icon` 
+C | Icon color | Primary color | `app:iconTint` 
 
-</p>
-</details>
+We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Text button API doc](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
 
-<details>
-<summary>Container</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Color | `app:backgroundTint` | `@android:color/transparent` | `setBackgroundColor`<br/>`setBackgroundTintList`<br/>`getBackgroundTintList`
-Stroke color | `app:strokeColor` | `?attr/colorOnSurface` at 12% opacity | `setStrokeColor`<br/>`setStrokeColorResource`<br/>`getStrokeColor`
-Stroke width | `app:strokeWidth` | `1dp` | `setStrokeWidth`<br/>`setStrokeWidthResource`<br/>`getStrokeWidth`
-Shape | `app:shapeAppearance` | `?attr/shapeAppearanceSmallComponent` | `setShapeAppearanceModel`<br/>`getShapeAppearanceModel`
-Elevation | `app:elevation` | `0dp` | `setElevation`<br/>`getElevation`
-Ripple color | `app:rippleColor` | `?attr/colorPrimary` at 12% opacity (pressed) | `setRippleColor`<br/>`setRippleColorResource`<br/>`getRippleColor`
-
-</p>
-</details>
-
-<details>
-<summary>Icon</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Icon | `app:icon` | `null` | `setIcon`<br/>`setIconResource`<br/>`getIcon`
-Color | `app:iconTint` | `?attr/colorPrimary` | `setIconTint`<br/>`setIconTintResource`<br/>`getIconTint`
-Size | `app:iconSize` | `wrap_content` | `setIconSize`<br/>`getIconSize`
-Gravity (position relative to text label) | `app:iconGravity` | `start` | `setIconGravity`<br/>`getIconGravity`
-Padding (space between icon and text label) | `app:iconPadding` | `4dp` | `setIconPadding`<br/>`getIconPadding`
-
-</p>
-</details>
-
-<details>
-<summary><b>Themes (Styles)</b></summary>
-<p>
+#### Themes (Styles)
 
 Description | Theme
 ---|---
 Default theme | `Widget.MaterialComponents.Button.OutlinedButton`
 Icon theme (adjusted padding for start-gravity icon) | `Widget.MaterialComponents.Button.OutlinedButton.Icon`
 
-</p>
 </details>
-
-
-For the full list of properties, check out the full API docs.
-
-</details>
-
 
 
 ## Contained button
 
 [Contained buttons](https://material.io/components/buttons/#contained-button) are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
+
+### Contained button example
+
 <details>
 <summary>Expand for more information on contained button implementation</summary><br>
 
-
-### Contained button example
 
 Source code API:
 
@@ -300,12 +198,13 @@ The following example shows a contained button with a text label and a filled co
         ...
     />
 ```
+</details>
 
+### Anatomy and key attributes
 
+<details><summary>Expand for anatomy diagram and key contained button properties</summary>
 
-### Key properties
-
-![\<Placeholder diagram of contained button attribute. Replace this text if/when there is an approved diagram\>](assets/contained-button-diagram.png)
+![\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>](assets/contained-button-diagram.png)
 
 **3. Contained button**
 * A Text label
@@ -313,54 +212,18 @@ The following example shows a contained button with a text label and a filled co
 * C Icon
 
 
-
-<details>
-<summary>Text label</summary>
-<p>
-
-Description | Attribute |  Default value | Related method(s)
+Diagram label | Attribute |  Theme value |  Property
 ---|---|---|---
-Text | `android:text` | `null` | `setText`<br/>`getText`
-Color | `android:textColor` | `?attr/colorOnPrimary` | `setTextColor`<br/>`getTextColor`
-Typography | `android:textAppearance` | `?attr/textAppearanceButton` | `setTextAppearance`
+A | Text color | Secondary color | `android:text` 
+A | Typography | Default | `android:textAppearance`
+B | Fill color | Primary color |  `app:backgroundTint` 
+B | Elevation | Default |`app:elevation`
+C | Icon | N/A | `app:icon` 
+C | Icon color | Secondary color | `app:iconTint` 
 
-</p>
-</details>
+We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [contained button API doc](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
 
-<details>
-<summary>Container</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Color | `app:backgroundTint` | `?attr/colorPrimary` | `setBackgroundColor`<br/>`setBackgroundTintList`<br/>`getBackgroundTintList`
-Stroke color | `app:strokeColor` | `null` | `setStrokeColor`<br/>`setStrokeColorResource`<br/>`getStrokeColor`
-Stroke width | `app:strokeWidth` | `0dp` | `setStrokeWidth`<br/>`setStrokeWidthResource`<br/>`getStrokeWidth`
-Shape | `app:shapeAppearance` | `?attr/shapeAppearanceSmallComponent` | `setShapeAppearanceModel`<br/>`getShapeAppearanceModel`
-Elevation | `app:elevation` | `2dp` | `setElevation`<br/>`getElevation`
-Ripple color | `app:rippleColor` | `?attr/colorOnPrimary` at 24% opacity (pressed) | `setRippleColor`<br/>`setRippleColorResource`<br/>`getRippleColor`
-
-</p>
-</details>
-
-<details>
-<summary>Icon</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Icon | `app:icon` | `null` | `setIcon`<br/>`setIconResource`<br/>`getIcon`
-Color | `app:iconTint` | `?attr/colorOnPrimary` | `setIconTint`<br/>`setIconTintResource`<br/>`getIconTint`
-Size | `app:iconSize` | `wrap_content` | `setIconSize`<br/>`getIconSize`
-Gravity (position relative to text label) | `app:iconGravity` | `start` | `setIconGravity`<br/>`getIconGravity`
-Padding (space between icon and text label) | `app:iconPadding` | `8dp` | `setIconPadding`<br/>`getIconPadding`
-
-</p>
-</details>
-
-<details>
-<summary><b>Themes (Styles)</b></summary>
-<p>
+#### Themes (Styles)
 
 Description | Theme
 ---|---
@@ -373,10 +236,6 @@ Unelevated icon theme (adjusted padding for start-gravity icon) | `Widget.Materi
 </details>
 
 
-
-For the full list of properties, check out the full API docs.
-
-</details>
 
 ## Toggle button
 
@@ -392,10 +251,11 @@ There are two types of toggle buttons:
 
 To emphasize groups of related toggle buttons, a group should share a common container.
 
+#### Toggle button example
+
 <details>
 <summary>Expand for more information on toggle button implementation</summary><br>
 
-#### Toggle button example
 
 Source code APIs:
 
@@ -455,8 +315,12 @@ toggleButton.addOnButtonCheckedListener { toggleButton, checkedId, isChecked ->
 }
 ```
 
+</details>
 
-#### Key properties
+#### Anatomy and key properties
+
+<details><summary>Expand for anatomy diagram and key toggle button properties</summary>
+
 
 ![\<Placeholder diagram of toggle button attribute. Replace this text if/when there is an approved diagram\>](assets/toggle-button-diagram.png)
 
@@ -465,16 +329,10 @@ toggleButton.addOnButtonCheckedListener { toggleButton, checkedId, isChecked ->
 * C Icon
 
 
-<details>
-<summary><p>Themes (Styles)</p></summary>
-<p>
-
-Description | Style
+##### Themes (Styles)Description | Style
 ---|---
 Default theme | `Widget.MaterialComponents.MaterialButtonToggleGroup`
 
-</p>
-</details>
 
 </details>
 
@@ -482,12 +340,13 @@ Default theme | `Widget.MaterialComponents.MaterialButtonToggleGroup`
 
 Icons can be used as toggle buttons when they allow selection, or deselection, of a single choice, such as marking an item as a favorite.
 
-<details>
-<summary>Expand for more information on Icon button implementation</summary><br>
-
 
 
 #### Icon example
+
+<details>
+<summary>Expand for more information on Icon button implementation</summary><br>
+
 
 Source code API:
 
@@ -533,3 +392,17 @@ icon.setOnCheckedChangeListener { checkBox, isChecked ->
 ```
 
 </details>
+
+#### Anatomy and key properties
+
+<details><summary>Expand for anatomy diagram and key icon button properties</summary>
+
+
+
+##### Themes (Styles)Description | Style
+---|---
+Default theme |
+
+
+</details>
+
