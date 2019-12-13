@@ -70,8 +70,6 @@ Start with a concise (1-2 sentence) description of the component type.
 * If possible, copy the exact summary from the design article.
 * Link the first mention of the component type to the appropriate section of the design article.
 
-Hide the component section by default using the `<details>` tag. Label the hidden section with the `<summary>` tag with the summary "Open for an implementation example and key properties table." 
-
 ### \<First component type\> example
 
 <details>
@@ -103,7 +101,7 @@ Include a snippet of source code illustrating the example.
 * Call out the anatomy elements in a sentence.
 
 <details>
-<summary><b>Expand for < component name > anatomy diagram and key properties</b></summary>
+<summary><b>Open for < component name > anatomy diagram and key properties</b></summary>
 
 * Insert the a diagram of the component type's anatomy. Use the anatomy diagram from the https://material.io/components/ site.
 * Add a table of the properties represented by the diagram. Limit the property attributes to six items of the most commonly customized attributes.
