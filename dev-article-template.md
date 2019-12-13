@@ -96,15 +96,17 @@ Include a snippet of source code illustrating the example.
 * Remove boilerplate code that is not necessary to understand the example.
 * Consider highlighting the most important lines of the example.
 
+</details>
 
 ### Anatomy and Key properties
 
 * Call out the anatomy elements in a sentence.
 
 <details>
-<summary><b>Expand for < component name > anatomy diagrami and key properties</b></summary>
+<summary><b>Expand for < component name > anatomy diagram and key properties</b></summary>
 
-* Insert the a diagram of the component type's anatomy. Use the anatomy diagram from the https://material.io/components/ site.* Add a table of the properties represented by the diagram. Limit the property attributes to six items of the most commonly customized attributes.
+* Insert the a diagram of the component type's anatomy. Use the anatomy diagram from the https://material.io/components/ site.
+* Add a table of the properties represented by the diagram. Limit the property attributes to six items of the most commonly customized attributes.
 * Include the following sentence below the table pointing the user to the API doc(s):
     "We recommend using [Material Theming](https://material.io/components/\<component name\>/#theming) to apply your customizations across your application. For a full list of component properties, go to the API docs:"
     * List the links to each API
