@@ -21,7 +21,7 @@ There are four types of buttons:
 3. [Contained button](#contained-button)
 4. [Toggle button](#toggle-button)
 
-![Example of the four button types](images/button-types.svg)
+![Example of the four button types](assets/button-types.svg)
 
 ## Using buttons
 
@@ -31,8 +31,12 @@ Before you can use a button, you will need to install the following:
 * [Add a theme](#add-a-theme)
 * [Import JavaScript effects](import-javascript-effects)
 
-### Install `mcd-button` or `mdc-icon-button`
-Install the `mdc-button` component before including it in your source.
+### Install the Material button component
+
+Install the `mdc-button` or 'mdc-icon-button` component before including it in your source.
+
+
+<details><summary>Expand for installation commands for `mdc-button` or `mdc-icon-button`.</summary>
 
 **`mdc-button`**
 ```bash
@@ -44,8 +48,13 @@ npm install @material/buttons
 npm install @material/icon-button
 ```
 
+</details>
+
 ### Add a theme
+
 Both `mdc-button` and `mdc-icon-button` work with themes (styles). Import a theme into your `*.scss*` stylesheet to apply it to your website, including buttons or toggle icon buttons:
+
+<details><summary>Expand for theming instractions for `mdc-button` or `mdc-icon-button`.</summary>
 
 **mdc-button**
 ```css
@@ -57,8 +66,12 @@ Both `mdc-button` and `mdc-icon-button` work with themes (styles). Import a them
 @import "@material/icon-button/mdc-icon-button";
 ```
 
+</details>
+
 ### Import JavaScript effects
 You can also add a JavaScript ripple effect (see [MDC Ripple](https://github.com/material-components/material-components-web/blob/master/packages/mdc-ripple)) to your buttons by importing and then instantiating `MCDRipple` in your `*.js` file. See the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md) for more information on importing JavaScript.
+
+<details><summary>Expand for instructions to add JavaScript effects</summary>
 
 ```js
 import {MDCRipple} from '@material/ripple';
@@ -72,7 +85,11 @@ const iconButtonRipple = new MDCRipple(document.querySelector(`.mdc-icon-button`
 iconButtonRipple.unbounded = true;
 ```
 
+</details>
+
 ### Add an icon to `mdc-button`
+
+<details><summary>Expand for instructions to add an icon to your `mdc-button`</summary>
 
 Add an icon to your `mdc-button` instance using the following steps:
 
@@ -102,9 +119,13 @@ Add an icon to your `mdc-button` instance using the following steps:
     </button>
     ```
 
+</details>
+
 ### Sass mixins
 
 Use Sass mixins when you want to customize the look and feel of your buttons. Go to [sass-lang.com](https://sass-lang.com/install) for installation instructions.
+
+<details><summary>Expand for instructions to Sass mixins to customize your `mdc-button` or `mdc-icon-button`</summary>
 
 Before using Sass mixins for your project you will need to do the following:
 
@@ -137,7 +158,7 @@ module.exports = {
 }
 ```
 
-<img src="images/web-sass-mixins-example.png" alt="Example button instance rendered for a contained button with an orange fill and green icon color">
+<img src="assets/web-sass-mixins-example.png" alt="Example button instance rendered for a contained button with an orange fill and green icon color">
 
 #### Sass mixins for `mdc-button`
 
@@ -162,78 +183,14 @@ Mixin | Description
 `mdc-icon-button-size($width, $height, $padding)` | Sets the width, height, font-size and padding for the icon and ripple. `$height` is optional and defaults to `$width`. `$padding` is optional and defaults to `max($width, $height)/2`. `font-size` is set to `max($width, $height)`.
 `mdc-icon-button-ink-color($color)` | Sets the font color and the ripple color to the provided color value.
 
+</details>
+
+\<**NOTE** Update the table entries with the appropriate class property. Update the links to appropriate API pages\>
+----
+
 ## Text button
 
 [Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
-### Key properties
-
-![\<Placeholder diagram of text button attribute. Replace this text if/when there is an approved diagram\>](images/text-button-diagram.png)
-
-**1. Text button**
-
-* A. Text label
-* C. Icon
-
-
-\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
-
-
-<details>
-<summary>Text label</summary>
-<p>
-
-Description | Attribute |  Default value | Related method(s)
----|---|---|---
-Text | | |
-Color | |  | 
-Typography |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary>Container</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Color |  |  | 
-Stroke color |  |  | 
-Stroke width |  |  | 
-Shape |  |  | 
-Elevation |  |  | 
-Ripple color |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary>Icon</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Icon | |  | 
-Color |  |  | 
-Size |  |  | 
-Gravity (position relative to text label) |  |  | 
-Padding (space between icon and text label) |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Themes (Styles)</b></summary>
-<p>
-
-Description | Style
----|---
-Default theme | 
-Icon theme | 
-
-</p>
-</details>
-
 
 ### Text button example
 
@@ -243,7 +200,7 @@ Source code API:
     * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
     * [Demo site](https://glitch.com/~shadow-jobaria)
 
-<img src="images/web-text-button.png" alt="Generated text button example">
+<img src="assets/web-text-button.png" alt="Generated text button example">
 
 ```html
  <button class="mdc-button">
@@ -253,7 +210,7 @@ Source code API:
 
 #### Text button with icon example
 
-<img src="images/web-text-icon-button.png" alt="Generated text button with bookmark icon example">
+<img src="assets/web-text-icon-button.png" alt="Generated text button with bookmark icon example">
 
 ```html
 <button class="mdc-button">
@@ -264,79 +221,39 @@ Source code API:
 </button>
 ```
 
-## Outlined button
+#### Anatomy and key properties 
 
-[Outlined buttons](https://material.io/components/buttons/#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
-### Key properties
+<details><summary>Expand for anatomy diagram and key text button properties</summary>
 
-![\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>](images/outlined-button-diagram.png)
+![\<Placeholder diagram of text button attribute. Replace this text if/when there is an approved diagram\>](assets/text-button-diagram.png)
 
-**1. Outlined button**
+**1. Text button**
 
 * A. Text label
-* B. Container
 * C. Icon
 
 
-\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
-
-<details>
-<summary>Text label</summary>
-<p>
-
-Description | Attribute |  Default value | Related method(s)
+Diagram label | Design Attribute |  Theme value |  Property
 ---|---|---|---
-Text | | |
-Color | |  | 
-Typography |  |  | 
+A | Text color | Primary color | 
+A | Typography | Default |
+C | Icon | N/A |  
+C | Icon color | Primary color |  
 
-</p>
-</details>
+We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Text button API doc]()
 
-<details>
-<summary>Container</summary>
-<p>
+#### Themes (Styles)
 
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Color |  |  | 
-Stroke color |  |  | 
-Stroke width |  |  | 
-Shape |  |  | 
-Elevation |  |  | 
-Ripple color |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary>Icon</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Icon | |  | 
-Color |  |  | 
-Size |  |  | 
-Gravity (position relative to text label) |  |  | 
-Padding (space between icon and text label) |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Themes (Styles)</b></summary>
-<p>
-
-Description | Style
+Description | Theme
 ---|---
 Default theme | 
 Icon theme | 
 
-</p>
 </details>
 
+## Outlined button
 
+[Outlined buttons](https://material.io/components/buttons/#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
 ### Outlined button example
 
@@ -346,7 +263,7 @@ Source code API:
     * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
     * [Demo site](https://glitch.com/~shadow-jobaria):
     
-<img src="images/web-outlined-button.png" alt="Generated outlined button example">
+<img src="assets/web-outlined-button.png" alt="Generated outlined button example">
 
 ```html
 <button class="mdc-button--outlined">
@@ -362,7 +279,7 @@ Source code API:
     * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
     * [Demo site](https://glitch.com/~shadow-jobaria)
 
-<img src="images/web-outlined-icon-button.png" alt="Generated outlined button example">
+<img src="assets/web-outlined-icon-button.png" alt="Generated outlined button example">
 
 ```html
 <button class="mdc-button mdc-button--outlined">
@@ -370,80 +287,43 @@ Source code API:
     <span class="mdc-button__label">Outlined Button plus Icon</span>
 </button>
 ```
+### Anatomy and key properties
+
+An outline button has text, a container, and an optional icon.
+
+<details><summary>Expand for anatomy diagram and key outlined button properties</summary>
+
+![\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>](assets/outlined-button-diagram.png)
+
+**2. Outlined button**
+* A Text label
+* B Container
+* C Icon
+
+
+Diagram label | Design Attribute |  Theme value |  Property
+---|---|---|---
+A | Text color | Primary color |  
+A | Typography | Default | 
+B | Stroke color | Secondary color, 60% |   
+C | Icon | N/A | 
+C | Icon color | Primary color |  
+
+We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Outlined button API doc]()
+
+#### Themes (Styles)
+
+Description | Theme
+---|---
+Default theme | `Widget.MaterialComponents.Button.OutlinedButton`
+Icon theme (adjusted padding for start-gravity icon) | `Widget.MaterialComponents.Button.OutlinedButton.Icon`
+
+</details>
+
 
 ## Contained button
 
 [Contained buttons](https://material.io/components/buttons/#contained-button) are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
-### Key properties
-
-![\<Placeholder diagram of contained button attribute. Replace this text if/when there is an approved diagram\>](images/contained-button-diagram.png)
-
-**1. Contained button**
-
-* A. Text label
-* B. Container
-* C. Icon
-
-
-\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
-
-<details>
-<summary>Text label</summary>
-<p>
-
-Description | Attribute |  Default value | Related method(s)
----|---|---|---
-Text | | |
-Color | |  | 
-Typography |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary>Container</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Color |  |  | 
-Stroke color |  |  | 
-Stroke width |  |  | 
-Shape |  |  | 
-Elevation |  |  | 
-Ripple color |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary>Icon</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Icon | |  | 
-Color |  |  | 
-Size |  |  | 
-Gravity (position relative to text label) |  |  | 
-Padding (space between icon and text label) |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Themes (Styles)</b></summary>
-<p>
-
-Description | Style
----|---
-Default theme | 
-Icon theme | 
-
-</p>
-</details>
-
-
 
 #### Contained button example
 
@@ -454,7 +334,7 @@ Source code API:
     * [Demo site](https://glitch.com/~shadow-jobaria)
 
 
-<img src="images/web-contained-button.png" alt="Generated contained button example">
+<img src="assets/web-contained-button.png" alt="Generated contained button example">
 
 ```html
 <button class="mdc-button--elevated">
@@ -470,7 +350,7 @@ Source code API:
     * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
     * [Demo site](https://glitch.com/~shadow-jobaria)
 
-<img src="images/web-contained-icon-button.png" alt="Generated contained button example with a bookmark icon">
+<img src="assets/web-contained-icon-button.png" alt="Generated contained button example with a bookmark icon">
 
 ```html
 <button class="mdc-button mdc-button--raised">
@@ -480,6 +360,41 @@ Source code API:
   <span class="mdc-button__label">Contained Button plus Icon</span>
 </button>
 ```
+### Anatomy and key attributes
+
+A contained button has text, a container, and an optional icon.
+
+<details><summary>Expand for anatomy diagram and key contained button properties</summary>
+
+![\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>](assets/contained-button-diagram.png)
+
+**3. Contained button**
+* A Text label
+* B Container
+* C Icon
+
+
+Diagram label | Design Attribute |  Theme value |  Property
+---|---|---|---
+A | Text color | Secondary color |  
+A | Typography | Default | 
+B | Fill color | Primary color |   
+B | Elevation | Default |
+C | Icon | N/A |  
+C | Icon color | Secondary color | ` 
+
+We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [contained button API doc]()
+
+#### Themes (Styles)
+
+Description | Theme
+---|---
+Default theme | 
+Icon theme (adjusted padding for start-gravity icon) | 
+Unelevated theme | 
+Unelevated icon theme (adjusted padding for start-gravity icon) | 
+
+</details>
 
 ## Toggle button
 
@@ -503,62 +418,6 @@ If your application needs a toggle button group, you will need to use a differen
 
 Icons can be used as toggle buttons when they allow selection, or deselection, of a single choice, such as marking an item as a favorite.
 
-<details>
-<summary>Text label</summary>
-<p>
-
-Description | Attribute |  Default value | Related method(s)
----|---|---|---
-Text | | |
-Color | |  | 
-Typography |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary>Container</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Color |  |  | 
-Stroke color |  |  | 
-Stroke width |  |  | 
-Shape |  |  | 
-Elevation |  |  | 
-Ripple color |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary>Icon</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Icon | |  | 
-Color |  |  | 
-Size |  |  | 
-Gravity (position relative to text label) |  |  | 
-Padding (space between icon and text label) |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Themes (Styles)</b></summary>
-<p>
-
-Description | Style
----|---
-Default theme | 
-Icon theme | 
-
-</p>
-</details>
-
 
 #### Toggle icon bar example with background images
 
@@ -568,7 +427,7 @@ Source code API:
     * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-icon-button)
     * [Demo site](https://glitch.com/~shadow-jobaria)
 
-<img src="images/web-toggle-icon-button.png" alt="4 images arranged in a 2 by 2 array, each image with a favorite icon in the upper-right corner">
+<img src="assets/web-toggle-icon-button.png" alt="4 images arranged in a 2 by 2 array, each image with a favorite icon in the upper-right corner">
 To generate the example with background images of your choosing, you will need to do the following:
 
 * In your `*.scss` file:
@@ -656,3 +515,31 @@ To generate the example with background images of your choosing, you will need t
           ...
         </div>
     ```
+
+
+#### Anatomy and key properties
+
+The icon button consists of two icons for 'on' and 'off'.
+
+<details><summary>Expand for anatomy diagram and key icon button properties</summary>
+
+**Icon button**
+* C Icon
+
+
+Diagram label | Design Attribute |  Theme value |  Property
+---|---|---|---
+C | Icon | N/A | 
+C | Icon color | Secondary color |  
+
+We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Icon button API doc]()
+
+##### Themes (Styles)
+
+Description | Style
+---|---
+Default theme |
+
+
+</details>
+
