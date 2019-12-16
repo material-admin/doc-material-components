@@ -28,6 +28,8 @@ There are four types of buttons:
 
 ### Install `MDCButtons`
 
+<details><summary>Expand for installation instructions for `MDCButtons`</summary>
+
 Before using the `MDCButtons` API to implement its types you must install `MCDButtons`. In your source files import the component, and then apply your theme:
 1. Install `MDCButtons`
    * Use CocoaPods to install `MDCButtons`
@@ -72,77 +74,15 @@ Before using the `MDCButtons` API to implement its types you must install `MCDBu
     button.accessibilityLabel = "Create"
     ```
     
+
+</details>
+
+\<**NOTE** Update table values and links to appropriate API documents\>
+-----
+
 ## Text button
 
 [Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
-### Key properties
-
-![\<Placeholder diagram of text button attribute. Replace this text if/when there is an approved diagram\>](assets/text-button-diagram.png)
-
-**1. Text button**
-
-* A. Text label
-* C. Icon
-
-
-\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
-
-<details>
-<summary>Text label</summary>
-<p>
-
-Description | Attribute |  Default value | Related method(s)
----|---|---|---
-Text | | |
-Color | |  | 
-Typography |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary>Container</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Color |  |  | 
-Stroke color |  |  | 
-Stroke width |  |  | 
-Shape |  |  | 
-Elevation |  |  | 
-Ripple color |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary>Icon</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Icon | |  | 
-Color |  |  | 
-Size |  |  | 
-Gravity (position relative to text label) |  |  | 
-Padding (space between icon and text label) |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Themes (Styles)/b></summary>
-<p>
-
-Description | Theme
----|---
-Default theme | 
-Icon theme | 
-
-</p>
-</details>
-
 
 
 ### Text button example
@@ -179,79 +119,42 @@ MDCContainerScheme *containerScheme = [[MDCContainerScheme alloc] init];
 MDCButton *button = [[MDCButton alloc] init];
 [button applyTextThemeWithScheme:containerScheme];
 ```
+### Anatomy and key properties
 
+A text button has text and an optional icon.
 
-## Outlined button
+<details><summary>Expand for anatomy diagram and key text button properties</summary>
 
-[Outlined buttons](https://material.io/components/buttons/#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
-### Key properties
+![\<Placeholder diagram of text button attribute. Replace this text if/when there is an approved diagram\>](assets/text-button-diagram.png)
 
-![\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>](assets/outlined-button-diagram.png)
-
-**1. Outlined button**
+**1. Text button**
 
 * A. Text label
-* B. Container
 * C. Icon
 
 
-\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
-
-<details>
-<summary>Text label</summary>
-<p>
-
-Description | Attribute |  Default value | Related method(s)
+Diagram label | Design Attribute |  Theme value |  Property
 ---|---|---|---
-Text | | |
-Color | |  | 
-Typography |  |  | 
+A | Text color | Primary color |  
+A | Typography | Default | 
+C | Icon | N/A |  
+C | Icon color | Primary color |  
 
-</p>
-</details>
+We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Text button API doc](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
 
-<details>
-<summary>Container</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Color |  |  | 
-Stroke color |  |  | 
-Stroke width |  |  | 
-Shape |  |  | 
-Elevation |  |  | 
-Ripple color |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary>Icon</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Icon | |  | 
-Color |  |  | 
-Size |  |  | 
-Gravity (position relative to text label) |  |  | 
-Padding (space between icon and text label) |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Themes (Styles)</b></summary>
-<p>
+#### Themes (Styles)
 
 Description | Theme
 ---|---
 Default theme | 
 Icon theme | 
 
-</p>
 </details>
+
+
+## Outlined button
+
+[Outlined buttons](https://material.io/components/buttons/#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
 ### Outlined button example without container schemes
 
@@ -318,79 +221,42 @@ button.applyTextTheme(withScheme: containerScheme)
 MDCButton *button = [[MDCButton alloc] init];
 [self.button applyTextThemeWithScheme:self.containerScheme];
 ```
+### Anatomy and key properties
+
+An outline button has text, a container, and an optional icon.
+
+<details><summary>Expand for anatomy diagram and key outlined button properties</summary>
+
+![\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>](assets/outlined-button-diagram.png)
+
+**2. Outlined button**
+* A Text label
+* B Container
+* C Icon
+
+
+Diagram label | Design Attribute |  Theme value |  Property
+---|---|---|---
+A | Text color | Primary color |  
+A | Typography | Default | 
+B | Stroke color | Secondary color, 60% |   
+C | Icon | N/A |  
+C | Icon color | Primary color |  
+
+We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Text button API doc](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html).
+
+#### Themes (Styles)
+
+Description | Theme
+---|---
+Default theme | `Widget.MaterialComponents.Button.OutlinedButton`
+Icon theme (adjusted padding for start-gravity icon) | `Widget.MaterialComponents.Button.OutlinedButton.Icon`
+
+</details>
 
 ## Contained button
 
 [Contained buttons](https://material.io/components/buttons/#contained-button) are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
-### Key properties
-
-![\<Placeholder diagram of contained button attribute. Replace this text if/when there is an approved diagram\>](assets/contained-button-diagram.png)
-
-**1. Contained button**
-
-* A. Text label
-* B. Container
-* C. Icon
-
-
-\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
-
-<details>
-<summary>Text label</summary>
-<p>
-
-Description | Attribute |  Default value | Related method(s)
----|---|---|---
-Text | | |
-Color | |  | 
-Typography |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary>Container</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Color |  |  | 
-Stroke color |  |  | 
-Stroke width |  |  | 
-Shape |  |  | 
-Elevation |  |  | 
-Ripple color |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary>Icon</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Icon | |  | 
-Color |  |  | 
-Size |  |  | 
-Gravity (position relative to text label) |  |  | 
-Padding (space between icon and text label) |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Themes (Styles)</b></summary>
-<p>
-
-Description | Theme
----|---
-Default theme | 
-Icon theme | 
-
-</p>
-</details>
-
 
 ### Contained button example
 
@@ -404,6 +270,62 @@ Source Code APIs:
 The following example shows a contained button with a text label and a filled container.
 
 !["Contained button example for Android with the white text 'Text' on a purple background."](assets/contained-button.svg)
+
+**Swift**
+```swift
+import MaterialComponents.MaterialButtons
+import MaterialComponents.MaterialButtons_Theming
+
+let button = MDCButton()
+button.applyContainedTheme(withScheme: containerScheme)
+```
+**Objective-C**
+```objc
+#import <MaterialComponents/MaterialButtons.h>
+#import <MaterialComponentsBeta/MaterialButtons+Theming.h>
+
+MDCButton *button = [[MDCButton alloc] init];
+[self.button applyContainedThemeWithScheme:self.containerScheme];
+```
+
+
+### Anatomy and key attributes
+
+A contained button has text, a container, and an optional icon.
+
+<details><summary>Expand for anatomy diagram and key contained button properties</summary>
+
+![\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>](assets/contained-button-diagram.png)
+
+**3. Contained button**
+* A Text label
+* B Container
+* C Icon
+
+
+Diagram label | Design Attribute |  Theme value |  Property
+---|---|---|---
+A | Text color | Secondary color |
+A | Typography | Default |
+B | Fill color | Primary color | 
+B | Elevation | Default |
+C | Icon | N/A | 
+C | Icon color | Secondary color |  
+
+We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [contained button API doc](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
+
+#### Themes (Styles)
+
+Description | Theme
+---|---
+Default theme | 
+Icon theme (adjusted padding for start-gravity icon) | 
+Unelevated theme | 
+Unelevated icon theme (adjusted padding for start-gravity icon) | 
+
+</p>
+</details>
+
 
 ## Toggle button
 
@@ -423,62 +345,6 @@ The Material toggle bar is not supported in iOS.
 ### Icon
 
 Icons can be used as toggle buttons when they allow selection, or deselection, of a single choice, such as marking an item as a favorite.
-
-<details>
-<summary>Text label</summary>
-<p>
-
-Description | Attribute |  Default value | Related method(s)
----|---|---|---
-Text | | |
-Color | |  | 
-Typography |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary>Container</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Color |  |  | 
-Stroke color |  |  | 
-Stroke width |  |  | 
-Shape |  |  | 
-Elevation |  |  | 
-Ripple color |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary>Icon</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Icon | |  | 
-Color |  |  | 
-Size |  |  | 
-Gravity (position relative to text label) |  |  | 
-Padding (space between icon and text label) |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Themes (Styles)</b></summary>
-<p>
-
-Description | Theme
----|---
-Default theme | 
-Icon theme | 
-
-</p>
-</details>
 
 
 #### Icon example
@@ -727,3 +593,30 @@ extension ToggleButtonCollectionViewController {
   }
 }
 ```
+
+#### Anatomy and key properties
+
+The icon button consists of two icons for 'on' and 'off'.
+
+<details><summary>Expand for anatomy diagram and key icon button properties</summary>
+
+**Icon button**
+* C Icon
+
+
+Diagram label | Design Attribute |  Theme value |  Property
+---|---|---|---
+C | Icon | N/A | 
+C | Icon color | Secondary color |  
+
+We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Icon button API doc]()
+
+##### Themes (Styles)
+
+Description | Style
+---|---
+Default theme |
+
+
+</details>
+
