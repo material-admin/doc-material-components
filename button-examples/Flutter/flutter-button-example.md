@@ -22,82 +22,30 @@ There are four types of buttons:
 1. [Contained button](#contained-button)
 1. [Toggle button](#toggle-button)
 
-![Example of the four button types](images/button-types.svg)
+![Example of the four button types](assets/button-types.svg)
+
+## Using buttons
+
+<!-- Update your IDE and your Material Components library to the latest version if you are using Material Components for the first time. -->
+
+Before you can use Material buttons, you need to import the Material Components package for Flutter: `package:flutter/material.dart`
+
+For more information on getting started with the Material for Flutter, go to the Flutter [Material library](https://api.flutter.dev/flutter/material/material-library.html) page.
+
+### Making buttons accessible
+
+Flutter's APIs support accessibility setting for large fonts, screen readers, and sufficient contrast. For more information, go to Flutter's [accessibility](https://flutter.dev/docs/development/accessibility-and-localization/accessibility) and [internationalization](https://flutter.dev/docs/development/accessibility-and-localization/internationalization) pages.
+
+Flutter's button component also supports component labeling...\<developers need to insert information on label setting\>
+
+For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
 
+\<**NOTE** Confirm that the default color theme aligns with the default Material theme of purple (0xFF6200EE) and white \>
 
 ## Text button
 
 [Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
-
-### Key properties
-
-![\<Placeholder diagram of text button attribute. Replace this text if/when there is an approved diagram\>](images/text-button-diagram.png)
-
-**1. Text button**
-
-* A. Text label
-* C. Icon
-
-
-\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
-
-<details>
-<summary>Text label</summary>
-<p>
-
-Description | Attribute |  Default value | Related method(s)
----|---|---|---
-Text | | |
-Color | |  | 
-Typography |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary>Container</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Color |  |  | 
-Stroke color |  |  | 
-Stroke width |  |  | 
-Shape |  |  | 
-Elevation |  |  | 
-Ripple color |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary>Icon</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Icon | |  | 
-Color |  |  | 
-Size |  |  | 
-Gravity (position relative to text label) |  |  | 
-Padding (space between icon and text label) |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Themes (Styles)</b></summary>
-<p>
-
-Description | Theme
----|---
-Default theme | 
-Icon theme | 
-
-</p>
-</details>
-
 
 ### Text button example
 
@@ -108,7 +56,7 @@ Source code API:
 
 The following example shows a text button with purple text.
 
-!["Example of a text button with a title of 'Text Button'."](images/text-button.svg)
+!["Example of a text button with a title of 'Text Button'."](assets/text-button.svg)
 
 ```dart
 FlatButton(
@@ -122,77 +70,43 @@ FlatButton(
 )
 ```
 
-## Outlined button
+### Anatomy and key properties
 
-[Outlined buttons](https://material.io/components/buttons/#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
+A text button has text and an optional icon.
 
-### Key properties
+<details><summary>Expand for anatomy diagram and key text button properties</summary>
 
-![\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>](images/outlined-button-diagram.png)
 
-**1. Outlined button**
+![\<Placeholder diagram of text button attribute. Replace this text if/when there is an approved diagram\>](assets/text-button-diagram.png)
+
+**1. Text button**
 
 * A. Text label
-* B. Container
 * C. Icon
 
-\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
 
-<details>
-<summary>Text label</summary>
-<p>
-
-Description | Attribute |  Default value | Related method(s)
+Diagram label | Design Attribute |  Theme value |  Property
 ---|---|---|---
-Text | | |
-Color | |  | 
-Typography |  |  | 
+A | Text color | Primary color | 
+A | Typography | Default | 
+C | Icon | N/A |  
+C | Icon color | Primary color |  
 
-</p>
-</details>
+We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Outlined button API doc](https://api.flutter.dev/flutter/material/FlatButton-class.html)
 
-<details>
-<summary>Container</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Color |  |  | 
-Stroke color |  |  | 
-Stroke width |  |  | 
-Shape |  |  | 
-Elevation |  |  | 
-Ripple color |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary>Icon</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Icon | |  | 
-Color |  |  | 
-Size |  |  | 
-Gravity (position relative to text label) |  |  | 
-Padding (space between icon and text label) |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Themes (Styles)</b></summary>
-<p>
+#### Themes (Styles)
 
 Description | Theme
 ---|---
 Default theme | 
-Icon theme | 
+Icon theme (adjusted padding for start-gravity icon) | 
 
-</p>
 </details>
+
+
+## Outlined button
+
+[Outlined buttons](https://material.io/components/buttons/#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
 ### Outlined button example
 
@@ -202,7 +116,7 @@ Source code API:
     * [Class definition](https://api.flutter.dev/flutter/material/OutlineButton-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/outline_button.dart)
 
-!["Example of an outlined button with a title of 'Outlined Button'."](images/outlined-button.svg)
+!["Example of an outlined button with a title of 'Outlined Button'."](assets/outlined-button.svg)
 
 ```dart
 OutlineButton(
@@ -218,80 +132,45 @@ OutlineButton(
 }
 ```
 
+### Anatomy and key properties
+
+An outline button has text, a container, and an optional icon.
+
+<details><summary>Expand for anatomy diagram and key outlined button properties</summary>
+
+![\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>](assets/outlined-button-diagram.png)
+
+**2. Outlined button**
+* A Text label
+* B Container
+* C Icon
+
+
+Diagram label | Design Attribute |  Theme value |  Property
+---|---|---|---
+A | Text color | Primary color |  
+A | Typography | Default | 
+B | Stroke color | Secondary color, 60% |   
+C | Icon | N/A | 
+C | Icon color | Primary color |  
+
+We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Outlined button API doc](https://api.flutter.dev/flutter/material/OutlineButton-class.html)
+
+#### Themes (Styles)
+
+Description | Theme
+---|---
+Default theme | 
+Icon theme (adjusted padding for start-gravity icon) | 
+
+</details>
+
 
 ## Contained button
 
 [Contained buttons](https://material.io/components/buttons/#contained-button) are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 ntained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
-### Key properties
-
-![\<Placeholder diagram of contained button attribute. Replace this text if/when there is an approved diagram\>](images/contained-button-diagram.png)
-
-**1. Contained button**
-
-* A. Text label
-* B. Container
-* C. Icon
-
-\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
-
-
-<details>
-<summary>Text label</summary>
-<p>
-
-Description | Attribute |  Default value | Related method(s)
----|---|---|---
-Text | | |
-Color | |  | 
-Typography |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary>Container</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Color |  |  | 
-Stroke color |  |  | 
-Stroke width |  |  | 
-Shape |  |  | 
-Elevation |  |  | 
-Ripple color |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary>Icon</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Icon | |  | 
-Color |  |  | 
-Size |  |  | 
-Gravity (position relative to text label) |  |  | 
-Padding (space between icon and text label) |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Themes (Styles)</b></summary>
-<p>
-
-Description | Theme
----|---
-Default theme | 
-Icon theme | 
-
-</p>
-</details>
 
 ### Contained button example
 
@@ -303,7 +182,7 @@ Source code API
 
 The following examples show a contained button. Color schemes are typically determined by your theme.
 
-!["Example of a contained button with a title of 'Contained Button'."](images/contained-button.svg)
+!["Example of a contained button with a title of 'Contained Button'."](assets/contained-button.svg)
 
 
 ```dart
@@ -321,6 +200,43 @@ RaisedButton(
 
 ```
 
+### Anatomy and key attributes
+
+A contained button has text, a container, and an optional icon.
+
+<details><summary>Expand for anatomy diagram and key contained button properties</summary>
+
+![\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>](assets/contained-button-diagram.png)
+
+**3. Contained button**
+* A Text label
+* B Container
+* C Icon
+
+
+Diagram label | Design Attribute |  Theme value |  Property
+---|---|---|---
+A | Text color | Secondary color | 
+A | Typography | Default | 
+B | Fill color | Primary color |   
+B | Elevation | Default |
+C | Icon | N/A | 
+C | Icon color | Secondary color |  
+
+We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [contained button API doc](https://api.flutter.dev/flutter/material/RaisedButton-class.html)
+
+#### Themes (Styles)
+
+Description | Theme
+---|---
+Default theme |
+Icon theme (adjusted padding for start-gravity icon) |
+Unelevated theme | 
+Unelevated icon theme (adjusted padding for start-gravity icon) | 
+
+</p>
+</details>
+
 ## Toggle button
 
 [Toggle buttons](https://material.io/components/buttons/#toggle-button) can be used to select from a group of choices.
@@ -332,76 +248,6 @@ The toggle button can be separated into two types:
 ### Toggle bar
 
 The toggle bar allows you to select from a group of buttons that can be set to [selective action](https://material.io/components/buttons/#toggle-button) where only one button in a group can be selected at one time.
-
-####  Key properties
-
-![\<Placeholder diagram of toggle button attribute. Replace this text if/when there is an approved diagram\>](images/toggle-button-diagram.png)
-
-**1. Toggle button**
-
-* A. Text label
-* C. Icon
-
-
-\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
-
-<details>
-<summary>Text label</summary>
-<p>
-
-Description | Attribute |  Default value | Related method(s)
----|---|---|---
-Text | | |
-Color | |  | 
-Typography |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary>Container</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Color |  |  | 
-Stroke color |  |  | 
-Stroke width |  |  | 
-Shape |  |  | 
-Elevation |  |  | 
-Ripple color |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary>Icon</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Icon | |  | 
-Color |  |  | 
-Size |  |  | 
-Gravity (position relative to text label) |  |  | 
-Padding (space between icon and text label) |  |  | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Themes (Styles)</b></summary>
-<p>
-
-Description | Theme
----|---
-Default theme | 
-Icon theme | 
-
-</p>
-</details>
-
-
 
 #### Toggle bar with three icons example
 
@@ -420,7 +266,7 @@ Source code APIs:
 
 The following example displays 3 `IconButton`s in a widget. The `onOressed` toggles the `isSelected` boolean:
 
-!["Example of a set of toggle buttons with three icons: favorites, remove red eye, and notifications."](images/toggle-buttons.svg)
+!["Example of a set of toggle buttons with three icons: favorites, remove red eye, and notifications."](assets/toggle-buttons.svg)
 
 ```dart
 List<bool> isSelected = List<bool>.filled(3, false);
@@ -439,6 +285,38 @@ ToggleButtons(
   isSelected: isSelected,
 )
 ```
+#### Anatomy and key properties
+
+A toggle button has a text label <!-- seems like this may be a typo, and it's a container in most implementations --> an an icon.
+
+<details><summary>Expand for anatomy diagram and key toggle button properties</summary>
+
+
+![\<Placeholder diagram of toggle button attribute. Replace this text if/when there is an approved diagram\>](assets/toggle-button-diagram.png)
+
+**4. Toggle button**
+* A Text label
+* C Icon
+
+
+Diagram label | Design Attribute |  Theme value |  Property
+---|---|---|---
+A | Text color | Secondary color | 
+A | Typography | Default | 
+C | Icon | N/A | 
+C | Icon color | Secondary color |  
+
+We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Toggle button API doc](https://api.flutter.dev/flutter/material/ToggleButtons-class.html)
+
+
+##### Themes (Styles)
+
+Description | Style
+---|---
+Default theme | 
+
+
+</details>
 
 ### Toggle icon button
 
@@ -477,7 +355,7 @@ The photos and icon buttons are contained within instances of `GridDemoPhotoItem
 
 The `ToggleIconDemoState` class contains the the list of photos that become the backgrounds to the `GridDemoPhotoItem` tiles.
 
-!["Screenshot showing four images arranged in a two-by-two array, each with a heart icon in the upper-left corner"](images/toggle_icon_screenshot_cropped.png)
+!["Screenshot showing four images arranged in a two-by-two array, each with a heart icon in the upper-left corner"](assets/toggle_icon_screenshot_cropped.png)
 
 ```dart
 import 'package:flutter/material.dart';
@@ -613,3 +491,31 @@ class ToggleIconDemoState extends State<ToggleIconDemo> {
   }
 }
  ```
+#### Anatomy and key properties
+
+The icon button consists of two icons for 'on' and 'off'.
+
+<details><summary>Expand for anatomy diagram and key icon button properties</summary>
+
+
+**Icon button**
+* C Icon
+
+
+Diagram label | Design Attribute |  Theme value |  Property
+---|---|---|---
+C | Icon | N/A | 
+C | Icon color | Secondary color |  
+
+We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Icon button API doc](https://api.flutter.dev/flutter/material/IconButton-class.html)
+
+
+##### Themes (Styles)
+
+Description | Style
+---|---
+Default theme |
+
+
+</details>
+
