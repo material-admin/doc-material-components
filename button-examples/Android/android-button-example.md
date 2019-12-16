@@ -44,9 +44,6 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 
 ### Text button example
 
-<details>
-<summary>Expand for more information on text button implementation</summary><br>
-
 Source code API:
 
 * `MaterialButton`
@@ -68,7 +65,6 @@ The following example shows a text button with a text label.
     />
 ```
 
-</details>
 
 ### Anatomy and key properties
 
@@ -111,10 +107,6 @@ Icon theme | `Widget.MaterialComponents.Button.TextButton.Icon`
 
 ### Outlined button example
 
-<details>
-<summary>Expand for more information on outlined button implementation</summary><br>
-
-
 Source code API:
 
 * `MaterialButton`
@@ -135,7 +127,6 @@ The following example shows an outlined button with a text label and stroked con
         ...
     />
 ```
-</details>
 
 ### Anatomy and key properties
 
@@ -178,9 +169,6 @@ Icon theme (adjusted padding for start-gravity icon) | `Widget.MaterialComponent
 
 ### Contained button example
 
-<details>
-<summary>Expand for more information on contained button implementation</summary><br>
-
 
 Source code API:
 
@@ -202,7 +190,7 @@ The following example shows a contained button with a text label and a filled co
         ...
     />
 ```
-</details>
+
 
 ### Anatomy and key attributes
 
@@ -258,9 +246,6 @@ There are two types of toggle buttons:
 To emphasize groups of related toggle buttons, a group should share a common container.
 
 #### Toggle button example
-
-<details>
-<summary>Expand for more information on toggle button implementation</summary><br>
 
 
 Source code APIs:
@@ -321,7 +306,6 @@ toggleButton.addOnButtonCheckedListener { toggleButton, checkedId, isChecked ->
 }
 ```
 
-</details>
 
 #### Anatomy and key properties
 
@@ -353,9 +337,6 @@ Icons can be used as toggle buttons when they allow selection, or deselection, o
 
 
 #### Icon example
-
-<details>
-<summary>Expand for more information on Icon button implementation</summary><br>
 
 
 Source code API:
@@ -401,7 +382,6 @@ icon.setOnCheckedChangeListener { checkBox, isChecked ->
 }
 ```
 
-</details>
 
 #### Anatomy and key properties
 
