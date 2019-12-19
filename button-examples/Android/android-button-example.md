@@ -89,11 +89,7 @@ A text button has a text label, a transparent container and an optional icon.
 </details>
 
 <details>
-<summary><b>Attributes</b></summary>
-<br>
-
-<details>
-<summary>Text label</summary>
+<summary><b>Text label</b> attributes</summary>
 <br>
 
 |  | Attribute | Related method(s) | Default value |
@@ -105,7 +101,7 @@ A text button has a text label, a transparent container and an optional icon.
 </details>
 
 <details>
-<summary>Container</summary>
+<summary><b>Container</b> attributes</summary>
 <br>
 
 |  | Attribute | Related method(s) | Default value |
@@ -120,7 +116,7 @@ A text button has a text label, a transparent container and an optional icon.
 </details>
 
 <details>
-<summary>Icon</summary>
+<summary><b>Icon</b> attributes</summary>
 <br>
 
 |  | Attribute | Related method(s) | Default value |
@@ -133,10 +129,6 @@ A text button has a text label, a transparent container and an optional icon.
 
 </details>
 
-See the full list of [attrs](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
-
-</details>
-
 <details>
 <summary><b>Styles</b></summary>
 <br>
@@ -146,9 +138,9 @@ See the full list of [attrs](https://github.com/material-components/material-com
 | **Default style** | `Widget.MaterialComponents.Button.TextButton` |
 | **Icon style** | `Widget.MaterialComponents.Button.TextButton.Icon` |
 
-See the full list of [styles](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/styles.xml).
-
 Default style theme attribute: N/A
+
+See the full list of [styles](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/styles.xml) and [attrs](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
 
 </details>
 
@@ -214,11 +206,7 @@ An outlined button has a text label, a stroked container and an optional icon.
 </details>
 
 <details>
-<summary><b>Attributes</b></summary>
-<br>
-
-<details>
-<summary>Text label</summary>
+<summary><b>Text label</b> attributes</summary>
 <br>
 
 |  | Attribute | Related method(s) | Default value |
@@ -230,7 +218,7 @@ An outlined button has a text label, a stroked container and an optional icon.
 </details>
 
 <details>
-<summary>Container</summary>
+<summary><b>Container</b> attributes</summary>
 <br>
 
 |  | Attribute | Related method(s) | Default value |
@@ -245,7 +233,7 @@ An outlined button has a text label, a stroked container and an optional icon.
 </details>
 
 <details>
-<summary>Icon</summary>
+<summary><b>Icon</b> attributes</summary>
 <br>
 
 |  | Attribute | Related method(s) | Default value |
@@ -258,10 +246,6 @@ An outlined button has a text label, a stroked container and an optional icon.
 
 </details>
 
-See the full list of [attrs](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
-
-</details>
-
 <details>
 <summary><b>Styles</b></summary>
 <br>
@@ -271,9 +255,9 @@ See the full list of [attrs](https://github.com/material-components/material-com
 | **Default style** | `Widget.MaterialComponents.Button.OutlinedButton` |
 | **Icon style** | `Widget.MaterialComponents.Button.OutlinedButton.Icon` |
 
-See the full list of [styles](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/styles.xml).
-
 Default style theme attribute: `?attr/materialButtonOutlinedStyle`
+
+See the full list of [styles](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/styles.xml) and [attrs](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
 
 </details>
 
@@ -338,11 +322,7 @@ A contained button has a text label, a filled container and an optional icon.
 </details>
 
 <details>
-<summary><b>Attributes</b></summary>
-<br>
-
-<details>
-<summary>Text label</summary>
+<summary><b>Text label</b> attributes</summary>
 <br>
 
 |  | Attribute | Related method(s) | Default value |
@@ -354,7 +334,7 @@ A contained button has a text label, a filled container and an optional icon.
 </details>
 
 <details>
-<summary>Container</summary>
+<summary><b>Container</b> attributes</summary>
 <br>
 
 |  | Attribute | Related method(s) | Default value |
@@ -369,7 +349,7 @@ A contained button has a text label, a filled container and an optional icon.
 </details>
 
 <details>
-<summary>Icon</summary>
+<summary><b>Icon</b> attributes</summary>
 <br>
 
 |  | Attribute | Related method(s) | Default value |
@@ -379,10 +359,6 @@ A contained button has a text label, a filled container and an optional icon.
 | **Size** | `app:iconSize` | `setIconSize`<br/>`getIconSize` | `wrap_content` |
 | **Gravity** (position relative to text label) | `app:iconGravity` | `setIconGravity`<br/>`getIconGravity` | `start` |
 | **Padding** (space between icon and text label) | `app:iconPadding` | `setIconPadding`<br/>`getIconPadding` | `4dp` |
-
-</details>
-
-See the full list of [attrs](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
 
 </details>
 
@@ -397,9 +373,9 @@ See the full list of [attrs](https://github.com/material-components/material-com
 | **Unelevated style** | `Widget.MaterialComponents.Button.UnelevatedButton` |
 | **Unelevated icon style** | `Widget.MaterialComponents.Button.UnelevatedButton.Icon` |
 
-See the full list of [styles](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/styles.xml).
-
 Default style theme attribute: `?attr/materialButtonStyle`
+
+See the full list of [styles](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/styles.xml) and [attrs](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
 
 </details>
 
@@ -520,21 +496,13 @@ A toggle button has a shared stroked container, icons and/or text labels.
 </details>
 
 <details>
-<summary><b>Attributes</b></summary>
-<br>
-
-<details>
-<summary>Selection</summary>
+<summary><b>Selection</b> attributes</summary>
 <br>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
 | **Single selection** | `app:singleSelection` | `setSingleSelection`<br/>`isSingleSelection` | `false` |
 | **Selection required** | `app:selectionRequired` | `setSelectionRequired`<br/>`isSelectionRequired` | `false` |
-
-</details>
-
-See the full list of [attrs](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
 
 </details>
 
@@ -546,9 +514,9 @@ See the full list of [attrs](https://github.com/material-components/material-com
 | --- | --- |
 | **Default style** | `Widget.MaterialComponents.MaterialButtonToggleGroup` |
 
-See the full list of [styles](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/styles.xml).
-
 Default style theme attribute: `?attr/materialButtonToggleGroupStyle`
+
+See the full list of [styles](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/styles.xml) and [attrs](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
 
 </details>
 
