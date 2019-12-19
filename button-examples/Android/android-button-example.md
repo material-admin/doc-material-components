@@ -77,7 +77,7 @@ A text button has a text label, a transparent container and an optional icon.
 <summary><b>Anatomy diagram</b></summary>
 <br>
 
-![\<Placeholder diagram of text button attribute. Replace this text if/when there is an approved diagram\>](assets/text-button-diagram.png)
+![\<Placeholder diagram of text button anatomy. Replace this text if/when there is an approved diagram\>](assets/text-button-diagram.png)
 
 </details>
 
@@ -181,13 +181,13 @@ outlinedButton.setOnClickListener {
 
 ### Anatomy and key properties
 
-A text button has a text label, a transparent container and an optional icon.
+An outlined button has a text label, a stroked container and an optional icon.
 
 <details>
 <summary><b>Anatomy diagram</b></summary>
 <br>
 
-![\<Placeholder diagram of text button attribute. Replace this text if/when there is an approved diagram\>](assets/outlined-button-diagram.png)
+![\<Placeholder diagram of outlined button anatomy. Replace this text if/when there is an approved diagram\>](assets/outlined-button-diagram.png)
 
 </details>
 
@@ -288,40 +288,82 @@ containedButton.setOnClickListener {
 }
 ```
 
-### Anatomy and key attributes
+### Anatomy and key properties
 
-A contained button has text, a container, and an optional icon.
+A contained button has a text label, a filled container and an optional icon.
 
-<details><summary>Expand for anatomy diagram and key contained button properties</summary>
+<details>
+<summary><b>Anatomy diagram</b></summary>
+<br>
 
-![\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>](assets/contained-button-diagram.png)
+![\<Placeholder diagram of contained button anatomy. Replace this text if/when there is an approved diagram\>](assets/contained-button-diagram.png)
 
-**3. Contained button**
-* A Text label
-* B Container
-* C Icon
+</details>
 
-Diagram label | Design Attribute |  Theme value |  Property
----|---|---|---
-A | Text color | Secondary color | `android:text` 
-A | Typography | Default | `android:textAppearance`
-B | Fill color | Primary color |  `app:backgroundTint` 
-B | Elevation | Default |`app:elevation`
-C | Icon | N/A | `app:icon` 
-C | Icon color | Secondary color | `app:iconTint` 
+<details>
+<summary><b>Attributes</b></summary>
+<br>
 
-We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [contained button API doc](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+<details>
+<summary>Text label</summary>
+<br>
 
-#### Themes (Styles)
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Text label** | `android:text` | `setText`<br/>`getText` | `null` |
+| **Color** | `android:textColor` | `setTextColor`<br/>`getTextColor` | `?attr/colorOnPrimary` |
+| **Typography** | `android:textAppearance` | `setTextAppearance` | `?attr/textAppearanceButton` |
 
-Description | Theme
----|---
-Default theme | `Widget.MaterialComponents.Button`
-Icon theme (adjusted padding for start-gravity icon) | `Widget.MaterialComponents.Button.Icon`
-Unelevated theme | `Widget.MaterialComponents.Button.UnelevatedButton`
-Unelevated icon theme (adjusted padding for start-gravity icon) | `Widget.MaterialComponents.Button.UnelevatedButton.Icon`
+</details>
 
-</p>
+<details>
+<summary>Container</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Color** | `app:backgroundTint` | `setBackgroundColor`<br/>`setBackgroundTintList`<br/>`getBackgroundTintList` | `?attr/colorPrimary` |
+| **Stroke color** | `app:strokeColor` | `setStrokeColor`<br/>`setStrokeColorResource`<br/>`getStrokeColor` | `null` |
+| **Stroke width** | `app:strokeWidth` | `setStrokeWidth`<br/>`setStrokeWidthResource`<br/>`getStrokeWidth` | `0dp` |
+| **Shape** | `app:shapeAppearance` | `setShapeAppearanceModel`<br/>`getShapeAppearanceModel` | `?attr/shapeAppearanceSmallComponent` |
+| **Elevation** | `app:elevation` | `setElevation`<br/>`getElevation` | `2dp` |
+| **Ripple color** | `app:rippleColor` | `setRippleColor`<br/>`setRippleColorResource`<br/>`getRippleColor` | `?attr/colorOnPrimary` at 24% opacity (pressed) |
+
+</details>
+
+<details>
+<summary>Icon</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Icon** | `app:icon` | `setIcon`<br/>`setIconResource`<br/>`getIcon` | `null` |
+| **Color** | `app:iconTint` | `setIconTint`<br/>`setIconTintResource`<br/>`getIconTint` | `?attr/colorOnPrimary` |
+| **Size** | `app:iconSize` | `setIconSize`<br/>`getIconSize` | `wrap_content` |
+| **Gravity** (position relative to text label) | `app:iconGravity` | `setIconGravity`<br/>`getIconGravity` | `start` |
+| **Padding** (space between icon and text label) | `app:iconPadding` | `setIconPadding`<br/>`getIconPadding` | `4dp` |
+
+</details>
+
+See the full list of [attrs](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
+
+</details>
+
+<details>
+<summary><b>Styles</b></summary>
+<br>
+
+|  | Style |
+| --- | --- |
+| **Default style** | `Widget.MaterialComponents.Button` |
+| **Icon style** | `Widget.MaterialComponents.Button.Icon` |
+| **Unelevated style** | `Widget.MaterialComponents.Button.UnelevatedButton` |
+| **Unelevated icon style** | `Widget.MaterialComponents.Button.UnelevatedButton.Icon` |
+
+See the full list of [styles](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/styles.xml).
+
+Default style theme attribute: `?attr/materialButtonStyle`
+
 </details>
 
 ## Toggle button
