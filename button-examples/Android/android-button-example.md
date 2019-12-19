@@ -179,33 +179,77 @@ outlinedButton.setOnClickListener {
 
 ### Anatomy and key properties
 
-An outline button has text, a container, and an optional icon.
+A text button has a text label, a transparent container and an optional icon.
 
-<details><summary>Expand for anatomy diagram and key outlined button properties</summary>
+<details>
+<summary><b>Anatomy diagram</b></summary>
+<br>
 
-![\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>](assets/outlined-button-diagram.png)
+![\<Placeholder diagram of text button attribute. Replace this text if/when there is an approved diagram\>](assets/outlined-button-diagram.png)
 
-**2. Outlined button**
-* A Text label
-* B Container
-* C Icon
+</details>
 
-Diagram label | Design Attribute |  Theme value |  Property
----|---|---|---
-A | Text color | Primary color | `android:text` 
-A | Typography | Default | `android:textAppearance`
-B | Stroke color | Secondary color, 60% |  `app:strokeColor` 
-C | Icon | N/A | `app:icon` 
-C | Icon color | Primary color | `app:iconTint` 
+<details>
+<summary><b>Attributes</b></summary>
+<br>
 
-We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Text button API doc](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+<details>
+<summary>Text label</summary>
+<br>
 
-#### Themes (Styles)
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Text label** | `android:text` | `setText`<br/>`getText` | `null` |
+| **Color** | `android:textColor` | `setTextColor`<br/>`getTextColor` | `?attr/colorPrimary` |
+| **Typography** | `android:textAppearance` | `setTextAppearance` | `?attr/textAppearanceButton` |
 
-Description | Theme
----|---
-Default theme | `Widget.MaterialComponents.Button.OutlinedButton`
-Icon theme (adjusted padding for start-gravity icon) | `Widget.MaterialComponents.Button.OutlinedButton.Icon`
+</details>
+
+<details>
+<summary>Container</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Color** | `app:backgroundTint` | `setBackgroundColor`<br/>`setBackgroundTintList`<br/>`getBackgroundTintList` | `@android:color/transparent` |
+| **Stroke color** | `app:strokeColor` | `setStrokeColor`<br/>`setStrokeColorResource`<br/>`getStrokeColor` | `?attr/colorOnSurface` at 12% opacity |
+| **Stroke width** | `app:strokeWidth` | `setStrokeWidth`<br/>`setStrokeWidthResource`<br/>`getStrokeWidth` | `1dp` |
+| **Shape** | `app:shapeAppearance` | `setShapeAppearanceModel`<br/>`getShapeAppearanceModel` | `?attr/shapeAppearanceSmallComponent` |
+| **Elevation** | `app:elevation` | `setElevation`<br/>`getElevation` | `0dp` |
+| **Ripple color** | `app:rippleColor` | `setRippleColor`<br/>`setRippleColorResource`<br/>`getRippleColor` | `?attr/colorPrimary` at 12% opacity (pressed) |
+
+</details>
+
+<details>
+<summary>Icon</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Icon** | `app:icon` | `setIcon`<br/>`setIconResource`<br/>`getIcon` | `null` |
+| **Color** | `app:iconTint` | `setIconTint`<br/>`setIconTintResource`<br/>`getIconTint` | `?attr/colorPrimary` |
+| **Size** | `app:iconSize` | `setIconSize`<br/>`getIconSize` | `wrap_content` |
+| **Gravity** (position relative to text label) | `app:iconGravity` | `setIconGravity`<br/>`getIconGravity` | `start` |
+| **Padding** (space between icon and text label) | `app:iconPadding` | `setIconPadding`<br/>`getIconPadding` | `4dp` |
+
+</details>
+
+See the full list of [attrs](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
+
+</details>
+
+<details>
+<summary><b>Styles</b></summary>
+<br>
+
+|  | Style |
+| --- | --- |
+| **Default style** | `Widget.MaterialComponents.Button.OutlinedButton` |
+| **Icon style** | `Widget.MaterialComponents.Button.OutlinedButton.Icon` |
+
+See the full list of [styles](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/styles.xml).
+
+Default style theme attribute: `?attr/materialButtonOutlinedStyle`
 
 </details>
 
