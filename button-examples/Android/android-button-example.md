@@ -49,6 +49,7 @@ The following example shows a text button with a text label.
 
 !["Text button"](assets/text-button.svg)
 
+In the XML layout:
 ```xml
 <Button
     android:id="@+id/textButton"
@@ -160,6 +161,7 @@ The following example shows an outlined button with a text label and stroked con
 
 !["Outlined button example in Android with purple text surrounded by a gray outline"](assets/outlined-button.svg)
 
+In the XML layout:
 ```xml
 <Button
     android:id="@+id/outlinedButton"
@@ -269,6 +271,7 @@ The following example shows a contained button with a text label and a filled co
 
 !["Contained button"](assets/contained-button.svg)
 
+In the XML layout:
 ```xml
 <Button
     android:id="@+id/containedButton"
