@@ -21,7 +21,7 @@ There are four types of buttons:
 3. [Contained button](#contained-button)
 4. [Toggle button](#toggle-button)
 
-![Button types](assets/button-types.svg)
+!["Button types for Android - text, outlined, contained and toggle."](assets/button-types.svg)
 
 ## Using buttons
 
@@ -41,7 +41,7 @@ API and source code:
 
 The following example shows a text button with a text label.
 
-!["Text button"](assets/text-button.svg)
+!["Text button example for Android with purple text 'Text button' over a white background."](assets/text-button.svg)
 
 In the layout:
 ```xml
@@ -65,7 +65,7 @@ textButton.setOnClickListener {
 
 The following example shows a text button with an icon.
 
-!["Text button with icon"](assets/text-button-icon.svg)
+!["Text button example for Android with purple text 'Text button' and '+' icon over a white background."](assets/text-button-icon.svg)
 
 In the layout:
 ```xml
@@ -84,7 +84,7 @@ A text button has a text label, a transparent container and an optional icon.
 <summary><b>Anatomy diagram</b></summary>
 <br>
 
-![\<Placeholder diagram of text button anatomy. Replace this text if/when there is an approved diagram\>](assets/text-button-diagram.png)
+![<Placeholder diagram of text button anatomy. Replace this text if/when there is an approved diagram\>](assets/text-button-diagram.png)
 
 </details>
 
@@ -158,7 +158,7 @@ API and source code:
     
 The following example shows an outlined button with a text label and stroked container.    
 
-!["Outlined button"](assets/outlined-button.svg)
+!["Outlined button example for Android with purple text 'Outlined button' and grey border over a white background."](assets/outlined-button.svg)
 
 In the layout:
 ```xml
@@ -182,7 +182,7 @@ outlinedButton.setOnClickListener {
 
 The following example shows an outlined button with an icon.
 
-!["Outlined button with icon"](assets/outlined-button-icon.svg)
+!["Outlined button example for Android with purple text 'Outlined button', grey border and '+' icon over a white background."](assets/outlined-button-icon.svg)
 
 In the layout:
 ```xml
@@ -201,7 +201,7 @@ An outlined button has a text label, a stroked container and an optional icon.
 <summary><b>Anatomy diagram</b></summary>
 <br>
 
-![\<Placeholder diagram of outlined button anatomy. Replace this text if/when there is an approved diagram\>](assets/outlined-button-diagram.png)
+![<Placeholder diagram of outlined button anatomy. Replace this text if/when there is an approved diagram\>](assets/outlined-button-diagram.png)
 
 </details>
 
@@ -275,7 +275,7 @@ API and source code:
 
 The following example shows a contained button with a text label and a filled container.
 
-!["Contained button"](assets/contained-button.svg)
+!["Contained button example for Android with white text 'Contained button' and purple container over a white background."](assets/contained-button.svg)
 
 In the layout:
 ```xml
@@ -298,7 +298,7 @@ containedButton.setOnClickListener {
 
 The following example shows a contained button with an icon.
 
-!["Contained button with icon"](assets/contained-button-icon.svg)
+!["Contained button example for Android with white text 'Contained button', purple container and '+' icon over a white background."](assets/contained-button-icon.svg)
 
 In the layout:
 ```xml
@@ -317,7 +317,7 @@ A contained button has a text label, a filled container and an optional icon.
 <summary><b>Anatomy diagram</b></summary>
 <br>
 
-![\<Placeholder diagram of contained button anatomy. Replace this text if/when there is an approved diagram\>](assets/contained-button-diagram.png)
+![<Placeholder diagram of contained button anatomy. Replace this text if/when there is an approved diagram\>](assets/contained-button-diagram.png)
 
 </details>
 
@@ -405,7 +405,7 @@ API and source code:
 
 The following example shows a toggle button with three buttons that have text labels.
 
-!["Toggle button"](assets/toggle-button-text.svg)
+!["Toggle button example for Android with text labels - 'Button 1', 'Button 2' and 'Button 3' - and grey/purple borders over a white background."](assets/toggle-button-text.svg)
 
 In the layout:
 ```xml
@@ -446,7 +446,7 @@ toggleButton.addOnButtonCheckedListener { toggleButton, checkedId, isChecked ->
 
 The following example shows a toggle button with three buttons that have icons.
 
-!["Toggle button"](assets/toggle-button.svg)
+!["Toggle button example for Android with icons - heart, eye and bell - and grey/purple borders over a white background."](assets/toggle-button.svg)
 
 In `res/values/styles.xml`:
 ```xml
@@ -491,7 +491,7 @@ A toggle button has a shared stroked container, icons and/or text labels.
 <summary><b>Anatomy diagram</b></summary>
 <br>
 
-![\<Placeholder diagram of toggle button anatomy. Replace this text if/when there is an approved diagram\>](assets/toggle-button-diagram.png)
+![<Placeholder diagram of toggle button anatomy. Replace this text if/when there is an approved diagram\>](assets/toggle-button-diagram.png)
 
 </details>
 
@@ -533,7 +533,7 @@ API and source code:
 
 The following example shows an icon that can be used independently or in items of a `RecyclerView`.
 
-!["Icon"](assets/android_toggle_button.png)
+![<Placeholder image of icon toggle button. Replace this text if/when there is an approved diagram\>](assets/android_toggle_button.png)
 
 In the layout:
 ```xml
@@ -583,7 +583,7 @@ API and source code:
     
 The following example shows text, outlined and contained button types with Material Theming.
 
-!["Button theming"](assets/button-theming.svg)
+!["Button theming example for Android with three buttons - text, outlined and contained - with green/black color theming and cut corners."](assets/button-theming.svg)
 
 Using theme attributes and styles in `res/values/styles.xml` (themes all buttons and affects other components):
 
