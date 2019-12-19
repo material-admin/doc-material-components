@@ -489,7 +489,7 @@ Icons can be used as toggle buttons when they allow selection, or deselection, o
 
 #### Icon example
 
-Source code API:
+API and source code:
 
 * `CheckBox`
     * [Class description](https://developer.android.com/reference/android/widget/CheckBox)
@@ -530,6 +530,74 @@ In code:
 icon.setOnCheckedChangeListener { checkBox, isChecked ->
     // Respond to icon toggle     
 }
+```
+
+## Theming buttons
+
+Buttons support [Material Theming](https://material.io/components/buttons/#theming) and can be customized in terms of color, typography and shape.
+
+### Button theming example
+
+API and source code:
+
+* `MaterialButton`
+    * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
+    * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
+    
+The following example shows text, outlined and contained button types with Material Theming.
+
+!["Button theming"](assets/button-theming.svg)
+
+Using theme attributes and styles in `res/values/styles.xml` (themes all buttons and affects other components):
+
+```xml
+<style name="Theme.App" parent="Theme.MaterialComponents.*">
+    ...
+    <item name="colorPrimary">@color/green_a400</item>
+    <item name="colorOnPrimary">@color/black</item>
+    <item name="textAppearanceButton">@style/TextAppearance.App.Button</item>
+    <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+</style>
+
+<style name="TextAppearance.App.Button" parent="TextAppearance.MaterialComponents.Button">
+    <item name="fontFamily">@font/roboto_mono</item>
+    <item name="android:fontFamily">@font/roboto_mono</item>
+    <item name="android:textAllCaps">false</item>
+</style>
+
+<style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+    <item name="cornerFamily">cut</item>
+    <item name="cornerSize">8dp</item>
+</style>
+```
+
+or using a default style theme attribute, styles and theme overlay (themes all buttons but does not affect other components):
+
+```xml
+<style name="Theme.App" parent="Theme.MaterialComponents.*">
+    ...
+    <item name="materialButtonStyle">@style/Widget.App.Button</item>
+</style>
+
+<style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+    <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button</item>
+    <item name="android:textAppearance">@style/TextAppearance.App.Button</item>
+    <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+</style>
+
+<style name="ThemeOverlay.App.Button" parent="">
+    <item name="colorPrimary">@color/green_a400</item>
+    <item name="colorOnPrimary">@color/black</item>
+</style>
+```
+
+or using the style in the XML layout (affects only this button):
+
+```xml
+<Button
+    ...
+    style="@style/Widget.App.Button"
+/>
 ```
 
 ## Making buttons accessible
