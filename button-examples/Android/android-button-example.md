@@ -31,7 +31,7 @@ Before you can use Material buttons, you need to add a dependency to the Materia
 
 [Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
 
-### Text button example
+### Text button examples
 
 API and source code:
 
@@ -43,7 +43,7 @@ The following example shows a text button with a text label.
 
 !["Text button"](assets/text-button.svg)
 
-In the XML layout:
+In the layout:
 ```xml
 <Button
     android:id="@+id/textButton"
@@ -143,7 +143,7 @@ Default style theme attribute: N/A
 
 [Outlined buttons](https://material.io/components/buttons/#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
-### Outlined button example
+### Outlined button examples
 
 API and source code:
 
@@ -153,9 +153,9 @@ API and source code:
     
 The following example shows an outlined button with a text label and stroked container.    
 
-!["Outlined button example in Android with purple text surrounded by a gray outline"](assets/outlined-button.svg)
+!["Outlined button"](assets/outlined-button.svg)
 
-In the XML layout:
+In the layout:
 ```xml
 <Button
     android:id="@+id/outlinedButton"
@@ -165,6 +165,8 @@ In the XML layout:
     style="?attr/materialButtonOutlinedStyle"
 />
 ```
+
+_**Note:** `<Button>` is auto-inflated as `<com.google.android.material.button.MaterialButton>` via `MaterialComponentsViewInflater` when using a non-Bridge `Theme.MaterialComponents.*` theme._
 
 In code:
 ```kt
@@ -253,7 +255,7 @@ Default style theme attribute: `?attr/materialButtonOutlinedStyle`
 
 [Contained buttons](https://material.io/components/buttons/#contained-button) are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
-### Contained button example
+### Contained button examples
 
 API and source code:
 
@@ -265,7 +267,7 @@ The following example shows a contained button with a text label and a filled co
 
 !["Contained button"](assets/contained-button.svg)
 
-In the XML layout:
+In the layout:
 ```xml
 <Button
     android:id="@+id/containedButton"
@@ -274,6 +276,8 @@ In the XML layout:
     android:text="Contained button"
 />
 ```
+
+_**Note:** `<Button>` is auto-inflated as `<com.google.android.material.button.MaterialButton>` via `MaterialComponentsViewInflater` when using a non-Bridge `Theme.MaterialComponents.*` theme._
 
 In code:
 ```kt
@@ -373,7 +377,7 @@ There are two types of toggle buttons:
 
 To emphasize groups of related toggle buttons, a group should share a common container.
 
-#### Toggle button example
+#### Toggle button examples
 
 API and source code:
 
@@ -384,39 +388,50 @@ API and source code:
     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
     * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/MaterialButton.java)
 
-The following example shows a toggle button with three buttons that have icons and no text labels.
+The following example shows a toggle button with three buttons that have text labels.
 
-!["Toggle button"](assets/toggle-button.svg)
+!["Toggle button"](assets/toggle-button-text.svg)
 
-In the XML layout:
+In the layout:
 ```xml
 <com.google.android.material.button.MaterialButtonToggleGroup
     android:id="@+id/toggleButton"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
     <Button
-        android:id="@+id/favoriteButton"    
+        android:id="@+id/button1"    
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:icon="@drawable/ic_favorite_24dp"
-        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+        android:text="Button 1"    
+        style="?attr/materialButtonOutlinedStyle"
     />
     <Button
-        android:id="@+id/removeRedEyeButton"
+        android:id="@+id/button2"    
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:icon="@drawable/ic_remove_red_eye_24dp"
-        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+        android:text="Button 2"    
+        style="?attr/materialButtonOutlinedStyle"
     />
     <Button
-        android:id="@+id/notificationsButton"
+        android:id="@+id/button3"    
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:icon="@drawable/ic_notifications_24dp"
-        style="@style/Widget.App.Button.OutlinedButton.IconOnly"    
+        android:text="Button 3"    
+        style="?attr/materialButtonOutlinedStyle"
     />
 </com.google.android.material.button.MaterialButtonToggleGroup>
 ```
+
+In code:
+```kt
+toggleButton.addOnButtonCheckedListener { toggleButton, checkedId, isChecked ->
+    // Respond to button selection
+}
+```
+
+The following example shows a toggle button with three buttons that have icons.
+
+!["Toggle button"](assets/toggle-button.svg)
 
 In `res/values/styles.xml`:
 ```xml
@@ -431,11 +446,26 @@ In `res/values/styles.xml`:
 </style>
 ```
 
-In code:
-```kt
-toggleButton.addOnButtonCheckedListener { toggleButton, checkedId, isChecked ->
-    // Respond to button selection
-}
+In the layout:
+```xml
+<com.google.android.material.button.MaterialButtonToggleGroup
+    ...>
+    <Button
+        ...
+        app:icon="@drawable/ic_favorite_24dp"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+    />
+    <Button
+        ...
+        app:icon="@drawable/ic_remove_red_eye_24dp"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+    />
+    <Button
+        ...
+        app:icon="@drawable/ic_notifications_24dp"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+    />
+</com.google.android.material.button.MaterialButtonToggleGroup>
 ```
 
 ### Anatomy and key properties
@@ -498,7 +528,7 @@ The following example shows an icon that can be used independently or in items o
 
 !["Icon"](assets/android_toggle_button.png)
 
-In the XML layout:
+In the layout:
 ```xml
 <CheckBox
     android:id="@+id/icon"
@@ -591,7 +621,7 @@ or using a default style theme attribute, styles and theme overlay (themes all b
 </style>
 ```
 
-or using the style in the XML layout (affects only this button):
+or using the style in the layout (affects only this button):
 
 ```xml
 <Button
