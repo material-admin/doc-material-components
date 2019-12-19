@@ -81,7 +81,11 @@ A text button has a text label, a transparent container and an optional icon.
 </details>
 
 <details>
-<summary><b>Text label attributes</b></summary>
+<summary><b>Attributes</b></summary>
+<br>
+
+<details>
+<summary>Text label</summary>
 <br>
 
 |  | Attribute | Related method(s) | Default value |
@@ -93,7 +97,7 @@ A text button has a text label, a transparent container and an optional icon.
 </details>
 
 <details>
-<summary><b>Container attributes</b></summary>
+<summary>Container</summary>
 <br>
 
 |  | Attribute | Related method(s) | Default value |
@@ -108,16 +112,18 @@ A text button has a text label, a transparent container and an optional icon.
 </details>
 
 <details>
-<summary><b>Icon attributes</b></summary>
+<summary>Icon</summary>
 <br>
 
-|  | Attribute | Related method(s) | Default value | Outlined button default | Contained button default |
-| --- | --- | --- | --- | --- | --- |
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
 | **Icon** | `app:icon` | `setIcon`<br/>`setIconResource`<br/>`getIcon` | `null` |
 | **Color** | `app:iconTint` | `setIconTint`<br/>`setIconTintResource`<br/>`getIconTint` | `?attr/colorPrimary` |
 | **Size** | `app:iconSize` | `setIconSize`<br/>`getIconSize` | `wrap_content` |
 | **Gravity** (position relative to text label) | `app:iconGravity` | `setIconGravity`<br/>`getIconGravity` | `start` |
 | **Padding** (space between icon and text label) | `app:iconPadding` | `setIconPadding`<br/>`getIconPadding` | `4dp` |
+
+</details>
 
 </details>
 
