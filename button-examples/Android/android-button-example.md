@@ -125,15 +125,15 @@ A text button has a text label, a transparent container and an optional icon.
 
 </details>
 
+See the full list of [attrs](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
+
 </details>
 
 <details>
 <summary><b>Styles</b></summary>
 <br>
 
-| Style(s) |
-| --- |
-| `Widget.MaterialComponents.Button.TextButton`<br>`Widget.MaterialComponents.Button.TextButton.Icon` |
+`Widget.MaterialComponents.Button.TextButton`<br>`Widget.MaterialComponents.Button.TextButton.Icon`
 
 See the full list of [styles](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/styles.xml).
 
