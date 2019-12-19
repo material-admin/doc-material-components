@@ -444,23 +444,48 @@ toggleButton.addOnButtonCheckedListener { toggleButton, checkedId, isChecked ->
 }
 ```
 
-#### Anatomy and key properties
+### Anatomy and key properties
 
-A toggle button has a text label <!-- seems like this may be a typo, and it's a container in most implementations --> an an icon.
+A toggle button has a shared stroked container, icons and/or text labels.
 
-<details><summary>Expand for anatomy diagram and key toggle button properties</summary>
+<details>
+<summary><b>Anatomy diagram</b></summary>
+<br>
 
-![\<Placeholder diagram of toggle button attribute. Replace this text if/when there is an approved diagram\>](assets/toggle-button-diagram.png)
+![\<Placeholder diagram of toggle button anatomy. Replace this text if/when there is an approved diagram\>](assets/toggle-button-diagram.png)
 
-**4. Toggle button**
-* A Text label
-* C Icon
+</details>
 
-##### Themes (Styles)
+<details>
+<summary><b>Attributes</b></summary>
+<br>
 
-Description | Style
----|---
-Default theme | `Widget.MaterialComponents.MaterialButtonToggleGroup`
+<details>
+<summary>Selection</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Single selection** | `app:singleSelection` | `setSingleSelection`<br/>`isSingleSelection` | `false` |
+| **Selection required** | `app:selectionRequired` | `setSelectionRequired`<br/>`isSelectionRequired` | `false` |
+
+</details>
+
+See the full list of [attrs](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/attrs.xml).
+
+</details>
+
+<details>
+<summary><b>Styles</b></summary>
+<br>
+
+|  | Style |
+| --- | --- |
+| **Default style** | `Widget.MaterialComponents.MaterialButtonToggleGroup` |
+
+See the full list of [styles](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/styles.xml).
+
+Default style theme attribute: `?attr/materialButtonToggleGroupStyle`
 
 </details>
 
@@ -512,27 +537,3 @@ icon.setOnCheckedChangeListener { checkBox, isChecked ->
     // Respond to icon toggle     
 }
 ```
-
-#### Anatomy and key properties
-
-The icon button consists of two icons for 'on' and 'off'.
-
-<details><summary>Expand for anatomy diagram and key icon button properties</summary>
-
-**Icon button**
-* C Icon
-
-Diagram label | Design Attribute |  Theme value |  Property
----|---|---|---
-C | Icon | N/A | 
-C | Icon color | Secondary color |  
-
-We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Icon button API doc]()
-
-##### Themes (Styles)
-
-Description | Style
----|---
-Default theme |
-
-</details>
