@@ -61,6 +61,13 @@ The following example shows a text button with a text label.
 
 _**Note:** `<Button>` is auto-inflated as `<com.google.android.material.button.MaterialButton>` via `MaterialComponentsViewInflater` when using a non-Bridge `Theme.MaterialComponents.*` theme._
 
+In code:
+```kt
+textButton.setOnClickListener {
+    // Respond to button press
+}
+```
+
 ### Anatomy and key properties
 
 A text button has text and an optional icon.
@@ -118,6 +125,13 @@ The following example shows an outlined button with a text label and stroked con
     />
 ```
 
+In code:
+```kt
+outlinedButton.setOnClickListener {
+    // Respond to button press
+}
+```
+
 ### Anatomy and key properties
 
 An outline button has text, a container, and an optional icon.
@@ -173,6 +187,13 @@ The following example shows a contained button with a text label and a filled co
         android:layout_height="wrap_content"
         android:text="Contained button"
     />
+```
+
+In code:
+```kt
+containedButton.setOnClickListener {
+    // Respond to button press
+}
 ```
 
 ### Anatomy and key attributes
@@ -282,12 +303,10 @@ In `res/values/styles.xml`:
 </style>
 ```
 
-_**Note:** The example allows multiple buttons to be selected. If only one option in the group should be selected and active at a time, add `app:singleSelection="true"` to `MaterialButtonToggleGroup`. This ensures that selecting one option deselects any other._
-
 In code:
 ```kt
 toggleButton.addOnButtonCheckedListener { toggleButton, checkedId, isChecked ->
-    // Do something for button toggle
+    // Respond to button selection
 }
 ```
 
@@ -356,7 +375,7 @@ In code:
 
 ```kt
 icon.setOnCheckedChangeListener { checkBox, isChecked ->
-    // Do something for icon toggle     
+    // Respond to icon toggle     
 }
 ```
 
