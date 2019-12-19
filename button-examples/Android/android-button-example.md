@@ -63,6 +63,19 @@ textButton.setOnClickListener {
 }
 ```
 
+The following example shows a text button with an icon.
+
+!["Text button with icon"](assets/text-button-icon.svg)
+
+In the layout:
+```xml
+<Button
+    ...
+    app:icon="@drawable/ic_add_24dp"
+    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+/>
+```
+
 ### Anatomy and key properties
 
 A text button has a text label, a transparent container and an optional icon.
@@ -175,6 +188,19 @@ outlinedButton.setOnClickListener {
 }
 ```
 
+The following example shows an outlined button with an icon.
+
+!["Outlined button with icon"](assets/outlined-button-icon.svg)
+
+In the layout:
+```xml
+<Button
+    ...
+    app:icon="@drawable/ic_add_24dp"
+    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+/>
+```
+
 ### Anatomy and key properties
 
 An outlined button has a text label, a stroked container and an optional icon.
@@ -284,6 +310,19 @@ In code:
 containedButton.setOnClickListener {
     // Respond to button press
 }
+```
+
+The following example shows a contained button with an icon.
+
+!["Contained button with icon"](assets/contained-button-icon.svg)
+
+In the layout:
+```xml
+<Button
+    ...
+    app:icon="@drawable/ic_add_24dp"
+    style="@style/Widget.MaterialComponents.Button.Icon"
+/>
 ```
 
 ### Anatomy and key properties
