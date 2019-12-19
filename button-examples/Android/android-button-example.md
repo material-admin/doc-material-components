@@ -10,8 +10,6 @@ path: /
 api_doc_root:
 -->
 
-
-
 # Buttons
 
 [Buttons](https://material.io/components/buttons/) allow users to take actions, and make choices, with a single tap.
@@ -27,8 +25,6 @@ There are four types of buttons:
 
 ## Using buttons
 
-<!-- Update your IDE and your Material Components library to the latest version if you are using Material Components for the first time. -->
-
 Before you can use Material buttons, you need to add a dependency to the Material Components for Android library. For more information, go to the [Getting started](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md) page.
 
 ### Making buttons accessible
@@ -36,7 +32,6 @@ Before you can use Material buttons, you need to add a dependency to the Materia
 Android's button component APIs support labeling for accessibility. To use labels...
 
 For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
-
 
 ## Text button
 
@@ -65,7 +60,6 @@ The following example shows a text button with a text label.
     />
 ```
 
-
 ### Anatomy and key properties
 
 A text button has text and an optional icon.
@@ -78,7 +72,6 @@ A text button has text and an optional icon.
 
 * A. Text label
 * C. Icon
-
 
 Diagram label | Design Attribute |  Theme value |  Property
 ---|---|---|---
@@ -98,12 +91,9 @@ Icon theme | `Widget.MaterialComponents.Button.TextButton.Icon`
 
 </details>
 
-
-
 ## Outlined button
 
 [Outlined buttons](https://material.io/components/buttons/#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
-
 
 ### Outlined button example
 
@@ -141,7 +131,6 @@ An outline button has text, a container, and an optional icon.
 * B Container
 * C Icon
 
-
 Diagram label | Design Attribute |  Theme value |  Property
 ---|---|---|---
 A | Text color | Primary color | `android:text` 
@@ -161,14 +150,11 @@ Icon theme (adjusted padding for start-gravity icon) | `Widget.MaterialComponent
 
 </details>
 
-
 ## Contained button
 
 [Contained buttons](https://material.io/components/buttons/#contained-button) are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
-
 ### Contained button example
-
 
 Source code API:
 
@@ -205,7 +191,6 @@ A contained button has text, a container, and an optional icon.
 * B Container
 * C Icon
 
-
 Diagram label | Design Attribute |  Theme value |  Property
 ---|---|---|---
 A | Text color | Secondary color | `android:text` 
@@ -229,8 +214,6 @@ Unelevated icon theme (adjusted padding for start-gravity icon) | `Widget.Materi
 </p>
 </details>
 
-
-
 ## Toggle button
 
 [Toggle buttons](https://material.io/components/buttons/#toggle-button) can be used to select from a group of choices.
@@ -240,13 +223,11 @@ There are two types of toggle buttons:
 * [Toggle button](#toggle-button)
 * [Icon](#icon)
 
-
 ### Toggle button
 
 To emphasize groups of related toggle buttons, a group should share a common container.
 
 #### Toggle button example
-
 
 Source code APIs:
 
@@ -306,13 +287,11 @@ toggleButton.addOnButtonCheckedListener { toggleButton, checkedId, isChecked ->
 }
 ```
 
-
 #### Anatomy and key properties
 
 A toggle button has a text label <!-- seems like this may be a typo, and it's a container in most implementations --> an an icon.
 
 <details><summary>Expand for anatomy diagram and key toggle button properties</summary>
-
 
 ![\<Placeholder diagram of toggle button attribute. Replace this text if/when there is an approved diagram\>](assets/toggle-button-diagram.png)
 
@@ -320,13 +299,11 @@ A toggle button has a text label <!-- seems like this may be a typo, and it's a 
 * A Text label
 * C Icon
 
-
 ##### Themes (Styles)
 
 Description | Style
 ---|---
 Default theme | `Widget.MaterialComponents.MaterialButtonToggleGroup`
-
 
 </details>
 
@@ -334,10 +311,7 @@ Default theme | `Widget.MaterialComponents.MaterialButtonToggleGroup`
 
 Icons can be used as toggle buttons when they allow selection, or deselection, of a single choice, such as marking an item as a favorite.
 
-
-
 #### Icon example
-
 
 Source code API:
 
@@ -382,7 +356,6 @@ icon.setOnCheckedChangeListener { checkBox, isChecked ->
 }
 ```
 
-
 #### Anatomy and key properties
 
 The icon button consists of two icons for 'on' and 'off'.
@@ -391,7 +364,6 @@ The icon button consists of two icons for 'on' and 'off'.
 
 **Icon button**
 * C Icon
-
 
 Diagram label | Design Attribute |  Theme value |  Property
 ---|---|---|---
@@ -406,6 +378,4 @@ Description | Style
 ---|---
 Default theme |
 
-
 </details>
-
