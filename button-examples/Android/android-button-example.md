@@ -50,13 +50,13 @@ The following example shows a text button with a text label.
 !["Text button"](assets/text-button.svg)
 
 ```xml
-    <Button
-        android:id="@+id/textButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Text button"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
-    />
+<Button
+    android:id="@+id/textButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Text button"
+    style="@style/Widget.MaterialComponents.Button.TextButton"
+/>
 ```
 
 _**Note:** `<Button>` is auto-inflated as `<com.google.android.material.button.MaterialButton>` via `MaterialComponentsViewInflater` when using a non-Bridge `Theme.MaterialComponents.*` theme._
@@ -116,13 +116,13 @@ The following example shows an outlined button with a text label and stroked con
 !["Outlined button example in Android with purple text surrounded by a gray outline"](assets/outlined-button.svg)
 
 ```xml
-    <Button
-        android:id="@+id/outlinedButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Outlined button"
-        style="?attr/materialButtonOutlinedStyle"
-    />
+<Button
+    android:id="@+id/outlinedButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Outlined button"
+    style="?attr/materialButtonOutlinedStyle"
+/>
 ```
 
 In code:
@@ -181,12 +181,12 @@ The following example shows a contained button with a text label and a filled co
 !["Contained button"](assets/contained-button.svg)
 
 ```xml
-    <Button
-        android:id="@+id/containedButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Contained button"
-    />
+<Button
+    android:id="@+id/containedButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Contained button"
+/>
 ```
 
 In code:
@@ -262,7 +262,7 @@ The following example shows a toggle button with three buttons that have icons a
 
 In the XML layout:
 ```xml
- <com.google.android.material.button.MaterialButtonToggleGroup
+<com.google.android.material.button.MaterialButtonToggleGroup
     android:id="@+id/toggleButton"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
