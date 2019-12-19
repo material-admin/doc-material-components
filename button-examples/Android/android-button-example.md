@@ -39,7 +39,7 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 
 ### Text button example
 
-Source code API:
+API and source code:
 
 * `MaterialButton`
     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
@@ -52,13 +52,14 @@ The following example shows a text button with a text label.
 ```xml
     <Button
         android:id="@+id/textButton"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Text button"
-        ...
+        style="@style/Widget.MaterialComponents.Button.TextButton"
     />
 ```
+
+_**Note:** `<Button>` is auto-inflated as `<com.google.android.material.button.MaterialButton>` via `MaterialComponentsViewInflater` when using a non-Bridge `Theme.MaterialComponents.*` theme._
 
 ### Anatomy and key properties
 
@@ -97,7 +98,7 @@ Icon theme | `Widget.MaterialComponents.Button.TextButton.Icon`
 
 ### Outlined button example
 
-Source code API:
+API and source code:
 
 * `MaterialButton`
     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
@@ -110,11 +111,10 @@ The following example shows an outlined button with a text label and stroked con
 ```xml
     <Button
         android:id="@+id/outlinedButton"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Outlined button"
-        ...
+        style="?attr/materialButtonOutlinedStyle"
     />
 ```
 
@@ -156,7 +156,7 @@ Icon theme (adjusted padding for start-gravity icon) | `Widget.MaterialComponent
 
 ### Contained button example
 
-Source code API:
+API and source code:
 
 * `MaterialButton`
     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButton)
@@ -169,14 +169,11 @@ The following example shows a contained button with a text label and a filled co
 ```xml
     <Button
         android:id="@+id/containedButton"
-        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Contained button"
-        ...
     />
 ```
-
 
 ### Anatomy and key attributes
 
@@ -229,7 +226,7 @@ To emphasize groups of related toggle buttons, a group should share a common con
 
 #### Toggle button example
 
-Source code APIs:
+API and source code:
 
 * `MaterialButtonToggleGroup`
     * [Class description](https://developer.android.com/reference/com/google/android/material/button/MaterialButtonToggleGroup)
@@ -249,33 +246,40 @@ In the XML layout:
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
     <Button
-        android:id="@+id/favoriteButton"
-        style="?attr/materialButtonOutlinedStyle"    
+        android:id="@+id/favoriteButton"    
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minWidth="48dp"
-        app:icon="@drawable/ic_favorite"
-        app:iconPadding="0dp"
+        app:icon="@drawable/ic_favorite_24dp"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
     />
     <Button
         android:id="@+id/removeRedEyeButton"
-        style="?attr/materialButtonOutlinedStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minWidth="48dp"
-        app:icon="@drawable/ic_remove_red_eye"
-        app:iconPadding="0dp"
+        app:icon="@drawable/ic_remove_red_eye_24dp"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"
     />
     <Button
         android:id="@+id/notificationsButton"
-        style="?attr/materialButtonOutlinedStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minWidth="48dp"
-        app:icon="@drawable/ic_notifications"
-        app:iconPadding="0dp"
+        app:icon="@drawable/ic_notifications_24dp"
+        style="@style/Widget.App.Button.OutlinedButton.IconOnly"    
     />
 </com.google.android.material.button.MaterialButtonToggleGroup>
+```
+
+In `res/values/styles.xml`:
+```xml
+<style name="Widget.App.Button.OutlinedButton.IconOnly" parent="Widget.MaterialComponents.Button.OutlinedButton">
+    <item name="iconPadding">0dp</item>
+    <item name="android:insetTop">0dp</item>
+    <item name="android:insetBottom">0dp</item>
+    <item name="android:paddingLeft">12dp</item>
+    <item name="android:paddingRight">12dp</item>
+    <item name="android:minWidth">48dp</item>
+    <item name="android:minHeight">48dp</item>
+</style>
 ```
 
 _**Note:** The example allows multiple buttons to be selected. If only one option in the group should be selected and active at a time, add `app:singleSelection="true"` to `MaterialButtonToggleGroup`. This ensures that selecting one option deselects any other._
@@ -328,23 +332,23 @@ In the XML layout:
     android:id="@+id/icon"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:button="@drawable/sl_favourite"
+    android:button="@drawable/sl_favourite_24dp"
     app:buttonTint="@android:color/white"
 />
 ```
 
-In the `res/drawable/sl_favourite.xml` file:
+In `res/drawable/sl_favourite_24dp.xml`:
 ```xml
 <selector>
     <item
-        android:drawable="@drawable/ic_favourite_outlined" 
+        android:drawable="@drawable/ic_favourite_outlined_24dp" 
         android:state_checked="false"
     />
     <item
-        android:drawable="@drawable/ic_favourite_filled" 
+        android:drawable="@drawable/ic_favourite_filled_24dp" 
         android:state_checked="true"
     />
-    <item android:drawable="@drawable/ic_favourite_outlined" />
+    <item android:drawable="@drawable/ic_favourite_outlined_24dp" />
 </selector>
 ```
 
