@@ -133,7 +133,10 @@ See the full list of [attrs](https://github.com/material-components/material-com
 <summary><b>Styles</b></summary>
 <br>
 
-`Widget.MaterialComponents.Button.TextButton`<br>`Widget.MaterialComponents.Button.TextButton.Icon`
+|  | Style |
+| --- | --- |
+| Default style | `Widget.MaterialComponents.Button.TextButton` |
+| Icon style | `Widget.MaterialComponents.Button.TextButton.Icon` |
 
 See the full list of [styles](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/button/res/values/styles.xml).
 
