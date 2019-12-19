@@ -258,7 +258,7 @@ API and source code:
 
 The following example shows a toggle button with three buttons that have icons and no text labels.
 
-!["Toggle bar example for Android displaying icons."](assets/toggle-buttons.svg)
+!["Toggle bar example for Android displaying icons."](assets/toggle-button.svg)
 
 In the XML layout:
 ```xml
