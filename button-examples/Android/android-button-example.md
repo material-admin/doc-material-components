@@ -21,7 +21,7 @@ There are four types of buttons:
 3. [Contained button](#contained-button)
 4. [Toggle button](#toggle-button)
 
-![Example of the four button types](assets/button-types.svg)
+![Button types](assets/button-types.svg)
 
 ## Using buttons
 
@@ -47,7 +47,7 @@ API and source code:
 
 The following example shows a text button with a text label.
 
-!["Text button example for Android with purple text 'Text' over a white background."](assets/text-button.svg)
+!["Text button"](assets/text-button.svg)
 
 ```xml
     <Button
@@ -178,7 +178,7 @@ API and source code:
 
 The following example shows a contained button with a text label and a filled container.
 
-!["Contained button example for Android with the white text 'Text' on a purple background."](assets/contained-button.svg)
+!["Contained button"](assets/contained-button.svg)
 
 ```xml
     <Button
@@ -258,7 +258,7 @@ API and source code:
 
 The following example shows a toggle button with three buttons that have icons and no text labels.
 
-!["Toggle bar example for Android displaying icons."](assets/toggle-button.svg)
+!["Toggle button"](assets/toggle-button.svg)
 
 In the XML layout:
 ```xml
@@ -343,7 +343,7 @@ Source code API:
 
 The following example shows an icon that can be used independently or in items of a `RecyclerView`.
 
-<img src="assets/android_toggle_button.png" alt="Android toggle icon button example showing four images in an array with a favorite icon in the upper-right corner of each image.">
+!["Icon"](assets/android_toggle_button.png)
 
 In the XML layout:
 ```xml
