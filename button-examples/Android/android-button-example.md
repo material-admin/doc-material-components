@@ -86,13 +86,7 @@ In the layout:
 
 A text button has a text label, a transparent container and an optional icon.
 
-<details>
-<summary><b>Anatomy diagram</b></summary>
-<br>
-
 ![<Placeholder diagram of text button anatomy. Replace this text if/when there is an approved diagram\>](assets/text-button-diagram.png)
-
-</details>
 
 <details>
 <summary><b>Text label</b> attributes</summary>
@@ -203,13 +197,7 @@ In the layout:
 
 An outlined button has a text label, a stroked container and an optional icon.
 
-<details>
-<summary><b>Anatomy diagram</b></summary>
-<br>
-
 ![<Placeholder diagram of outlined button anatomy. Replace this text if/when there is an approved diagram\>](assets/outlined-button-diagram.png)
-
-</details>
 
 <details>
 <summary><b>Text label</b> attributes</summary>
@@ -319,13 +307,7 @@ In the layout:
 
 A contained button has a text label, a filled container and an optional icon.
 
-<details>
-<summary><b>Anatomy diagram</b></summary>
-<br>
-
 ![<Placeholder diagram of contained button anatomy. Replace this text if/when there is an approved diagram\>](assets/contained-button-diagram.png)
-
-</details>
 
 <details>
 <summary><b>Text label</b> attributes</summary>
@@ -493,13 +475,7 @@ In the layout:
 
 A toggle button has a shared stroked container, icons and/or text labels.
 
-<details>
-<summary><b>Anatomy diagram</b></summary>
-<br>
-
 ![<Placeholder diagram of toggle button anatomy. Replace this text if/when there is an approved diagram\>](assets/toggle-button-diagram.png)
-
-</details>
 
 <details>
 <summary><b>Selection</b> attributes</summary>
