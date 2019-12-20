@@ -591,8 +591,11 @@ The following example shows text, outlined and contained button types with Mater
 
 !["Button theming example for Android with three buttons - text, outlined and contained - with green/black color theming and cut corners."](assets/button-theming.svg)
 
-Using theme attributes and styles in `res/values/styles.xml` (themes all buttons and affects other components):
+<details>
+<summary><b>Implementing button theming</b></summary>
+<br>
 
+Using theme attributes and styles in `res/values/styles.xml` (themes all buttons and affects other components):
 ```xml
 <style name="Theme.App" parent="Theme.MaterialComponents.*">
     ...
@@ -615,7 +618,6 @@ Using theme attributes and styles in `res/values/styles.xml` (themes all buttons
 ```
 
 or using a default style theme attribute, styles and theme overlay (themes all buttons but does not affect other components):
-
 ```xml
 <style name="Theme.App" parent="Theme.MaterialComponents.*">
     ...
@@ -635,10 +637,11 @@ or using a default style theme attribute, styles and theme overlay (themes all b
 ```
 
 or using the style in the layout (affects only this button):
-
 ```xml
 <Button
     ...
     style="@style/Widget.App.Button"
 />
 ```
+
+</details>
