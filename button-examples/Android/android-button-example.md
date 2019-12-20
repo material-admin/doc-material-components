@@ -69,6 +69,10 @@ textButton.setOnClickListener {
 }
 ```
 
+<details>
+<summary><b>Adding an icon to a text button</b></summary>
+<br>
+
 The following example shows a text button with an icon.
 
 !["Text button example for Android with purple text 'Text button' and '+' icon over a white background."](assets/text-button-icon.svg)
@@ -81,6 +85,8 @@ In the layout:
     style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
 />
 ```
+
+</details>
 
 ### Anatomy and key properties
 
@@ -180,6 +186,10 @@ outlinedButton.setOnClickListener {
 }
 ```
 
+<details>
+<summary><b>Adding an icon to an outlined button</b></summary>
+<br>
+
 The following example shows an outlined button with an icon.
 
 !["Outlined button example for Android with purple text 'Outlined button', grey border and '+' icon over a white background."](assets/outlined-button-icon.svg)
@@ -192,6 +202,8 @@ In the layout:
     style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
 />
 ```
+
+</details>
 
 ### Anatomy and key properties
 
@@ -290,6 +302,10 @@ containedButton.setOnClickListener {
 }
 ```
 
+<details>
+<summary><b>Adding an icon to a contained button</b></summary>
+<br>
+
 The following example shows a contained button with an icon.
 
 !["Contained button example for Android with white text 'Contained button', purple container and '+' icon over a white background."](assets/contained-button-icon.svg)
@@ -302,6 +318,8 @@ In the layout:
     style="@style/Widget.MaterialComponents.Button.Icon"
 />
 ```
+
+</details>
 
 ### Anatomy and key properties
 
@@ -432,6 +450,10 @@ toggleButton.addOnButtonCheckedListener { toggleButton, checkedId, isChecked ->
 }
 ```
 
+<details>
+<summary><b>Implementing an icon-only toggle button</b></summary>
+<br>
+
 The following example shows a toggle button with three buttons that have icons.
 
 !["Toggle button example for Android with icons - heart, eye and bell - and grey/purple borders over a white background."](assets/toggle-button.svg)
@@ -470,6 +492,8 @@ In the layout:
     />
 </com.google.android.material.button.MaterialButtonToggleGroup>
 ```
+
+</details>
 
 ### Anatomy and key properties
 
