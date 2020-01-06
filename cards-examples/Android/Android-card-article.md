@@ -113,7 +113,10 @@ Cards can include icons for actions.
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
-|Desc. 1 | | | |
+| Text label | | | |
+| Text color | | | |
+| Typography | | | |
+
 
 
 </p>
@@ -150,7 +153,9 @@ Cards can include icons for actions.
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
-|Desc. 1 | | | |
+| Text label | | | |
+| Text color | | | |
+| Typography | | | |
 
 
 
@@ -187,10 +192,8 @@ Material button API and source code:
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
-| Checkable card | `setChecked(boolean)`|  | none|
-| Draggable card |  | `ViewDragHelper` class | none| 
-
-
+| Checkable card | `@style/Widget.MateiralComponents.CardView` | `setChecked(boolean)`| none |
+| Draggable card | [`ViewDragHelper` class](https://developer.android.com/reference/android/support/v4/widget/ViewDragHelper) | | none | 
 
 </p>
 </details>
@@ -211,12 +214,13 @@ The following example shows an elevated card. The card has a title, a secondary 
 ```
 <source code here>
 The source code example should display as per the interactive example (https://material.io/components/cards/#) with supporting text and Buttons, minus the media:
-* Display an elevated card
-* Display a card title "Card title" in black
+* Display two elevated cards, for each card
+* Display a card title "Card title 1" for one card and "Card title 2" for the other
 * Display a secondary title "Secondary text" with an opacity of 60%
 * Display text reading "Greyhound divisively hello coldly wonderfully marginally far upon excluding." with an opacity of 60%
-* Display two actions, "Action 1" and "Action 2" the default purple of #6200EE
-* Display the sample image ![sample card image of yellow and red tulips](assets/card-sample-image.jpg)
+* Display two actions, "Action 1" and "Action 2" with two text buttons
+* Display the sample images ![sample card image of yellow and red tulips](assets/card-sample-image.jpg) and ![sample card image of red and yellow apples in blue plastic crates at roadside street stand](assets/card-sample-image-2.jpg)
+* Allow the cards to be moveable.
 ```
 
 
@@ -281,7 +285,10 @@ Cards can include icons for actions.
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
-|Desc. 1 | | | |
+| Text label | | | |
+| Text color | | | |
+| Typography | | | |
+
 
 
 </p>
@@ -315,6 +322,7 @@ Cards can include icons for actions.
 
 <summary><b>Supporting text</b> attributes (optional)</summary>
 <p>
+
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
 |Desc. 1 | | | |
@@ -352,8 +360,8 @@ Material button API and source code:
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
-| Checkable card | `setChecked(boolean)`|  | none |
-| Draggable card |  | `ViewDragHelper` class | none, not recommended` | 
+| Checkable card | `@style/Widget.MateiralComponents.CardView` | `setChecked(boolean)`| none |
+| Draggable card | [`ViewDragHelper` class](https://developer.android.com/reference/android/support/v4/widget/ViewDragHelper) | | none, not recommended` | 
 
 
 
@@ -378,11 +386,12 @@ The following example shows an outlined card. The card has a title, a secondary 
 <source code here>
 The source code example should display as per the interactive example (https://material.io/components/cards/#) with supporting text and Buttons, minus the media:
 * Display an outlined card with an outline of 60% opacity
-* Display a card title "Card title" in black
+* Display a card title "Card title"
 * Display a secondary title "Secondary text" with an opacity of 60%
 * Display text reading "Greyhound divisively hello coldly wonderfully marginally far upon excluding." with an opacity of 60%
-* Display two actions, "Action 1" and "Action 2" the default purple of #6200EE
+* Display two actions, "Action 1" and "Action 2" with two text buttons
 * Display the sample image ![sample card image of yellow and red tulips](assets/card-sample-image.jpg)
+* Make the card selectable with a "favorites" icon
 
 ```
 
