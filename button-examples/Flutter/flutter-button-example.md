@@ -74,34 +74,46 @@ FlatButton(
 
 A text button has text and an optional icon.
 
-<details><summary>Expand for anatomy diagram and key text button properties</summary>
+<details>
+<summary><b>Text label</b> attributes</summary>
+<br>
 
-
-![\<Placeholder diagram of text button attribute. Replace this text if/when there is an approved diagram\>](assets/text-button-diagram.png)
-
-**1. Text button**
-
-* A. Text label
-* C. Icon
-
-
-Diagram label | Design Attribute |  Theme value |  Property
----|---|---|---
-A | Text color | Primary color | 
-A | Typography | Default | 
-C | Icon | N/A |  
-C | Icon color | Primary color |  
-
-We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Outlined button API doc](https://api.flutter.dev/flutter/material/FlatButton-class.html)
-
-#### Themes (Styles)
-
-Description | Theme
----|---
-Default theme | 
-Icon theme (adjusted padding for start-gravity icon) | 
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Text label** ||  | |
+| **Color** |  |  | |
+| **Typography** |  |  |  |
 
 </details>
+
+<details>
+<summary><b>Container</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Color** |  |  | |
+| **Stroke color** | |  | |
+| **Stroke width** |  |  |  |
+| **Shape** |  | | |
+| **Elevation** | | | |
+| **Ripple color** | | | | 
+</details>
+
+<details>
+<summary><b>Icon</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Icon** | | | |
+| **Color** | | | |
+| **Size** | | | |
+| **Gravity** (position relative to text label) | | | |
+| **Padding** (space between icon and text label) | | | |
+
+</details>
+
 
 
 ## Outlined button
@@ -145,7 +157,45 @@ An outline button has text, a container, and an optional icon.
 * B Container
 * C Icon
 
+<details>
+<summary><b>Text label</b> attributes</summary>
+<br>
 
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Text label** ||  | |
+| **Color** |  |  | |
+| **Typography** |  |  |  |
+
+</details>
+
+<details>
+<summary><b>Container</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Color** |  |  | |
+| **Stroke color** | |  | |
+| **Stroke width** |  |  |  |
+| **Shape** |  | | |
+| **Elevation** | | | |
+| **Ripple color** | | | | 
+</details>
+
+<details>
+<summary><b>Icon</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Icon** | | | |
+| **Color** | | | |
+| **Size** | | | |
+| **Gravity** (position relative to text label) | | | |
+| **Padding** (space between icon and text label) | | | |
+
+</details>
 Diagram label | Design Attribute |  Theme value |  Property
 ---|---|---|---
 A | Text color | Primary color |  
@@ -199,12 +249,10 @@ RaisedButton(
 ),
 
 ```
-
 ### Anatomy and key attributes
 
 A contained button has text, a container, and an optional icon.
 
-<details><summary>Expand for anatomy diagram and key contained button properties</summary>
 
 ![\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>](assets/contained-button-diagram.png)
 
@@ -214,28 +262,48 @@ A contained button has text, a container, and an optional icon.
 * C Icon
 
 
-Diagram label | Design Attribute |  Theme value |  Property
----|---|---|---
-A | Text color | Secondary color | 
-A | Typography | Default | 
-B | Fill color | Primary color |   
-B | Elevation | Default |
-C | Icon | N/A | 
-C | Icon color | Secondary color |  
+<details>
+<summary><b>Text label</b> attributes</summary>
+<br>
 
-We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [contained button API doc](https://api.flutter.dev/flutter/material/RaisedButton-class.html)
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Text label** | | | |
+| **Color** |  | | |
+| **Typography** | | | |
 
-#### Themes (Styles)
 
-Description | Theme
----|---
-Default theme |
-Icon theme (adjusted padding for start-gravity icon) |
-Unelevated theme | 
-Unelevated icon theme (adjusted padding for start-gravity icon) | 
-
-</p>
 </details>
+
+<details>
+<summary><b>Container</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Color** | | | |
+| **Stroke color** | | | |
+| **Stroke width** || | |
+| **Shape** | | | |
+| **Elevation** | | | |
+| **Ripple color** | | | |
+
+</details>
+
+<details>
+<summary><b>Icon</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Icon** | | | |
+| **Color** || | |
+| **Size** | | | |
+| **Gravity** (position relative to text label) | | | |
+| **Padding** (space between icon and text label) | | | |
+
+</details>
+
 
 ## Toggle button
 
@@ -289,8 +357,6 @@ ToggleButtons(
 
 A toggle button has a text label <!-- seems like this may be a typo, and it's a container in most implementations --> an an icon.
 
-<details><summary>Expand for anatomy diagram and key toggle button properties</summary>
-
 
 ![\<Placeholder diagram of toggle button attribute. Replace this text if/when there is an approved diagram\>](assets/toggle-button-diagram.png)
 
@@ -298,25 +364,17 @@ A toggle button has a text label <!-- seems like this may be a typo, and it's a 
 * A Text label
 * C Icon
 
+<details>
+<summary><b>Selection</b> attributes</summary>
+<br>
 
-Diagram label | Design Attribute |  Theme value |  Property
----|---|---|---
-A | Text color | Secondary color | 
-A | Typography | Default | 
-C | Icon | N/A | 
-C | Icon color | Secondary color |  
-
-We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Toggle button API doc](https://api.flutter.dev/flutter/material/ToggleButtons-class.html)
-
-
-##### Themes (Styles)
-
-Description | Style
----|---
-Default theme | 
-
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Single selection** | `app:singleSelection` | `setSingleSelection`<br/>`isSingleSelection` | `false` |
+| **Selection required** | `app:selectionRequired` | `setSelectionRequired`<br/>`isSelectionRequired` | `false` |
 
 </details>
+
 
 ### Toggle icon button
 
@@ -495,27 +553,59 @@ class ToggleIconDemoState extends State<ToggleIconDemo> {
 
 The icon button consists of two icons for 'on' and 'off'.
 
-<details><summary>Expand for anatomy diagram and key icon button properties</summary>
+<details>
+<summary><b>Container</b> attributes</summary>
+<br>
 
-
-**Icon button**
-* C Icon
-
-
-Diagram label | Design Attribute |  Theme value |  Property
----|---|---|---
-C | Icon | N/A | 
-C | Icon color | Secondary color |  
-
-We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Icon button API doc](https://api.flutter.dev/flutter/material/IconButton-class.html)
-
-
-##### Themes (Styles)
-
-Description | Style
----|---
-Default theme |
-
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Color** | | | |
+| **Stroke color** | | | |
+| **Stroke width** || | |
+| **Shape** | | | |
+| **Elevation** | | | |
+| **Ripple color** | | | |
 
 </details>
 
+<details>
+<summary><b>Icon</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Icon** | | | |
+| **Color** || | |
+| **Size** | | | |
+| **Gravity** (position relative to text label) | | | |
+| **Padding** (space between icon and text label) | | | |
+
+</details>
+
+## Theming buttons
+
+Buttons support [Material Theming](https://material.io/components/buttons/#theming) and can be customized in terms of color, typography and shape.
+
+### Button theming example
+
+API and source code:
+
+* `MaterialButton`
+    * [Class description](https://)
+    * [GitHub source](https://github.com/material-components/)
+    
+The following example shows text, outlined and contained button types with Material Theming.
+
+!["Button theming example for <platform> with three buttons - text, outlined and contained - with green/black color theming and cut corners."](assets/button-theming.svg)
+
+<details>
+<summary><b>Implementing button theming</b></summary>
+<br>
+
+```
+Include source code implementing the three buttons found in [https://github.com/mingjane-work/doc-material-components/blob/mingjane-doc-branch/button-examples/Android/android-button-example.md#theming-buttons].
+
+Upload a screenshot of the render and update the image.
+```
+
+</details>
