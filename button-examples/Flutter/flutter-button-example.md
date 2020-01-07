@@ -585,4 +585,10 @@ class ToggleIconDemoState extends State<ToggleIconDemo> {
 }
  ```
 
+## Theming buttons
 
+Buttons support [Material Theming](https://material.io/components/buttons/#theming) and can be customized in terms of color, typography and shape.
+
+### Button theming example
+
+// TODO: Fill out button theming example(s)
