@@ -47,22 +47,22 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 
 [Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
 
-### Text button example
+### Text button examples
 
-Source code API:
-* FlatButton
-    * [Class definition](https://api.flutter.dev/flutter/material/FlatButton-class.html)
+API and source code:
+* `FlatButton`
+    * [Class description](https://api.flutter.dev/flutter/material/FlatButton-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/flat_button.dart)
 
-The following example shows a text button with purple text.
+The following example shows a text button with a text label.
 
-!["Example of a text button with a title of 'Text Button'."](assets/text-button.svg)
+!["Text button example for Android with purple text 'Text button' over a white background."](assets/text-button.svg)
 
 ```dart
 FlatButton(
   textColor: Color(0xFF6200EE),
   onPressed: () {
-    /*...*/
+    // Respond to button press
   },
   child: Text("Text Button",
     theme: TextStyle(fontSize: 20)
@@ -70,39 +70,78 @@ FlatButton(
 )
 ```
 
+<details>
+<summary><b>Adding an icon to a text button</b></summary>
+<br>
+    
+The following example shows a text button with an icon.
+
+!["Text button example for Android with purple text 'Text button' and '+' icon over a white background."](assets/text-button-icon.svg)
+
+// TODO: Add text button with icon code
+    
+</details>
+
 ### Anatomy and key properties
 
-A text button has text and an optional icon.
+A text button has a text label, a transparent container and an optional icon.
 
-<details><summary>Expand for anatomy diagram and key text button properties</summary>
+![<Placeholder diagram of text button anatomy. Replace this text if/when there is an approved diagram\>](assets/text-button-diagram.png)
 
+<details>
+<summary><b>Text label</b> attributes</summary>
+<br>
+    
+// TODO: Fill out text button text label attribute values
 
-![\<Placeholder diagram of text button attribute. Replace this text if/when there is an approved diagram\>](assets/text-button-diagram.png)
-
-**1. Text button**
-
-* A. Text label
-* C. Icon
-
-
-Diagram label | Design Attribute |  Theme value |  Property
----|---|---|---
-A | Text color | Primary color | 
-A | Typography | Default | 
-C | Icon | N/A |  
-C | Icon color | Primary color |  
-
-We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Outlined button API doc](https://api.flutter.dev/flutter/material/FlatButton-class.html)
-
-#### Themes (Styles)
-
-Description | Theme
----|---
-Default theme | 
-Icon theme (adjusted padding for start-gravity icon) | 
+|  |  |
+| --- | --- |
+| **Text label** |  |
+| **Color** |  |
+| **Typography** |  |
 
 </details>
 
+<details>
+<summary><b>Container</b> attributes</summary>
+<br>
+    
+// TODO: Fill out text button text label attribute values
+
+|  |  |
+| --- | --- |
+| **Color** |  |
+| **Stroke color** |  |
+| **Stroke width** |  |
+| **Shape** |  |
+| **Elevation** |  |
+| **Ripple color** |  |
+
+</details>
+
+<details>
+<summary><b>Icon</b> attributes</summary>
+<br>
+    
+// TODO: Fill out text button text label attribute values
+
+|  |  |
+| --- | --- |
+| **Icon** |  |
+| **Color** |  |
+| **Size** |  |
+| **Gravity** (position relative to text label) |  |
+| **Padding** (space between icon and text label) |  |
+
+</details>
+
+<details>
+<summary><b>Styles</b></summary>
+<br>
+
+// TODO: Add text button styles/themes
+
+</details>
 
 ## Outlined button
 
