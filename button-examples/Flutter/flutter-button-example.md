@@ -59,13 +59,14 @@ The following example shows a text button with a text label.
 
 ```dart
 FlatButton(
-  textColor: Color(0xFF6200EE),
-  onPressed: () {
-    // Respond to button press
-  },
-  child: Text("Text Button",
-    theme: TextStyle(fontSize: 20)
-  ),
+    textColor: Color(0xFF6200EE),
+    onPressed: () {
+        // Respond to button press
+    },
+    child: Text(
+        "Text button",
+        style: TextStyle(fontSize: 20)
+    ),
 )
 ```
 
@@ -158,15 +159,14 @@ API and source code:
 
 ```dart
 OutlineButton(
-  textColor: Color(0xFF6200EE),
-  onPressed() {
-    // Respond to button press
-  },
-  child: Text(
-    "Outlined Button"
-     style: TextStyle(fontSize: 20)
-
-  ),
+    textColor: Color(0xFF6200EE),
+    onPressed() {
+        // Respond to button press
+    },
+    child: Text(
+        "Outlined button"
+        style: TextStyle(fontSize: 20)
+    ),
 }
 ```
 
@@ -176,7 +176,7 @@ OutlineButton(
 
 The following example shows an outlined button with an icon.
 
-!["Outlined button example for Android with purple text 'Outlined button', grey border and '+' icon over a white background."](assets/outlined-button-icon.svg)
+!["Outlined button example for Flutter with purple text 'Outlined button', grey border and '+' icon over a white background."](assets/outlined-button-icon.svg)
 
 // TODO: Add outlined button with icon code
 
@@ -246,72 +246,103 @@ An outlined button has a text label, a stroked container and an optional icon.
 ## Contained button
 
 [Contained buttons](https://material.io/components/buttons/#contained-button) are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
-ntained buttons are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
+### Contained button examples
 
-### Contained button example
+API and source code:
 
-Source code API
-
-* RaisedButton
+* `RaisedButton`
     * [Class definition](https://api.flutter.dev/flutter/material/RaisedButton-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/raised_button.dart)
 
-The following examples show a contained button. Color schemes are typically determined by your theme.
+The following example shows a contained button with a text label and a filled container.
 
-!["Example of a contained button with a title of 'Contained Button'."](assets/contained-button.svg)
-
+!["Contained button example for Flutter with white text 'Contained button' and purple container over a white background."](assets/contained-button.svg)
 
 ```dart
 RaisedButton(
     textColor: Colors.white,
     color: Color(0xFF6200EE),
     onPressed: () {
-	/*...*/
+        // Respond to button press
     },
-    child: const Text(
-         'Contained Button',
+    child: Text(
+         'Contained button',
          style: TextStyle(fontSize: 20)
     ),
 ),
-
 ```
+
+<details>
+<summary><b>Adding an icon to a contained button</b></summary>
+<br>
+
+The following example shows a contained button with an icon.
+
+!["Contained button example for Flutter with white text 'Contained button', purple container and '+' icon over a white background."](assets/contained-button-icon.svg)
+
+// TODO: Add contained button with icon code
+
+</details>
 
 ### Anatomy and key attributes
 
-A contained button has text, a container, and an optional icon.
+A contained button has a text label, a filled container and an optional icon.
 
-<details><summary>Expand for anatomy diagram and key contained button properties</summary>
+![<Placeholder diagram of contained button anatomy. Replace this text if/when there is an approved diagram\>](assets/contained-button-diagram.png)
 
-![\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>](assets/contained-button-diagram.png)
+<details>
+<summary><b>Text label</b> attributes</summary>
+<br>
+    
+// TODO: Fill out contained button text label attribute values
 
-**3. Contained button**
-* A Text label
-* B Container
-* C Icon
+|  |  |
+| --- | --- |
+| **Text label** |  |
+| **Color** |  |
+| **Typography** |  |
 
+</details>
 
-Diagram label | Design Attribute |  Theme value |  Property
----|---|---|---
-A | Text color | Secondary color | 
-A | Typography | Default | 
-B | Fill color | Primary color |   
-B | Elevation | Default |
-C | Icon | N/A | 
-C | Icon color | Secondary color |  
+<details>
+<summary><b>Container</b> attributes</summary>
+<br>
+    
+// TODO: Fill out contained button container attribute values
 
-We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [contained button API doc](https://api.flutter.dev/flutter/material/RaisedButton-class.html)
+|  |  |
+| --- | --- |
+| **Color** |  |
+| **Stroke color** |  |
+| **Stroke width** |  |
+| **Shape** |  |
+| **Ripple color** |  |
 
-#### Themes (Styles)
+</details>
 
-Description | Theme
----|---
-Default theme |
-Icon theme (adjusted padding for start-gravity icon) |
-Unelevated theme | 
-Unelevated icon theme (adjusted padding for start-gravity icon) | 
+<details>
+<summary><b>Icon</b> attributes</summary>
+<br>
+    
+// TODO: Fill out contained button icon attribute values
 
-</p>
+|  |  |
+| --- | --- |
+| **Icon** |  |
+| **Color** |  |
+| **Size** |  |
+| **Gravity** (position relative to text label) |  |
+| **Padding** (space between icon and text label) |  |
+
+</details>
+
+<details>
+<summary><b>Styles</b></summary>
+<br>
+
+// TODO: Add contained button styles/themes (or remove this section if n/a)
+
 </details>
 
 ## Toggle button
