@@ -227,7 +227,7 @@ Source code API:
 
 A text button has a text label, a transparent container and an optional icon.
 
-![<Placeholder diagram of text button anatomy. Replace this text if/when there is an approved diagram\>](assets/text-button-diagram.png)
+<img alt="<Placeholder diagram of text button anatomy. Replace this text if/when there is an approved diagram\>" src="assets/text-button-diagram.png" width=60%>
 
 **1. Text button**
 * A Text label
