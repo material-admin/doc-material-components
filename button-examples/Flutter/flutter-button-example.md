@@ -55,7 +55,7 @@ API and source code:
 
 The following example shows a text button with a text label.
 
-!["Text button example for Android with purple text 'Text button' over a white background."](assets/text-button.svg)
+!["Text button example for Flutter with purple text 'Text button' over a white background."](assets/text-button.svg)
 
 ```dart
 FlatButton(
@@ -75,7 +75,7 @@ FlatButton(
     
 The following example shows a text button with an icon.
 
-!["Text button example for Android with purple text 'Text button' and '+' icon over a white background."](assets/text-button-icon.svg)
+!["Text button example for Flutter with purple text 'Text button' and '+' icon over a white background."](assets/text-button-icon.svg)
 
 // TODO: Add text button with icon code
     
@@ -105,7 +105,7 @@ A text button has a text label, a transparent container and an optional icon.
 <summary><b>Container</b> attributes</summary>
 <br>
     
-// TODO: Fill out text button text label attribute values
+// TODO: Fill out text button container attribute values
 
 |  |  |
 | --- | --- |
@@ -122,7 +122,7 @@ A text button has a text label, a transparent container and an optional icon.
 <summary><b>Icon</b> attributes</summary>
 <br>
     
-// TODO: Fill out text button text label attribute values
+// TODO: Fill out text button icon attribute values
 
 |  |  |
 | --- | --- |
@@ -138,7 +138,7 @@ A text button has a text label, a transparent container and an optional icon.
 <summary><b>Styles</b></summary>
 <br>
 
-// TODO: Add text button styles/themes
+// TODO: Add text button styles/themes (or remove this section if n/a)
 
 </details>
 
@@ -146,21 +146,21 @@ A text button has a text label, a transparent container and an optional icon.
 
 [Outlined buttons](https://material.io/components/buttons/#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
-### Outlined button example
+### Outlined button examples
 
-Source code API:
+API and source code:
 
-* OutlineButton
+* `OutlineButton`
     * [Class definition](https://api.flutter.dev/flutter/material/OutlineButton-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/outline_button.dart)
 
-!["Example of an outlined button with a title of 'Outlined Button'."](assets/outlined-button.svg)
+!["Outlined button example for Flutter with purple text 'Outlined button' and grey border over a white background."](assets/outlined-button.svg)
 
 ```dart
 OutlineButton(
   textColor: Color(0xFF6200EE),
   onPressed() {
-    /*...*/
+    // Respond to button press
   },
   child: Text(
     "Outlined Button"
@@ -170,39 +170,78 @@ OutlineButton(
 }
 ```
 
-### Anatomy and key properties
+<details>
+<summary><b>Adding an icon to an outlined button</b></summary>
+<br>
 
-An outline button has text, a container, and an optional icon.
+The following example shows an outlined button with an icon.
 
-<details><summary>Expand for anatomy diagram and key outlined button properties</summary>
+!["Outlined button example for Android with purple text 'Outlined button', grey border and '+' icon over a white background."](assets/outlined-button-icon.svg)
 
-![\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>](assets/outlined-button-diagram.png)
-
-**2. Outlined button**
-* A Text label
-* B Container
-* C Icon
-
-
-Diagram label | Design Attribute |  Theme value |  Property
----|---|---|---
-A | Text color | Primary color |  
-A | Typography | Default | 
-B | Stroke color | Secondary color, 60% |   
-C | Icon | N/A | 
-C | Icon color | Primary color |  
-
-We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Outlined button API doc](https://api.flutter.dev/flutter/material/OutlineButton-class.html)
-
-#### Themes (Styles)
-
-Description | Theme
----|---
-Default theme | 
-Icon theme (adjusted padding for start-gravity icon) | 
+// TODO: Add outlined button with icon code
 
 </details>
 
+### Anatomy and key properties
+
+An outlined button has a text label, a stroked container and an optional icon.
+
+![<Placeholder diagram of outlined button anatomy. Replace this text if/when there is an approved diagram\>](assets/outlined-button-diagram.png)
+
+<details>
+<summary><b>Text label</b> attributes</summary>
+<br>
+
+// TODO: Fill out outlined button text label attribute values
+
+|  |  |
+| --- | --- |
+| **Text label** |  |
+| **Color** |  |
+| **Typography** |  |
+
+</details>
+
+<details>
+<summary><b>Container</b> attributes</summary>
+<br>
+    
+// TODO: Fill out outlined button container attribute values
+
+|  |  |
+| --- | --- |
+| **Color** |  |
+| **Stroke color** |  |
+| **Stroke width** |  |
+| **Shape** |  |
+| **Elevation** |  |
+| **Ripple color** |  |
+
+</details>
+
+<details>
+<summary><b>Icon</b> attributes</summary>
+<br>
+    
+// TODO: Fill out outlined button icon attribute values
+
+|  |  |
+| --- | --- |
+| **Icon** |  |
+| **Color** |  |
+| **Size** |  |
+| **Gravity** (position relative to text label) |  |
+| **Padding** (space between icon and text label) |  |
+
+</details>
+
+<details>
+<summary><b>Styles</b></summary>
+<br>
+
+// TODO: Add outlined button styles/themes (or remove this section if n/a)
+
+</details>
 
 ## Contained button
 
