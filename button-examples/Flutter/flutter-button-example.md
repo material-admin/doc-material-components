@@ -2,14 +2,13 @@
 title: "Buttons"
 layout: detail
 section: components
-excerpt: "Flutter Buttons"
+excerpt: "Flutter Buttons usage document"
 ide_version: "<cIDE name> <compatible IDE version and build number>"
 material_package_version: "<compatible Material platform package version number>"
 iconId:
 path: /
 api_doc_root:
 -->
-
 
 # Buttons
 
