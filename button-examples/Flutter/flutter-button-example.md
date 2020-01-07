@@ -349,90 +349,75 @@ A contained button has a text label, a filled container and an optional icon.
 
 [Toggle buttons](https://material.io/components/buttons/#toggle-button) can be used to select from a group of choices.
 
-The toggle button can be separated into two types:
-* [Toggle bar](#toggle-bar)
-* [Toggle icon button](#toggle-icon-button)
+There are two types of toggle buttons:
 
-### Toggle bar
+* [Toggle button](#toggle-button)
+* [Icon](#icon)
 
-The toggle bar allows you to select from a group of buttons that can be set to [selective action](https://material.io/components/buttons/#toggle-button) where only one button in a group can be selected at one time.
+### Toggle button
 
-#### Toggle bar with three icons example
+To emphasize groups of related toggle buttons, a group should share a common container.
 
-The following example shows a toggle bar with the following icons:
+#### Toggle button examples
 
-* favorite
-* remove red eye
-* notifications
+API and source code:
 
+* `ToggleButtons`
+    * [Class definition](https://api.flutter.dev/flutter/material/ToggleButtons-class.html)
+    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/toggle_buttons.dart)
 
-Source code APIs:
-* IconButton
-    * [Class definition](https://api.flutter.dev/flutter/material/IconButton-class.html)
-    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/icon_button.dart)
+// TODO: Add more classes if necessary
 
+The following example shows a toggle button with three buttons that have text labels.
 
-The following example displays 3 `IconButton`s in a widget. The `onOressed` toggles the `isSelected` boolean:
+!["Toggle button example for Android with text labels - 'Button 1', 'Button 2' and 'Button 3' - and grey/purple borders over a white background."](assets/toggle-button-text.svg)
 
-!["Example of a set of toggle buttons with three icons: favorites, remove red eye, and notifications."](assets/toggle-buttons.svg)
+// TODO: Add text-only toggle button code
 
-```dart
-List<bool> isSelected = List<bool>.filled(3, false);
-/*...*/
-ToggleButtons(
-  children: <Widget>[
-    Icon(Icons.favorite),
-    Icon(Icons.remove_red_eye),
-    Icon(Icons.notifications),
-  ],
-  onPressed: (int index) {
-    setState(() {
-      isSelected[index] = !isSelected[index];
-    });
-  },
-  isSelected: isSelected,
-)
-```
-#### Anatomy and key properties
+<details>
+<summary><b>Implementing an icon-only toggle button</b></summary>
+<br>
 
-A toggle button has a text label <!-- seems like this may be a typo, and it's a container in most implementations --> an an icon.
+The following example shows a toggle button with three buttons that have icons.
 
-<details><summary>Expand for anatomy diagram and key toggle button properties</summary>
+!["Toggle button example for Android with icons - heart, eye and bell - and grey/purple borders over a white background."](assets/toggle-button.svg)
 
-
-![\<Placeholder diagram of toggle button attribute. Replace this text if/when there is an approved diagram\>](assets/toggle-button-diagram.png)
-
-**4. Toggle button**
-* A Text label
-* C Icon
-
-
-Diagram label | Design Attribute |  Theme value |  Property
----|---|---|---
-A | Text color | Secondary color | 
-A | Typography | Default | 
-C | Icon | N/A | 
-C | Icon color | Secondary color |  
-
-We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Toggle button API doc](https://api.flutter.dev/flutter/material/ToggleButtons-class.html)
-
-
-##### Themes (Styles)
-
-Description | Style
----|---
-Default theme | 
-
+// TODO: Add icon-only toggle button code
 
 </details>
 
-### Toggle icon button
+#### Anatomy and key properties
 
-The [toggle icon](https://material.io/components/buttons/#toggle-button) button allows you to select from a group using an icon.
+A toggle button has a shared stroked container, icons and/or text labels.
 
-#### Toggle icon button example
+![<Placeholder diagram of toggle button anatomy. Replace this text if/when there is an approved diagram\>](assets/toggle-button-diagram.png)
 
-Source code APIs:
+<details>
+<summary><b>Selection</b> attributes</summary>
+<br>
+
+|  |  |
+| --- | --- |
+| **Single selection** |  |
+| **Selection required** |  |
+
+</details>
+
+<details>
+<summary><b>Styles</b></summary>
+<br>
+
+// TODO: Add toggle button styles/themes (or remove this section if n/a)
+
+</details>
+
+### Icon
+
+Icons can be used as toggle buttons when they allow selection, or deselection, of a single choice, such as marking an item as a favorite.
+
+#### Icon example
+
+API and source code:
 
 * StatefulWidget
     * [Class definition](https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html)
@@ -599,31 +584,5 @@ class ToggleIconDemoState extends State<ToggleIconDemo> {
   }
 }
  ```
-#### Anatomy and key properties
 
-The icon button consists of two icons for 'on' and 'off'.
-
-<details><summary>Expand for anatomy diagram and key icon button properties</summary>
-
-
-**Icon button**
-* C Icon
-
-
-Diagram label | Design Attribute |  Theme value |  Property
----|---|---|---
-C | Icon | N/A | 
-C | Icon color | Secondary color |  
-
-We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Icon button API doc](https://api.flutter.dev/flutter/material/IconButton-class.html)
-
-
-##### Themes (Styles)
-
-Description | Style
----|---
-Default theme |
-
-
-</details>
 
