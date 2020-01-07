@@ -148,8 +148,6 @@ OutlineButton(
 
 An outline button has text, a container, and an optional icon.
 
-<details><summary>Expand for anatomy diagram and key outlined button properties</summary>
-
 ![\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>](assets/outlined-button-diagram.png)
 
 **2. Outlined button**
@@ -413,7 +411,7 @@ The photos and icon buttons are contained within instances of `GridDemoPhotoItem
 
 The `ToggleIconDemoState` class contains the the list of photos that become the backgrounds to the `GridDemoPhotoItem` tiles.
 
-!["Screenshot showing four images arranged in a two-by-two array, each with a heart icon in the upper-left corner"](assets/toggle_icon_screenshot_cropped.png)
+<img alt="Screenshot showing four images arranged in a two-by-two array, each with a heart icon in the upper-left corner" src="assets/toggle_icon_screenshot_cropped.png" width=50%> 
 
 ```dart
 import 'package:flutter/material.dart';
