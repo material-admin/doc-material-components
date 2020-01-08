@@ -50,26 +50,11 @@ npm install @material/icon-button
 
 </details>
 
-### Add a theme
-
-Both `mdc-button` and `mdc-icon-button` work with themes. Import a theme into your `*.scss` stylesheet to apply it to your website, including buttons or toggle icon buttons:
-
-<details><summary><b<Expand for theming instractions for <code>mdc-button</code> or <code>mdc-icon-button</code>.</b></summary>
-
-**mdc-button**
-```css
-@import "@material/button/mdc-button";
-```
-
-**mdc-icon-button**
-```css
-@import "@material/icon-button/mdc-icon-button";
-```
-
-</details>
 
 ### Import JavaScript effects
-You can also add a JavaScript ripple effect (see [MDC Ripple](https://github.com/material-components/material-components-web/blob/master/packages/mdc-ripple)) to your buttons by importing and then instantiating `MCDRipple` in your `*.js` file. See the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md) for more information on importing JavaScript.
+You can optinally add a JavaScript ripple effect (see [MDC Ripple](https://github.com/material-components/material-components-web/blob/master/packages/mdc-ripple)) to your buttons by importing and then instantiating `MCDRipple` in your `*.js` file. See the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md) for more information on importing JavaScript.
+
+To bundle your `*.js` file, go to the [quickstart page](https://github.com/material-components/material-components-web/blob/master/docs/getting-started.md#quick-start-cdn).
 
 <details><summary><b>Expand for instructions to add JavaScript effects</b></summary>
 
@@ -586,6 +571,22 @@ We recommend using [Material Theming](https://material.io/components/buttons/#th
 ## Theming buttons
 
 Buttons support [Material Theming](https://material.io/components/buttons/#theming) and can be customized in terms of color, typography and shape.
+
+Both `mdc-button` and `mdc-icon-button` work with themes. Import a theme into your `*.scss` stylesheet to apply it to your website, including buttons or toggle icon buttons:
+
+<details><summary><b<Expand for theming instractions for <code>mdc-button</code> or <code>mdc-icon-button</code>.</b></summary>
+
+**mdc-button**
+```css
+@import "@material/button/mdc-button";
+```
+
+**mdc-icon-button**
+```css
+@import "@material/icon-button/mdc-icon-button";
+```
+
+</details>
 
 ### Button theming example
 
