@@ -187,7 +187,7 @@ The following example shows an outlined button with an icon.
 !["Outlined button example for Flutter with purple text 'Outlined button', grey border and '+' icon over a white background."](assets/outlined-button-icon.svg)
 
 ```dart
-OutlineButton(
+OutlineButton.icon(
     textColor: Color(0xFF6200EE),
     highlightedBorderColor: Colors.black.withOpacity(0.12),
     onPressed: () {
@@ -297,7 +297,7 @@ The following example shows a contained button with an icon.
 !["Contained button example for Flutter with white text 'Contained button', purple container and '+' icon over a white background."](assets/contained-button-icon.svg)
 
 ```dart
-RaisedButton.Icon(
+RaisedButton.icon(
     textColor: Colors.white,
     color: Color(0xFF6200EE),
     onPressed: () {
