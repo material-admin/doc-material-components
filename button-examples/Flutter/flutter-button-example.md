@@ -27,7 +27,9 @@ There are four types of buttons:
 
 <!-- Update your IDE and your Material Components library to the latest version if you are using Material Components for the first time. -->
 
-Before you can use Material buttons, you need to import the Material Components package for Flutter: `package:flutter/material.dart`
+Before you can use Material buttons, you need to import the Material Components package for Flutter: `package:flutter/material.dart`.
+
+You need to be using a [`MaterialApp`](https://api.flutter.dev/flutter/material/MaterialApp-class.html).
 
 For more information on getting started with the Material for Flutter, go to the Flutter [Material library](https://api.flutter.dev/flutter/material/material-library.html) page.
 
@@ -63,10 +65,7 @@ FlatButton(
     onPressed: () {
         // Respond to button press
     },
-    child: Text(
-        "Text button",
-        style: TextStyle(fontSize: 20)
-    ),
+    child: Text("TEXT BUTTON"),
 )
 ```
 
@@ -79,7 +78,18 @@ The following example shows a text button with an icon.
 !["Text button example for Flutter with purple text 'Text button' and '+' icon over a white background."](assets/text-button-icon.svg)
 
 // TODO: Add text button with icon code
-    
+
+```dart
+FlatButton.icon(
+    textColor: Color(0xFF6200EE),
+    onPressed: () {
+        // Respond to button press
+    },
+    icon: Icon(Icons.add, size: 18),
+    label: Text("TEXT BUTTON"),
+)
+```
+
 </details>
 
 ### Anatomy and key properties
@@ -89,12 +99,12 @@ A text button has a text label, a transparent container and an optional icon.
 ![<Placeholder diagram of text button anatomy. Replace this text if/when there is an approved diagram\>](assets/text-button-diagram.png)
 
 <details>
-<summary><b>Text label</b> attributes</summary>
+<summary><b>Text label</b> properties</summary>
 <br>
     
-// TODO: Fill out text button text label attribute values
+// TODO: Fill out text button text label properties
 
-|  |  |
+|  | Property |
 | --- | --- |
 | **Text label** |  |
 | **Color** |  |
@@ -103,12 +113,12 @@ A text button has a text label, a transparent container and an optional icon.
 </details>
 
 <details>
-<summary><b>Container</b> attributes</summary>
+<summary><b>Container</b> properties</summary>
 <br>
     
-// TODO: Fill out text button container attribute values
+// TODO: Fill out text button container properties
 
-|  |  |
+|  | Property |
 | --- | --- |
 | **Color** |  |
 | **Stroke color** |  |
@@ -120,12 +130,12 @@ A text button has a text label, a transparent container and an optional icon.
 </details>
 
 <details>
-<summary><b>Icon</b> attributes</summary>
+<summary><b>Icon</b> properties</summary>
 <br>
     
-// TODO: Fill out text button icon attribute values
+// TODO: Fill out text button icon properties
 
-|  |  |
+|  | Property |
 | --- | --- |
 | **Icon** |  |
 | **Color** |  |
@@ -159,15 +169,13 @@ API and source code:
 
 ```dart
 OutlineButton(
-    textColor: Color(0xFF6200EE),
+    textColor: Color(0xFF6200EE),        
+    highlightedBorderColor: Colors.black.withOpacity(0.12),
     onPressed() {
         // Respond to button press
     },
-    child: Text(
-        "Outlined button"
-        style: TextStyle(fontSize: 20)
-    ),
-}
+    child: Text("OUTLINED BUTTON"),
+)
 ```
 
 <details>
@@ -178,7 +186,17 @@ The following example shows an outlined button with an icon.
 
 !["Outlined button example for Flutter with purple text 'Outlined button', grey border and '+' icon over a white background."](assets/outlined-button-icon.svg)
 
-// TODO: Add outlined button with icon code
+```dart
+OutlineButton(
+    textColor: Color(0xFF6200EE),
+    highlightedBorderColor: Colors.black.withOpacity(0.12),
+    onPressed: () {
+        // Respond to button press
+    },
+    icon: Icon(Icons.add, size: 18),
+    label: Text("OUTLINED BUTTON"),
+)
+```
 
 </details>
 
@@ -189,12 +207,12 @@ An outlined button has a text label, a stroked container and an optional icon.
 ![<Placeholder diagram of outlined button anatomy. Replace this text if/when there is an approved diagram\>](assets/outlined-button-diagram.png)
 
 <details>
-<summary><b>Text label</b> attributes</summary>
+<summary><b>Text label</b> properties</summary>
 <br>
 
-// TODO: Fill out outlined button text label attribute values
+// TODO: Fill out outlined button text label properties
 
-|  |  |
+|  | Property |
 | --- | --- |
 | **Text label** |  |
 | **Color** |  |
@@ -203,12 +221,12 @@ An outlined button has a text label, a stroked container and an optional icon.
 </details>
 
 <details>
-<summary><b>Container</b> attributes</summary>
+<summary><b>Container</b> properties</summary>
 <br>
     
-// TODO: Fill out outlined button container attribute values
+// TODO: Fill out outlined button container properties
 
-|  |  |
+|  | Property |
 | --- | --- |
 | **Color** |  |
 | **Stroke color** |  |
@@ -220,12 +238,12 @@ An outlined button has a text label, a stroked container and an optional icon.
 </details>
 
 <details>
-<summary><b>Icon</b> attributes</summary>
+<summary><b>Icon</b> properties</summary>
 <br>
     
-// TODO: Fill out outlined button icon attribute values
+// TODO: Fill out outlined button icon properties
 
-|  |  |
+|  | Property |
 | --- | --- |
 | **Icon** |  |
 | **Color** |  |
@@ -266,11 +284,8 @@ RaisedButton(
     onPressed: () {
         // Respond to button press
     },
-    child: Text(
-         'Contained button',
-         style: TextStyle(fontSize: 20)
-    ),
-),
+    child: Text('CONTAINED BUTTON'),
+)
 ```
 
 <details>
@@ -281,23 +296,33 @@ The following example shows a contained button with an icon.
 
 !["Contained button example for Flutter with white text 'Contained button', purple container and '+' icon over a white background."](assets/contained-button-icon.svg)
 
-// TODO: Add contained button with icon code
+```dart
+RaisedButton.Icon(
+    textColor: Colors.white,
+    color: Color(0xFF6200EE),
+    onPressed: () {
+        // Respond to button press
+    },
+    icon: Icon(Icons.add, size: 18),
+    label: Text("CONTAINED BUTTON"),
+)
+```
 
 </details>
 
-### Anatomy and key attributes
+### Anatomy and key properties
 
 A contained button has a text label, a filled container and an optional icon.
 
 ![<Placeholder diagram of contained button anatomy. Replace this text if/when there is an approved diagram\>](assets/contained-button-diagram.png)
 
 <details>
-<summary><b>Text label</b> attributes</summary>
+<summary><b>Text label</b> properties</summary>
 <br>
     
-// TODO: Fill out contained button text label attribute values
+// TODO: Fill out contained button text label properties
 
-|  |  |
+|  | Property |
 | --- | --- |
 | **Text label** |  |
 | **Color** |  |
@@ -306,12 +331,12 @@ A contained button has a text label, a filled container and an optional icon.
 </details>
 
 <details>
-<summary><b>Container</b> attributes</summary>
+<summary><b>Container</b> properties</summary>
 <br>
     
-// TODO: Fill out contained button container attribute values
+// TODO: Fill out contained button container properties
 
-|  |  |
+|  | Property |
 | --- | --- |
 | **Color** |  |
 | **Stroke color** |  |
@@ -322,12 +347,12 @@ A contained button has a text label, a filled container and an optional icon.
 </details>
 
 <details>
-<summary><b>Icon</b> attributes</summary>
+<summary><b>Icon</b> properties</summary>
 <br>
     
-// TODO: Fill out contained button icon attribute values
+// TODO: Fill out contained button icon properties
 
-|  |  |
+|  | Property |
 | --- | --- |
 | **Icon** |  |
 | **Color** |  |
@@ -393,10 +418,10 @@ A toggle button has a shared stroked container, icons and/or text labels.
 ![<Placeholder diagram of toggle button anatomy. Replace this text if/when there is an approved diagram\>](assets/toggle-button-diagram.png)
 
 <details>
-<summary><b>Selection</b> attributes</summary>
+<summary><b>Selection</b> properties</summary>
 <br>
 
-|  |  |
+|  | Property |
 | --- | --- |
 | **Single selection** |  |
 | **Selection required** |  |
