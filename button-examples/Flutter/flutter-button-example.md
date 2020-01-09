@@ -411,6 +411,7 @@ ToggleButtons(
     constraints: BoxConstraints(minHeight: 36.0),
     isSelected: isSelected,
     onPressed: (index) {
+        // Respond to button selection
         setState(() {
             isSelected[index] = !isSelected[index];
         });
@@ -451,6 +452,7 @@ ToggleButtons(
     borderRadius: BorderRadius.circular(4.0),
     isSelected: isSelected,
     onPressed: (index) {
+        // Respond to button selection
         setState(() {
             isSelected[index] = !isSelected[index];
         });
@@ -498,171 +500,34 @@ Icons can be used as toggle buttons when they allow selection, or deselection, o
 
 API and source code:
 
-* StatefulWidget
-    * [Class definition](https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html)
-    * [GitHub source](<!-- unable to find source in GitHub -->)
-* GestureDetector
-    * [Class defintion](https://api.flutter.dev/flutter/widgets/GestureDetector-class.html)
-    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/widgets/gesture_detector.dart)
-* GridTile
-    * [Class definition](https://api.flutter.dev/flutter/material/GridTile-class.html)
-    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/grid_tile.dart)
-* GridTileBar
-    * [Class definition](https://api.flutter.dev/flutter/material/GridTileBar-class.html)
-    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/grid_tile_bar.dart)
-* IconButton
+* `IconButton`
     * [Class definition](https://api.flutter.dev/flutter/material/IconButton-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/icon_button.dart)
-* IconData
-    * [Class defintion](https://api.flutter.dev/flutter/widgets/IconData-class.html)
-    * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/widgets/icon_data.dart)
 
-The following example shows four images arranged in a two-by-two array with a favorite icon in the upper-right corner of each image.
+The following example shows an icon that can be used independently or in items of a `GridView`.
 
-The photos and icon buttons are contained within instances of `GridDemoPhotoItem`, which extends the `GridTile` API. `GridDemoPhotoItem` does the following:
+![<Placeholder image of icon toggle button. Replace this text if/when there is an approved diagram\>](assets/flutter_toggle_button.png)
 
-* fits a passed image to `Photo` to the size specified in `GridView`.
-* sets the icon displayed to `on` (`favorite`) or `off` (`favorite_border`) and sets `IconData` as determined by a call to `GestureDetector`.
-* sets the icon color to white as opposed to the default black
-
-The `ToggleIconDemoState` class contains the the list of photos that become the backgrounds to the `GridDemoPhotoItem` tiles.
-
-!["Screenshot showing four images arranged in a two-by-two array, each with a heart icon in the upper-left corner"](assets/toggle_icon_screenshot_cropped.png)
-
+In the state:
 ```dart
-import 'package:flutter/material.dart';
+var isSelected = false;
+var icon = Icons.favorite_border;
+```
 
-typedef BannerTapCallback = void Function(Photo photo);
-
-/// Each tile has a photo within it. The photo is used to toggle the
-/// icon between on and off.
-class Photo {
-  Photo({
-    this.assetName,
-    this.isFavorite = false,
-  });
-
-  final String assetName;
-  bool isFavorite;
-  String get tag => assetName; // Assuming that all asset names are unique.
-}
-
-/// This class is each tile within the Grid. It represents the individual items
-/// you see. A widget is stateless if we know that the file will not change.
-class GridDemoPhotoItem extends StatelessWidget {
-  GridDemoPhotoItem({
-    Key key,
-    @required this.photo,
-    @required this.onBannerTap,
-  })  : assert(onBannerTap != null),
-        super(key: key);
-
-  final Photo photo;
-  final BannerTapCallback
-      onBannerTap; // User taps on the photo's header or footer.
-
-  @override
-  Widget build(BuildContext context) {
-    final Widget image = GestureDetector(
-      child: Hero(
-        key: Key(photo.assetName),
-        tag: photo.tag,
-        child: Image.asset(
-          photo.assetName,
-          fit: BoxFit.cover,
-        ),
-      ),
-    );
-
-    final IconData icon =
-        photo.isFavorite ? Icons.favorite : Icons.favorite_border;
-
-    return GridTile(
-        header: GestureDetector(
-          onTap: () {
-            onBannerTap(photo);
-          },
-          child: GridTileBar(
-            leading: Icon(
-              icon,
-              color: Colors.white,
-            ),
-          ),
-        ),
-        child: image);
-  }
-}
-
-/// Toggle Icon Demo is a stateful widget because it is not immutable meaning
-/// that the Widget can change State. This widget is changing state each time
-/// the user clicks on the Flutter Favorite Icon. Each time the user clicks on
-/// that icon this page will build again. This is the reason this class has to
-/// extend Stateful Widget.
-class ToggleIconDemo extends StatefulWidget {
-  ToggleIconDemo({Key key, this.title}) : super(key: key);
-
-  final String title;
-  @override
-  ToggleIconDemoState createState() => ToggleIconDemoState();
-}
-
-class ToggleIconDemoState extends State<ToggleIconDemo> {
-  List<Photo> photos = <Photo>[
-    Photo(assetName: 'assets/images/toggle1.png'),
-    Photo(assetName: 'assets/images/toggle2.png'),
-    Photo(assetName: 'assets/images/toggle3.png'),
-    Photo(assetName: 'assets/images/toggle4.png'),
-  ];
-
-  void changePage() {
-    Navigator.of(context).pushReplacementNamed('/toggleBarPage');
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final Orientation orientation = MediaQuery.of(context).orientation;
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-        actions: [
-          IconButton(
-              icon: const Icon(Icons.pages),
-              tooltip: 'Change Page',
-              onPressed: changePage),
-        ],
-      ),
-      body: Column(
-        children: [
-          Expanded(
-            child: SafeArea(
-              top: false,
-              bottom: false,
-              child: GridView.count(
-                crossAxisCount: (orientation == Orientation.portrait) ? 2 : 3,
-                mainAxisSpacing: 4.0,
-                crossAxisSpacing: 4.0,
-                padding: const EdgeInsets.all(4.0),
-                childAspectRatio:
-                    (orientation == Orientation.portrait) ? 1.0 : 1.3,
-                children: photos.map<Widget>((Photo photo) {
-                  return GridDemoPhotoItem(
-                    photo: photo,
-                    onBannerTap: (Photo photo) {
-                      setState(() {
-                        photo.isFavorite = !photo.isFavorite;
-                      });
-                    },
-                  );
-                }).toList(),
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
- ```
+In the widget hierarchy:
+```dart
+IconButton(
+    icon: Icon(icon),
+    color: Colors.white,
+    onPressed: () {
+        // Respond to icon toggle
+        setState(() {
+            isSelected = !isSelected;
+            icon = isSelected ? Icons.favorite : Icons.favorite_border;
+        });
+    },
+)
+```
 
 ## Theming buttons
 
