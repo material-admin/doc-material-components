@@ -94,31 +94,27 @@ A text button has a text label, a transparent container and an optional icon.
 <details>
 <summary><b>Text label</b> properties</summary>
 <br>
-    
-// TODO: Fill out text button text label properties
 
 |  | Property |
 | --- | --- |
-| **Text label** |  |
-| **Color** |  |
-| **Typography** |  |
+| **Text label** | `child` or `label` |
+| **Color** | `textColor` |
+| **Typography** | `style` on `child` or `label` |
 
 </details>
 
 <details>
 <summary><b>Container</b> properties</summary>
 <br>
-    
-// TODO: Fill out text button container properties
 
 |  | Property |
 | --- | --- |
-| **Color** |  |
-| **Stroke color** |  |
-| **Stroke width** |  |
-| **Shape** |  |
-| **Elevation** |  |
-| **Ripple color** |  |
+| **Color** | `color` |
+| **Stroke color** | N/A |
+| **Stroke width** | N/A |
+| **Shape** | `shape` |
+| **Elevation** | N/A |
+| **Ripple color** | `splashColor` |
 
 </details>
 
@@ -126,23 +122,22 @@ A text button has a text label, a transparent container and an optional icon.
 <summary><b>Icon</b> properties</summary>
 <br>
     
-// TODO: Fill out text button icon properties
-
 |  | Property |
 | --- | --- |
-| **Icon** |  |
-| **Color** |  |
-| **Size** |  |
-| **Gravity** (position relative to text label) |  |
-| **Padding** (space between icon and text label) |  |
+| **Icon** | `icon` |
+| **Color** | `color` on `icon` |
+| **Size** | `size` on `icon` |
 
 </details>
 
 <details>
-<summary><b>Styles</b></summary>
+<summary><b>Constructors</b></summary>
 <br>
 
-// TODO: Add text button styles/themes (or remove this section if n/a)
+|  | Constructor |
+| --- | --- |
+| **Default constructor** | `FlatButton` |
+| **Icon constructor** | `FlatButton.icon` |
 
 </details>
 
@@ -203,13 +198,11 @@ An outlined button has a text label, a stroked container and an optional icon.
 <summary><b>Text label</b> properties</summary>
 <br>
 
-// TODO: Fill out outlined button text label properties
-
 |  | Property |
 | --- | --- |
-| **Text label** |  |
-| **Color** |  |
-| **Typography** |  |
+| **Text label** | `child` or `label` |
+| **Color** | `textColor` |
+| **Typography** | `style` on `child` or `label` |
 
 </details>
 
@@ -217,16 +210,14 @@ An outlined button has a text label, a stroked container and an optional icon.
 <summary><b>Container</b> properties</summary>
 <br>
     
-// TODO: Fill out outlined button container properties
-
 |  | Property |
 | --- | --- |
-| **Color** |  |
-| **Stroke color** |  |
-| **Stroke width** |  |
-| **Shape** |  |
-| **Elevation** |  |
-| **Ripple color** |  |
+| **Color** | `color` |
+| **Stroke color** | `disabledBorderColor` and `highlightedBorderColor` |
+| **Stroke width** | `borderSide` |
+| **Shape** | `shape` |
+| **Elevation** | `elevation` |
+| **Ripple color** | `splashColor` |
 
 </details>
 
@@ -234,23 +225,22 @@ An outlined button has a text label, a stroked container and an optional icon.
 <summary><b>Icon</b> properties</summary>
 <br>
     
-// TODO: Fill out outlined button icon properties
-
 |  | Property |
 | --- | --- |
-| **Icon** |  |
-| **Color** |  |
-| **Size** |  |
-| **Gravity** (position relative to text label) |  |
-| **Padding** (space between icon and text label) |  |
+| **Icon** | `icon` |
+| **Color** | `color` on `icon` |
+| **Size** | `size` on `icon` |
 
 </details>
 
 <details>
-<summary><b>Styles</b></summary>
+<summary><b>Constructors</b></summary>
 <br>
 
-// TODO: Add outlined button styles/themes (or remove this section if n/a)
+|  | Constructor |
+| --- | --- |
+| **Default constructor** | `OutlineButton` |
+| **Icon constructor** | `OutlineButton.icon` |
 
 </details>
 
@@ -313,13 +303,11 @@ A contained button has a text label, a filled container and an optional icon.
 <summary><b>Text label</b> properties</summary>
 <br>
     
-// TODO: Fill out contained button text label properties
-
 |  | Property |
 | --- | --- |
-| **Text label** |  |
-| **Color** |  |
-| **Typography** |  |
+| **Text label** | `child` or `label` |
+| **Color** | `textColor` |
+| **Typography** | `style` on `child` or `label` |
 
 </details>
 
@@ -327,15 +315,14 @@ A contained button has a text label, a filled container and an optional icon.
 <summary><b>Container</b> properties</summary>
 <br>
     
-// TODO: Fill out contained button container properties
-
 |  | Property |
 | --- | --- |
-| **Color** |  |
-| **Stroke color** |  |
-| **Stroke width** |  |
-| **Shape** |  |
-| **Ripple color** |  |
+| **Color** | `color` |
+| **Stroke color** | N/A |
+| **Stroke width** | N/A |
+| **Shape** | `shape` |
+| **Elevation** | `elevation` |
+| **Ripple color** | `splashColor` |
 
 </details>
 
@@ -343,23 +330,22 @@ A contained button has a text label, a filled container and an optional icon.
 <summary><b>Icon</b> properties</summary>
 <br>
     
-// TODO: Fill out contained button icon properties
-
 |  | Property |
 | --- | --- |
-| **Icon** |  |
-| **Color** |  |
-| **Size** |  |
-| **Gravity** (position relative to text label) |  |
-| **Padding** (space between icon and text label) |  |
+| **Icon** | `icon` |
+| **Color** | `color` on `icon` |
+| **Size** | `size` on `icon` |
 
 </details>
 
 <details>
-<summary><b>Styles</b></summary>
+<summary><b>Constructors</b></summary>
 <br>
 
-// TODO: Add contained button styles/themes (or remove this section if n/a)
+|  | Constructor |
+| --- | --- |
+| **Default constructor** | `RaisedButton` |
+| **Icon constructor** | `RaisedButton.icon` |
 
 </details>
 
@@ -474,16 +460,17 @@ A toggle button has a shared stroked container, icons and/or text labels.
 
 |  | Property |
 | --- | --- |
-| **Single selection** |  |
-| **Selection required** |  |
+| **Selection state of each button** | `isSelected` |
 
 </details>
 
 <details>
-<summary><b>Styles</b></summary>
+<summary><b>Constructors</b></summary>
 <br>
 
-// TODO: Add toggle button styles/themes (or remove this section if n/a)
+|  | Constructor |
+| --- | --- |
+| **Default constructor** | `ToggleButtons` |
 
 </details>
 
