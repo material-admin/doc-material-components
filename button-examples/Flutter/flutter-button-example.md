@@ -77,8 +77,6 @@ The following example shows a text button with an icon.
 
 !["Text button example for Flutter with purple text 'Text button' and '+' icon over a white background."](assets/text-button-icon.svg)
 
-// TODO: Add text button with icon code
-
 ```dart
 FlatButton.icon(
     textColor: Color(0xFF6200EE),
@@ -391,13 +389,48 @@ API and source code:
     * [Class definition](https://api.flutter.dev/flutter/material/ToggleButtons-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/toggle_buttons.dart)
 
-// TODO: Add more classes if necessary
-
 The following example shows a toggle button with three buttons that have text labels.
 
 !["Toggle button example for Android with text labels - 'Button 1', 'Button 2' and 'Button 3' - and grey/purple borders over a white background."](assets/toggle-button-text.svg)
 
-// TODO: Add text-only toggle button code
+In the state:
+```dart
+final isSelected = <bool>[false, false, false];
+```
+
+In the widget hierarchy:
+```dart
+ToggleButtons(
+    color: Colors.black.withOpacity(0.60),
+    selectedColor: Color(0xFF6200EE),
+    selectedBorderColor: Color(0xFF6200EE),
+    fillColor: Color(0xFF6200EE).withOpacity(0.08),
+    splashColor: Color(0xFF6200EE).withOpacity(0.12),
+    hoverColor: Color(0xFF6200EE).withOpacity(0.04),
+    borderRadius: BorderRadius.circular(4.0),
+    constraints: BoxConstraints(minHeight: 36.0),
+    isSelected: isSelected,
+    onPressed: (index) {
+        setState(() {
+            isSelected[index] = !isSelected[index];
+        });
+    },
+    children: [
+        Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16.0),
+            child: Text('BUTTON 1'),
+        ),
+        Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16.0),
+            child: Text('BUTTON 2'),
+        ),
+        Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16.0),
+            child: Text('BUTTON 3'),
+        ),
+    ],
+)
+```
 
 <details>
 <summary><b>Implementing an icon-only toggle button</b></summary>
@@ -407,7 +440,28 @@ The following example shows a toggle button with three buttons that have icons.
 
 !["Toggle button example for Android with icons - heart, eye and bell - and grey/purple borders over a white background."](assets/toggle-button.svg)
 
-// TODO: Add icon-only toggle button code
+```dart
+ToggleButtons(
+    color: Colors.black.withOpacity(0.60),
+    selectedColor: Color(0xFF6200EE),
+    selectedBorderColor: Color(0xFF6200EE),
+    fillColor: Color(0xFF6200EE).withOpacity(0.08),
+    splashColor: Color(0xFF6200EE).withOpacity(0.12),
+    hoverColor: Color(0xFF6200EE).withOpacity(0.04),
+    borderRadius: BorderRadius.circular(4.0),
+    isSelected: isSelected,
+    onPressed: (index) {
+        setState(() {
+            isSelected[index] = !isSelected[index];
+        });
+    },
+    children: [
+        Icon(Icons.favorite),
+        Icon(Icons.visibility),
+        Icon(Icons.notifications),
+    ],
+)
+```
 
 </details>
 
