@@ -41,9 +41,6 @@ Flutter's button component also supports component labeling...\<developers need 
 
 For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
-
-\<**NOTE** Confirm that the default color theme aligns with the default Material theme of purple (0xFF6200EE) and white \>
-
 ## Text button
 
 [Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
