@@ -50,26 +50,11 @@ npm install @material/icon-button
 
 </details>
 
-### Add a theme
-
-Both `mdc-button` and `mdc-icon-button` work with themes. Import a theme into your `*.scss` stylesheet to apply it to your website, including buttons or toggle icon buttons:
-
-<details><summary><b<Expand for theming instractions for <code>mdc-button</code> or <code>mdc-icon-button</code>.</b></summary>
-
-**mdc-button**
-```css
-@import "@material/button/mdc-button";
-```
-
-**mdc-icon-button**
-```css
-@import "@material/icon-button/mdc-icon-button";
-```
-
-</details>
 
 ### Import JavaScript effects
-You can also add a JavaScript ripple effect (see [MDC Ripple](https://github.com/material-components/material-components-web/blob/master/packages/mdc-ripple)) to your buttons by importing and then instantiating `MCDRipple` in your `*.js` file. See the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md) for more information on importing JavaScript.
+You can optinally add a JavaScript ripple effect (see [MDC Ripple](https://github.com/material-components/material-components-web/blob/master/packages/mdc-ripple)) to your buttons by importing and then instantiating `MCDRipple` in your `*.js` file. See the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md) for more information on importing JavaScript.
+
+To bundle your `*.js` file, go to the [quickstart page](https://github.com/material-components/material-components-web/blob/master/docs/getting-started.md#quick-start-cdn).
 
 <details><summary><b>Expand for instructions to add JavaScript effects</b></summary>
 
@@ -223,37 +208,56 @@ Source code API:
 ```
 </details>
 
-### Anatomy and key properties 
+### Anatomy and key properties
 
+A text button has a text label, a transparent container and an optional icon.
 
-<img alt="\<Placeholder diagram of text button attribute. Replace this text if/when there is an approved diagram\>" src="assets/text-button-diagram.png" width="60%">
+<img alt="<Placeholder diagram of text button anatomy. Replace this text if/when there is an approved diagram\>" src="assets/text-button-diagram.png" width=60%>
 
 **1. Text button**
+* A Text label
+* B Container
+* C Icon
 
-* A. Text label
-* C. Icon
+<details>
+<summary><b>Text label</b> attributes</summary>
+<br>
 
-<details><summary><b>Text label attributes</b></summary>
-
-Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-Text label | N/A |  N/A
-Text color | Primary color | 
-Typography | Default |
-
-</details>
-
-<details><summary><b>Icon attributes</b></summary>
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-Icon | N/A | N/A 
-Icon color | Primary color | `mdc-button-icon-color($color)`
-
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Text label** ||  | |
+| **Color** |  |  | |
+| **Typography** |  |  |  |
 
 </details>
-We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Text button API doc]()
 
+<details>
+<summary><b>Container</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Color** |  |  | |
+| **Stroke color** | |  | |
+| **Stroke width** |  |  |  |
+| **Shape** |  | | |
+| **Elevation** | | | |
+| **Ripple color** | | | | 
+</details>
+
+<details>
+<summary><b>Icon</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Icon** | | | |
+| **Color** | | | |
+| **Size** | | | |
+| **Gravity** (position relative to text label) | | | |
+| **Padding** (space between icon and text label) | | | |
+
+</details>
 
 
 ## Outlined button
@@ -564,3 +568,46 @@ We recommend using [Material Theming](https://material.io/components/buttons/#th
 
 </details>
 
+## Theming buttons
+
+Buttons support [Material Theming](https://material.io/components/buttons/#theming) and can be customized in terms of color, typography and shape.
+
+Both `mdc-button` and `mdc-icon-button` work with themes. Import a theme into your `*.scss` stylesheet to apply it to your website, including buttons or toggle icon buttons:
+
+<details><summary><b<Expand for theming instractions for <code>mdc-button</code> or <code>mdc-icon-button</code>.</b></summary>
+
+**mdc-button**
+```css
+@import "@material/button/mdc-button";
+```
+
+**mdc-icon-button**
+```css
+@import "@material/icon-button/mdc-icon-button";
+```
+
+</details>
+
+### Button theming example
+
+API and source code:
+
+* `MaterialButton`
+    * [Class description](https://)
+    * [GitHub source](https://github.com/material-components/)
+    
+The following example shows text, outlined and contained button types with Material Theming.
+
+!["Button theming example for <platform> with three buttons - text, outlined and contained - with green/black color theming and cut corners."](assets/button-theming.svg)
+
+<details>
+<summary><b>Implementing button theming</b></summary>
+<br>
+
+```
+Include source code implementing the three buttons found in [https://github.com/mingjane-work/doc-material-components/blob/mingjane-doc-branch/button-examples/Android/android-button-example.md#theming-buttons].
+
+Upload a screenshot of the render and update the image.
+```
+
+</details>

@@ -219,7 +219,7 @@ The source code example should display as per the interactive example (https://m
 * Display a secondary title "Secondary text" with an opacity of 60%
 * Display text reading "Greyhound divisively hello coldly wonderfully marginally far upon excluding." with an opacity of 60%
 * Display two actions, "Action 1" and "Action 2" with two text buttons
-* Display the sample images ![sample card image of yellow and red tulips](assets/card-sample-image.jpg) and ![sample card image of red and yellow apples in blue plastic crates at roadside street stand](assets/card-sample-image-2.jpg)
+* Display the sample images ![sample card image of yellow and red tulips](assets/card-sample-image.jpg) and ![sample card image of red and yellow apples](assets/card-sample-image-2.jpg)
 * Allow the cards to be moveable.
 ```
 
@@ -391,13 +391,16 @@ The source code example should display as per the interactive example (https://m
 * Display text reading "Greyhound divisively hello coldly wonderfully marginally far upon excluding." with an opacity of 60%
 * Display two actions, "Action 1" and "Action 2" with two text buttons
 * Display the sample image ![sample card image of yellow and red tulips](assets/card-sample-image.jpg)
-* Make the card selectable with a "favorites" icon
+* Make the card checkable with a "favorites" icon
 
 ```
 
 ## Theming Cards
 
 Cards support [Material Theming](https://material.io/components/cards/#theming) and can be customized in terms of color, typography and shape.
+
+![Screenshot of card theming example](assets/<screenshot of theming example>.png)
+
 
 ### Card theming example
 

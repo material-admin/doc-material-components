@@ -102,7 +102,7 @@ Include a snippet of source code illustrating the example.
     "We recommend using [Material Theming](https://material.io/components/\<component name\>/#theming) to apply your customizations across your application. For a full list of component properties, go to the API docs:"
     * List the links to each API
 
-#### Themes (Styles)
+#### Styles
 
 Include a table of the theme description for each theme element and the theme's name in your platform. 
 
@@ -131,3 +131,22 @@ Include a table of the theme description for each theme element and the theme's 
 
 _Continue describing the rest of the component types as necessary._
 
+## Theming \<component name\>
+
+Provide a 1-2 sentences saying that Material theming applies to the component:
+    "\<Component name\> supports [Material Theming](https://material.io/components/<component name>/#theming) and can be customized in terms of color, typography and shape."
+
+### \<Component name\> theming example
+
+* Provide a screenshot of a coponent type that uses a modified theme that includes changes to:
+    * Background color
+    * Outline color (if applicable)
+    * Font type
+    * Font color
+    * Component shape (if applicable)
+
+<details><summary><b>Implementing \<component name\> theming</b></summary>
+
+Provide example code that corresponds to the component type screenshot
+
+</details>
