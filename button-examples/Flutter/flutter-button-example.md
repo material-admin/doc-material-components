@@ -25,8 +25,6 @@ There are four types of buttons:
 
 ## Using buttons
 
-<!-- Update your IDE and your Material Components library to the latest version if you are using Material Components for the first time. -->
-
 Before you can use Material buttons, you need to import the Material Components package for Flutter: `package:flutter/material.dart`.
 
 You need to be using a [`MaterialApp`](https://api.flutter.dev/flutter/material/MaterialApp-class.html).
