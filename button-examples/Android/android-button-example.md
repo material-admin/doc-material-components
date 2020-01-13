@@ -21,7 +21,7 @@ There are four types of buttons:
 3. [Contained button](#contained-button)
 4. [Toggle button](#toggle-button)
 
-!["Button types for Android - text, outlined, contained and toggle."](assets/button-types.svg)
+!["Button types for Android - text, outlined, contained and toggle."](assets/mio-button-types.png)
 
 ## Using buttons
 
