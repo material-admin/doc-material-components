@@ -4,13 +4,15 @@ This document shows the accessibility expectations for the deveoper-focused docu
 
 ## Introductory text and alt-text
 
-MarkDown has a limited palette of accessibility tools, and has no native image caption capability. Instead, use a sentence or two to describe and provide context for the image, and alt-text to provide a detailed description of the image.
+MarkDown has a limited palette of accessibility tools, and has no native image caption capability.
+
+The introductory text should succintly describe the image within the context of the document.
+
+The alt-text should describe relevant visual details, as though the image didn't load. Avoid alt-text over 125 characters because many optical character readers (OCRs) do not support long alt-text. If you feel you need the extra description, load the more relavent information at the beginning of the alt-text. 
 
 ## Image examples
 
-Images for developer articles are screenshots to illustrate component types or render sample code. The introductory text should succintly describe the image within the context of the document.
-
-The alt-text should describe relevant visual details, as though the image didn't load. Avoid alt-text over 125 characters because many optical character readers (OCRs) do not support long alt-text. If you feel you need the extra description, load the more relavent information at the beginning of the alt-text. 
+Images for developer articles are screenshots to illustrate component types or render sample code. 
 
 For example, if an image illustrates a type, the introductory text would be part of the document introduction and the alt-text would be succint because the customizations would be described elsewhere:
 
@@ -27,22 +29,34 @@ The alt-text reads:
 	The filled text fields show a gray background and a darker gray activation indicator that is purple when focused.
 	The outlined text fields show a clear background and an outline that is purple when focused
 
+If an image is a render from sample code, you should describe what was included in the intructory text, and describe the color and relative position of any attributes.
 
-
-> The following is an example of a bottom application bar with an overlapping floating action button:
+> The following is an example of a bottom application bar with icons and an overlapping floating action button:
 >
-> ![Example, purple bottom application bar with white icons and an overlapping centered black floating action button. The application bar has a 3 white icons: menu icon, search icon, and more icon](accessibility-assets/bottom-nav-example.png)
+> ![Example, purple bottom application bar with white icons and an overlapping centered black floating action button. The application bar has a 3 white icons: menu icon to the far left, search icon and more icon to the far right. The floating action button has a white plus icon.](accessibility-assets/bottom-nav-example.png)
+
+The alt-text reads:
+
+	Example, purple bottom application bar with white icons and an overlapping centered black floating action button.
+	The application bar has a 3 white icons: menu icon to the far left, search icon and more icon to the far right.
+	The floating action button has a white plus icon.
 
 
 
 
 ## Diagram examples
 
-With some exceptions, diagrams are usually image files that convey specific technical information, but are otherwise treated in MarkDown as an image.
+Diagrams are usually screenshots that include callouts to convey specific technical information, but can include videos and animations. MarkDown does not natively support embedded video content, but can support animated GIFs.
 
-For example the following is an anatomy diagram for the dialogs component:
+For example the following is an introduction and diagram for a dialog component:
 
-![Dialog component anatomy with labels for the container, title, supporting text, buttons, scrim](accessibility-assets/dialogs-anatomy-diagram-example.png)
+> The following is the anatomy diagram for the dialog component:
+>
+> ![Dialog component anatomy with labels for the container, title, supporting text, buttons, scrim](accessibility-assets/dialogs-anatomy-diagram-example.png)
 
+
+The alt-text reads:
+
+	Dialog component anatomy with labels for the container, title, supporting text, buttons, scrim
 
 

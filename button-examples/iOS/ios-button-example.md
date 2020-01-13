@@ -21,7 +21,7 @@ There are four types of buttons:
 3. [Contained button](#contained-button)
 4. [Toggle button](#toggle-button)
 
-![Example of the four button types](assets/button-types.svg)
+![Example of the four button types](assets/mio-button-types.png)
 
 
 ## Using button
