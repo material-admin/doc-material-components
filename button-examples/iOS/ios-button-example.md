@@ -19,7 +19,9 @@ There are four types of buttons:
 1. [Text button](#text-button)
 2. [Outlined button](#outlined-button)
 3. [Contained button](#contained-button)
-4. [Toggle button](#toggle-button)
+4. [Toggle button](#toggle-button) - Not Yet Supported on iOS.
+
+**A NOTE TO AUTHOR OF THIS PAGE: (1) iOS does not have a toggle button, so this should be expalined here. (2) The toggle button image shows a UISegmentedControl, not the cards example's toggle button - which is different. (3) The card's example should go in the cards page - it doesn't belong here.**
 
 ![Example of the four button types](assets/mio-button-types.png)
 
@@ -45,35 +47,43 @@ Before using the `MDCButtons` API to implement its types you must install `MCDBu
 
     **Note** For more information about themes, go to the [Theming page](https://material.io/develop/ios/components/theming/) for iOS.
 
-     **Swift**
+     **Swift** 
      ```swift
      import MaterialComponents.MaterialButtons
      import MaterialComponents.MaterialButtons_Theming
-     /*...*/
-     let <local theme name> = <theme name>
+     import MaterialComponents.MaterialContainerScheme
+     
+     // Create the button.
      let button = MDCButton()
+     // Apply a text theme.
+     let containerScheme = MDCContainerScheme()
+     button.applyTextTheme(withScheme: containerScheme)
+
      ```
      **Objective-C**
      ```objc
      #import "MaterialButtons.h"
-     #import <MaterialComponentsBeta/MaterialButtons+Theming.h>
-     /*...*/
-     <theme name> *<local theme name> = [[<theme name> alloc] init];
+     #import "MaterialButtons+Theming.h"
+     #import "MaterialContainerScheme.h"
+     
+     // Create the button.
      MDCButton *button = [[MDCButton alloc] init];
+     // Apply a text theme.
+     MDCContainerScheme *containerScheme = [[MDCContainerScheme alloc] init];
+     [button applyTextThemeWithScheme:containerScheme];
      ```
 1. Apply accessibility settings
  
     To help make your buttons usable to as many users as possible, set an appropriate [`accessibilityLabel`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) value if your button does not have a title or only has an icon:
 
-    **Objective-C**
-    ```objc
-    button.accessibilityLabel = @"Create";
-    ```
     **Swift**
     ```swift
     button.accessibilityLabel = "Create"
     ```
-    
+    **Objective-C**
+    ```objc
+    button.accessibilityLabel = @"Create";
+    ```
 
 </details>
 
@@ -103,20 +113,26 @@ The following example shows a text button with a text label.
 ```swift
 import MaterialComponents.MaterialButtons
 import MaterialComponents.MaterialButtons_Theming
+import MaterialComponents.MaterialContainerScheme
 
-let containerScheme = MDCContainerScheme()
+// Create the button.
 let button = MDCButton()
+// Apply a text theme.
+let containerScheme = MDCContainerScheme()
 button.applyTextTheme(withScheme: containerScheme)
 ```
 
 **Objective-C**
 
 ```ObjC
-#import <MaterialComponents/MaterialButtons.h>
-#import <MaterialComponents/MaterialButtons+Theming.h>
+#import "MaterialButtons.h"
+#import "MaterialButtons+Theming.h"
+#import "MaterialContainerScheme.h"
 
-MDCContainerScheme *containerScheme = [[MDCContainerScheme alloc] init];
+// Create the button.
 MDCButton *button = [[MDCButton alloc] init];
+// Apply a text theme.
+MDCContainerScheme *containerScheme = [[MDCContainerScheme alloc] init];
 [button applyTextThemeWithScheme:containerScheme];
 ```
 <details>
@@ -213,22 +229,29 @@ The following example shows an outlined button with a text label and stroked con
 ```swift
 import MaterialComponents.MaterialButtons
 import MaterialComponents.MaterialButtons_Theming
+import MaterialComponents.MaterialContainerScheme
 
-let containerScheme = MDCContainerScheme()
+// Create the button.
 let button = MDCButton()
+// Apply a text theme.
+let containerScheme = MDCContainerScheme()
 button.applyOutlinedTheme(withScheme: containerScheme)
 ```
+
 **Objective-C**
 ```objc
 
 #import "MaterialButtons.h"
-#import <MaterialComponentsBeta/MaterialButtons+Theming.h>
+#import "MaterialButtons+Theming.h"
+#import "MaterialContainerScheme.h"
 
-MDCContainerScheme *containerScheme = [[MDCContainerScheme alloc] init];
+// Create the button.
 MDCButton *button = [[MDCButton alloc] init];
-
-[self.button applyOutlinedThemeWithScheme:self.containerScheme];
+// Apply a text theme.
+MDCContainerScheme *containerScheme = [[MDCContainerScheme alloc] init];
+[button applyOutlinedThemeWithScheme:containerScheme];
 ```
+
 ### Outlined button example with container schemes
 
 You can apply a theme to the button that applies to all elements in a container using `MDCContainerScheme`.
@@ -247,18 +270,28 @@ Source Code APIs:
 ```swift
 import MaterialComponents.MaterialButtons
 import MaterialComponents.MaterialButtons_Theming
+import MaterialComponents.MaterialContainerScheme
 
+// Create the button.
 let button = MDCButton()
-button.applyTextTheme(withScheme: containerScheme)
+// Apply a text theme.
+let containerScheme = MDCContainerScheme()
+button.applyOutlinedTheme(withScheme: containerScheme)    // text or outline?
 ```
+
 **Objective-C**
 ```objc
-#import <MaterialComponents/MaterialButtons.h>
-#import <MaterialComponentsBeta/MaterialButtons+Theming.h>
+#import "MaterialButtons.h"
+#import "MaterialButtons+Theming.h"
+#import "MaterialContainerScheme.h"
 
+// Create the button.
 MDCButton *button = [[MDCButton alloc] init];
-[self.button applyTextThemeWithScheme:self.containerScheme];
+// Apply a text theme.
+MDCContainerScheme *containerScheme = [[MDCContainerScheme alloc] init];
+[button applyOutlinedThemeWithScheme:containerScheme];    // text or outline?
 ```
+
 ### Anatomy and key properties
 
 An outline button has text, a container, and an optional icon.
@@ -334,17 +367,26 @@ The following example shows a contained button with a text label and a filled co
 ```swift
 import MaterialComponents.MaterialButtons
 import MaterialComponents.MaterialButtons_Theming
+import MaterialComponents.MaterialContainerScheme
 
+// Create the button.
 let button = MDCButton()
+// Apply a text theme.
+let containerScheme = MDCContainerScheme()
 button.applyContainedTheme(withScheme: containerScheme)
 ```
+
 **Objective-C**
 ```objc
-#import <MaterialComponents/MaterialButtons.h>
-#import <MaterialComponentsBeta/MaterialButtons+Theming.h>
+#import "MaterialButtons.h"
+#import "MaterialButtons+Theming.h"
+#import "MaterialContainerScheme.h"
 
+// Create the button.
 MDCButton *button = [[MDCButton alloc] init];
-[self.button applyContainedThemeWithScheme:self.containerScheme];
+// Apply a text theme.
+MDCContainerScheme *containerScheme = [[MDCContainerScheme alloc] init];
+[button applyContainedThemeWithScheme:containerScheme];
 ```
 
 
