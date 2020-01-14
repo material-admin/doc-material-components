@@ -523,7 +523,6 @@ To generate the example with background images of your choosing, you will need t
 
 		const iconToggle1 = new MDCIconButtonToggle(document.querySelector('.btn2'));
 		iconToggle1.unbounded = true;
-		/*...*/
 	```
  * In your `*.html` file, you can now add the iterations of the following, which shows containers with background images:
     ```html
@@ -563,7 +562,6 @@ To generate the example with background images of your choosing, you will need t
           ...
         </div>
     ```
-
 
 #### Anatomy and key properties
 
