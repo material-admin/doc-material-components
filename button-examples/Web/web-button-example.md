@@ -573,10 +573,10 @@ The icon button consists of two icons for 'on' and 'off'.
 * C Icon
 
 
-Diagram label | Design Attribute |  Theme value |  Property
----|---|---|---
-C | Icon | N/A |
-C | Icon color | Secondary color |
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+Icon | N/A |
+Icon color | Secondary color | ` mdc-button-icon-color($color)`|
 
 We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Icon button API doc]()
 
