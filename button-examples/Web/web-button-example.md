@@ -244,11 +244,11 @@ A text button has a text label, a transparent container and an optional icon.
 <summary><b>Text label</b> attributes</summary>
 <br>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Text label** ||  | |
-| **Color** |  |  | |
-| **Typography** |  |  |  |
+Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+Text label | N/A |  N/A
+Text color | Primary color |
+Typography | Default |
 
 </details>
 
@@ -256,27 +256,20 @@ A text button has a text label, a transparent container and an optional icon.
 <summary><b>Container</b> attributes</summary>
 <br>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Color** |  |  | |
-| **Stroke color** | |  | |
-| **Stroke width** |  |  |  |
-| **Shape** |  | | |
-| **Elevation** | | | |
-| **Ripple color** | | | |
+Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+Container ink color | Primary color | `mdc-button-ink-color($color)`
 </details>
 
 <details>
 <summary><b>Icon</b> attributes</summary>
 <br>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | | | |
-| **Color** | | | |
-| **Size** | | | |
-| **Gravity** (position relative to text label) | | | |
-| **Padding** (space between icon and text label) | | | |
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+ Icon | N/A |
+C | Icon color | Primary color | ` mdc-button-icon-color($color)`
 
 </details>
 
