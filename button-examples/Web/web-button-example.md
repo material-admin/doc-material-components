@@ -25,7 +25,7 @@ There are four types of buttons:
 
 ## Using buttons
 
-Before you can use a button, you will need to install and require the following:
+Before you can use a button, you will need to install and import the following:
 
 * Install the Material button component
 * Import styles
@@ -137,10 +137,11 @@ module.exports = {
   includePaths: [path.resolve(CWD, "node_modules"), path.resolve(CWD, "src")]
 };
 ```
+</details>
 
 Import base styles of button into your `*.scss` stylesheet using :
 
-<details><summary><b<Expand for theming instructions for <code>mdc-button</code> or <code>mdc-icon-button</code>.</b></summary>
+<details><summary><b>Expand for theming instructions for <code>mdc-button</code> or <code>mdc-icon-button</code>.</b></summary>
 
 **mdc-button**
 ```scss
@@ -190,8 +191,6 @@ Mixin | Description
 `ink-color($color)` | Sets the font color and the ripple color to the provided color value.
 
 </details>
-
-\<**NOTE** Update the table entries with the appropriate class property. Update the links to appropriate API pages\>
 
 ## Text button
 
