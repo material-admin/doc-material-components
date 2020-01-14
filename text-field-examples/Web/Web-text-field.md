@@ -101,63 +101,42 @@ module.exports = {
 
 <img src="assets/web-sass-mixins-example.png" alt="Example text field instance rendered for an orange label and a green cursor caret">
 
-#### Sass mixins for `mdc-button`
+#### Sass mixins for `mdc-text-field`
 
-##### Mixins for all text fields
+Use Sass mixins when you want to customize the look and feel of your text fields. Go to [sass-lang.com](https://sass-lang.com/install) for installation instructions.
 
-Mixin | Description
---- | ---
-`mdc-text-field-ink-color($color)` | Customizes the color of the text entered into the text field.
-`mdc-text-field-label-color($color)` | Customizes the text color of the label.
-`mdc-text-field-caret-color($color)` | Customizes the color of the cursor caret of the text field.
+Text fields support [Material Theming](https://material.io/components/text-fields/#theming) and can be customized in terms of color, typography, and shape.
 
-##### Mixins for filled text field
+<details><summary><b>Expand for instructions to use Sass mixins to customize your <code>mdc-text-field</code></b></summary>
 
-Mixin | Description
---- | ---
-`mdc-text-field-shape-radius($radius, $rtl-reflexive)` | Sets rounded shape to boxed text field variant with given radius size. Set `$rtl-reflexive` to true to flip radius values in RTL context, defaults to false.
-`mdc-text-field-fill-color($color)` | Customizes the background color of the text field.
-`mdc-text-field-bottom-line-color($color)` | Customizes the text field bottom line color except the outlined and textarea variants.
-`mdc-text-field-hover-bottom-line-color($color)` | Customizes the hover text field bottom line color except the outlined and textarea variants.
-`mdc-text-field-line-ripple-color($color)` | Customizes the color of the default line ripple of the text field.
+Before using Sass mixins for your project you will need to do the following:
 
-##### Mixins for outlined text field
+* Add the Sass package to your `*.json file` under `devDependencies`:
+```json
+"devDependencies": {
+  "sass": "^1.24.3"
+}
+```
 
-Mixin | Description
---- | ---
-`mdc-text-field-focused-outline-color($color)` | Customizes the outline border color when the text field is focused.
-`mdc-text-field-hover-outline-color($color)` | Customizes the outline border color when the text field is hovered.
-`mdc-text-field-outline-color($color)` | Customizes the border color of the outlined text field.
-`mdc-text-field-outline-shape-radius($radius, $rtl-reflexive)` | Sets rounded shape to outlined text field variant with given radius size. Set `$rtl-reflexive` to true to flip radius values in RTL context, defaults to false.
+* Add a `.sassrc.js` file to your project root directory:
 
-##### Mixins for text area
+```js
+const path = require("path");
 
-Mixin | Description
---- | ---
-`mdc-text-field-textarea-shape-radius($radius, $rtl-reflexive)` | Sets rounded shape to text area variant with given radius size. Set `$rtl-reflexive` to true to flip radius values in RTL context, defaults to false.
-`mdc-text-field-textarea-fill-color($color)` | Customizes the color of the background of the textarea.
-`mdc-text-field-textarea-stroke-color($color)` | Customizes the color of the border of the textarea.
+const CWD = process.cwd();
 
-
-##### Mixins for text field full width
-
-Mixin | Description
---- | ---
-`mdc-text-field-fullwidth-bottom-line-color($color)` | Customizes the fullwidth text field variant bottom line color.
-
-The following mixins are available to customize your `mdc-button` instance.
-
-Mixin | Description
----|---
-`mdc-button-container-fill-color($color)` | Sets the container fill color to the given color.
-`mdc-button-icon-color($color)` | Sets the icon color to the given color.
-`mdc-button-ink-color($color)` | Sets the ink color to the given color, and sets the icon color to the given color unless `mdc-button-icon-color` is also used.
-`mdc-button-shape-radius($radius, $rtl-reflexive)` | Sets rounded shape to button with given radius size. Set `$rtl-reflexive` to true to flip radius values in RTL context, defaults to false.
-`mdc-button-horizontal-padding($padding)` | Sets horizontal padding to the given number.
-`mdc-button-outline-color($color)` | Sets the outline color to the given color.
-`mdc-button-outline-width($width, $padding)` | Sets the outline width to the given number (defaults to 2px) and adjusts padding accordingly. `$padding` is only required in cases where `mdc-button-horizontal-padding` is also included with a custom value.
-
+module.exports = {
+  includePaths: [path.resolve(CWD, "node_modules"), path.resolve(CWD, "src")]
+};
+```
 </details>
+
+Import base styles of button into your `*.scss` stylesheet using :
+
+**NOTE are there theming instructions for text fields? Include them in the collapsible section**
+
+<details><summary><b>Expand for theming instructions for <code>mdc-text-field</code>.</b></summary>
+
 
 ### Making text fields accessible
 
@@ -210,14 +189,14 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 <summary><b>Container</b> attributes</summary>
 <br>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Color** | | | |
-| **Stroke color** | | | |
-| **Stroke width** | | | |
-| **Shape** | | | |
-| **Elevation** | | | |
-| **Ripple color** | | | |
+| Design Attribute | Theme value | Equivalent Sass mixin attribute |
+| --- | --- | --- |
+| **Color** | |`mdc-text-field-fill-color($color)` | 
+| **Stroke color** | |`mdc-text-field-bottom-line-color($color) | 
+| **Stroke color(hover)** | |`mdc-text-field-hover-bottom-line-color($color)`  |
+| **Shape** | |`mdc-text-field-shape-radius($radius, $rtl-reflexive)`| 
+| **Elevation** | | | 
+| **Ripple color** | |`mdc-text-field-line-ripple-color($color)` | 
 
 </details>
 
@@ -226,13 +205,13 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 <summary><b>Leading icon</b> (optional) attributes</summary>
 <br>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | | | |
-| **Color** | | | |
-| **Size** | | | |
-| **Gravity** | | | |
-| **Padding** | | | |
+|  Design attribute | Theme value | Equivalent Sass mixin attribute |
+| --- | --- | --- |
+| **Icon** | | |
+| **Color** | | | 
+| **Size** | | | 
+| **Gravity** | | | 
+| **Padding** | | |
 
 
 </details>
@@ -242,11 +221,11 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 <summary><b>Label text</b> attributes</summary>
 <br>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Label text** |  | | |
-| **Typography** | | | |
-| **Color** | | | |
+|  Design attribute | Theme value | Equivalent Sass mixin attribute |
+| --- | --- | --- |
+| **Label text** |  | | 
+| **Typography** | | | 
+| **Color** | |`mdc-text-field-label-color($color)` | 
 
 </details>
 
@@ -255,11 +234,12 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 <summary><b>Input text</b> attributes</summary>
 <br>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Label text** |  | | |
-| **Typography** | | | |
-| **Color** | | | |
+|  Design attribute | Theme value | Equivalent Sass mixin attribute |
+| --- | --- | --- |
+| **Label text** |  |`mdc-text-field-ink-color($color)`  |
+| **Typography** | | |
+| **Color** | |`mdc-text-field-ink-color($color)` |
+| **Cursor color** | | `mdc-text-field-caret-color($color)` |
 
 </details>
 
@@ -268,13 +248,13 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 <summary><b>Trailing icon</b> (optional) attributes</summary>
 <br>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | | | |
-| **Color** | | | |
-| **Size** | | | |
-| **Gravity** | | | |
-| **Padding** | | | |
+|  Design attribute | Theme value | Equivalent Sass mixin attribute |
+| --- | --- | --- |
+| **Icon** | | | 
+| **Color** | | |
+| **Size** | | |
+| **Gravity** | | |
+| **Padding** | | | 
 
 </details>
 
@@ -283,11 +263,13 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 <summary><b>Activation indicator</b> attributes</summary>
 <br>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Stroke color** | | | |
-| **Stroke width** | | | |
-| **Ripple color** | | | |
+|  Design attribute | Theme value | Equivalent Sass mixin attribute |
+| --- | --- | --- | 
+| **Stroke color** | | |
+| **Stroke width** | | |
+| **Ripple color** | | |
+| **Stroke color(hover)** | |`mdc-text-field-hover-bottom-line-color($color)`  |
+
 
 </details>
 
@@ -296,18 +278,18 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 <summary><b>Helper text</b> (optional) attributes</summary>
 <br>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Label text** |  | | |
-| **Typography** | | | |
-| **Color** | | | |
+|  Design attribute | Theme value | Equivalent Sass mixin attribute |
+| --- | --- | --- |
+| **Label text** |  | |
+| **Typography** | | |
+| **Color** | | | 
 
 </details>
 
 <summary><b>Styles</b></summary>
 <br>
 
-|  | Style|
+|  Style|
 | --- | --- |
 | **Default style** | |
 | **Icon style** | |
@@ -353,14 +335,14 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 <summary><b>Container</b> attributes</summary>
 <br>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Color** | | | |
-| **Stroke color** | | | |
-| **Stroke width** | | | |
-| **Shape** | | | |
-| **Elevation** | | | |
-| **Ripple color** | | | |
+| Design Attribute | Theme value | Equivalent Sass mixin attribute |
+| --- | --- | --- |
+| **Color** | |`mdc-text-field-fill-color($color)` | 
+| **Stroke color** | |`mdc-text-field-outline-color($color) | 
+| **Stroke color(hover)** | |`mdc-text-field-hover-outline-color($color)`  |
+| **Shape** | |`mdc-text-field-shape-radius($radius, $rtl-reflexive)`| 
+| **Elevation** | | | 
+| **Ripple color** | |`mdc-text-field-line-ripple-color($color)` | 
 
 </details>
 
@@ -369,13 +351,13 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 <summary><b>Leading icon</b> (optional) attributes</summary>
 <br>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | | | |
-| **Color** | | | |
-| **Size** | | | |
-| **Gravity** | | | |
-| **Padding** | | | |
+|  Design attribute | Theme value | Equivalent Sass mixin attribute |
+| --- | --- | --- |
+| **Icon** | | |
+| **Color** | | | 
+| **Size** | | | 
+| **Gravity** | | | 
+| **Padding** | | |
 
 
 </details>
@@ -385,11 +367,11 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 <summary><b>Label text</b> attributes</summary>
 <br>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Label text** |  | | |
-| **Typography** | | | |
-| **Color** | | | |
+|  Design attribute | Theme value | Equivalent Sass mixin attribute |
+| --- | --- | --- |
+| **Label text** |  | | 
+| **Typography** | | | 
+| **Color** | |`mdc-text-field-label-color($color)` | 
 
 </details>
 
@@ -398,26 +380,27 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 <summary><b>Input text</b> attributes</summary>
 <br>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Label text** |  | | |
-| **Typography** | | | |
-| **Color** | | | |
+|  Design attribute | Theme value | Equivalent Sass mixin attribute |
+| --- | --- | --- |
+| **Label text** |  |`mdc-text-field-ink-color($color)`  |
+| **Typography** | | |
+| **Color** | |`mdc-text-field-ink-color($color)` |
+| **Cursor color** | | `mdc-text-field-caret-color($color)` |
 
 </details>
 
 
 <details>
 <summary><b>Trailing icon</b> (optional) attributes</summary>
-<br>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | | | |
-| **Color** | | | |
-| **Size** | | | |
-| **Gravity** | | | |
-| **Padding** | | | |
+|  Design attribute | Theme value | Equivalent Sass mixin attribute |
+| --- | --- | --- | 
+| **Color** | | | 
+| **Stroke color** | | | 
+| **Stroke width** | | |
+| **Shape** | | | 
+| **Elevation** | | | 
+| **Ripple color** | | | 
 
 </details>
 
@@ -426,11 +409,11 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 <summary><b>Activation indicator</b> attributes</summary>
 <br>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Stroke color** | | | |
-| **Stroke width** | | | |
-| **Ripple color** | | | |
+|  Design attribute | Theme value | Equivalent Sass mixin attribute |
+| --- | --- | --- |
+| **Stroke color** | |`mdc-text-field-focused-outline-color($color)`  |
+| **Stroke width** | | |
+| **Ripple color** | | |
 
 </details>
 
@@ -439,18 +422,18 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 <summary><b>Helper text</b> (optional) attributes</summary>
 <br>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Label text** |  | | |
-| **Typography** | | | |
-| **Color** | | | |
+|  Design attribute | Theme value | Equivalent Sass mixin attribute |
+| --- | --- | --- | 
+| **Label text** |  | | 
+| **Typography** | | | 
+| **Color** | | | 
 
 </details>
 
 <summary><b>Styles</b></summary>
 <br>
 
-|  | Style|
+|  Style|
 | --- | --- |
 | **Default style** | |
 | **Icon style** | |
@@ -492,3 +475,4 @@ Include source code for two side-by-side examples using a green/black color them
     * The error message text should read "Error message" and display the error message
     * The text field should have a trailing error icon
     * The container should have cut corners instead of rounded
+```
