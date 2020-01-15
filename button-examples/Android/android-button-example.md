@@ -92,11 +92,9 @@ In the layout:
 
 A text button has a text label, a transparent container and an optional icon.
 
-<<<<<<< HEAD
+
 ![smaller diagram](assets/text_button_anatomy_wide.png)
-=======
-![smaller diagram](assets/outline_button_anatomy_sm.png)
->>>>>>> 7e0d346f2cc445a95ba233d7620699d748c6f9d3
+
 
 <details>
 <summary><b>Text label</b> attributes</summary>
@@ -213,11 +211,9 @@ In the layout:
 
 An outlined button has a text label, a stroked container and an optional icon.
 
-<<<<<<< HEAD
+
 ![<Placeholder diagram of outlined button anatomy. Replace this text if/when there is an approved diagram\>](assets/outline_button_anatomy_wide.png)
-=======
-![<Placeholder diagram of outlined button anatomy. Replace this text if/when there is an approved diagram\>](assets/text_button_anatomy_sm.png)
->>>>>>> 7e0d346f2cc445a95ba233d7620699d748c6f9d3
+
 
 <details>
 <summary><b>Text label</b> attributes</summary>
