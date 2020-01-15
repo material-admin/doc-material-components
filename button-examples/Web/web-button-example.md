@@ -6,7 +6,7 @@ excerpt: "Web Buttons"
 ide_version: "<cIDE name> <compatible IDE version and build number>"
 material_package_version: "<compatible Material platform package version number>"
 iconId:
-path: /
+path: /:
 api_doc_root:
 -->
 
@@ -84,7 +84,7 @@ Add an icon to your `mdc-button` instance using the following steps:
       <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
     ```
-1. Include the `mdc-button__icon` class inside your button element. Set the attribute `area-hidden="true"`.
+1. Include the `mdc-button__icon` class inside your button element. Set the attribute `aria-hidden="true"`.
     **Note** The location of the icon element determines if the icon comes before (*leading*) or after (*trailing icon*) the button label.
 
     **Example using [Material Icons](https://material.io/tools/icons/)**
