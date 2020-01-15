@@ -11,8 +11,6 @@ api_doc_root:
 -->
 
 _**Instructions**_
-* Copy this file into the platform folder for this component
-* Rename the file to "\<platform\>-text-field.md"
 * [Using text field](#using-text-field)
     * Add a link under [Using text field](#using-text-field) to your getting started page if you have one
     * Insert [installation](#installation) and [theming](#theming) as appropriate for your platform
