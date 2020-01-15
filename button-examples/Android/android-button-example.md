@@ -93,7 +93,11 @@ In the layout:
 A text button has a text label, a transparent container and an optional icon.
 
 
+<<<<<<< HEAD
 ![smaller diagram](assets/text-buttons-anatomy-long.png)
+=======
+![smaller diagram](assets/text_button_anatomy_wide.png)
+>>>>>>> 30d7f9f7f873fd3b21a610ed71b7c42a152bd5c2
 
 
 <details>
