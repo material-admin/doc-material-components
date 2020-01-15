@@ -11,8 +11,6 @@ api_doc_root:
 -->
 
 _**Instructions**_
-* Copy this file into the platform folder for this component
-* Rename the file to "\<platform\>-text-field.md"
 * [Using text field](#using-text-field)
     * Add a link under [Using text field](#using-text-field) to your getting started page if you have one
     * Insert [installation](#installation) and [theming](#theming) as appropriate for your platform
@@ -39,7 +37,7 @@ Text fields allow users to enter text into a UI. They typically appear in forms 
 
 ### Making text fields accessible
 
-\<platform\>'s text field component APIs supports both label text and helper text for accessibility. 
+Flutter's text field component APIs supports both label text and helper text for accessibility. 
 
 For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
