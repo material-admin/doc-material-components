@@ -28,13 +28,12 @@ There are four types of buttons:
 Before you can use a button, you will need to install and import the following:
 
 * Install the Material button component
-* Import styles
 * Import JavaScript
+* Import styles
 
 ### Install the Material button component
 
-Install the `mdc-button` or `mdc-icon-button` component before including it in your source.
-
+Install the `mdc-button` or `mdc-icon-button` component before including it in your source using [NPM](https://www.npmjs.com/).
 
 <details><summary><b>Expand for installation commands for <code>mdc-button</code> or <code>mdc-icon-button</code>.</b></summary>
 
@@ -42,6 +41,8 @@ Install the `mdc-button` or `mdc-icon-button` component before including it in y
 ```bash
 npm install @material/buttons
 ```
+
+// It would help to have an image differentiating button an icon button since we don't show icon button or discuss it yet in this section
 
 **`mdc-icon-button`**
 ```bash
@@ -52,9 +53,7 @@ npm install @material/icon-button
 
 ### Import JavaScript
 
-You can optionally add a JavaScript ripple effect (see [MDC Ripple](https://github.com/material-components/material-components-web/blob/master/packages/mdc-ripple)) to your buttons by importing and then instantiating `MDCRipple` in your `*.js` file. See the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md) for more information.
-
-To bundle your `*.js` file, go to the [quickstart page](https://github.com/material-components/material-components-web/blob/master/docs/getting-started.md#quick-start-cdn).
+You can optionally add a JavaScript ripple effect (see [MDC Ripple](https://github.com/material-components/material-components-web/blob/master/packages/mdc-ripple)) to your buttons by installing, importing, and then instantiating `MDCRipple` in your `*.js` file. See the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md) for more information.
 
 <details><summary><b>Expand for instructions to add JavaScript</b></summary>
 
@@ -73,6 +72,10 @@ iconButtonRipple.unbounded = true;
 </details>
 
 ### Add an icon to `mdc-button`
+
+// I think this section might need to be restructured
+// 1. Needs an image
+// 2. Move install step here since it's a different package
 
 <details><summary><b>Expand for instructions to add an icon to your <code>mdc-button</code></b></summary>
 
@@ -96,11 +99,11 @@ Add an icon to your `mdc-button` instance using the following steps:
     </button>
     ```
 
-    **Example using SVG Icons**
+    **Example using SVG Icon**
     ```html
     <button class="mdc-button">
       <div class="mdc-button__ripple"></div>
-      <svg class="mdc-button__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="...">
+      <svg class="mdc-button__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="..."> // I feel like this example should be more complete -- make an actual shape so users can copy and paste it and see something
         /*...*/
       </svg>
       <span class="mdc-button__label">Button</span>
@@ -111,20 +114,19 @@ Add an icon to your `mdc-button` instance using the following steps:
 
 ### Sass mixins
 
-Use Sass mixins when you want to customize the look and feel of your buttons. Go to [sass-lang.com](https://sass-lang.com/install) for installation instructions.
-
-Buttons support [Material Theming](https://material.io/components/buttons/#theming) and can be customized in terms of color, typography and shape.
+Buttons support [Material Theming](https://material.io/components/buttons/#theming) and can be customized in terms of color, typography and shape. Material uses Sass to customize the look and your components. Go to [sass-lang.com](https://sass-lang.com/install) for installation instructions.
 
 <details><summary><b>Expand for instructions to use Sass mixins to customize your <code>mdc-button</code> or <code>mdc-icon-button</code></b></summary>
 
 Before using Sass mixins for your project you will need to do the following:
 
-* Add the Sass package to your `*.json file` under `devDependencies`:
+* Add the Sass package to your `*.json file` under `devDependencies` or `npm install sass --save` to install it in your terminal:
 ```json
 "devDependencies": {
   "sass": "^1.24.3"
 }
 ```
+// Do we need to do this bit? I think it's highly dependant on a user's environment (the sassrc file). I haven't done this in a long time and used Sass with a different build step instead
 
 * Add a `.sassrc.js` file to your project root directory:
 
@@ -593,7 +595,7 @@ API and source code:
 
 The following example shows text, outlined and contained button types with Material Theming.
 
-!["Button theming example for <platform> with three buttons - text, outlined and contained - with green/black color theming and cut corners."](assets/button-theming.svg)
+!["Button theming example for <platform> with three buttons - text, outlined and contained - with green/black color theming."](assets/button-theming.svg)
 
 <details>
 <summary><b>Implementing button theming</b></summary>
