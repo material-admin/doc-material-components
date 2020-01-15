@@ -31,13 +31,18 @@ The text field class consists of the following types:
 * [Filled text](#filled-text)
 * [Outlined text](#outlined-text)
 
-<img src="assets/text-field-generic.png" alt="Text field example of both filled and outlined text from material.io">
+<img src="assets/text-field-generic.png" alt="Text field examples of both filled and outlined types, and each type showing both inactive and focused states. The filled text fields show a gray background and a darker gray activation indicator that is purple when focused. The outlined text fields show a clear background and an outline that is purple when focused">
 
 ## Using text fields
 
 Text fields allow users to enter text into a UI. They typically appear in forms and dialogs.
 
-### Installation
+### Making text fields accessible
+
+\<platform\>'s text field component APIs supports both label text and helper text for accessibility. 
+
+For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
+
 
 ## Filled text
 
@@ -47,9 +52,9 @@ Text fields allow users to enter text into a UI. They typically appear in forms 
 
 Source code API:
 
-* \<source class name\>
-  * [Class definition](developer site here)
-  * [GitHub source](https://github.com/materials-components/)
+* `TextInputLayout` 
+  * [Class definition]()
+  * [GitHub source](https://github.com/material-components/)
 
 The following examples shows a filled text field.
 
@@ -57,7 +62,7 @@ The following examples shows a filled text field.
 _**Copy the image to your platform's assets folder. Use a screenshot of your render.**_
 
 
-<img src="assets/.png" alt="filled text field for <platform> platform">
+<img src="assets/.png" alt="filled text field for Android">
 
 ```
 * The label text should read "Label text"
@@ -85,9 +90,12 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
+| **Color** | | | |
+| **Stroke color** | | | |
+| **Stroke width** | | | |
+| **Shape** | | | |
+| **Elevation** | | | |
+| **Ripple color** | | | |
 
 </details>
 
@@ -98,9 +106,12 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
+| **Icon** | | | |
+| **Color** | | | |
+| **Size** | | | |
+| **Gravity** | | | |
+| **Padding** | | | |
+
 
 </details>
 
@@ -111,9 +122,9 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
+| **Label text** |  | | |
+| **Typography** | | | |
+| **Color** | | | |
 
 </details>
 
@@ -124,9 +135,9 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
+| **Label text** |  | | |
+| **Typography** | | | |
+| **Color** | | | |
 
 </details>
 
@@ -137,9 +148,11 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
+| **Icon** | | | |
+| **Color** | | | |
+| **Size** | | | |
+| **Gravity** | | | |
+| **Padding** | | | |
 
 </details>
 
@@ -150,9 +163,9 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
+| **Stroke color** | | | |
+| **Stroke width** | | | |
+| **Ripple color** | | | |
 
 </details>
 
@@ -163,9 +176,19 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
+| **Label text** |  | | |
+| **Typography** | | | |
+| **Color** | | | |
+
+</details>
+
+<summary><b>Styles</b></summary>
+<br>
+
+|  | Style|
+| --- | --- |
+| **Default style** | |
+| **Icon style** | |
 
 </details>
 
@@ -177,14 +200,14 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 Source code API:
 
-* \<source class name\>
-  * [Class definition](developer site here)
-  * [GitHub source](https://github.com/materials-components/)
+* `TextInputLayout` 
+  * [Class definition]()
+  * [GitHub source]()
 
 The following examples shows an outlined text field.
 
 _**Copy the image to your platform's assets folder. Use a screenshot of your render.**_
-<img src="assets/.png" alt="outlined text field for <> platform">
+<img src="assets/.png" alt="outlined text field for Android.">
 
 ```
 * The label text should read "Label text"
@@ -210,9 +233,12 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
+| **Color** | | | |
+| **Stroke color** | | | |
+| **Stroke width** | | | |
+| **Shape** | | | |
+| **Elevation** | | | |
+| **Ripple color** | | | |
 
 </details>
 
@@ -223,9 +249,12 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
+| **Icon** | | | |
+| **Color** | | | |
+| **Size** | | | |
+| **Gravity** | | | |
+| **Padding** | | | |
+
 
 </details>
 
@@ -236,9 +265,9 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
+| **Label text** |  | | |
+| **Typography** | | | |
+| **Color** | | | |
 
 </details>
 
@@ -249,9 +278,9 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
+| **Label text** |  | | |
+| **Typography** | | | |
+| **Color** | | | |
 
 </details>
 
@@ -262,9 +291,11 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
+| **Icon** | | | |
+| **Color** | | | |
+| **Size** | | | |
+| **Gravity** | | | |
+| **Padding** | | | |
 
 </details>
 
@@ -275,9 +306,9 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
+| **Stroke color** | | | |
+| **Stroke width** | | | |
+| **Ripple color** | | | |
 
 </details>
 
@@ -288,12 +319,21 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
-| **\<label\>** | | | |
+| **Label text** |  | | |
+| **Typography** | | | |
+| **Color** | | | |
 
 </details>
 
+<summary><b>Styles</b></summary>
+<br>
+
+|  | Style|
+| --- | --- |
+| **Default style** | |
+| **Icon style** | |
+
+</details>
 
 ## Theming text fields
 
