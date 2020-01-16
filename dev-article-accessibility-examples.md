@@ -80,6 +80,7 @@ State diagrams will show examples of all available states for a specific compone
 > | Dragged | left icon<br>right icon<br>container<br>elevation | | NA<br>NA<br>secondary color<br>3pt |
 
 The alt-text reads:
+
 	Chip states include enabled, disabled, hover, focused, selected, pressed, and dragged
 
 
