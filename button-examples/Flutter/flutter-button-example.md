@@ -21,7 +21,7 @@ There are four types of buttons:
 1. [Contained button](#contained-button)
 1. [Toggle button](#toggle-button)
 
-![Example of the four button types](assets/mio-button-types.png)
+![Example of the four button types](assets/button_types.png)
 
 ## Using buttons
 
@@ -70,7 +70,7 @@ FlatButton(
     
 The following example shows a text button with an icon.
 
-!["Text button example for Flutter with purple text 'Text button' and '+' icon over a white background."](assets/text-button-icon.svg)
+!["Text button with purple text 'Text button' and '+' icon over a white background."](assets/text-button-icon.svg)
 
 ```dart
 FlatButton.icon(
@@ -89,7 +89,11 @@ FlatButton.icon(
 
 A text button has a text label, a transparent container and an optional icon.
 
-![<Placeholder diagram of text button anatomy. Replace this text if/when there is an approved diagram\>](assets/text-button-diagram.png)
+![Text button anatomy diagram](assets/text_button_anatomy.png)
+
+1. Text label
+1. Container
+1. Icon
 
 <details>
 <summary><b>Text label</b> properties</summary>
@@ -153,7 +157,7 @@ API and source code:
     * [Class definition](https://api.flutter.dev/flutter/material/OutlineButton-class.html)
     * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/outline_button.dart)
 
-!["Outlined button example for Flutter with purple text 'Outlined button' and grey border over a white background."](assets/outlined-button.svg)
+!["Outlined button with purple text 'Outlined button' and grey border over a white background."](assets/outlined-button.svg)
 
 ```dart
 OutlineButton(
@@ -172,7 +176,7 @@ OutlineButton(
 
 The following example shows an outlined button with an icon.
 
-!["Outlined button example for Flutter with purple text 'Outlined button', grey border and '+' icon over a white background."](assets/outlined-button-icon.svg)
+!["Outlined button with purple text 'Outlined button', grey border and '+' icon over a white background."](assets/outlined-button-icon.svg)
 
 ```dart
 OutlineButton.icon(
@@ -192,7 +196,11 @@ OutlineButton.icon(
 
 An outlined button has a text label, a stroked container and an optional icon.
 
-![<Placeholder diagram of outlined button anatomy. Replace this text if/when there is an approved diagram\>](assets/outlined-button-diagram.png)
+![Outlined button anatomy diagram](assets/outlined_button_anatomy.png)
+
+1. Text label
+1. Container
+1. Icon
 
 <details>
 <summary><b>Text label</b> properties</summary>
@@ -258,7 +266,7 @@ API and source code:
 
 The following example shows a contained button with a text label and a filled container.
 
-!["Contained button example for Flutter with white text 'Contained button' and purple container over a white background."](assets/contained-button.svg)
+!["Contained button with white text 'Contained button' and purple container over a white background."](assets/contained-button.svg)
 
 ```dart
 RaisedButton(
@@ -277,7 +285,7 @@ RaisedButton(
 
 The following example shows a contained button with an icon.
 
-!["Contained button example for Flutter with white text 'Contained button', purple container and '+' icon over a white background."](assets/contained-button-icon.svg)
+!["Contained button with white text 'Contained button', purple container and '+' icon over a white background."](assets/contained-button-icon.svg)
 
 ```dart
 RaisedButton.icon(
@@ -297,7 +305,12 @@ RaisedButton.icon(
 
 A contained button has a text label, a filled container and an optional icon.
 
-![<Placeholder diagram of contained button anatomy. Replace this text if/when there is an approved diagram\>](assets/contained-button-diagram.png)
+
+[Contained button anatomy diagram](assets/contained_button_anatomy.png)
+
+1. Text label
+1. Container
+1. Icon
 
 <details>
 <summary><b>Text label</b> properties</summary>
@@ -372,7 +385,7 @@ API and source code:
 
 The following example shows a toggle button with three buttons that have text labels.
 
-!["Toggle button example for Android with text labels - 'Button 1', 'Button 2' and 'Button 3' - and grey/purple borders over a white background."](assets/toggle-button-text.svg)
+!["Toggle button example with text labels - 'Button 1', 'Button 2' and 'Button 3' - and grey/purple borders over a white background."](assets/toggle-button-text.svg)
 
 In the state:
 ```dart
@@ -452,7 +465,10 @@ ToggleButtons(
 
 A toggle button has a shared stroked container, icons and/or text labels.
 
-![<Placeholder diagram of toggle button anatomy. Replace this text if/when there is an approved diagram\>](assets/toggle-button-diagram.png)
+![Toggle button anatomy](assets/toggle_button_anatomy.png)
+
+* A. Container
+* C. Icon
 
 <details>
 <summary><b>Selection</b> properties</summary>
@@ -488,7 +504,10 @@ API and source code:
 
 The following example shows an icon that can be used independently or in items of a `GridView`.
 
-![<Placeholder image of icon toggle button. Replace this text if/when there is an approved diagram\>](assets/flutter_toggle_button.png)
+![Toggle button anatomy](assets/toggle_button_anatomy.png)
+
+* A. Container
+* C. Icon
 
 In the state:
 ```dart
@@ -517,4 +536,18 @@ Buttons support [Material Theming](https://material.io/components/buttons/#themi
 
 ### Button theming example
 
-// TODO: Fill out button theming example(s)
+The following example shows text, outlined and contained button types with Material Theming.
+
+!["Button theming with three buttons - text, outlined and contained - with green/black color theming and cut corners."](assets/button-theming.svg)
+
+<details>
+<summary><b>Implementing button theming</b></summary>
+<br>
+
+```
+Include source code implementing the three buttons found in [https://github.com/mingjane-work/doc-material-components/blob/mingjane-doc-branch/button-examples/Android/android-button-example.md#theming-buttons].
+
+Upload a screenshot of the render and update the image.
+```
+
+</details>

@@ -21,7 +21,7 @@ There are four types of buttons:
 3. [Contained button](#contained-button)
 4. [Toggle button](#toggle-button)
 
-![Example of the four button types](assets/mio-button-types.png)
+![Example of the four button types](assets/button_types.png)
 
 ## Using buttons
 
@@ -100,7 +100,8 @@ Add an icon to your `mdc-button` instance using the following steps:
     ```html
     <button class="mdc-button">
       <div class="mdc-button__ripple"></div>
-      <svg class="mdc-button__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="...">
+      <<svg class="mdc-button__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="...">
+  ...svg class="mdc-button__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="...">
         /*...*/
       </svg>
       <span class="mdc-button__label">Button</span>
@@ -165,7 +166,7 @@ Import base styles of button into your `*.scss` stylesheet using :
 }
 ```
 
-<img src="assets/web-sass-mixins-example.png" alt="Example button instance rendered for a contained button with an orange fill and green icon color">
+<img src="assets/web-sass-mixins-example.png" alt="Contained button with orange fill and green icon ">
 
 #### Sass mixins for `mdc-button`
 
@@ -204,7 +205,7 @@ Source code API:
     * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
     * [Demo site](https://glitch.com/~shadow-jobaria)
 
-<img src="assets/web-text-button.png" alt="Generated text button example">
+<img src="assets/web-text-button.png" alt="Text button example">
 
 ```html
  <button class="mdc-button">
@@ -215,7 +216,7 @@ Source code API:
 
 <details><summary><b>Text button with icon example</b></summary>
 
-<img src="assets/web-text-icon-button.png" alt="Generated text button with bookmark icon example">
+<img src="assets/web-text-icon-button.png" alt="Text button with bookmark icon example">
 
 ```html
 <button class="mdc-button">
@@ -233,12 +234,11 @@ Source code API:
 
 A text button has a text label, a transparent container and an optional icon.
 
-<img alt="<Placeholder diagram of text button anatomy. Replace this text if/when there is an approved diagram\>" src="assets/text-button-diagram.png" width=60%>
+![Text button anatomy diagram](assets/text_button_anatomy.png)
 
-**1. Text button**
-* A Text label
-* B Container
-* C Icon
+1. Text label
+1. Container
+1. Icon
 
 <details>
 <summary><b>Text label</b> attributes</summary>
@@ -286,7 +286,7 @@ Source code API:
     * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
     * [Demo site](https://glitch.com/~shadow-jobaria):
 
-<img src="assets/web-outlined-button.png" alt="Generated outlined button example">
+<img src="assets/web-outlined-button.png" alt="Outlined button example">
 
 ```html
 <button class="mdc-button--outlined">
@@ -298,7 +298,7 @@ Source code API:
 <details><summary><b>Outlined button with icon example</b></summary>
 
 
-<img src="assets/web-outlined-icon-button.png" alt="Generated outlined button example">
+<img src="assets/web-outlined-icon-button.png" alt="Outlined button with bookmark icon">
 
 ```html
 <button class="mdc-button mdc-button--outlined">
@@ -314,12 +314,11 @@ Source code API:
 An outline button has text, a container, and an optional icon.
 
 
-<img alt="\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>" src="assets/outlined-button-diagram.png" width="60%">
+![Outlined button anatomy diagram](assets/outlined_button_anatomy.png)
 
-**2. Outlined button**
-* A Text label
-* B Container
-* C Icon
+1. Text label
+1. Container
+1. Icon
 
 
 <details><summary><b>Text label attributes</b></summary>
@@ -371,7 +370,7 @@ Source code API:
     * [Demo site](https://glitch.com/~shadow-jobaria)
 
 
-<img src="assets/web-contained-button.png" alt="Generated contained button example">
+<img src="assets/web-contained-button.png" alt="Contained button example">
 
 ```html
 <button class="mdc-button--elevated">
@@ -383,7 +382,7 @@ Source code API:
 
 Source code API:
 
-<img src="assets/web-contained-icon-button.png" alt="Generated contained button example with a bookmark icon">
+<img src="assets/web-contained-icon-button.png" alt="Contained button with a bookmark icon">
 
 ```html
 <button class="mdc-button mdc-button--raised">
@@ -400,13 +399,11 @@ Source code API:
 
 A contained button has text, a container, and an optional icon.
 
+[Contained button anatomy diagram](assets/contained_button_anatomy.png)
 
-<img alt="\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>" src="assets/contained-button-diagram.png" width="60%">
-
-**3. Contained button**
-* A Text label
-* B Container
-* C Icon
+1. Text label
+1. Container
+1. Icon
 
 <details><summary><b>Text label attributes</b></summary>
 
@@ -567,11 +564,10 @@ To generate the example with background images of your choosing, you will need t
 
 The icon button consists of two icons for 'on' and 'off'.
 
-<details><summary>Expand for anatomy diagram and key icon button properties</summary>
+![Toggle button anatomy](assets/toggle_button_anatomy.png)
 
-**Icon button**
-* C Icon
-
+* A. Container
+* C. Icon
 
  Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
@@ -593,7 +589,7 @@ API and source code:
 
 The following example shows text, outlined and contained button types with Material Theming.
 
-!["Button theming example for <platform> with three buttons - text, outlined and contained - with green/black color theming and cut corners."](assets/button-theming.svg)
+!["Button theming with three buttons - text, outlined and contained - with green/black color theming and cut corners."](assets/button-theming.svg)
 
 <details>
 <summary><b>Implementing button theming</b></summary>

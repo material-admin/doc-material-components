@@ -21,7 +21,7 @@ There are four types of buttons:
 3. [Contained button](#contained-button)
 4. [Toggle button](#toggle-button)
 
-![Example of the four button types](assets/mio-button-types.png)
+![Example of the four button types](assets/button_types.png)
 
 
 ## Using button
@@ -96,7 +96,7 @@ Source Code APIs:
 
 The following example shows a text button with a text label.
 
-!["Text button example for iOS with purple text 'Text' over a white background."](assets/text-button.svg)
+!["iOS Text button with purple text 'Text' over a white background."](assets/text-button.svg)
 
 **Swift**
 
@@ -125,7 +125,7 @@ MDCButton *button = [[MDCButton alloc] init];
 
 The following example shows a text button with an icon.
 
-!["Text button example for Android with purple text 'Text button' and '+' icon over a white background."](assets/text-button-icon.svg)
+!["iOS text button with purple text 'Text button' and '+' icon over a white background."](assets/text-button-icon.svg)
 
 ```swift
 
@@ -142,12 +142,11 @@ The following example shows a text button with an icon.
 
 A text button has a text label, a transparent container and an optional icon.
 
-![<Placeholder diagram of text button anatomy. Replace this text if/when there is an approved diagram\>](assets/text-button-diagram.png)
+![Text button anatomy diagram](assets/text_button_anatomy.png)
 
-**1. Text button**
-* A Text label
-* B Container
-* C Icon
+1. Text label
+1. Container
+1. Icon
 
 <details>
 <summary><b>Text label</b> attributes</summary>
@@ -207,7 +206,7 @@ Source Code APIs:
 
 The following example shows an outlined button with a text label and stroked container.    
 
-!["Outlined button example in Android with purple text surrounded by a gray outline"](assets/outlined-button.svg)
+!["Outlined button with purple text surrounded by a gray outline"](assets/outlined-button.svg)
 
 **Swift**
 ```swift
@@ -263,12 +262,11 @@ MDCButton *button = [[MDCButton alloc] init];
 
 An outline button has text, a container, and an optional icon.
 
-![<Placeholder diagram of outlined button anatomy. Replace this text if/when there is an approved diagram\>](assets/outlined-button-diagram.png)
+![Outlined button anatomy diagram](assets/outlined_button_anatomy.png)
 
-**2. Outlined button**
-* A Text label
-* B Container
-* C Icon
+1. Text label
+1. Container
+1. Icon
 
 <details>
 <summary><b>Text label</b> attributes</summary>
@@ -328,7 +326,7 @@ Source Code APIs:
 
 The following example shows a contained button with a text label and a filled container.
 
-!["Contained button example for Android with the white text 'Text' on a purple background."](assets/contained-button.svg)
+!["Contained button example with white text 'Text' on a purple background."](assets/contained-button.svg)
 
 **Swift**
 ```swift
@@ -353,13 +351,11 @@ MDCButton *button = [[MDCButton alloc] init];
 A contained button has text, a container, and an optional icon.
 
 
-![\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>](assets/contained-button-diagram.png)
+![Contained button anatomy diagram](assets/contained_button_anatomy.png)
 
-**3. Contained button**
-* A Text label
-* B Container
-* C Icon
-
+1. Text label
+1. Container
+1. Icon
 
 <details>
 <summary><b>Text label</b> attributes</summary>
@@ -674,10 +670,10 @@ extension ToggleButtonCollectionViewController {
 
 #### Anatomy and key properties
 
-The icon button consists of two icons for 'on' and 'off'
+![Toggle button anatomy](assets/toggle_button_anatomy.png)
 
-**Icon button**
-* C Icon
+* A. Container
+* C. Icon
 
 
 Diagram label | Design Attribute |  Theme value |  Property
