@@ -21,7 +21,7 @@ There are four types of buttons:
 1. [Contained button](#contained-button)
 1. [Toggle button](#toggle-button)
 
-![Example of the four button types](assets/button_types.png)
+![Example of the four button types](assets/buttons_types.png)
 
 ## Using buttons
 
@@ -504,10 +504,8 @@ API and source code:
 
 The following example shows an icon that can be used independently or in items of a `GridView`.
 
-![Toggle button anatomy](assets/toggle_button_anatomy.png)
+![Toggle button of 4 images, each image with favorite icon in top-right](assets/toggle_icon_screenshot_cropped.png)
 
-* A. Container
-* C. Icon
 
 In the state:
 ```dart
