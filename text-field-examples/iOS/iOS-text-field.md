@@ -242,7 +242,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 ```
 ### Anatomy and key properties
 
-![Outlined text field anatomy](assets/textfield_outlined_anatomy.png)
+![Outlined text field anatomy](assets/textfields_outlined_anatomy.png)
 
 1. Container
 1. Leading icon (optional)
