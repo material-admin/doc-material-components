@@ -72,7 +72,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 ### Anatomy and key properties
 
-<img alt="<Placeholder diagram of outlined teld field attributes. Replace this text if/when there is an approved diagram\>" src="assets/text-field-anatomy.png" width=70%>
+![Filled text field anatomy](assets/textfields_filled_anatomy.png)
 
 1. Container
 1. Leading icon (optional)
@@ -215,7 +215,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 ```
 ### Anatomy and key properties
 
-<img alt="<Placeholder diagram of outlined teld field attributes. Replace this text if/when there is an approved diagram\>" src="assets/text-field-anatomy.png" width=70%>
+![Outlined text field anatomy](assets/textfields_outlined_anatomy.png)
 
 1. Container
 1. Leading icon (optional)

@@ -21,7 +21,7 @@ There are four types of buttons:
 3. [Contained button](#contained-button)
 4. [Toggle button](#toggle-button)
 
-![Example of the four button types](assets/button_types.png)
+![Example of the four button types](assets/buttons_types.png)
 
 
 ## Using button
