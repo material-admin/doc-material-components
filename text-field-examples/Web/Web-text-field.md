@@ -61,6 +61,7 @@ import {MDCTextField} from '@material/textfield';
 const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
 
 ```
+</details>
 
 ### Sass mixins
 
@@ -99,6 +100,8 @@ module.exports = {
 
 <img src="assets/web-sass-mixins-example.png" alt="Example text field instance rendered for an orange label and a green cursor caret">
 
+</details>
+
 #### Sass mixins for `mdc-text-field`
 
 Use Sass mixins when you want to customize the look and feel of your text fields. Go to [sass-lang.com](https://sass-lang.com/install) for installation instructions.
@@ -134,7 +137,7 @@ Import base styles of button into your `*.scss` stylesheet using :
 **NOTE are there theming instructions for text fields? Include them in the collapsible section**
 
 <details><summary><b>Expand for theming instructions for <code>mdc-text-field</code>.</b></summary>
-
+</details>
 
 ### Making text fields accessible
 
@@ -173,7 +176,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 ### Anatomy and key properties
 
-![filled text field anatomy](assets/textfields_filled.anatomy.png)
+![filled text field anatomy](assets/textfields_filled_anatomy.png)
 
 1. Container
 1. Leading icon (optional)
@@ -284,15 +287,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 </details>
 
-<summary><b>Styles</b></summary>
-<br>
 
-|  Style|
-| --- | --- |
-| **Default style** | |
-| **Icon style** | |
-
-</details>
 
 ## Outlined text
 
@@ -428,15 +423,6 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 </details>
 
-<summary><b>Styles</b></summary>
-<br>
-
-|  Style|
-| --- | --- |
-| **Default style** | |
-| **Icon style** | |
-
-</details>
 
 ## Theming text fields
 
