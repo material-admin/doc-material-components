@@ -14,8 +14,10 @@ The following examples show tables for the Android outlined button with asset at
 An outlined button has a text label, a stroked container and an optional icon.
 
 
-![<Placeholder diagram of outlined button anatomy. Replace this text if/when there is an approved diagram\>](button-examples/Android/assets/outline_button_anatomy_wide.png)
-
+![Outlined button anatomy](button-examples/Android/assets/outlined_button_anatomy.png)
+* A. Text label
+* B. Container
+* C. Icon
 
 <details>
 <summary><b>Text label</b> attributes</summary>
@@ -79,8 +81,10 @@ See the full list of [styles](https://github.com/material-components/material-co
 An outlined button has a text label, a stroked container and an optional icon.
 
 
-![<Placeholder diagram of outlined button anatomy. Replace this text if/when there is an approved diagram\>](button-examples/Android/assets/outline_button_anatomy_wide.png)
-
+![Outlined button anatomy](button-examples/Android/assets/outlined_button_anatomy.png)
+* A. Text label
+* B. Container
+* C. Icon
 
 <details>
 <summary><b>Attributes</b></summary>
