@@ -33,7 +33,7 @@ Before you can use a button, you will need to install and import the following:
 
 ### Install the Material button component
 
-Install the `mdc-button` or `mdc-icon-button` component before including it in your source.
+Install the `mdc-button` (for text, outlined, or contained button) or `mdc-icon-button` (for the icon toggle button) component before including it in your source.
 
 
 <details><summary><b>Expand for installation commands for <code>mdc-button</code> or <code>mdc-icon-button</code>.</b></summary>
