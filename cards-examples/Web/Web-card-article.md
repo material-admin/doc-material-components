@@ -51,31 +51,14 @@ On mobile, an [elevated card’s](https://material.io/components/cards/#specs) d
 
 **1. Elevated card attributes**
 
-1. **Container** <br>
-Card containers hold all card elements, and their size is determined by the space those elements occupy. Card elevation is expressed by the container.
-
-2. **Thumbnail [optional]** <br>
-Cards can include thumbnails to display an avatar, logo, or icon.
-
-3. **Header text [optional]** <br>
-Header text can include things like the name of a photo album or article.
-
-4. **Subhead [optional]** <br>
-Subhead text can include text elements such as an article byline or a tagged location.
-
-5. **Media [optional]** <br>
-Cards can include a variety of media, including photos, and graphics, such as weather icons.
-
-6. **Supporting text [optional]** <br>
-Supporting text include text like an article summary or a restaurant description.
-
-7. **Buttons [optional]** <br>
-Cards can include buttons for actions.
-
-8. **Icons [optional]** <br>
-Cards can include icons for actions.
-
-
+1. **Container** 
+2. **Thumbnail [optional]** 
+3. **Header text [optional]** 
+4. **Subhead [optional]** 
+5. **Media [optional]** 
+6. **Supporting text [optional]** 
+7. **Buttons [optional]** <
+8. **Icons [optional]** 
 
 <details>
 <summary><b>Container</b> attributes</summary>
@@ -190,7 +173,7 @@ The following example shows an elevated card. The card has a title, a secondary 
 
 ```
 <source code here>
-The source code example should display as per the interactive example (https://material.io/components/cards/#) with supporting text and Buttons, minus the media:
+The source code example should display as per the interactive example (https://material.io/components/cards/#) with supporting text and Buttons:
 * Display two elevated cards, for each card
 * Display a card title "Card title 1" for one card and "Card title 2" for the other
 * Display a secondary title "Secondary text" with an opacity of 60%
@@ -209,29 +192,14 @@ On desktop and mobile, [outlined cards](https://material.io/components/cards/#sp
 
 **1. Outlined card attributes**
 
-1. **Container** <br>
-Card containers hold all card elements, and their size is determined by the space those elements occupy. Card elevation is expressed by the container.
-
-2. **Thumbnail [optional]** <br>
-Cards can include thumbnails to display an avatar, logo, or icon.
-
-3. **Header text [optional]** <br>
-Header text can include things like the name of a photo album or article.
-
-4. **Subhead [optional]** <br>
-Subhead text can include text elements such as an article byline or a tagged location.
-
-5. **Media [optional]** <br>
-Cards can include a variety of media, including photos, and graphics, such as weather icons.
-
-6. **Supporting text [optional]** <br>
-Supporting text include text like an article summary or a restaurant description.
-
-7. **Buttons [optional]** <br>
-Cards can include buttons for actions.
-
-8. **Icons [optional]** <br>
-Cards can include icons for actions.
+1. **Container** 
+2. **Thumbnail [optional]** 
+3. **Header text [optional]** 
+4. **Subhead [optional]** 
+5. **Media [optional]** 
+6. **Supporting text [optional]** 
+7. **Buttons [optional]** 
+8. **Icons [optional]** 
 
 <details>
 <summary><b>Container</b> attributes</summary>
@@ -344,7 +312,7 @@ The following example shows an outlined card. The card has a title, a secondary 
 
 ```
 <source code here>
-The source code example should display as per the interactive example (https://material.io/components/cards/#) with supporting text and Buttons, minus the media:
+The source code example should display as per the interactive example (https://material.io/components/cards/#) with supporting text and Buttons:
 * Display an outlined card with an outline of 60% opacity
 * Display a card title "Card title"
 * Display a secondary title "Secondary text" with an opacity of 60%
@@ -367,4 +335,17 @@ API and source code
   * [Class definition](https://)
   * [GitHub source](https://github.com/material-components/)
 
-
+```
+<source code here>
+* The primary color is green
+* The secondary color is black
+* The text font is Roboto
+* The container has clipped corners
+* Display an outlined card 
+* Display a card title "Card title"
+* Display a secondary title "Secondary text"
+* Display text reading "Greyhound divisively hello coldly wonderfully marginally far upon excluding."
+* Display two actions, "Action 1" and "Action 2" with two text buttons
+* Display the sample image ![sample card image of yellow and red tulips](assets/card-sample-image.jpg)
+```
+* Make the card checkable with a "favorites" icon
