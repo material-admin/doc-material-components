@@ -470,44 +470,11 @@ Source code API:
 
 * mdc-icon-button
     * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-icon-button)
-    * [Demo site](https://glitch.com/~shadow-jobaria)
+    * [Demo site](https://glitch.com/edit/#!/join/8ef9db8e-e36f-4e03-ba14-39b1a8b69405)
 
 <img src="assets/web-toggle-icon-button.png" alt="4 images arranged in a 2 by 2 array, each image with a favorite icon in the upper-right corner" width="50%">
-To generate the example with background images of your choosing, you will need to do the following:
+To generate the example with background images of your choosing, you will need containers for your tiled images, and containers to resize your images. You may also need to change the icon color to ensure that the icon is visible on your image (see the `index.scss` file for the tiled container \[`container`\] and the image container \[`image-with-fav`\] and the icon button color \[`favve-button`\]).
 
-* In your `*.scss` file:
-  1. Create containers to contain your tiled images:
-      ```css
-      .container {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 450px;
-        justify-content: center;
-      }
-      ```
-  1. Create containers for your images, with the images cut to fit within the predefined height and width:
-      ```css
-        image-with-fave {
-          position: relative;
-          margin: 2px;
-        }
-
-        .image-with-fave img {
-          width: 200px;
-          height: 200px;
-          object-fit: cover;
-        }
-      ```
-  1. If your images are dark, then you may need use Sass mixins to change the icon color from the default. For example, you can create an instance of an icon button with white ink instead of the default black:
-        ```css
-            .fave-button {
-              @include mdc-icon-button-ink-color(white);
-
-              position: absolute;
-              top: 0;
-              right: 0;
-            }
-        ```
 * In your `*.js` file,
     1. Import `MDCIconButtonToggle`:
         ```js
