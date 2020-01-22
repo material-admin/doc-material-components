@@ -28,7 +28,6 @@ There are four types of buttons:
 Before you can use a button, you will need to install and import the following:
 
 * Install the Material button component
-* Import styles
 * Import JavaScript
 
 ### Install the Material button component

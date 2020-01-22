@@ -33,6 +33,37 @@ A card can be one of two types:
 
 
 ## Using cards
+Before you can use a cards, you will need to install and import the following:
+
+* Install the Material cards component
+* Import JavaScript
+
+
+###Install the Material card component
+Install the `mdc-card` component before including it in your source.
+
+**`mdc-card`**
+```bash
+npm install @material/card
+```
+### Import JavaScript
+
+You can optionally add a JavaScript ripple effect (see [MDC Ripple](https://github.com/material-components/material-components-web/blob/master/packages/mdc-ripple)) to components inside yourcards by importing and then instantiating `MDCRipple` in your `*.js` file. See the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md) for more information.
+
+To bundle your `*.js` file, go to the [quickstart page](https://github.com/material-components/material-components-web/blob/master/docs/getting-started.md#quick-start-cdn).
+
+<details><summary><b>Expand for instructions to add JavaScript</b></summary>
+
+```js
+import {MDCRipple} from '@material/ripple';
+
+const selector = '.mdc-button, .mdc-icon-button, .mdc-card__primary-action';
+const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
+  return new MDCRipple(el);
+});
+```
+
+</details>
 
 
 ### Making cards accessible
@@ -41,123 +72,69 @@ Web's card component APIs support labeling for accessibility. To use labels...
 
 For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
+### Sass mixins
+
+Use Sass mixins when you want to customize the look and feel of your cards. Go to [sass-lang.com](https://sass-lang.com/install) for installation instructions.
+
+<details><summary><b>Expand for instructions to use Sass mixins to customize your <code>mdc-card</code> or <code>mdc-icon-button</code></b></summary>
+
+Before using Sass mixins for your project you will need to do the following:
+
+* Add the Sass package to your `*.json file` under `devDependencies`:
+```json
+"devDependencies": {
+  "sass": "^1.24.3"
+}
+```
+
+* Add a `.sassrc.js` file to your project root directory:
+
+```js
+const path = require("path");
+
+const CWD = process.cwd();
+
+module.exports = {
+  includePaths: [path.resolve(CWD, "node_modules"), path.resolve(CWD, "src")]
+};
+```
+</details>
+
+Import base styles of card into your `*.scss` stylesheet using :
+
+<details><summary><b>Expand for theming instructions for <code>mdc-card</code>.</b></summary>
+
+**mdc-card**
+```scss
+@use '@material/card/mdc-card';
+```
+
+```scss
+@use '@material/card/mixins' as card;
+
+.card-instance {
+  @include card.container-fill-color(orange);
+  @include card.icon-color(green);
+  // ...
+}
+```
+
+<img src="assets/web-sass-mixins-example.png" alt="Contained card with orange fill and green icon ">
+
+#### Sass mixins for `mdc-card`
+
+The following mixins are available to customize your `mdc-card` instance.
+
+Mixin | Description
+---|---
+`mdc-card-fill-color($color)` | Sets the fill color of a card.
+`mdc-card-outline($color, $thickness)` | Sets the color and thickness of a card's outline (but does _not_ remove its shadow).
+`mdc-card-shape-radius($radius, $rtl-reflexive)` | Sets the rounded shape to card with given radius size. Set `$rtl-reflexive` to true to flip radius values in RTL context, defaults to false.
+`mdc-card-media-aspect-ratio($x, $y)` | Maintains the given aspect ratio on a `mdc-card__media` subelement by dynamically scaling its height relative to its width.
+
 ## Elevated card
  
 On mobile, an [elevated card’s](https://material.io/components/cards/#specs) default elevation is 1dp, with a raised dragged elevation of 8dp.
-
-### Key properties
-
-![\<Placeholder diagram of elevated card attributes. Replace this text if/when there is an approved diagram\>](assets/card-anatomy.png)
-
-**1. Elevated card attributes**
-
-1. **Container** 
-2. **Thumbnail [optional]** 
-3. **Header text [optional]** 
-4. **Subhead [optional]** 
-5. **Media [optional]** 
-6. **Supporting text [optional]** 
-7. **Buttons [optional]** <
-8. **Icons [optional]** 
-
-<details>
-<summary><b>Container</b> attributes</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-</p>
-</details>
-
-<details>
-<summary><b>Thumbnail</b> attributes (optional)</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-</p>
-</details>
-
-<details>
-<summary><b>Header text</b> attributes (optional)</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-</p>
-</details>
-
-<details>
-<summary><b>Subhead</b> attributes (optional)</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-</p>
-</details>
-
-<details>
-<summary><b>Media</b> attributes (optional)</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-
-</p>
-</details>
-
-<details>
-<summary><b>Supporting text</b> attributes (optional)</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-
-</p>
-</details>
-
-<details>
-<summary><b>Button</b> attributes (optional)</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-
-</p>
-</details>
-
-<details>
-<summary><b>Icon</b> attributes (optional)</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-
-</p>
-</details>
 
 ### Elevated card example
 
@@ -183,14 +160,11 @@ The source code example should display as per the interactive example (https://m
 * Allow the cards to be moveable.
 ```
 
-## Outlined card
- 
-On desktop and mobile, [outlined cards](https://material.io/components/cards/#specs) can have a resting elevation of 0dp. They elevate to 4dp on hover.
 ### Key properties
 
-![\<Placeholder diagram of outlined card  attributes. Replace this text if/when there is an approved diagram\>](assets/card-anatomy.png)
+![\<Placeholder diagram of elevated card attributes. Replace this text if/when there is an approved diagram\>](assets/card-anatomy.png)
 
-**1. Outlined card attributes**
+**1. Elevated card attributes**
 
 1. **Container** 
 2. **Thumbnail [optional]** 
@@ -198,82 +172,88 @@ On desktop and mobile, [outlined cards](https://material.io/components/cards/#sp
 4. **Subhead [optional]** 
 5. **Media [optional]** 
 6. **Supporting text [optional]** 
-7. **Buttons [optional]** 
+7. **Buttons [optional]** <
 8. **Icons [optional]** 
 
 <details>
 <summary><b>Container</b> attributes</summary>
-<p>
 
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
+Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+Container fill color| |
+Container ink color | |
+Container shape radius | |
+Container outline color | |
+Container outline width | | 
+Container horzontal padding | | 
+Container elevation | |
 
-</p>
+
 </details>
 
 <details>
 <summary><b>Thumbnail</b> attributes (optional)</summary>
-<p>
+
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
 |Desc. 1 | | | |
 
-</p>
+
+
 </details>
 
 <details>
 <summary><b>Header text</b> attributes (optional)</summary>
-<p>
 
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
+Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+Text label | |  
+Text color | |
+Typography | |
 
 
-</p>
 </details>
 
 <details>
 <summary><b>Subhead</b> attributes (optional)</summary>
-<p>
 
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
+Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+Text label | |  
+Text color | |
+Typography | |
 
 
-</p>
 </details>
 
 <details>
 <summary><b>Media</b> attributes (optional)</summary>
-<p>
+
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
 |Desc. 1 | | | |
 
 
-</p>
+
+
 </details>
 
 <details>
-
 <summary><b>Supporting text</b> attributes (optional)</summary>
-<p>
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
 
+Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+Text label | | 
+Text color | |
+Typography | |
 
-</p>
 </details>
 
 <details>
 <summary><b>Button</b> attributes (optional)</summary>
-<p>
+
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
@@ -281,21 +261,26 @@ On desktop and mobile, [outlined cards](https://material.io/components/cards/#sp
 
 
 
-</p>
+
 </details>
 
 <details>
 <summary><b>Icon</b> attributes (optional)</summary>
-<p>
+
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
 |Desc. 1 | | | |
 
 
-</p>
+
+
 </details>
 
+
+## Outlined card
+ 
+On desktop and mobile, [outlined cards](https://material.io/components/cards/#specs) can have a resting elevation of 0dp. They elevate to 4dp on hover.
 
 ### Outlined card example
 
@@ -322,6 +307,124 @@ The source code example should display as per the interactive example (https://m
 * Make the card selectable with a "favorites" icon
 
 ```
+
+### Key properties
+
+![\<Placeholder diagram of outlined card  attributes. Replace this text if/when there is an approved diagram\>](assets/card-anatomy.png)
+
+**1. Outlined card attributes**
+
+1. **Container** 
+2. **Thumbnail [optional]** 
+3. **Header text [optional]** 
+4. **Subhead [optional]** 
+5. **Media [optional]** 
+6. **Supporting text [optional]** 
+7. **Buttons [optional]** 
+8. **Icons [optional]** 
+
+<details>
+<summary><b>Container</b> attributes</summary>
+
+Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+Container fill color| |
+Container ink color | |
+Container shape radius | |
+Container outline color | |
+Container outline width | | 
+Container horzontal padding | | 
+Container elevation | | 
+
+</details>
+
+<details>
+<summary><b>Thumbnail</b> attributes (optional)</summary>
+
+
+|  | Attribute | Related method(s) | Default value |
+|---|---|---|---|
+|Desc. 1 | | | |
+
+
+</details>
+
+<details>
+<summary><b>Header text</b> attributes (optional)</summary>
+
+Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+Text label | N/A |  N/A
+Text color | |
+Typography | |
+
+
+</details>
+
+<details>
+<summary><b>Subhead</b> attributes (optional)</summary>
+
+Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+Text label | N/A |  N/A
+Text color | |
+Typography | |
+
+
+
+
+</details>
+
+<details>
+<summary><b>Media</b> attributes (optional)</summary>
+
+
+|  | Attribute | Related method(s) | Default value |
+|---|---|---|---|
+|Desc. 1 | | | |
+
+
+
+</details>
+
+<details>
+
+<summary><b>Supporting text</b> attributes (optional)</summary>
+
+|  | Attribute | Related method(s) | Default value |
+|---|---|---|---|
+|Desc. 1 | | | |
+
+
+
+</details>
+
+<details>
+<summary><b>Button</b> attributes (optional)</summary>
+
+
+|  | Attribute | Related method(s) | Default value |
+|---|---|---|---|
+|Desc. 1 | | | |
+
+
+
+
+</details>
+
+<details>
+<summary><b>Icon</b> attributes (optional)</summary>
+
+
+|  | Attribute | Related method(s) | Default value |
+|---|---|---|---|
+|Desc. 1 | | | |
+
+
+
+</details>
+
+
 
 ## Theming Cards
 
