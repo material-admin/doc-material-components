@@ -27,12 +27,6 @@ There are four types of buttons:
 
 Before you can use Material buttons, you need to add a dependency to the Material Components for Android library. For more information, go to the [Getting started](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md) page.
 
-### Making buttons accessible
-
-Android's button component APIs support labeling for accessibility. To use labels...
-
-For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
-
 ## Text button
 
 [Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
@@ -94,9 +88,8 @@ A text button has a text label, a transparent container and an optional icon.
 
 ![Text button anatomy diagram](assets/text_button_anatomy.png)
 
-1. Text label
-1. Container
-1. Icon
+* A. Text label
+* C. Icon
 
 <details>
 <summary><b>Text label</b> attributes</summary>
@@ -215,9 +208,9 @@ An outlined button has a text label, a stroked container and an optional icon.
 
 ![Outlined button anatomy diagram](assets/outlined_button_anatomy.png)
 
-1. Text label
-1. Container
-1. Icon
+* A. Text label
+* B. Container
+* C. Icon
 
 
 <details>
@@ -304,6 +297,8 @@ In the layout:
 
 _**Note:** `<Button>` is auto-inflated as `<com.google.android.material.button.MaterialButton>` via `MaterialComponentsViewInflater` when using a non-Bridge `Theme.MaterialComponents.*` theme._
 
+_**Note:** Since this is the default type, you don't need to specify a style tag as long as you are using a Material Components Theme. If not, set the style to `@style/Widget.MaterialComponents.Button`._
+
 In code:
 ```kt
 containedButton.setOnClickListener {
@@ -333,11 +328,11 @@ In the layout:
 
 A contained button has a text label, a filled container and an optional icon.
 
-[Contained button anatomy diagram](assets/contained_button_anatomy.png)
+![Contained button anatomy diagram](assets/contained_button_anatomy.png)
 
-1. Text label
-1. Container
-1. Icon
+* A. Text label
+* B. Container
+* C. Icon
 
 <details>
 <summary><b>Text label</b> attributes</summary>
