@@ -488,6 +488,7 @@ To generate the example with background images of your choosing, you will need c
 		const iconToggle1 = new MDCIconButtonToggle(document.querySelector('.btn2'));
 		iconToggle1.unbounded = true;
 	```
+	
  * In your `*.html` file, you can now add the iterations of the following, which shows containers with background images:
     ```html
     <div class="container">
