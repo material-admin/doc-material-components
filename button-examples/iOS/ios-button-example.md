@@ -407,7 +407,7 @@ A contained button has text, a container, and an optional icon.
 
 There are two types of toggle buttons:
 
-* [Toggle button](#toggle-button)
+* [Toggle button](#toggle-button) (*not supported in iOS*)
 * [Icon](#icon)
 
 ### Toggle button
