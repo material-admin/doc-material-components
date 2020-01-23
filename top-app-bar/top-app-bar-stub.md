@@ -21,7 +21,7 @@ The [top app bar](https://material.io/components/app-bars-top/#) displays inform
 There are two types of top app bar:
 
 1. [Regular top app bar](#regular-top-app-bar)
-1. [Contextual top app bar](#contextual-top-app-bar)
+1. [Contextual action bar](#contextual-top-app-bar)
 <br>
 
 
@@ -34,94 +34,244 @@ The top app bar provides content and actions related to the current screen. Itâ€
 
 A regular top app bar can transform into a contextual action bar.
 
+### Installing/Importing \<platform API name\>
+
+_Insert any installation or importatiion instructions here_
+
 ### Making the top app bar accessible
 
-List any accessiblity setting or attributes (such as labels), describe how to use them and link to any guidelines on the m.io site (for example, [how to write a good accessibility label for your component](https://material.io/design/usability/accessibility.html#writing))
+_List any accessiblity setting or attributes (such as labels), describe how to use them and link to any guidelines on the m.io site (for example, [how to write a good accessibility label for your component](https://material.io/design/usability/accessibility.html#writing))_
 
 
 
 ## Regular top app bar
 
-Start with a concise (1-2 sentence) description of the component type.
-* If possible, copy the exact summary from the design article.
-* Link the first mention of the component type to the appropriate section of the design article.
+The top app bar provides content and actions related to the current screen. Itâ€™s used for branding, screen titles, navigation, and actions.
 
 ### Regular top app bar example
-Include a list of links to API documentation and source location of the component.
 
-* Use the class/implementation names when linking to the API docs.
-* Add other links as necessary if they would help using the component.
-* Describe how to use this component type in as much detail as necessary.
-* If your platform does not support a particular type, include the type but explicitly state that it isn't supported.
-* If support is planned, link to the issue tracking that feature request.
+\<platform API name\>
+* [Class definition]()
+* [GitHub source]()
 
+The following example shows a top app bar with a page title, a navigation icon, two action icons, and an overflow menu:
 
+![insert screenshot here]()
 
-Describe the example in 1-2 sentences.
+```
+The source code for the regular top app bar should include the following:
+* A purple container
+* A navigation icon
+* A title "Page title" in white
+* Two action items:
+    * favorite icon
+    * search icon
+* Overflow menu
+* The top app bar should remain in place while the user scrolls
 
-Include an image of the rendered example.
-
-Include a snippet of source code illustrating the example.
-
-* Remove boilerplate code that is not necessary to understand the example.
-* Consider highlighting the most important lines of the example.
+```
 
 ### Anatomy and Key properties
 
-* Call out the anatomy elements in a sentence.
+![Regular app bar anatomy diagram](assets/top_app_bar_anatomy.png)
+
+1. Container
+1. Navigation icon (optional)
+1. Title (optional)
+1. Action items (optional)
+1. Overflow menu (optional)
 
 <details>
-<summary><b>Expand for < component name > anatomy diagram and key properties</b></summary>
+<summary><b>Container </b> attributes</summary>
 
-* Insert the a diagram of the component type's anatomy. Use the anatomy diagram from the https://material.io/components/ site.
-* Add a table of the design attributes represented by the diagram. Limit the design attributes to six items of the most commonly customized attributes.
-* Include the following sentence below the table pointing the user to the API doc(s):
-    "We recommend using [Material Theming](https://material.io/components/\<component name\>/#theming) to apply your customizations across your application. For a full list of component properties, go to the API docs:"
-    * List the links to each API
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Color** | | | |
+| **Stroke color** | | | |
+| **Stroke width** | | | |
+| **Shape** | | | |
+| **Elevation** | | | |
+| **Ripple color** | | | |
+
+</details>
+
+<details>
+<summary><b>Navigation icon </b> attributes (optional)</summary>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Icon** | | | |
+| **Color** | | | |
+| **Size** | | | |
+| **Gravity** (position relative to text label) | | | |
+| **Padding** (space between icon and text label) | | | |
+
+</details>
+
+
+<details>
+<summary><b>Title </b> attributes (optional)</summary>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Text label** | | | |
+| **Color** | | | | 
+| **Typography** | | | |
+
+</details>
+
+
+<details>
+<summary><b>Action item </b> attributes (optional)</summary>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Icon** | | | |
+| **Color** | | | |
+| **Size** | | | |
+| **Gravity** (position relative to text label) | | | |
+| **Padding** (space between icon and text label) | | | |
+</details>
+
+
+<details>
+<summary><b>Overflow menu </b> attributes (optional)</summary>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Icon** | | | |
+| **Color** | | | |
+| **Size** | | | |
+| **Gravity** (position relative to text label) | | | |
+| **Padding** (space between icon and text label) | | | |
+
+</details>
+
 
 #### Styles
 
-Include a table of the theme description for each theme element and the theme's name in your platform. 
+_If the component API implements multiple types, include any style information that differentiates the types in a table_
 
-</details>
+## Contextual action bar
 
-## Contextual top app bar
-...
+A top app bar can transform into a contextual action bar to provide contextual actions to selected items. For example, upon user selection of photos from a gallery, the top app bar transforms to a contextual app bar with actions related to the selected photos.
 
+When a top app bar transforms into a contextual action bar, the following changes occur:
 
-### Contextual top app bar example
+* The bar color changes
+* Navigation icon is replaced with a close icon
+* Top app bar title text converts to contextual action bar text
+* Top app bar actions are replaced with contextual actions
+* Upon closing, the contextual action bar transforms back into a top app bar.
 
-...
+### Contextual action bar example
 
+\<platform API name\>
+* [Class definition]()
+* [GitHub source]()
+
+The following example shows a contextual action bar with a contextual title, a close icon, two contextual action icons, and an overflow menu:
+
+![insert screenshot here]()
+
+```
+The source code for the contextual action bar should switch from the regular app bar example to the 
+contextual action bar and include the following:
+* A black contextual container color
+* A close button icon
+* A contextual title that reads "Contextual title" in white
+* Two action items:
+    * download icon
+    * garbage icon
+* Overflow menu
+* The top app bar should remain in place while the user scrolls
+
+```
 
 ### Anatomy and Key properties
 
+![Contextual action bar anatomy diagram](assets/contextual_action_bar_anatomy.png)
+
+1. Close Button
+1. Contextual title
+1. Contextual action items (optional)
+1. Overflow menu (optional)
+
 <details>
-<summary><b>Expand for < component name > anatomy diagram and key properties</b></summary>
+<summary><b>Close button</b> attributes</summary>
 
-
-...
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Icon** | | | |
+| **Color** | | | |
+| **Size** | | | |
+| **Gravity** (position relative to text label) | | | |
+| **Padding** (space between icon and text label) | | | |
 
 
 </details>
 
-_Continue describing the rest of the component types as necessary._
+<details>
+<summary><b>Contextual title</b> attributes</summary>
 
-## Theming \<component name\>
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Text label** | | | |
+| **Color** | | | | 
+| **Typography** | | | |
+</details>
 
-Provide a 1-2 sentences saying that Material theming applies to the component:
-    "\<Component name\> supports [Material Theming](https://material.io/components/<component name>/#theming) and can be customized in terms of color, typography and shape."
 
-### \<Component name\> theming example
+<details>
+<summary><b>Contextual action item</b> attributes (optional)</summary>
 
-* Provide a screenshot of a coponent type that uses a modified theme that includes changes to:
-    * Background color
-    * Outline color (if applicable)
-    * Font type
-    * Font color
-    * Component shape (if applicable)
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Icon** | | | |
+| **Color** | | | |
+| **Size** | | | |
+| **Gravity** (position relative to text label) | | | |
+| **Padding** (space between icon and text label) | | | |
 
-<details><summary><b>Implementing \<component name\> theming</b></summary>
+</details>
+<details>
+<summary><b>Overflow menu</b> attributes (optional)</summary>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Icon** | | | |
+| **Color** | | | |
+| **Size** | | | |
+| **Gravity** (position relative to text label) | | | |
+| **Padding** (space between icon and text label) | | | |
+
+</details>
+
+#### Styles
+
+_If the component API implements multiple types, include any style information that differentiates the types in a table_
+
+
+## Theming a top app bar
+
+The top app bar supports [Material Theming](https://material.io/components/<component name>/#theming) and can be customized in terms of color, typography and shape.
+
+### Top app bar theming example
+
+_The following requirements have not been approved by designers/accessibility and are subject to change._
+* Provide a screenshot of the regular app bar that uses a modified theme that uses the following settings:
+    * Container color: 
+    * Font type: Roboto
+    * Font color:
+    * Container shape (if applicable): Rounded corners with a radius of 5dp
+* Provide a second screenshot of the contextual app bar that uses the following settings:
+    * Container color:
+    * Font type: Roboto
+    * Font color:
+    * Container shape (if applicable): Rounded corners with a radius of 5dp
+
+
+<details><summary><b>Implementing top button bar theming</b></summary>
 
 Provide example code that corresponds to the component type screenshot
 
