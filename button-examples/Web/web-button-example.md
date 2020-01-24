@@ -555,14 +555,15 @@ API and source code:
 
 The following example shows text, outlined and contained button types with Material Theming.
 
-!["Button theming with three buttons - text, outlined and contained - with green/black color theming and cut corners."](assets/button-theming.svg)
+!["Button theming with three buttons - text, outlined and contained - with shrine theming."](assets/button-theming.svg)
 
 <details>
 <summary><b>Implementing button theming</b></summary>
 <br>
 
+[Shrine theme](https://material.io/design/material-studies/shrine.html)
 ```
-Include source code implementing the three buttons found in [https://github.com/mingjane-work/doc-material-components/blob/mingjane-doc-branch/button-examples/Android/android-button-example.md#theming-buttons].
+Include source code implementing text, outlined, and contained buttons using "Shrine" theme.
 
 Upload a screenshot of the render and update the image.
 ```

@@ -254,21 +254,24 @@ _If the component API implements multiple types, include any style information t
 
 ## Theming a top app bar
 
-The top app bar supports [Material Theming](https://material.io/components/<component name>/#theming) and can be customized in terms of color, typography and shape.
+The top app bar supports [Material Theming](https://material.io/components/app-bars-top/#theming) and can be customized in terms of color, typography and shape.
 
 ### Top app bar theming example
 
-_The following requirements have not been approved by designers/accessibility and are subject to change._
-* Provide a screenshot of the regular app bar that uses a modified theme that uses the following settings:
-    * Container color: 
-    * Font type: Roboto
-    * Font color:
-    * Container shape (if applicable): Rounded corners with a radius of 5dp
-* Provide a second screenshot of the contextual app bar that uses the following settings:
-    * Container color:
-    * Font type: Roboto
-    * Font color:
-    * Container shape (if applicable): Rounded corners with a radius of 5dp
+* Provide a screenshot of the regular app bar that uses the [Shrine](https://material.io/design/material-studies/shrine.html) theme with the following features:
+    * title: "Page title" 
+    * Two action items:
+        * favorite icon
+        * search icon
+    * Overflow menu
+    * The top app bar should remain in place while the user scrolls
+* Provide a second screenshot of the contextual app bar that uses the [Shrine](https://material.io/design/material-studies/shrine.html) theme with the following features:
+    * title: "Contextual title"
+    * Two action items:
+        * download icon
+        * garbage icon
+    * Overflow menu
+    * The top app bar should remain in place while the user scrolls
 
 
 <details><summary><b>Implementing top button bar theming</b></summary>

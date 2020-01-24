@@ -352,8 +352,9 @@ The following example shows filled and outlined text fields with Material Themin
 <details>
 <summary><b>Implementing text field theming</b></summary>
 
+_Use the [Shrine theme](https://material.io/design/material-studies/shrine.html) for this example_
+
 ```
-Include source code for two side-by-side examples using a green/black color theme similar to the one used in the [Android button example](https://github.com/mingjane-work/doc-material-components/blob/mingjane-doc-branch/button-examples/Android/android-button-example.md):
 
 * Include one filled text field with the following:
     * The label text should read "Label text"
@@ -368,3 +369,5 @@ Include source code for two side-by-side examples using a green/black color them
     * The error message text should read "Error message" and display the error message
     * The text field should have a trailing error icon
     * The container should have cut corners instead of rounded
+```
+</details>

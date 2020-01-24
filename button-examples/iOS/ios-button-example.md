@@ -747,8 +747,9 @@ The following example shows text, outlined and contained button types with Mater
 <summary><b>Implementing button theming</b></summary>
 <br>
 
+[Shrine theme](https://material.io/design/material-studies/shrine.html)
 ```
-Include source code implementing the three buttons found in [https://github.com/mingjane-work/doc-material-components/blob/mingjane-doc-branch/button-examples/Android/android-button-example.md#theming-buttons].
+Include source code implementing text, outlined, and contained buttons using "Shrine" theme.
 
 Upload a screenshot of the render and update the image.
 ```

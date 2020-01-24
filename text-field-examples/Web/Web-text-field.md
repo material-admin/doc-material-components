@@ -443,9 +443,10 @@ The following example shows filled and outlined text fields with Material Themin
 <details>
 <summary><b>Implementing text field theming</b></summary>
 
-```
-Include source code for two side-by-side examples using a green/black color theme similar to the one used in the [Android button example](https://github.com/mingjane-work/doc-material-components/blob/mingjane-doc-branch/button-examples/Android/android-button-example.md):
+_Use the [Shrine theme](https://material.io/design/material-studies/shrine.html) for this example_
 
+
+```
 * Include one filled text field with the following:
     * The label text should read "Label text"
     * The input text should read "Input text"
@@ -460,3 +461,4 @@ Include source code for two side-by-side examples using a green/black color them
     * The text field should have a trailing error icon
     * The container should have cut corners instead of rounded
 ```
+</details>

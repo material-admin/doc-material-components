@@ -448,12 +448,8 @@ API and source code
   * [Class definition](https://)
   * [GitHub source](https://github.com/material-components/)
 
+_Use the [Shrine theme](https://material.io/design/material-studies/shrine.html) for this example_
 ```
-<enter source code here>
-* The primary color is green
-* The secondary color is black
-* The text font is Roboto
-* The container has clipped corners
 * Display an outlined card 
 * Display a card title "Card title"
 * Display a secondary title "Secondary text"
@@ -461,4 +457,5 @@ API and source code
 * Display two actions, "Action 1" and "Action 2" with two text buttons
 * Display the sample image ![sample card image of yellow and red tulips](assets/card-sample-image.jpg)
 * Make the card checkable with a "favorites" icon
+
 ```
