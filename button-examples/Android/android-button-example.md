@@ -604,7 +604,7 @@ API and source code:
     
 The following example shows text, outlined and contained button types with Material Theming.
 
-!["Button theming with three buttons - text, outlined and contained - with green/black color theming and cut corners."](assets/button-theming.svg)
+!["Button theming with three buttons - text, outlined and contained - with pink color theming and cut corners."](assets/button-theming.svg)
 
 <details>
 <summary><b>Implementing button theming</b></summary>
@@ -614,29 +614,42 @@ Using theme attributes and styles in `res/values/styles.xml` (themes all buttons
 ```xml
 <style name="Theme.App" parent="Theme.MaterialComponents.*">
     ...
-    <item name="colorPrimary">@color/green_a400</item>
-    <item name="colorOnPrimary">@color/black</item>
+    <item name="colorPrimary">#FEDBD0</item>
+    <item name="colorOnPrimary">#442C2E</item>
     <item name="textAppearanceButton">@style/TextAppearance.App.Button</item>
     <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
 </style>
 
 <style name="TextAppearance.App.Button" parent="TextAppearance.MaterialComponents.Button">
-    <item name="fontFamily">@font/roboto_mono</item>
-    <item name="android:fontFamily">@font/roboto_mono</item>
-    <item name="android:textAllCaps">false</item>
+    <item name="fontFamily">@font/rubik</item>
+    <item name="android:fontFamily">@font/rubik</item>
 </style>
 
 <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
     <item name="cornerFamily">cut</item>
-    <item name="cornerSize">8dp</item>
+    <item name="cornerSize">4dp</item>
 </style>
 ```
 
-or using a default style theme attribute, styles and theme overlay (themes all buttons but does not affect other components):
+or using default style theme attributes, styles and theme overlays (themes all buttons but does not affect other components):
 ```xml
 <style name="Theme.App" parent="Theme.MaterialComponents.*">
     ...
+    <item name="borderlessButtonStyle">@style/Widget.App.Button.TextButton</item>
+    <item name="materialButtonOutlinedStyle">@style/Widget.App.Button.OutlinedButton</item>
     <item name="materialButtonStyle">@style/Widget.App.Button</item>
+</style>
+
+<style name="Widget.App.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+    <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button.TextButton</item>
+    <item name="android:textAppearance">@style/TextAppearance.App.Button</item>
+    <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+</style>
+
+<style name="Widget.App.Button.OutlinedButton" parent="Widget.MaterialComponents.OutlinedButton">
+    <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button.TextButton</item>
+    <item name="android:textAppearance">@style/TextAppearance.App.Button</item>
+    <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
 </style>
 
 <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
@@ -645,13 +658,17 @@ or using a default style theme attribute, styles and theme overlay (themes all b
     <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
 </style>
 
+<style name="ThemeOverlay.App.Button.TextButton" parent="">
+    <item name="colorPrimary">#84565E</item>
+</style>
+
 <style name="ThemeOverlay.App.Button" parent="">
-    <item name="colorPrimary">@color/green_a400</item>
-    <item name="colorOnPrimary">@color/black</item>
+    <item name="colorPrimary">#FEDBD0</item>
+    <item name="colorOnPrimary">#442C2E</item>
 </style>
 ```
 
-or using the style in the layout (affects only this button):
+or using one of the styles in the layout (affects only this button):
 ```xml
 <Button
     ...
