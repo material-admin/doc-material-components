@@ -614,7 +614,7 @@ Using theme attributes and styles in `res/values/styles.xml` (themes all buttons
 ```xml
 <style name="Theme.App" parent="Theme.MaterialComponents.*">
     ...
-    <item name="colorPrimary">@color/green_a400</item>
+    <item name="colorPrimary">@color/green_600</item>
     <item name="colorOnPrimary">@color/black</item>
     <item name="textAppearanceButton">@style/TextAppearance.App.Button</item>
     <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
@@ -646,7 +646,7 @@ or using a default style theme attribute, styles and theme overlay (themes all b
 </style>
 
 <style name="ThemeOverlay.App.Button" parent="">
-    <item name="colorPrimary">@color/green_a400</item>
+    <item name="colorPrimary">@color/green_600</item>
     <item name="colorOnPrimary">@color/black</item>
 </style>
 ```
