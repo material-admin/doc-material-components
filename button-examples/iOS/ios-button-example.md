@@ -731,14 +731,14 @@ extension ToggleButtonCollectionViewController {
 
 ![Toggle button anatomy](assets/toggle_button_anatomy.png)
 
-* A. Container
-* C. Icon
+1. Container
+1. Icon
 
 
-Diagram label | Design Attribute |  Theme value |  Property
----|---|---|---
-C | Icon | N/A | 
-C | Icon color | Secondary color |  
+Design Attribute |  Theme value |  Property
+---|---|---
+Icon | N/A | 
+Icon color | Secondary color |  
 
 .
 
