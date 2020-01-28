@@ -552,7 +552,7 @@ API and source code:
 * `CheckBox`
     * [Class description](https://developer.android.com/reference/android/widget/CheckBox)
 
-_**Note** The `CheckBox` API is just of several inputs that can implement the icon button. See other [selection controls](https://material.io/components/selection-controls/ for more details._
+_**Note** The `CheckBox` API is just of several inputs that can implement the icon button. See other [selection controls](https://material.io/components/selection-controls/) for more details._
 
 The following example shows an icon that can be used independently or in items of a `RecyclerView`.
 
