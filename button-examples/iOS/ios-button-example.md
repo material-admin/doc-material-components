@@ -91,7 +91,7 @@ To help make your buttons usable to as many users as possible, apply the followi
     button.minimumSize = CGSize(width: 64, height: 48)
     ```
 
-* Set the[touch areas to at least 44 points high and 44
+* Set the [touch areas to at least 44 points high and 44
 wide](https://material.io/design/layout/spacing-methods.html#touch-click-targets).
     To minimize a button's visual size while allowing for larger [touchable areas](https://material.io/design/layout/spacing-methods.html#touch-click-targets), set the `hitAreaInsets` to a negative value. Maintain sufficient distance between the button touch targets. For more see the [Touch and click
 targets](https://material.io/design/layout/spacing-methods.html#touch-click-targets)
