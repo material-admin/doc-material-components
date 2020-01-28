@@ -27,6 +27,8 @@ There are four types of buttons:
 
 Before you can use Material buttons, you need to add a dependency to the Material Components for Android library. For more information, go to the [Getting started](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md) page.
 
+_**Note:** `<Button>` is auto-inflated as `<com.google.android.material.button.MaterialButton>` via `MaterialComponentsViewInflater` when using a non-Bridge `Theme.MaterialComponents.*` theme._
+
 ### Making buttons accessible
 
 Android's button component APIs support labeling for accessibility and are readable by most OCRs.
@@ -59,8 +61,6 @@ In the layout:
     style="@style/Widget.MaterialComponents.Button.TextButton"
 />
 ```
-
-_**Note:** `<Button>` is auto-inflated as `<com.google.android.material.button.MaterialButton>` via `MaterialComponentsViewInflater` when using a non-Bridge `Theme.MaterialComponents.*` theme._
 
 In code:
 ```kt
@@ -181,7 +181,6 @@ In the layout:
 />
 ```
 
-_**Note:** `<Button>` is auto-inflated as `<com.google.android.material.button.MaterialButton>` via `MaterialComponentsViewInflater` when using a non-Bridge `Theme.MaterialComponents.*` theme._
 
 In code:
 ```kt
@@ -280,6 +279,8 @@ See the full list of [styles](https://github.com/material-components/material-co
 
 [Contained buttons](https://material.io/components/buttons/#contained-button) are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
+_**Note** The contained button is the default style if the style is not set._
+
 ### Contained button examples
 
 API and source code:
@@ -302,7 +303,6 @@ In the layout:
 />
 ```
 
-_**Note:** `<Button>` is auto-inflated as `<com.google.android.material.button.MaterialButton>` via `MaterialComponentsViewInflater` when using a non-Bridge `Theme.MaterialComponents.*` theme._
 
 In code:
 ```kt
@@ -333,7 +333,7 @@ In the layout:
 
 A contained button has a text label, a filled container and an optional icon.
 
-[Contained button anatomy diagram](assets/contained_button_anatomy.png)
+![Contained button anatomy diagram](assets/contained_button_anatomy.png)
 
 1. Text label
 1. Container
@@ -513,8 +513,8 @@ A toggle button has a shared stroked container, icons and/or text labels.
 
 ![Toggle button anatomy](assets/toggle_button_anatomy.png)
 
-* A. Container
-* C. Icon
+1. Container
+3. Icon
 
 <details>
 <summary><b>Selection</b> attributes</summary>
@@ -551,6 +551,8 @@ API and source code:
 
 * `CheckBox`
     * [Class description](https://developer.android.com/reference/android/widget/CheckBox)
+
+_**Note** The `CheckBox` API is just of several inputs that can implement the icon button. See other [selection controls](https://material.io/components/selection-controls/) for more details._
 
 The following example shows an icon that can be used independently or in items of a `RecyclerView`.
 
