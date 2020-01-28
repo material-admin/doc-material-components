@@ -61,9 +61,13 @@ Before using the `MDCButtons` API to implement its types you must install `MCDBu
      <theme name> *<local theme name> = [[<theme name> alloc] init];
      MDCButton *button = [[MDCButton alloc] init];
      ```
-1. Apply accessibility settings
+</details>
+
+### Making buttons accessible
  
-    To help make your buttons usable to as many users as possible, set an appropriate [`accessibilityLabel`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) value if your button does not have a title or only has an icon:
+To help make your buttons usable to as many users as possible, apply the following:
+
+* Set an appropriate [`accessibilityLabel`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) value if your button does not have a title or only has an icon:
 
     **Objective-C**
     ```objc
@@ -73,9 +77,64 @@ Before using the `MDCButtons` API to implement its types you must install `MCDBu
     ```swift
     button.accessibilityLabel = "Create"
     ```
-    
+* Set the minimum [visual height to
+36 and minium\um visual width to 64](https://material.io/design/components/buttons.html#specs)
+    **Objective-C**
 
-</details>
+    ```objc
+    button.minimumSize = CGSizeMake(64, 36);
+    ```
+
+    **Swift**
+
+    ```swift
+    button.minimumSize = CGSize(width: 64, height: 48)
+    ```
+
+* Set the[touch areas to at least 44 points high and 44
+wide](https://material.io/design/layout/spacing-methods.html#touch-click-targets).
+    To minimize a button's visual size while allowing for larger [touchable areas](https://material.io/design/layout/spacing-methods.html#touch-click-targets), set the `hitAreaInsets` to a negative value. Maintain sufficient distance between the button touch targets. For more see the [Touch and click
+targets](https://material.io/design/layout/spacing-methods.html#touch-click-targets)
+in the spec.
+
+    **Objective C**
+    ```objc
+    CGFloat verticalInset = MIN(0, -(48 - CGRectGetHeight(button.bounds)) / 2);
+    CGFloat horizontalInset = MIN(0, -(48 - CGRectGetWidth(button.bounds)) / 2);
+    button.hitAreaInsets = UIEdgeInsetsMake(verticalInset, horizontalInset, verticalInset, horizontalInset);
+    ```
+
+    **Swift**
+    ```swift
+    let buttonVerticalInset =
+    min(0, -(kMinimumAccessibleButtonSize.height - button.bounds.height) / 2);
+    let buttonHorizontalInset =
+    min(0, -(kMinimumAccessibleButtonSize.width - button.bounds.width) / 2);
+    button.hitAreaInsets =
+    UIEdgeInsetsMake(buttonVerticalInset, buttonHorizontalInset,
+    buttonVerticalInset, buttonHorizontalInset);
+    ```
+
+    _**Note** There are [some](https://material.io/design/components/buttons.html#toggle-button) clear [exceptions](https://material.io/design/components/app-bars-bottom.html#specs) for these rules. Please adjust your buttons sizes accordingly._
+
+* **Optional** Set an appropriate `accessibilityHint`
+
+    Apple rarely recommends using the `accessibilityHint` because the label should
+    already be clear enough to indicate what will happen. Before you consider
+    setting an `-accessibilityHint` consider if you need it or if the rest of your
+    UI could be adjusted to make it more contextually clear.
+
+    A well-crafted, thoughtful user interface can remove the need for
+   `accessibilityHint` in most situations. Examples for a selection dialog to
+    choose one or more days of the week for a repeating calendar event:
+
+    *   (Good) The dialog includes a header above the list of days reading, "Event
+    repeats weekly on the following day(s)." The list items do not need
+    `accessibilityHint` values.
+    *   (Bad) The dialog has no header above the list of days. Each list item
+    (representing a day of the week) has the `accessibilityHint` value, "Toggles
+    this day."
+
 
 \<**NOTE** Update table values and links to appropriate API documents\>
 -----
