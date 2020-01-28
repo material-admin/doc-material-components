@@ -18,11 +18,12 @@ _**Instructions**_
     * If you have no getting started links or instructions, delete the [Using text field](#using-text-field) sections
 * [Filled text](#filled-text) ane [Outlined-text](#outlined-text) sections
     * Add links to your platform 
-* [API docmentation](#mdctextfield-api)
 
 # Text field
 
 [Text fields](https://material.io/components/text-fields) let users enter and edit text.
+
+For more information, go the the [`mdc-text-field` API](#mdc-text-field-api) documentation.
 
 The text field class consists of the following types:
 
@@ -464,7 +465,7 @@ _Use the [Shrine theme](https://material.io/design/material-studies/shrine.html)
 ```
 </details>
 
-## `MDCTextField` API
+## `mdc-text-field` API
 
 ## Variants
 

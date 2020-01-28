@@ -303,6 +303,7 @@ In the layout:
 />
 ```
 
+_**Note:** Since this is the default type, you don't need to specify a style tag as long as you are using a Material Components Theme. If not, set the style to `@style/Widget.MaterialComponents.Button`._
 
 In code:
 ```kt
