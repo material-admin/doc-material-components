@@ -25,6 +25,8 @@ _**Instructions**_
 
 [Cards](https://material.io/components/cards/) contain content and actions about a single subject.
 
+For additional information, go to the [`mdc-card` API](#mdc-card-api).
+
 A card can be one of two types:
 1. [Elevated](#elevated-card)
 1. [Outlined](#outlined-card)
@@ -451,6 +453,7 @@ _Use the [Shrine theme](https://material.io/design/material-studies/shrine.html)
 
 ```
 * Make the card checkable with a "favorites" icon
+</details>
 
 ## `mdc-card` API
 
