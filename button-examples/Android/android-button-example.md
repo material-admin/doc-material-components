@@ -95,6 +95,7 @@ A text button has a text label, a transparent container and an optional icon.
 ![Text button anatomy diagram](assets/text_button_anatomy.png)
 
 1. Text label
+1. Container
 1. Icon
 
 <details>
@@ -514,7 +515,7 @@ A toggle button has a shared stroked container, icons and/or text labels.
 ![Toggle button anatomy](assets/toggle_button_anatomy.png)
 
 1. Container
-1. Icon
+3. Icon
 
 <details>
 <summary><b>Selection</b> attributes</summary>
