@@ -94,8 +94,8 @@ A text button has a text label, a transparent container and an optional icon.
 
 ![Text button anatomy diagram](assets/text_button_anatomy.png)
 
-* A. Text label
-* C. Icon
+1. Text label
+1. Icon
 
 <details>
 <summary><b>Text label</b> attributes</summary>
@@ -213,9 +213,9 @@ An outlined button has a text label, a stroked container and an optional icon.
 
 ![Outlined button anatomy diagram](assets/outlined_button_anatomy.png)
 
-* A. Text label
-* B. Container
-* C. Icon
+1. Text label
+1. Container
+1. Icon
 
 
 <details>
@@ -335,9 +335,9 @@ A contained button has a text label, a filled container and an optional icon.
 
 ![Contained button anatomy diagram](assets/contained_button_anatomy.png)
 
-* A. Text label
-* B. Container
-* C. Icon
+1. Text label
+1. Container
+1. Icon
 
 <details>
 <summary><b>Text label</b> attributes</summary>
@@ -514,7 +514,7 @@ A toggle button has a shared stroked container, icons and/or text labels.
 ![Toggle button anatomy](assets/toggle_button_anatomy.png)
 
 1. Container
-3. Icon
+1. Icon
 
 <details>
 <summary><b>Selection</b> attributes</summary>
