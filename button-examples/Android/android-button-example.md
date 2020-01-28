@@ -27,6 +27,14 @@ There are four types of buttons:
 
 Before you can use Material buttons, you need to add a dependency to the Material Components for Android library. For more information, go to the [Getting started](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md) page.
 
+_**Note:** `<Button>` is auto-inflated as `<com.google.android.material.button.MaterialButton>` via `MaterialComponentsViewInflater` when using a non-Bridge `Theme.MaterialComponents.*` theme._
+
+### Making buttons accessible
+
+Android's button component APIs support labeling for accessibility and are readable by most OCRs.
+
+For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
+
 ## Text button
 
 [Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
@@ -53,8 +61,6 @@ In the layout:
     style="@style/Widget.MaterialComponents.Button.TextButton"
 />
 ```
-
-_**Note:** `<Button>` is auto-inflated as `<com.google.android.material.button.MaterialButton>` via `MaterialComponentsViewInflater` when using a non-Bridge `Theme.MaterialComponents.*` theme._
 
 In code:
 ```kt
@@ -174,7 +180,6 @@ In the layout:
 />
 ```
 
-_**Note:** `<Button>` is auto-inflated as `<com.google.android.material.button.MaterialButton>` via `MaterialComponentsViewInflater` when using a non-Bridge `Theme.MaterialComponents.*` theme._
 
 In code:
 ```kt
@@ -273,6 +278,8 @@ See the full list of [styles](https://github.com/material-components/material-co
 
 [Contained buttons](https://material.io/components/buttons/#contained-button) are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
+_**Note** The contained button is the default style if the style is not set._
+
 ### Contained button examples
 
 API and source code:
@@ -294,8 +301,6 @@ In the layout:
     android:text="Contained button"
 />
 ```
-
-_**Note:** `<Button>` is auto-inflated as `<com.google.android.material.button.MaterialButton>` via `MaterialComponentsViewInflater` when using a non-Bridge `Theme.MaterialComponents.*` theme._
 
 _**Note:** Since this is the default type, you don't need to specify a style tag as long as you are using a Material Components Theme. If not, set the style to `@style/Widget.MaterialComponents.Button`._
 
@@ -508,8 +513,8 @@ A toggle button has a shared stroked container, icons and/or text labels.
 
 ![Toggle button anatomy](assets/toggle_button_anatomy.png)
 
-* A. Container
-* C. Icon
+1. Container
+3. Icon
 
 <details>
 <summary><b>Selection</b> attributes</summary>
@@ -546,6 +551,8 @@ API and source code:
 
 * `CheckBox`
     * [Class description](https://developer.android.com/reference/android/widget/CheckBox)
+
+_**Note** The `CheckBox` API is just of several inputs that can implement the icon button. See other [selection controls](https://material.io/components/selection-controls/) for more details._
 
 The following example shows an icon that can be used independently or in items of a `RecyclerView`.
 
@@ -599,7 +606,7 @@ API and source code:
     
 The following example shows text, outlined and contained button types with Material Theming.
 
-!["Button theming with three buttons - text, outlined and contained - with green/black color theming and cut corners."](assets/button-theming.svg)
+!["Button theming with three buttons - text, outlined and contained - with pink color theming and cut corners."](assets/button-theming.svg)
 
 <details>
 <summary><b>Implementing button theming</b></summary>
@@ -609,29 +616,42 @@ Using theme attributes and styles in `res/values/styles.xml` (themes all buttons
 ```xml
 <style name="Theme.App" parent="Theme.MaterialComponents.*">
     ...
-    <item name="colorPrimary">@color/green_a400</item>
-    <item name="colorOnPrimary">@color/black</item>
+    <item name="colorPrimary">#FEDBD0</item>
+    <item name="colorOnPrimary">#442C2E</item>
     <item name="textAppearanceButton">@style/TextAppearance.App.Button</item>
     <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
 </style>
 
 <style name="TextAppearance.App.Button" parent="TextAppearance.MaterialComponents.Button">
-    <item name="fontFamily">@font/roboto_mono</item>
-    <item name="android:fontFamily">@font/roboto_mono</item>
-    <item name="android:textAllCaps">false</item>
+    <item name="fontFamily">@font/rubik</item>
+    <item name="android:fontFamily">@font/rubik</item>
 </style>
 
 <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
     <item name="cornerFamily">cut</item>
-    <item name="cornerSize">8dp</item>
+    <item name="cornerSize">4dp</item>
 </style>
 ```
 
-or using a default style theme attribute, styles and theme overlay (themes all buttons but does not affect other components):
+or using default style theme attributes, styles and theme overlays (themes all buttons but does not affect other components):
 ```xml
 <style name="Theme.App" parent="Theme.MaterialComponents.*">
     ...
+    <item name="borderlessButtonStyle">@style/Widget.App.Button.TextButton</item>
+    <item name="materialButtonOutlinedStyle">@style/Widget.App.Button.OutlinedButton</item>
     <item name="materialButtonStyle">@style/Widget.App.Button</item>
+</style>
+
+<style name="Widget.App.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+    <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button.TextButton</item>
+    <item name="android:textAppearance">@style/TextAppearance.App.Button</item>
+    <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+</style>
+
+<style name="Widget.App.Button.OutlinedButton" parent="Widget.MaterialComponents.OutlinedButton">
+    <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button.TextButton</item>
+    <item name="android:textAppearance">@style/TextAppearance.App.Button</item>
+    <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
 </style>
 
 <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
@@ -640,13 +660,17 @@ or using a default style theme attribute, styles and theme overlay (themes all b
     <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
 </style>
 
+<style name="ThemeOverlay.App.Button.TextButton" parent="">
+    <item name="colorPrimary">#84565E</item>
+</style>
+
 <style name="ThemeOverlay.App.Button" parent="">
-    <item name="colorPrimary">@color/green_a400</item>
-    <item name="colorOnPrimary">@color/black</item>
+    <item name="colorPrimary">#FEDBD0</item>
+    <item name="colorOnPrimary">#442C2E</item>
 </style>
 ```
 
-or using the style in the layout (affects only this button):
+or using one of the styles in the layout (affects only this button):
 ```xml
 <Button
     ...

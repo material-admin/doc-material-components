@@ -45,127 +45,10 @@ For more guidance on writing labels, go to [our page on how to write a good acce
  
 On mobile, an [elevated card’s](https://material.io/components/cards/#specs) default elevation is 1dp, with a raised dragged elevation of 8dp.
 
-### Key properties
-
-![\<Placeholder diagram of elevated card attributes. Replace this text if/when there is an approved diagram\>](assets/card-anatomy.png)
-
-**1. Elevated card attributes**
-
-1. **Container**
-2. **Thumbnail [optional]** 
-3. **Header text [optional]** 
-4. **Subhead [optional]**
-5. **Media [optional]** 
-6. **Supporting text [optional]**
-7. **Buttons [optional]** 
-8. **Icons [optional]** 
-
-
-<details>
-<summary><b>Container</b> attributes</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-</p>
-</details>
-
-<details>
-<summary><b>Thumbnail</b> attributes (optional)</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-</p>
-</details>
-
-<details>
-<summary><b>Header text</b> attributes (optional)</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-</p>
-</details>
-
-<details>
-<summary><b>Subhead</b> attributes (optional)</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-</p>
-</details>
-
-<details>
-<summary><b>Media</b> attributes (optional)</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-
-</p>
-</details>
-
-<details>
-<summary><b>Supporting text</b> attributes (optional)</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-
-</p>
-</details>
-
-<details>
-<summary><b>Button</b> attributes (optional)</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-
-</p>
-</details>
-
-<details>
-<summary><b>Icon</b> attributes (optional)</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-
-</p>
-</details>
-
 ### Elevated card example
 
 Source code API:
-* \<platform component name\>
-  * [Class definition](https://)
-  * [GitHub source](https://github.com/material-components/)
+  * [Class definition](https://api.flutter.dev/flutter/material/Card-class.html)
 
 
 The following example shows an elevated card. The card has a title, a secondary title, text, and two actions: Action 1 and Action 2 in purple (#6200EE).
@@ -184,127 +67,116 @@ The source code example should display as per the interactive example (https://m
 * Allow the cards to be moveable.
 ```
 
-
-## Outlined card
- 
-On desktop and mobile, [outlined cards](https://material.io/components/cards/#specs) can have a resting elevation of 0dp. They elevate to 4dp on hover.
 ### Key properties
 
-![\<Placeholder diagram of outlined card  attributes. Replace this text if/when there is an approved diagram\>](assets/card-anatomy.png)
+![\<Placeholder diagram of elevated card attributes. Replace this text if/when there is an approved diagram\>](assets/card-anatomy.png)
 
-**1. Outlined card attributes**
+**1. Elevated card attributes**
 
-1. **Container** 
+1. **Container**
 2. **Thumbnail [optional]** 
 3. **Header text [optional]** 
-4. **Subhead [optional]** 
+4. **Subhead [optional]**
 5. **Media [optional]** 
-6. **Supporting text [optional]** 
-7. **Buttons [optional]**
+6. **Supporting text [optional]**
+7. **Buttons [optional]** 
 8. **Icons [optional]** 
+
 
 <details>
 <summary><b>Container</b> attributes</summary>
-<p>
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
-|Desc. 1 | | | |
+|Container width |  | | |
+|Container heigh|  | | |
+|Container margin (left) |  | | |
+|Container margin (right)|  | | |
+|Container margin (top)|  | | |
+|Container minimum height|  | | |
+|Container elevation | | | |
 
-</p>
-</details>
 
 <details>
 <summary><b>Thumbnail</b> attributes (optional)</summary>
-<p>
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
 |Desc. 1 | | | |
 
-</p>
+
 </details>
 
 <details>
 <summary><b>Header text</b> attributes (optional)</summary>
-<p>
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
-|Desc. 1 | | | |
+| Text label | | | |
+| Text color | | | |
+| Typography | | | |
 
 
-</p>
 </details>
 
 <details>
 <summary><b>Subhead</b> attributes (optional)</summary>
-<p>
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
-|Desc. 1 | | | |
+| Text label | | | |
+| Text color | | | |
+| Typography | | | |
 
 
-</p>
 </details>
 
 <details>
 <summary><b>Media</b> attributes (optional)</summary>
-<p>
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
 |Desc. 1 | | | |
 
-
-</p>
 </details>
 
 <details>
-
 <summary><b>Supporting text</b> attributes (optional)</summary>
-<p>
+
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
-|Desc. 1 | | | |
+| Text label | | | |
+| Text color | | | |
+| Typography | | | |
 
-
-</p>
 </details>
 
 <details>
 <summary><b>Button</b> attributes (optional)</summary>
-<p>
 
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
+[Material button API:](https://api.flutter.dev/flutter/material/MaterialButton-class.html)
 
-
-
-</p>
 </details>
 
 <details>
 <summary><b>Icon</b> attributes (optional)</summary>
-<p>
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
 |Desc. 1 | | | |
 
-
-</p>
 </details>
 
+
+
+## Outlined card
+ 
+On desktop and mobile, [outlined cards](https://material.io/components/cards/#specs) can have a resting elevation of 0dp. They elevate to 4dp on hover.
 
 ### Outlined card example
 
 Source code API:
-* \<platform component name\>
-  * [Class definition](https://)
-  * [GitHub source](https://github.com/material-components/)
+  * [Class definition](https://api.flutter.dev/flutter/material/Card-class.html)
 
 
 The following example shows an outlined card. The card has a title, a secondary title, text, and two actions: Action 1 and Action 2 in purple (#6200EE).
@@ -325,25 +197,128 @@ The source code example should display as per the interactive example (https://m
 
 ```
 
+
+
+### Key properties
+
+![\<Placeholder diagram of outlined card  attributes. Replace this text if/when there is an approved diagram\>](assets/card-anatomy.png)
+
+**1. Outlined card attributes**
+
+1. **Container** 
+2. **Thumbnail [optional]** 
+3. **Header text [optional]** 
+4. **Subhead [optional]** 
+5. **Media [optional]** 
+6. **Supporting text [optional]** 
+7. **Buttons [optional]**
+8. **Icons [optional]** 
+
+<details>
+<summary><b>Container</b> attributes</summary>
+
+|  | Attribute | Related method(s) | Default value |
+|---|---|---|---|
+|Container width |  | | |
+|Container heigh|  | | |
+|Container margin (left) |  | | |
+|Container margin (right)|  | | |
+|Container margin (top)|  | | |
+|Container minimum height|  | | |
+|Container elevation | | | |
+
+
+</details>
+
+<details>
+<summary><b>Thumbnail</b> attributes (optional)</summary>
+
+
+|  | Attribute | Related method(s) | Default value |
+|---|---|---|---|
+|Desc. 1 | | | |
+
+
+</details>
+
+<details>
+<summary><b>Header text</b> attributes (optional)</summary>
+
+|  | Attribute | Related method(s) | Default value |
+|---|---|---|---|
+| Text label | | | |
+| Text color | | | |
+| Typography | | | |
+
+
+</details>
+
+<details>
+<summary><b>Subhead</b> attributes (optional)</summary>
+
+|  | Attribute | Related method(s) | Default value |
+|---|---|---|---|
+| Text label | | | |
+| Text color | | | |
+| Typography | | | |
+
+
+</details>
+
+<details>
+<summary><b>Media</b> attributes (optional)</summary>
+
+
+|  | Attribute | Related method(s) | Default value |
+|---|---|---|---|
+|Desc. 1 | | | |
+
+
+
+</details>
+
+<details>
+
+<summary><b>Supporting text</b> attributes (optional)</summary>
+
+|  | Attribute | Related method(s) | Default value |
+|---|---|---|---|
+| Text label | | | |
+| Text color | | | |
+| Typography | | | |
+
+
+
+</details>
+
+<details>
+<summary><b>Button</b> attributes (optional)</summary>
+
+[Material button API:](https://api.flutter.dev/flutter/material/MaterialButton-class.html)
+
+</details>
+
+<details>
+<summary><b>Icon</b> attributes (optional)</summary>
+
+|  | Attribute | Related method(s) | Default value |
+|---|---|---|---|
+|Desc. 1 | | | |
+
+</details>
+
+
 ## Theming Cards
 
 Cards support [Material Theming](https://material.io/components/cards/#theming) and can be customized in terms of color, typography and shape.
 
 ### Card theming example
 
-API and source code
+Source code API:
+  * [Class definition](https://api.flutter.dev/flutter/material/Card-class.html)
 
-* `\<card classes\>`
-  * [Class definition](https://)
-  * [GitHub source](https://github.com/material-components/)
-
-
+_Use the [Shrine theme](https://material.io/design/material-studies/shrine.html) for this example_
 ```
-<source code here>
-* The primary color is green
-* The secondary color is black
-* The text font is Roboto
-* The container has clipped corners
 * Display an outlined card 
 * Display a card title "Card title"
 * Display a secondary title "Secondary text"
@@ -351,4 +326,6 @@ API and source code
 * Display two actions, "Action 1" and "Action 2" with two text buttons
 * Display the sample image ![sample card image of yellow and red tulips](assets/card-sample-image.jpg)
 * Make the card checkable with a "favorites" icon
+
+```
 ```

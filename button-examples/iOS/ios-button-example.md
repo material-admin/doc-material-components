@@ -19,7 +19,7 @@ There are four types of buttons:
 1. [Text button](#text-button)
 2. [Outlined button](#outlined-button)
 3. [Contained button](#contained-button)
-4. [Toggle button](#toggle-button)
+4. [Toggle button](#toggle-button) (*not fully supported in iOS*)
 
 ![Example of the four button types](assets/buttons_types.png)
 
@@ -407,14 +407,14 @@ A contained button has text, a container, and an optional icon.
 
 There are two types of toggle buttons:
 
-* [Toggle button](#toggle-button)
+* [Toggle button](#toggle-button) (*not supported in iOS*)
 * [Icon](#icon)
 
 ### Toggle button
 
 The toggle button allows you to select from a group of buttons that can be set to [selective action](https://material.io/components/buttons/#toggle-button) where only one button in a group can be selected at one time.
 
-The Material toggle bar is not supported in iOS. 
+**NOTE** The Material toggle bar is not supported in iOS. 
 
 ### Icon
 
@@ -747,8 +747,9 @@ The following example shows text, outlined and contained button types with Mater
 <summary><b>Implementing button theming</b></summary>
 <br>
 
+[Shrine theme](https://material.io/design/material-studies/shrine.html)
 ```
-Include source code implementing the three buttons found in [https://github.com/mingjane-work/doc-material-components/blob/mingjane-doc-branch/button-examples/Android/android-button-example.md#theming-buttons].
+Include source code implementing text, outlined, and contained buttons using "Shrine" theme.
 
 Upload a screenshot of the render and update the image.
 ```

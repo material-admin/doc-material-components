@@ -28,7 +28,6 @@ There are four types of buttons:
 Before you can use a button, you will need to install and import the following:
 
 * Install the Material button component
-* Import styles
 * Import JavaScript
 
 ### Install the Material button component
@@ -109,6 +108,23 @@ Add an icon to your `mdc-button` instance using the following steps:
     ```
 
 </details>
+
+### Making buttons accessible
+
+Material Design spec advises that touch targets should be at least 48 x 48 px.
+To meet this requirement, add the following to your button:
+
+```html
+<div class="mdc-touch-target-wrapper">
+  <button class="mdc-button mdc-button--touch">
+    <div class="mdc-button__ripple"></div>
+    <span class="mdc-button__label">My Accessible Button</span>
+    <div class="mdc-button__touch"></div>
+  </button>
+</div>
+```
+
+_**Note** The outer `mdc-touch-target-wrapper` element is only necessary if you want to avoid potentially overlapping touch targets on adjacent elements (due to collapsing margins)._
 
 ### Sass mixins
 
@@ -556,14 +572,15 @@ API and source code:
 
 The following example shows text, outlined and contained button types with Material Theming.
 
-!["Button theming with three buttons - text, outlined and contained - with green/black color theming and cut corners."](assets/button-theming.svg)
+!["Button theming with three buttons - text, outlined and contained - with shrine theming."](assets/button-theming.svg)
 
 <details>
 <summary><b>Implementing button theming</b></summary>
 <br>
 
+[Shrine theme](https://material.io/design/material-studies/shrine.html)
 ```
-Include source code implementing the three buttons found in [https://github.com/mingjane-work/doc-material-components/blob/mingjane-doc-branch/button-examples/Android/android-button-example.md#theming-buttons].
+Include source code implementing text, outlined, and contained buttons using "Shrine" theme.
 
 Upload a screenshot of the render and update the image.
 ```
