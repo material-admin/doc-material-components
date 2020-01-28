@@ -25,11 +25,9 @@ _**Instructions**_
 
 [Cards](https://material.io/components/cards/) contain content and actions about a single subject.
 
-A card can be one of two types:
-1. [Elevated](#elevated-card)
-1. [Outlined](#outlined-card)
+For additional information, go to the [`mdc-card` API](#mdc-card-api).
 
-![Elevated and Outlined cards wtih a secondary title and two actions: Action 1 and Action 2 in purple](assets/cards-generic.png) 
+![Elevated card wtih a secondary title and two actions: Action 1 and Action 2 in purple](assets/cards-generic-elevated.png) 
 
 [`mdc-card` API](#mdc-card-api)
 
@@ -120,24 +118,11 @@ Import base styles of card into your `*.scss` stylesheet using :
 }
 ```
 
-<img src="assets/web-sass-mixins-example.png" alt="Contained card with orange fill and green icon ">
-
-#### Sass mixins for `mdc-card`
-
-The following mixins are available to customize your `mdc-card` instance.
-
-Mixin | Description
----|---
-`mdc-card-fill-color($color)` | Sets the fill color of a card.
-`mdc-card-outline($color, $thickness)` | Sets the color and thickness of a card's outline (but does _not_ remove its shadow).
-`mdc-card-shape-radius($radius, $rtl-reflexive)` | Sets the rounded shape to card with given radius size. Set `$rtl-reflexive` to true to flip radius values in RTL context, defaults to false.
-`mdc-card-media-aspect-ratio($x, $y)` | Maintains the given aspect ratio on a `mdc-card__media` subelement by dynamically scaling its height relative to its width.
-
-## Elevated card
+## Card
  
-On mobile, an [elevated card’s](https://material.io/components/cards/#specs) default elevation is 1dp, with a raised dragged elevation of 8dp.
+On mobile, a [card’s](https://material.io/components/cards/#specs) default elevation is 1dp, with a raised dragged elevation of 8dp.
 
-### Elevated card example
+### Card example
 
 Source code API:
 * \<platform component name\>
@@ -163,7 +148,7 @@ The source code example should display as per the interactive example (https://m
 
 ### Key properties
 
-![\<Placeholder diagram of elevated card attributes. Replace this text if/when there is an approved diagram\>](assets/card-anatomy.png)
+![Card anatomy diagram](assets/card-anatomy.png)
 
 **1. Elevated card attributes**
 
@@ -278,155 +263,6 @@ Typography | |
 
 </details>
 
-
-## Outlined card
- 
-On desktop and mobile, [outlined cards](https://material.io/components/cards/#specs) can have a resting elevation of 0dp. They elevate to 4dp on hover.
-
-### Outlined card example
-
-Source code API:
-* \<platform component name\>
-  * [Class definition](https://)
-  * [GitHub source](https://github.com/material-components/)
-
-
-The following example shows an outlined card. The card has a title, a secondary title, text, and two actions: Action 1 and Action 2 in purple (#6200EE).
-
-
-<img src="assets/<platform>-outlined-card.png" alt="outlined card example for <platform> showing ...">
-
-```
-<source code here>
-The source code example should display as per the interactive example (https://material.io/components/cards/#) with supporting text and Buttons:
-* Display an outlined card with an outline of 60% opacity
-* Display a card title "Card title"
-* Display a secondary title "Secondary text" with an opacity of 60%
-* Display text reading "Greyhound divisively hello coldly wonderfully marginally far upon excluding." with an opacity of 60%
-* Display two actions, "Action 1" and "Action 2" with two text buttons
-* Display the sample image ![sample card image of yellow and red tulips](assets/card-sample-image.jpg)
-* Make the card selectable with a "favorites" icon
-
-```
-
-### Key properties
-
-![\<Placeholder diagram of outlined card  attributes. Replace this text if/when there is an approved diagram\>](assets/card-anatomy.png)
-
-**1. Outlined card attributes**
-
-1. **Container** 
-2. **Thumbnail [optional]** 
-3. **Header text [optional]** 
-4. **Subhead [optional]** 
-5. **Media [optional]** 
-6. **Supporting text [optional]** 
-7. **Buttons [optional]** 
-8. **Icons [optional]** 
-
-<details>
-<summary><b>Container</b> attributes</summary>
-
-Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-Container fill color| |
-Container ink color | |
-Container shape radius | |
-Container outline color | |
-Container outline width | | 
-Container horzontal padding | | 
-Container elevation | | 
-
-</details>
-
-<details>
-<summary><b>Thumbnail</b> attributes (optional)</summary>
-
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-</details>
-
-<details>
-<summary><b>Header text</b> attributes (optional)</summary>
-
-Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-Text label | N/A |  N/A
-Text color | |
-Typography | |
-
-
-</details>
-
-<details>
-<summary><b>Subhead</b> attributes (optional)</summary>
-
-Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-Text label | N/A |  N/A
-Text color | |
-Typography | |
-
-
-
-
-</details>
-
-<details>
-<summary><b>Media</b> attributes (optional)</summary>
-
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-
-</details>
-
-<details>
-
-<summary><b>Supporting text</b> attributes (optional)</summary>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-
-</details>
-
-<details>
-<summary><b>Button</b> attributes (optional)</summary>
-
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-
-
-</details>
-
-<details>
-<summary><b>Icon</b> attributes (optional)</summary>
-
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-
-</details>
-
-
-
 ## Theming Cards
 
 Cards support [Material Theming](https://material.io/components/cards/#theming) and can be customized in terms of color, typography and shape.
@@ -451,82 +287,10 @@ _Use the [Shrine theme](https://material.io/design/material-studies/shrine.html)
 
 ```
 * Make the card checkable with a "favorites" icon
+</details>
 
 ## `mdc-card` API
 
-## Basic Usage
-
-### HTML Structure
-
-```html
-<div class="mdc-card">
-  <!-- ... content ... -->
-</div>
-```
-
-> _NOTE_: MDC Card is designed to accommodate a wide variety of use cases.
-> See the [Card Contents](#card-contents) section for information on helpers for specific types of content within cards.
-
-### Styles
-
-```css
-@import "@material/card/mdc-card";
-```
-
-In order to remain general-purpose and support e.g. images spanning the full width of the card, MDC Card does not
-include padding styles on the root element. When adding free-form text content to cards, padding should be set to
-`16px`:
-
-```css
-.my-card-content {
-  padding: 16px;
-}
-```
-
-> _NOTE_: MDC Card's predefined classes for content areas (e.g. `mdc-card__actions`) take care of their own padding.
-
-By default, cards expand horizontally to fill all available space, and vertically to fit their contents.
-If you'd like to maintain a consistent width and height across cards, you'll need to set it in your styles:
-
-```css
-.my-card {
-  height: 350px;
-  width: 350px;
-}
-```
-
-You can also place cards within layout containers, such as [MDC Layout Grid](../mdc-layout-grid)
-or CSS Flexbox or Grid.
-
-### JavaScript
-
-MDC Card itself does not require JavaScript. However, if you place interactive components inside your cards,
-you may want to instantiate ripples or other components. For example:
-
-```js
-import {MDCRipple} from '@material/ripple';
-
-const selector = '.mdc-button, .mdc-icon-button, .mdc-card__primary-action';
-const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
-  return new MDCRipple(el);
-});
-```
-
-> _NOTE_: If your card includes any [icon button toggles](../mdc-icon-button#icon-button-toggle), you will want to
-> instantiate `MDCIconButtonToggle` instead of `MDCRipple`.
-
-## Variants
-
-### Outlined Card
-
-By default, cards are elevated with no outline. You can render unelevated outlined cards instead by adding the
-`mdc-card--outlined` modifier class.
-
-```html
-<div class="mdc-card mdc-card--outlined">
-  <!-- ... content ... -->
-</div>
-```
 
 ### Card Contents
 
