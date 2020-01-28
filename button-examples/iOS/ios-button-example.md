@@ -78,7 +78,7 @@ To help make your buttons usable to as many users as possible, apply the followi
     button.accessibilityLabel = "Create"
     ```
 * Set the minimum [visual height to
-36 and minium\um visual width to 64](https://material.io/design/components/buttons.html#specs)
+36 and miniumum visual width to 64](https://material.io/design/components/buttons.html#specs)
     **Objective-C**
 
     ```objc
