@@ -31,16 +31,9 @@ _**Note:** `<Button>` is auto-inflated as `<com.google.android.material.button.M
 
 ### Making buttons accessible
 
-Buttons support labeling for accessibility and are readable by most screen readers, such as TalkBack. By default a screen reader should identify the component as a button and read out the text label.
+Buttons support content labeling for accessibility and are readable by most screen readers, such as TalkBack. Text rendered in buttons is automatically provided to accessibility services. Additional content labels are usually unnecessary.
 
-Alternative text can be provided for the screen reader:
-```xml
-<Button
-    ...
-    android:contentDescription="@string/content_description"
-/>
-
-For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
+For more information on content labels, go to the [Android accessibility help guide](https://support.google.com/accessibility/android/answer/7158690).
 
 ## Text button
 
