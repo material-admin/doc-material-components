@@ -306,7 +306,7 @@ RaisedButton.icon(
 A contained button has a text label, a filled container and an optional icon.
 
 
-[Contained button anatomy diagram](assets/contained_button_anatomy.png)
+![Contained button anatomy diagram](assets/contained_button_anatomy.png)
 
 1. Text label
 1. Container
@@ -467,8 +467,8 @@ A toggle button has a shared stroked container, icons and/or text labels.
 
 ![Toggle button anatomy](assets/toggle_button_anatomy.png)
 
-* A. Container
-* C. Icon
+1. Container
+1. Icon
 
 <details>
 <summary><b>Selection</b> properties</summary>

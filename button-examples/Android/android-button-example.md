@@ -31,9 +31,9 @@ _**Note:** `<Button>` is auto-inflated as `<com.google.android.material.button.M
 
 ### Making buttons accessible
 
-Android's button component APIs support labeling for accessibility and are readable by most OCRs.
+Buttons support content labeling for accessibility and are readable by most screen readers, such as TalkBack. Text rendered in buttons is automatically provided to accessibility services. Additional content labels are usually unnecessary.
 
-For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
+For more information on content labels, go to the [Android accessibility help guide](https://support.google.com/accessibility/android/answer/7158690).
 
 ## Text button
 
@@ -95,8 +95,8 @@ A text button has a text label, a transparent container and an optional icon.
 ![Text button anatomy diagram](assets/text_button_anatomy.png)
 
 1. Text label
-1. Container
-1. Icon
+2. Container
+3. Icon
 
 <details>
 <summary><b>Text label</b> attributes</summary>
@@ -181,7 +181,6 @@ In the layout:
 />
 ```
 
-
 In code:
 ```kt
 outlinedButton.setOnClickListener {
@@ -215,9 +214,8 @@ An outlined button has a text label, a stroked container and an optional icon.
 ![Outlined button anatomy diagram](assets/outlined_button_anatomy.png)
 
 1. Text label
-1. Container
-1. Icon
-
+2. Container
+3. Icon
 
 <details>
 <summary><b>Text label</b> attributes</summary>
@@ -337,8 +335,8 @@ A contained button has a text label, a filled container and an optional icon.
 ![Contained button anatomy diagram](assets/contained_button_anatomy.png)
 
 1. Text label
-1. Container
-1. Icon
+2. Container
+3. Icon
 
 <details>
 <summary><b>Text label</b> attributes</summary>
@@ -515,7 +513,7 @@ A toggle button has a shared stroked container, icons and/or text labels.
 ![Toggle button anatomy](assets/toggle_button_anatomy.png)
 
 1. Container
-3. Icon
+2. Icon
 
 <details>
 <summary><b>Selection</b> attributes</summary>
