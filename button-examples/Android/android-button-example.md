@@ -316,6 +316,7 @@ containedButton.setOnClickListener {
 
 The following example shows a contained button with an icon.
 
+!["Contained button with white text 'Contained button', purple container and '+' icon over a white background."](assets/contained-button-icon.svg)
 
 In the layout:
 ```xml
