@@ -78,7 +78,7 @@ To help make your buttons usable to as many users as possible, apply the followi
     button.accessibilityLabel = "Create"
     ```
 * Set the minimum [visual height to
-36 and minium\um visual width to 64](https://material.io/design/components/buttons.html#specs)
+36 and miniumum visual width to 64](https://material.io/design/components/buttons.html#specs)
     **Objective-C**
 
     ```objc
@@ -91,7 +91,7 @@ To help make your buttons usable to as many users as possible, apply the followi
     button.minimumSize = CGSize(width: 64, height: 48)
     ```
 
-* Set the[touch areas to at least 44 points high and 44
+* Set the [touch areas to at least 44 points high and 44
 wide](https://material.io/design/layout/spacing-methods.html#touch-click-targets).
     To minimize a button's visual size while allowing for larger [touchable areas](https://material.io/design/layout/spacing-methods.html#touch-click-targets), set the `hitAreaInsets` to a negative value. Maintain sufficient distance between the button touch targets. For more see the [Touch and click
 targets](https://material.io/design/layout/spacing-methods.html#touch-click-targets)
@@ -731,14 +731,14 @@ extension ToggleButtonCollectionViewController {
 
 ![Toggle button anatomy](assets/toggle_button_anatomy.png)
 
-* A. Container
-* C. Icon
+1. Container
+1. Icon
 
 
-Diagram label | Design Attribute |  Theme value |  Property
----|---|---|---
-C | Icon | N/A | 
-C | Icon color | Secondary color |  
+Design Attribute |  Theme value |  Property
+---|---|---
+Icon | N/A | 
+Icon color | Secondary color |  
 
 .
 

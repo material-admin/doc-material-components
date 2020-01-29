@@ -285,7 +285,7 @@ Container ink color | Primary color | `mdc-button-ink-color($color)`
  Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
  Icon | N/A |
-C | Icon color | Primary color | ` mdc-button-icon-color($color)`
+Icon color | Primary color | ` mdc-button-icon-color($color)`
 
 </details>
 
@@ -365,7 +365,7 @@ Container horzontal padding | | `mdc-button-horizontal-padding($padding)`
  Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
  Icon | N/A |
-C | Icon color | Primary color | ` mdc-button-icon-color($color)`
+Icon color | Primary color | ` mdc-button-icon-color($color)`
 
 We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Outlined button API doc]()
 
@@ -415,7 +415,7 @@ Source code API:
 
 A contained button has text, a container, and an optional icon.
 
-[Contained button anatomy diagram](assets/contained_button_anatomy.png)
+![Contained button anatomy diagram](assets/contained_button_anatomy.png)
 
 1. Text label
 1. Container
@@ -549,8 +549,8 @@ The icon button consists of two icons for 'on' and 'off'.
 
 ![Toggle button anatomy](assets/toggle_button_anatomy.png)
 
-* A. Container
-* C. Icon
+1. Container
+1. Icon
 
  Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
