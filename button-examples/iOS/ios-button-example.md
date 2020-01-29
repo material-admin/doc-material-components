@@ -576,7 +576,7 @@ class ToggleButtonCell: MDCCardCollectionCell {
 }
 ```
 
-The class `ToggleButtonCollectionViewController` &ndash; which extends `UICollectionViewController` &ndash; can then load the images and icons in a list, and `ToggleButtonCollectionViewController` can then be instantiated to display each image with an icon in an array:
+The class `ToggleButtonCollectionViewController` &ndash; which extends `UICollectionViewController` &ndash; can then load the images and icons in a list, and `ToggleButtonCollectionViewController` can then be instantiated to display each image with an icon in an array.
 
 #### Anatomy and key properties
 
@@ -649,7 +649,7 @@ API and source code:
     
 The following example shows text, outlined and contained button types with Material Theming.
 
-!["Button theming example for <platform> with three buttons - text, outlined and contained - with green/black color theming and cut corners."](assets/button-theming.svg)
+!["Button theming example for iOS with pink and black buttons and cut corners."](assets/button-theming.svg)
 
 <details>
 <summary><b>Implementing button theming</b></summary>
