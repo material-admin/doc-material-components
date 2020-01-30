@@ -21,17 +21,17 @@ _**Instructions**_
 
 
 
-# Cards
+# Card
 
-[Cards](https://material.io/components/cards/) contain content and actions about a single subject.
+A [card](https://material.io/components/cards/) contains content and actions about a single subject.
 
 ![Elevated card wtih a secondary title and two actions: Action 1 and Action 2 in purple](assets/generic-card-type-elevated.png) 
 
 
-## Using cards
+## Using a card
 
 
-### Making cards accessible
+### Making a card accessible
 
 Flutter's card component APIs support labeling for accessibility. To use labels...
 
@@ -166,9 +166,9 @@ The source code example should display as per the interactive example (https://m
 
 
 
-## Theming Cards
+## Theming a card
 
-Cards support [Material Theming](https://material.io/components/cards/#theming) and can be customized in terms of color, typography and shape.
+A card supports [Material Theming](https://material.io/components/cards/#theming) and can be customized in terms of color, typography and shape.
 
 ### Card theming example
 
