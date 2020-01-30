@@ -23,7 +23,7 @@ _**Instructions**_
 
 # Card
 
-A [card](https://material.io/components/cards/) contain content and actions about a single subject.
+A [card](https://material.io/components/cards/) contains content and actions about a single subject.
 
 ![Elevated card wtih a secondary title and two actions: Action 1 and Action 2 in purple](assets/generic-card-type-elevated.png) 
 
@@ -152,9 +152,9 @@ The source code example should display as per the interactive example (https://m
 </details>
 
 
-## Theming Cards
+## Theming a card
 
-Cards support [Material Theming](https://material.io/components/cards/#theming) and can be customized in terms of color, typography and shape.
+A card supports [Material Theming](https://material.io/components/cards/#theming) and can be customized in terms of color, typography and shape.
 
 ![Screenshot of card theming example](assets/<screenshot of theming example>.png)
 
