@@ -491,7 +491,7 @@ Source code APIs:
 
 The following example shows 4 images arranged in a 2-by-2 array with a favorite icon in the upper-right corner of each image.
 
-<img src="assets/iOS-toggle-icon.png" alt="iOS toggle example showing 4 images in an array with a favorite icon in the upper-right corner of each image.">
+<img src="assets/iOS-toggle-icon.png" alt="icon toggle showing 4 images ifavorite icon in each image.">
 
 
 It uses the class `ToggleButtonCell` &ndash; which extends the `MDCCardCollectionCell` &ndash; to display the image and the icon, and provide gesture recognition for each cell of the array.
