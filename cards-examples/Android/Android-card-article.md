@@ -21,18 +21,18 @@ _**Instructions**_
 
 
 
-# Cards
+# Card
 
-[Cards](https://material.io/components/cards/) contain content and actions about a single subject.
+A [card](https://material.io/components/cards/) contain content and actions about a single subject.
 
 ![Elevated card wtih a secondary title and two actions: Action 1 and Action 2 in purple](assets/generic-card-type-elevated.png) 
 
 
-## Using cards
+## Using a card
 
-Before you can use Material cards, you need to add a dependency to the Material Components for Android library. For more information, go to the [Getting started](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md) page.
+Before you can use a Material card, you need to add a dependency to the Material Components for Android library. For more information, go to the [Getting started](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md) page.
 
-### Making cards accessible
+### Making a card accessible
 
 Android's card component APIs support labeling for accessibility. To use labels...
 
