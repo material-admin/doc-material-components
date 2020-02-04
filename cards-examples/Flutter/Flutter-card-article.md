@@ -21,17 +21,17 @@ _**Instructions**_
 
 
 
-# Card
+# Cards
 
-A [card](https://material.io/components/cards/) contains content and actions about a single subject.
+[Cards](https://material.io/components/cards/) contain content and actions about a single subject.
 
 ![Elevated card wtih a secondary title and two actions: Action 1 and Action 2 in purple](assets/generic-card-type-elevated.png) 
 
 
-## Using a card
+## Using cards
 
 
-### Making a card accessible
+### Making cards accessible
 
 Flutter's card component APIs support labeling for accessibility. To use labels...
 
