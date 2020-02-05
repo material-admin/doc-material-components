@@ -158,7 +158,7 @@ The following example shows a text button with a text label that uses Material T
 For more information on Material Theming for iOS, go to the [iOS Material Theming page](../theming).
 
 !["iOS Text button with purple text 'Text' over a white background."](assets/text-button.svg)
-
+<!--<div class="material-code-render" markdown="1">-->
 **Swift**
 
 ```swift
@@ -182,6 +182,7 @@ The following example shows a text button with an icon.
 
 !["iOS text button with purple text 'Text button' and '+' icon over a white background."](assets/text-button-icon.svg)
 
+<!--<div class="material-code-render" markdown="1">-->
 ```swift
 
 ```
@@ -190,6 +191,7 @@ The following example shows a text button with an icon.
 ```objc
 
 ```
+<!--</div>-->
 
 </details>
 
@@ -261,6 +263,7 @@ For more information on Material Theming for iOS, go to the [iOS Material Themin
 
 !["Outlined button with purple text surrounded by a gray outline"](assets/outlined-button.svg)
 
+<!--<div class="material-code-render" markdown="1">-->
 **Swift**
 ```swift
 let MyMaterialTheme = MDCContainerScheme()
@@ -269,12 +272,35 @@ button.applyOutlinedTheme(withScheme: MyMaterialTheme)
 ```
 **Objective-C**
 ```objc
-
 MDCContainerScheme *MyMaterialTheme = [[MDCContainerScheme alloc] init];
 MDCButton *button = [[MDCButton alloc] init];
 
 [self.button applyOutlinedThemeWithScheme:self.MyMaterialTheme];
 ```
+<!--</div>-->
+
+<details>
+<summary><b>Adding an icon to an outlined button</b></summary>
+<br>
+
+The following example shows an outlined button with an icon.
+
+!["iOS outlined button with purple text 'Outlined' and '+' icon over a white background."](assets/outlined-button-icon.svg)
+
+<!--<div class="material-code-render" markdown="1">-->
+```swift
+
+```
+
+
+```objc
+
+```
+<!--</div>-->
+
+</details>
+
+
 ### Outlined button example with container schemes
 
 You can apply a theme to the button that applies to all elements in a container using `MDCContainerScheme`.
@@ -289,6 +315,7 @@ Source Code APIs:
 
 !["Outlined button example in Android with purple text surrounded by a gray outline"](assets/outlined-button.svg)
 
+<!--<div class="material-code-render" markdown="1">-->
 **Swift**
 ```swift
 let button = MDCButton()
@@ -299,6 +326,30 @@ button.applyTextTheme(withScheme: MyMaterialTheme)
 MDCButton *button = [[MDCButton alloc] init];
 [self.button applyTextThemeWithScheme:self.MyMaterialTheme];
 ```
+<!--</div>-->
+
+<details>
+<summary><b>Adding an icon to a contained button</b></summary>
+<br>
+
+The following example shows a contained button with an icon.
+
+!["iOS contained button with purple text 'Contained' and '+' icon over a white background."](assets/contained-button-icon.svg)
+
+<!--<div class="material-code-render" markdown="1">-->
+```swift
+
+```
+
+
+```objc
+
+```
+<!--</div>-->
+
+</details>
+
+
 ### Anatomy and key properties
 
 An outline button has text, a container, and an optional icon.
@@ -364,6 +415,7 @@ For more information on Material Theming for iOS, go to the [iOS Material Themin
 
 !["Contained button example with white text 'Text' on a purple background."](assets/contained-button.svg)
 
+<!--<div class="material-code-render" markdown="1">-->
 **Swift**
 ```swift
 let button = MDCButton()
@@ -374,6 +426,8 @@ button.applyContainedTheme(withScheme: MyMaterialTheme)
 MDCButton *button = [[MDCButton alloc] init];
 [self.button applyContainedThemeWithScheme:self.MyMaterialTheme];
 ```
+
+<!--</div>-->
 
 
 ### Anatomy and key attributes
@@ -462,7 +516,7 @@ API and source code:
     
 The following example shows text, outlined and contained button types with Material Theming.
 
-!["Button theming example for iOS with pink and black buttons and cut corners."](assets/button-theming.svg)
+!["Button theming examples for iOS with pink and black buttons and cut corners."](assets/button-theming.svg)
 
 <details>
 <summary><b>Implementing button theming</b></summary>
