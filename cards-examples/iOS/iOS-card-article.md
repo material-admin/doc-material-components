@@ -25,7 +25,7 @@ _**Instructions**_
 
 [Cards](https://material.io/components/cards/) contain content and actions about a single subject.
 
-![Elevated card wtih a secondary title and two actions: Action 1 and Action 2 in purple](assets/cards-generic-elevated.png) 
+![Elevated card wtih a secondary title and two actions: Action 1 and Action 2 in purple](assets/generic-card-type-elevated.png) 
 
 
 ## Using cards
@@ -381,6 +381,9 @@ extension ToggleButtonCollectionViewController {
   }
 }
 ```
+
+The class `ToggleButtonCollectionViewController` &ndash; which extends `UICollectionViewController` &ndash; can then load the images and icons in a list, and `ToggleButtonCollectionViewController` can then be instantiated to display each image with an icon in an array.
+
 
 </details>
 

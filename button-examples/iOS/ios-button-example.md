@@ -28,7 +28,7 @@ There are four types of buttons:
 
 ### Install `MDCButtons`
 
-<details><summary>Expand for installation instructions for `MDCButtons`</summary>
+<details><summary><b>Expand for installation instructions for <code>MDCButtons</code></b></summary>
 
 Before using the `MDCButtons` API to implement its types you must install `MCDButtons`. In your source files import the component, and then apply your theme:
 1. Install `MDCButtons`
@@ -153,30 +153,26 @@ Source Code APIs:
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/) <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
-The following example shows a text button with a text label.
+The following example shows a text button with a text label that uses Material Theming as its `ContainerScheme`.
+
+For more information on Material Theming for iOS, go to the [iOS Material Theming page](../theming).
 
 !["iOS Text button with purple text 'Text' over a white background."](assets/text-button.svg)
 
 **Swift**
 
 ```swift
-import MaterialComponents.MaterialButtons
-import MaterialComponents.MaterialButtons_Theming
-
-let containerScheme = MDCContainerScheme()
+let MyMaterialTheme = MDCContainerScheme()
 let button = MDCButton()
-button.applyTextTheme(withScheme: containerScheme)
+button.applyTextTheme(withScheme: MyMaterialTheme)
 ```
 
 **Objective-C**
 
 ```ObjC
-#import <MaterialComponents/MaterialButtons.h>
-#import <MaterialComponents/MaterialButtons+Theming.h>
-
-MDCContainerScheme *containerScheme = [[MDCContainerScheme alloc] init];
+MDCContainerScheme *MyMaterialTheme = [[MDCContainerScheme alloc] init];
 MDCButton *button = [[MDCButton alloc] init];
-[button applyTextThemeWithScheme:containerScheme];
+[button applyTextThemeWithScheme:MyMaterialTheme];
 ```
 <details>
 <summary><b>Adding an icon to a text button</b></summary>
@@ -263,7 +259,10 @@ Source Code APIs:
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
-The following example shows an outlined button with a text label and stroked container.    
+The following example shows an outlined button with a text label and stroked container that uses Material Theming as its `ContainerScheme`.
+
+For more information on Material Theming for iOS, go to the [iOS Material Theming page](../theming).
+    
 
 !["Outlined button with purple text surrounded by a gray outline"](assets/outlined-button.svg)
 
@@ -272,9 +271,9 @@ The following example shows an outlined button with a text label and stroked con
 import MaterialComponents.MaterialButtons
 import MaterialComponents.MaterialButtons_Theming
 
-let containerScheme = MDCContainerScheme()
+let MyMaterialTheme = MDCContainerScheme()
 let button = MDCButton()
-button.applyOutlinedTheme(withScheme: containerScheme)
+button.applyOutlinedTheme(withScheme: MyMaterialTheme)
 ```
 **Objective-C**
 ```objc
@@ -282,10 +281,10 @@ button.applyOutlinedTheme(withScheme: containerScheme)
 #import "MaterialButtons.h"
 #import <MaterialComponentsBeta/MaterialButtons+Theming.h>
 
-MDCContainerScheme *containerScheme = [[MDCContainerScheme alloc] init];
+MDCContainerScheme *MyMaterialTheme = [[MDCContainerScheme alloc] init];
 MDCButton *button = [[MDCButton alloc] init];
 
-[self.button applyOutlinedThemeWithScheme:self.containerScheme];
+[self.button applyOutlinedThemeWithScheme:self.MyMaterialTheme];
 ```
 ### Outlined button example with container schemes
 
@@ -307,7 +306,7 @@ import MaterialComponents.MaterialButtons
 import MaterialComponents.MaterialButtons_Theming
 
 let button = MDCButton()
-button.applyTextTheme(withScheme: containerScheme)
+button.applyTextTheme(withScheme: MyMaterialTheme)
 ```
 **Objective-C**
 ```objc
@@ -315,7 +314,7 @@ button.applyTextTheme(withScheme: containerScheme)
 #import <MaterialComponentsBeta/MaterialButtons+Theming.h>
 
 MDCButton *button = [[MDCButton alloc] init];
-[self.button applyTextThemeWithScheme:self.containerScheme];
+[self.button applyTextThemeWithScheme:self.MyMaterialTheme];
 ```
 ### Anatomy and key properties
 
@@ -383,7 +382,10 @@ Source Code APIs:
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
-The following example shows a contained button with a text label and a filled container.
+The following example shows a contained button with a text label and a filled container that uses Material Theming as its `ContainerScheme`.
+
+For more information on Material Theming for iOS, go to the [iOS Material Theming page](../theming).
+.
 
 !["Contained button example with white text 'Text' on a purple background."](assets/contained-button.svg)
 
@@ -393,7 +395,7 @@ import MaterialComponents.MaterialButtons
 import MaterialComponents.MaterialButtons_Theming
 
 let button = MDCButton()
-button.applyContainedTheme(withScheme: containerScheme)
+button.applyContainedTheme(withScheme: MyMaterialTheme)
 ```
 **Objective-C**
 ```objc
@@ -401,7 +403,7 @@ button.applyContainedTheme(withScheme: containerScheme)
 #import <MaterialComponentsBeta/MaterialButtons+Theming.h>
 
 MDCButton *button = [[MDCButton alloc] init];
-[self.button applyContainedThemeWithScheme:self.containerScheme];
+[self.button applyContainedThemeWithScheme:self.MyMaterialTheme];
 ```
 
 
@@ -490,6 +492,63 @@ Source code APIs:
 
 The iOS icon toggle button is only available for use with the iOS [card](../Cards) component. Go to the card article for an [example](../Cards/#card-example-with-icon-buttons).
 
+#### Anatomy and key properties
+
+![Toggle button anatomy](assets/toggle_button_anatomy.png)
+
+1. Container
+1. Icon
+
+
+Design Attribute |  Theme value |  Property
+---|---|---
+Icon | N/A | 
+Icon color | Secondary color |  
+
+<details>
+<summary><b>Text label</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Text label** | | | |
+| **Color** |  | | |
+| **Typography** | | | |
+
+
+</details>
+
+<details>
+<summary><b>Container</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Color** | | | |
+| **Stroke color** | | | |
+| **Stroke width** || | |
+| **Shape** | | | |
+| **Elevation** | | | |
+| **Ripple color** | | | |
+
+</details>
+
+<details>
+<summary><b>Icon</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Icon** | | | |
+| **Color** || | |
+| **Size** | | | |
+| **Gravity** (position relative to text label) | | | |
+| **Padding** (space between icon and text label) | | | |
+
+</details>
+
+>>>>>>> 23cb512696d3992908dfc3328d5828a370ccfc0b
+
 
 ## Theming buttons
 
@@ -505,7 +564,7 @@ API and source code:
     
 The following example shows text, outlined and contained button types with Material Theming.
 
-!["Button theming example for <platform> with three buttons - text, outlined and contained - with green/black color theming and cut corners."](assets/button-theming.svg)
+!["Button theming example for iOS with pink and black buttons and cut corners."](assets/button-theming.svg)
 
 <details>
 <summary><b>Implementing button theming</b></summary>

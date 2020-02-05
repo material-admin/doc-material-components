@@ -27,7 +27,7 @@ _**Instructions**_
 
 For additional information, go to the [`mdc-card` API](#mdc-card-api).
 
-![Elevated card wtih a secondary title and two actions: Action 1 and Action 2 in purple](assets/cards-generic-elevated.png) 
+![Elevated card wtih a secondary title and two actions: Action 1 and Action 2 in purple](assets/generic-card-type-elevated.png) 
 
 
 ## Using cards
@@ -37,7 +37,7 @@ Before you can use a cards, you will need to install and import the following:
 * Import JavaScript
 
 
-###Install the Material card component
+### Install the Material card component
 Install the `mdc-card` component before including it in your source.
 
 **`mdc-card`**
@@ -97,25 +97,6 @@ module.exports = {
 };
 ```
 </details>
-
-Import base styles of card into your `*.scss` stylesheet using :
-
-<details><summary><b>Expand for theming instructions for <code>mdc-card</code>.</b></summary>
-
-**mdc-card**
-```scss
-@use '@material/card/mdc-card';
-```
-
-```scss
-@use '@material/card/mixins' as card;
-
-.card-instance {
-  @include card.container-fill-color(orange);
-  @include card.icon-color(green);
-  // ...
-}
-```
 
 ## Card
  

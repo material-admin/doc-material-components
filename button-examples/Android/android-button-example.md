@@ -316,6 +316,7 @@ containedButton.setOnClickListener {
 
 The following example shows a contained button with an icon.
 
+!["Contained button with white text 'Contained button', purple container and '+' icon over a white background."](assets/contained-button-icon.svg)
 
 In the layout:
 ```xml
@@ -555,7 +556,7 @@ _**Note** The `CheckBox` API is just of several inputs that can implement the ic
 
 The following example shows an icon that can be used independently or in items of a `RecyclerView`.
 
-![<Placeholder image of icon toggle button. Replace this text if/when there is an approved diagram\>](assets/android_toggle_button.png)
+![Toggle icon example showing 4 images, heart icon in the upper-right corner of each image](assets/android_toggle_button.png)
 
 In the layout:
 ```xml

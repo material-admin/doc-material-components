@@ -25,12 +25,12 @@ _**Instructions**_
 
 [Cards](https://material.io/components/cards/) contain content and actions about a single subject.
 
-![Elevated card wtih a secondary title and two actions: Action 1 and Action 2 in purple](assets/cards-generic-elevated.png) 
+![Elevated card wtih a secondary title and two actions: Action 1 and Action 2 in purple](assets/generic-card-type-elevated.png) 
 
 
 ## Using cards
 
-Before you can use Material cards, you need to add a dependency to the Material Components for Android library. For more information, go to the [Getting started](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md) page.
+Before you can use a Material card, you need to add a dependency to the Material Components for Android library. For more information, go to the [Getting started](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md) page.
 
 ### Making cards accessible
 
@@ -152,9 +152,9 @@ The source code example should display as per the interactive example (https://m
 </details>
 
 
-## Theming Cards
+## Theming a card
 
-Cards support [Material Theming](https://material.io/components/cards/#theming) and can be customized in terms of color, typography and shape.
+A card supports [Material Theming](https://material.io/components/cards/#theming) and can be customized in terms of color, typography and shape.
 
 ![Screenshot of card theming example](assets/<screenshot of theming example>.png)
 
