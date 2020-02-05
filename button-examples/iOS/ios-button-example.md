@@ -255,7 +255,7 @@ You can apply a theme to the button using `Themes`.
 Source Code APIs:
 
 * MDCButton
-    * [Class description](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
+    * Class [MDCButton:UIButton](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
@@ -287,7 +287,7 @@ You can apply a theme to the button that applies to all elements in a container 
 Source Code APIs:
 
 * MDCButton
-    * [Class description](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
+    *  Class [MDCButton:UIButton](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 * [MDCContainerScheme class description](https://github.com/material-components/material-components-ios/tree/stable/components/schemes/Container)
@@ -366,7 +366,7 @@ An outline button has text, a container, and an optional icon.
 Source Code APIs:
 
 * MDCButton
-    * [Class description](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
+    *  Class [MDCButton:UIButton](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
@@ -463,12 +463,9 @@ The toggle button allows you to select from a group of buttons that can be set t
 
 Icons can be used as toggle buttons when they allow selection, or deselection, of a single choice, such as marking an item as a favorite.
 
- [MDCCardCollectionCell](https://material.io/develop/ios/components/cards/api-docs/Classes/MDCCardCollectionCell.html)
+* [MDCCardCollectionCell](https://material.io/develop/ios/components/cards/api-docs/Classes/MDCCardCollectionCell.html)
 * [UICollectionViewController]()
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
-
-The iOS icon toggle button is only available for use with the iOS [card](../Cards) component. Go to the card article for an [example](../Cards/#card-example-with-icon-buttons).
-
 
 The iOS icon toggle button is only available for use with the iOS [card](../Cards) component. Go to the card article for an [example](../Cards/#card-example-with-icon-buttons).
 
