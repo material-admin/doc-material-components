@@ -463,71 +463,12 @@ The toggle button allows you to select from a group of buttons that can be set t
 
 Icons can be used as toggle buttons when they allow selection, or deselection, of a single choice, such as marking an item as a favorite.
 
-
-#### Icon example
-
-Source code APIs:
-
-* [MDCCardCollectionCell](https://material.io/develop/ios/components/cards/api-docs/Classes/MDCCardCollectionCell.html)
+ [MDCCardCollectionCell](https://material.io/develop/ios/components/cards/api-docs/Classes/MDCCardCollectionCell.html)
 * [UICollectionViewController]()
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
 The iOS icon toggle button is only available for use with the iOS [card](../Cards) component. Go to the card article for an [example](../Cards/#card-example-with-icon-buttons).
 
-#### Anatomy and key properties
-
-![Toggle button anatomy](assets/toggle_button_anatomy.png)
-
-1. Container
-1. Icon
-
-
-Design Attribute |  Theme value |  Property
----|---|---
-Icon | N/A | 
-Icon color | Secondary color |  
-
-<details>
-<summary><b>Text label</b> attributes</summary>
-<br>
-
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Text label** | | | |
-| **Color** |  | | |
-| **Typography** | | | |
-
-
-</details>
-
-<details>
-<summary><b>Container</b> attributes</summary>
-<br>
-
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Color** | | | |
-| **Stroke color** | | | |
-| **Stroke width** || | |
-| **Shape** | | | |
-| **Elevation** | | | |
-| **Ripple color** | | | |
-
-</details>
-
-<details>
-<summary><b>Icon</b> attributes</summary>
-<br>
-
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | | | |
-| **Color** || | |
-| **Size** | | | |
-| **Gravity** (position relative to text label) | | | |
-| **Padding** (space between icon and text label) | | | |
-
-</details>
 
 The iOS icon toggle button is only available for use with the iOS [card](../Cards) component. Go to the card article for an [example](../Cards/#card-example-with-icon-buttons).
 
