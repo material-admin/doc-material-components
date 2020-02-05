@@ -433,7 +433,7 @@ ToggleButtons(
 
 The following example shows a toggle button with three buttons that have icons.
 
-!["Toggle button example for Android with icons - heart, eye and bell - and grey/purple borders over a white background."](assets/toggle-button.svg)
+!["Toggle button example for Flutter with icons - heart, eye and bell - and grey/purple borders over a white background."](assets/toggle-button.svg)
 
 ```dart
 ToggleButtons(

@@ -28,7 +28,7 @@ There are four types of buttons:
 
 ### Install `MDCButtons`
 
-<details><summary>Expand for installation instructions for `MDCButtons`</summary>
+<details><summary><b>Expand for installation instructions for <code>MDCButtons</code></b></summary>
 
 Before using the `MDCButtons` API to implement its types you must install `MCDButtons`. In your source files import the component, and then apply your theme:
 1. Install `MDCButtons`
@@ -490,6 +490,63 @@ Source code APIs:
 
 The iOS icon toggle button is only available for use with the iOS [card](../Cards) component. Go to the card article for an [example](../Cards/#card-example-with-icon-buttons).
 
+#### Anatomy and key properties
+
+![Toggle button anatomy](assets/toggle_button_anatomy.png)
+
+1. Container
+1. Icon
+
+
+Design Attribute |  Theme value |  Property
+---|---|---
+Icon | N/A | 
+Icon color | Secondary color |  
+
+<details>
+<summary><b>Text label</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Text label** | | | |
+| **Color** |  | | |
+| **Typography** | | | |
+
+
+</details>
+
+<details>
+<summary><b>Container</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Color** | | | |
+| **Stroke color** | | | |
+| **Stroke width** || | |
+| **Shape** | | | |
+| **Elevation** | | | |
+| **Ripple color** | | | |
+
+</details>
+
+<details>
+<summary><b>Icon</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **Icon** | | | |
+| **Color** || | |
+| **Size** | | | |
+| **Gravity** (position relative to text label) | | | |
+| **Padding** (space between icon and text label) | | | |
+
+</details>
+
+>>>>>>> 23cb512696d3992908dfc3328d5828a370ccfc0b
+
 
 ## Theming buttons
 
@@ -505,7 +562,7 @@ API and source code:
     
 The following example shows text, outlined and contained button types with Material Theming.
 
-!["Button theming example for <platform> with three buttons - text, outlined and contained - with green/black color theming and cut corners."](assets/button-theming.svg)
+!["Button theming example for iOS with pink and black buttons and cut corners."](assets/button-theming.svg)
 
 <details>
 <summary><b>Implementing button theming</b></summary>
