@@ -268,18 +268,12 @@ For more information on Material Theming for iOS, go to the [iOS Material Themin
 
 **Swift**
 ```swift
-import MaterialComponents.MaterialButtons
-import MaterialComponents.MaterialButtons_Theming
-
 let MyMaterialTheme = MDCContainerScheme()
 let button = MDCButton()
 button.applyOutlinedTheme(withScheme: MyMaterialTheme)
 ```
 **Objective-C**
 ```objc
-
-#import "MaterialButtons.h"
-#import <MaterialComponentsBeta/MaterialButtons+Theming.h>
 
 MDCContainerScheme *MyMaterialTheme = [[MDCContainerScheme alloc] init];
 MDCButton *button = [[MDCButton alloc] init];
@@ -302,17 +296,11 @@ Source Code APIs:
 
 **Swift**
 ```swift
-import MaterialComponents.MaterialButtons
-import MaterialComponents.MaterialButtons_Theming
-
 let button = MDCButton()
 button.applyTextTheme(withScheme: MyMaterialTheme)
 ```
 **Objective-C**
 ```objc
-#import <MaterialComponents/MaterialButtons.h>
-#import <MaterialComponentsBeta/MaterialButtons+Theming.h>
-
 MDCButton *button = [[MDCButton alloc] init];
 [self.button applyTextThemeWithScheme:self.MyMaterialTheme];
 ```
@@ -391,17 +379,11 @@ For more information on Material Theming for iOS, go to the [iOS Material Themin
 
 **Swift**
 ```swift
-import MaterialComponents.MaterialButtons
-import MaterialComponents.MaterialButtons_Theming
-
 let button = MDCButton()
 button.applyContainedTheme(withScheme: MyMaterialTheme)
 ```
 **Objective-C**
 ```objc
-#import <MaterialComponents/MaterialButtons.h>
-#import <MaterialComponentsBeta/MaterialButtons+Theming.h>
-
 MDCButton *button = [[MDCButton alloc] init];
 [self.button applyContainedThemeWithScheme:self.MyMaterialTheme];
 ```
@@ -547,8 +529,7 @@ Icon color | Secondary color |
 
 </details>
 
->>>>>>> 23cb512696d3992908dfc3328d5828a370ccfc0b
-
+The iOS icon toggle button is only available for use with the iOS [card](../Cards) component. Go to the card article for an [example](../Cards/#card-example-with-icon-buttons).
 
 ## Theming buttons
 
