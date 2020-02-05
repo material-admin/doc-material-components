@@ -481,6 +481,7 @@ The toggle button allows you to select from a group of buttons that can be set t
 
 Icons can be used as toggle buttons when they allow selection, or deselection, of a single choice, such as marking an item as a favorite.
 
+<<<<<<< HEAD
 
 #### Icon example
 
@@ -547,8 +548,7 @@ Icon color | Secondary color |
 
 </details>
 
->>>>>>> 23cb512696d3992908dfc3328d5828a370ccfc0b
-
+The iOS icon toggle button is only available for use with the iOS [card](../Cards) component. Go to the card article for an [example](../Cards/#card-example-with-icon-buttons).
 
 ## Theming buttons
 
