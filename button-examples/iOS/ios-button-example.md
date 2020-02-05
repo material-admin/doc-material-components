@@ -203,6 +203,9 @@ A text button has a text label, a transparent container and an optional icon.
 1. Container
 1. Icon
 
+
+_**Note** A container in iOS refers to a set of components with an applied Material Theme. A container with respect to anatomy refers to the visible bounds of a component._
+
 <details>
 <summary><b>Text label</b> attributes</summary>
 <br>
@@ -314,6 +317,8 @@ An outline button has text, a container, and an optional icon.
 1. Container
 1. Icon
 
+_**Note** A container in iOS refers to a set of components with an applied Material Theme. A container with respect to anatomy refers to the visible bounds of a component._
+
 <details>
 <summary><b>Text label</b> attributes</summary>
 <br>
@@ -393,6 +398,8 @@ MDCButton *button = [[MDCButton alloc] init];
 
 A contained button has text, a container, and an optional icon.
 
+
+_**Note** A container in iOS refers to a set of components with an applied Material Theme. A container with respect to anatomy refers to the visible bounds of a component._
 
 ![Contained button anatomy diagram](assets/contained_button_anatomy.png)
 
