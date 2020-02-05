@@ -207,7 +207,7 @@ A text button has a text label, a transparent container and an optional icon.
 _**Note** A container in iOS refers to a set of components with an applied Material Theme. A container with respect to anatomy refers to the visible bounds of a component._
 
 <details>
-<summary><b>Text label</b> attributes</summary>
+<summary><b>Text label</b> and <b>Icon</b> attributes</summary>
 <br>
 
 |  | Attribute | Related method(s) | Default value |
@@ -215,6 +215,11 @@ _**Note** A container in iOS refers to a set of components with an applied Mater
 | **Text label** ||  | |
 | **Color** |  |  | |
 | **Typography** |  |  |  |
+| **Icon** | | | |
+| **Size** | | | |
+| **Gravity** (position relative to text label) | | | |
+| **Padding** (space between icon and text label) | | | |
+
 
 </details>
 
@@ -232,19 +237,6 @@ _**Note** A container in iOS refers to a set of components with an applied Mater
 | **Ripple color** | | | | 
 </details>
 
-<details>
-<summary><b>Icon</b> attributes</summary>
-<br>
-
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | | | |
-| **Color** | | | |
-| **Size** | | | |
-| **Gravity** (position relative to text label) | | | |
-| **Padding** (space between icon and text label) | | | |
-
-</details>
 
 
 ## Outlined button
@@ -320,7 +312,7 @@ An outline button has text, a container, and an optional icon.
 _**Note** A container in iOS refers to a set of components with an applied Material Theme. A container with respect to anatomy refers to the visible bounds of a component._
 
 <details>
-<summary><b>Text label</b> attributes</summary>
+<summary><b>Text label</b> and <b>Icon</b> attributes</summary>
 <br>
 
 |  | Attribute | Related method(s) | Default value |
@@ -328,6 +320,10 @@ _**Note** A container in iOS refers to a set of components with an applied Mater
 | **Text label** | | | |
 | **Color** |  | | |
 | **Typography** | | | |
+| **Icon** | | | |
+| **Size** | | | |
+| **Gravity** (position relative to text label) | | | |
+| **Padding** (space between icon and text label) | | | |
 
 
 </details>
@@ -344,20 +340,6 @@ _**Note** A container in iOS refers to a set of components with an applied Mater
 | **Shape** | | | |
 | **Elevation** | | | |
 | **Ripple color** | | | |
-
-</details>
-
-<details>
-<summary><b>Icon</b> attributes</summary>
-<br>
-
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | | | |
-| **Color** || | |
-| **Size** | | | |
-| **Gravity** (position relative to text label) | | | |
-| **Padding** (space between icon and text label) | | | |
 
 </details>
 
@@ -408,7 +390,7 @@ _**Note** A container in iOS refers to a set of components with an applied Mater
 1. Icon
 
 <details>
-<summary><b>Text label</b> attributes</summary>
+<summary><b>Text label</b> and <b>Icon</b> attributes</summary>
 <br>
 
 |  | Attribute | Related method(s) | Default value |
@@ -416,6 +398,10 @@ _**Note** A container in iOS refers to a set of components with an applied Mater
 | **Text label** | | | |
 | **Color** |  | | |
 | **Typography** | | | |
+| **Color** || | |
+| **Size** | | | |
+| **Gravity** (position relative to text label) | | | |
+| **Padding** (space between icon and text label) | | | |
 
 
 </details>
@@ -432,20 +418,6 @@ _**Note** A container in iOS refers to a set of components with an applied Mater
 | **Shape** | | | |
 | **Elevation** | | | |
 | **Ripple color** | | | |
-
-</details>
-
-<details>
-<summary><b>Icon</b> attributes</summary>
-<br>
-
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | | | |
-| **Color** || | |
-| **Size** | | | |
-| **Gravity** (position relative to text label) | | | |
-| **Padding** (space between icon and text label) | | | |
 
 </details>
 
