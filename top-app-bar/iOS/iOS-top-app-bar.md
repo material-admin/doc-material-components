@@ -37,6 +37,7 @@ A regular top app bar can transform into a contextual action bar.
 
 <details>
 <summary><b>Expand for installation instructions for <code>AppBar</code></b></summmary>
+  
 Before using the `AppBar` API to implement its types you must install `AppBar`. In your source files import the component, and then apply your theme:
 1. Install `AppBar`
    * Use CocoaPods to install `AppBar`<!-- What are the correct packages? AppBar is listed as deprecated further along the original doc -->
@@ -50,37 +51,38 @@ Before using the `AppBar` API to implement its types you must install `AppBar`. 
        ```
 1. Import `AppBar` and MDC app bar theming and initialize `Appbar` using `alloc`/`init`. Initialize your theme  before applying it to your app bar.
 
-    **Note** For more information about themes, go to the [Theming page](https://material.io/develop/ios/components/theming/) for iOS.
+  **Note** For more information about themes, go to the [Theming page](https://material.io/develop/ios/components/theming/) for iOS.
 
 <!--<div class="material-code-render" markdown="1">-->
-     **Swift**
-     ```swift
-     import MaterialComponents.MaterialAppBar
-     import MaterialComponents.MaterialAppBar_Theming
-     /*...*/
-     // Apply your app's Container Scheme to the App Bar controller
-     let containerScheme = MDCContainerScheme()
+   **Swift**
+   ```swift
+   import MaterialComponents.MaterialAppBar
+   import MaterialComponents.MaterialAppBar_Theming
+   /*...*/
+   // Apply your app's Container Scheme to the App Bar controller
+   let containerScheme = MDCContainerScheme()
 
-     // Either Primary Theme
-     appBarViewController.applyPrimaryTheme(withScheme: containerScheme)
+   // Either Primary Theme
+   appBarViewController.applyPrimaryTheme(withScheme: containerScheme)
 
-     // Or Surface Theme
-     appBarViewController.applySurfaceTheme(withScheme: containerScheme)
-         ```
-     **Objective-C**
-     ```objc
-     #import "MaterialButtons.h"
-     #import <MaterialComponentsBeta/MaterialButtons+Theming.h>
-     /*...*/
-     // Apply your app's Container Scheme to the App Bar controller
-     MDCContainerScheme *containerScheme = [[MDCContainerScheme alloc] init];
+   // Or Surface Theme
+   appBarViewController.applySurfaceTheme(withScheme: containerScheme)
+   ```
+     
+   **Objective-C**
+   ```objc
+   #import "MaterialButtons.h"
+   #import <MaterialComponentsBeta/MaterialButtons+Theming.h>
+   /*...*/
+   // Apply your app's Container Scheme to the App Bar controller
+   MDCContainerScheme *containerScheme = [[MDCContainerScheme alloc] init];
 
-     // Either Primary Theme
-     [self.appBarController applyPrimaryThemeWithScheme:containerScheme];
+   // Either Primary Theme
+   [self.appBarController applyPrimaryThemeWithScheme:containerScheme];
 
-     // Or Surface Theme
-     [self.appBarController applySurfaceThemeWithScheme:containerScheme];
-       ```
+   // Or Surface Theme
+   [self.appBarController applySurfaceThemeWithScheme:containerScheme];
+   ```
 <!--</div>-->
 
 </details>
@@ -90,7 +92,7 @@ Before using the `AppBar` API to implement its types you must install `AppBar`. 
 
 Because the app bar mirrors the state of your view controller’s `navigationItem`, making an app bar accessible often does not require any extra work.
 
-The following examples demonstrate how to apply accessibility settings to your app bar"
+The following examples demonstrate how to apply accessibility settings to your app bar:
 
 <!--<div class="material-code-render" markdown="1">-->
 
