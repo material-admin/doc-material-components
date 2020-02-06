@@ -54,6 +54,7 @@ Before using the `TextFields` API to implement its types you must install `TextF
       ```
 1. Import `TextFields` and text field theming and initialize `TextFields` using `alloc` / `init`. Initialize your theme before applying it to your text field.
   **Note** For more information about themes, go to the [Theming page](https://material.io/develop/ios/components/theming/) for iOS.
+<!--<div class="material-code-render" markdown="1">-->
   **Swift**
     ```swift
     import MaterialComponents.MaterialTextFields
@@ -62,6 +63,7 @@ Before using the `TextFields` API to implement its types you must install `TextF
     ```Objc
     #import "MaterialTextFields.h"
     ```
+<!--</div>-->
 1. Apply accessibility settings
   To help make your text fields usable to as many users as possible, set an appropriate [accessibilityLabel](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) if you choose not to use a text label or if you need to include additional descriptions of visual cues, or [accessibilityHint](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619585-accessibilityhint) if you choose not to include helper text, or error text:
 

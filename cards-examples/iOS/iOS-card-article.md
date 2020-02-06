@@ -49,6 +49,7 @@ Before using the `MDCCards` API to implement its types, you must install `MDCCar
 
   **Note** For more information about themes, go to the Theming page for iOS.
 
+<!--<div class="material-code-render" markdown="1">-->
   ```swift
   import MaterialComponents.MaterialCards
   ```
@@ -56,12 +57,14 @@ Before using the `MDCCards` API to implement its types, you must install `MDCCar
   ```objc
   #import "MaterialCards.h"
   ```
+<!--</div>-->
 1 Apply accessibility settings
 
     To help make your card as usable to as many users as possible, you need to set both `isAccessibilityElement` and set an appropriate [accessibilityLabel](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel).
 
     * The following examples set accessibility labels for card collections:
 <br>
+<!--<div class="material-code-render" markdown="1">-->
         **Swift**
         ````
         card.isAccessibilityElement = true
@@ -76,7 +79,9 @@ Before using the `MDCCards` API to implement its types, you must install `MDCCar
             userLocation.name, 
             userLocation.popularActivityMatchingUserProfile(userProfile)];
         ```
+<!--</div>-->
     * The following examples set accessiblity labels for any card images:
+<!--<div class="material-code-render" markdown="1">-->
           **Swift**
 	  ```
 	  articleImageView.isAccessibilityElement = true
@@ -87,7 +92,9 @@ Before using the `MDCCards` API to implement its types, you must install `MDCCar
 	  articleImageView.isAccessibilityElement = YES;
 	    articleImageView.accessibilityLabel = @"Event or scene description";
 	  ```
+<!--</div>-->
     * The following examples apply to images that have a rating value:
+<!--<div class="material-code-render" markdown="1">-->
 	  **Swift**
 	 ```
 	  ratingView.isAccessibilityElement = true
@@ -102,6 +109,7 @@ Before using the `MDCCards` API to implement its types, you must install `MDCCar
 	      " rating, out of %d stars", MDCProductRating.maximumValue];
 	    ratingView.accessibilityValue = @(product.averageRating).stringValue;
 	  ```
+<!--</div>-->
 </details>
 
 ## Card
