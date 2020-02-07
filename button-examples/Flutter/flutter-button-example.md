@@ -35,8 +35,6 @@ For more information on getting started with the Material for Flutter, go to the
 
 Flutter's APIs support accessibility setting for large fonts, screen readers, and sufficient contrast. For more information, go to Flutter's [accessibility](https://flutter.dev/docs/development/accessibility-and-localization/accessibility) and [internationalization](https://flutter.dev/docs/development/accessibility-and-localization/internationalization) pages.
 
-Flutter's button component also supports component labeling...\<developers need to insert information on label setting\>
-
 For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
 ## Text button
@@ -99,7 +97,7 @@ A text button has a text label, a transparent container and an optional icon.
 <summary><b>Text label</b> properties</summary>
 <br>
 
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
 | **Text label** | `child` and `label` on `FlatButton.icon` |
 | **Color** | `textColor` |
@@ -112,7 +110,7 @@ A text button has a text label, a transparent container and an optional icon.
 <summary><b>Container</b> properties</summary>
 <br>
 
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
 | **Color** | `color` |
 | **Stroke color** | N/A |
@@ -129,7 +127,7 @@ A text button has a text label, a transparent container and an optional icon.
 <summary><b>Icon</b> properties</summary>
 <br>
     
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
 | **Icon** | `icon` |
 | **Color** | `color` on `icon` |
@@ -141,7 +139,7 @@ A text button has a text label, a transparent container and an optional icon.
 <summary><b>Constructors</b></summary>
 <br>
 
-|  | Constructor |
+| &nbsp; | Constructor |
 | --- | --- |
 | **Default constructor** | `FlatButton()` |
 | **Icon constructor** | `FlatButton.icon()` |
@@ -209,7 +207,7 @@ An outlined button has a text label, a stroked container and an optional icon.
 <summary><b>Text label</b> properties</summary>
 <br>
 
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
 | **Text label** | `child` and `label` on `OutlineButton.icon` |
 | **Color** | `textColor` |
@@ -222,7 +220,7 @@ An outlined button has a text label, a stroked container and an optional icon.
 <summary><b>Container</b> properties</summary>
 <br>
     
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
 | **Color** | `color` |
 | **Stroke color** | `borderSide` and `disabledBorderColor` and `highlightedBorderColor` |
@@ -237,7 +235,7 @@ An outlined button has a text label, a stroked container and an optional icon.
 <summary><b>Icon</b> properties</summary>
 <br>
     
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
 | **Icon** | `icon` |
 | **Color** | `color` on `icon` |
@@ -249,7 +247,7 @@ An outlined button has a text label, a stroked container and an optional icon.
 <summary><b>Constructors</b></summary>
 <br>
 
-|  | Constructor |
+| &nbsp; | Constructor |
 | --- | --- |
 | **Default constructor** | `OutlineButton` |
 | **Icon constructor** | `OutlineButton.icon` |
@@ -320,7 +318,7 @@ A contained button has a text label, a filled container and an optional icon.
 <summary><b>Text label</b> properties</summary>
 <br>
     
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
 | **Text label** | `child` and `label` on `RaisedButton.icon` |
 | **Color** | `textColor` |
@@ -333,7 +331,7 @@ A contained button has a text label, a filled container and an optional icon.
 <summary><b>Container</b> properties</summary>
 <br>
     
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
 | **Color** | `color` |
 | **Stroke color** | N/A |
@@ -348,7 +346,7 @@ A contained button has a text label, a filled container and an optional icon.
 <summary><b>Icon</b> properties</summary>
 <br>
     
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
 | **Icon** | `icon` |
 | **Color** | `color` on `icon` |
@@ -360,7 +358,7 @@ A contained button has a text label, a filled container and an optional icon.
 <summary><b>Constructors</b></summary>
 <br>
 
-|  | Constructor |
+| &nbsp; | Constructor |
 | --- | --- |
 | **Default constructor** | `RaisedButton` |
 | **Icon constructor** | `RaisedButton.icon` |
@@ -479,7 +477,7 @@ A toggle button has a shared stroked container, icons and/or text labels.
 <summary><b>Selection</b> properties</summary>
 <br>
 
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
 | **Selection state of each button** | `isSelected` |
 
@@ -489,7 +487,7 @@ A toggle button has a shared stroked container, icons and/or text labels.
 <summary><b>Constructors</b></summary>
 <br>
 
-|  | Constructor |
+| &nbsp; | Constructor |
 | --- | --- |
 | **Default constructor** | `ToggleButtons` |
 
@@ -539,15 +537,15 @@ Buttons support [Material Theming](https://material.io/components/buttons/#themi
 
 ### Button theming example
 
-The following example shows text, outlined and contained button types with Material Theming.
+The following example shows text, outlined and contained button types with the [Material Shrine Theme](https://material.io/design/material-studies/shrine.html).
 
-!["Button theming with three buttons - text, outlined and contained - with green/black color theming and cut corners."](assets/button-theming.svg)
+![Example of buttons with Shrine theme](assets/button_theming_screenshot.png)
 
 <details>
 <summary><b>Implementing button theming</b></summary>
 <br>
 
-The colours we will be using in this example:
+The Material Shrine theme uses the following colors:
 ```
 const Color shrinePink50 = Color(0xFFFEEAE6);
 const Color shrinePink100 = Color(0xFFFEDBD0);
@@ -563,7 +561,7 @@ const Color shrineSurfaceWhite = Color(0xFFFFFBFA);
 const Color shrineBackgroundWhite = Colors.white;
 ```
 
-In the theme category within the MaterialApp class:
+In the theme category within the `MaterialApp` class:
 ```
 theme: ThemeData(
   buttonColor: shrinePink100,
@@ -588,16 +586,7 @@ theme: ThemeData(
 ),
 ```
 
-
-[Shrine theme](https://material.io/design/material-studies/shrine.html)
-```
-Include source code implementing text, outlined, and contained buttons using "Shrine" theme.
-
-```
-![Example of buttons with Shrine theme](assets/button_theming_screenshot.png)
-
-To test code copy and pasta code into dartpad.
-Add this code to [dartpad.dev](https://dartpad.dev/)
+To test code copy and paste code into [dartpad.dev](https://dartpad.dev/)
 ```
 
 // Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
