@@ -153,30 +153,26 @@ Source Code APIs:
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/) <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
-The following example shows a text button with a text label.
+The following example shows a text button with a text label that uses Material Theming as its `ContainerScheme`.
+
+For more information on Material Theming for iOS, go to the [iOS Material Theming page](../theming).
 
 !["iOS Text button with purple text 'Text' over a white background."](assets/text-button.svg)
-
+<!--<div class="material-code-render" markdown="1">-->
 **Swift**
 
 ```swift
-import MaterialComponents.MaterialButtons
-import MaterialComponents.MaterialButtons_Theming
-
-let containerScheme = MDCContainerScheme()
+let MyMaterialTheme = MDCContainerScheme()
 let button = MDCButton()
-button.applyTextTheme(withScheme: containerScheme)
+button.applyTextTheme(withScheme: MyMaterialTheme)
 ```
 
 **Objective-C**
 
 ```ObjC
-#import <MaterialComponents/MaterialButtons.h>
-#import <MaterialComponents/MaterialButtons+Theming.h>
-
-MDCContainerScheme *containerScheme = [[MDCContainerScheme alloc] init];
+MDCContainerScheme *MyMaterialTheme = [[MDCContainerScheme alloc] init];
 MDCButton *button = [[MDCButton alloc] init];
-[button applyTextThemeWithScheme:containerScheme];
+[button applyTextThemeWithScheme:MyMaterialTheme];
 ```
 <details>
 <summary><b>Adding an icon to a text button</b></summary>
@@ -186,6 +182,7 @@ The following example shows a text button with an icon.
 
 !["iOS text button with purple text 'Text button' and '+' icon over a white background."](assets/text-button-icon.svg)
 
+<!--<div class="material-code-render" markdown="1">-->
 ```swift
 
 ```
@@ -194,6 +191,7 @@ The following example shows a text button with an icon.
 ```objc
 
 ```
+<!--</div>-->
 
 </details>
 
@@ -207,8 +205,11 @@ A text button has a text label, a transparent container and an optional icon.
 1. Container
 1. Icon
 
+
+_**Note** A container in iOS refers to a set of components with an applied Material Theme. A container with respect to anatomy refers to the visible bounds of a component._
+
 <details>
-<summary><b>Text label</b> attributes</summary>
+<summary><b>Text label</b> and <b>Icon</b> attributes</summary>
 <br>
 
 |  | Attribute | Related method(s) | Default value |
@@ -216,6 +217,11 @@ A text button has a text label, a transparent container and an optional icon.
 | **Text label** ||  | |
 | **Color** |  |  | |
 | **Typography** |  |  |  |
+| **Icon** | | | |
+| **Size** | | | |
+| **Gravity** (position relative to text label) | | | |
+| **Padding** (space between icon and text label) | | | |
+
 
 </details>
 
@@ -233,19 +239,6 @@ A text button has a text label, a transparent container and an optional icon.
 | **Ripple color** | | | | 
 </details>
 
-<details>
-<summary><b>Icon</b> attributes</summary>
-<br>
-
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | | | |
-| **Color** | | | |
-| **Size** | | | |
-| **Gravity** (position relative to text label) | | | |
-| **Padding** (space between icon and text label) | | | |
-
-</details>
 
 
 ## Outlined button
@@ -259,34 +252,55 @@ You can apply a theme to the button using `Themes`.
 Source Code APIs:
 
 * MDCButton
-    * [Class description](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
+    * Class [MDCButton:UIButton](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
-The following example shows an outlined button with a text label and stroked container.    
+The following example shows an outlined button with a text label and stroked container that uses Material Theming as its `ContainerScheme`.
+
+For more information on Material Theming for iOS, go to the [iOS Material Theming page](../theming).
+    
 
 !["Outlined button with purple text surrounded by a gray outline"](assets/outlined-button.svg)
 
+<!--<div class="material-code-render" markdown="1">-->
 **Swift**
 ```swift
-import MaterialComponents.MaterialButtons
-import MaterialComponents.MaterialButtons_Theming
-
-let containerScheme = MDCContainerScheme()
+let MyMaterialTheme = MDCContainerScheme()
 let button = MDCButton()
-button.applyOutlinedTheme(withScheme: containerScheme)
+button.applyOutlinedTheme(withScheme: MyMaterialTheme)
 ```
 **Objective-C**
 ```objc
-
-#import "MaterialButtons.h"
-#import <MaterialComponentsBeta/MaterialButtons+Theming.h>
-
-MDCContainerScheme *containerScheme = [[MDCContainerScheme alloc] init];
+MDCContainerScheme *MyMaterialTheme = [[MDCContainerScheme alloc] init];
 MDCButton *button = [[MDCButton alloc] init];
 
-[self.button applyOutlinedThemeWithScheme:self.containerScheme];
+[self.button applyOutlinedThemeWithScheme:self.MyMaterialTheme];
 ```
+<!--</div>-->
+
+<details>
+<summary><b>Adding an icon to an outlined button</b></summary>
+<br>
+
+The following example shows an outlined button with an icon.
+
+!["iOS outlined button with purple text 'Outlined' and '+' icon over a white background."](assets/outlined-button-icon.svg)
+
+<!--<div class="material-code-render" markdown="1">-->
+```swift
+
+```
+
+
+```objc
+
+```
+<!--</div>-->
+
+</details>
+
+
 ### Outlined button example with container schemes
 
 You can apply a theme to the button that applies to all elements in a container using `MDCContainerScheme`.
@@ -294,29 +308,48 @@ You can apply a theme to the button that applies to all elements in a container 
 Source Code APIs:
 
 * MDCButton
-    * [Class description](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
+    *  Class [MDCButton:UIButton](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 * [MDCContainerScheme class description](https://github.com/material-components/material-components-ios/tree/stable/components/schemes/Container)
 
 !["Outlined button example in Android with purple text surrounded by a gray outline"](assets/outlined-button.svg)
 
+<!--<div class="material-code-render" markdown="1">-->
 **Swift**
 ```swift
-import MaterialComponents.MaterialButtons
-import MaterialComponents.MaterialButtons_Theming
-
 let button = MDCButton()
-button.applyTextTheme(withScheme: containerScheme)
+button.applyTextTheme(withScheme: MyMaterialTheme)
 ```
 **Objective-C**
 ```objc
-#import <MaterialComponents/MaterialButtons.h>
-#import <MaterialComponentsBeta/MaterialButtons+Theming.h>
-
 MDCButton *button = [[MDCButton alloc] init];
-[self.button applyTextThemeWithScheme:self.containerScheme];
+[self.button applyTextThemeWithScheme:self.MyMaterialTheme];
 ```
+<!--</div>-->
+
+<details>
+<summary><b>Adding an icon to a contained button</b></summary>
+<br>
+
+The following example shows a contained button with an icon.
+
+!["iOS contained button with purple text 'Contained' and '+' icon over a white background."](assets/contained-button-icon.svg)
+
+<!--<div class="material-code-render" markdown="1">-->
+```swift
+
+```
+
+
+```objc
+
+```
+<!--</div>-->
+
+</details>
+
+
 ### Anatomy and key properties
 
 An outline button has text, a container, and an optional icon.
@@ -327,8 +360,10 @@ An outline button has text, a container, and an optional icon.
 1. Container
 1. Icon
 
+_**Note** A container in iOS refers to a set of components with an applied Material Theme. A container with respect to anatomy refers to the visible bounds of a component._
+
 <details>
-<summary><b>Text label</b> attributes</summary>
+<summary><b>Text label</b> and <b>Icon</b> attributes</summary>
 <br>
 
 |  | Attribute | Related method(s) | Default value |
@@ -336,6 +371,10 @@ An outline button has text, a container, and an optional icon.
 | **Text label** | | | |
 | **Color** |  | | |
 | **Typography** | | | |
+| **Icon** | | | |
+| **Size** | | | |
+| **Gravity** (position relative to text label) | | | |
+| **Padding** (space between icon and text label) | | | |
 
 
 </details>
@@ -352,20 +391,6 @@ An outline button has text, a container, and an optional icon.
 | **Shape** | | | |
 | **Elevation** | | | |
 | **Ripple color** | | | |
-
-</details>
-
-<details>
-<summary><b>Icon</b> attributes</summary>
-<br>
-
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | | | |
-| **Color** || | |
-| **Size** | | | |
-| **Gravity** (position relative to text label) | | | |
-| **Padding** (space between icon and text label) | | | |
 
 </details>
 
@@ -379,36 +404,38 @@ An outline button has text, a container, and an optional icon.
 Source Code APIs:
 
 * MDCButton
-    * [Class description](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
+    *  Class [MDCButton:UIButton](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
-The following example shows a contained button with a text label and a filled container.
+The following example shows a contained button with a text label and a filled container that uses Material Theming as its `ContainerScheme`.
+
+For more information on Material Theming for iOS, go to the [iOS Material Theming page](../theming).
+.
 
 !["Contained button example with white text 'Text' on a purple background."](assets/contained-button.svg)
 
+<!--<div class="material-code-render" markdown="1">-->
 **Swift**
 ```swift
-import MaterialComponents.MaterialButtons
-import MaterialComponents.MaterialButtons_Theming
-
 let button = MDCButton()
-button.applyContainedTheme(withScheme: containerScheme)
+button.applyContainedTheme(withScheme: MyMaterialTheme)
 ```
 **Objective-C**
 ```objc
-#import <MaterialComponents/MaterialButtons.h>
-#import <MaterialComponentsBeta/MaterialButtons+Theming.h>
-
 MDCButton *button = [[MDCButton alloc] init];
-[self.button applyContainedThemeWithScheme:self.containerScheme];
+[self.button applyContainedThemeWithScheme:self.MyMaterialTheme];
 ```
+
+<!--</div>-->
 
 
 ### Anatomy and key attributes
 
 A contained button has text, a container, and an optional icon.
 
+
+_**Note** A container in iOS refers to a set of components with an applied Material Theme. A container with respect to anatomy refers to the visible bounds of a component._
 
 ![Contained button anatomy diagram](assets/contained_button_anatomy.png)
 
@@ -417,7 +444,7 @@ A contained button has text, a container, and an optional icon.
 1. Icon
 
 <details>
-<summary><b>Text label</b> attributes</summary>
+<summary><b>Text label</b> and <b>Icon</b> attributes</summary>
 <br>
 
 |  | Attribute | Related method(s) | Default value |
@@ -425,6 +452,10 @@ A contained button has text, a container, and an optional icon.
 | **Text label** | | | |
 | **Color** |  | | |
 | **Typography** | | | |
+| **Color** || | |
+| **Size** | | | |
+| **Gravity** (position relative to text label) | | | |
+| **Padding** (space between icon and text label) | | | |
 
 
 </details>
@@ -441,20 +472,6 @@ A contained button has text, a container, and an optional icon.
 | **Shape** | | | |
 | **Elevation** | | | |
 | **Ripple color** | | | |
-
-</details>
-
-<details>
-<summary><b>Icon</b> attributes</summary>
-<br>
-
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | | | |
-| **Color** || | |
-| **Size** | | | |
-| **Gravity** (position relative to text label) | | | |
-| **Padding** (space between icon and text label) | | | |
 
 </details>
 
@@ -479,161 +496,11 @@ The toggle button allows you to select from a group of buttons that can be set t
 
 Icons can be used as toggle buttons when they allow selection, or deselection, of a single choice, such as marking an item as a favorite.
 
-
-#### Icon example
-
-Source code APIs:
-
 * [MDCCardCollectionCell](https://material.io/develop/ios/components/cards/api-docs/Classes/MDCCardCollectionCell.html)
 * [UICollectionViewController]()
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
-
-The following example shows 4 images arranged in a 2-by-2 array with a favorite icon in the upper-right corner of each image.
-
-<img src="assets/iOS-toggle-icon.png" alt="icon toggle showing 4 images ifavorite icon in each image.">
-
-
-It uses the class `ToggleButtonCell` &ndash; which extends the `MDCCardCollectionCell` &ndash; to display the image and the icon, and provide gesture recognition for each cell of the array.
-
-```swift
-import MaterialComponents.MaterialCards_Theming
-import UIKit
-
-class ToggleButtonCell: MDCCardCollectionCell {
-
-  private lazy var imageView: UIImageView = {
-    let imageView = UIImageView(frame: CGRect.zero)
-    imageView.contentMode = .scaleAspectFill
-    imageView.clipsToBounds = true
-    imageView.translatesAutoresizingMaskIntoConstraints = false
-    return imageView
-  }()
-
-  override init(frame: CGRect) {
-    super.init(frame: frame)
-    setCustomToggleButton()
-  }
-
-  required init?(coder aDecoder: NSCoder) {
-    super.init(coder: aDecoder)
-    setCustomToggleButton()
-  }
-
-  func setCardImage(named imageName: String) {
-
-    let bundle = Bundle(for: ToggleButtonCell.self)
-    imageView.image = UIImage(named: imageName, in: bundle, compatibleWith: nil)
-    imageView.contentMode = .scaleAspectFill
-
-    if imageView.superview == nil {
-      contentView.addSubview(imageView)
-      addConstrains()
-    }
-  }
-
-  /// Customize the toggle button icon of the cell
-  func setCustomToggleButton() {
-    // Render the icon images as templates so they can be tinted.
-    let bundle = Bundle(for: ToggleButtonCell.self)
-    let selectedIcon = UIImage(named: "ic_favorite_24dp", in: bundle, compatibleWith: nil)?
-      .withRenderingMode(.alwaysTemplate)
-    let unselectedIcon = UIImage(named: "ic_favorite_border_24dp", in: bundle, compatibleWith: nil)?
-      .withRenderingMode(.alwaysTemplate)
-
-    // Set the toggle button image and tint color.
-    setImage(selectedIcon, for: .selected)
-    setImage(unselectedIcon, for: .normal)
-  }
-
-  func addConstrains() {
-    if #available(iOS 11, *) {
-      NSLayoutConstraint.activate([
-        contentView.leftAnchor.constraint(equalTo: imageView.leftAnchor),
-        contentView.rightAnchor.constraint(equalTo: imageView.rightAnchor),
-        contentView.topAnchor.constraint(equalTo: imageView.topAnchor),
-        contentView.bottomAnchor.constraint(equalTo: imageView.bottomAnchor)
-      ])
-    } else {
-      preiOS11Constraints()
-    }
-  }
-
-  func preiOS11Constraints() {
-    imageView.addConstraints(
-      NSLayoutConstraint.constraints(
-        withVisualFormat: "H:|[view]|",
-        options: [],
-        metrics: nil,
-        views: ["view": contentView]))
-    imageView.addConstraints(
-      NSLayoutConstraint.constraints(
-        withVisualFormat: "V:|[view]|",
-        options: [],
-        metrics: nil,
-        views: ["view": contentView]))
-  }
-}
-```
-
-The class `ToggleButtonCollectionViewController` &ndash; which extends `UICollectionViewController` &ndash; can then load the images and icons in a list, and `ToggleButtonCollectionViewController` can then be instantiated to display each image with an icon in an array.
-
-#### Anatomy and key properties
-
-![Toggle button anatomy](assets/toggle_button_anatomy.png)
-
-1. Container
-1. Icon
-
-
-Design Attribute |  Theme value |  Property
----|---|---
-Icon | N/A | 
-Icon color | Secondary color |  
-
-<details>
-<summary><b>Text label</b> attributes</summary>
-<br>
-
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Text label** | | | |
-| **Color** |  | | |
-| **Typography** | | | |
-
-
-</details>
-
-<details>
-<summary><b>Container</b> attributes</summary>
-<br>
-
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Color** | | | |
-| **Stroke color** | | | |
-| **Stroke width** || | |
-| **Shape** | | | |
-| **Elevation** | | | |
-| **Ripple color** | | | |
-
-</details>
-
-<details>
-<summary><b>Icon</b> attributes</summary>
-<br>
-
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | | | |
-| **Color** || | |
-| **Size** | | | |
-| **Gravity** (position relative to text label) | | | |
-| **Padding** (space between icon and text label) | | | |
-
-</details>
-
-
+The iOS icon toggle button is only available for use with the iOS [card](../Cards) component. Go to the card article for an [example](../Cards/#card-example-with-icon-buttons).
 
 ## Theming buttons
 
@@ -649,7 +516,7 @@ API and source code:
     
 The following example shows text, outlined and contained button types with Material Theming.
 
-!["Button theming example for iOS with pink and black buttons and cut corners."](assets/button-theming.svg)
+!["Button theming examples for iOS with pink and black buttons and cut corners."](assets/button-theming.svg)
 
 <details>
 <summary><b>Implementing button theming</b></summary>
