@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d015c359-67e8-4ff2-aef6-63b1003d742d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/button-examples/Flutter/assets/button_theming_screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/doc-material-components.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/doc-material-components.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/button-examples/Flutter/flutter-button-example.md" beforeDir="false" afterPath="$PROJECT_DIR$/button-examples/Flutter/flutter-button-example.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards-examples/Flutter/Flutter-card-article.md" beforeDir="false" afterPath="$PROJECT_DIR$/cards-examples/Flutter/Flutter-card-article.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text-field-examples/Flutter/Flutter-text-field.md" beforeDir="false" afterPath="$PROJECT_DIR$/text-field-examples/Flutter/Flutter-text-field.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +33,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/lib/toggle_bar_demo.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="588">
@@ -71,8 +65,22 @@
         <entry file="file://$PROJECT_DIR$/cards-examples/Flutter/Flutter-card-article.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-1145">
+              <first_editor relative-caret-position="-986">
                 <caret line="376" column="15" selection-start-line="376" selection-start-column="15" selection-end-line="376" selection-end-column="15" />
+              </first_editor>
+              <second_editor>
+                <markdownNavigatorState />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/text-field-examples/Flutter/Flutter-text-field.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="2965">
+                <caret line="273" column="10" selection-start-line="273" selection-start-column="10" selection-end-line="273" selection-end-column="10" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -158,6 +166,7 @@
         <option value="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/lib/toggle_icon_demo.dart" />
         <option value="$PROJECT_DIR$/button-examples/Flutter/flutter-button-example.md" />
         <option value="$PROJECT_DIR$/cards-examples/Flutter/Flutter-card-article.md" />
+        <option value="$PROJECT_DIR$/text-field-examples/Flutter/Flutter-text-field.md" />
       </list>
     </option>
   </component>
@@ -192,51 +201,13 @@
             <path>
               <item name="doc-material-components" type="b2602c69:ProjectViewProjectNode" />
               <item name="doc-material-components" type="462c0819:PsiDirectoryNode" />
-              <item name="button-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="text-field-examples" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="doc-material-components" type="b2602c69:ProjectViewProjectNode" />
               <item name="doc-material-components" type="462c0819:PsiDirectoryNode" />
-              <item name="cards-examples" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="doc-material-components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="doc-material-components" type="462c0819:PsiDirectoryNode" />
-              <item name="cards-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="text-field-examples" type="462c0819:PsiDirectoryNode" />
               <item name="Flutter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="doc-material-components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="doc-material-components" type="462c0819:PsiDirectoryNode" />
-              <item name="cards-examples" type="462c0819:PsiDirectoryNode" />
-              <item name="Flutter" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="doc-material-components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="doc-material-components" type="462c0819:PsiDirectoryNode" />
-              <item name="toggle-button-examples" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="doc-material-components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="doc-material-components" type="462c0819:PsiDirectoryNode" />
-              <item name="toggle-button-examples" type="462c0819:PsiDirectoryNode" />
-              <item name="Flutter-toggle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="doc-material-components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="doc-material-components" type="462c0819:PsiDirectoryNode" />
-              <item name="toggle-button-examples" type="462c0819:PsiDirectoryNode" />
-              <item name="Flutter-toggle" type="462c0819:PsiDirectoryNode" />
-              <item name="toggle_demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="doc-material-components" type="b2602c69:ProjectViewProjectNode" />
-              <item name="doc-material-components" type="462c0819:PsiDirectoryNode" />
-              <item name="toggle-button-examples" type="462c0819:PsiDirectoryNode" />
-              <item name="Flutter-toggle" type="462c0819:PsiDirectoryNode" />
-              <item name="toggle_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -301,9 +272,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1440" y="-510" width="1440" height="2408" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25107297" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.07939914" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -315,7 +287,7 @@
       <window_info anchor="bottom" id="Run" order="1" weight="0.22391304" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32842416" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="4" visible="true" weight="0.1852174" />
+      <window_info anchor="bottom" id="Terminal" order="4" visible="true" weight="0.1852174" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
@@ -501,32 +473,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cards-examples/card-example-stub.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1418">
-            <caret line="71" selection-start-line="71" selection-end-line="71" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cards-examples/Web/assets/card-sample-image.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cards-examples/Flutter/Flutter-card-article.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-1145">
-            <caret line="376" column="15" selection-start-line="376" selection-start-column="15" selection-end-line="376" selection-end-column="15" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/button-examples/Flutter/assets/button_theming_screenshot.png">
       <provider selected="true" editor-type-id="images" />
@@ -545,6 +493,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
           <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cards-examples/card-example-stub.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1418">
+            <caret line="71" selection-start-line="71" selection-end-line="71" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cards-examples/Flutter/Flutter-card-article.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="-986">
+            <caret line="376" column="15" selection-start-line="376" selection-start-column="15" selection-end-line="376" selection-end-column="15" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/text-field-examples/Flutter/Flutter-text-field.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2965">
+            <caret line="273" column="10" selection-start-line="273" selection-start-column="10" selection-end-line="273" selection-end-column="10" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
         </state>
       </provider>
     </entry>
