@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d015c359-67e8-4ff2-aef6-63b1003d742d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/text-field-examples/Flutter/assets/filled_text_field_form.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/text-field-examples/Flutter/assets/outline_text_field_form.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/text-field-examples/Flutter/Flutter-text-field.md" beforeDir="false" afterPath="$PROJECT_DIR$/text-field-examples/Flutter/Flutter-text-field.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,14 +82,19 @@
         <entry file="file://$PROJECT_DIR$/text-field-examples/Flutter/Flutter-text-field.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="2965">
-                <caret line="273" column="10" selection-start-line="273" selection-start-column="10" selection-end-line="273" selection-end-column="10" />
+              <first_editor relative-caret-position="523">
+                <caret line="281" column="59" selection-start-line="281" selection-start-column="59" selection-end-line="281" selection-end-column="59" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
               </second_editor>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/text-field-examples/Flutter/assets/outline_text_field_form.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -209,6 +217,13 @@
               <item name="text-field-examples" type="462c0819:PsiDirectoryNode" />
               <item name="Flutter" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="doc-material-components" type="b2602c69:ProjectViewProjectNode" />
+              <item name="doc-material-components" type="462c0819:PsiDirectoryNode" />
+              <item name="text-field-examples" type="462c0819:PsiDirectoryNode" />
+              <item name="Flutter" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -228,6 +243,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/text-field-examples/Flutter/assets" />
       <recent name="$PROJECT_DIR$/button-examples/Flutter/assets" />
       <recent name="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/example/assets" />
       <recent name="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/example" />
@@ -275,7 +291,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.07939914" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22031474" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -520,11 +536,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/text-field-examples/Flutter/assets/outline_text_field_form.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/text-field-examples/Flutter/Flutter-text-field.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2965">
-            <caret line="273" column="10" selection-start-line="273" selection-start-column="10" selection-end-line="273" selection-end-column="10" />
+          <first_editor relative-caret-position="523">
+            <caret line="281" column="59" selection-start-line="281" selection-start-column="59" selection-end-line="281" selection-end-column="59" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />

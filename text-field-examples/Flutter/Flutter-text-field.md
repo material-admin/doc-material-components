@@ -60,7 +60,7 @@ The following examples shows a filled text field.
 _**Copy the image to your platform's assets folder. Use a screenshot of your render.**_
 
 
-<img src="assets/.png" alt="filled text field for Android">
+<img src="assets/filled_text_field_form.png" alt="filled text field for Flutter">
 
 ```
  TextFormField(
@@ -84,7 +84,9 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
  ),
 ```
 
-To test code copy and pasta code into dartpadAdd this code to dartpad.dev 
+To test code copy and pasta code into dartpad.
+Add this code to [dartpad.dev](https://dartpad.dev/)
+
 ```
 // Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
@@ -159,14 +161,14 @@ class _MyHomePageState extends State<MyHomePage> {
 <summary><b>Container</b> attributes</summary>
 <br>
 
-|  | Property | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Color** | style | | |
-| **Stroke color** | decoration, inside decoration use the parameter border, disabledBorder, enabledBorder, errorBorder, focusedBorder, focusedErrorBorder| | |
-| **Stroke width** | decoration, inside decoration use the parameter border, disabledBorder, enabledBorder, errorBorder, focusedBorder, focusedErrorBorder| | |
-| **Shape** | decoration, inside decoration use the parameter border, disabledBorder, enabledBorder, errorBorder, focusedBorder, focusedErrorBorder| | |
-| **Elevation** | N/A| | |
-| **Ripple color** | N/A| | |
+|  | Property | 
+| --- | --- | 
+| **Color** | style |
+| **Stroke color** | decoration, inside decoration use the parameter border, disabledBorder, enabledBorder, errorBorder, focusedBorder, focusedErrorBorder|
+| **Stroke width** | decoration, inside decoration use the parameter border, disabledBorder, enabledBorder, errorBorder, focusedBorder, focusedErrorBorder|
+| **Shape** | decoration, inside decoration use the parameter border, disabledBorder, enabledBorder, errorBorder, focusedBorder, focusedErrorBorder|
+| **Elevation** | N/A|
+| **Ripple color** | N/A|
 
 </details>
 
@@ -175,13 +177,13 @@ class _MyHomePageState extends State<MyHomePage> {
 <summary><b>Leading icon</b> (optional) attributes</summary>
 <br>
 
-|  | Property | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | Use decoration, within decoration use icon property| | |
-| **Color** | When creating the icon property you have the option to use the color parameter| | |
-| **Size** | When creating the icon property you have the option to use the size parameter| | |
-| **Gravity** | N/A | | |
-| **Padding** | N/A | | |
+|  | Property |
+| --- | --- |
+| **Icon** | Use decoration, within decoration use icon property|
+| **Color** | When creating the icon property you have the option to use the color parameter|
+| **Size** | When creating the icon property you have the option to use the size parameter|
+| **Gravity** | N/A |
+| **Padding** | N/A |
 
 
 </details>
@@ -191,11 +193,11 @@ class _MyHomePageState extends State<MyHomePage> {
 <summary><b>Label text</b> attributes</summary>
 <br>
 
-|  | Property| Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Label text** | Use decoration, within decoration use labelText property | | |
-| **Typography** | Use decoration, within decoration use labelStyle property | | |
-| **Color** | Use decoration, within decoration use labelStyle property | | |
+|  | Property |
+| --- | --- | 
+| **Label text** | Use decoration, within decoration use labelText property |
+| **Typography** | Use decoration, within decoration use labelStyle property |
+| **Color** | Use decoration, within decoration use labelStyle property |
 
 </details>
 
@@ -204,11 +206,11 @@ class _MyHomePageState extends State<MyHomePage> {
 <summary><b>Input text</b> attributes</summary>
 <br>
 
-|  | Property | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Label text** | initialValue | | |
-| **Typography** | style | | |
-| **Color** | style | | |
+|  | Property |
+| --- | --- |
+| **Label text** | initialValue |
+| **Typography** | style |
+| **Color** | style |
 
 </details>
 
@@ -217,13 +219,13 @@ class _MyHomePageState extends State<MyHomePage> {
 <summary><b>Trailing icon</b> (optional) attributes</summary>
 <br>
 
-|  | Property | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | Use decoration, within decoration use suffixIcon property| | |
-| **Color** | When creating the suffixIcon property you have the option to use the color parameter| | |
-| **Size** | When creating the suffixIcon property you have the option to use the size parameter| | |
-| **Gravity** | N/A | | |
-| **Padding** | N/A | | |
+|  | Property |
+| --- | --- |
+| **Icon** | Use decoration, within decoration use suffixIcon property|
+| **Color** | When creating the suffixIcon property you have the option to use the color parameter|
+| **Size** | When creating the suffixIcon property you have the option to use the size parameter|
+| **Gravity** | N/A |
+| **Padding** | N/A |
 
 </details>
 
@@ -232,11 +234,11 @@ class _MyHomePageState extends State<MyHomePage> {
 <summary><b>Activation indicator</b> attributes</summary>
 <br>
 
-|  | Property| Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Stroke color** | Use decoration, within decoration use FocusBorder| | |
-| **Stroke width** | Use decoration, within decoration use FocusBorder| | |
-| **Ripple color** | N/A| | |
+|  | Property|
+| --- | --- |
+| **Stroke color** | Use decoration, within decoration use FocusBorder|
+| **Stroke width** | Use decoration, within decoration use FocusBorder|
+| **Ripple color** | N/A|
 
 </details>
 
@@ -245,11 +247,11 @@ class _MyHomePageState extends State<MyHomePage> {
 <summary><b>Helper text</b> (optional) attributes</summary>
 <br>
 
-|  | Property| Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Label text** | Use decoration, within decoration use helperText property | | |
-| **Typography** | Use decoration, within decoration use helperStyle property | | |
-| **Color** | Use decoration, within decoration use helperStyle property | | |
+|  | Property|
+| --- | --- |
+| **Label text** | Use decoration, within decoration use helperText property |
+| **Typography** | Use decoration, within decoration use helperStyle property |
+| **Color** | Use decoration, within decoration use helperStyle property |
 
 </details>
 
@@ -278,7 +280,7 @@ Source code API:
 The following examples shows an outlined text field.
 
 _**Copy the image to your platform's assets folder. Use a screenshot of your render.**_
-<img src="assets/.png" alt="outlined text field for Android.">
+<img src="assets/outline_text_field_form.png" alt="Outline text field for Flutter">
 
 ```
 TextFormField(
@@ -293,6 +295,9 @@ TextFormField(
   ),
 ),
 ```
+
+To test code copy and pasta code into dartpad.
+Add this code to [dartpad.dev](https://dartpad.dev/)
 
 ```
 // Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
@@ -360,14 +365,14 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 <summary><b>Container</b> attributes</summary>
 <br>
 
-|  | Property | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Color** | style | | |
-| **Stroke color** | decoration, inside decoration use the parameter border, disabledBorder, enabledBorder, errorBorder, focusedBorder, focusedErrorBorder| | |
-| **Stroke width** | decoration, inside decoration use the parameter border, disabledBorder, enabledBorder, errorBorder, focusedBorder, focusedErrorBorder| | |
-| **Shape** | decoration, inside decoration use the parameter border, disabledBorder, enabledBorder, errorBorder, focusedBorder, focusedErrorBorder| | |
-| **Elevation** | N/A| | |
-| **Ripple color** | N/A| | |
+|  | Property |
+| --- | --- |
+| **Color** | style |
+| **Stroke color** | decoration, inside decoration use the parameter border, disabledBorder, enabledBorder, errorBorder, focusedBorder, focusedErrorBorder|
+| **Stroke width** | decoration, inside decoration use the parameter border, disabledBorder, enabledBorder, errorBorder, focusedBorder, focusedErrorBorder|
+| **Shape** | decoration, inside decoration use the parameter border, disabledBorder, enabledBorder, errorBorder, focusedBorder, focusedErrorBorder|
+| **Elevation** | N/A|
+| **Ripple color** | N/A|
 
 </details>
 
@@ -376,13 +381,13 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 <summary><b>Leading icon</b> (optional) attributes</summary>
 <br>
 
-|  | Property | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | Use decoration, within decoration use icon property| | |
-| **Color** | When creating the icon property you have the option to use the color parameter| | |
-| **Size** | When creating the icon property you have the option to use the size parameter| | |
-| **Gravity** | N/A | | |
-| **Padding** | N/A | | |
+|  | Property |
+| --- | --- |
+| **Icon** | Use decoration, within decoration use icon property|
+| **Color** | When creating the icon property you have the option to use the color parameter|
+| **Size** | When creating the icon property you have the option to use the size parameter|
+| **Gravity** | N/A |
+| **Padding** | N/A |
 
 
 </details>
@@ -392,11 +397,11 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 <summary><b>Label text</b> attributes</summary>
 <br>
 
-|  | Property| Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Label text** | Use decoration, within decoration use labelText property | | |
-| **Typography** | Use decoration, within decoration use labelStyle property | | |
-| **Color** | Use decoration, within decoration use labelStyle property | | |
+|  | Property |
+| --- | --- |
+| **Label text** | Use decoration, within decoration use labelText property |
+| **Typography** | Use decoration, within decoration use labelStyle property |
+| **Color** | Use decoration, within decoration use labelStyle property |
 
 </details>
 
@@ -405,11 +410,11 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 <summary><b>Input text</b> attributes</summary>
 <br>
 
-|  | Property | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Label text** | initialValue | | |
-| **Typography** | style | | |
-| **Color** | style | | |
+|  | Property |
+| --- | --- |
+| **Label text** | initialValue |
+| **Typography** | style |
+| **Color** | style |
 
 </details>
 
@@ -418,13 +423,13 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 <summary><b>Trailing icon</b> (optional) attributes</summary>
 <br>
 
-|  | Property | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | Use decoration, within decoration use suffixIcon property| | |
-| **Color** | When creating the suffixIcon property you have the option to use the color parameter| | |
-| **Size** | When creating the suffixIcon property you have the option to use the size parameter| | |
-| **Gravity** | N/A | | |
-| **Padding** | N/A | | |
+|  | Property |
+| --- | --- |
+| **Icon** | Use decoration, within decoration use suffixIcon property|
+| **Color** | When creating the suffixIcon property you have the option to use the color parameter|
+| **Size** | When creating the suffixIcon property you have the option to use the size parameter|
+| **Gravity** | N/A |
+| **Padding** | N/A |
 
 </details>
 
@@ -433,11 +438,11 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 <summary><b>Activation indicator</b> attributes</summary>
 <br>
 
-|  | Property| Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Stroke color** | Use decoration, within decoration use FocusBorder| | |
-| **Stroke width** | Use decoration, within decoration use FocusBorder| | |
-| **Ripple color** | N/A| | |
+|  | Property |
+| --- | --- |
+| **Stroke color** | Use decoration, within decoration use FocusBorder|
+| **Stroke width** | Use decoration, within decoration use FocusBorder|
+| **Ripple color** | N/A|
 
 </details>
 
@@ -446,11 +451,11 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 <summary><b>Helper text</b> (optional) attributes</summary>
 <br>
 
-|  | Property| Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Label text** | Use decoration, within decoration use helperText property | | |
-| **Typography** | Use decoration, within decoration use helperStyle property | | |
-| **Color** | Use decoration, within decoration use helperStyle property | | |
+|  | Property |
+| --- | --- |
+| **Label text** | Use decoration, within decoration use helperText property |
+| **Typography** | Use decoration, within decoration use helperStyle property |
+| **Color** | Use decoration, within decoration use helperStyle property |
 
 </details>
 
@@ -485,6 +490,11 @@ The following example shows filled and outlined text fields with Material Themin
 
 _Use the [Shrine theme](https://material.io/design/material-studies/shrine.html) for this example_
 
+
+<img src="assets/shrine_text_field_form.png" alt="Shrine text field for Flutter">
+
+To test code copy and pasta code into dartpad.
+Add this code to [dartpad.dev](https://dartpad.dev/)
 ```
 
 // Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
