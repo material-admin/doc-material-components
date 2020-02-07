@@ -51,16 +51,142 @@ The following example shows an elevated card. The card has a title, a secondary 
 
 <img src="assets/Flutter-elevated-card.png" alt="elevated card example for Flutter showing ...">
 
+To test code copy and pasta code into dartpad.
+Add this code to [dartpad.dev](https://dartpad.dev/)
 ```
 <source code here>
-The source code example should display as per the interactive example (https://material.io/components/cards/#) with supporting text and Buttons:
-* Display two elevated cards, for each card
-* Display a card title "Card title 1" for one card and "Card title 2" for the other
-* Display a secondary title "Secondary text" with an opacity of 60%
-* Display text reading "Greyhound divisively hello coldly wonderfully marginally far upon excluding." with an opacity of 60%
-* Display two actions, "Action 1" and "Action 2" with two text buttons
-* Display the sample images ![sample card image of yellow and red tulips](assets/card-sample-image.jpg) and ![sample card image of red and yellow apples](assets/card-sample-image-2.jpg)
-* Allow the cards to be moveable.
+// Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        buttonColor: Colors.blue,
+      ),
+      home: MyHomePage(title: 'Flutter Demo Card Page'),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        title: widget.title,
+      ),
+      body: ListView(
+        children: [
+          Card(
+            clipBehavior: Clip.antiAlias,
+            child: Column(
+              children: [
+                ListTile(
+                  leading: Icon(Icons.arrow_drop_down_circle),
+                  title: Text('Card title 1'),
+                  subtitle: Text(
+                    'Secondary Text',
+                    style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(16.0),
+                  child: Text(
+                    'Greyhound divisively hello coldly wonderfully marginally far upon excluding.',
+                    style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                  ),
+                ),
+                ButtonBar(
+                  alignment: MainAxisAlignment.start,
+                  children: [
+                    FlatButton(
+                      textColor: Color(0xFF6200EE),
+                      onPressed: () {
+                        // Perform some action
+                      },
+                      child: const Text('ACTION 1'),
+                    ),
+                    FlatButton(
+                      textColor: Color(0xFF6200EE),
+                      onPressed: () {
+                        // Perform some action
+                      },
+                      child: const Text('ACTION 2'),
+                    ),
+                  ],
+                ),
+                Image.asset('assets/card-sample-image.jpg'),
+                Image.asset('assets/card-sample-image-2.jpg'),
+              ],
+            ),
+          ),
+          Card(
+            clipBehavior: Clip.antiAlias,
+            child: Column(
+              children: [
+                ListTile(
+                  leading: Icon(Icons.arrow_drop_down_circle),
+                  title: Text('Card title 1'),
+                  subtitle: Text(
+                    'Secondary Text',
+                    style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(16.0),
+                  child: Text(
+                    'Greyhound divisively hello coldly wonderfully marginally far upon excluding.',
+                    style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                  ),
+                ),
+                ButtonBar(
+                  alignment: MainAxisAlignment.start,
+                  children: [
+                    FlatButton(
+                      textColor: Color(0xFF6200EE),
+                      onPressed: () {
+                        // Perform some action
+                      },
+                      child: const Text('ACTION 1'),
+                    ),
+                    FlatButton(
+                      textColor: Color(0xFF6200EE),
+                      onPressed: () {
+                        // Perform some action
+                      },
+                      child: const Text('ACTION 2'),
+                    ),
+                  ],
+                ),
+                Image.asset('assets/card-sample-image.jpg'),
+                Image.asset('assets/card-sample-image-2.jpg'),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 ```
 
 ### Key properties
@@ -82,23 +208,22 @@ The source code example should display as per the interactive example (https://m
 <details>
 <summary><b>Container</b> attributes</summary>
 
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Container width |  | | |
-|Container heigh|  | | |
-|Container margin (left) |  | | |
-|Container margin (right)|  | | |
-|Container margin (top)|  | | |
-|Container minimum height|  | | |
-|Container elevation | | | |
+|  | Property |
+|---|---|
+|Container width |  Wrap Card widget with Container widget and use width property |
+|Container heigh|  Wrap Card widget with Container widget and use height property|
+|Container margin (left)|  Wrap Card widget with Container widget and use margin property with EdgeInsets.only(left: 10)|
+|Container margin (right)|  Wrap Card widget with Container widget and use margin property with EdgeInsets.only(right: 10)|
+|Container margin (top)|  Wrap Card widget with Container widget and use margin property with EdgeInsets.only(top: 10)|
+|Container elevation | elevation |
 </details>
 
 <details>
 <summary><b>Thumbnail</b> attributes (optional)</summary>
 
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
+|  | Property |
+|---|---|
+|Desc. 1 | Not by default but can be made by using ListTile() and use property leading |
 
 
 </details>
@@ -106,11 +231,11 @@ The source code example should display as per the interactive example (https://m
 <details>
 <summary><b>Header text</b> attributes (optional)</summary>
 
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-| Text label | | | |
-| Text color | | | |
-| Typography | | | |
+|  | Property |
+|---|---|
+| Text label | Not by default but can be made by using ListTile() and use property title |
+| Text color | Within title property you can customize the Text color by using the style property. The style property uses a TextStyle property and within that class use the color property |
+| Typography | Within title property you can customize the typography by using the style property. The style property uses a TextStyle property and within that class use the fontFamily property |
 
 
 </details>
@@ -118,11 +243,11 @@ The source code example should display as per the interactive example (https://m
 <details>
 <summary><b>Subhead</b> attributes (optional)</summary>
 
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-| Text label | | | |
-| Text color | | | |
-| Typography | | | |
+|  | Property |
+|---|---|
+| Text label | Not by default but can be made by using ListTile() and use property subtitle |
+| Text color | Within subtitle property you can customize the Text color by using the style property. The style property uses a TextStyle property and within that class use the color property|
+| Typography | Within subtitle property you can customize the typography by using the style property. The style property uses a TextStyle property and within that class use the fontFamily property|
 
 
 </details>
@@ -130,20 +255,20 @@ The source code example should display as per the interactive example (https://m
 <details>
 <summary><b>Media</b> attributes (optional)</summary>
 
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
+|  | Property |
+|---|---|
+|Desc. 1 | Can be made using Image.asset() within Card |
 
 </details>
 
 <details>
 <summary><b>Supporting text</b> attributes (optional)</summary>
 
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-| Text label | | | |
-| Text color | | | |
-| Typography | | | |
+|  | Property |
+|---|---|
+| Text label | Can be made using Text property |
+| Text color | Within text property you can customize the Text color by using the style property. The style property uses a TextStyle property and within that class use the color property|
+| Typography | Within text property you can customize the typography by using the style property. The style property uses a TextStyle property and within that class use the fontFamily property|
 
 </details>
 
@@ -152,14 +277,17 @@ The source code example should display as per the interactive example (https://m
 
 [Material button API:](https://api.flutter.dev/flutter/material/MaterialButton-class.html)
 
+|  | Property |
+|---|---|
+|Desc. 1 | Can be made using ButtonBar, within ButtonBar use FlatButtons |
 </details>
 
 <details>
 <summary><b>Icon</b> attributes (optional)</summary>
 
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
+|  | Property |
+|---|---|
+|Desc. 1 | Can be made using ButtonBar, within ButtonBar use IconButton or Icon|
 
 </details>
 
@@ -172,17 +300,240 @@ A card supports [Material Theming](https://material.io/components/cards/#theming
 
 ### Card theming example
 
+
 Source code API:
   * [Class definition](https://api.flutter.dev/flutter/material/Card-class.html)
 
 _Use the [Shrine theme](https://material.io/design/material-studies/shrine.html) for this example_
+
+<img src="assets/shrine_card.png" alt="Shrine Card for Flutter">
+
+
+To test code copy and pasta code into dartpad.
+Add this code to [dartpad.dev](https://dartpad.dev/)
 ```
-* Display an outlined card 
-* Display a card title "Card title"
-* Display a secondary title "Secondary text"
-* Display text reading "Greyhound divisively hello coldly wonderfully marginally far upon excluding."
-* Display two actions, "Action 1" and "Action 2" with two text buttons
-* Display the sample image ![sample card image of yellow and red tulips](assets/card-sample-image.jpg)
-* Make the card checkable with a "favorites" icon
+// Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      theme: _buildShrineTheme(),
+      home: MyHomePage(title: 'Flutter Demo Home Page'),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: ListView(
+        children: [
+          Card(
+            clipBehavior: Clip.antiAlias,
+            child: Column(
+              children: [
+                ListTile(
+                  leading: Icon(Icons.arrow_drop_down_circle),
+                  title: Text('Card title 1'),
+                  subtitle: Text(
+                    'Secondary Text',
+                    style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(16.0),
+                  child: Text(
+                    'Greyhound divisively hello coldly wonderfully marginally far upon excluding.',
+                    style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                  ),
+                ),
+                ButtonBar(
+                  alignment: MainAxisAlignment.start,
+                  children: [
+                    FlatButton(
+                      onPressed: () {
+                        // Perform some action
+                      },
+                      child: const Text('ACTION 1'),
+                    ),
+                    FlatButton(
+                      onPressed: () {
+                        // Perform some action
+                      },
+                      child: const Text('ACTION 2'),
+                    ),
+                  ],
+                ),
+                Image.asset('assets/card-sample-image.jpg'),
+                Image.asset('assets/card-sample-image-2.jpg'),
+              ],
+            ),
+          ),
+          Card(
+            clipBehavior: Clip.antiAlias,
+            child: Column(
+              children: [
+                ListTile(
+                  leading: Icon(Icons.arrow_drop_down_circle),
+                  title: Text('Card title 1'),
+                  subtitle: Text(
+                    'Secondary Text',
+                    style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsets.all(16.0),
+                  child: Text(
+                    'Greyhound divisively hello coldly wonderfully marginally far upon excluding.',
+                    style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                  ),
+                ),
+                ButtonBar(
+                  alignment: MainAxisAlignment.start,
+                  children: [
+                    FlatButton(
+                      onPressed: () {
+                        // Perform some action
+                      },
+                      child: const Text('ACTION 1'),
+                    ),
+                    FlatButton(
+                      onPressed: () {
+                        // Perform some action
+                      },
+                      child: const Text('ACTION 2'),
+                    ),
+                  ],
+                ),
+                Image.asset('assets/card-sample-image.jpg'),
+                Image.asset('assets/card-sample-image-2.jpg'),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+IconThemeData _customIconTheme(IconThemeData original) {
+  return original.copyWith(color: shrineBrown900);
+}
+
+ThemeData _buildShrineTheme() {
+  final ThemeData base = ThemeData.light();
+  return base.copyWith(
+    colorScheme: _shrineColorScheme,
+    accentColor: shrineBrown900,
+    primaryColor: shrinePink100,
+    buttonColor: shrinePink100,
+    scaffoldBackgroundColor: shrineBackgroundWhite,
+    cardColor: shrineBackgroundWhite,
+    textSelectionColor: shrinePink100,
+    errorColor: shrineErrorRed,
+    buttonTheme: const ButtonThemeData(
+      colorScheme: _shrineColorScheme,
+      textTheme: ButtonTextTheme.normal,
+    ),
+    primaryIconTheme: _customIconTheme(base.iconTheme),
+    textTheme: _buildShrineTextTheme(base.textTheme),
+    primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
+    accentTextTheme: _buildShrineTextTheme(base.accentTextTheme),
+    iconTheme: _customIconTheme(base.iconTheme),
+  );
+}
+
+TextTheme _buildShrineTextTheme(TextTheme base) {
+  return base
+      .copyWith(
+    headline: base.headline.copyWith(
+      fontWeight: FontWeight.w500,
+      letterSpacing: defaultLetterSpacing,
+    ),
+    title: base.title.copyWith(
+      fontSize: 18,
+      letterSpacing: defaultLetterSpacing,
+    ),
+    caption: base.caption.copyWith(
+      fontWeight: FontWeight.w400,
+      fontSize: 14,
+      letterSpacing: defaultLetterSpacing,
+    ),
+    body2: base.body2.copyWith(
+      fontWeight: FontWeight.w500,
+      fontSize: 16,
+      letterSpacing: defaultLetterSpacing,
+    ),
+    body1: base.body1.copyWith(
+      letterSpacing: defaultLetterSpacing,
+    ),
+    subhead: base.subhead.copyWith(
+      letterSpacing: defaultLetterSpacing,
+    ),
+    display1: base.display1.copyWith(
+      letterSpacing: defaultLetterSpacing,
+    ),
+    button: base.button.copyWith(
+      fontWeight: FontWeight.w500,
+      fontSize: 14,
+      letterSpacing: defaultLetterSpacing,
+    ),
+  )
+      .apply(
+    fontFamily: 'Rubik',
+    displayColor: shrineBrown900,
+    bodyColor: shrineBrown900,
+  );
+}
+
+const ColorScheme _shrineColorScheme = ColorScheme(
+  primary: shrinePink100,
+  primaryVariant: shrineBrown900,
+  secondary: shrinePink50,
+  secondaryVariant: shrineBrown900,
+  surface: shrineSurfaceWhite,
+  background: shrineBackgroundWhite,
+  error: shrineErrorRed,
+  onPrimary: shrineBrown900,
+  onSecondary: shrineBrown900,
+  onSurface: shrineBrown900,
+  onBackground: shrineBrown900,
+  onError: shrineSurfaceWhite,
+  brightness: Brightness.light,
+);
+
+const Color shrinePink50 = Color(0xFFFEEAE6);
+const Color shrinePink100 = Color(0xFFFEDBD0);
+const Color shrinePink300 = Color(0xFFFBB8AC);
+const Color shrinePink400 = Color(0xFFEAA4A4);
+
+const Color shrineBrown900 = Color(0xFF442B2D);
+const Color shrineBrown600 = Color(0xFF7D4F52);
+
+const Color shrineErrorRed = Color(0xFFC5032B);
+
+const Color shrineSurfaceWhite = Color(0xFFFFFBFA);
+const Color shrineBackgroundWhite = Colors.white;
+
+const defaultLetterSpacing = 0.03;
+
 
 ```

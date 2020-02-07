@@ -54,7 +54,7 @@ The following example shows a text button with a text label.
 
 !["Text button example for Flutter with purple text 'Text button' over a white background."](assets/text-button.svg)
 
-```dart
+```
 FlatButton(
     textColor: Color(0xFF6200EE),
     onPressed: () {
@@ -72,7 +72,7 @@ The following example shows a text button with an icon.
 
 !["Text button with purple text 'Text button' and '+' icon over a white background."](assets/text-button-icon.svg)
 
-```dart
+```
 FlatButton.icon(
     textColor: Color(0xFF6200EE),
     onPressed: () {
@@ -101,8 +101,9 @@ A text button has a text label, a transparent container and an optional icon.
 
 |  | Property |
 | --- | --- |
-| **Text label** | `child` or `label` |
+| **Text label** | `child` and `label` on `FlatButton.icon` |
 | **Color** | `textColor` |
+| **Disabled Text Color** | `disabledTextColor` |
 | **Typography** | `style` on `child` or `label` |
 
 </details>
@@ -117,8 +118,10 @@ A text button has a text label, a transparent container and an optional icon.
 | **Stroke color** | N/A |
 | **Stroke width** | N/A |
 | **Shape** | `shape` |
-| **Elevation** | N/A |
+| **Elevation** | `elevation` |
 | **Ripple color** | `splashColor` |
+| **Disabled color** | `disabledColor` |
+| **Disabled elevation** | `disabledElevation` |
 
 </details>
 
@@ -140,8 +143,8 @@ A text button has a text label, a transparent container and an optional icon.
 
 |  | Constructor |
 | --- | --- |
-| **Default constructor** | `FlatButton` |
-| **Icon constructor** | `FlatButton.icon` |
+| **Default constructor** | `FlatButton()` |
+| **Icon constructor** | `FlatButton.icon()` |
 
 </details>
 
@@ -159,7 +162,7 @@ API and source code:
 
 !["Outlined button with purple text 'Outlined button' and grey border over a white background."](assets/outlined-button.svg)
 
-```dart
+```
 OutlineButton(
     textColor: Color(0xFF6200EE),        
     highlightedBorderColor: Colors.black.withOpacity(0.12),
@@ -178,7 +181,7 @@ The following example shows an outlined button with an icon.
 
 !["Outlined button with purple text 'Outlined button', grey border and '+' icon over a white background."](assets/outlined-button-icon.svg)
 
-```dart
+```
 OutlineButton.icon(
     textColor: Color(0xFF6200EE),
     highlightedBorderColor: Colors.black.withOpacity(0.12),
@@ -208,8 +211,9 @@ An outlined button has a text label, a stroked container and an optional icon.
 
 |  | Property |
 | --- | --- |
-| **Text label** | `child` or `label` |
+| **Text label** | `child` and `label` on `OutlineButton.icon` |
 | **Color** | `textColor` |
+| **Disabled Text Color** | `disabledTextColor` |
 | **Typography** | `style` on `child` or `label` |
 
 </details>
@@ -221,7 +225,7 @@ An outlined button has a text label, a stroked container and an optional icon.
 |  | Property |
 | --- | --- |
 | **Color** | `color` |
-| **Stroke color** | `disabledBorderColor` and `highlightedBorderColor` |
+| **Stroke color** | `borderSide` and `disabledBorderColor` and `highlightedBorderColor` |
 | **Stroke width** | `borderSide` |
 | **Shape** | `shape` |
 | **Elevation** | `elevation` |
@@ -268,7 +272,7 @@ The following example shows a contained button with a text label and a filled co
 
 !["Contained button with white text 'Contained button' and purple container over a white background."](assets/contained-button.svg)
 
-```dart
+```
 RaisedButton(
     textColor: Colors.white,
     color: Color(0xFF6200EE),
@@ -287,7 +291,7 @@ The following example shows a contained button with an icon.
 
 !["Contained button with white text 'Contained button', purple container and '+' icon over a white background."](assets/contained-button-icon.svg)
 
-```dart
+```
 RaisedButton.icon(
     textColor: Colors.white,
     color: Color(0xFF6200EE),
@@ -318,8 +322,9 @@ A contained button has a text label, a filled container and an optional icon.
     
 |  | Property |
 | --- | --- |
-| **Text label** | `child` or `label` |
+| **Text label** | `child` and `label` on `RaisedButton.icon` |
 | **Color** | `textColor` |
+| **Disabled Text Color** | `disabledTextColor` |
 | **Typography** | `style` on `child` or `label` |
 
 </details>
@@ -393,7 +398,7 @@ final isSelected = <bool>[false, false, false];
 ```
 
 In the widget hierarchy:
-```dart
+```
 ToggleButtons(
     color: Colors.black.withOpacity(0.60),
     selectedColor: Color(0xFF6200EE),
@@ -435,7 +440,7 @@ The following example shows a toggle button with three buttons that have icons.
 
 !["Toggle button example for Flutter with icons - heart, eye and bell - and grey/purple borders over a white background."](assets/toggle-button.svg)
 
-```dart
+```
 ToggleButtons(
     color: Colors.black.withOpacity(0.60),
     selectedColor: Color(0xFF6200EE),
@@ -508,13 +513,13 @@ The following example shows an icon that can be used independently or in items o
 
 
 In the state:
-```dart
+```
 var isSelected = false;
 var icon = Icons.favorite_border;
 ```
 
 In the widget hierarchy:
-```dart
+```
 IconButton(
     icon: Icon(icon),
     color: Colors.white,
@@ -542,11 +547,198 @@ The following example shows text, outlined and contained button types with Mater
 <summary><b>Implementing button theming</b></summary>
 <br>
 
+The colours we will be using in this example:
+```
+const Color shrinePink50 = Color(0xFFFEEAE6);
+const Color shrinePink100 = Color(0xFFFEDBD0);
+const Color shrinePink300 = Color(0xFFFBB8AC);
+const Color shrinePink400 = Color(0xFFEAA4A4);
+
+const Color shrineBrown900 = Color(0xFF442B2D);
+const Color shrineBrown600 = Color(0xFF7D4F52);
+
+const Color shrineErrorRed = Color(0xFFC5032B);
+
+const Color shrineSurfaceWhite = Color(0xFFFFFBFA);
+const Color shrineBackgroundWhite = Colors.white;
+```
+
+In the theme category within the MaterialApp class:
+```
+theme: ThemeData(
+  buttonColor: shrinePink100,
+  buttonTheme: const ButtonThemeData(
+    colorScheme: ColorScheme(
+      primary: shrinePink100,
+      primaryVariant: shrineBrown900,
+      secondary: shrinePink50,
+      secondaryVariant: shrineBrown900,
+      surface: shrineSurfaceWhite,
+      background: shrineBackgroundWhite,
+      error: shrineErrorRed,
+      onPrimary: shrineBrown900,
+      onSecondary: shrineBrown900,
+      onSurface: shrineBrown900,
+      onBackground: shrineBrown900,
+      onError: shrineSurfaceWhite,
+      brightness: Brightness.light,
+     ),
+    textTheme: ButtonTextTheme.normal,
+  ),
+),
+```
+
+
 [Shrine theme](https://material.io/design/material-studies/shrine.html)
 ```
 Include source code implementing text, outlined, and contained buttons using "Shrine" theme.
 
-Upload a screenshot of the render and update the image.
+```
+![Example of buttons with Shrine theme](assets/button_theming_screenshot.png)
+
+To test code copy and pasta code into dartpad.
+Add this code to [dartpad.dev](https://dartpad.dev/)
 ```
 
+// Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        buttonColor: shrinePink100,
+        buttonTheme: const ButtonThemeData(
+          colorScheme: ColorScheme(
+            primary: shrinePink100,
+            primaryVariant: shrineBrown900,
+            secondary: shrinePink50,
+            secondaryVariant: shrineBrown900,
+            surface: shrineSurfaceWhite,
+            background: shrineBackgroundWhite,
+            error: shrineErrorRed,
+            onPrimary: shrineBrown900,
+            onSecondary: shrineBrown900,
+            onSurface: shrineBrown900,
+            onBackground: shrineBrown900,
+            onError: shrineSurfaceWhite,
+            brightness: Brightness.light,
+          ),
+          textTheme: ButtonTextTheme.normal,
+        ),
+      ),
+      home: MyHomePage(title: 'Flutter Demo Home Page'),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  final isSelected = <bool>[false, false, false];
+  var isSelectedIcon = false;
+
+  var icon = Icons.favorite_border;
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(widget.title),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            FlatButton(
+              onPressed: () {
+                // Perform some action
+              },
+              child: const Text('FLAT BUTTON', semanticsLabel: 'FLAT BUTTON 1'),
+            ),
+            FlatButton.icon(
+              icon: const Icon(Icons.ac_unit),
+              onPressed: () {},
+              label: const Text('ICON FLAT BUTTON'),
+            ),
+            OutlineButton(
+              onPressed: () {},
+              child: const Text('OUTLINE BUTTON'),
+            ),
+            RaisedButton(
+              onPressed: () {},
+              child: const Text('RAISED BUTTON'),
+            ),
+            ToggleButtons(
+              isSelected: isSelected,
+              onPressed: (index) {
+                // Respond to button selection
+                setState(() {
+                  isSelected[index] = !isSelected[index];
+                });
+              },
+              children: [
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16.0),
+                  child: Text('TOGGLE BUTTON 1'),
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16.0),
+                  child: Text('TOGGLE BUTTON 2'),
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16.0),
+                  child: Text('TOGGLE BUTTON 3'),
+                ),
+              ],
+            ),
+            IconButton(
+              icon: Icon(icon),
+              onPressed: () {
+                // Respond to icon toggle
+                setState(() {
+                  isSelectedIcon = !isSelectedIcon;
+                  icon =
+                      isSelectedIcon ? Icons.favorite : Icons.favorite_border;
+                });
+              },
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+const Color shrinePink50 = Color(0xFFFEEAE6);
+const Color shrinePink100 = Color(0xFFFEDBD0);
+const Color shrinePink300 = Color(0xFFFBB8AC);
+const Color shrinePink400 = Color(0xFFEAA4A4);
+
+const Color shrineBrown900 = Color(0xFF442B2D);
+const Color shrineBrown600 = Color(0xFF7D4F52);
+
+const Color shrineErrorRed = Color(0xFFC5032B);
+
+const Color shrineSurfaceWhite = Color(0xFFFFFBFA);
+const Color shrineBackgroundWhite = Colors.white;
+
+```
 </details>
+
+
+
+
