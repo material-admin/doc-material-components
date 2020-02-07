@@ -51,6 +51,8 @@ The following example shows an elevated card. The card has a title, a secondary 
 
 <img src="assets/Flutter-elevated-card.png" alt="elevated card example for Flutter showing ...">
 
+To test code copy and pasta code into dartpad.
+Add this code to [dartpad.dev](https://dartpad.dev/)
 ```
 <source code here>
 // Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
@@ -70,7 +72,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         buttonColor: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Flutter Demo Card Page'),
     );
   }
 }
@@ -89,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: Text(GalleryLocalizations.of(context).demoCardTitle),
+        title: widget.title,
       ),
       body: ListView(
         children: [
@@ -206,22 +208,22 @@ class _MyHomePageState extends State<MyHomePage> {
 <details>
 <summary><b>Container</b> attributes</summary>
 
-|  | Property | Related method(s) | Default value |
-|---|---|---|---|
-|Container width |  Wrap Card widget with Container widget and use width property | | |
-|Container heigh|  Wrap Card widget with Container widget and use height property| | |
-|Container margin (left)|  Wrap Card widget with Container widget and use margin property with EdgeInsets.only(left: 10)| | |
-|Container margin (right)|  Wrap Card widget with Container widget and use margin property with EdgeInsets.only(right: 10)| | |
-|Container margin (top)|  Wrap Card widget with Container widget and use margin property with EdgeInsets.only(top: 10)| | |
-|Container elevation |  elevation | |
+|  | Property |
+|---|---|
+|Container width |  Wrap Card widget with Container widget and use width property |
+|Container heigh|  Wrap Card widget with Container widget and use height property|
+|Container margin (left)|  Wrap Card widget with Container widget and use margin property with EdgeInsets.only(left: 10)|
+|Container margin (right)|  Wrap Card widget with Container widget and use margin property with EdgeInsets.only(right: 10)|
+|Container margin (top)|  Wrap Card widget with Container widget and use margin property with EdgeInsets.only(top: 10)|
+|Container elevation | elevation |
 </details>
 
 <details>
 <summary><b>Thumbnail</b> attributes (optional)</summary>
 
-|  | Property | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | Not by default but can be made by using ListTile() and use property leading | | |
+|  | Property |
+|---|---|
+|Desc. 1 | Not by default but can be made by using ListTile() and use property leading |
 
 
 </details>
@@ -229,11 +231,11 @@ class _MyHomePageState extends State<MyHomePage> {
 <details>
 <summary><b>Header text</b> attributes (optional)</summary>
 
-|  | Property | Related method(s) | Default value |
-|---|---|---|---|
-| Text label | Not by default but can be made by using ListTile() and use property title | | |
-| Text color | Within title property you can customize the Text color by using the style property. The style property uses a TextStyle property and within that class use the color property| | |
-| Typography | Within title property you can customize the typography by using the style property| The style property uses a TextStyle property and within that class use the fontFamily property| |
+|  | Property |
+|---|---|
+| Text label | Not by default but can be made by using ListTile() and use property title |
+| Text color | Within title property you can customize the Text color by using the style property. The style property uses a TextStyle property and within that class use the color property |
+| Typography | Within title property you can customize the typography by using the style property. The style property uses a TextStyle property and within that class use the fontFamily property |
 
 
 </details>
@@ -241,11 +243,11 @@ class _MyHomePageState extends State<MyHomePage> {
 <details>
 <summary><b>Subhead</b> attributes (optional)</summary>
 
-|  | Property | Related method(s) | Default value |
-|---|---|---|---|
-| Text label | Not by default but can be made by using ListTile() and use property subtitle | | |
-| Text color | Within subtitle property you can customize the Text color by using the style property. The style property uses a TextStyle property and within that class use the color property| | |
-| Typography | Within subtitle property you can customize the typography by using the style property| The style property uses a TextStyle property and within that class use the fontFamily property| |
+|  | Property |
+|---|---|
+| Text label | Not by default but can be made by using ListTile() and use property subtitle |
+| Text color | Within subtitle property you can customize the Text color by using the style property. The style property uses a TextStyle property and within that class use the color property|
+| Typography | Within subtitle property you can customize the typography by using the style property. The style property uses a TextStyle property and within that class use the fontFamily property|
 
 
 </details>
@@ -253,20 +255,20 @@ class _MyHomePageState extends State<MyHomePage> {
 <details>
 <summary><b>Media</b> attributes (optional)</summary>
 
-|  | Property | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | Can be made using Image.asset() within Card | | |
+|  | Property |
+|---|---|
+|Desc. 1 | Can be made using Image.asset() within Card |
 
 </details>
 
 <details>
 <summary><b>Supporting text</b> attributes (optional)</summary>
 
-|  | Property | Related method(s) | Default value |
-|---|---|---|---|
-| Text label | Can be made using Text property | | |
-| Text color | Within text property you can customize the Text color by using the style property. The style property uses a TextStyle property and within that class use the color property| | |
-| Typography | Within text property you can customize the typography by using the style property| The style property uses a TextStyle property and within that class use the fontFamily property| |
+|  | Property |
+|---|---|
+| Text label | Can be made using Text property |
+| Text color | Within text property you can customize the Text color by using the style property. The style property uses a TextStyle property and within that class use the color property|
+| Typography | Within text property you can customize the typography by using the style property. The style property uses a TextStyle property and within that class use the fontFamily property|
 
 </details>
 
@@ -275,17 +277,17 @@ class _MyHomePageState extends State<MyHomePage> {
 
 [Material button API:](https://api.flutter.dev/flutter/material/MaterialButton-class.html)
 
-|  | Property | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | Can be made using ButtonBar, within ButtonBar use FlatButtons | | |
+|  | Property |
+|---|---|
+|Desc. 1 | Can be made using ButtonBar, within ButtonBar use FlatButtons |
 </details>
 
 <details>
 <summary><b>Icon</b> attributes (optional)</summary>
 
-|  | Property | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | Can be made using ButtonBar, within ButtonBar use IconButton or Icon| | |
+|  | Property |
+|---|---|
+|Desc. 1 | Can be made using ButtonBar, within ButtonBar use IconButton or Icon|
 
 </details>
 
@@ -298,10 +300,17 @@ A card supports [Material Theming](https://material.io/components/cards/#theming
 
 ### Card theming example
 
+
 Source code API:
   * [Class definition](https://api.flutter.dev/flutter/material/Card-class.html)
 
 _Use the [Shrine theme](https://material.io/design/material-studies/shrine.html) for this example_
+
+<img src="assets/shrine_card.png" alt="Shrine Card for Flutter">
+
+
+To test code copy and pasta code into dartpad.
+Add this code to [dartpad.dev](https://dartpad.dev/)
 ```
 // Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a

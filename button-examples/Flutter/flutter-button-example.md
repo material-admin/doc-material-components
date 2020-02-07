@@ -54,7 +54,7 @@ The following example shows a text button with a text label.
 
 !["Text button example for Flutter with purple text 'Text button' over a white background."](assets/text-button.svg)
 
-```dart
+```
 FlatButton(
     textColor: Color(0xFF6200EE),
     onPressed: () {
@@ -72,7 +72,7 @@ The following example shows a text button with an icon.
 
 !["Text button with purple text 'Text button' and '+' icon over a white background."](assets/text-button-icon.svg)
 
-```dart
+```
 FlatButton.icon(
     textColor: Color(0xFF6200EE),
     onPressed: () {
@@ -162,7 +162,7 @@ API and source code:
 
 !["Outlined button with purple text 'Outlined button' and grey border over a white background."](assets/outlined-button.svg)
 
-```dart
+```
 OutlineButton(
     textColor: Color(0xFF6200EE),        
     highlightedBorderColor: Colors.black.withOpacity(0.12),
@@ -181,7 +181,7 @@ The following example shows an outlined button with an icon.
 
 !["Outlined button with purple text 'Outlined button', grey border and '+' icon over a white background."](assets/outlined-button-icon.svg)
 
-```dart
+```
 OutlineButton.icon(
     textColor: Color(0xFF6200EE),
     highlightedBorderColor: Colors.black.withOpacity(0.12),
@@ -272,7 +272,7 @@ The following example shows a contained button with a text label and a filled co
 
 !["Contained button with white text 'Contained button' and purple container over a white background."](assets/contained-button.svg)
 
-```dart
+```
 RaisedButton(
     textColor: Colors.white,
     color: Color(0xFF6200EE),
@@ -291,7 +291,7 @@ The following example shows a contained button with an icon.
 
 !["Contained button with white text 'Contained button', purple container and '+' icon over a white background."](assets/contained-button-icon.svg)
 
-```dart
+```
 RaisedButton.icon(
     textColor: Colors.white,
     color: Color(0xFF6200EE),
@@ -398,7 +398,7 @@ final isSelected = <bool>[false, false, false];
 ```
 
 In the widget hierarchy:
-```dart
+```
 ToggleButtons(
     color: Colors.black.withOpacity(0.60),
     selectedColor: Color(0xFF6200EE),
@@ -440,7 +440,7 @@ The following example shows a toggle button with three buttons that have icons.
 
 !["Toggle button example for Flutter with icons - heart, eye and bell - and grey/purple borders over a white background."](assets/toggle-button.svg)
 
-```dart
+```
 ToggleButtons(
     color: Colors.black.withOpacity(0.60),
     selectedColor: Color(0xFF6200EE),
@@ -513,13 +513,13 @@ The following example shows an icon that can be used independently or in items o
 
 
 In the state:
-```dart
+```
 var isSelected = false;
 var icon = Icons.favorite_border;
 ```
 
 In the widget hierarchy:
-```dart
+```
 IconButton(
     icon: Icon(icon),
     color: Colors.white,
@@ -548,7 +548,7 @@ The following example shows text, outlined and contained button types with Mater
 <br>
 
 The colours we will be using in this example:
-```dart
+```
 const Color shrinePink50 = Color(0xFFFEEAE6);
 const Color shrinePink100 = Color(0xFFFEDBD0);
 const Color shrinePink300 = Color(0xFFFBB8AC);
@@ -564,7 +564,7 @@ const Color shrineBackgroundWhite = Colors.white;
 ```
 
 In the theme category within the MaterialApp class:
-```dart
+```
 theme: ThemeData(
   buttonColor: shrinePink100,
   buttonTheme: const ButtonThemeData(
@@ -596,12 +596,13 @@ Include source code implementing text, outlined, and contained buttons using "Sh
 ```
 ![Example of buttons with Shrine theme](assets/button_theming_screenshot.png)
 
-```dart
+To test code copy and pasta code into dartpad.
+Add this code to [dartpad.dev](https://dartpad.dev/)
+```
 
 // Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
-
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -706,7 +707,6 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             IconButton(
               icon: Icon(icon),
-              color: Colors.white,
               onPressed: () {
                 // Respond to icon toggle
                 setState(() {
