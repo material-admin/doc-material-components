@@ -1,16 +1,13 @@
 <!--docs:
-title: "Top app bar"
+title: "Material Top App Bar"
 layout: detail
 section: components
-excerpt: "<Platform name> top app bar"
-latest_update: "<date of last update>"
-iconId:
-path: /
-api_doc_root:
+excerpt: "A customizable top app bar component with updated visual styles."
+iconId: 
+path: /catalog/material-top-app-bar/
 -->
 
 **Instructions to authors:**
-* _Add metadata in the top comment structure for Material.io site integration. Do not add `path` information &ndash; the usage docs should remain on one level_
 * _Follow the instructions in each section &ndash; see the [accompanying examples](button-examples) for futher guidance._
 * _Delete these instructions before submitting your document_
 
