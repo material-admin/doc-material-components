@@ -49,12 +49,11 @@ Source code API:
 
 The following example shows an elevated card. The card has a title, a secondary title, text, and two actions: Action 1 and Action 2 in purple (#6200EE).
 
-<img src="assets/Flutter-elevated-card.png" alt="elevated card example for Flutter showing ...">
+<img src="assets/generic-card-type-elevated.png" alt="elevated card example for Flutter showing ...">
 
 To test code copy and pasta code into dartpad.
 Add this code to [dartpad.dev](https://dartpad.dev/)
 ```
-<source code here>
 // Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
@@ -91,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: widget.title,
+        title: Text(widget.title),
       ),
       body: ListView(
         children: [
@@ -101,14 +100,14 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 ListTile(
                   leading: Icon(Icons.arrow_drop_down_circle),
-                  title: Text('Card title 1'),
+                  title: const Text('Card title 1'),
                   subtitle: Text(
                     'Secondary Text',
                     style: TextStyle(color: Colors.black.withOpacity(0.6)),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.all(16.0),
                   child: Text(
                     'Greyhound divisively hello coldly wonderfully marginally far upon excluding.',
                     style: TextStyle(color: Colors.black.withOpacity(0.6)),
@@ -118,14 +117,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   alignment: MainAxisAlignment.start,
                   children: [
                     FlatButton(
-                      textColor: Color(0xFF6200EE),
+                      textColor: const Color(0xFF6200EE),
                       onPressed: () {
                         // Perform some action
                       },
                       child: const Text('ACTION 1'),
                     ),
                     FlatButton(
-                      textColor: Color(0xFF6200EE),
+                      textColor: const Color(0xFF6200EE),
                       onPressed: () {
                         // Perform some action
                       },
@@ -144,14 +143,14 @@ class _MyHomePageState extends State<MyHomePage> {
               children: [
                 ListTile(
                   leading: Icon(Icons.arrow_drop_down_circle),
-                  title: Text('Card title 1'),
+                  title: const Text('Card title 1'),
                   subtitle: Text(
                     'Secondary Text',
                     style: TextStyle(color: Colors.black.withOpacity(0.6)),
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(16.0),
+                  padding: const EdgeInsets.all(16.0),
                   child: Text(
                     'Greyhound divisively hello coldly wonderfully marginally far upon excluding.',
                     style: TextStyle(color: Colors.black.withOpacity(0.6)),
@@ -161,14 +160,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   alignment: MainAxisAlignment.start,
                   children: [
                     FlatButton(
-                      textColor: Color(0xFF6200EE),
+                      textColor: const Color(0xFF6200EE),
                       onPressed: () {
                         // Perform some action
                       },
                       child: const Text('ACTION 1'),
                     ),
                     FlatButton(
-                      textColor: Color(0xFF6200EE),
+                      textColor: const Color(0xFF6200EE),
                       onPressed: () {
                         // Perform some action
                       },
