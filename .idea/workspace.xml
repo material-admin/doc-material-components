@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d015c359-67e8-4ff2-aef6-63b1003d742d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogs/dialogs-stub.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/button-examples/Flutter/flutter-button-example.md" beforeDir="false" afterPath="$PROJECT_DIR$/button-examples/Flutter/flutter-button-example.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards-examples/Flutter/Flutter-card-article.md" beforeDir="false" afterPath="$PROJECT_DIR$/cards-examples/Flutter/Flutter-card-article.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text-field-examples/Android/Android-text-field.md" beforeDir="false" afterPath="$PROJECT_DIR$/text-field-examples/Android/Android-text-field.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/text-field-examples/Flutter/Flutter-text-field.md" beforeDir="false" afterPath="$PROJECT_DIR$/text-field-examples/Flutter/Flutter-text-field.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/top-app-bar/Flutter/Flutter-top-app-bar.md" beforeDir="false" afterPath="$PROJECT_DIR$/top-app-bar/Flutter/Flutter-top-app-bar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/top-app-bar/iOS/iOS-top-app-bar.md" beforeDir="false" afterPath="$PROJECT_DIR$/top-app-bar/iOS/iOS-top-app-bar.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +26,8 @@
         <entry file="file://$PROJECT_DIR$/cards-examples/Flutter/Flutter-card-article.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="893">
-                <caret line="307" column="28" selection-start-line="307" selection-start-column="17" selection-end-line="307" selection-end-column="28" />
+              <first_editor relative-caret-position="914">
+                <caret line="294" column="28" selection-start-line="294" selection-start-column="28" selection-end-line="294" selection-end-column="28" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -45,8 +50,8 @@
         <entry file="file://$PROJECT_DIR$/text-field-examples/Flutter/Flutter-text-field.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1806">
-                <caret line="86" selection-start-line="86" selection-end-line="87" selection-end-column="52" />
+              <first_editor relative-caret-position="1512">
+                <caret line="72" selection-start-line="72" selection-end-line="72" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -60,7 +65,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="485">
-                <caret line="599" column="52" selection-start-line="599" selection-start-column="52" selection-end-line="599" selection-end-column="52" />
+                <caret line="588" column="73" selection-start-line="588" selection-start-column="73" selection-end-line="588" selection-end-column="73" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -263,10 +268,10 @@
       <window_info anchor="bottom" id="Run" order="1" weight="0.22391304" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32826087" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="4" visible="true" weight="0.1852174" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.1852174" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" />
       <window_info anchor="bottom" id="Dart Analysis" order="8" weight="0.32916668" />
       <window_info anchor="bottom" id="Find" order="9" />
       <window_info anchor="bottom" id="Logcat" order="10" />
@@ -482,8 +487,8 @@
     <entry file="file://$PROJECT_DIR$/text-field-examples/Flutter/Flutter-text-field.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1806">
-            <caret line="86" selection-start-line="86" selection-end-line="87" selection-end-column="52" />
+          <first_editor relative-caret-position="1512">
+            <caret line="72" selection-start-line="72" selection-end-line="72" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
@@ -495,7 +500,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="485">
-            <caret line="599" column="52" selection-start-line="599" selection-start-column="52" selection-end-line="599" selection-end-column="52" />
+            <caret line="588" column="73" selection-start-line="588" selection-start-column="73" selection-end-line="588" selection-end-column="73" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
@@ -520,8 +525,8 @@
     <entry file="file://$PROJECT_DIR$/cards-examples/Flutter/Flutter-card-article.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="893">
-            <caret line="307" column="28" selection-start-line="307" selection-start-column="17" selection-end-line="307" selection-end-column="28" />
+          <first_editor relative-caret-position="914">
+            <caret line="294" column="28" selection-start-line="294" selection-start-column="28" selection-end-line="294" selection-end-column="28" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />

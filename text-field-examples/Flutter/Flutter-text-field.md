@@ -10,16 +10,6 @@ path: /
 api_doc_root:
 -->
 
-_**Instructions**_
-* [Using text field](#using-text-field)
-    * Add a link under [Using text field](#using-text-field) to your getting started page if you have one
-    * Insert [installation](#installation) and [theming](#theming) as appropriate for your platform
-    * Insert any additional instructions that apply to your platform with a separte level 3 header
-    * If you have no getting started links or instructions, delete the [Using text field](#using-text-field) sections
-* [Filled text](#filled-text) ane [Outlined-text](#outlined-text) sections
-    * Add links to your platform 
-
-
 # Text field
 
 [Text fields](https://material.io/components/text-fields) let users enter and edit text.
@@ -29,7 +19,7 @@ The text field class consists of the following types:
 * [Filled text](#filled-text)
 * [Outlined text](#outlined-text)
 
-<img src="assets/text-field-generic.png" alt="Text field examples of both filled and outlined types, and each type showing both inactive and focused states. The filled text fields show a gray background and a darker gray activation indicator that is purple when focused. The outlined text fields show a clear background and an outline that is purple when focused">
+<img src="assets/text-field-generic.png" alt="Text field examples of both filled and outlined types, and each showing both inactive and focused states.">
 
 ## Using text fields
 
@@ -50,15 +40,11 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 
 Source code API:
 
-* `TextInputLayout` 
-  * [Class definition]()
-  * [GitHub source](https://github.com/material-components/)
+* `TextFormField` 
+  * [Class definition](https://api.flutter.dev/flutter/material/TextFormField-class.html)
+  * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/text_form_field.dart)
 
-The following examples shows a filled text field.
-
-
-_**Copy the image to your platform's assets folder. Use a screenshot of your render.**_
-
+The following example shows a filled text field.
 
 <img src="assets/filled_text_field_form.png" alt="filled text field for Flutter">
 
@@ -84,8 +70,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
  ),
 ```
 
-To test code copy and pasta code into dartpad.
-Add this code to [dartpad.dev](https://dartpad.dev/)
+To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 ```
 // Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
@@ -154,19 +139,16 @@ class _MyHomePageState extends State<MyHomePage> {
 1. Activation indicator
 1. Helper text (optional)
 
-
-
-
 <details>
 <summary><b>Container</b> attributes</summary>
 <br>
 
-|  | Property | 
+| &nbsp; | Property | 
 | --- | --- | 
 | **Color** | style |
-| **Stroke color** | decoration, inside decoration use the parameter border, disabledBorder, enabledBorder, errorBorder, focusedBorder, focusedErrorBorder|
-| **Stroke width** | decoration, inside decoration use the parameter border, disabledBorder, enabledBorder, errorBorder, focusedBorder, focusedErrorBorder|
-| **Shape** | decoration, inside decoration use the parameter border, disabledBorder, enabledBorder, errorBorder, focusedBorder, focusedErrorBorder|
+| **Stroke color** | `decoration`, inside `decoration` set the parameter `border`: `disabledBorder`, `enabledBorder`, `errorBorder`, `focusedBorder`, `focusedErrorBorder`|
+| **Stroke width** | `decoration`, inside `decoration` set the parameter `border`: `disabledBorder`, `enabledBorder`, `errorBorder`, `focusedBorder`, `focusedErrorBorder`|
+| **Shape** | decoration, inside `decoration` set the parameter `border`: `disabledBorder`, `enabledBorder`, `errorBorder`, `focusedBorder`, `focusedErrorBorder`|
 | **Elevation** | N/A|
 | **Ripple color** | N/A|
 
@@ -177,11 +159,11 @@ class _MyHomePageState extends State<MyHomePage> {
 <summary><b>Leading icon</b> (optional) attributes</summary>
 <br>
 
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
-| **Icon** | Use decoration, within decoration use icon property|
-| **Color** | When creating the icon property you have the option to use the color parameter|
-| **Size** | When creating the icon property you have the option to use the size parameter|
+| **Icon** | Use `decoration`, within `decoration` set the `icon` property|
+| **Color** | When creating the `icon` property you can set the `color` parameter|
+| **Size** | When creating the `icon` property you can set the `size` parameter|
 | **Gravity** | N/A |
 | **Padding** | N/A |
 
@@ -193,11 +175,11 @@ class _MyHomePageState extends State<MyHomePage> {
 <summary><b>Label text</b> attributes</summary>
 <br>
 
-|  | Property |
+| &nbsp; | Property |
 | --- | --- | 
-| **Label text** | Use decoration, within decoration use labelText property |
-| **Typography** | Use decoration, within decoration use labelStyle property |
-| **Color** | Use decoration, within decoration use labelStyle property |
+| **Label text** | Use `decoration`, within `decoration` set `labelText` property |
+| **Typography** | Use `decoration`, within `decoration` set `labelStyle` property |
+| **Color** | Use `decoration`, within `decoration` set `labelStyle` property |
 
 </details>
 
@@ -206,11 +188,11 @@ class _MyHomePageState extends State<MyHomePage> {
 <summary><b>Input text</b> attributes</summary>
 <br>
 
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
-| **Label text** | initialValue |
-| **Typography** | style |
-| **Color** | style |
+| **Label text** | `initialValue` |
+| **Typography** | `style` |
+| **Color** | `style` |
 
 </details>
 
@@ -219,11 +201,11 @@ class _MyHomePageState extends State<MyHomePage> {
 <summary><b>Trailing icon</b> (optional) attributes</summary>
 <br>
 
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
-| **Icon** | Use decoration, within decoration use suffixIcon property|
-| **Color** | When creating the suffixIcon property you have the option to use the color parameter|
-| **Size** | When creating the suffixIcon property you have the option to use the size parameter|
+| **Icon** | Use `decoration`, within `decoration` use `suffixIcon` property|
+| **Color** | When creating the `suffixIcon` property you can set the `color` parameter|
+| **Size** | When creating the `suffixIcon` property you can set the `size` parameter|
 | **Gravity** | N/A |
 | **Padding** | N/A |
 
@@ -234,10 +216,10 @@ class _MyHomePageState extends State<MyHomePage> {
 <summary><b>Activation indicator</b> attributes</summary>
 <br>
 
-|  | Property|
+| &nbsp; | Property|
 | --- | --- |
-| **Stroke color** | Use decoration, within decoration use FocusBorder|
-| **Stroke width** | Use decoration, within decoration use FocusBorder|
+| **Stroke color** | Use `decoration`, within `decoration` set `FocusBorder`|
+| **Stroke width** | Use `decoration`, within `decoration` set `FocusBorder`|
 | **Ripple color** | N/A|
 
 </details>
@@ -247,21 +229,21 @@ class _MyHomePageState extends State<MyHomePage> {
 <summary><b>Helper text</b> (optional) attributes</summary>
 <br>
 
-|  | Property|
+| &nbsp; | Property|
 | --- | --- |
-| **Label text** | Use decoration, within decoration use helperText property |
-| **Typography** | Use decoration, within decoration use helperStyle property |
-| **Color** | Use decoration, within decoration use helperStyle property |
+| **Label text** | Use `decoration`, within `decoration` set `helperText` property |
+| **Typography** | Use `decoration`, within `decoration` set `helperStyle` property |
+| **Color** | Use `decoration`, within `decoration` set `helperStyle` property |
 
 </details>
 
 <summary><b>Styles</b></summary>
 <br>
 
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
-| **Default style** | style |
-| **Icon style** | Within the style icon |
+| **Default style** | `style` |
+| **Icon style** | Within `style` set `icon` |
 
 </details>
 
@@ -273,9 +255,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
 Source code API:
 
-* `TextInputLayout` 
-  * [Class definition]()
-  * [GitHub source]()
+* `TextFormField` 
+  * [Class definition](https://api.flutter.dev/flutter/material/TextFormField-class.html)
+  * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/text_form_field.dart)
 
 The following examples shows an outlined text field.
 
@@ -296,8 +278,8 @@ TextFormField(
 ),
 ```
 
-To test code copy and pasta code into dartpad.
-Add this code to [dartpad.dev](https://dartpad.dev/)
+To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
+
 
 ```
 // Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
@@ -365,12 +347,12 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 <summary><b>Container</b> attributes</summary>
 <br>
 
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
-| **Color** | style |
-| **Stroke color** | decoration, inside decoration use the parameter border, disabledBorder, enabledBorder, errorBorder, focusedBorder, focusedErrorBorder|
-| **Stroke width** | decoration, inside decoration use the parameter border, disabledBorder, enabledBorder, errorBorder, focusedBorder, focusedErrorBorder|
-| **Shape** | decoration, inside decoration use the parameter border, disabledBorder, enabledBorder, errorBorder, focusedBorder, focusedErrorBorder|
+| **Color** | `style` |
+| **Stroke color** | `decoration`, within `decoration` set the parameter `border`: `disabledBorder`, `enabledBorder`, `errorBorder`, `focusedBorder`, `focusedErrorBorder`|
+| **Stroke width** | `decoration`, within `decoration` set the parameter `border`: `disabledBorder`, `enabledBorder`, `errorBorder`, `focusedBorder`, `focusedErrorBorder`|
+| **Shape** | `decoration`, within `decoration` set the parameter `border`: `disabledBorder`, `enabledBorder`, `errorBorder`, `focusedBorder`, `focusedErrorBorder`|
 | **Elevation** | N/A|
 | **Ripple color** | N/A|
 
@@ -381,11 +363,11 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 <summary><b>Leading icon</b> (optional) attributes</summary>
 <br>
 
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
-| **Icon** | Use decoration, within decoration use icon property|
-| **Color** | When creating the icon property you have the option to use the color parameter|
-| **Size** | When creating the icon property you have the option to use the size parameter|
+| **Icon** | Use `decoration`, within `decoration` set `icon` property|
+| **Color** | When creating the `icon` property set the `color` parameter|
+| **Size** | When creating the `icon` property set the `size` parameter|
 | **Gravity** | N/A |
 | **Padding** | N/A |
 
@@ -397,11 +379,11 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 <summary><b>Label text</b> attributes</summary>
 <br>
 
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
-| **Label text** | Use decoration, within decoration use labelText property |
-| **Typography** | Use decoration, within decoration use labelStyle property |
-| **Color** | Use decoration, within decoration use labelStyle property |
+| **Label text** | Use `decoration`, within `decoration` set `labelText` property |
+| **Typography** | Use `decoration`, within `decoration` set `labelStyle` property |
+| **Color** | Use `decoration`, within `decoration` set `labelStyle` property |
 
 </details>
 
@@ -410,11 +392,11 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 <summary><b>Input text</b> attributes</summary>
 <br>
 
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
-| **Label text** | initialValue |
-| **Typography** | style |
-| **Color** | style |
+| **Label text** | `initialValue` |
+| **Typography** | `style` |
+| **Color** | `style` |
 
 </details>
 
@@ -423,11 +405,11 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 <summary><b>Trailing icon</b> (optional) attributes</summary>
 <br>
 
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
-| **Icon** | Use decoration, within decoration use suffixIcon property|
-| **Color** | When creating the suffixIcon property you have the option to use the color parameter|
-| **Size** | When creating the suffixIcon property you have the option to use the size parameter|
+| **Icon** | Use `decoration`, within `decoration` set `suffixIcon` property|
+| **Color** | When creating the `suffixIcon` property set the `color` parameter|
+| **Size** | When creating the `suffixIcon` property set the `size` parameter|
 | **Gravity** | N/A |
 | **Padding** | N/A |
 
@@ -438,10 +420,10 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 <summary><b>Activation indicator</b> attributes</summary>
 <br>
 
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
-| **Stroke color** | Use decoration, within decoration use FocusBorder|
-| **Stroke width** | Use decoration, within decoration use FocusBorder|
+| **Stroke color** | Use `decoration`, within `decoration` set `FocusBorder`|
+| **Stroke width** | Use `decoration`, within `decoration` set `FocusBorder`|
 | **Ripple color** | N/A|
 
 </details>
@@ -451,21 +433,21 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 <summary><b>Helper text</b> (optional) attributes</summary>
 <br>
 
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
-| **Label text** | Use decoration, within decoration use helperText property |
-| **Typography** | Use decoration, within decoration use helperStyle property |
-| **Color** | Use decoration, within decoration use helperStyle property |
+| **Label text** | Use `decoration`, within `decoration` set `helperText` property |
+| **Typography** | Use `decoration`, within `decoration` set `helperStyle` property |
+| **Color** | Use `decoration`, within `decoration` set `helperStyle` property |
 
 </details>
 
 <summary><b>Styles</b></summary>
 <br>
 
-|  | Property |
+| &nbsp; | Property |
 | --- | --- |
-| **Default style** | style |
-| **Icon style** | Within the style icon |
+| **Default style** | `style` |
+| **Icon style** | Within `style` set `icon` |
 
 </details>
 
@@ -481,20 +463,16 @@ API and source code:
     * [Class description](https://)
     * [GitHub source](https://github.com/material-components/)
     
-The following example shows filled and outlined text fields with Material Theming.
+The following example shows filled and outlined text fields with the [Material Shring Theme](ttps://material.io/design/material-studies/shrine.html).
 
 !["Two text fields, one filled, one outlined, with green/black color theming and cut corners."](assets/button-theming.svg)
 
 <details>
 <summary><b>Implementing text field theming</b></summary>
 
-_Use the [Shrine theme](https://material.io/design/material-studies/shrine.html) for this example_
-
-
 <img src="assets/shrine_text_field_form.png" alt="Shrine text field for Flutter">
 
-To test code copy and pasta code into dartpad.
-Add this code to [dartpad.dev](https://dartpad.dev/)
+To test code copy and paste code into [dartpad.dev](https://dartpad.dev/)
 ```
 
 // Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file

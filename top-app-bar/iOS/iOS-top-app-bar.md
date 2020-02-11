@@ -36,9 +36,10 @@ A regular top app bar can transform into a contextual action bar.
 ### Install `AppBar`
 
 <details>
-<summary><b>Expand for installation instructions for <code>AppBar</code></b></summmary>
+<summary><b>Expand for installation instructions for <code>AppBar</code></b></summary>
   
 Before using the `AppBar` API to implement its types you must install `AppBar`. In your source files import the component, and then apply your theme:
+
 1. Install `AppBar`
    * Use CocoaPods to install `AppBar`<!-- What are the correct packages? AppBar is listed as deprecated further along the original doc -->
      1. Add the following line to your `Podfile`:
@@ -53,7 +54,7 @@ Before using the `AppBar` API to implement its types you must install `AppBar`. 
 
   **Note** For more information about themes, go to the [Theming page](https://material.io/develop/ios/components/theming/) for iOS.
 
-<!--<div class="material-code-render" markdown="1">-->
+    <!--<div class="material-code-render" markdown="1">-->
    **Swift**
    ```swift
    import MaterialComponents.MaterialAppBar
@@ -83,10 +84,9 @@ Before using the `AppBar` API to implement its types you must install `AppBar`. 
    // Or Surface Theme
    [self.appBarController applySurfaceThemeWithScheme:containerScheme];
    ```
-<!--</div>-->
+   <!--</div>-->
 
 </details>
-
 
 ### Making the top app bar accessible
 

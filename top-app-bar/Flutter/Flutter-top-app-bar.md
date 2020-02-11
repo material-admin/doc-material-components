@@ -34,9 +34,12 @@ The top app bar provides content and actions related to the current screen. Itâ€
 
 A regular top app bar can transform into a contextual action bar.
 
-Before you can use Material buttons, you need to import the Material Components package for Flutter: `package:flutter/material.dart`.
+Before you can use Material buttons, you need to import the Material Components package for Flutter: 
+```
+package:flutter/material.dart
+```
 
-You need to be using a [`MaterialApp`](https://api.flutter.dev/flutter/material/MaterialApp-class.html).
+You need to use [`MaterialApp`](https://api.flutter.dev/flutter/material/MaterialApp-class.html).
 
 For more information on getting started with the Material for Flutter, go to the Flutter [Material library](https://api.flutter.dev/flutter/material/material-library.html) page.
 
@@ -87,27 +90,27 @@ The source code for the regular top app bar should include the following:
 <details>
 <summary><b>Container </b> attributes</summary>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Color** | | | |
-| **Stroke color** | | | |
-| **Stroke width** | | | |
-| **Shape** | | | |
-| **Elevation** | | | |
-| **Ripple color** | | | |
+| &nbsp; | Property |
+| --- | --- |
+| **Color** | |
+| **Stroke color** |  |
+| **Stroke width** | |
+| **Shape** |  |
+| **Elevation** |  |
+| **Ripple color** |  |
 
 </details>
 
 <details>
 <summary><b>Navigation icon </b> attributes (optional)</summary>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | | | |
-| **Color** | | | |
-| **Size** | | | |
-| **Gravity** (position relative to text label) | | | |
-| **Padding** (space between icon and text label) | | | |
+| &nbsp; | Property |
+| --- | --- |
+| **Icon** |  |
+| **Color** | |
+| **Size** |  |
+| **Gravity** (position relative to text label) |  |
+| **Padding** (space between icon and text label) |  |
 
 </details>
 
@@ -115,11 +118,11 @@ The source code for the regular top app bar should include the following:
 <details>
 <summary><b>Title </b> attributes (optional)</summary>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Text label** | | | |
-| **Color** | | | | 
-| **Typography** | | | |
+| &nbsp; | Property |
+| --- | --- |
+| **Text label** |  |
+| **Color** |  | 
+| **Typography** |  |
 
 </details>
 
@@ -127,26 +130,26 @@ The source code for the regular top app bar should include the following:
 <details>
 <summary><b>Action item </b> attributes (optional)</summary>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | | | |
-| **Color** | | | |
-| **Size** | | | |
-| **Gravity** (position relative to text label) | | | |
-| **Padding** (space between icon and text label) | | | |
+| &nbsp; | Property |
+| --- | --- |
+| **Icon** | | 
+| **Color** | | 
+| **Size** | | 
+| **Gravity** (position relative to text label) | | 
+| **Padding** (space between icon and text label) | |
 </details>
 
 
 <details>
 <summary><b>Overflow menu </b> attributes (optional)</summary>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | | | |
-| **Color** | | | |
-| **Size** | | | |
-| **Gravity** (position relative to text label) | | | |
-| **Padding** (space between icon and text label) | | | |
+| &nbsp; | Property |
+| --- | --- |
+| **Icon** |  |
+| **Color** | |
+| **Size** | | 
+| **Gravity** (position relative to text label) | | 
+| **Padding** (space between icon and text label) | | 
 
 </details>
 
@@ -198,13 +201,13 @@ contextual action bar and include the following:
 <details>
 <summary><b>Close button</b> attributes</summary>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | | | |
-| **Color** | | | |
-| **Size** | | | |
-| **Gravity** (position relative to text label) | | | |
-| **Padding** (space between icon and text label) | | | |
+| &nbsp; | Property |
+| --- | --- |
+| **Icon** |  |
+| **Color** |  |
+| **Size** | |
+| **Gravity** (position relative to text label) |  |
+| **Padding** (space between icon and text label) |  |
 
 
 </details>
@@ -212,36 +215,36 @@ contextual action bar and include the following:
 <details>
 <summary><b>Contextual title</b> attributes</summary>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Text label** | | | |
-| **Color** | | | | 
-| **Typography** | | | |
+| &nbsp; | Property|
+| --- | --- |
+| **Text label** |  |
+| **Color** |  | 
+| **Typography** |  |
 </details>
 
 
 <details>
 <summary><b>Contextual action item</b> attributes (optional)</summary>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | | | |
-| **Color** | | | |
-| **Size** | | | |
-| **Gravity** (position relative to text label) | | | |
-| **Padding** (space between icon and text label) | | | |
+| &nbsp; | Property |
+| --- | --- |
+| **Icon** |  |
+| **Color** |  |
+| **Size** |  |
+| **Gravity** (position relative to text label) |  |
+| **Padding** (space between icon and text label) |  |
 
 </details>
 <details>
 <summary><b>Overflow menu</b> attributes (optional)</summary>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Icon** | | | |
-| **Color** | | | |
-| **Size** | | | |
-| **Gravity** (position relative to text label) | | | |
-| **Padding** (space between icon and text label) | | | |
+| &nbsp; | Property |
+| --- | --- |
+| **Icon** | | 
+| **Color** | | 
+| **Size** | | 
+| **Gravity** (position relative to text label) | | 
+| **Padding** (space between icon and text label) | | 
 
 </details>
 
