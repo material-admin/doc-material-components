@@ -1,13 +1,10 @@
 <!--docs:
-title: "Buttons"
+title: "Material Button"
 layout: detail
 section: components
-excerpt: "Flutter Buttons usage document"
-ide_version: "<cIDE name> <compatible IDE version and build number>"
-material_package_version: "<compatible Material platform package version number>"
-iconId:
-path: /
-api_doc_root:
+excerpt: "A customizable button component with updated visual styles."
+iconId: 
+path: /catalog/material-button/
 -->
 
 # Buttons
