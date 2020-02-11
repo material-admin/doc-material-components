@@ -1,13 +1,10 @@
 <!--docs:
-title: "Cards"
+title: "Material Cards"
 layout: detail
 section: components
-excerpt: "<platform> Cards"
-ide_version: "<cIDE name> <compatible IDE version and build number>"
-material_package_version: "<compatible Material platform package version number>"
-iconId:
-path: /
-api_doc_root:
+excerpt: "A customizable card component with updated visual styles."
+iconId: materialbutton
+path: /catalog/material-card/
 -->
 
 
