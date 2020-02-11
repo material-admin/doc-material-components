@@ -1,13 +1,10 @@
 <!--docs:
-title: "Text field"
+title: "Material Text Field"
 layout: detail
 section: components
-excerpt: "<Platform name> Text field"
-ide_version: "<cIDE name> <compatible IDE version and build number>"
-material_package_version: "<compatible Material platform package version number>"
-iconId:
-path: /
-api_doc_root:
+excerpt: "A customizable text field component with updated visual styles."
+iconId: materialbutton
+path: /catalog/material-text-field/
 -->
 
 # Text field
