@@ -3,7 +3,7 @@ title: "Material Text Field"
 layout: detail
 section: components
 excerpt: "A customizable text field component with updated visual styles."
-iconId: materialbutton
+iconId: 
 path: /catalog/material-text-field/
 -->
 
