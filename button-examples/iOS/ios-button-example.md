@@ -24,7 +24,8 @@ There are four types of buttons:
 ![Example of the four button types](assets/buttons_types.png)
 
 
-## Using button
+## Using buttons
+
 
 ### Install `MDCButtons`
 
@@ -44,7 +45,7 @@ Before using the `MDCButtons` API to implement its types you must install `MCDBu
 1. Import `MDCButtons` and MDC button theming and initialize `MDCButtons` using `alloc`/`init`. Initialize your theme  before applying it to your button.
 
     **Note** For more information about themes, go to the [Theming page](https://material.io/develop/ios/components/theming/) for iOS.
-
+<!--<div class="material-code-render" markdown="1">-->
      **Swift**
      ```swift
      import MaterialComponents.MaterialButtons
@@ -61,14 +62,31 @@ Before using the `MDCButtons` API to implement its types you must install `MCDBu
      <theme name> *<local theme name> = [[<theme name> alloc] init];
      MDCButton *button = [[MDCButton alloc] init];
      ```
+<!--</div>-->
+
+    For our examples, we used the following theming values:
+
+<!--<div class="material-code-render" markdown="1">-->
+     **Swift**
+     ```swift
+     let MyMaterialTheme = MDCContainerScheme()
+     ```
+     **Objective-C**
+     ```objc
+     MDCContainerScheme *MyMaterialTheme = [
+     ```
+<!--</div>-->
+
+
 </details>
+
 
 ### Making buttons accessible
  
 To help make your buttons usable to as many users as possible, apply the following:
 
 * Set an appropriate [`accessibilityLabel`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) value if your button does not have a title or only has an icon:
-
+<!--<div class="material-code-render" markdown="1">-->
     **Objective-C**
     ```objc
     button.accessibilityLabel = @"Create";
@@ -77,8 +95,11 @@ To help make your buttons usable to as many users as possible, apply the followi
     ```swift
     button.accessibilityLabel = "Create"
     ```
+<!--</div>-->
+
 * Set the minimum [visual height to
 36 and miniumum visual width to 64](https://material.io/design/components/buttons.html#specs)
+<!--<div class="material-code-render" markdown="1">-->
     **Objective-C**
 
     ```objc
@@ -90,13 +111,15 @@ To help make your buttons usable to as many users as possible, apply the followi
     ```swift
     button.minimumSize = CGSize(width: 64, height: 48)
     ```
+<!--</div>-->
+
 
 * Set the [touch areas to at least 44 points high and 44
 wide](https://material.io/design/layout/spacing-methods.html#touch-click-targets).
     To minimize a button's visual size while allowing for larger [touchable areas](https://material.io/design/layout/spacing-methods.html#touch-click-targets), set the `hitAreaInsets` to a negative value. Maintain sufficient distance between the button touch targets. For more see the [Touch and click
 targets](https://material.io/design/layout/spacing-methods.html#touch-click-targets)
 in the spec.
-
+<!--<div class="material-code-render" markdown="1">-->
     **Objective C**
     ```objc
     CGFloat verticalInset = MIN(0, -(48 - CGRectGetHeight(button.bounds)) / 2);
@@ -114,6 +137,7 @@ in the spec.
     UIEdgeInsetsMake(buttonVerticalInset, buttonHorizontalInset,
     buttonVerticalInset, buttonHorizontalInset);
     ```
+<!--</div>-->
 
     _**Note** There are [some](https://material.io/design/components/buttons.html#toggle-button) clear [exceptions](https://material.io/design/components/app-bars-bottom.html#specs) for these rules. Please adjust your buttons sizes accordingly._
 
@@ -136,9 +160,6 @@ in the spec.
     this day."
 
 
-\<**NOTE** Update table values and links to appropriate API documents\>
------
-
 ## Text button
 
 [Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
@@ -148,7 +169,7 @@ in the spec.
 
 Source Code APIs:
 
-* MDCButton
+* MDCButton  (a subclass of [UIButton](https://developer.apple.com/documentation/uikit/uibutton))
     * [Class description](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/) <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
@@ -162,7 +183,6 @@ For more information on Material Theming for iOS, go to the [iOS Material Themin
 **Swift**
 
 ```swift
-let MyMaterialTheme = MDCContainerScheme()
 let button = MDCButton()
 button.applyTextTheme(withScheme: MyMaterialTheme)
 ```
@@ -170,10 +190,11 @@ button.applyTextTheme(withScheme: MyMaterialTheme)
 **Objective-C**
 
 ```ObjC
-MDCContainerScheme *MyMaterialTheme = [[MDCContainerScheme alloc] init];
 MDCButton *button = [[MDCButton alloc] init];
 [button applyTextThemeWithScheme:MyMaterialTheme];
 ```
+<!--</div>-->
+
 <details>
 <summary><b>Adding an icon to a text button</b></summary>
 <br>
@@ -251,8 +272,8 @@ You can apply a theme to the button using `Themes`.
 
 Source Code APIs:
 
-* MDCButton
-    * Class [MDCButton:UIButton](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
+* MDCButton  (a subclass of [UIButton](https://developer.apple.com/documentation/uikit/uibutton))
+    * [Class description](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
@@ -266,13 +287,11 @@ For more information on Material Theming for iOS, go to the [iOS Material Themin
 <!--<div class="material-code-render" markdown="1">-->
 **Swift**
 ```swift
-let MyMaterialTheme = MDCContainerScheme()
 let button = MDCButton()
 button.applyOutlinedTheme(withScheme: MyMaterialTheme)
 ```
 **Objective-C**
 ```objc
-MDCContainerScheme *MyMaterialTheme = [[MDCContainerScheme alloc] init];
 MDCButton *button = [[MDCButton alloc] init];
 
 [self.button applyOutlinedThemeWithScheme:self.MyMaterialTheme];
@@ -307,8 +326,8 @@ You can apply a theme to the button that applies to all elements in a container 
 
 Source Code APIs:
 
-* MDCButton
-    *  Class [MDCButton:UIButton](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
+* MDCButton  (a subclass of [UIButton](https://developer.apple.com/documentation/uikit/uibutton))
+    * [Class description](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 * [MDCContainerScheme class description](https://github.com/material-components/material-components-ios/tree/stable/components/schemes/Container)
@@ -403,8 +422,8 @@ _**Note** A container in iOS refers to a set of components with an applied Mater
 
 Source Code APIs:
 
-* MDCButton
-    *  Class [MDCButton:UIButton](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
+* MDCButton  (a subclass of [UIButton](https://developer.apple.com/documentation/uikit/uibutton))
+    * [Class description](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 * [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
 
@@ -510,7 +529,7 @@ Buttons support [Material Theming](https://material.io/components/buttons/#themi
 
 API and source code:
 
-* `MaterialButton`
+* `MaterialButton` (a subclass of [UIButton](https://developer.apple.com/documentation/uikit/uibutton))
     * [Class description](https://)
     * [GitHub source](https://github.com/material-components/)
     
