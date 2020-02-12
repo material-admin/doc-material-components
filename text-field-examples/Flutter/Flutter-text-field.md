@@ -67,6 +67,8 @@ The following example shows a filled text field.
  ),
 ```
 
+<details><summary><b>Expand to see renderable example code for a filled text field.</b></summary>
+
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 ```
@@ -123,6 +125,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 ```
+</details>
 
 ### Anatomy and key properties
 
@@ -258,8 +261,7 @@ Source code API:
 
 The following examples shows an outlined text field.
 
-_**Copy the image to your platform's assets folder. Use a screenshot of your render.**_
-<img src="assets/outline_text_field_form.png" alt="Outline text field for Flutter">
+<img src="assets/outline_text_field_form.png" alt="Outlined text field for Flutter">
 
 ```
 TextFormField(
@@ -275,7 +277,9 @@ TextFormField(
 ),
 ```
 
-To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
+<details><summary><b>Expand for see renderable example code for an outlined text field.</b></summary>
+ 
+ To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 
 ```
@@ -325,6 +329,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 ```
+</details>
 
 ### Anatomy and key properties
 
