@@ -36,8 +36,58 @@ Source code API:
 
 The following example shows an elevated card. The card has a title, a secondary title, text, and two actions: Action 1 and Action 2 in purple (#6200EE).
 
-<img src="assets/generic-card-type-elevated.png" alt="elevated card example for Flutter showing ...">
+<img src="assets/card-example-here" alt="elevated card example for Flutter showing ...">
 
+The example code below generates the card:
+
+```
+          Card(
+            clipBehavior: Clip.antiAlias,
+            child: Column(
+              children: [
+                ListTile(
+                  leading: Icon(Icons.arrow_drop_down_circle),
+                  title: const Text('Card title 1'),
+                  subtitle: Text(
+                    'Secondary Text',
+                    style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Text(
+                    'Greyhound divisively hello coldly wonderfully marginally far upon excluding.',
+                    style: TextStyle(color: Colors.black.withOpacity(0.6)),
+                  ),
+                ),
+                ButtonBar(
+                  alignment: MainAxisAlignment.start,
+                  children: [
+                    FlatButton(
+                      textColor: const Color(0xFF6200EE),
+                      onPressed: () {
+                        // Perform some action
+                      },
+                      child: const Text('ACTION 1'),
+                    ),
+                    FlatButton(
+                      textColor: const Color(0xFF6200EE),
+                      onPressed: () {
+                        // Perform some action
+                      },
+                      child: const Text('ACTION 2'),
+                    ),
+                  ],
+                ),
+                Image.asset('assets/card-sample-image.jpg'),
+                Image.asset('assets/card-sample-image-2.jpg'),
+              ],
+            ),
+          ),
+```
+
+<details><summary><b>Expand for renderable example code.</b></summary>
+ 
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 ```
 // Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
@@ -173,6 +223,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 ```
+</details>
 
 ### Key properties
 

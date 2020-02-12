@@ -10,7 +10,6 @@ api_doc_root:
 -->
 
 **Instructions to authors:**
-* _Add metadata in the top comment structure for Material.io site integration. Do not add `path` information &ndash; the usage docs should remain on one level_
 * _Follow the instructions in each section &ndash; see the [accompanying examples](button-examples) for futher guidance._
 * _Delete these instructions before submitting your document_
 
@@ -34,15 +33,41 @@ The top app bar provides content and actions related to the current screen. Itâ€
 
 A regular top app bar can transform into a contextual action bar.
 
-### Installing/Importing \<platform API name\>
+Before you can use a top app bar, you will need to do the following:
+* Install the Material top app bar
+* Import JavaScript
 
-_Insert any installation or importatiion instructions here_
+### Installing the Material top app bar
+
+Install `mdc-top-app-bar`:
+
+```
+npm install @material/top-app-bar
+```
+
+### (Optional) Installing the Material icon button
+
+The `MDCTopAppBar` is frequently used with Material icon buttons.
+
+Go to the [`MDCIconButton`](https://github.com/material-components/material-components-web/tree/master/packages/mdc-icon-button) page for installation and import instructions.
+
+### Import JavaScript ripple effect
+
+You can add a JavaScript effect to your top app bar by importing and then instantiating `MDCTopAppBar` in your `*.js` file. See the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md) for more information.
+
+To bundle your `*.js` file, go to the [quickstart page](https://github.com/material-components/material-components-web/blob/master/docs/getting-started.md#quick-start-cdn).
+
+```js
+import {MDCTopAppBar} from '@material/top-app-bar';
+
+// Instantiation
+const topAppBarElement = document.querySelector('.mdc-top-app-bar');
+const topAppBar = new MDCTopAppBar(topAppBarElement);
+```
 
 ### Making the top app bar accessible
 
-_List any accessiblity setting or attributes (such as labels), describe how to use them and link to any guidelines on the m.io site (for example, [how to write a good accessibility label for your component](https://material.io/design/usability/accessibility.html#writing))_
-
-
+_**Add any information related to making the top app bar accessible: e.g., are there any text labels, screen-readable content, etc?**_
 
 ## Regular top app bar
 
@@ -50,9 +75,10 @@ The top app bar provides content and actions related to the current screen. Itâ€
 
 ### Regular top app bar example
 
-\<platform API name\>
-* [Class definition]()
-* [GitHub source]()
+`MDCTopAppBar`
+* [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-top-app-bar)
+`MDCIconButton`
+* [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-icon-button)
 
 The following example shows a top app bar with a page title, a navigation icon, two action icons, and an overflow menu:
 
@@ -166,9 +192,11 @@ When a top app bar transforms into a contextual action bar, the following change
 
 ### Contextual action bar example
 
-\<platform API name\>
-* [Class definition]()
-* [GitHub source]()
+`MDCTopAppBar`
+* [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-top-app-bar)
+`MDCIconButton`
+* [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-icon-button)
+
 
 The following example shows a contextual action bar with a contextual title, a close icon, two contextual action icons, and an overflow menu:
 
