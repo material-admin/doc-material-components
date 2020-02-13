@@ -79,6 +79,69 @@ FlatButton.icon(
 ```
 
 </details>
+<details><summary><b>Expand to see renderable example code for a text button and text button icon.</b></summary>
+
+To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
+
+```
+// Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      home: MyHomePage(title: 'Flutter Demo Text Page'),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            FlatButton(
+              textColor: Color(0xFF6200EE),
+              onPressed: () {
+                // Respond to button press
+              },
+              child: Text("TEXT BUTTON"),
+            ),
+            FlatButton.icon(
+              textColor: Color(0xFF6200EE),
+              onPressed: () {
+                // Respond to button press
+              },
+              icon: Icon(Icons.add, size: 18),
+              label: Text("TEXT BUTTON"),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+```
+</details>
 
 ### Anatomy and key properties
 
@@ -161,7 +224,7 @@ API and source code:
 OutlineButton(
     textColor: Color(0xFF6200EE),        
     highlightedBorderColor: Colors.black.withOpacity(0.12),
-    onPressed() {
+    onPressed: () {
         // Respond to button press
     },
     child: Text("OUTLINED BUTTON"),
@@ -188,6 +251,71 @@ OutlineButton.icon(
 )
 ```
 
+</details>
+<details><summary><b>Expand to see renderable example code for a outline button and outline button icon.</b></summary>
+
+To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
+
+```
+// Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      home: MyHomePage(title: 'Flutter Demo Text Page'),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            OutlineButton(
+              textColor: Color(0xFF6200EE),
+              highlightedBorderColor: Colors.black.withOpacity(0.12),
+              onPressed: () {
+                // Respond to button press
+              },
+              child: Text("OUTLINED BUTTON"),
+            ),
+            OutlineButton.icon(
+              textColor: Color(0xFF6200EE),
+              highlightedBorderColor: Colors.black.withOpacity(0.12),
+              onPressed: () {
+                // Respond to button press
+              },
+              icon: Icon(Icons.add, size: 18),
+              label: Text("OUTLINED BUTTON"),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+```
 </details>
 
 ### Anatomy and key properties
@@ -298,6 +426,71 @@ RaisedButton.icon(
 )
 ```
 
+</details>
+<details><summary><b>Expand to see renderable example code for a raised button and raised button icon.</b></summary>
+
+To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
+
+```
+// Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      home: MyHomePage(title: 'Flutter Demo Text Page'),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            RaisedButton(
+              textColor: Colors.white,
+              color: Color(0xFF6200EE),
+              onPressed: () {
+                // Respond to button press
+              },
+              child: Text('CONTAINED BUTTON'),
+            ),
+            RaisedButton.icon(
+              textColor: Colors.white,
+              color: Color(0xFF6200EE),
+              onPressed: () {
+                // Respond to button press
+              },
+              icon: Icon(Icons.add, size: 18),
+              label: Text("CONTAINED BUTTON"),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+```
 </details>
 
 ### Anatomy and key properties
@@ -460,6 +653,108 @@ ToggleButtons(
 ```
 
 </details>
+<details><summary><b>Expand to see renderable example code for a toggle button and toggle button icon.</b></summary>
+
+To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
+
+```
+// Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      home: MyHomePage(title: 'Flutter Demo Text Page'),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  final isSelected = <bool>[false, false, false];
+
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ToggleButtons(
+              color: Colors.black.withOpacity(0.60),
+              selectedColor: Color(0xFF6200EE),
+              selectedBorderColor: Color(0xFF6200EE),
+              fillColor: Color(0xFF6200EE).withOpacity(0.08),
+              splashColor: Color(0xFF6200EE).withOpacity(0.12),
+              hoverColor: Color(0xFF6200EE).withOpacity(0.04),
+              borderRadius: BorderRadius.circular(4.0),
+              constraints: BoxConstraints(minHeight: 36.0),
+              isSelected: isSelected,
+              onPressed: (index) {
+                // Respond to button selection
+                setState(() {
+                  isSelected[index] = !isSelected[index];
+                });
+              },
+              children: [
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16.0),
+                  child: Text('BUTTON 1'),
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16.0),
+                  child: Text('BUTTON 2'),
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16.0),
+                  child: Text('BUTTON 3'),
+                ),
+              ],
+            ),
+            ToggleButtons(
+              color: Colors.black.withOpacity(0.60),
+              selectedColor: Color(0xFF6200EE),
+              selectedBorderColor: Color(0xFF6200EE),
+              fillColor: Color(0xFF6200EE).withOpacity(0.08),
+              splashColor: Color(0xFF6200EE).withOpacity(0.12),
+              hoverColor: Color(0xFF6200EE).withOpacity(0.04),
+              borderRadius: BorderRadius.circular(4.0),
+              isSelected: isSelected,
+              onPressed: (index) {
+                // Respond to button selection
+                setState(() {
+                  isSelected[index] = !isSelected[index];
+                });
+              },
+              children: [
+                Icon(Icons.favorite),
+                Icon(Icons.visibility),
+                Icon(Icons.notifications),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+```
+</details>
 
 #### Anatomy and key properties
 
@@ -527,6 +822,109 @@ IconButton(
     },
 )
 ```
+
+<details><summary><b>Expand to see renderable example code for a toggle button and toggle button icon.</b></summary>
+
+To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
+
+```
+// Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
+// for details. All rights reserved. Use of this source code is governed by a
+// BSD-style license that can be found in the LICENSE file.
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      home: MyHomePage(title: 'Flutter Demo Text Page'),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  final isSelected = <bool>[false, false, false];
+
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ToggleButtons(
+              color: Colors.black.withOpacity(0.60),
+              selectedColor: Color(0xFF6200EE),
+              selectedBorderColor: Color(0xFF6200EE),
+              fillColor: Color(0xFF6200EE).withOpacity(0.08),
+              splashColor: Color(0xFF6200EE).withOpacity(0.12),
+              hoverColor: Color(0xFF6200EE).withOpacity(0.04),
+              borderRadius: BorderRadius.circular(4.0),
+              constraints: BoxConstraints(minHeight: 36.0),
+              isSelected: isSelected,
+              onPressed: (index) {
+                // Respond to button selection
+                setState(() {
+                  isSelected[index] = !isSelected[index];
+                });
+              },
+              children: [
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16.0),
+                  child: Text('BUTTON 1'),
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16.0),
+                  child: Text('BUTTON 2'),
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16.0),
+                  child: Text('BUTTON 3'),
+                ),
+              ],
+            ),
+            ToggleButtons(
+              color: Colors.black.withOpacity(0.60),
+              selectedColor: Color(0xFF6200EE),
+              selectedBorderColor: Color(0xFF6200EE),
+              fillColor: Color(0xFF6200EE).withOpacity(0.08),
+              splashColor: Color(0xFF6200EE).withOpacity(0.12),
+              hoverColor: Color(0xFF6200EE).withOpacity(0.04),
+              borderRadius: BorderRadius.circular(4.0),
+              isSelected: isSelected,
+              onPressed: (index) {
+                // Respond to button selection
+                setState(() {
+                  isSelected[index] = !isSelected[index];
+                });
+              },
+              children: [
+                Icon(Icons.favorite),
+                Icon(Icons.visibility),
+                Icon(Icons.notifications),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+```
+</details>
 
 ## Theming buttons
 
