@@ -72,7 +72,7 @@ The following example shows a filled text field.
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 ```
-// Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
+// Copyright (c) 2020, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 import 'package:flutter/material.dart';
@@ -283,7 +283,7 @@ TextFormField(
 
 
 ```
-// Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
+// Copyright (c) 2020, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
@@ -475,7 +475,7 @@ The following example shows a filled text field with the [Material Shring Theme]
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/)
 ```
 
-// Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
+// Copyright (c) 2020, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
