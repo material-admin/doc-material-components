@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d015c359-67e8-4ff2-aef6-63b1003d742d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dialogs/dialogs-stub.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/button-examples/Flutter/flutter-button-example.md" beforeDir="false" afterPath="$PROJECT_DIR$/button-examples/Flutter/flutter-button-example.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards-examples/Flutter/Flutter-card-article.md" beforeDir="false" afterPath="$PROJECT_DIR$/cards-examples/Flutter/Flutter-card-article.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text-field-examples/Android/Android-text-field.md" beforeDir="false" afterPath="$PROJECT_DIR$/text-field-examples/Android/Android-text-field.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text-field-examples/Flutter/Flutter-text-field.md" beforeDir="false" afterPath="$PROJECT_DIR$/text-field-examples/Flutter/Flutter-text-field.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/top-app-bar/Flutter/Flutter-top-app-bar.md" beforeDir="false" afterPath="$PROJECT_DIR$/top-app-bar/Flutter/Flutter-top-app-bar.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/top-app-bar/iOS/iOS-top-app-bar.md" beforeDir="false" afterPath="$PROJECT_DIR$/top-app-bar/iOS/iOS-top-app-bar.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +22,8 @@
         <entry file="file://$PROJECT_DIR$/cards-examples/Flutter/Flutter-card-article.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="914">
-                <caret line="294" column="28" selection-start-line="294" selection-start-column="28" selection-end-line="294" selection-end-column="28" />
+              <first_editor relative-caret-position="1558">
+                <caret line="448" column="39" selection-start-line="448" selection-start-column="39" selection-end-line="448" selection-end-column="39" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -37,21 +33,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cards-examples/Flutter/assets/generic-card-type-elevated.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cards-examples/Flutter/assets/generic-card-type-outlined.png">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/text-field-examples/Flutter/Flutter-text-field.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1512">
-                <caret line="72" selection-start-line="72" selection-end-line="72" />
+              <first_editor relative-caret-position="1479">
+                <caret line="128" selection-start-line="70" selection-end-line="128" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -64,8 +50,8 @@
         <entry file="file://$PROJECT_DIR$/button-examples/Flutter/flutter-button-example.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="485">
-                <caret line="588" column="73" selection-start-line="588" selection-start-column="73" selection-end-line="588" selection-end-column="73" />
+              <first_editor relative-caret-position="-6128">
+                <caret line="757" selection-start-line="757" selection-end-line="757" />
               </first_editor>
               <second_editor>
                 <markdownNavigatorState />
@@ -113,6 +99,8 @@
       <find>isselected</find>
       <find>generic-card-type-elevated.png</find>
       <find>shrine_card</find>
+      <find>expand</find>
+      <find>color</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -136,8 +124,8 @@
         <option value="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/lib/main.dart" />
         <option value="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/flutter-button-example.md" />
         <option value="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/lib/toggle_icon_demo.dart" />
-        <option value="$PROJECT_DIR$/text-field-examples/Flutter/Flutter-text-field.md" />
         <option value="$PROJECT_DIR$/cards-examples/card-example-stub.md" />
+        <option value="$PROJECT_DIR$/text-field-examples/Flutter/Flutter-text-field.md" />
         <option value="$PROJECT_DIR$/button-examples/Flutter/flutter-button-example.md" />
         <option value="$PROJECT_DIR$/cards-examples/Flutter/Flutter-card-article.md" />
       </list>
@@ -163,6 +151,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,9 +182,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -207,18 +195,18 @@
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/button-examples/Flutter/assets" />
-      <recent name="$PROJECT_DIR$/cards-examples/Flutter/assets" />
-      <recent name="$PROJECT_DIR$/text-field-examples/Flutter/assets" />
-      <recent name="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/example/assets" />
-      <recent name="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/example" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/assets/images" />
       <recent name="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo/screenshots" />
       <recent name="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/toggle_demo" />
       <recent name="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/example/assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cards-examples/Flutter/assets" />
+      <recent name="$PROJECT_DIR$/button-examples/Flutter/assets" />
+      <recent name="$PROJECT_DIR$/text-field-examples/Flutter/assets" />
+      <recent name="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/example/assets" />
+      <recent name="$PROJECT_DIR$/toggle-button-examples/Flutter-toggle/example" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -254,9 +242,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1440" y="-510" width="1440" height="2408" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.22031474" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.22031474" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -268,11 +257,11 @@
       <window_info anchor="bottom" id="Run" order="1" weight="0.22391304" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32826087" />
-      <window_info anchor="bottom" id="Terminal" order="4" weight="0.1852174" />
+      <window_info anchor="bottom" id="Terminal" order="4" visible="true" weight="0.1852174" />
       <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="6" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" />
-      <window_info anchor="bottom" id="Dart Analysis" order="8" weight="0.32916668" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Dart Analysis" order="8" weight="0.32913044" />
       <window_info anchor="bottom" id="Find" order="9" />
       <window_info anchor="bottom" id="Logcat" order="10" />
       <window_info anchor="bottom" id="Android Profiler" order="11" show_stripe_button="false" />
@@ -484,23 +473,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/text-field-examples/Flutter/Flutter-text-field.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1512">
-            <caret line="72" selection-start-line="72" selection-end-line="72" />
-          </first_editor>
-          <second_editor>
-            <markdownNavigatorState />
-          </second_editor>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/cards-examples/Flutter/assets/card-sample-image.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cards-examples/Flutter/assets/generic-card-type-elevated.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cards-examples/Flutter/assets/generic-card-type-outlined.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/button-examples/Flutter/flutter-button-example.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="485">
-            <caret line="588" column="73" selection-start-line="588" selection-start-column="73" selection-end-line="588" selection-end-column="73" />
+          <first_editor relative-caret-position="-6128">
+            <caret line="757" selection-start-line="757" selection-end-line="757" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
@@ -513,20 +499,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cards-examples/Flutter/assets/card-sample-image.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cards-examples/Flutter/assets/generic-card-type-elevated.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cards-examples/Flutter/assets/generic-card-type-outlined.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/text-field-examples/Flutter/Flutter-text-field.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1479">
+            <caret line="128" selection-start-line="70" selection-end-line="128" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cards-examples/Flutter/Flutter-card-article.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="914">
-            <caret line="294" column="28" selection-start-line="294" selection-start-column="28" selection-end-line="294" selection-end-column="28" />
+          <first_editor relative-caret-position="1558">
+            <caret line="448" column="39" selection-start-line="448" selection-start-column="39" selection-end-line="448" selection-end-column="39" />
           </first_editor>
           <second_editor>
             <markdownNavigatorState />
