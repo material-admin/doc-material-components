@@ -465,9 +465,9 @@ API and source code:
   * [Class definition](https://api.flutter.dev/flutter/material/TextFormField-class.html)
   * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/text_form_field.dart)
     
-The following example shows filled and outlined text fields with the [Material Shring Theme](ttps://material.io/design/material-studies/shrine.html).
+The following example shows a filled text field with the [Material Shring Theme](ttps://material.io/design/material-studies/shrine.html).
 
-<img src="assets/shrine_text_field_form.png" alt="Shrine text field for Flutter">
+<img src="assets/shrine_text_field_form.png" alt="Shrine filled text field for Flutter">
 
 <details>
 <summary><b>Implementing text field theming</b></summary>
