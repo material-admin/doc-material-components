@@ -16,7 +16,7 @@ The text field class consists of the following types:
 * [Filled text](#filled-text)
 * [Outlined text](#outlined-text)
 
-<img src="assets/text-field-generic.png" alt="Text field examples of both filled and outlined types, and each showing both inactive and focused states.">
+<img src="assets/text-field-generic.png" alt="Text field examples, filled and outlined types, showing both inactive and focused states.">
 
 ## Using text fields
 
@@ -43,7 +43,7 @@ Source code API:
 
 The following example shows a filled text field.
 
-<img src="assets/filled_text_field_form.png" alt="filled text field for Flutter">
+<img src="assets/filled_text_field_form.png" alt="filled text field with label, helper text, and check circle icon">
 
 ```
  TextFormField(
@@ -261,7 +261,7 @@ Source code API:
 
 The following examples shows an outlined text field.
 
-<img src="assets/outline_text_field_form.png" alt="Outlined text field for Flutter">
+<img src="assets/outline_text_field_form.png" alt="Outlined text field with label, and error message and icon">
 
 ```
 TextFormField(
@@ -461,18 +461,16 @@ Text fields support [Material Theming](https://material.io/components/text-field
 
 API and source code:
 
-* `\<Component platform API name\>`
-    * [Class description](https://)
-    * [GitHub source](https://github.com/material-components/)
+* `TextFormField` 
+  * [Class definition](https://api.flutter.dev/flutter/material/TextFormField-class.html)
+  * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/text_form_field.dart)
     
 The following example shows filled and outlined text fields with the [Material Shring Theme](ttps://material.io/design/material-studies/shrine.html).
 
-!["Two text fields, one filled, one outlined, with green/black color theming and cut corners."](assets/button-theming.svg)
+<img src="assets/shrine_text_field_form.png" alt="Shrine text field for Flutter">
 
 <details>
 <summary><b>Implementing text field theming</b></summary>
-
-<img src="assets/shrine_text_field_form.png" alt="Shrine text field for Flutter">
 
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/)
 ```
