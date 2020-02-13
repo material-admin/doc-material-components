@@ -84,7 +84,7 @@ FlatButton.icon(
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 ```
-// Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
+// Copyright (c) 2020, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 import 'package:flutter/material.dart';
@@ -159,7 +159,7 @@ A text button has a text label, a transparent container and an optional icon.
 
 | &nbsp; | Property |
 | --- | --- |
-| **Text label** | `child` and `label` on `FlatButton.icon` |
+| **Text label** | `child` (`label` on `FlatButton.icon`) |
 | **Color** | `textColor` |
 | **Disabled Text Color** | `disabledTextColor` |
 | **Typography** | `style` on `child` or `label` |
@@ -257,7 +257,7 @@ OutlineButton.icon(
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 ```
-// Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
+// Copyright (c) 2020, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 import 'package:flutter/material.dart';
@@ -334,7 +334,7 @@ An outlined button has a text label, a stroked container and an optional icon.
 
 | &nbsp; | Property |
 | --- | --- |
-| **Text label** | `child` and `label` on `OutlineButton.icon` |
+| **Text label** | `child` (`label` on `OutlineButton.icon`) |
 | **Color** | `textColor` |
 | **Disabled Text Color** | `disabledTextColor` |
 | **Typography** | `style` on `child` or `label` |
@@ -432,7 +432,7 @@ RaisedButton.icon(
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 ```
-// Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
+// Copyright (c) 2020, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 import 'package:flutter/material.dart';
@@ -510,7 +510,7 @@ A contained button has a text label, a filled container and an optional icon.
     
 | &nbsp; | Property |
 | --- | --- |
-| **Text label** | `child` and `label` on `RaisedButton.icon` |
+| **Text label** | `child` (`label` on `RaisedButton.icon`) |
 | **Color** | `textColor` |
 | **Disabled Text Color** | `disabledTextColor` |
 | **Typography** | `style` on `child` or `label` |
@@ -658,7 +658,7 @@ ToggleButtons(
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 ```
-// Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
+// Copyright (c) 2020, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 import 'package:flutter/material.dart';
@@ -828,7 +828,7 @@ IconButton(
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 ```
-// Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
+// Copyright (c) 2020, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 import 'package:flutter/material.dart';
@@ -984,7 +984,7 @@ theme: ThemeData(
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/)
 ```
 
-// Copyright (c) 2019, the Dart project authors.  Please see the AUTHORS file
+// Copyright (c) 2020, the Dart project authors.  Please see the AUTHORS file
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 import 'package:flutter/material.dart';
