@@ -1,13 +1,10 @@
 <!--docs:
-title: "Text field"
+title: "Text Fields"
 layout: detail
 section: components
-excerpt: "<Platform name> Text field"
-ide_version: "<cIDE name> <compatible IDE version and build number>"
-material_package_version: "<compatible Material platform package version number>"
-iconId:
-path: /
-api_doc_root:
+excerpt: "Material Design text fields for Android."
+iconId: text_field
+path: /catalog/text-field/
 -->
 
 # Text field
@@ -16,10 +13,10 @@ api_doc_root:
 
 The text field class consists of the following types:
 
-* [Filled text](#filled-text)
-* [Outlined text](#outlined-text)
+* [Filled text](#filled-text-field)
+* [Outlined text](#outlined-text-field)
 
-<img src="assets/text-field-generic.png" alt="Text field examples of both filled and outlined types, and each type showing both inactive and focused states. The filled text fields show a gray background and a darker gray activation indicator that is purple when focused. The outlined text fields show a clear background and an outline that is purple when focused">
+!["Text field examples of filled and outlined showing inactive and focused states."](assets/text-field-generic.png)
 
 ## Using text fields
 
@@ -29,7 +26,7 @@ Before you can use Material text fields, you need to add a dependency to the Mat
 
 A text field is composed of a `TextInputLayout` and a `TextInputEditText` as a direct child.
 
-_**Note:** Using an `EditText` as the child might work, but `TextInputEditText` provides accessibility support for the text field and allows `TextInputLayout` greater control over the visual aspects of the input text. If an `EditText` is being used, make sure to set its `android:background` to `@null` so that `TextInputLayout` can set the proper background to it._
+_**Note:** You can use an `EditText` as the child, but `TextInputEditText` provides accessibility support for the text field and allows `TextInputLayout` greater control over the visual aspects of the input text. If an `EditText` is being used, make sure to set its `android:background` to `@null` so that `TextInputLayout` can set the proper background to it._
 
 ### Using `TextInputLayout` programmatically
 
@@ -50,7 +47,7 @@ _**Note:** You should opt to use the `EndIconMode` API instead of setting an end
 <br>
 If set, a button is displayed to toggle between the password being displayed as plain-text or disguised when the `TextInputEditText` is set to display a password.
 
-![image]()
+!["Text field with a password toggle trailing icon."](assets/textfields_password.png)
 
 ```xml
 <com.google.android.material.textfield.TextInputLayout
@@ -71,7 +68,7 @@ If set, a button is displayed to toggle between the password being displayed as 
 <br>
 If set, a button is displayed when text is present and clicking it clears the `EditText` field.
 
-![image]()
+!["Text field with a clear text trailing icon."](assets/textfields_clear.png)
 
 ```xml
 <com.google.android.material.textfield.TextInputLayout
@@ -92,13 +89,13 @@ If set, a button is displayed when text is present and clicking it clears the `E
 <br>
 It is possible to set a custom drawable or button as the `EditText`'s trailing icon via `app:endIconMode="custom"`. You should specify a drawable and content description for the icon, and, optionally, specify custom behaviors.
 
-![image]()
+!["Text field with a custom trailing icon."](assets/textfields_custom.png)
 
 ```xml
 <com.google.android.material.textfield.TextInputLayout
     ...
     app:endIconMode="custom"
-    app:endIconDrawable="@drawable/custom_icon"
+    app:endIconDrawable="@drawable/baseline_favorite_24"
     app:endIconContentDescription="@string/custom_content_desc">
 
   <com.google.android.material.textfield.TextInputEditText
@@ -179,18 +176,7 @@ Source code API:
 The following examples shows a filled text field.
 
 
-_**Copy the image to your platform's assets folder. Use a screenshot of your render.**_
-
-
-<img src="assets/.png" alt="filled text field for Android">
-
-```
-* The label text should read "Label text"
-* The input text should read "Input text"
-* The helper text should read "Helper text"
-* The text field should have a character counter of up to 20 characters
-* The text field should have a "favorite" leading icon
-```
+![Filled text field](assets/textfields_filled.png)
 
 In the layout:
 
@@ -205,23 +191,16 @@ In the layout:
     app:counterEnabled="true"
     app:counterMaxLength="20"
     app:startIconContentDescription="@string/leading_icon_content_desc"
-    app:startIconDrawable="@drawable/ic_favorite_24dp">
+    app:startIconDrawable="@drawable/baseline_favorite_24">
 
   <com.google.android.material.textfield.TextInputEditText
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Input Text"/>
+      android:layout_height="wrap_content"/>
 
 </com.google.android.material.textfield.TextInputLayout>
 ```
 
 _**Note:** Since this is the default type, you don't need to specify a style tag as long as you are using a Material Components Theme. If not, set the style to `@style/Widget.MaterialComponents.TextInputLayout.FilledBox`._
-
-In code:
-
-```kt
-
-```
 
 <details>
 <summary><b>Height variations</b></summary>
@@ -453,17 +432,9 @@ Source code API:
   * [Class definition](https://developer.android.com/reference/com/google/android/material/textfield/TextInputEditText)
   * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/TextInputEditText.java)
 
-The following examples shows an outlined text field.
+The following example shows an outlined text field.
 
-_**Copy the image to your platform's assets folder. Use a screenshot of your render.**_
-<img src="assets/.png" alt="outlined text field for Android.">
-
-```
-* The label text should read "Label text"
-* The input text should read "Input text"
-* The error message text should read "Error message" and display the error message
-* The text field should have a trailing error icon
-```
+![Outlined text field](assets/textfields_outlined.png)
 
 In the layout:
 
@@ -478,14 +449,16 @@ In the layout:
 
   <com.google.android.material.textfield.TextInputEditText
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Input Text"/>
+      android:layout_height="wrap_content"/>
 
 </com.google.android.material.textfield.TextInputLayout>
 ```
 
 In code:
 
+```kt
+outlinedTextField.setError("Error message")
+```
 
 <details>
 <summary><b>Height variations</b></summary>
@@ -696,34 +669,184 @@ See the full list of [styles](https://github.com/material-components/material-co
 
 Text fields support [Material Theming](https://material.io/components/text-fields/#theming) and can be customized in terms of color, typography and shape.
 
+<details>
+<summary><b>Customizing the edit text</b></summary>
+<br>
+The `TextInputLayout` styles apply `TextInputEditText` styles on the edit text by setting a `materialThemeOverlay` that overrides `editTextStyle`.
+
+If you wish to make changes via styling that will affect the edit text, you should first create a `TextInputEditText` style that extends from a `Widget.MaterialComponents.TextInputEditText.*` style:
+
+```xml
+<style name="Widget.App.TextInputEditText" parent="Widget.MaterialComponents.TextInputEditText.*">
+    <!-- Your edit text customization changes go here. -->
+</style>
+```
+
+Then, you should create a theme overlay that extends from a `ThemeOverlay.MaterialComponents.TextInputEditText.*` style, and set `editTextStyle` to your previous `TextInputEditText` style:
+
+```xml
+<style name="ThemeOverlay.App.TextInputEditText" parent="ThemeOverlay.MaterialComponents.TextInputEditText.*">
+    <item name="editTextStyle">@style/Widget.App.TextInputEditText</item>
+  <!--
+    Note: here you can also change theme attributes, such as colorControlActivated, which controls the cursor color (and which default
+    is ?attr/colorPrimary), for example:
+    <item name="colorControlActivated">@color/orange</item>
+  -->
+</style>
+```
+
+Then, create a `TextInputLayout` style that uses the theme overlay:
+
+```xml
+<style name="Widget.App.TextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.*">
+    <item name="materialThemeOverlay">@style/ThemeOverlay.App.TextInputEditText</item>
+    <!-- Any TextInputLayout customization changes also go here. -->
+</style>
+```
+
+Finally, you can set the `TextInputLayout` style as the default in your app theme:
+  
+```xml
+<item name="textInputStyle">@style/Widget.AppTheme.TextInputLayout</item>
+```
+  
+</details>
+
 ### Text field theming example
 
 API and source code:
 
-* `\<Component platform API name\>`
-    * [Class description](https://)
-    * [GitHub source](https://github.com/material-components/)
-    
-The following example shows filled and outlined text fields with Material Theming.
+* `TextInputLayout` 
+  * [Class definition](https://developer.android.com/reference/com/google/android/material/textfield/TextInputLayout)
+  * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/TextInputLayout.java)
 
-!["Two text fields, one filled, one outlined, with green/black color theming and cut corners."](assets/button-theming.svg)
+* `TextInputEditText` 
+  * [Class definition](https://developer.android.com/reference/com/google/android/material/textfield/TextInputEditText)
+  * [GitHub source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/TextInputEditText.java)
+    
+The following examples show filled and outlined text fields with Material Theming.
+  
+!["Filled text field theming with pink and brown colors and cut corners"](assets/textfields_filled_theming.png)
+
+!["Outlined text field theming with pink and brown colors and cut corners"](assets/textfields_outlined_theming.png)
+  
 
 <details>
 <summary><b>Implementing text field theming</b></summary>
+<br>
 
-_Use the [Shrine theme](https://material.io/design/material-studies/shrine.html) for this example_
+Using theme attributes and styles in `res/values/styles.xml` (themes all text fields and affects other components):
+
+```xml
+<style name="Theme.App" parent="Theme.MaterialComponents.*">
+    ...
+    <item name="colorPrimary">#FEDBD0</item>
+    <item name="colorOnPrimary">#442C2E</item>
+    <item name="colorOnSecondary">#442C2E</item>
+    <item name="colorSurface">#FFFBFA</item>
+    <item name="colorOnSurface">#442C2E</item>
+    <item name="colorError">#C5032B</item>
+    <item name="colorOnError">#FFFBFA</item>
+    <item name="colorControlActivated">#442C2E</item>
+    <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
+</style>
+
+<style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+    <item name="cornerFamily">cut</item>
+    <item name="cornerSize">4dp</item>
+</style>
+  
+<!-- You still need the individual text field styles below to change non-theme attributes -->
+  
+<style name="Widget.App.TextInputLayout.FilledBox" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+    <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.App.TextInputLayout.FilledBox</item>
+    <item name="hintTextColor">@null</item>
+    <item name="android:textColorHint">@null</item>
+    <item name="hintTextAppearance">@style/TextAppearance.App.HintText</item>
+    <item name="boxBackgroundColor">@null</item>
+</style>
+  
+<style name="Widget.App.TextInputLayout.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+    <item name="hintTextColor">@null</item>
+    <item name="android:textColorHint">@null</item>
+    <item name="hintTextAppearance">@style/TextAppearance.App.HintText</item>
+</style>
+  
+<style name="TextAppearance.App.HintText" parent="TextAppearance.MaterialComponents.Subtitle2">
+    <item name="android:textColor">#442C2E</item>
+</style>
+  
+<style name="ShapeAppearanceOverlay.App.TextInputLayout.FilledBox" parent="ShapeAppearance.App.SmallComponent">
+    <item name="cornerSizeBottomLeft">@dimen/mtrl_textinput_box_corner_radius_small</item>
+    <item name="cornerSizeBottomRight">@dimen/mtrl_textinput_box_corner_radius_small</item>
+</style>
+
 ```
-    * The label text should read "Label text"
-    * The input text should read "Input text"
-    * The helper text should read "Helper text"
-    * The text field should have a character counter of up to 20 characters
-    * The text field should have a "favorite" leading icon
-    * The container should have cut corners instead of rounded
-* Include one outlined text field with the following:
-    * The label text should read "Label text"
-    * The input text should read "Input text"
-    * The error message text should read "Error message" and display the error message
-    * The text field should have a trailing error icon
-    * The container should have cut corners instead of rounded
+
+or using default style theme attributes, styles and theme overlays (themes all text fields but does not affect other components):
+
+```xml
+<style name="Theme.App" parent="Theme.MaterialComponents.*">
+    ...
+    <!-- Having the custom outlined text field as the default style. -->
+    <item name="textInputStyle">@style/Widget.App.TextInputLayout.OutlinedBox</item>
+</style>
+
+<style name="Widget.App.TextInputLayout.FilledBox" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+    <item name="materialThemeOverlay">@style/ThemeOverlay.App.TextInputEditText.FilledBox</item>
+    <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+    <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.App.TextInputLayout.FilledBox</item>
+    <item name="hintTextColor">@null</item>
+    <item name="android:textColorHint">@null</item>
+    <item name="hintTextAppearance">@style/TextAppearance.App.HintText</item>
+    <item name="boxBackgroundColor">@null</item>
+</style>
+
+<style name="Widget.App.TextInputLayout.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+    <item name="materialThemeOverlay">@style/ThemeOverlay.App.TextInputEditText.OutlinedBox</item>
+    <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+    <item name="hintTextColor">@null</item>
+    <item name="android:textColorHint">@null</item>
+    <item name="hintTextAppearance">@style/TextAppearance.App.HintText</item>
+</style>
+
+<style name="ThemeOverlay.App.TextInputEditText" parent="ThemeOverlay.MaterialComponents.TextInputEditText.*">
+    <item name="colorPrimary">#FEDBD0</item>
+    <item name="colorSecondary">#FEEAE6</item>
+    <item name="colorOnSecondary">#442C2E</item>
+    <item name="colorSurface">#FFFBFA</item>
+    <item name="colorOnSurface">#442C2E</item>
+    <item name="colorError">#C5032B</item>
+    <item name="colorOnError">#FFFBFA</item>
+    <item name="colorControlActivated">#442C2E</item>
+</style>
+
+<style name="ThemeOverlay.App.TextInputEditText.FilledBox" parent="ThemeOverlay.App.TextInputEditText">
+    <item name="editTextStyle">@style/Widget.MaterialComponents.TextInputEditText.FilledBox</item>
+</style>
+  
+<style name="ThemeOverlay.App.TextInputEditText.OutlinedBox" parent="ThemeOverlay.App.TextInputEditText">
+    <item name="editTextStyle">@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox</item>
+</style>
+  
+<style name="TextAppearance.App.HintText" parent="TextAppearance.MaterialComponents.Subtitle2">
+    <item name="android:textColor">#442C2E</item>
+</style>
+  
+<style name="ShapeAppearanceOverlay.App.TextInputLayout.FilledBox" parent="ShapeAppearance.App.SmallComponent">
+    <item name="cornerSizeBottomLeft">@dimen/mtrl_textinput_box_corner_radius_small</item>
+    <item name="cornerSizeBottomRight">@dimen/mtrl_textinput_box_corner_radius_small</item>
+</style>
 ```
+
+or using one of the styles in the layout (affects only this specific text field):
+
+```xml
+<TextInputLayout
+    ...
+    style="@style/Widget.App.TextInputLayout.*"
+/>
+```
+  
 </details>
