@@ -1,13 +1,10 @@
 <!--docs:
-title: "Text field"
+title: "Text Fields"
 layout: detail
 section: components
-excerpt: "<Platform name> Text field"
-ide_version: "<cIDE name> <compatible IDE version and build number>"
-material_package_version: "<compatible Material platform package version number>"
-iconId:
-path: /
-api_doc_root:
+excerpt: "Material Design text fields for Android."
+iconId: text_field
+path: /catalog/text-field/
 -->
 
 # Text field
@@ -19,7 +16,7 @@ The text field class consists of the following types:
 * [Filled text](#filled-text-field)
 * [Outlined text](#outlined-text-field)
 
-!["Text field examples of both filled and outlined types, and each type showing both inactive and focused states. The filled text fields show a gray background and a darker gray activation indicator that is purple when focused. The outlined text fields show a clear background and an outline that is purple when focused"](assets/text-field-generic.png)
+!["Text field examples of filled and outlined showing inactive and focused states."](assets/text-field-generic.png)
 
 ## Using text fields
 
@@ -29,7 +26,7 @@ Before you can use Material text fields, you need to add a dependency to the Mat
 
 A text field is composed of a `TextInputLayout` and a `TextInputEditText` as a direct child.
 
-_**Note:** Using an `EditText` as the child might work, but `TextInputEditText` provides accessibility support for the text field and allows `TextInputLayout` greater control over the visual aspects of the input text. If an `EditText` is being used, make sure to set its `android:background` to `@null` so that `TextInputLayout` can set the proper background to it._
+_**Note:** You can use an `EditText` as the child, but `TextInputEditText` provides accessibility support for the text field and allows `TextInputLayout` greater control over the visual aspects of the input text. If an `EditText` is being used, make sure to set its `android:background` to `@null` so that `TextInputLayout` can set the proper background to it._
 
 ### Using `TextInputLayout` programmatically
 
