@@ -36,35 +36,36 @@ Before using the `MDCButtons` API to implement its types you must install `MCDBu
 
     **Note** For more information about themes, go to the [Theming page](https://material.io/develop/ios/components/theming/) for iOS.
 <!--<div class="material-code-render" markdown="1">-->
-     **Swift**
-     ```swift
-     import MaterialComponents.MaterialButtons
-     import MaterialComponents.MaterialButtons_Theming
-     /*...*/
-     let <local theme name> = <theme name>
-     let fab = MDCButton()
-     ```
-     **Objective-C**
-     ```objc
-     #import "MaterialButtons.h"
-     #import <MaterialComponentsBeta/MaterialButtons+Theming.h>
-     /*...*/
-     <theme name> *<local theme name> = [[<theme name> alloc] init];
-     MDCButton *fab = [[MDCButton alloc] init];
-     ```
+   **Swift**
+   ```swift
+   import MaterialComponents.MaterialButtons
+   import MaterialComponents.MaterialButtons_Theming
+   /*...*/
+   let <local theme name> = <theme name>
+   let fab = MDCButton()
+   ```
+   
+   **Objective-C**
+   ```objc
+   #import "MaterialButtons.h"
+   #import <MaterialComponentsBeta/MaterialButtons+Theming.h>
+   /*...*/
+   <theme name> *<local theme name> = [[<theme name> alloc] init];
+   MDCButton *fab = [[MDCButton alloc] init];
+   ```
 <!--</div>-->
 
     For our examples, we used the following theming values:
 
 <!--<div class="material-code-render" markdown="1">-->
-     **Swift**
-     ```swift
-     let MyMaterialTheme = MDCContainerScheme()
-     ```
-     **Objective-C**
-     ```objc
-     MDCContainerScheme *MyMaterialTheme = [
-     ```
+   **Swift**
+   ```swift
+   let MyMaterialTheme = MDCContainerScheme()
+   ```
+   **Objective-C**
+   ```objc
+   MDCContainerScheme *MyMaterialTheme = [
+   ```
 <!--</div>-->
 
 
@@ -77,30 +78,30 @@ To help make your FABs usable to as many users as possible, apply the following:
 
 * Set an appropriate [`accessibilityLabel`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) value if your button does not have a title or only has an icon:
 <!--<div class="material-code-render" markdown="1">-->
-    **Objective-C**
-    ```objc
-    fab.accessibilityLabel = @"Create";
-    ```
-    **Swift**
-    ```swift
-    fab.accessibilityLabel = "Create"
-    ```
+  **Objective-C**
+  ```objc
+  fab.accessibilityLabel = @"Create";
+  ```
+  **Swift**
+  ```swift
+  fab.accessibilityLabel = "Create"
+  ```
 <!--</div>-->
 
 * Set the minimum [visual height to
 36 and miniumum visual width to 64](https://material.io/design/components/buttons.html#specs)
 <!--<div class="material-code-render" markdown="1">-->
-    **Objective-C**
+  **Objective-C**
 
-    ```objc
-    fab.minimumSize = CGSizeMake(64, 36);
-    ```
+  ```objc
+  fab.minimumSize = CGSizeMake(64, 36);
+  ```
 
-    **Swift**
+  **Swift**
 
-    ```swift
-    fab.minimumSize = CGSize(width: 64, height: 48)
-    ```
+  ```swift
+  fab.minimumSize = CGSize(width: 64, height: 48)
+  ```
 <!--</div>-->
 
 
@@ -110,26 +111,26 @@ wide](https://material.io/design/layout/spacing-methods.html#touch-click-targets
 targets](https://material.io/design/layout/spacing-methods.html#touch-click-targets)
 in the spec.
 <!--<div class="material-code-render" markdown="1">-->
-    **Objective C**
-    ```objc
-    CGFloat verticalInset = MIN(0, -(48 - CGRectGetHeight(fab.bounds)) / 2);
-    CGFloat horizontalInset = MIN(0, -(48 - CGRectGetWidth(fab.bounds)) / 2);
-    fab.hitAreaInsets = UIEdgeInsetsMake(verticalInset, horizontalInset, verticalInset, horizontalInset);
-    ```
+  **Objective C**
+  ```objc
+  CGFloat verticalInset = MIN(0, -(48 - CGRectGetHeight(fab.bounds)) / 2);
+  CGFloat horizontalInset = MIN(0, -(48 - CGRectGetWidth(fab.bounds)) / 2);
+  fab.hitAreaInsets = UIEdgeInsetsMake(verticalInset, horizontalInset, verticalInset, horizontalInset);
+  ```
 
-    **Swift**
-    ```swift
-    let buttonVerticalInset =
-    min(0, -(kMinimumAccessibleButtonSize.height - button.bounds.height) / 2);
-    let buttonHorizontalInset =
-    min(0, -(kMinimumAccessibleButtonSize.width - button.bounds.width) / 2);
-    button.hitAreaInsets =
-    UIEdgeInsetsMake(buttonVerticalInset, buttonHorizontalInset,
-    buttonVerticalInset, buttonHorizontalInset);
-    ```
+  **Swift**
+  ```swift
+  let buttonVerticalInset =
+  min(0, -(kMinimumAccessibleButtonSize.height - button.bounds.height) / 2);
+  let buttonHorizontalInset =
+  min(0, -(kMinimumAccessibleButtonSize.width - button.bounds.width) / 2);
+  button.hitAreaInsets =
+  UIEdgeInsetsMake(buttonVerticalInset, buttonHorizontalInset,
+  buttonVerticalInset, buttonHorizontalInset);
+  ```
 <!--</div>-->
 
-    _**Note** There are [some](https://material.io/design/components/buttons.html#toggle-button) clear [exceptions](https://material.io/design/components/app-bars-bottom.html#specs) for these rules. Please adjust your buttons sizes accordingly._
+  _**Note** There are [some](https://material.io/design/components/buttons.html#toggle-button) clear [exceptions](https://material.io/design/components/app-bars-bottom.html#specs) for these rules. Please adjust your buttons sizes accordingly._
 
 * **Optional** Set an appropriate `accessibilityHint`
 
