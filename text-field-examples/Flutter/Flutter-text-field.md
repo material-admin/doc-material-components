@@ -67,8 +67,6 @@ The following example shows a filled text field.
  ),
 ```
 
-<details><summary><b>Expand to see renderable example code for a filled text field.</b></summary>
-
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 ```
@@ -122,7 +120,6 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 ```
-</details>
 
 ### Anatomy and key properties
 
@@ -136,9 +133,7 @@ class _MyHomePageState extends State<MyHomePage> {
 1. Activation indicator
 1. Helper text (optional)
 
-<details>
-<summary><b>Container</b> attributes</summary>
-<br>
+<b>Container</b>
 
 | &nbsp; | Property | 
 | --- | --- | 
@@ -149,12 +144,7 @@ class _MyHomePageState extends State<MyHomePage> {
 | **Elevation** | N/A|
 | **Ripple color** | N/A|
 
-</details>
-
-
-<details>
-<summary><b>Leading icon</b> (optional) attributes</summary>
-<br>
+<b>Leading icon</b> (optional)</b>
 
 | &nbsp; | Property |
 | --- | --- |
@@ -164,13 +154,7 @@ class _MyHomePageState extends State<MyHomePage> {
 | **Gravity** | N/A |
 | **Padding** | N/A |
 
-
-</details>
-
-
-<details>
-<summary><b>Label text</b> attributes</summary>
-<br>
+<b>Label text</b>
 
 | &nbsp; | Property |
 | --- | --- | 
@@ -178,12 +162,7 @@ class _MyHomePageState extends State<MyHomePage> {
 | **Typography** | Use `decoration`, within `decoration` set `labelStyle` property |
 | **Color** | Use `decoration`, within `decoration` set `labelStyle` property |
 
-</details>
-
-
-<details>
-<summary><b>Input text</b> attributes</summary>
-<br>
+<b>Input text</b>
 
 | &nbsp; | Property |
 | --- | --- |
@@ -191,12 +170,7 @@ class _MyHomePageState extends State<MyHomePage> {
 | **Typography** | `style` |
 | **Color** | `style` |
 
-</details>
-
-
-<details>
-<summary><b>Trailing icon</b> (optional) attributes</summary>
-<br>
+<b>Trailing icon (optional)</b>
 
 | &nbsp; | Property |
 | --- | --- |
@@ -206,12 +180,7 @@ class _MyHomePageState extends State<MyHomePage> {
 | **Gravity** | N/A |
 | **Padding** | N/A |
 
-</details>
-
-
-<details>
-<summary><b>Activation indicator</b> attributes</summary>
-<br>
+<b>Activation indicator</b>
 
 | &nbsp; | Property|
 | --- | --- |
@@ -219,12 +188,7 @@ class _MyHomePageState extends State<MyHomePage> {
 | **Stroke width** | Use `decoration`, within `decoration` set `FocusBorder`|
 | **Ripple color** | N/A|
 
-</details>
-
-
-<details>
-<summary><b>Helper text</b> (optional) attributes</summary>
-<br>
+<b>Helper text (optional)</b> 
 
 | &nbsp; | Property|
 | --- | --- |
@@ -232,17 +196,13 @@ class _MyHomePageState extends State<MyHomePage> {
 | **Typography** | Use `decoration`, within `decoration` set `helperStyle` property |
 | **Color** | Use `decoration`, within `decoration` set `helperStyle` property |
 
-</details>
-
-<summary><b>Styles</b></summary>
-<br>
+<b>Styles</b>
 
 | &nbsp; | Property |
 | --- | --- |
 | **Default style** | `style` |
 | **Icon style** | Within `style` set `icon` |
 
-</details>
 
 ## Outlined text
 
@@ -274,8 +234,6 @@ TextFormField(
 ),
 ```
 
-<details><summary><b>Expand for see renderable example code for an outlined text field.</b></summary>
- 
  To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 
@@ -338,9 +296,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 Note: If ThemeData has been declared in the MaterialApp widget it will override the theme that was manually input it like the activation indicator.
 
-<details>
-<summary><b>Container</b> attributes</summary>
-<br>
+<b>Container</b>
 
 | &nbsp; | Property |
 | --- | --- |
@@ -351,12 +307,7 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 | **Elevation** | N/A|
 | **Ripple color** | N/A|
 
-</details>
-
-
-<details>
-<summary><b>Leading icon</b> (optional) attributes</summary>
-<br>
+<b>Leading icon (optional)</b>
 
 | &nbsp; | Property |
 | --- | --- |
@@ -366,13 +317,7 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 | **Gravity** | N/A |
 | **Padding** | N/A |
 
-
-</details>
-
-
-<details>
-<summary><b>Label text</b> attributes</summary>
-<br>
+<b>Label text</b>
 
 | &nbsp; | Property |
 | --- | --- |
@@ -380,12 +325,7 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 | **Typography** | Use `decoration`, within `decoration` set `labelStyle` property |
 | **Color** | Use `decoration`, within `decoration` set `labelStyle` property |
 
-</details>
-
-
-<details>
-<summary><b>Input text</b> attributes</summary>
-<br>
+<b>Input text</b>
 
 | &nbsp; | Property |
 | --- | --- |
@@ -393,12 +333,7 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 | **Typography** | `style` |
 | **Color** | `style` |
 
-</details>
-
-
-<details>
-<summary><b>Trailing icon</b> (optional) attributes</summary>
-<br>
+<b>Trailing icon (optional)</b>
 
 | &nbsp; | Property |
 | --- | --- |
@@ -408,12 +343,7 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 | **Gravity** | N/A |
 | **Padding** | N/A |
 
-</details>
-
-
-<details>
-<summary><b>Activation indicator</b> attributes</summary>
-<br>
+<b>Activation indicator</b>
 
 | &nbsp; | Property |
 | --- | --- |
@@ -421,12 +351,7 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 | **Stroke width** | Use `decoration`, within `decoration` set `FocusBorder`|
 | **Ripple color** | N/A|
 
-</details>
-
-
-<details>
-<summary><b>Helper text</b> (optional) attributes</summary>
-<br>
+<b>Helper text (optional) </b>
 
 | &nbsp; | Property |
 | --- | --- |
@@ -434,17 +359,13 @@ Note: If ThemeData has been declared in the MaterialApp widget it will override 
 | **Typography** | Use `decoration`, within `decoration` set `helperStyle` property |
 | **Color** | Use `decoration`, within `decoration` set `helperStyle` property |
 
-</details>
-
-<summary><b>Styles</b></summary>
-<br>
+<b>Styles</b>
 
 | &nbsp; | Property |
 | --- | --- |
 | **Default style** | `style` |
 | **Icon style** | Within `style` set `icon` |
 
-</details>
 
 ## Theming text fields
 
@@ -462,8 +383,6 @@ The following example shows a filled text field with the [Material Shring Theme]
 
 <img src="assets/shrine_text_field_form.png" alt="Shrine filled text field for Flutter">
 
-<details>
-<summary><b>Implementing text field theming</b></summary>
 
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/)
 ```
@@ -630,4 +549,4 @@ const Color shrineBackgroundWhite = Colors.white;
 const defaultLetterSpacing = 0.03;
 
 ```
-</details>
+
