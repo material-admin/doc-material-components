@@ -32,8 +32,6 @@ _**Instructions**_
 
 ### Install `MDCCards`
 
-<details><summary>Expand for installation instructions for <code></code>MDCCards</summary>
-
 Before using the `MDCCards` API to implement its types, you must install `MDCCards`. In you source files import the component and then apply your theme:
 
 1. Use CocoaPods to install `MDCCards`
@@ -110,7 +108,6 @@ Before using the `MDCCards` API to implement its types, you must install `MDCCar
 	    ratingView.accessibilityValue = @(product.averageRating).stringValue;
 	  ```
 <!--</div>-->
-</details>
 
 ## Card
  
@@ -153,9 +150,6 @@ Source code APIs:
 The following example shows 4 images arranged in a 2-by-2 array with a favorite icon in the upper-right corner of each image.
 
 <img src="assets/iOS-toggle-icon.png" alt="iOS toggle example showing 4 images in an array with a favorite icon in the upper-right corner of each image.">
-
-<details><summary><b>Expand for example code for cards showing a favorites icon button</b></summary>
-
 
 It uses the class `ToggleButtonCell` &ndash; which extends the `MDCCardCollectionCell` &ndash; to display the image and the icon, and provide gesture recognition for each cell of the array.
 
@@ -393,7 +387,6 @@ extension ToggleButtonCollectionViewController {
 The class `ToggleButtonCollectionViewController` &ndash; which extends `UICollectionViewController` &ndash; can then load the images and icons in a list, and `ToggleButtonCollectionViewController` can then be instantiated to display each image with an icon in an array.
 
 
-</details>
 
 ### Key properties
 
@@ -410,9 +403,7 @@ The class `ToggleButtonCollectionViewController` &ndash; which extends `UICollec
 7. **Buttons [optional]**
 8. **Icons [optional]** 
 
-
-<details>
-<summary><b>Container</b> attributes</summary>
+<b>Container</b>
 
 
 |  | Attribute | Related method(s) | Default value |
@@ -425,23 +416,14 @@ The class `ToggleButtonCollectionViewController` &ndash; which extends `UICollec
 |Container minimum height|  | | |
 |Container elevation | | | |
 
-
-</details>
-
-<details>
-<summary><b>Thumbnail</b> attributes (optional)</summary>
+<b>Thumbnail (optional)</b>
 
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
 |Desc. 1 | | | |
 
-
-
-</details>
-
-<details>
-<summary><b>Header text</b> attributes (optional)</summary>
+<b>Header text (optional)</b>
 
 
 |  | Attribute | Related method(s) | Default value |
@@ -450,12 +432,22 @@ The class `ToggleButtonCollectionViewController` &ndash; which extends `UICollec
 | Text color | | | |
 | Typography | | | |
 
+<b>Subhead (optional)</b>
+
+|  | Attribute | Related method(s) | Default value |
+|---|---|---|---|
+| Text label | | | |
+| Text color | | | |
+| Typography | | | |
+
+<b>Media (optional)</b>
 
 
-</details>
+|  | Attribute | Related method(s) | Default value |
+|---|---|---|---|
+|Desc. 1 | | | |
 
-<details>
-<summary><b>Subhead</b> attributes (optional)</summary>
+<b>Supporting text (optional)</b>
 
 
 |  | Attribute | Related method(s) | Default value |
@@ -464,63 +456,19 @@ The class `ToggleButtonCollectionViewController` &ndash; which extends `UICollec
 | Text color | | | |
 | Typography | | | |
 
+<b>Button (optional)</b>
 
+|  | Attribute | Related method(s) | Default value |
+|---|---|---|---|
+|Desc. 1 | | | |
 
-</details>
-
-<details>
-<summary><b>Media</b> attributes (optional)</summary>
+<b>Icon (optional)</b>
 
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
 |Desc. 1 | | | |
 
-
-
-
-</details>
-
-<details>
-<summary><b>Supporting text</b> attributes (optional)</summary>
-
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-| Text label | | | |
-| Text color | | | |
-| Typography | | | |
-
-
-
-
-</details>
-
-<details>
-<summary><b>Button</b> attributes (optional)</summary>
-
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-
-
-</details>
-
-<details>
-<summary><b>Icon</b> attributes (optional)</summary>
-
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-
-
-</details>
 
 
 ## Theming Cards
