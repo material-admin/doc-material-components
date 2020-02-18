@@ -19,8 +19,6 @@ Only use a FAB if it is the most suitable way to present a screen’s primary ac
 
 ### Install `MDCButtons`
 
-<details><summary><b>Expand for installation instructions for <code>MDCButtons</code></b></summary>
-
 MDCFloatingButton is a subclass of [MDCButton](ios-button.md) that implements the Material Design floating action button style and behavior. Floating action buttons should be provided with a templated image for their normal state and then themed accordingly.
 
 Before using the `MDCButtons` API to implement its types you must install `MCDButtons`. In your source files import the component, and then apply your theme:
@@ -74,9 +72,6 @@ Before using the `MDCButtons` API to implement its types you must install `MCDBu
    MDCContainerScheme *MyMaterialTheme = [[MDCFloatingButton alloc] init]
    ```
 <!--</div>-->
-
-
-</details>
 
 
 ### Making FABs accessible
@@ -173,7 +168,7 @@ Source Code APIs:
 <!--To do:
 * add example code
 * add example code render screenshot
--->
+
 
 ### Anatomy and key properties
 
@@ -185,9 +180,7 @@ A FAB has a container and an icon.
 1. Icon
 <!-- Tables can be copy/pasted from iOS-buttons.md when they're done -->
 
-<details>
-<summary><b>Container</b> attributes</summary>
-<br>
+<!--
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -212,8 +205,7 @@ A FAB has a container and an icon.
 | **Gravity** (position relative to text label) | | | |
 | **Padding** (space between icon and text label) | | | |
 
-
-</details>
+-->
 
 <!-- to do:
 Add Shrine theming example
@@ -235,10 +227,6 @@ The following example shows a FAB with Material Theming.
 
 !["FAB theming examples for iOS with pink and black FAB"](assets/FAB-theming.png)
 
-<details>
-<summary><b>Implementing FAB theming</b></summary>
-<br>
-
 [Shrine theme](https://material.io/design/material-studies/shrine.html)
 ```
 Include source code implementing FAB with a plus icon using "Shrine" theme.
@@ -246,6 +234,5 @@ Include source code implementing FAB with a plus icon using "Shrine" theme.
 Upload a screenshot of the render and update the image.
 ```
 
-</details>
 
 -->
