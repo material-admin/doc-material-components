@@ -21,6 +21,8 @@ Only use a FAB if it is the most suitable way to present a screen’s primary ac
 
 <details><summary><b>Expand for installation instructions for <code>MDCButtons</code></b></summary>
 
+MDCFloatingButton is a subclass of [MDCButton](ios-button.md) that implements the Material Design floating action button style and behavior. Floating action buttons should be provided with a templated image for their normal state and then themed accordingly.
+
 Before using the `MDCButtons` API to implement its types you must install `MCDButtons`. In your source files import the component, and then apply your theme:
 1. Install `MDCButtons`
    * Use CocoaPods to install `MDCButtons`
@@ -32,7 +34,7 @@ Before using the `MDCButtons` API to implement its types you must install `MCDBu
        ```bash
        pod install
        ```
-1. Import `MDCButtons` and MDC button theming and initialize `MDCButtons` using `alloc`/`init`. Initialize your theme  before applying it to your button.
+1. Import `MDCButtons` and MDC button theming and initialize `MDCButtons` using `alloc`/`init`. You will need to Initialize your theme  before applying it to your button.
 
     **Note** For more information about themes, go to the [Theming page](https://material.io/develop/ios/components/theming/) for iOS.
 <!--<div class="material-code-render" markdown="1">-->
@@ -41,8 +43,10 @@ Before using the `MDCButtons` API to implement its types you must install `MCDBu
    import MaterialComponents.MaterialButtons
    import MaterialComponents.MaterialButtons_Theming
    /*...*/
-   let <local theme name> = <theme name>
-   let fab = MDCButton()
+  let plusImage = UIImage(named: "plus").withRenderingMode(.alwaysTemplate)
+  let floatingButton = MDCFloatingButton()
+  floatingButton.setImage(plusImage, forState: .normal)
+  floatingButton.applySecondaryTheme(withScheme: containerScheme)
    ```
    
    **Objective-C**
@@ -50,8 +54,11 @@ Before using the `MDCButtons` API to implement its types you must install `MCDBu
    #import "MaterialButtons.h"
    #import <MaterialComponentsBeta/MaterialButtons+Theming.h>
    /*...*/
-   <theme name> *<local theme name> = [[<theme name> alloc] init];
-   MDCButton *fab = [[MDCButton alloc] init];
+   UIImage *plusImage =
+    [[UIImage imageNamed:@"plus"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+   MDCFloatingButton *floatingButton = [[MDCFloatingButton alloc] init];
+   [floatingButton setImage:plusImage forState:UIControlStateNormal];
+   [self.floatingButton applySecondaryThemeWithScheme: self.containerScheme];
    ```
 <!--</div>-->
 
@@ -80,11 +87,11 @@ To help make your FABs usable to as many users as possible, apply the following:
 <!--<div class="material-code-render" markdown="1">-->
   **Objective-C**
   ```objc
-  fab.accessibilityLabel = @"Create";
+  floatingButton.accessibilityLabel = @"Create";
   ```
   **Swift**
   ```swift
-  fab.accessibilityLabel = "Create"
+  floatingButton.accessibilityLabel = "Create"
   ```
 <!--</div>-->
 
@@ -94,13 +101,13 @@ To help make your FABs usable to as many users as possible, apply the following:
   **Objective-C**
 
   ```objc
-  fab.minimumSize = CGSizeMake(64, 36);
+  floatingButton.minimumSize = CGSizeMake(64, 36);
   ```
 
   **Swift**
 
   ```swift
-  fab.minimumSize = CGSize(width: 64, height: 48)
+  floatingButton.minimumSize = CGSize(width: 64, height: 48)
   ```
 <!--</div>-->
 
@@ -115,7 +122,7 @@ in the spec.
   ```objc
   CGFloat verticalInset = MIN(0, -(48 - CGRectGetHeight(fab.bounds)) / 2);
   CGFloat horizontalInset = MIN(0, -(48 - CGRectGetWidth(fab.bounds)) / 2);
-  fab.hitAreaInsets = UIEdgeInsetsMake(verticalInset, horizontalInset, verticalInset, horizontalInset);
+  floatingButton.hitAreaInsets = UIEdgeInsetsMake(verticalInset, horizontalInset, verticalInset, horizontalInset);
   ```
 
   **Swift**
@@ -124,7 +131,7 @@ in the spec.
   min(0, -(kMinimumAccessibleButtonSize.height - button.bounds.height) / 2);
   let buttonHorizontalInset =
   min(0, -(kMinimumAccessibleButtonSize.width - button.bounds.width) / 2);
-  button.hitAreaInsets =
+  floatingButton.hitAreaInsets =
   UIEdgeInsetsMake(buttonVerticalInset, buttonHorizontalInset,
   buttonVerticalInset, buttonHorizontalInset);
   ```
