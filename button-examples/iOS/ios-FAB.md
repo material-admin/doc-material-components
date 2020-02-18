@@ -162,13 +162,12 @@ Source Code APIs:
 * MDCButton  (a subclass of [UIButton](https://developer.apple.com/documentation/uikit/uibutton))
     * [Class description](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
     * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
-* [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class -->
+* [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class--> 
 
 
-<!--To do:
+<!-- To do:
 * add example code
 * add example code render screenshot
-
 
 ### Anatomy and key properties
 
@@ -178,9 +177,10 @@ A FAB has a container and an icon.
 
 1. Container
 1. Icon
-<!-- Tables can be copy/pasted from iOS-buttons.md when they're done -->
 
-<!--
+Tables can be copy/pasted from iOS-buttons.md when they're done 
+
+<b>Container</b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -190,12 +190,8 @@ A FAB has a container and an icon.
 | **Shape** |  | | |
 | **Elevation** | | | |
 | **Ripple color** | | | | 
-</details>
 
-
-<details>
-<summary><b>Icon</b> attributes</summary>
-<br>
+<b>Icon</b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -205,9 +201,7 @@ A FAB has a container and an icon.
 | **Gravity** (position relative to text label) | | | |
 | **Padding** (space between icon and text label) | | | |
 
--->
-
-<!-- to do:
+ to do:
 Add Shrine theming example
 
 
@@ -228,11 +222,10 @@ The following example shows a FAB with Material Theming.
 !["FAB theming examples for iOS with pink and black FAB"](assets/FAB-theming.png)
 
 [Shrine theme](https://material.io/design/material-studies/shrine.html)
+
 ```
 Include source code implementing FAB with a plus icon using "Shrine" theme.
 
 Upload a screenshot of the render and update the image.
 ```
-
-
 -->
