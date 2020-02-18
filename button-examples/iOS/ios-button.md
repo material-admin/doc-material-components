@@ -27,8 +27,6 @@ There are four types of buttons:
 
 ### Install `MDCButtons`
 
-<details><summary><b>Expand for installation instructions for <code>MDCButtons</code></b></summary>
-
 Before using the `MDCButtons` API to implement its types you must install `MCDButtons`. In your source files import the component, and then apply your theme:
 1. Install `MDCButtons`
    * Use CocoaPods to install `MDCButtons`
@@ -76,7 +74,6 @@ Before using the `MDCButtons` API to implement its types you must install `MCDBu
 <!--</div>-->
 
 
-</details>
 
 
 ### Making buttons accessible
@@ -193,9 +190,6 @@ MDCButton *button = [[MDCButton alloc] init];
 ```
 <!--</div>-->
 
-<details>
-<summary><b>Adding an icon to a text button</b></summary>
-<br>
 
 The following example shows a text button with an icon.
 
@@ -212,7 +206,6 @@ The following example shows a text button with an icon.
 ```
 <!--</div>-->
 
-</details>
 
 ### Anatomy and key properties
 
@@ -227,9 +220,7 @@ A text button has a text label, a transparent container and an optional icon.
 
 _**Note** A container in iOS refers to a set of components with an applied Material Theme. A container with respect to anatomy refers to the visible bounds of a component._
 
-<details>
-<summary><b>Text label</b> and <b>Icon</b> attributes</summary>
-<br>
+<b>Text label</b> and <b>Icon</b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -241,12 +232,7 @@ _**Note** A container in iOS refers to a set of components with an applied Mater
 | **Gravity** (position relative to text label) | | | |
 | **Padding** (space between icon and text label) | | | |
 
-
-</details>
-
-<details>
-<summary><b>Container</b> attributes</summary>
-<br>
+<b>Container</b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -256,9 +242,6 @@ _**Note** A container in iOS refers to a set of components with an applied Mater
 | **Shape** |  | | |
 | **Elevation** | | | |
 | **Ripple color** | | | | 
-</details>
-
-
 
 ## Outlined button
 
@@ -296,9 +279,7 @@ MDCButton *button = [[MDCButton alloc] init];
 ```
 <!--</div>-->
 
-<details>
-<summary><b>Adding an icon to an outlined button</b></summary>
-<br>
+<b>Adding an icon to an outlined button</b>
 
 The following example shows an outlined button with an icon.
 
@@ -315,7 +296,6 @@ The following example shows an outlined button with an icon.
 ```
 <!--</div>-->
 
-</details>
 
 
 ### Outlined button example with container schemes
@@ -345,9 +325,7 @@ MDCButton *button = [[MDCButton alloc] init];
 ```
 <!--</div>-->
 
-<details>
-<summary><b>Adding an icon to a contained button</b></summary>
-<br>
+<b>Adding an icon to a contained button</b>
 
 The following example shows a contained button with an icon.
 
@@ -379,9 +357,7 @@ An outline button has text, a container, and an optional icon.
 
 _**Note** A container in iOS refers to a set of components with an applied Material Theme. A container with respect to anatomy refers to the visible bounds of a component._
 
-<details>
-<summary><b>Text label</b> and <b>Icon</b> attributes</summary>
-<br>
+<b>Text label</b> and <b>Icon</b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -393,12 +369,7 @@ _**Note** A container in iOS refers to a set of components with an applied Mater
 | **Gravity** (position relative to text label) | | | |
 | **Padding** (space between icon and text label) | | | |
 
-
-</details>
-
-<details>
-<summary><b>Container</b> attributes</summary>
-<br>
+<b>Container</b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -408,9 +379,6 @@ _**Note** A container in iOS refers to a set of components with an applied Mater
 | **Shape** | | | |
 | **Elevation** | | | |
 | **Ripple color** | | | |
-
-</details>
-
 
 ## Contained button
 
@@ -460,9 +428,7 @@ _**Note** A container in iOS refers to a set of components with an applied Mater
 1. Container
 1. Icon
 
-<details>
-<summary><b>Text label</b> and <b>Icon</b> attributes</summary>
-<br>
+<b>Text label</b> and <b>Icon</b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -474,12 +440,7 @@ _**Note** A container in iOS refers to a set of components with an applied Mater
 | **Gravity** (position relative to text label) | | | |
 | **Padding** (space between icon and text label) | | | |
 
-
-</details>
-
-<details>
-<summary><b>Container</b> attributes</summary>
-<br>
+<b>Container</b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -489,10 +450,6 @@ _**Note** A container in iOS refers to a set of components with an applied Mater
 | **Shape** | | | |
 | **Elevation** | | | |
 | **Ripple color** | | | |
-
-</details>
-
-
 
 ## Toggle button
 
@@ -535,9 +492,7 @@ The following example shows text, outlined and contained button types with Mater
 
 !["Button theming examples for iOS with pink and black buttons and cut corners."](assets/button-theming.svg)
 
-<details>
-<summary><b>Implementing button theming</b></summary>
-<br>
+<b>Implementing button theming</b>
 
 [Shrine theme](https://material.io/design/material-studies/shrine.html)
 ```
@@ -546,4 +501,3 @@ Include source code implementing text, outlined, and contained buttons using "Sh
 Upload a screenshot of the render and update the image.
 ```
 
-</details>
