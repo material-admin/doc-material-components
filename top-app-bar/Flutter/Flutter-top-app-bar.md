@@ -84,8 +84,7 @@ The source code for the regular top app bar should include the following:
 1. Action items (optional)
 1. Overflow menu (optional)
 
-<details>
-<summary><b>Container </b> attributes</summary>
+<b>Container </b>
 
 | &nbsp; | Property |
 | --- | --- |
@@ -96,10 +95,7 @@ The source code for the regular top app bar should include the following:
 | **Elevation** |  |
 | **Ripple color** |  |
 
-</details>
-
-<details>
-<summary><b>Navigation icon </b> attributes (optional)</summary>
+<b>Navigation icon (optional)</b>
 
 | &nbsp; | Property |
 | --- | --- |
@@ -109,11 +105,7 @@ The source code for the regular top app bar should include the following:
 | **Gravity** (position relative to text label) |  |
 | **Padding** (space between icon and text label) |  |
 
-</details>
-
-
-<details>
-<summary><b>Title </b> attributes (optional)</summary>
+<b>Title (optional)</b>
 
 | &nbsp; | Property |
 | --- | --- |
@@ -121,11 +113,7 @@ The source code for the regular top app bar should include the following:
 | **Color** |  | 
 | **Typography** |  |
 
-</details>
-
-
-<details>
-<summary><b>Action item </b> attributes (optional)</summary>
+<b>Action item (optional)</b>
 
 | &nbsp; | Property |
 | --- | --- |
@@ -134,11 +122,8 @@ The source code for the regular top app bar should include the following:
 | **Size** | | 
 | **Gravity** (position relative to text label) | | 
 | **Padding** (space between icon and text label) | |
-</details>
 
-
-<details>
-<summary><b>Overflow menu </b> attributes (optional)</summary>
+<b>Overflow menu (optional)</b>
 
 | &nbsp; | Property |
 | --- | --- |
@@ -147,8 +132,6 @@ The source code for the regular top app bar should include the following:
 | **Size** | | 
 | **Gravity** (position relative to text label) | | 
 | **Padding** (space between icon and text label) | | 
-
-</details>
 
 
 ## Contextual action bar
@@ -195,8 +178,7 @@ contextual action bar and include the following:
 1. Contextual action items (optional)
 1. Overflow menu (optional)
 
-<details>
-<summary><b>Close button</b> attributes</summary>
+<b>Close button</b>
 
 | &nbsp; | Property |
 | --- | --- |
@@ -206,22 +188,15 @@ contextual action bar and include the following:
 | **Gravity** (position relative to text label) |  |
 | **Padding** (space between icon and text label) |  |
 
-
-</details>
-
-<details>
-<summary><b>Contextual title</b> attributes</summary>
+<b>Contextual title</b>
 
 | &nbsp; | Property|
 | --- | --- |
 | **Text label** |  |
 | **Color** |  | 
 | **Typography** |  |
-</details>
 
-
-<details>
-<summary><b>Contextual action item</b> attributes (optional)</summary>
+<b>Contextual action item (optional)</b>
 
 | &nbsp; | Property |
 | --- | --- |
@@ -231,9 +206,7 @@ contextual action bar and include the following:
 | **Gravity** (position relative to text label) |  |
 | **Padding** (space between icon and text label) |  |
 
-</details>
-<details>
-<summary><b>Overflow menu</b> attributes (optional)</summary>
+<b>Overflow menu (optional)</b>
 
 | &nbsp; | Property |
 | --- | --- |
@@ -243,7 +216,6 @@ contextual action bar and include the following:
 | **Gravity** (position relative to text label) | | 
 | **Padding** (space between icon and text label) | | 
 
-</details>
 
 #### Styles
 
@@ -272,8 +244,4 @@ The top app bar supports [Material Theming](https://material.io/components/app-b
     * The top app bar should remain in place while the user scrolls
 
 
-<details><summary><b>Implementing top button bar theming</b></summary>
-
-Provide example code that corresponds to the component type screenshot
-
-</details>
+_Provide example code that corresponds to the component type screenshot_
