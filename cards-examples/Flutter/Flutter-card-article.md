@@ -86,7 +86,6 @@ The example code below generates the card:
           ),
 ```
 
-<details><summary><b>Expand for renderable example code.</b></summary>
  
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 ```
@@ -217,11 +216,11 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 ```
-</details>
+
 
 ### Key properties
 
-![Card anatomy daigram](assets/card-anatomy.png)
+![Card anatomy diagram](assets/card-anatomy.png)
 
 **1. Elevated card attributes**
 
@@ -234,9 +233,7 @@ class _MyHomePageState extends State<MyHomePage> {
 7. **Buttons [optional]** 
 8. **Icons [optional]** 
 
-
-<details>
-<summary><b>Container</b> attributes</summary>
+<b>Container</b>
 
 | &nsbp; | Property |
 |---|---|
@@ -246,20 +243,14 @@ class _MyHomePageState extends State<MyHomePage> {
 |Container margin (right)|  Wrap `Card` widget with `Container` widget and use `margin` property with `EdgeInsets.only(right: 10)`|
 |Container margin (top)|  Wrap `Card` widget with `Container` widget and use `margin` property with `EdgeInsets.only(top: 10)`|
 |Container elevation | `elevation` |
-</details>
 
-<details>
-<summary><b>Thumbnail</b> attributes (optional)</summary>
+<b>Thumbnail (optional)</b>
 
 | &nsbp; | Property |
 |---|---|
 |Desc. 1 | Not by default but can be made by using `ListTile()` and use property `leading` |
 
-
-</details>
-
-<details>
-<summary><b>Header text</b> attributes (optional)</summary>
+<b>Header text (optional)</b>
 
 | &nsbp; | Property |
 |---|---|
@@ -267,11 +258,7 @@ class _MyHomePageState extends State<MyHomePage> {
 | Text color | Within `title` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property |
 | Typography | Within `title` property you can customize the typography by using the `style property`. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property |
 
-
-</details>
-
-<details>
-<summary><b>Subhead</b> attributes (optional)</summary>
+<b>Subhead (optional)</b>
 
 | &nsbp; | Property |
 |---|---|
@@ -279,20 +266,13 @@ class _MyHomePageState extends State<MyHomePage> {
 | Text color | Within `subtitle` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property|
 | Typography | Within `subtitle` property you can customize the typography by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property|
 
-
-</details>
-
-<details>
-<summary><b>Media</b> attributes (optional)</summary>
+<b>Media (optional)</b>
 
 | &nsbp; | Property |
 |---|---|
 |Desc. 1 | Can be made using `Image.asset()` within Card |
 
-</details>
-
-<details>
-<summary><b>Supporting text</b> attributes (optional)</summary>
+<b>Supporting text (optional)</b>
 
 | &nsbp; | Property |
 |---|---|
@@ -300,29 +280,19 @@ class _MyHomePageState extends State<MyHomePage> {
 | Text color | Within `text` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property|
 | Typography | Within `text` property you can customize the typography by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `fontFamily` property|
 
-</details>
-
-<details>
-<summary><b>Button</b> attributes (optional)</summary>
+<b>Button (optional)</b>
 
 [Material button API:](https://api.flutter.dev/flutter/material/MaterialButton-class.html)
 
 | &nsbp; | Property |
 |---|---|
 |Desc. 1 | Can be made using `ButtonBar`, within `ButtonBar` use `FlatButtons` |
-</details>
 
-<details>
-<summary><b>Icon</b> attributes (optional)</summary>
+<b>Icon (optional)</b>
 
 | &nsbp; | Property |
 |---|---|
 |Desc. 1 | Can be made using `ButtonBar`, within `ButtonBar` use `IconButton` or `Icon`|
-
-</details>
-
-
-
 
 ## Theming a card
 
