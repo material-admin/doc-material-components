@@ -41,20 +41,16 @@ Text fields allow users to enter text into a UI. They typically appear in forms 
 
 Install the `textfield` component before including it in you source:
 
-<details><summary><b>Expand for installation instructions for <code>textfield</code>.</b></summary>
-
 ```bash
 npm install @material/textfield
 ```
 
-</details>
 
 ### Import JavaScript effects
 You can optinally add a JavaScript [line ripple](https://material.io/components/web/catalog/input-controls/line-ripple/) or [floating label](https://material.io/develop/web/components/input-controls/floating-label/) effect to your text fields by importing and then instantiating `MCDRipple` in your `*.js` file. See the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md) for more information on importing JavaScript.
 
 To bundle your `*.js` file, go to the [quickstart page](https://github.com/material-components/material-components-web/blob/master/docs/getting-started.md#quick-start-cdn).
 
-<details><summary><b>Expand for instructions to add JavaScript effects</b></summary>
 
 ```js
 import {MDCTextField} from '@material/textfield';
@@ -63,11 +59,9 @@ import {MDCTextField} from '@material/textfield';
 const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
 
 ```
-</details>
+
 
 ### Sass mixins
-
-<details><summary><b>Expand for instructions to use Sass mixins to customize your <code>mdc-text-field</code></b></summary>
 
 Before using Sass mixins for your project you will need to do the following:
 
@@ -102,15 +96,12 @@ module.exports = {
 
 <img src="assets/web-sass-mixins-example.png" alt="Example text field instance rendered for an orange label and a green cursor caret">
 
-</details>
 
 #### Sass mixins for `mdc-text-field`
 
 Use Sass mixins when you want to customize the look and feel of your text fields. Go to [sass-lang.com](https://sass-lang.com/install) for installation instructions.
 
 Text fields support [Material Theming](https://material.io/components/text-fields/#theming) and can be customized in terms of color, typography, and shape.
-
-<details><summary><b>Expand for instructions to use Sass mixins to customize your <code>mdc-text-field</code></b></summary>
 
 Before using Sass mixins for your project you will need to do the following:
 
@@ -132,14 +123,12 @@ module.exports = {
   includePaths: [path.resolve(CWD, "node_modules"), path.resolve(CWD, "src")]
 };
 ```
-</details>
+
 
 Import base styles of button into your `*.scss` stylesheet using :
 
 **NOTE are there theming instructions for text fields? Include them in the collapsible section**
 
-<details><summary><b>Expand for theming instructions for <code>mdc-text-field</code>.</b></summary>
-</details>
 
 ### Making text fields accessible
 
@@ -188,9 +177,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 1. Activation indicator
 1. Helper text (optional)
 
-<details>
-<summary><b>Container</b> attributes</summary>
-<br>
+<b>Container</b>
 
 | Design Attribute | Theme value | Equivalent Sass mixin attribute |
 | --- | --- | --- |
@@ -201,12 +188,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Elevation** | | | 
 | **Ripple color** | |`mdc-text-field-line-ripple-color($color)` | 
 
-</details>
-
-
-<details>
-<summary><b>Leading icon</b> (optional) attributes</summary>
-<br>
+<<b>Leading icon (optional) </b>
 
 |  Design attribute | Theme value | Equivalent Sass mixin attribute |
 | --- | --- | --- |
@@ -220,9 +202,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 </details>
 
 
-<details>
-<summary><b>Label text</b> attributes</summary>
-<br>
+<b>Label text</b>
 
 |  Design attribute | Theme value | Equivalent Sass mixin attribute |
 | --- | --- | --- |
@@ -230,12 +210,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Typography** | | | 
 | **Color** | |`mdc-text-field-label-color($color)` | 
 
-</details>
-
-
-<details>
-<summary><b>Input text</b> attributes</summary>
-<br>
+<b>Input text</b>
 
 |  Design attribute | Theme value | Equivalent Sass mixin attribute |
 | --- | --- | --- |
@@ -244,12 +219,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Color** | |`mdc-text-field-ink-color($color)` |
 | **Cursor color** | | `mdc-text-field-caret-color($color)` |
 
-</details>
-
-
-<details>
-<summary><b>Trailing icon</b> (optional) attributes</summary>
-<br>
+<b>Trailing icon (optional) </b>
 
 |  Design attribute | Theme value | Equivalent Sass mixin attribute |
 | --- | --- | --- |
@@ -259,12 +229,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Gravity** | | |
 | **Padding** | | | 
 
-</details>
-
-
-<details>
-<summary><b>Activation indicator</b> attributes</summary>
-<br>
+<b>Activation indicator</b>
 
 |  Design attribute | Theme value | Equivalent Sass mixin attribute |
 | --- | --- | --- | 
@@ -273,23 +238,13 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Ripple color** | | |
 | **Stroke color(hover)** | |`mdc-text-field-hover-bottom-line-color($color)`  |
 
-
-</details>
-
-
-<details>
-<summary><b>Helper text</b> (optional) attributes</summary>
-<br>
+<b>Helper text (optional)</b>
 
 |  Design attribute | Theme value | Equivalent Sass mixin attribute |
 | --- | --- | --- |
 | **Label text** |  | |
 | **Typography** | | |
 | **Color** | | | 
-
-</details>
-
-
 
 ## Outlined text
 
@@ -326,9 +281,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 1. Activation indicator
 1. Helper text (optional)
 
-<details>
-<summary><b>Container</b> attributes</summary>
-<br>
+<b>Container</b>
 
 | Design Attribute | Theme value | Equivalent Sass mixin attribute |
 | --- | --- | --- |
@@ -339,12 +292,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Elevation** | | | 
 | **Ripple color** | |`mdc-text-field-line-ripple-color($color)` | 
 
-</details>
-
-
-<details>
-<summary><b>Leading icon</b> (optional) attributes</summary>
-<br>
+<b>Leading icon (optional)</b>
 
 |  Design attribute | Theme value | Equivalent Sass mixin attribute |
 | --- | --- | --- |
@@ -354,13 +302,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Gravity** | | | 
 | **Padding** | | |
 
-
-</details>
-
-
-<details>
-<summary><b>Label text</b> attributes</summary>
-<br>
+<b>Label text</b>
 
 |  Design attribute | Theme value | Equivalent Sass mixin attribute |
 | --- | --- | --- |
@@ -368,12 +310,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Typography** | | | 
 | **Color** | |`mdc-text-field-label-color($color)` | 
 
-</details>
-
-
-<details>
-<summary><b>Input text</b> attributes</summary>
-<br>
+<b>Input text</b> 
 
 |  Design attribute | Theme value | Equivalent Sass mixin attribute |
 | --- | --- | --- |
@@ -382,11 +319,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Color** | |`mdc-text-field-ink-color($color)` |
 | **Cursor color** | | `mdc-text-field-caret-color($color)` |
 
-</details>
-
-
-<details>
-<summary><b>Trailing icon</b> (optional) attributes</summary>
+<b>Trailing icon (optional)</b>
 
 |  Design attribute | Theme value | Equivalent Sass mixin attribute |
 | --- | --- | --- | 
@@ -397,12 +330,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Elevation** | | | 
 | **Ripple color** | | | 
 
-</details>
-
-
-<details>
-<summary><b>Activation indicator</b> attributes</summary>
-<br>
+<b>Activation indicator</b>
 
 |  Design attribute | Theme value | Equivalent Sass mixin attribute |
 | --- | --- | --- |
@@ -410,20 +338,13 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Stroke width** | | |
 | **Ripple color** | | |
 
-</details>
-
-
-<details>
-<summary><b>Helper text</b> (optional) attributes</summary>
-<br>
+<b>Helper text (optional)</b>
 
 |  Design attribute | Theme value | Equivalent Sass mixin attribute |
 | --- | --- | --- | 
 | **Label text** |  | | 
 | **Typography** | | | 
 | **Color** | | | 
-
-</details>
 
 
 ## Theming text fields
@@ -441,9 +362,6 @@ API and source code:
 The following example shows filled and outlined text fields with Material Theming.
 
 !["Two text fields, one filled, one outlined, with green/black color theming and cut corners."](assets/button-theming.svg)
-
-<details>
-<summary><b>Implementing text field theming</b></summary>
 
 _Use the [Shrine theme](https://material.io/design/material-studies/shrine.html) for this example_
 
@@ -463,7 +381,6 @@ _Use the [Shrine theme](https://material.io/design/material-studies/shrine.html)
     * The text field should have a trailing error icon
     * The container should have cut corners instead of rounded
 ```
-</details>
 
 ## `mdc-text-field` API
 
