@@ -37,8 +37,6 @@ Text fields allow users to enter text into a UI. They typically appear in forms 
 
 ### Install `TextFields`
 
-<details><summary><b>Expand for installation instructions for <code>TextFields</code></b>
-</summary>
 
 Before using the `TextFields` API to implement its types you must install `TextFields`. In you source files import the component and then apply your theme:
 
@@ -66,10 +64,6 @@ Before using the `TextFields` API to implement its types you must install `TextF
 <!--</div>-->
 1. Apply accessibility settings
   To help make your text fields usable to as many users as possible, set an appropriate [accessibilityLabel](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) if you choose not to use a text label or if you need to include additional descriptions of visual cues, or [accessibilityHint](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619585-accessibilityhint) if you choose not to include helper text, or error text:
-
-
-</details>
-
 
 ## Filled text
 
@@ -111,9 +105,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 1. Activation indicator
 1. Helper text (optional)
 
-<details>
-<summary><b>Container</b> attributes</summary>
-<br>
+<b>Container</b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -124,12 +116,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Elevation** | | | |
 | **Ripple color** | | | |
 
-</details>
-
-
-<details>
-<summary><b>Leading icon</b> (optional) attributes</summary>
-<br>
+<b>Leading icon (optional) </b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -139,13 +126,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Gravity** | | | |
 | **Padding** | | | |
 
-
-</details>
-
-
-<details>
-<summary><b>Label text</b> attributes</summary>
-<br>
+<b>Label text</b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -153,12 +134,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Typography** | | | |
 | **Color** | | | |
 
-</details>
-
-
-<details>
-<summary><b>Input text</b> attributes</summary>
-<br>
+<b>Input text</b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -166,12 +142,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Typography** | | | |
 | **Color** | | | |
 
-</details>
-
-
-<details>
-<summary><b>Trailing icon</b> (optional) attributes</summary>
-<br>
+<b>Trailing icon (optional)</b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -181,12 +152,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Gravity** | | | |
 | **Padding** | | | |
 
-</details>
-
-
-<details>
-<summary><b>Activation indicator</b> attributes</summary>
-<br>
+<b>Activation indicator</b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -194,12 +160,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Stroke width** | | | |
 | **Ripple color** | | | |
 
-</details>
-
-
-<details>
-<summary><b>Helper text</b> (optional) attributes</summary>
-<br>
+<b>Helper text (optional)</b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -207,17 +168,13 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Typography** | | | |
 | **Color** | | | |
 
-</details>
-
-<summary><b>Styles</b></summary>
-<br>
+<b>Styles</b>
 
 |  | Style|
 | --- | --- |
 | **Default style** | |
 | **Icon style** | |
 
-</details>
 
 ## Outlined text
 
@@ -254,9 +211,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 1. Activation indicator
 1. Helper text (optional)
 
-<details>
-<summary><b>Container</b> attributes</summary>
-<br>
+<b>Container</b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -267,12 +222,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Elevation** | | | |
 | **Ripple color** | | | |
 
-</details>
-
-
-<details>
-<summary><b>Leading icon</b> (optional) attributes</summary>
-<br>
+<b>Leading icon (optional)</b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -282,13 +232,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Gravity** | | | |
 | **Padding** | | | |
 
-
-</details>
-
-
-<details>
-<summary><b>Label text</b> attributes</summary>
-<br>
+<b>Label text</b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -296,12 +240,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Typography** | | | |
 | **Color** | | | |
 
-</details>
-
-
-<details>
-<summary><b>Input text</b> attributes</summary>
-<br>
+<b>Input text</b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -309,12 +248,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Typography** | | | |
 | **Color** | | | |
 
-</details>
-
-
-<details>
-<summary><b>Trailing icon</b> (optional) attributes</summary>
-<br>
+<b>Trailing icon (optional)</b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -324,12 +258,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Gravity** | | | |
 | **Padding** | | | |
 
-</details>
-
-
-<details>
-<summary><b>Activation indicator</b> attributes</summary>
-<br>
+<b>Activation indicator</b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -337,12 +266,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Stroke width** | | | |
 | **Ripple color** | | | |
 
-</details>
-
-
-<details>
-<summary><b>Helper text</b> (optional) attributes</summary>
-<br>
+<b>Helper text (optional)</b>
 
 |  | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -350,17 +274,12 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Typography** | | | |
 | **Color** | | | |
 
-</details>
-
-<summary><b>Styles</b></summary>
-<br>
+<b>Styles</b>
 
 |  | Style|
 | --- | --- |
 | **Default style** | |
 | **Icon style** | |
-
-</details>
 
 ## Theming text fields
 
@@ -377,9 +296,6 @@ API and source code:
 The following example shows filled and outlined text fields with Material Theming.
 
 !["Two text fields, one filled, one outlined, with green/black color theming and cut corners."](assets/button-theming.svg)
-
-<details>
-<summary><b>Implementing text field theming</b></summary>
 
 _Use the [Shrine theme](https://material.io/design/material-studies/shrine.html) for this example_
 
