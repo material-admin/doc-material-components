@@ -256,15 +256,12 @@ A text button has a text label, a transparent container and an optional icon.
 1. Container
 1. Icon
 
-<details>
-<summary><b>Text label</b> attributes</summary>
-<br>
+<details><summary><b>Text label attributes</b></summary>
 
 Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
-Text label | N/A |  N/A
-Text color | Primary color |
-Typography | Default |
+Text color | Primary color | `mdc-button-ink-color($color)`
+Accessible text color | Calculated | `mdc-button-filled-accessible($container-fill-color)`
 
 </details>
 
@@ -274,7 +271,11 @@ Typography | Default |
 
 Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
-Container ink color | Primary color | `mdc-button-ink-color($color)`
+Container ink color | Primary color | `mdc-button-container-fill-color($color)`
+Container density | Default (`0`) | `mdc-button-density($density-scale)`
+Container height | Default | `mdc-button-height($height)`
+Container shape radius | Default | `mdc-button-shape-radius($radius, $density-scale, $rtl-reflexive)`
+Container horizontal padding | Default | `mdc-button-horizontal-padding($padding)`
 </details>
 
 <details>
@@ -284,7 +285,6 @@ Container ink color | Primary color | `mdc-button-ink-color($color)`
 
  Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
- Icon | N/A |
 Icon color | Primary color | ` mdc-button-icon-color($color)`
 
 </details>
@@ -428,35 +428,35 @@ A contained button has text, a container, and an optional icon.
 
 Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
-Text label | N/A |  N/A
-Text color | Secondary color |
-Typography | Default |
+Text color | Primary color | `mdc-button-ink-color($color)`
+Accessible text color | Calculated | `mdc-button-filled-accessible($container-fill-color)`
 
 </details>
 
-<details><summary><b>Container attributes</b></summary>
+<details>
+<summary><b>Container</b> attributes</summary>
+<br>
 
 Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
-Container fill color| Primary color | ` mdc-button-container-fill-color($color)`
-Container ink color | Primary color | `mdc-button-ink-color($color)`
-Container shape radius | Default | `mdc-button-shape-radius($radius, $rtl-reflexive)`
-Container outline color | Secondary color | `mdc-button-outline-color($color)`
-Container outline width | | `mdc-button-outline-width($width, $padding)`
-Container horzontal padding | | `mdc-button-horizontal-padding($padding)`
-
+Container ink color | Primary color | `mdc-button-container-fill-color($color)`
+Container density | Default (`0`) | `mdc-button-density($density-scale)`
+Container height | Default | `mdc-button-height($height)`
+Container shape radius | Default | `mdc-button-shape-radius($radius, $density-scale, $rtl-reflexive)`
+Container horizontal padding | Default | `mdc-button-horizontal-padding($padding)`
 </details>
 
+<details>
+<summary><b>Icon</b> attributes</summary>
+<br>
 
-<details><summary><b>Icon attributes</b></summary>
 
  Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
-Icon | N/A |
-Icon color | Secondary color | ` mdc-button-icon-color($color)`
+Icon color | Primary color | ` mdc-button-icon-color($color)`
 
+We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Outlined button API doc]()
 
-We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [contained button API doc]()
 
 </details>
 
