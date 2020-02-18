@@ -71,7 +71,7 @@ Before using the `MDCButtons` API to implement its types you must install `MCDBu
    ```
    **Objective-C**
    ```objc
-   MDCContainerScheme *MyMaterialTheme = [
+   MDCContainerScheme *MyMaterialTheme = [[MDCFloatingButton alloc] init]
    ```
 <!--</div>-->
 
