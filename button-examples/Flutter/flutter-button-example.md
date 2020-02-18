@@ -84,9 +84,6 @@ FlatButton.icon(
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 ```
-// Copyright (c) 2020, the Dart project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -257,9 +254,6 @@ OutlineButton.icon(
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 ```
-// Copyright (c) 2020, the Dart project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -432,9 +426,6 @@ RaisedButton.icon(
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 ```
-// Copyright (c) 2020, the Dart project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -658,9 +649,6 @@ ToggleButtons(
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 ```
-// Copyright (c) 2020, the Dart project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -828,9 +816,6 @@ IconButton(
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 ```
-// Copyright (c) 2020, the Dart project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -983,10 +968,6 @@ theme: ThemeData(
 
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/)
 ```
-
-// Copyright (c) 2020, the Dart project authors.  Please see the AUTHORS file
-// for details. All rights reserved. Use of this source code is governed by a
-// BSD-style license that can be found in the LICENSE file.
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
