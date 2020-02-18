@@ -21,19 +21,18 @@ There are four types of buttons:
 3. [Contained button](#contained-button)
 4. [Toggle button](#toggle-button)
 
-![Example of the four button types](assets/mio-button-types.png)
+![Example of the four button types](assets/buttons_types.png)
 
 ## Using buttons
 
 Before you can use a button, you will need to install and import the following:
 
 * Install the Material button component
-* Import styles
 * Import JavaScript
 
 ### Install the Material button component
 
-Install the `mdc-button` or `mdc-icon-button` component before including it in your source.
+Install the `mdc-button` (for text, outlined, or contained button) or `mdc-icon-button` (for the icon toggle button) component before including it in your source.
 
 
 <details><summary><b>Expand for installation commands for <code>mdc-button</code> or <code>mdc-icon-button</code>.</b></summary>
@@ -100,7 +99,8 @@ Add an icon to your `mdc-button` instance using the following steps:
     ```html
     <button class="mdc-button">
       <div class="mdc-button__ripple"></div>
-      <svg class="mdc-button__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="...">
+      <<svg class="mdc-button__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="...">
+  ...svg class="mdc-button__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="...">
         /*...*/
       </svg>
       <span class="mdc-button__label">Button</span>
@@ -108,6 +108,23 @@ Add an icon to your `mdc-button` instance using the following steps:
     ```
 
 </details>
+
+### Making buttons accessible
+
+Material Design spec advises that touch targets should be at least 48 x 48 px.
+To meet this requirement, add the following to your button:
+
+```html
+<div class="mdc-touch-target-wrapper">
+  <button class="mdc-button mdc-button--touch">
+    <div class="mdc-button__ripple"></div>
+    <span class="mdc-button__label">My Accessible Button</span>
+    <div class="mdc-button__touch"></div>
+  </button>
+</div>
+```
+
+_**Note** The outer `mdc-touch-target-wrapper` element is only necessary if you want to avoid potentially overlapping touch targets on adjacent elements (due to collapsing margins)._
 
 ### Sass mixins
 
@@ -165,7 +182,7 @@ Import base styles of button into your `*.scss` stylesheet using :
 }
 ```
 
-<img src="assets/web-sass-mixins-example.png" alt="Example button instance rendered for a contained button with an orange fill and green icon color">
+<img src="assets/web-sass-mixins-example.png" alt="Contained button with orange fill and green icon ">
 
 #### Sass mixins for `mdc-button`
 
@@ -204,7 +221,7 @@ Source code API:
     * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
     * [Demo site](https://glitch.com/~shadow-jobaria)
 
-<img src="assets/web-text-button.png" alt="Generated text button example">
+<img src="assets/web-text-button.png" alt="Text button example">
 
 ```html
  <button class="mdc-button">
@@ -215,7 +232,7 @@ Source code API:
 
 <details><summary><b>Text button with icon example</b></summary>
 
-<img src="assets/web-text-icon-button.png" alt="Generated text button with bookmark icon example">
+<img src="assets/web-text-icon-button.png" alt="Text button with bookmark icon example">
 
 ```html
 <button class="mdc-button">
@@ -233,12 +250,11 @@ Source code API:
 
 A text button has a text label, a transparent container and an optional icon.
 
-<img alt="<Placeholder diagram of text button anatomy. Replace this text if/when there is an approved diagram\>" src="assets/text-button-diagram.png" width=60%>
+![Text button anatomy diagram](assets/text_button_anatomy.png)
 
-**1. Text button**
-* A Text label
-* B Container
-* C Icon
+1. Text label
+1. Container
+1. Icon
 
 <details>
 <summary><b>Text label</b> attributes</summary>
@@ -269,7 +285,7 @@ Container ink color | Primary color | `mdc-button-ink-color($color)`
  Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
  Icon | N/A |
-C | Icon color | Primary color | ` mdc-button-icon-color($color)`
+Icon color | Primary color | ` mdc-button-icon-color($color)`
 
 </details>
 
@@ -286,7 +302,7 @@ Source code API:
     * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
     * [Demo site](https://glitch.com/~shadow-jobaria):
 
-<img src="assets/web-outlined-button.png" alt="Generated outlined button example">
+<img src="assets/web-outlined-button.png" alt="Outlined button example">
 
 ```html
 <button class="mdc-button--outlined">
@@ -298,7 +314,7 @@ Source code API:
 <details><summary><b>Outlined button with icon example</b></summary>
 
 
-<img src="assets/web-outlined-icon-button.png" alt="Generated outlined button example">
+<img src="assets/web-outlined-icon-button.png" alt="Outlined button with bookmark icon">
 
 ```html
 <button class="mdc-button mdc-button--outlined">
@@ -314,12 +330,11 @@ Source code API:
 An outline button has text, a container, and an optional icon.
 
 
-<img alt="\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>" src="assets/outlined-button-diagram.png" width="60%">
+![Outlined button anatomy diagram](assets/outlined_button_anatomy.png)
 
-**2. Outlined button**
-* A Text label
-* B Container
-* C Icon
+1. Text label
+1. Container
+1. Icon
 
 
 <details><summary><b>Text label attributes</b></summary>
@@ -374,7 +389,7 @@ Source code API:
     * [Demo site](https://glitch.com/~shadow-jobaria)
 
 
-<img src="assets/web-contained-button.png" alt="Generated contained button example">
+<img src="assets/web-contained-button.png" alt="Contained button example">
 
 ```html
 <button class="mdc-button--elevated">
@@ -386,7 +401,7 @@ Source code API:
 
 Source code API:
 
-<img src="assets/web-contained-icon-button.png" alt="Generated contained button example with a bookmark icon">
+<img src="assets/web-contained-icon-button.png" alt="Contained button with a bookmark icon">
 
 ```html
 <button class="mdc-button mdc-button--raised">
@@ -403,13 +418,11 @@ Source code API:
 
 A contained button has text, a container, and an optional icon.
 
+![Contained button anatomy diagram](assets/contained_button_anatomy.png)
 
-<img alt="\<Placeholder diagram of outlined button attribute. Replace this text if/when there is an approved diagram\>" src="assets/contained-button-diagram.png" width="60%">
-
-**3. Contained button**
-* A Text label
-* B Container
-* C Icon
+1. Text label
+1. Container
+1. Icon
 
 <details><summary><b>Text label attributes</b></summary>
 
@@ -476,44 +489,11 @@ Source code API:
 
 * mdc-icon-button
     * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-icon-button)
-    * [Demo site](https://glitch.com/~shadow-jobaria)
+    * [Demo site](https://glitch.com/edit/#!/join/8ef9db8e-e36f-4e03-ba14-39b1a8b69405)
 
 <img src="assets/web-toggle-icon-button.png" alt="4 images arranged in a 2 by 2 array, each image with a favorite icon in the upper-right corner" width="50%">
-To generate the example with background images of your choosing, you will need to do the following:
+To generate the example with background images of your choosing, you will need containers for your tiled images, and containers to resize your images. You may also need to change the icon color to ensure that the icon is visible on your image (see the `index.scss` file for the tiled container \[`container`\] and the image container \[`image-with-fav`\] and the icon button color \[`favve-button`\]).
 
-* In your `*.scss` file:
-  1. Create containers to contain your tiled images:
-      ```css
-      .container {
-        display: flex;
-        flex-wrap: wrap;
-        max-width: 450px;
-        justify-content: center;
-      }
-      ```
-  1. Create containers for your images, with the images cut to fit within the predefined height and width:
-      ```css
-        image-with-fave {
-          position: relative;
-          margin: 2px;
-        }
-
-        .image-with-fave img {
-          width: 200px;
-          height: 200px;
-          object-fit: cover;
-        }
-      ```
-  1. If your images are dark, then you may need use Sass mixins to change the icon color from the default. For example, you can create an instance of an icon button with white ink instead of the default black:
-        ```css
-            .fave-button {
-              @include mdc-icon-button-ink-color(white);
-
-              position: absolute;
-              top: 0;
-              right: 0;
-            }
-        ```
 * In your `*.js` file,
     1. Import `MDCIconButtonToggle`:
         ```js
@@ -527,7 +507,7 @@ To generate the example with background images of your choosing, you will need t
 		const iconToggle1 = new MDCIconButtonToggle(document.querySelector('.btn2'));
 		iconToggle1.unbounded = true;
 	```
- * In your `*.html` file, you can now add the iterations of the following, which shows containers with background images:
+* In your `*.html` file, you can now add the iterations of the following, which shows containers with background images:
     ```html
     <div class="container">
           <div class="image-with-fave">
@@ -570,11 +550,10 @@ To generate the example with background images of your choosing, you will need t
 
 The icon button consists of two icons for 'on' and 'off'.
 
-<details><summary>Expand for anatomy diagram and key icon button properties</summary>
+![Toggle button anatomy](assets/toggle_button_anatomy.png)
 
-**Icon button**
-* C Icon
-
+1. Container
+1. Icon
 
  Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
@@ -596,14 +575,15 @@ API and source code:
 
 The following example shows text, outlined and contained button types with Material Theming.
 
-!["Button theming example for <platform> with three buttons - text, outlined and contained - with green/black color theming and cut corners."](assets/button-theming.svg)
+!["Button theming with three buttons - text, outlined and contained - with shrine theming."](assets/button-theming.svg)
 
 <details>
 <summary><b>Implementing button theming</b></summary>
 <br>
 
+[Shrine theme](https://material.io/design/material-studies/shrine.html)
 ```
-Include source code implementing the three buttons found in [https://github.com/mingjane-work/doc-material-components/blob/mingjane-doc-branch/button-examples/Android/android-button-example.md#theming-buttons].
+Include source code implementing text, outlined, and contained buttons using "Shrine" theme.
 
 Upload a screenshot of the render and update the image.
 ```

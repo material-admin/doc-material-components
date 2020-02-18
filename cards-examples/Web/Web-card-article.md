@@ -25,14 +25,43 @@ _**Instructions**_
 
 [Cards](https://material.io/components/cards/) contain content and actions about a single subject.
 
-A card can be one of two types:
-1. [Elevated](#elevated-card)
-1. [Outlined](#outlined-card)
+For additional information, go to the [`mdc-card` API](#mdc-card-api).
 
-![Elevated and Outlined cards wtih a secondary title and two actions: Action 1 and Action 2 in purple](assets/cards-generic.png) 
+![Elevated card wtih a secondary title and two actions: Action 1 and Action 2 in purple](assets/generic-card-type-elevated.png) 
 
 
 ## Using cards
+Before you can use a cards, you will need to install and import the following:
+
+* Install the Material cards component
+* Import JavaScript
+
+
+### Install the Material card component
+Install the `mdc-card` component before including it in your source.
+
+**`mdc-card`**
+```bash
+npm install @material/card
+```
+### Import JavaScript
+
+You can optionally add a JavaScript ripple effect (see [MDC Ripple](https://github.com/material-components/material-components-web/blob/master/packages/mdc-ripple)) to components inside yourcards by importing and then instantiating `MDCRipple` in your `*.js` file. See the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md) for more information.
+
+To bundle your `*.js` file, go to the [quickstart page](https://github.com/material-components/material-components-web/blob/master/docs/getting-started.md#quick-start-cdn).
+
+<details><summary><b>Expand for instructions to add JavaScript</b></summary>
+
+```js
+import {MDCRipple} from '@material/ripple';
+
+const selector = '.mdc-button, .mdc-icon-button, .mdc-card__primary-action';
+const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
+  return new MDCRipple(el);
+});
+```
+
+</details>
 
 
 ### Making cards accessible
@@ -41,142 +70,39 @@ Web's card component APIs support labeling for accessibility. To use labels...
 
 For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
 
-## Elevated card
+### Sass mixins
+
+Use Sass mixins when you want to customize the look and feel of your cards. Go to [sass-lang.com](https://sass-lang.com/install) for installation instructions.
+
+<details><summary><b>Expand for instructions to use Sass mixins to customize your <code>mdc-card</code> or <code>mdc-icon-button</code></b></summary>
+
+Before using Sass mixins for your project you will need to do the following:
+
+* Add the Sass package to your `*.json file` under `devDependencies`:
+```json
+"devDependencies": {
+  "sass": "^1.24.3"
+}
+```
+
+* Add a `.sassrc.js` file to your project root directory:
+
+```js
+const path = require("path");
+
+const CWD = process.cwd();
+
+module.exports = {
+  includePaths: [path.resolve(CWD, "node_modules"), path.resolve(CWD, "src")]
+};
+```
+</details>
+
+## Card
  
-On mobile, an [elevated card’s](https://material.io/components/cards/#specs) default elevation is 1dp, with a raised dragged elevation of 8dp.
+On mobile, a [card’s](https://material.io/components/cards/#specs) default elevation is 1dp, with a raised dragged elevation of 8dp.
 
-### Key properties
-
-![\<Placeholder diagram of elevated card attributes. Replace this text if/when there is an approved diagram\>](assets/card-anatomy.png)
-
-**1. Elevated card attributes**
-
-1. **Container** <br>
-Card containers hold all card elements, and their size is determined by the space those elements occupy. Card elevation is expressed by the container.
-
-2. **Thumbnail [optional]** <br>
-Cards can include thumbnails to display an avatar, logo, or icon.
-
-3. **Header text [optional]** <br>
-Header text can include things like the name of a photo album or article.
-
-4. **Subhead [optional]** <br>
-Subhead text can include text elements such as an article byline or a tagged location.
-
-5. **Media [optional]** <br>
-Cards can include a variety of media, including photos, and graphics, such as weather icons.
-
-6. **Supporting text [optional]** <br>
-Supporting text include text like an article summary or a restaurant description.
-
-7. **Buttons [optional]** <br>
-Cards can include buttons for actions.
-
-8. **Icons [optional]** <br>
-Cards can include icons for actions.
-
-
-
-<details>
-<summary><b>Container</b> attributes</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-</p>
-</details>
-
-<details>
-<summary><b>Thumbnail</b> attributes (optional)</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-</p>
-</details>
-
-<details>
-<summary><b>Header text</b> attributes (optional)</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-</p>
-</details>
-
-<details>
-<summary><b>Subhead</b> attributes (optional)</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-</p>
-</details>
-
-<details>
-<summary><b>Media</b> attributes (optional)</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-
-</p>
-</details>
-
-<details>
-<summary><b>Supporting text</b> attributes (optional)</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-
-</p>
-</details>
-
-<details>
-<summary><b>Button</b> attributes (optional)</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-
-</p>
-</details>
-
-<details>
-<summary><b>Icon</b> attributes (optional)</summary>
-<p>
-
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
-
-
-
-</p>
-</details>
-
-### Elevated card example
+### Card example
 
 Source code API:
 * \<platform component name\>
@@ -190,7 +116,7 @@ The following example shows an elevated card. The card has a title, a secondary 
 
 ```
 <source code here>
-The source code example should display as per the interactive example (https://material.io/components/cards/#) with supporting text and Buttons, minus the media:
+The source code example should display as per the interactive example (https://material.io/components/cards/#) with supporting text and Buttons:
 * Display two elevated cards, for each card
 * Display a card title "Card title 1" for one card and "Card title 2" for the other
 * Display a secondary title "Secondary text" with an opacity of 60%
@@ -200,112 +126,100 @@ The source code example should display as per the interactive example (https://m
 * Allow the cards to be moveable.
 ```
 
-## Outlined card
- 
-On desktop and mobile, [outlined cards](https://material.io/components/cards/#specs) can have a resting elevation of 0dp. They elevate to 4dp on hover.
 ### Key properties
 
-![\<Placeholder diagram of outlined card  attributes. Replace this text if/when there is an approved diagram\>](assets/card-anatomy.png)
+![Card anatomy diagram](assets/card-anatomy.png)
 
-**1. Outlined card attributes**
+**1. Elevated card attributes**
 
-1. **Container** <br>
-Card containers hold all card elements, and their size is determined by the space those elements occupy. Card elevation is expressed by the container.
-
-2. **Thumbnail [optional]** <br>
-Cards can include thumbnails to display an avatar, logo, or icon.
-
-3. **Header text [optional]** <br>
-Header text can include things like the name of a photo album or article.
-
-4. **Subhead [optional]** <br>
-Subhead text can include text elements such as an article byline or a tagged location.
-
-5. **Media [optional]** <br>
-Cards can include a variety of media, including photos, and graphics, such as weather icons.
-
-6. **Supporting text [optional]** <br>
-Supporting text include text like an article summary or a restaurant description.
-
-7. **Buttons [optional]** <br>
-Cards can include buttons for actions.
-
-8. **Icons [optional]** <br>
-Cards can include icons for actions.
+1. **Container** 
+2. **Thumbnail [optional]** 
+3. **Header text [optional]** 
+4. **Subhead [optional]** 
+5. **Media [optional]** 
+6. **Supporting text [optional]** 
+7. **Buttons [optional]** <
+8. **Icons [optional]** 
 
 <details>
 <summary><b>Container</b> attributes</summary>
-<p>
 
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
+Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+Container fill color| |
+Container ink color | |
+Container shape radius | |
+Container outline color | |
+Container outline width | | 
+Container horzontal padding | | 
+Container elevation | |
 
-</p>
+
 </details>
 
 <details>
 <summary><b>Thumbnail</b> attributes (optional)</summary>
-<p>
+
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
 |Desc. 1 | | | |
 
-</p>
+
+
 </details>
 
 <details>
 <summary><b>Header text</b> attributes (optional)</summary>
-<p>
 
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
+Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+Text label | |  
+Text color | |
+Typography | |
 
 
-</p>
 </details>
 
 <details>
 <summary><b>Subhead</b> attributes (optional)</summary>
-<p>
 
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
+Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+Text label | |  
+Text color | |
+Typography | |
 
 
-</p>
 </details>
 
 <details>
 <summary><b>Media</b> attributes (optional)</summary>
-<p>
+
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
 |Desc. 1 | | | |
 
 
-</p>
+
+
 </details>
 
 <details>
-
 <summary><b>Supporting text</b> attributes (optional)</summary>
-<p>
-|  | Attribute | Related method(s) | Default value |
-|---|---|---|---|
-|Desc. 1 | | | |
 
+Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+Text label | | 
+Text color | |
+Typography | |
 
-</p>
 </details>
 
 <details>
 <summary><b>Button</b> attributes (optional)</summary>
-<p>
+
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
@@ -313,47 +227,21 @@ Cards can include icons for actions.
 
 
 
-</p>
+
 </details>
 
 <details>
 <summary><b>Icon</b> attributes (optional)</summary>
-<p>
+
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
 |Desc. 1 | | | |
 
 
-</p>
+
+
 </details>
-
-
-### Outlined card example
-
-Source code API:
-* \<platform component name\>
-  * [Class definition](https://)
-  * [GitHub source](https://github.com/material-components/)
-
-
-The following example shows an outlined card. The card has a title, a secondary title, text, and two actions: Action 1 and Action 2 in purple (#6200EE).
-
-
-<img src="assets/<platform>-outlined-card.png" alt="outlined card example for <platform> showing ...">
-
-```
-<source code here>
-The source code example should display as per the interactive example (https://material.io/components/cards/#) with supporting text and Buttons, minus the media:
-* Display an outlined card with an outline of 60% opacity
-* Display a card title "Card title"
-* Display a secondary title "Secondary text" with an opacity of 60%
-* Display text reading "Greyhound divisively hello coldly wonderfully marginally far upon excluding." with an opacity of 60%
-* Display two actions, "Action 1" and "Action 2" with two text buttons
-* Display the sample image ![sample card image of yellow and red tulips](assets/card-sample-image.jpg)
-* Make the card selectable with a "favorites" icon
-
-```
 
 ## Theming Cards
 
@@ -367,4 +255,48 @@ API and source code
   * [Class definition](https://)
   * [GitHub source](https://github.com/material-components/)
 
+_Use the [Shrine theme](https://material.io/design/material-studies/shrine.html) for this example_
+```
+* Display an outlined card 
+* Display a card title "Card title"
+* Display a secondary title "Secondary text"
+* Display text reading "Greyhound divisively hello coldly wonderfully marginally far upon excluding."
+* Display two actions, "Action 1" and "Action 2" with two text buttons
+* Display the sample image ![sample card image of yellow and red tulips](assets/card-sample-image.jpg)
+* Make the card checkable with a "favorites" icon
 
+```
+* Make the card checkable with a "favorites" icon
+</details>
+
+## `mdc-card` API
+
+## Style Customization
+
+### CSS Classes
+
+CSS Class | Description
+--- | ---
+`mdc-card` | Mandatory. The main card element.
+`mdc-card--outlined` | Optional. Removes the shadow and displays a hairline outline instead.
+`mdc-card__primary-action` | Optional. The main tappable area of the card. Typically contains most (or all) card content _except_ `mdc-card__actions`. Only applicable to cards that have a primary action that the main surface should trigger.
+`mdc-card__media` | Optional. Media area that displays a custom `background-image` with `background-size: cover`.
+`mdc-card__media--square` | Optional. Automatically scales the media area's height to equal its width.
+`mdc-card__media--16-9` | Optional. Automatically scales the media area's height according to its width, maintaining a 16:9 aspect ratio.
+`mdc-card__media-content` | Optional. An absolutely-positioned box the same size as the media area, for displaying a title or icon on top of the `background-image`.
+`mdc-card__actions` | Optional. Row containing action buttons and/or icons.
+`mdc-card__actions--full-bleed` | Optional. Removes the action area's padding and causes its only child (an `mdc-card__action` element) to consume 100% of the action area's width.
+`mdc-card__action-buttons` | Optional. A group of action buttons, displayed on the left side of the card (in LTR), adjacent to `mdc-card__action-icons`.
+`mdc-card__action-icons` | Optional. A group of supplemental action icons, displayed on the right side of the card (in LTR), adjacent to `__action-buttons`.
+`mdc-card__action` | Optional. An individual action button or icon.
+`mdc-card__action--button` | Optional. An action button with text.
+`mdc-card__action--icon` | Optional. An action icon with no text. We recommend using [Material Icons](https://material.io/tools/icons/) from Google Fonts.
+
+### Sass Mixins
+
+Mixin | Description
+--- | ---
+`mdc-card-fill-color($color)` | Sets the fill color of a card.
+`mdc-card-outline($color, $thickness)` | Sets the color and thickness of a card's outline (but does _not_ remove its shadow).
+`mdc-card-shape-radius($radius, $rtl-reflexive)` | Sets the rounded shape to card with given radius size. Set `$rtl-reflexive` to true to flip radius values in RTL context, defaults to false.
+`mdc-card-media-aspect-ratio($x, $y)` | Maintains the given aspect ratio on a `mdc-card__media` subelement by dynamically scaling its height relative to its width.

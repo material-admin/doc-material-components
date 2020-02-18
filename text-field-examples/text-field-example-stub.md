@@ -33,74 +33,15 @@ The text field class consists of the following types:
 
 <img src="assets/text-field-generic.png" alt="Text field example of both filled and outlined text from material.io">
 
-_**Copy the image to your platform's assets folder.**_
+## Using text fields
 
-## Using text field
+Text fields allow users to enter text into a UI. They typically appear in forms and dialogs.
 
 ### Installation
-
-### Theming
 
 ## Filled text
 
 [Filled text fields](https://material.io/components/text-fields/#filled-text-field) have more visual emphasis than outlined text fields, making them stand out when surrounded by other content and components.
-### Key properties
-
-![\<Placeholder diagram of filled text field attributes. Replace this text if/when there is an approved diagram\>](assets.png)
-
-**1. Filled text field attributes**
-
-
-\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
-
-* A
-* B
-* C
-
-<details>
-<summary>Attribute A</summary>
-<p>
-
-Description | Attribute |  Default value | Related method(s)
----|---|---|---
-Desc. 1 | | |
-</p>
-</details>
-
-<details>
-<summary>Attribute B</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Desc. 1 | | | 
-
-</p>
-</details>
-
-<details>
-<summary>Attribute C</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Desc. 1 | | | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Themes (Styles)</b></summary>
-<p>
-
-Description | Theme
----|---
-Default theme | 
-Icon theme | 
-
-</p>
-</details>
-
 
 ### Filled text example
 
@@ -110,84 +51,127 @@ Source code API:
   * [Class definition](developer site here)
   * [GitHub source](https://github.com/materials-components/)
 
-The following examples shows a filled text field with <code>color</code> text and <code>color</code> background.
+The following examples shows a filled text field.
 
 
 _**Copy the image to your platform's assets folder. Use a screenshot of your render.**_
+
+
 <img src="assets/.png" alt="filled text field for <platform> platform">
 
 ```
-<source code example here>
-The source code example should do the following as per the video usage example (https://material.io/components/text-fields/#filled-text-field):
-* Display a filled text field with the default gray opacity of 38%
-* Display a text field label "Label" with the default gray opacity of 60%
-* Display a stroke when active along the bottom of the text field with the default color #6200EE
-* Display a trailing reduce-red-eye icon within the text field with a default opacity of 60%
-* Display helper text "Helper text" below the text field
+* The label text should read "Label text"
+* The input text should read "Input text"
+* The helper text should read "Helper text"
+* The text field should have a character counter of up to 20 characters
+* The text field should have a "favorite" leading icon
 ```
+
+### Anatomy and key properties
+
+<img alt="<Placeholder diagram of outlined teld field attributes. Replace this text if/when there is an approved diagram\>" src="assets/text-field-anatomy.png" width=70%>
+
+1. Container
+1. Leading icon (optional)
+1. Label text
+1. Input text
+1. Trailing icon (optional)
+1. Activation indicator
+1. Helper text (optional)
+
+<details>
+<summary><b>Container</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+
+</details>
+
+
+<details>
+<summary><b>Leading icon</b> (optional) attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+
+</details>
+
+
+<details>
+<summary><b>Label text</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+
+</details>
+
+
+<details>
+<summary><b>Input text</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+
+</details>
+
+
+<details>
+<summary><b>Trailing icon</b> (optional) attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+
+</details>
+
+
+<details>
+<summary><b>Activation indicator</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+
+</details>
+
+
+<details>
+<summary><b>Helper text</b> (optional) attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+
+</details>
 
 ## Outlined text
 
 [Outlined text fields](https://material.io/components/text-fields/#outlined-text-field) have less visual emphasis than filled text fields. When they appear in places like forms, where many text fields are placed together, their reduced emphasis helps simplify the layout.
-### Key properties
-
-![\<Placeholder diagram of outlined teld field attributes. Replace this text if/when there is an approved diagram\>](assets.png)
-
-**1.Outlined text field**
-
-
-\<**NOTE** Replace table descriptions with up to 6 attributes appropriate to your platform\>
-
-
-
-* A
-* B
-* C
-
-<details>
-<summary>Attribute A</summary>
-<p>
-
-Description | Attribute |  Default value | Related method(s)
----|---|---|---
-Desc. 1 | | |
-</p>
-</details>
-
-<details>
-<summary>Attribute B</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Desc. 1 | | | 
-
-</p>
-</details>
-
-<details>
-<summary>Attribute C</summary>
-<p>
-
-Description | Attribute | Default value | Related method(s)
----|---|---|---
-Desc. 1 | | | 
-
-</p>
-</details>
-
-<details>
-<summary><b>Themes (Styles)</b></summary>
-<p>
-
-Description | Theme
----|---
-Default theme | 
-Icon theme | 
-
-</p>
-</details>
-
 
 ### Outlined text example
 
@@ -197,19 +181,152 @@ Source code API:
   * [Class definition](developer site here)
   * [GitHub source](https://github.com/materials-components/)
 
-The following examples shows an outlined text field with <code>color</code> text and <code>color</code> outline.
+The following examples shows an outlined text field.
 
 _**Copy the image to your platform's assets folder. Use a screenshot of your render.**_
 <img src="assets/.png" alt="outlined text field for <> platform">
 
 ```
-<source code example here>
-The source code example should do the following as per the video usage example (https://material.io/components/text-fields/#outlined-text-field):
-* Display an outlined text field with the default outlined opacity of 60%
-* Display a text field label "Label" with the default gray opacity of 60%
-* Display a stroke when active along the outlined with the default color #6200EE
-* Display a trailing reduce-red-eye icon within the text field with a default opacity of 60%
-* Display helper text "Helper text" below the text field with a default opacity of 60%
+* The label text should read "Label text"
+* The input text should read "Input text"
+* The error message text should read "Error message" and display the error message
+* The text field should have a trailing error icon
+```
+### Anatomy and key properties
+
+<img alt="<Placeholder diagram of outlined teld field attributes. Replace this text if/when there is an approved diagram\>" src="assets/text-field-anatomy.png" width=70%>
+
+1. Container
+1. Leading icon (optional)
+1. Label text
+1. Input text
+1. Trailing icon (optional)
+1. Activation indicator
+1. Helper text (optional)
+
+<details>
+<summary><b>Container</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+
+</details>
+
+
+<details>
+<summary><b>Leading icon</b> (optional) attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+
+</details>
+
+
+<details>
+<summary><b>Label text</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+
+</details>
+
+
+<details>
+<summary><b>Input text</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+
+</details>
+
+
+<details>
+<summary><b>Trailing icon</b> (optional) attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+
+</details>
+
+
+<details>
+<summary><b>Activation indicator</b> attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+
+</details>
+
+
+<details>
+<summary><b>Helper text</b> (optional) attributes</summary>
+<br>
+
+|  | Attribute | Related method(s) | Default value |
+| --- | --- | --- | --- |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+| **\<label\>** | | | |
+
+</details>
+
+
+## Theming text fields
+
+Text fields support [Material Theming](https://material.io/components/text-fields/#theming) and can be customized in terms of color, typography and shape.
+
+### Text field theming example
+
+API and source code:
+
+* `\<Component platform API name\>`
+    * [Class description](https://)
+    * [GitHub source](https://github.com/material-components/)
+    
+The following example shows filled and outlined text fields with Material Theming.
+
+!["Two text fields, one filled, one outlined, with green/black color theming and cut corners."](assets/button-theming.svg)
+
+<details>
+<summary><b>Implementing text field theming</b></summary>
 
 ```
+Include source code for two side-by-side examples using a green/black color theme similar to the one used in the [Android button example](https://github.com/mingjane-work/doc-material-components/blob/mingjane-doc-branch/button-examples/Android/android-button-example.md):
 
+* Include one filled text field with the following:
+    * The label text should read "Label text"
+    * The input text should read "Input text"
+    * The helper text should read "Helper text"
+    * The text field should have a character counter of up to 20 characters
+    * The text field should have a "favorite" leading icon
+    * The container should have cut corners instead of rounded
+* Include one outlined text field with the following:
+    * The label text should read "Label text"
+    * The input text should read "Input text"
+    * The error message text should read "Error message" and display the error message
+    * The text field should have a trailing error icon
+    * The container should have cut corners instead of rounded

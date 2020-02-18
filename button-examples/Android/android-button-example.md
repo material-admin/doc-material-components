@@ -21,17 +21,19 @@ There are four types of buttons:
 3. [Contained button](#contained-button)
 4. [Toggle button](#toggle-button)
 
-!["Button types for Android - text, outlined, contained and toggle."](assets/mio-button-types.png)
+!["Button types - text, outlined, contained and toggle."](assets/buttons_types.png)
 
 ## Using buttons
 
 Before you can use Material buttons, you need to add a dependency to the Material Components for Android library. For more information, go to the [Getting started](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md) page.
 
+_**Note:** `<Button>` is auto-inflated as `<com.google.android.material.button.MaterialButton>` via `MaterialComponentsViewInflater` when using a non-Bridge `Theme.MaterialComponents.*` theme._
+
 ### Making buttons accessible
 
-Android's button component APIs support labeling for accessibility. To use labels...
+Buttons support content labeling for accessibility and are readable by most screen readers, such as TalkBack. Text rendered in buttons is automatically provided to accessibility services. Additional content labels are usually unnecessary.
 
-For more guidance on writing labels, go to [our page on how to write a good accessibility label](https://material.io/design/usability/accessibility.html#writing).
+For more information on content labels, go to the [Android accessibility help guide](https://support.google.com/accessibility/android/answer/7158690).
 
 ## Text button
 
@@ -47,7 +49,7 @@ API and source code:
 
 The following example shows a text button with a text label.
 
-!["Text button example for Android with purple text 'Text button' over a white background."](assets/text-button.svg)
+!["Text button with purple text 'Text button' over a white background."](assets/text-button.svg)
 
 In the layout:
 ```xml
@@ -59,8 +61,6 @@ In the layout:
     style="@style/Widget.MaterialComponents.Button.TextButton"
 />
 ```
-
-_**Note:** `<Button>` is auto-inflated as `<com.google.android.material.button.MaterialButton>` via `MaterialComponentsViewInflater` when using a non-Bridge `Theme.MaterialComponents.*` theme._
 
 In code:
 ```kt
@@ -75,7 +75,7 @@ textButton.setOnClickListener {
 
 The following example shows a text button with an icon.
 
-!["Text button example for Android with purple text 'Text button' and '+' icon over a white background."](assets/text-button-icon.svg)
+!["Text button with purple text 'Text button' and '+' icon over a white background."](assets/text-button-icon.svg)
 
 In the layout:
 ```xml
@@ -92,7 +92,11 @@ In the layout:
 
 A text button has a text label, a transparent container and an optional icon.
 
-![<Placeholder diagram of text button anatomy. Replace this text if/when there is an approved diagram\>](assets/text-button-diagram.png)
+![Text button anatomy diagram](assets/text_button_anatomy.png)
+
+1. Text label
+2. Container
+3. Icon
 
 <details>
 <summary><b>Text label</b> attributes</summary>
@@ -164,7 +168,7 @@ API and source code:
     
 The following example shows an outlined button with a text label and stroked container.    
 
-!["Outlined button example for Android with purple text 'Outlined button' and grey border over a white background."](assets/outlined-button.svg)
+!["Outlined button with purple text 'Outlined button' and grey border over a white background."](assets/outlined-button.svg)
 
 In the layout:
 ```xml
@@ -176,8 +180,6 @@ In the layout:
     style="?attr/materialButtonOutlinedStyle"
 />
 ```
-
-_**Note:** `<Button>` is auto-inflated as `<com.google.android.material.button.MaterialButton>` via `MaterialComponentsViewInflater` when using a non-Bridge `Theme.MaterialComponents.*` theme._
 
 In code:
 ```kt
@@ -192,7 +194,7 @@ outlinedButton.setOnClickListener {
 
 The following example shows an outlined button with an icon.
 
-!["Outlined button example for Android with purple text 'Outlined button', grey border and '+' icon over a white background."](assets/outlined-button-icon.svg)
+!["Outlined button with purple text 'Outlined button', grey border and '+' icon over a white background."](assets/outlined-button-icon.svg)
 
 In the layout:
 ```xml
@@ -209,7 +211,11 @@ In the layout:
 
 An outlined button has a text label, a stroked container and an optional icon.
 
-![<Placeholder diagram of outlined button anatomy. Replace this text if/when there is an approved diagram\>](assets/outlined-button-diagram.png)
+![Outlined button anatomy diagram](assets/outlined_button_anatomy.png)
+
+1. Text label
+2. Container
+3. Icon
 
 <details>
 <summary><b>Text label</b> attributes</summary>
@@ -271,6 +277,8 @@ See the full list of [styles](https://github.com/material-components/material-co
 
 [Contained buttons](https://material.io/components/buttons/#contained-button) are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
+_**Note** The contained button is the default style if the style is not set._
+
 ### Contained button examples
 
 API and source code:
@@ -281,7 +289,7 @@ API and source code:
 
 The following example shows a contained button with a text label and a filled container.
 
-!["Contained button example for Android with white text 'Contained button' and purple container over a white background."](assets/contained-button.svg)
+!["Contained button with white text 'Contained button' and purple container over a white background."](assets/contained-button.svg)
 
 In the layout:
 ```xml
@@ -293,7 +301,7 @@ In the layout:
 />
 ```
 
-_**Note:** `<Button>` is auto-inflated as `<com.google.android.material.button.MaterialButton>` via `MaterialComponentsViewInflater` when using a non-Bridge `Theme.MaterialComponents.*` theme._
+_**Note:** Since this is the default type, you don't need to specify a style tag as long as you are using a Material Components Theme. If not, set the style to `@style/Widget.MaterialComponents.Button`._
 
 In code:
 ```kt
@@ -308,7 +316,7 @@ containedButton.setOnClickListener {
 
 The following example shows a contained button with an icon.
 
-!["Contained button example for Android with white text 'Contained button', purple container and '+' icon over a white background."](assets/contained-button-icon.svg)
+!["Contained button with white text 'Contained button', purple container and '+' icon over a white background."](assets/contained-button-icon.svg)
 
 In the layout:
 ```xml
@@ -325,7 +333,11 @@ In the layout:
 
 A contained button has a text label, a filled container and an optional icon.
 
-![<Placeholder diagram of contained button anatomy. Replace this text if/when there is an approved diagram\>](assets/contained-button-diagram.png)
+![Contained button anatomy diagram](assets/contained_button_anatomy.png)
+
+1. Text label
+2. Container
+3. Icon
 
 <details>
 <summary><b>Text label</b> attributes</summary>
@@ -456,7 +468,7 @@ toggleButton.addOnButtonCheckedListener { toggleButton, checkedId, isChecked ->
 
 The following example shows a toggle button with three buttons that have icons.
 
-!["Toggle button example for Android with icons - heart, eye and bell - and grey/purple borders over a white background."](assets/toggle-button.svg)
+!["Toggle buttons with icons - heart, eye and bell - and grey/purple borders over a white background."](assets/toggle-button.svg)
 
 In `res/values/styles.xml`:
 ```xml
@@ -499,7 +511,10 @@ In the layout:
 
 A toggle button has a shared stroked container, icons and/or text labels.
 
-![<Placeholder diagram of toggle button anatomy. Replace this text if/when there is an approved diagram\>](assets/toggle-button-diagram.png)
+![Toggle button anatomy](assets/toggle_button_anatomy.png)
+
+1. Container
+2. Icon
 
 <details>
 <summary><b>Selection</b> attributes</summary>
@@ -537,9 +552,11 @@ API and source code:
 * `CheckBox`
     * [Class description](https://developer.android.com/reference/android/widget/CheckBox)
 
+_**Note** The `CheckBox` API is just of several inputs that can implement the icon button. See other [selection controls](https://material.io/components/selection-controls/) for more details._
+
 The following example shows an icon that can be used independently or in items of a `RecyclerView`.
 
-![<Placeholder image of icon toggle button. Replace this text if/when there is an approved diagram\>](assets/android_toggle_button.png)
+![Toggle icon example showing 4 images, heart icon in the upper-right corner of each image](assets/android_toggle_button.png)
 
 In the layout:
 ```xml
@@ -589,7 +606,7 @@ API and source code:
     
 The following example shows text, outlined and contained button types with Material Theming.
 
-!["Button theming example for Android with three buttons - text, outlined and contained - with green/black color theming and cut corners."](assets/button-theming.svg)
+!["Button theming with three buttons - text, outlined and contained - with pink color theming and cut corners."](assets/button-theming.svg)
 
 <details>
 <summary><b>Implementing button theming</b></summary>
@@ -599,29 +616,42 @@ Using theme attributes and styles in `res/values/styles.xml` (themes all buttons
 ```xml
 <style name="Theme.App" parent="Theme.MaterialComponents.*">
     ...
-    <item name="colorPrimary">@color/green_a400</item>
-    <item name="colorOnPrimary">@color/black</item>
+    <item name="colorPrimary">#FEDBD0</item>
+    <item name="colorOnPrimary">#442C2E</item>
     <item name="textAppearanceButton">@style/TextAppearance.App.Button</item>
     <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.App.SmallComponent</item>
 </style>
 
 <style name="TextAppearance.App.Button" parent="TextAppearance.MaterialComponents.Button">
-    <item name="fontFamily">@font/roboto_mono</item>
-    <item name="android:fontFamily">@font/roboto_mono</item>
-    <item name="android:textAllCaps">false</item>
+    <item name="fontFamily">@font/rubik</item>
+    <item name="android:fontFamily">@font/rubik</item>
 </style>
 
 <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
     <item name="cornerFamily">cut</item>
-    <item name="cornerSize">8dp</item>
+    <item name="cornerSize">4dp</item>
 </style>
 ```
 
-or using a default style theme attribute, styles and theme overlay (themes all buttons but does not affect other components):
+or using default style theme attributes, styles and theme overlays (themes all buttons but does not affect other components):
 ```xml
 <style name="Theme.App" parent="Theme.MaterialComponents.*">
     ...
+    <item name="borderlessButtonStyle">@style/Widget.App.Button.TextButton</item>
+    <item name="materialButtonOutlinedStyle">@style/Widget.App.Button.OutlinedButton</item>
     <item name="materialButtonStyle">@style/Widget.App.Button</item>
+</style>
+
+<style name="Widget.App.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+    <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button.TextButton</item>
+    <item name="android:textAppearance">@style/TextAppearance.App.Button</item>
+    <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+</style>
+
+<style name="Widget.App.Button.OutlinedButton" parent="Widget.MaterialComponents.OutlinedButton">
+    <item name="materialThemeOverlay">@style/ThemeOverlay.App.Button.TextButton</item>
+    <item name="android:textAppearance">@style/TextAppearance.App.Button</item>
+    <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
 </style>
 
 <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
@@ -630,13 +660,17 @@ or using a default style theme attribute, styles and theme overlay (themes all b
     <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
 </style>
 
+<style name="ThemeOverlay.App.Button.TextButton" parent="">
+    <item name="colorPrimary">#84565E</item>
+</style>
+
 <style name="ThemeOverlay.App.Button" parent="">
-    <item name="colorPrimary">@color/green_a400</item>
-    <item name="colorOnPrimary">@color/black</item>
+    <item name="colorPrimary">#FEDBD0</item>
+    <item name="colorOnPrimary">#442C2E</item>
 </style>
 ```
 
-or using the style in the layout (affects only this button):
+or using one of the styles in the layout (affects only this button):
 ```xml
 <Button
     ...

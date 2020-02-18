@@ -2,7 +2,7 @@
 title: "Text field"
 layout: detail
 section: components
-excerpt: "<Platform name> Text field"
+excerpt: "MDC Web Text field"
 ide_version: "<cIDE name> <compatible IDE version and build number>"
 material_package_version: "<compatible Material platform package version number>"
 iconId:
@@ -11,8 +11,6 @@ api_doc_root:
 -->
 
 _**Instructions**_
-* Copy this file into the platform folder for this component
-* Rename the file to "\<platform\>-text-field.md"
 * [Using text field](#using-text-field)
     * Add a link under [Using text field](#using-text-field) to your getting started page if you have one
     * Insert [installation](#installation) and [theming](#theming) as appropriate for your platform
@@ -21,15 +19,17 @@ _**Instructions**_
 * [Filled text](#filled-text) ane [Outlined-text](#outlined-text) sections
     * Add links to your platform 
 
-
 # Text field
 
 [Text fields](https://material.io/components/text-fields) let users enter and edit text.
+
+For more information, go the the [`mdc-text-field` API](#mdc-text-field-api) documentation.
 
 The text field class consists of the following types:
 
 * [Filled text](#filled-text)
 * [Outlined text](#outlined-text)
+
 
 <img src="assets/text-field-generic.png" alt="Text field examples of both filled and outlined types, and each type showing both inactive and focused states. The filled text fields show a gray background and a darker gray activation indicator that is purple when focused. The outlined text fields show a clear background and an outline that is purple when focused">
 
@@ -63,6 +63,7 @@ import {MDCTextField} from '@material/textfield';
 const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
 
 ```
+</details>
 
 ### Sass mixins
 
@@ -101,6 +102,8 @@ module.exports = {
 
 <img src="assets/web-sass-mixins-example.png" alt="Example text field instance rendered for an orange label and a green cursor caret">
 
+</details>
+
 #### Sass mixins for `mdc-text-field`
 
 Use Sass mixins when you want to customize the look and feel of your text fields. Go to [sass-lang.com](https://sass-lang.com/install) for installation instructions.
@@ -136,7 +139,7 @@ Import base styles of button into your `*.scss` stylesheet using :
 **NOTE are there theming instructions for text fields? Include them in the collapsible section**
 
 <details><summary><b>Expand for theming instructions for <code>mdc-text-field</code>.</b></summary>
-
+</details>
 
 ### Making text fields accessible
 
@@ -175,7 +178,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 ### Anatomy and key properties
 
-<img alt="<Placeholder diagram of outlined teld field attributes. Replace this text if/when there is an approved diagram\>" src="assets/text-field-anatomy.png" width=70%>
+![filled text field anatomy](assets/textfields_filled_anatomy.png)
 
 1. Container
 1. Leading icon (optional)
@@ -286,15 +289,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 </details>
 
-<summary><b>Styles</b></summary>
-<br>
 
-|  Style|
-| --- | --- |
-| **Default style** | |
-| **Icon style** | |
-
-</details>
 
 ## Outlined text
 
@@ -321,7 +316,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 ```
 ### Anatomy and key properties
 
-<img alt="<Placeholder diagram of outlined teld field attributes. Replace this text if/when there is an approved diagram\>" src="assets/text-field-anatomy.png" width=70%>
+![Outlined text field anatomy](assets/textfields_outlined_anatomy.png)
 
 1. Container
 1. Leading icon (optional)
@@ -430,15 +425,6 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 
 </details>
 
-<summary><b>Styles</b></summary>
-<br>
-
-|  Style|
-| --- | --- |
-| **Default style** | |
-| **Icon style** | |
-
-</details>
 
 ## Theming text fields
 
@@ -459,9 +445,10 @@ The following example shows filled and outlined text fields with Material Themin
 <details>
 <summary><b>Implementing text field theming</b></summary>
 
-```
-Include source code for two side-by-side examples using a green/black color theme similar to the one used in the [Android button example](https://github.com/mingjane-work/doc-material-components/blob/mingjane-doc-branch/button-examples/Android/android-button-example.md):
+_Use the [Shrine theme](https://material.io/design/material-studies/shrine.html) for this example_
 
+
+```
 * Include one filled text field with the following:
     * The label text should read "Label text"
     * The input text should read "Input text"
@@ -476,3 +463,194 @@ Include source code for two side-by-side examples using a green/black color them
     * The text field should have a trailing error icon
     * The container should have cut corners instead of rounded
 ```
+</details>
+
+## `mdc-text-field` API
+
+### CSS Classes
+
+CSS Class | Description
+--- | ---
+`mdc-text-field` | Mandatory.
+`mdc-text-field--outlined` | Styles the text field as an outlined text field.
+`mdc-text-field--fullwidth` | Styles the text field as a full width text field.
+`mdc-text-field--textarea` | Indicates the text field is a `<textarea>`.
+`mdc-text-field--disabled` | Styles the text field as a disabled text field.
+`mdc-text-field--dense` | Styles the text field as a dense text field.\*
+`mdc-text-field--with-leading-icon` | Styles the text field as a text field with a leading icon.
+`mdc-text-field--with-trailing-icon` | Styles the text field as a text field with a trailing icon.
+`mdc-text-field--focused` | Styles the text field as a text field in focus.
+`mdc-text-field--no-label` | Styles the text field that has no label.
+`mdc-text-field--end-aligned` | Styles the text field with an end-aligned input.
+`mdc-text-field-helper-line` | Styles the container of helper text and character counter elements.
+
+#### Deprecation Notice
+
+\*The `--dense` variant of the text field will be removed in an upcoming release.
+See [github issue](https://github.com/material-components/material-components-web/issues/4142) for details.
+
+### Sass Mixins
+
+To customize the colors of any part of the text-field, use the following mixins. We recommend you apply
+these mixins within CSS selectors like `.foo-text-field:not(.mdc-text-field--focused)` to select your unfocused text fields,
+and `.foo-text-field.mdc-text-field--focused` to select your focused text-fields. To change the invalid state of your text fields,
+apply these mixins with CSS selectors such as `.foo-text-field.mdc-text-field--invalid`.
+
+> _NOTE_: the `mdc-line-ripple-color` mixin should be applied from the not focused class `foo-text-field:not(.mdc-text-field--focused)`).
+
+#### Mixins for all Text Fields
+
+Mixin | Description
+--- | ---
+`mdc-text-field-ink-color($color)` | Customizes the color of the text entered into an enabled text field.
+`mdc-text-field-placeholder-color($color)` | Customizes the color of the placeholder in an enabled text field.
+`mdc-text-field-disabled-ink-color($color)` | Customizes the color of the entered text in a disabled text field.
+`mdc-text-field-disabled-placeholder-color($color)` | Customizes the color of the placeholder in a disabled text field.
+`mdc-text-field-label-color($color)` | Customizes the text color of the label in an enabled text field.
+`mdc-text-field-disabled-label-color($color)` | Customizes the text color of the label in a disabled text field.
+`mdc-text-field-caret-color($color)` | Customizes the color of the cursor caret of the text field.
+
+#### Mixins for Filled Text Field and Textarea
+
+Mixin | Description
+--- | ---
+`mdc-text-field-fill-color($color)` | Customizes the background color of the text field or textarea when enabled.
+`mdc-text-field-disabled-fill-color($color)` | Customizes the background color of the text field or textarea when disabled.
+
+#### Mixins for Filled Text Field Only
+
+Mixin | Description
+--- | ---
+`mdc-text-field-shape-radius($radius, $rtl-reflexive)` | Sets rounded shape to boxed text field variant with given radius size. Set `$rtl-reflexive` to true to flip radius values in RTL context, defaults to false.
+`mdc-text-field-bottom-line-color($color)` | Customizes the text field bottom line color.
+`mdc-text-field-hover-bottom-line-color($color)` | Customizes the hover text field bottom line color.
+`mdc-text-field-disabled-bottom-line-color($color)` | Customizes the disabled text field bottom line color.
+`mdc-text-field-line-ripple-color($color)` | Customizes the color of the default line ripple of the text field.
+`mdc-text-field-density($density-scale)` | Sets density scale for default text field variant. Supported density scale values `-4`, `-3`, `-2`, `-1`, `0`.
+`mdc-text-field-height($height)` | Sets height of default text field variant.
+
+#### Mixins for Outlined Text Field and Textarea
+
+Mixin | Description
+--- | ---
+`mdc-text-field-focused-outline-color($color)` | Customizes the outline border color when the text field or textarea is focused.
+`mdc-text-field-hover-outline-color($color)` | Customizes the outline border color when the text field or textarea is hovered.
+`mdc-text-field-disabled-outline-color($color)` | Customizes the outline border color when the text field or textarea is disabled.
+`mdc-text-field-outline-color($color)` | Customizes the border color of the outlined text field or textarea.
+
+#### Mixins for Outlined Text Field Only
+
+Mixin | Description
+--- | ---
+`mdc-text-field-outline-shape-radius($radius, $rtl-reflexive)` | Sets rounded shape to outlined text field variant with given radius size. Set `$rtl-reflexive` to true to flip radius values in RTL context, defaults to false.
+`mdc-text-field-outlined-density($density-scale)` | Sets density scale for outlined text field (Excluding outlined text field with leading icon). Supported density scale values `-4`, `-3`, `-2`, `-1`, `0`.
+`mdc-text-field-outlined-height($height)` | Sets height of outlined text field variant (Excluding outlined text field with leading icon).
+`mdc-text-field-outlined-with-leading-icon-density($density-scale)` | Sets density scale for outlined text field with leading icon. Supported density scale values `-4`, `-3`, `-2`, `-1`, `0`.
+`mdc-text-field-outlined-with-leading-icon-height($height)` | Sets height of outlined text field with leading icon variant.
+
+#### Mixins for Textarea Only
+
+Mixin | Description
+--- | ---
+`mdc-text-field-textarea-shape-radius($radius, $rtl-reflexive)` | Sets rounded shape to text area variant with given radius size. Set `$rtl-reflexive` to true to flip radius values in RTL context, defaults to false.
+
+## `MDCTextField` Properties and Methods
+
+Property | Value Type | Description
+--- | --- | ---
+`value` | `string` | Proxies to the foundation's `getValue`/`setValue` methods.
+`disabled` | `boolean` | Proxies to the foundation's `isDisabled`/`setDisabled` methods.
+`useNativeValidation` | `boolean` (write-only) | Proxies to the foundation's `setUseNativeValidation` method.
+`valid` | `boolean` | Proxies to the foundation's `isValid`/`setValid` methods.
+`helperTextContent` | `string` (write-only)| Proxies to the foundation's `setHelperTextContent` method when set.
+`ripple` | `MDCRipple` (write-only) | The `MDCRipple` instance for the root element that `MDCTextField` initializes; this only applies to the default Text Field, and is `null` for other variants.
+`leadingIconAriaLabel` | `string` (write-only) | Proxies to the foundation's `setLeadingIconAriaLabel` method.
+`trailingIconAriaLabel` | `string` (write-only) | Proxies to the foundation's `setTrailingIconAriaLabel` method.
+`leadingIconContent` | `string` (write-only) | Proxies to the foundation's `setLeadingIconContent` method.
+`trailingIconContent` | `string` (write-only) | Proxies to the foundation's `setTrailingIconContent` method.
+
+In addition to the above, the following properties proxy to the `input` element's properties of the same name:
+
+* `required`
+* `pattern`
+* `minLength`
+* `maxLength`
+* `min`
+* `max`
+* `step`
+
+Method Signature | Description
+--- | ---
+`focus() => void` | Focuses the `input` or `textarea` element.
+`layout() => void` | Adjusts the dimensions and positions for all sub-elements.
+
+## Usage Within Frameworks
+
+If you are using a JavaScript framework, such as React or Angular, you can create a Text Field for your framework. Depending on your needs, you can use the _Simple Approach: Wrapping MDC Web Vanilla Components_, or the _Advanced Approach: Using Foundations and Adapters_. Please follow the instructions [here](../../docs/integrating-into-frameworks.md).
+
+### `MDCTextFieldAdapter`
+
+Method Signature | Description
+--- | ---
+`addClass(className: string) => void` | Adds a class to the root element.
+`removeClass(className: string) => void` | Removes a class from the root element.
+`hasClass(className: string) => boolean` | Returns true if the root element contains the given class name.
+`registerTextFieldInteractionHandler(evtType: string, handler: EventListener) => void` | Registers an event handler on the root element for a given event.
+`deregisterTextFieldInteractionHandler(evtType: string, handler: EventListener) => void` | Deregisters an event handler on the root element for a given event.
+`registerInputInteractionHandler(evtType: string, handler: EventListener) => void` | Registers an event listener on the native input element for a given event.
+`deregisterInputInteractionHandler(evtType: string, handler: EventListener) => void` | Deregisters an event listener on the native input element for a given event.
+`registerValidationAttributeChangeHandler(handler: (attributeNames: string[]) => void) => MutationObserver` | Registers a validation attribute change listener on the input element. Handler accepts list of attribute changes.
+`deregisterValidationAttributeChangeHandler(!MutationObserver) => void` | Disconnects a validation attribute observer on the input element.
+`getNativeInput() => NativeInputType \| null` | Returns an object representing the native text input element, with a similar API shape. See [types.ts](types.ts).
+`isFocused() => boolean` | Returns whether the input is focused.
+`shakeLabel(shouldShake: boolean) => void` | Shakes the label to indicate an invalid input value.
+`floatLabel(shouldFloat: boolean) => void` | Floats the label.
+`hasLabel() => boolean` | Determines whether the text field has a label element.
+`getLabelWidth() => number` | Returns the width of the label element in px.
+`activateLineRipple() => void` | Activates the text field's line ripple sub-element.
+`deactivateLineRipple() => void` | Deactivate the text field's line ripple sub-element.
+`setLineRippleTransformOrigin(normalizedX: number) => void` | Sets the CSS `transform-origin` property to the given value on the text field's line ripple sub-element (if present).
+`hasOutline() => boolean` | Determines whether the text field has an outline sub-element.
+`notchOutline(labelWidth: number) => void` | Sets the width of the text field's notched outline sub-element.
+`closeOutline() => void` | Closes the text field's notched outline sub-element.
+
+#### `MDCTextFieldAdapter.getNativeInput()`
+
+Returns an object representing the native text input element, with a similar API shape. We _never_ alter the value within our code, however we _do_ update the disabled property, so if you choose to duck-type the return value for this method in your implementation it's important to keep this in mind. Also note that this method can return null, which the foundation will handle gracefully.
+
+#### `MDCTextFieldAdapter.getIdleOutlineStyleValue(propertyName: string)`
+
+Returns the idle outline element's computed style value of the given css property `propertyName`. The vanilla implementation achieves this via `getComputedStyle(...).getPropertyValue(propertyName)`.
+
+### `MDCTextFieldFoundation`
+
+Property | Value Type | Description
+--- | --- | ---
+`shouldFloat` | `boolean` (read-only) | Determines whether the label should float.
+`shouldShake` | `boolean` (read-only) | Determines whether the label should shake.
+
+Method Signature | Description
+--- | ---
+`getValue() => string` | Returns the input's value.
+`setValue(value: string)` | Sets the input's value.
+`setUseNativeValidation(useNativeValidation: boolean)` | Sets whether to check native HTML validity state (`true`, default) or custom validity state when updating styles (`false`).
+`setValid(isValid: boolean)` | Sets custom validity and updates styles accordingly. Note that native validation will still be honored subsequently unless `setUseNativeValidation(false)` is also called.
+`isValid() => boolean` | Returns the component's current validity state (either native or custom, depending on how `setUseNativeValidation()` was configured).
+`isDisabled() => boolean` | Returns whether or not the input is disabled.
+`setDisabled(disabled: boolean) => void` | Updates the input's disabled state.
+`handleTextFieldInteraction(evt: Event) => void` | Handles click and keydown events originating from inside the Text Field component.
+`handleInput() => void` | Handles text input and textarea input event.
+`handleValidationAttributeChange(attributesList: !Array<string>) => void` | Handles validation attribute changes.
+`activateFocus() => void` | Activates the focus state of the Text Field. Normally called in response to the input focus event.
+`deactivateFocus() => void` | Deactivates the focus state of the Text Field. Normally called in response to the input blur event.
+`setHelperTextContent(content: string) => void` | Sets the content of the helper text.
+`setLeadingIconAriaLabel(label: string) => void` | Sets the aria label of the leading icon.
+`setLeadingIconContent(content: string) => void` | Sets the text content of the leading icon.
+`setTrailingIconAriaLabel(label: string) => void` | Sets the aria label of the trailing icon.
+`setTrailingIconContent(content: string) => void` | Sets the text content of the trailing icon.
+`notchOutline(openNotch: boolean) => void` | Opens/closes the notched outline.
+`setTransformOrigin(evt: TouchEvent \| MouseEvent) => void` | Sets the line ripple's transform origin, so that the line ripple activate animation will animate out from the user's click location.
+`autoCompleteFocus() => void` | Activates the Text Field's focus state in cases when the input value is changed programmatically (i.e., without user action).
+
+`MDCTextFieldFoundation` supports multiple optional sub-elements: helper text and icon. The foundations of these sub-elements must be passed in as constructor arguments to `MDCTextFieldFoundation`.
+
