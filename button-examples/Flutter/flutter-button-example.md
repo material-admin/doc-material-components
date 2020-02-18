@@ -59,9 +59,6 @@ FlatButton(
 )
 ```
 
-<details>
-<summary><b>Adding an icon to a text button</b></summary>
-<br>
     
 The following example shows a text button with an icon.
 
@@ -77,9 +74,6 @@ FlatButton.icon(
     label: Text("TEXT BUTTON"),
 )
 ```
-
-</details>
-<details><summary><b>Expand to see renderable example code for a text button and text button icon.</b></summary>
 
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
@@ -138,7 +132,6 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 ```
-</details>
 
 ### Anatomy and key properties
 
@@ -150,9 +143,7 @@ A text button has a text label, a transparent container and an optional icon.
 1. Container
 1. Icon
 
-<details>
-<summary><b>Text label</b> properties</summary>
-<br>
+<b>Text label</b>
 
 | &nbsp; | Property |
 | --- | --- |
@@ -163,9 +154,7 @@ A text button has a text label, a transparent container and an optional icon.
 
 </details>
 
-<details>
-<summary><b>Container</b> properties</summary>
-<br>
+<b>Container</b>
 
 | &nbsp; | Property |
 | --- | --- |
@@ -178,11 +167,7 @@ A text button has a text label, a transparent container and an optional icon.
 | **Disabled color** | `disabledColor` |
 | **Disabled elevation** | `disabledElevation` |
 
-</details>
-
-<details>
-<summary><b>Icon</b> properties</summary>
-<br>
+<b>Icon</b>
     
 | &nbsp; | Property |
 | --- | --- |
@@ -190,18 +175,13 @@ A text button has a text label, a transparent container and an optional icon.
 | **Color** | `color` on `icon` |
 | **Size** | `size` on `icon` |
 
-</details>
-
-<details>
-<summary><b>Constructors</b></summary>
-<br>
+<b>Constructors</b>
 
 | &nbsp; | Constructor |
 | --- | --- |
 | **Default constructor** | `FlatButton()` |
 | **Icon constructor** | `FlatButton.icon()` |
 
-</details>
 
 ## Outlined button
 
@@ -228,10 +208,6 @@ OutlineButton(
 )
 ```
 
-<details>
-<summary><b>Adding an icon to an outlined button</b></summary>
-<br>
-
 The following example shows an outlined button with an icon.
 
 !["Outlined button with purple text 'Outlined button', grey border and '+' icon over a white background."](assets/outlined-button-icon.svg)
@@ -247,9 +223,6 @@ OutlineButton.icon(
     label: Text("OUTLINED BUTTON"),
 )
 ```
-
-</details>
-<details><summary><b>Expand to see renderable example code for a outline button and outline button icon.</b></summary>
 
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
@@ -310,7 +283,6 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 ```
-</details>
 
 ### Anatomy and key properties
 
@@ -322,9 +294,7 @@ An outlined button has a text label, a stroked container and an optional icon.
 1. Container
 1. Icon
 
-<details>
-<summary><b>Text label</b> properties</summary>
-<br>
+<b>Text label</b> 
 
 | &nbsp; | Property |
 | --- | --- |
@@ -333,11 +303,7 @@ An outlined button has a text label, a stroked container and an optional icon.
 | **Disabled Text Color** | `disabledTextColor` |
 | **Typography** | `style` on `child` or `label` |
 
-</details>
-
-<details>
-<summary><b>Container</b> properties</summary>
-<br>
+<b>Container</b>
     
 | &nbsp; | Property |
 | --- | --- |
@@ -348,11 +314,7 @@ An outlined button has a text label, a stroked container and an optional icon.
 | **Elevation** | `elevation` |
 | **Ripple color** | `splashColor` |
 
-</details>
-
-<details>
-<summary><b>Icon</b> properties</summary>
-<br>
+<b>Icon</b> 
     
 | &nbsp; | Property |
 | --- | --- |
@@ -360,18 +322,13 @@ An outlined button has a text label, a stroked container and an optional icon.
 | **Color** | `color` on `icon` |
 | **Size** | `size` on `icon` |
 
-</details>
-
-<details>
-<summary><b>Constructors</b></summary>
-<br>
+<b>Constructors</b>
 
 | &nbsp; | Constructor |
 | --- | --- |
 | **Default constructor** | `OutlineButton` |
 | **Icon constructor** | `OutlineButton.icon` |
 
-</details>
 
 ## Contained button
 
@@ -400,10 +357,6 @@ RaisedButton(
 )
 ```
 
-<details>
-<summary><b>Adding an icon to a contained button</b></summary>
-<br>
-
 The following example shows a contained button with an icon.
 
 !["Contained button with white text 'Contained button', purple container and '+' icon over a white background."](assets/contained-button-icon.svg)
@@ -419,9 +372,6 @@ RaisedButton.icon(
     label: Text("CONTAINED BUTTON"),
 )
 ```
-
-</details>
-<details><summary><b>Expand to see renderable example code for a raised button and raised button icon.</b></summary>
 
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
@@ -482,7 +432,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 ```
-</details>
+
 
 ### Anatomy and key properties
 
@@ -495,9 +445,7 @@ A contained button has a text label, a filled container and an optional icon.
 1. Container
 1. Icon
 
-<details>
-<summary><b>Text label</b> properties</summary>
-<br>
+<b>Text label</b>
     
 | &nbsp; | Property |
 | --- | --- |
@@ -506,11 +454,7 @@ A contained button has a text label, a filled container and an optional icon.
 | **Disabled Text Color** | `disabledTextColor` |
 | **Typography** | `style` on `child` or `label` |
 
-</details>
-
-<details>
-<summary><b>Container</b> properties</summary>
-<br>
+<b>Container</b>
     
 | &nbsp; | Property |
 | --- | --- |
@@ -521,11 +465,7 @@ A contained button has a text label, a filled container and an optional icon.
 | **Elevation** | `elevation` |
 | **Ripple color** | `splashColor` |
 
-</details>
-
-<details>
-<summary><b>Icon</b> properties</summary>
-<br>
+<b>Icon</b>
     
 | &nbsp; | Property |
 | --- | --- |
@@ -533,18 +473,13 @@ A contained button has a text label, a filled container and an optional icon.
 | **Color** | `color` on `icon` |
 | **Size** | `size` on `icon` |
 
-</details>
-
-<details>
-<summary><b>Constructors</b></summary>
-<br>
+<b>Constructors</b>
 
 | &nbsp; | Constructor |
 | --- | --- |
 | **Default constructor** | `RaisedButton` |
 | **Icon constructor** | `RaisedButton.icon` |
 
-</details>
 
 ## Toggle button
 
@@ -610,10 +545,7 @@ ToggleButtons(
     ],
 )
 ```
-
-<details>
-<summary><b>Implementing an icon-only toggle button</b></summary>
-<br>
+<b>Implementing an icon-only toggle button</b>
 
 The following example shows a toggle button with three buttons that have icons.
 
@@ -642,9 +574,6 @@ ToggleButtons(
     ],
 )
 ```
-
-</details>
-<details><summary><b>Expand to see renderable example code for a toggle button and toggle button icon.</b></summary>
 
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
@@ -742,7 +671,6 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 ```
-</details>
 
 #### Anatomy and key properties
 
@@ -753,25 +681,18 @@ A toggle button has a shared stroked container, icons and/or text labels.
 1. Container
 1. Icon
 
-<details>
-<summary><b>Selection</b> properties</summary>
-<br>
+<b>Selection</b> 
 
 | &nbsp; | Property |
 | --- | --- |
 | **Selection state of each button** | `isSelected` |
 
-</details>
-
-<details>
-<summary><b>Constructors</b></summary>
-<br>
+<b>Constructors</b>
 
 | &nbsp; | Constructor |
 | --- | --- |
 | **Default constructor** | `ToggleButtons` |
 
-</details>
 
 ### Icon
 
@@ -811,8 +732,6 @@ IconButton(
 )
 ```
 
-<details><summary><b>Expand to see renderable example code for a toggle button and toggle button icon.</b></summary>
-
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 ```
@@ -909,7 +828,6 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 ```
-</details>
 
 ## Theming buttons
 
@@ -921,9 +839,7 @@ The following example shows text, outlined and contained button types with the [
 
 ![Example of buttons with Shrine theme](assets/button_theming_screenshot.png)
 
-<details>
-<summary><b>Implementing button theming</b></summary>
-<br>
+<b>Implementing button theming</b>
 
 The Material Shrine theme uses the following colors:
 ```
@@ -1102,7 +1018,6 @@ const Color shrineSurfaceWhite = Color(0xFFFFFBFA);
 const Color shrineBackgroundWhite = Colors.white;
 
 ```
-</details>
 
 
 
