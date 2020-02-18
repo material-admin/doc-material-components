@@ -7,7 +7,7 @@ iconId: text_field
 path: /catalog/text-field/
 -->
 
-# Text field
+# Text fields
 
 [Text fields](https://material.io/components/text-fields) let users enter and edit text.
 
@@ -534,8 +534,7 @@ See the full list of [styles](https://github.com/material-components/material-co
 
 Text fields support [Material Theming](https://material.io/components/text-fields/#theming) and can be customized in terms of color, typography and shape.
 
-<details>
-<summary><b>Customizing the edit text</b></summary>
+<b>Customizing the edit text</b>
 <br>
 The `TextInputLayout` styles apply `TextInputEditText` styles on the edit text by setting a `materialThemeOverlay` that overrides `editTextStyle`.
 
@@ -574,8 +573,6 @@ Finally, you can set the `TextInputLayout` style as the default in your app them
 ```xml
 <item name="textInputStyle">@style/Widget.AppTheme.TextInputLayout</item>
 ```
-  
-</details>
 
 ### Text field theming example
 
