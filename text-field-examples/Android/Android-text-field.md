@@ -42,9 +42,8 @@ The `TextInputLayout` provides certain pre-packaged `EndIconMode`s that come wit
 
 _**Note:** You should opt to use the `EndIconMode` API instead of setting an end/right compound drawable on the `EditText`._
 
-<details>
-<summary><b>Password redaction icon</b></summary>
-<br>
+<b>Password redaction icon</b>
+
 If set, a button is displayed to toggle between the password being displayed as plain-text or disguised when the `TextInputEditText` is set to display a password.
 
 !["Text field with a password toggle trailing icon."](assets/textfields_password.png)
@@ -61,11 +60,8 @@ If set, a button is displayed to toggle between the password being displayed as 
 </com.google.android.material.textfield.TextInputLayout>
 ```
 
-</details>
+<b>Clear text icon</b>
 
-<details>
-<summary><b>Clear text icon</b></summary>
-<br>
 If set, a button is displayed when text is present and clicking it clears the `EditText` field.
 
 !["Text field with a clear text trailing icon."](assets/textfields_clear.png)
@@ -81,12 +77,8 @@ If set, a button is displayed when text is present and clicking it clears the `E
 
 </com.google.android.material.textfield.TextInputLayout>
 ```
+<b>Custom icon</b>
 
-</details>
-
-<details>
-<summary><b>Custom icon</b></summary>
-<br>
 It is possible to set a custom drawable or button as the `EditText`'s trailing icon via `app:endIconMode="custom"`. You should specify a drawable and content description for the icon, and, optionally, specify custom behaviors.
 
 !["Text field with a custom trailing icon."](assets/textfields_custom.png)
@@ -135,8 +127,6 @@ textInputCustomEndIcon.addOnEndIconChangedListener {
   // that, an OnEndIconChangedListener is used.
 }
 ```
-
-</details>
 
 ### Making text fields accessible
 
@@ -202,9 +192,7 @@ In the layout:
 
 _**Note:** Since this is the default type, you don't need to specify a style tag as long as you are using a Material Components Theme. If not, set the style to `@style/Widget.MaterialComponents.TextInputLayout.FilledBox`._
 
-<details>
-<summary><b>Height variations</b></summary>
-<br>
+<b>Height variations</b>
 
 `TextInputLayout` provides two height variations for filled text fields, standard and dense. The `@style/Widget.MaterialComponents.TextInputLayout.FilledBox` style defaults to the standard height.
 
@@ -224,7 +212,6 @@ In the layout:
 
 _**Note:** To change a text field's internal padding and overall dimensions, you can adjust the `android:padding` attributes on the `TextInputEditText`._
 
-</details>
 
 
 ### Anatomy and key properties
@@ -239,21 +226,14 @@ _**Note:** To change a text field's internal padding and overall dimensions, you
 1. Activation indicator
 1. Helper text (optional)
 
-<details>
-<summary><b>Container</b> attributes</summary>
-<br>
+<b>Container</b> 
 
 | &nbsp; | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
 | **Color** | `app:boxBackgroundColor` | `setBoxBackgroundColorResource`<br/>`setBoxBackgroundColor`<br/>`getBoxBackgroundColor` | `?attr/colorOnSurface` at 12% opacity over `attr/colorSurface` |
 | **Shape** | `app:shapeAppearance` | N/A | `?attr/shapeAppearanceSmallComponent` |
 
-</details>
-
-
-<details>
-<summary><b>Leading icon</b> (optional) attributes</summary>
-<br>
+<b>Leading icon (optional)</b>
 
 | &nbsp; | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -261,13 +241,8 @@ _**Note:** To change a text field's internal padding and overall dimensions, you
 | **Content description** | `app:startIconContentDescription` | `setStartIconContentDescription` | `@null` |
 | **Color** | `app:startIconTint` | `setStartIconTintList` | `?attr/colorOnSurface` at 54% (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_filled_icon_tint.xml)) |
 
+<b>Label text (optional) </b>
 
-</details>
-
-
-<details>
-<summary><b>Label text</b> (optional) attributes</summary>
-<br>
 The following attributes and methods should be set and called on the `TextInputLayout` instead of on the edit text in order to avoid unintended behaviors.
 
 | &nbsp; | Attribute | Related method(s) | Default value |
@@ -276,12 +251,8 @@ The following attributes and methods should be set and called on the `TextInputL
 | **Typography** | `app:hintTextAppearance` | `setHintTextAppearance` | `?attr/textAppearanceCaption` |
 | **Color** | `app:hintTextColor` (floating state)<br/>`android:textColorHint` (other states) | `setHintTextColor`<br/>`setDefaultHintTextColor`<br/>`getHintTextColor`<br/>`getDefaultHintTextColor`| `?attr/colorPrimary` (`app:hintTextColor`)<br/>`?attr/colorOnSurface` at 60% opacity (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_indicator_text_color.xml)) |
 
-</details>
+<b>Input text</b> 
 
-
-<details>
-<summary><b>Input text</b> attributes</summary>
-<br>
 **Attention:** The following attributes and methods should be set and called on the **`TextInputEditText`**, not on the `TextInputLayout`.
 
 | &nbsp; | Attribute | Related method(s) | Default value |
@@ -290,12 +261,7 @@ The following attributes and methods should be set and called on the `TextInputL
 | **Typography** | `android:textAppearance` | `setTextAppearance`| `?attr/textAppearanceSubtitle1` |
 | **Color** | `android:textColor` | `setTextColor`<br/>`getTextColors`<br/>`getCurrentTextColor` | `?android:textColorPrimary` |
 
-</details>
-
-
-<details>
-<summary><b>Trailing icon</b> (optional) attributes</summary>
-<br>
+<b>Trailing icon (optional) </b>
 
 | &nbsp; | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -303,24 +269,14 @@ The following attributes and methods should be set and called on the `TextInputL
 | **Content description** | `app:endIconContentDescription` | `setEndIconContentDescription` | `@null` for `END_ICON_NONE` |
 | **Color** | `app:endIconTint` | `setEndIconTintList` | `?attr/colorOnSurface` at 54% (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_filled_icon_tint.xml)) |
 
-</details>
-
-
-<details>
-<summary><b>Activation indicator</b> attributes</summary>
-<br>
+<b>Activation indicator</b>
 
 | &nbsp; | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
 | **Stroke color** | `app:boxStrokeColor`<br/>`app:boxStrokeErrorColor` | `setBoxStrokeColor`<br/>`setBoxStrokeColorStateList`<br/>`setBoxStrokeErrorColor`<br/>`getBoxStrokeColor`<br/>`getBoxStrokeErrorColor`<br/> | `?attr/colorOnSurface` at 42% opacity (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_filled_stroke_color.xml))<br/>`?attr/colorError` for `app:boxStrokeErrorColor` (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_error.xml))  |
 | **Stroke width** | `app:boxStrokeWidth`<br/>`app:boxStrokeWidthFocused` | N/A | `1dp` (default)<br/>`2dp`(focused) |
 
-</details>
-
-
-<details>
-<summary><b>Helper text</b> (optional) attributes</summary>
-<br>
+<b>Helper text (optional)</b>
 
 | &nbsp; | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -328,12 +284,7 @@ The following attributes and methods should be set and called on the `TextInputL
 | **Typography** | `app:helperTextTextAppearance` | `setHelperTextTextAppearance` | `app:?attr/textAppearanceCaption` |
 | **Color** | `app:helperTextTextColor` | `setHelperTextColor`<br/>`getHelperTextCurrentTextColor` | `?attr/colorOnSurface` at 60% (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_indicator_text_color.xml)) |
 
-</details>
-
-
-<details>
-<summary><b>Error message</b> (optional) attributes</summary>
-<br>
+<b>Error message (optional) </b>
 
 | &nbsp; | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -344,24 +295,15 @@ The following attributes and methods should be set and called on the `TextInputL
 | **Error icon** | `app:errorIconDrawable` | `setErrorIconDrawable`<br/>`getErrorIconDrawable` | [`@drawable/mtrl_ic_error`](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/drawable/mtrl_ic_error.xml) |
 | **Error icon color** | `app:errorIconTint`  | `setErrorIconTintList` | `?attr/colorError` (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_error.xml)) |
 
-</details>
-
-
-<details>
-<summary><b>Character counter</b> (optional) attributes</summary>
-<br>
+<b>Character counter (optional)</b>
 
 | &nbsp; | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
 | **Character counter text** | `app:counterEnabled`<br/>`app:counterMaxLength` | `setCounterEnabled`<br/>`setCounterMaxLength`<br/>`isCounterEnabled` | `false` (`app:counterEnabled`)<br/>`-1` (`app:counterMaxLength`) |
 | **Typography** | `app:counterTextAppearance`<br/>`app:counterOverflowTextAppearance` | `setCounterTextAppearance`<br/>`setCounterOverflowTextAppearance` | `?attr/textAppearanceCaption` |
 | **Color** | `app:counterTextColor`<br/>`app:counterOverflowTextColor` | `setCounterTextColor`<br/>`setCounterOverflowTextColor`<br/>`getCounterTextColor`<br/>`getCounterOverflowTextColor` | `?attr/colorOnSurface` at 60% (`app:counterTextColor`) (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_indicator_text_color.xml))<br/>`?attr/colorError` (`app:counterOverflowTextColor`) (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_error.xml)) |
-</details>
 
-
-<details>
-<summary><b>Placeholder text</b> (optional) attributes</summary>
-<br>
+<b>Placeholder text (optional)</b>
 
 | &nbsp; | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -369,12 +311,7 @@ The following attributes and methods should be set and called on the `TextInputL
 | **Typography** | `app:placeholderTextAppearance` | `setPlaceholderTextAppearance`<br/>`getPlaceholderTextAppearance` | `?attr/textAppearanceSubtitle1` |
 | **Color** | `app:placeholderTextColor` | `setPlaceholderTextColor`<br/>`getPlaceholderTextColor` | `?attr/colorOnSurface` at 60% (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_indicator_text_color.xml)) |
 
-</details>
-
-
-<details>
-<summary><b>Prefix</b> (optional) attributes</summary>
-<br>
+<b>Prefix (optional)</b>
 
 | &nbsp; | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -382,12 +319,7 @@ The following attributes and methods should be set and called on the `TextInputL
 | **Typography** | `app:prefixTextAppearance` | `setPrefixTextAppearance` | `?attr/textAppearanceSubtitle1` |
 | **Color** | `app:prefixTextColor` | `setPrefixTextColor`<br/>`getPrefixTextColor` | `?attr/colorOnSurface` at 60% (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_indicator_text_color.xml)) |
 
-</details>
-
-
-<details>
-<summary><b>Suffix</b> (optional) attributes</summary>
-<br>
+<b>Suffix (optional)</b>
 
 | &nbsp; | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -395,12 +327,7 @@ The following attributes and methods should be set and called on the `TextInputL
 | **Typography** | `app:sufixTextAppearance` | `setSufixTextAppearance` | `?attr/textAppearanceSubtitle1` |
 | **Color** | `app:sufixTextColor` | `setSufixTextColor`<br/>`getSufixTextColor` | `?attr/colorOnSurface` at 60% (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_indicator_text_color.xml)) |
 
-</details>
-
-
-<details>
-<summary><b>Styles</b></summary>
-<br>
+<b>Styles</b>
 
 | &nbsp; | Style|
 | --- | --- |
@@ -412,7 +339,6 @@ Default theme style attribute: `textInputStyle`
 _**Note:**
 The `TextInputLayout` styles set `materialThemeOverlay` that overrides `editTextStyle` with the specific `TextInputEditText` style needed. Therefore, you don't need to specify a style tag on the edit text.<br/>If you wish to customize the edit text, you can set your own `materialThemeOverlay`, setting `editTextStyle` to a custom style that inherits from the original `Widget.MaterialComponents.TextInputEditText.*` style. See more about theming in the [Theming text fields](#Theming-text-fields) section._
 
-</details>
 
 See the full list of [styles](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/values/styles.xml) and [attrs](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/values/attrs.xml).
 
@@ -460,9 +386,7 @@ In code:
 outlinedTextField.setError("Error message")
 ```
 
-<details>
-<summary><b>Height variations</b></summary>
-<br>
+<b>Height variations</b>
 
 `TextInputLayout` provides two height variations for outlined text fields, standard and dense. The `@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox` style defaults to the standard height.
 
@@ -482,8 +406,6 @@ In the layout:
 
 _**Note:** To change a text field's internal padding and overall dimensions, you can adjust the `android:padding` attributes on the `TextInputEditText`._
 
-</details>
-
 
 ### Anatomy and key properties
 
@@ -497,9 +419,7 @@ _**Note:** To change a text field's internal padding and overall dimensions, you
 1. Activation indicator
 1. Helper text (optional)
 
-<details>
-<summary><b>Container</b> attributes</summary>
-<br>
+<b>Container</b>
 
 | &nbsp; | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -508,12 +428,7 @@ _**Note:** To change a text field's internal padding and overall dimensions, you
 | **Stroke width** | `app:boxStrokeWidth`<br/>`app:boxStrokeWidthFocused` | N/A | `1dp` (default)<br/>`2dp`(focused) |
 | **Shape** | `app:shapeAppearance` | N/A | `?attr/shapeAppearanceSmallComponent` |
 
-</details>
-
-
-<details>
-<summary><b>Leading icon</b> (optional) attributes</summary>
-<br>
+<b>Leading icon (optional)</b>
 
 | &nbsp; | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -521,13 +436,8 @@ _**Note:** To change a text field's internal padding and overall dimensions, you
 | **Content description** | `app:startIconContentDescription` | `setStartIconContentDescription` | `@null` |
 | **Color** | `app:startIconTint` | `setStartIconTintList` | `?attr/colorOnSurface` at 60% (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_outlined_icon_tint.xml)) |
 
+<b>Label text (optional)</b>
 
-</details>
-
-
-<details>
-<summary><b>Label text</b> (optional) attributes</summary>
-<br>
 The following attributes and methods should be set and called on the `TextInputLayout` instead of on the edit text in order to avoid unintended behaviors.
 
 | &nbsp; | Attribute | Related method(s) | Default value |
@@ -536,12 +446,8 @@ The following attributes and methods should be set and called on the `TextInputL
 | **Typography** | `app:hintTextAppearance` | `setHintTextAppearance` | `?attr/textAppearanceCaption` |
 | **Color** | `app:hintTextColor` (floating state)<br/>`android:textColorHint` (other states) | `setHintTextColor`<br/>`setDefaultHintTextColor`<br/>`getHintTextColor`<br/>`getDefaultHintTextColor`| `?attr/colorPrimary` (`app:hintTextColor`)<br/>`?attr/colorOnSurface` at 60% opacity (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_indicator_text_color.xml)) |
 
-</details>
+<b>Input text</b>
 
-
-<details>
-<summary><b>Input text</b> attributes</summary>
-<br>
 **Attention:** The following attributes and methods should be set and called on the **`TextInputEditText`**, not on the `TextInputLayout`.
 
 | &nbsp; | Attribute | Related method(s) | Default value |
@@ -550,12 +456,7 @@ The following attributes and methods should be set and called on the `TextInputL
 | **Typography** | `android:textAppearance` | `setTextAppearance`| `?attr/textAppearanceSubtitle1` |
 | **Color** | `android:textColor` | `setTextColor`<br/>`getTextColors`<br/>`getCurrentTextColor` | `?android:textColorPrimary` |
 
-</details>
-
-
-<details>
-<summary><b>Trailing icon</b> (optional) attributes</summary>
-<br>
+<b>Trailing icon (optional)</b>
 
 | &nbsp; | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -563,12 +464,7 @@ The following attributes and methods should be set and called on the `TextInputL
 | **Content description** | `app:endIconContentDescription` | `setEndIconContentDescription` | `@null` for `END_ICON_NONE` |
 | **Color** | `app:endIconTint` | `setEndIconTintList` | `?attr/colorOnSurface` at 60% (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_outlined_icon_tint.xml)) |
 
-</details>
-
-
-<details>
-<summary><b>Helper text</b> (optional) attributes</summary>
-<br>
+<b>Helper text (optional) </b>
 
 | &nbsp; | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -576,12 +472,7 @@ The following attributes and methods should be set and called on the `TextInputL
 | **Typography** | `app:helperTextTextAppearance` | `setHelperTextTextAppearance` | `app:?attr/textAppearanceCaption` |
 | **Color** | `app:helperTextTextColor` | `setHelperTextColor`<br/>`getHelperTextCurrentTextColor` | `?attr/colorOnSurface` at 60% (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_indicator_text_color.xml)) |
 
-</details>
-
-
-<details>
-<summary><b>Error message</b> (optional) attributes</summary>
-<br>
+<b>Error message (optional)</b>
 
 | &nbsp; | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -592,24 +483,15 @@ The following attributes and methods should be set and called on the `TextInputL
 | **Error icon** | `app:errorIconDrawable` | `setErrorIconDrawable`<br/>`getErrorIconDrawable` | [`@drawable/mtrl_ic_error`](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/drawable/mtrl_ic_error.xml) |
 | **Error icon color** | `app:errorIconTint`  | `setErrorIconTintList` | `?attr/colorError` (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_error.xml)) |
 
-</details>
-
-
-<details>
-<summary><b>Character counter</b> (optional) attributes</summary>
-<br>
+<b>Character counter (optional)</b>
 
 | &nbsp; | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
 | **Character counter text** | `app:counterEnabled`<br/>`app:counterMaxLength` | `setCounterEnabled`<br/>`setCounterMaxLength`<br/>`isCounterEnabled` | `false` (`app:counterEnabled`)<br/>`-1` (`app:counterMaxLength`) |
 | **Typography** | `app:counterTextAppearance`<br/>`app:counterOverflowTextAppearance` | `setCounterTextAppearance`<br/>`setCounterOverflowTextAppearance` | `?attr/textAppearanceCaption` |
 | **Color** | `app:counterTextColor`<br/>`app:counterOverflowTextColor` | `setCounterTextColor`<br/>`setCounterOverflowTextColor`<br/>`getCounterTextColor`<br/>`getCounterOverflowTextColor` | `?attr/colorOnSurface` at 60% (`app:counterTextColor`) (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_indicator_text_color.xml))<br/>`?attr/colorError` (`app:counterOverflowTextColor`) (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_error.xml)) |
-</details>
 
-
-<details>
-<summary><b>Placeholder text</b> (optional) attributes</summary>
-<br>
+<b>Placeholder text (optional)</b>
 
 | &nbsp; | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -617,12 +499,7 @@ The following attributes and methods should be set and called on the `TextInputL
 | **Typography** | `app:placeholderTextAppearance` | `setPlaceholderTextAppearance`<br/>`getPlaceholderTextAppearance` | `?attr/textAppearanceSubtitle1` |
 | **Color** | `app:placeholderTextColor` | `setPlaceholderTextColor`<br/>`getPlaceholderTextColor` | `?attr/colorOnSurface` at 60% (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_indicator_text_color.xml)) |
 
-</details>
-
-
-<details>
-<summary><b>Prefix</b> (optional) attributes</summary>
-<br>
+<b>Prefix (optional)</b>
 
 | &nbsp; | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -630,12 +507,7 @@ The following attributes and methods should be set and called on the `TextInputL
 | **Typography** | `app:prefixTextAppearance` | `setPrefixTextAppearance` | `?attr/textAppearanceSubtitle1` |
 | **Color** | `app:prefixTextColor` | `setPrefixTextColor`<br/>`getPrefixTextColor` | `?attr/colorOnSurface` at 60% (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_indicator_text_color.xml)) |
 
-</details>
-
-
-<details>
-<summary><b>Suffix</b> (optional) attributes</summary>
-<br>
+<b>Suffix (optional)</b>
 
 | &nbsp; | Attribute | Related method(s) | Default value |
 | --- | --- | --- | --- |
@@ -643,12 +515,7 @@ The following attributes and methods should be set and called on the `TextInputL
 | **Typography** | `app:sufixTextAppearance` | `setSufixTextAppearance` | `?attr/textAppearanceSubtitle1` |
 | **Color** | `app:sufixTextColor` | `setSufixTextColor`<br/>`getSufixTextColor` | `?attr/colorOnSurface` at 60% (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/color/mtrl_indicator_text_color.xml)) |
 
-</details>
-
-
-<details>
-<summary><b>Styles</b></summary>
-<br>
+<b>Styles</b>
 
 | &nbsp; | Style|
 | --- | --- |
@@ -659,8 +526,6 @@ Default theme style attribute: N/A
 
 _**Note:**
 The `TextInputLayout` styles set `materialThemeOverlay` that overrides `editTextStyle` with the specific `TextInputEditText` style needed. Therefore, you don't need to specify a style tag on the edit text.<br/>If you wish to customize the edit text, you can set your own `materialThemeOverlay`, setting `editTextStyle` to a custom style that inherits from the original `Widget.MaterialComponents.TextInputEditText.*` style. See more about theming in the [Theming text fields](#Theming-text-fields) section._
-
-</details>
 
 See the full list of [styles](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/values/styles.xml) and [attrs](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/textfield/res/values/attrs.xml).
 
@@ -731,9 +596,7 @@ The following examples show filled and outlined text fields with Material Themin
 !["Outlined text field theming with pink and brown colors and cut corners"](assets/textfields_outlined_theming.png)
   
 
-<details>
-<summary><b>Implementing text field theming</b></summary>
-<br>
+<b>Implementing text field theming</b>
 
 Using theme attributes and styles in `res/values/styles.xml` (themes all text fields and affects other components):
 
@@ -848,5 +711,3 @@ or using one of the styles in the layout (affects only this specific text field)
     style="@style/Widget.App.TextInputLayout.*"
 />
 ```
-  
-</details>
