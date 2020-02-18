@@ -88,10 +88,6 @@ Include a snippet of source code illustrating the example.
 ### Anatomy and Key properties
 
 * Call out the anatomy elements in a sentence.
-
-<details>
-<summary><b>Expand for < component name > anatomy diagram and key properties</b></summary>
-
 * Insert the a diagram of the component type's anatomy. Use the anatomy diagram from the https://material.io/components/ site.
 * Add a table of the design attributes represented by the diagram. Limit the design attributes to six items of the most commonly customized attributes.
 * Include the following sentence below the table pointing the user to the API doc(s):
@@ -101,8 +97,6 @@ Include a snippet of source code illustrating the example.
 #### Styles
 
 Include a table of the theme description for each theme element and the theme's name in your platform. 
-
-</details>
 
 ## \<Second component type\>
 
@@ -116,14 +110,8 @@ Include a table of the theme description for each theme element and the theme's 
 
 ### Anatomy and Key properties
 
-<details>
-<summary><b>Expand for < component name > anatomy diagram and key properties</b></summary>
-
-
 ...
 
-
-</details>
 
 _Continue describing the rest of the component types as necessary._
 
@@ -141,8 +129,5 @@ Provide a 1-2 sentences saying that Material theming applies to the component:
     * Font color
     * Component shape (if applicable)
 
-<details><summary><b>Implementing \<component name\> theming</b></summary>
 
 Provide example code that corresponds to the component type screenshot
-
-</details>
