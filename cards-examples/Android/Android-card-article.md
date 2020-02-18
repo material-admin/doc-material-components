@@ -45,7 +45,7 @@ On mobile, a [card’s](https://material.io/components/cards/#specs) default ele
 ### Card example
 
 Source code API:
-* \<platform component name\>
+* `MaterialCardView`
   * [Class definition](https://developer.android.com/reference/com/google/android/material/card/MaterialCardView)
   * [GitHub source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/card/MaterialCardView.java)
 
@@ -82,8 +82,7 @@ The source code example should display as per the interactive example (https://m
 7. **Buttons [optional]** 
 8. **Icons [optional]** 
 
-<details>
-<summary><b>Container</b> attributes</summary>
+<b>Container</b> 
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
@@ -96,20 +95,13 @@ The source code example should display as per the interactive example (https://m
 |Container elevation | | | |
 
 
-</details>
-
-<details>
-<summary><b>Thumbnail</b> attributes (optional)</summary>
+<b>Thumbnail (optional) </b>
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
 |Desc. 1 | | | |
 
-
-</details>
-
-<details>
-<summary><b>Header text</b> attributes (optional)</summary>
+<b>Header text (optional)</b>
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
@@ -117,10 +109,7 @@ The source code example should display as per the interactive example (https://m
 | Text color | | | |
 | Typography | | | |
 
-</details>
-
-<details>
-<summary><b>Subhead</b> attributes (optional)</summary>
+<b>Subhead (optional)</b>
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
@@ -128,29 +117,19 @@ The source code example should display as per the interactive example (https://m
 | Text color | | | |
 | Typography | | | |
 
-
-</details>
-
-<details>
-<summary><b>Media</b> attributes (optional)</summary>
+<b>Media (optional)</b>
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
 |Desc. 1 | | | |
 
-</details>
-
-<details>
-<summary><b>Supporting text</b> attributes (optional)</summary>
+<b>Supporting text (optional)</b>
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
 | Text label | | | |
 | Text color | | | |
 | Typography | | | |
-
-</details>
-
 
 ## Theming a card
 
