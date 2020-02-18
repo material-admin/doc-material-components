@@ -141,8 +141,7 @@ The source code example should display as per the interactive example (https://m
 7. **Buttons [optional]** <
 8. **Icons [optional]** 
 
-<details>
-<summary><b>Container</b> attributes</summary>
+<b>Container</b>
 
 Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
@@ -154,23 +153,14 @@ Container outline width | |
 Container horzontal padding | | 
 Container elevation | |
 
-
-</details>
-
-<details>
-<summary><b>Thumbnail</b> attributes (optional)</summary>
+<b>Thumbnail (optional)</b>
 
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
 |Desc. 1 | | | |
 
-
-
-</details>
-
-<details>
-<summary><b>Header text</b> attributes (optional)</summary>
+<b>Header text (optional)</b>
 
 Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
@@ -178,11 +168,7 @@ Text label | |
 Text color | |
 Typography | |
 
-
-</details>
-
-<details>
-<summary><b>Subhead</b> attributes (optional)</summary>
+<b>Subhead (optional)</b>
 
 Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
@@ -190,24 +176,14 @@ Text label | |
 Text color | |
 Typography | |
 
-
-</details>
-
-<details>
-<summary><b>Media</b> attributes (optional)</summary>
+<b>Media (optional)</b>
 
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
 |Desc. 1 | | | |
 
-
-
-
-</details>
-
-<details>
-<summary><b>Supporting text</b> attributes (optional)</summary>
+<b>Supporting text (optional)</b>
 
 Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
@@ -215,33 +191,20 @@ Text label | |
 Text color | |
 Typography | |
 
-</details>
-
-<details>
-<summary><b>Button</b> attributes (optional)</summary>
+<b>Button (optional)</b>
 
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
 |Desc. 1 | | | |
 
-
-
-
-</details>
-
-<details>
-<summary><b>Icon</b> attributes (optional)</summary>
+<b>Icon (optional)</b>
 
 
 |  | Attribute | Related method(s) | Default value |
 |---|---|---|---|
 |Desc. 1 | | | |
 
-
-
-
-</details>
 
 ## Theming Cards
 
@@ -267,7 +230,7 @@ _Use the [Shrine theme](https://material.io/design/material-studies/shrine.html)
 
 ```
 * Make the card checkable with a "favorites" icon
-</details>
+
 
 ## `mdc-card` API
 
