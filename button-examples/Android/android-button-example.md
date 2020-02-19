@@ -1,5 +1,5 @@
 <!--docs:
-title: "Material Button"
+title: "Buttons"
 layout: detail
 section: components
 excerpt: "A customizable button component with updated visual styles."
