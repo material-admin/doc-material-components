@@ -241,7 +241,10 @@ _**Note** A container in iOS refers to a set of components with an applied Mater
 | **Stroke width** |  |  |  |
 | **Shape** |  | | |
 | **Elevation** | | | |
-| **Ripple color** | | | | 
+| **Ripple color** | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)inkColor"><code>inkColor</code></a> | | White @ 20% opacity | 
+| | | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)inkStyle"><code>inkStyle</code></a> | `MDCInkStyleBounded` |  
+| | | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)inkMaxRippleRadius"><code>inkMaxRippleRadius</code></a> | Dynamic |  
+| | | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)enableRippleBehavior"><code>enableRippleBehavior</code></a> | `NO` | 
 
 ## Outlined button
 
