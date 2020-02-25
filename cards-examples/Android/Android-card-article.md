@@ -11,7 +11,7 @@ path: /catalog/cards/
 
 [Cards](https://material.io/components/cards/) contain content and actions about a single subject.
 
-![Elevated card with a secondary title and two actions: Action 1 and Action 2 in purple](assets/generic-card-type-elevated.png)
+![Elevated card with a secondary title and Action 1 and Action 2 buttons in purple](assets/generic-card-type-elevated.png)
 
 ## Using cards
 
@@ -43,7 +43,7 @@ _**Note:** You don't need to specify a style tag as long as you are using a Mate
 
 The following example shows an elevated card.
 
-!["Elevated card with a title, a secondary title, text, and two text buttons: Action 1 and Action 2 in purple"](assets/cards_elevated.png)
+!["Elevated card with a title, a secondary title, text, and Action 1 and Action 2 buttons in purple"](assets/cards_elevated.png)
 
 In the layout:
 
@@ -126,7 +126,7 @@ In the layout:
 
 The following example shows an outlined card.
 
-!["Outlined card with a title, a secondary title, text, and two text buttons: Action 1 and Action 2 in purple"](assets/cards_outlined.png)
+!["Outlined card with a title, a secondary title, text, and Action 1 and Action 2 buttons in purple"](assets/cards_outlined.png)
 
 In the layout:
 
@@ -144,7 +144,7 @@ In the layout:
 
 #### Making the card checkable
 
-![Elevated card with a checked button and a light purple overlay color, wtih a secondary title and two actions: Action 1 and Action 2 in purple](assets/cards_checked.png)
+![Elevated card with a checked button and a light purple overlay; secondary title and Action 1 and Action 2 buttons](assets/cards_checked.png)
 
 When a card is checked, it will show a checked icon and change the foreground color. There is no default behavior for enabling/disabling the checked state. An example of how to do it in response to a long click is shown below.
 
@@ -340,7 +340,7 @@ A card supports [Material Theming](https://material.io/components/cards/#theming
 
 The following example shows a card using the Material [Shrine](https://material.io/design/material-studies/shrine.html) theme.
 
-![Screenshot of card theming example](assets/cards_theming.png)
+![Card theming example in Shrine theme](assets/cards_theming.png)
 
 ### Card theming example
 
