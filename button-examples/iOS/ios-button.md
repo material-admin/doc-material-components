@@ -40,38 +40,38 @@ Before using the `MDCButtons` API to implement its types you must install `MCDBu
        ```
 1. Import `MDCButtons` and MDC button theming and initialize `MDCButtons` using `alloc`/`init`. Initialize your theme  before applying it to your button.
 
-    **Note** For more information about themes, go to the [Theming page](https://material.io/develop/ios/components/theming/) for iOS.
-<!--<div class="material-code-render" markdown="1">-->
-     **Swift**
-     ```swift
-     import MaterialComponents.MaterialButtons
-     import MaterialComponents.MaterialButtons_Theming
-     /*...*/
-     let <local theme name> = <theme name>
-     let button = MDCButton()
-     ```
-     **Objective-C**
-     ```objc
-     #import "MaterialButtons.h"
-     #import <MaterialComponentsBeta/MaterialButtons+Theming.h>
-     /*...*/
-     <theme name> *<local theme name> = [[<theme name> alloc] init];
-     MDCButton *button = [[MDCButton alloc] init];
-     ```
-<!--</div>-->
+   _**Note** For more information about themes, go to the [Theming page](https://material.io/develop/ios/components/theming/) for iOS._
+    <!--<div class="material-code-render" markdown="1">-->
+   **Swift**
+   ```swift
+   import MaterialComponents.MaterialButtons
+   import MaterialComponents.MaterialButtons_Theming
+   /*...*/
+   let <local theme name> = <theme name>
+   let button = MDCButton()
+   ```
+   **Objective-C**
+   ```objc
+   #import "MaterialButtons.h"
+   #import <MaterialComponentsBeta/MaterialButtons+Theming.h>
+   /*...*/
+   <theme name> *<local theme name> = [[<theme name> alloc] init];
+   MDCButton *button = [[MDCButton alloc] init];
+   ```
+    <!--</div>-->
 
     For our examples, we used the following theming values:
 
-<!--<div class="material-code-render" markdown="1">-->
-     **Swift**
-     ```swift
-     let MyMaterialTheme = MDCContainerScheme()
-     ```
-     **Objective-C**
-     ```objc
-     MDCContainerScheme *MyMaterialTheme = [
-     ```
-<!--</div>-->
+    <!--<div class="material-code-render" markdown="1">-->
+   **Swift**
+   ```swift
+   let MyMaterialTheme = MDCContainerScheme()
+   ```
+   **Objective-C**
+   ```objc
+   MDCContainerScheme *MyMaterialTheme = [
+   ```
+    <!--</div>-->
 
 
 
@@ -81,7 +81,7 @@ Before using the `MDCButtons` API to implement its types you must install `MCDBu
 To help make your buttons usable to as many users as possible, apply the following:
 
 * Set an appropriate [`accessibilityLabel`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) value if your button does not have a title or only has an icon:
-<!--<div class="material-code-render" markdown="1">-->
+  <!--<div class="material-code-render" markdown="1">-->
     **Objective-C**
     ```objc
     button.accessibilityLabel = @"Create";
@@ -90,11 +90,11 @@ To help make your buttons usable to as many users as possible, apply the followi
     ```swift
     button.accessibilityLabel = "Create"
     ```
-<!--</div>-->
+  <!--</div>-->
 
 * Set the minimum [visual height to
 36 and miniumum visual width to 64](https://material.io/design/components/buttons.html#specs)
-<!--<div class="material-code-render" markdown="1">-->
+  <!--<div class="material-code-render" markdown="1">-->
     **Objective-C**
 
     ```objc
@@ -106,7 +106,7 @@ To help make your buttons usable to as many users as possible, apply the followi
     ```swift
     button.minimumSize = CGSize(width: 64, height: 48)
     ```
-<!--</div>-->
+  <!--</div>-->
 
 
 * Set the [touch areas to at least 44 points high and 44
@@ -114,25 +114,25 @@ wide](https://material.io/design/layout/spacing-methods.html#touch-click-targets
     To minimize a button's visual size while allowing for larger [touchable areas](https://material.io/design/layout/spacing-methods.html#touch-click-targets), set the `hitAreaInsets` to a negative value. Maintain sufficient distance between the button touch targets. For more see the [Touch and click
 targets](https://material.io/design/layout/spacing-methods.html#touch-click-targets)
 in the spec.
-<!--<div class="material-code-render" markdown="1">-->
-    **Objective C**
-    ```objc
-    CGFloat verticalInset = MIN(0, -(48 - CGRectGetHeight(button.bounds)) / 2);
-    CGFloat horizontalInset = MIN(0, -(48 - CGRectGetWidth(button.bounds)) / 2);
-    button.hitAreaInsets = UIEdgeInsetsMake(verticalInset, horizontalInset, verticalInset, horizontalInset);
-    ```
+  <!--<div class="material-code-render" markdown="1">-->
+  **Objective C**
+  ```objc
+  CGFloat verticalInset = MIN(0, -(48 - CGRectGetHeight(button.bounds)) / 2);
+  CGFloat horizontalInset = MIN(0, -(48 - CGRectGetWidth(button.bounds)) / 2);
+  button.hitAreaInsets = UIEdgeInsetsMake(verticalInset, horizontalInset, verticalInset, horizontalInset);
+  ```
 
-    **Swift**
-    ```swift
-    let buttonVerticalInset =
-    min(0, -(kMinimumAccessibleButtonSize.height - button.bounds.height) / 2);
-    let buttonHorizontalInset =
-    min(0, -(kMinimumAccessibleButtonSize.width - button.bounds.width) / 2);
-    button.hitAreaInsets =
-    UIEdgeInsetsMake(buttonVerticalInset, buttonHorizontalInset,
-    buttonVerticalInset, buttonHorizontalInset);
-    ```
-<!--</div>-->
+  **Swift**
+  ```swift
+  let buttonVerticalInset =
+  min(0, -(kMinimumAccessibleButtonSize.height - button.bounds.height) / 2);
+  let buttonHorizontalInset =
+  min(0, -(kMinimumAccessibleButtonSize.width - button.bounds.width) / 2);
+  button.hitAreaInsets =
+  UIEdgeInsetsMake(buttonVerticalInset, buttonHorizontalInset,
+  buttonVerticalInset, buttonHorizontalInset);
+  ```
+  <!--</div>-->
 
     _**Note** There are [some](https://material.io/design/components/buttons.html#toggle-button) clear [exceptions](https://material.io/design/components/app-bars-bottom.html#specs) for these rules. Please adjust your buttons sizes accordingly._
 
@@ -174,7 +174,7 @@ The following example shows a text button with a text label that uses Material T
 For more information on Material Theming for iOS, go to the [iOS Material Theming page](../theming).
 
 !["iOS Text button with purple text 'Text' over a white background."](assets/text-button.svg)
-<!--<div class="material-code-render" markdown="1">-->
+  <!--<div class="material-code-render" markdown="1">-->
 **Swift**
 
 ```swift
@@ -188,14 +188,14 @@ button.applyTextTheme(withScheme: MyMaterialTheme)
 MDCButton *button = [[MDCButton alloc] init];
 [button applyTextThemeWithScheme:MyMaterialTheme];
 ```
-<!--</div>-->
+  <!--</div>-->
 
-
+<!--
 The following example shows a text button with an icon.
 
 !["iOS text button with purple text 'Text button' and '+' icon over a white background."](assets/text-button-icon.svg)
 
-<!--<div class="material-code-render" markdown="1">-->
+  <!--<div class="material-code-render" markdown="1">-->
 ```swift
 
 ```
@@ -204,7 +204,8 @@ The following example shows a text button with an icon.
 ```objc
 
 ```
-<!--</div>-->
+  <!--</div>-->
+-->
 
 
 ### Anatomy and key properties
@@ -222,36 +223,30 @@ _**Note** A container in iOS refers to a set of components with an applied Mater
 
 <b>Text label</b> and <b>Icon</b>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Text label** ||  | |
-| **Color** |  |  | |
-| **Typography** |  |  |  |
-| **Icon** | | | |
-| **Size** | | | |
-| **Gravity** (position relative to text label) | | | |
-| **Padding** (space between icon and text label) | | | |
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
+| **Text label** |  | NA |
+| **Color** | **Getter**: `titleColorForState:` <br> **Setter**: `setTitleColor:forState:"`  |  `colorScheme.primaryColor`<br>38% `colorScheme.onSurfaceColor` |
+| **Typography** | `titleLabel.Font` | `typographyScheme.button`  |
+| **Icon color** | **Getter**: `titleColorForState:` <br> **Setter**: `setTitleColor:forState:`  |  `colorScheme.primaryColor`<br>38% `colorScheme.onSurfaceColor` |
 
 <b>Container</b>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Color** |  |  | |
-| **Stroke color** | |  | |
-| **Stroke width** |  |  |  |
-| **Shape** |  | | |
-| **Elevation** | | | |
-| **Ripple color** | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)inkColor"><code>inkColor</code></a> | | White @ 20% opacity | 
-| | | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)inkStyle"><code>inkStyle</code></a> | `MDCInkStyleBounded` |  
-| | | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)inkMaxRippleRadius"><code>inkMaxRippleRadius</code></a> | Dynamic |  
-| | | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)enableRippleBehavior"><code>enableRippleBehavior</code></a> | `NO` | 
-
+| &nbsp; | Attribute | Default value |
+| --- | --- | --- |
+| **Color** | **Getter**: `backgroundColorForState:`<br>**Setter**: `setBackgroundColor:forState`  | `UIColor.Clear` (transparent)<br>`UIColor.Clear` (transparent) |
+| **Shape** | `layer.cornerRadius` | 4.0 |
+| **Elevation** | `setElevation:forState` |**Normal** 6.0<br>**Highlighted** 12.0<br>**Disabled** 0.0 |
+| **Ripple color** | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)inkColor"><code>inkColor</code></a> |  White @ 20% opacity | 
+| | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)inkStyle"><code>inkStyle</code></a> |  `MDCInkStyleBounded` |  
+| | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)inkMaxRippleRadius"><code>inkMaxRippleRadius</code></a> |  Dynamic |  
+| | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)enableRippleBehavior"><code>enableRippleBehavior</code></a> |  `NO` | 
+| 
 ## Outlined button
 
 [Outlined buttons](https://material.io/components/buttons/#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
 ### Outlined button example without container schemes
-
 You can apply a theme to the button using `Themes`.
 
 Source Code APIs:
@@ -268,7 +263,8 @@ For more information on Material Theming for iOS, go to the [iOS Material Themin
 
 !["Outlined button with purple text surrounded by a gray outline"](assets/outlined-button.svg)
 
-<!--<div class="material-code-render" markdown="1">-->
+  <!--<div class="material-code-render" markdown="1">-->
+
 **Swift**
 ```swift
 let button = MDCButton()
@@ -280,15 +276,20 @@ MDCButton *button = [[MDCButton alloc] init];
 
 [self.button applyOutlinedThemeWithScheme:self.MyMaterialTheme];
 ```
-<!--</div>-->
 
+  <!--</div>-->
+
+<!--
 <b>Adding an icon to an outlined button</b>
 
 The following example shows an outlined button with an icon.
 
 !["iOS outlined button with purple text 'Outlined' and '+' icon over a white background."](assets/outlined-button-icon.svg)
+-->
 
-<!--<div class="material-code-render" markdown="1">-->
+  <!--<div class="material-code-render" markdown="1">-->
+
+<!--
 ```swift
 
 ```
@@ -297,8 +298,9 @@ The following example shows an outlined button with an icon.
 ```objc
 
 ```
-<!--</div>-->
+-->
 
+  <!--</div>-->
 
 
 ### Outlined button example with container schemes
@@ -315,7 +317,7 @@ Source Code APIs:
 
 !["Outlined button example in Android with purple text surrounded by a gray outline"](assets/outlined-button.svg)
 
-<!--<div class="material-code-render" markdown="1">-->
+  <!--<div class="material-code-render" markdown="1">-->
 **Swift**
 ```swift
 let button = MDCButton()
@@ -326,15 +328,18 @@ button.applyTextTheme(withScheme: MyMaterialTheme)
 MDCButton *button = [[MDCButton alloc] init];
 [self.button applyTextThemeWithScheme:self.MyMaterialTheme];
 ```
-<!--</div>-->
+  <!--</div>-->
 
+<!--
 <b>Adding an icon to a contained button</b>
 
 The following example shows a contained button with an icon.
 
 !["iOS contained button with purple text 'Contained' and '+' icon over a white background."](assets/contained-button-icon.svg)
+-->
 
-<!--<div class="material-code-render" markdown="1">-->
+  <!--<div class="material-code-render" markdown="1">-->
+<!--
 ```swift
 
 ```
@@ -343,7 +348,8 @@ The following example shows a contained button with an icon.
 ```objc
 
 ```
-<!--</div>-->
+-->
+  <!--</div>-->
 
 </details>
 
@@ -362,26 +368,26 @@ _**Note** A container in iOS refers to a set of components with an applied Mater
 
 <b>Text label</b> and <b>Icon</b>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Text label** | | | |
-| **Color** |  | | |
-| **Typography** | | | |
-| **Icon** | | | |
-| **Size** | | | |
-| **Gravity** (position relative to text label) | | | |
-| **Padding** (space between icon and text label) | | | |
+| &nbsp; | Attribute |  Default value |
+| --- | --- | --- |
+| **Text label** | | NA | 
+| **Color** | **Getter**: `titleColorForState:` <br> **Setter**: `setTitleColor:forState:` | `colorScheme.PrimaryColor`<br>38% `colorScheme.onSurfaceColor` | 
+| **Typography** |  | `typographyScheme.button` | 
+| **Icon color** | **Getter**: `imageTintColorForState:` <br>**Setter**: `setImageTintColor:forState:` | 
 
 <b>Container</b>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Color** | | | |
-| **Stroke color** | | | |
-| **Stroke width** || | |
-| **Shape** | | | |
-| **Elevation** | | | |
-| **Ripple color** | | | |
+| $nbsp; | Attribute |  Default value |
+| --- | --- | --- | 
+| **Color** | **Getter**: `backgroundColorForState:`<br>**Setter**: `setBackgroundColor:forState`  |inherited | 
+| **Stroke color** | `layer.borderColor` | 12% `colorScheme` | 
+| **Shape** | `layer.cornerRadius` | 4.0 |
+| **Elevation** | `setElevation:forState` |**Normal** 6.0<br>**Highlighted** 12.0<br>**Disabled** 0.0 |
+| **Ripple color** | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)inkColor"><code>inkColor</code></a> |  White @ 20% opacity | 
+| | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)inkStyle"><code>inkStyle</code></a> |  `MDCInkStyleBounded` |  
+| | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)inkMaxRippleRadius"><code>inkMaxRippleRadius</code></a> |  Dynamic |  
+| | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)enableRippleBehavior"><code>enableRippleBehavior</code></a> |  `NO` | 
+| 
 
 ## Contained button
 
@@ -403,7 +409,7 @@ For more information on Material Theming for iOS, go to the [iOS Material Themin
 
 !["Contained button example with white text 'Text' on a purple background."](assets/contained-button.svg)
 
-<!--<div class="material-code-render" markdown="1">-->
+  <!--<div class="material-code-render" markdown="1">-->
 **Swift**
 ```swift
 let button = MDCButton()
@@ -415,7 +421,7 @@ MDCButton *button = [[MDCButton alloc] init];
 [self.button applyContainedThemeWithScheme:self.MyMaterialTheme];
 ```
 
-<!--</div>-->
+  <!--</div>-->
 
 
 ### Anatomy and key attributes
@@ -433,26 +439,24 @@ _**Note** A container in iOS refers to a set of components with an applied Mater
 
 <b>Text label</b> and <b>Icon</b>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Text label** | | | |
-| **Color** |  | | |
-| **Typography** | | | |
-| **Color** || | |
-| **Size** | | | |
-| **Gravity** (position relative to text label) | | | |
-| **Padding** (space between icon and text label) | | | |
+| &nbsp; | Attribute |  Default value |
+| --- | --- | --- |
+| **Text label** | | NA | 
+| **Color** | **Getter**: `titleColorForState:` <br> **Setter**: `setTitleColor:forState:` | `colorScheme.onPrimaryColor`<br>38% `colorScheme.onSurfaceColor` | 
+| **Typography** |  | `typographyScheme.button` | 
+| **Icon color** | **Getter**: `imageTintColorForState:` <br>**Setter**: `setImageTintColor:forState:` | `colorScheme.onPrimaryColor`<br>38% `colorScheme.onSurfaceColor`|
 
 <b>Container</b>
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Color** | | | |
-| **Stroke color** | | | |
-| **Stroke width** || | |
-| **Shape** | | | |
-| **Elevation** | | | |
-| **Ripple color** | | | |
+| $nbsp; | Attribute |  Default value |
+| --- | --- | --- | 
+| **Color** | **Getter**: `backgroundColorForState:`<br>**Setter**: `setBackgroundColor:forState`  | `colorScheme.primaryColor`<br>12% `colorScheme.onSurfaceColor` | 
+| **Shape** | `layer.cornerRadius` | 4.0 |
+| **Elevation** | `setElevation:forState` |**Normal** 6.0<br>**Highlighted** 12.0<br>**Disabled** 0.0 |
+| **Ripple color** | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)inkColor"><code>inkColor</code></a> |  primary @ 32% opacity | 
+| | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)inkStyle"><code>inkStyle</code></a> |  `MDCInkStyleBounded` |  
+| | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)inkMaxRippleRadius"><code>inkMaxRippleRadius</code></a> |  Dynamic |  
+| | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)enableRippleBehavior"><code>enableRippleBehavior</code></a> |  `NO` | 
 
 ## Toggle button
 
@@ -479,6 +483,7 @@ Icons can be used as toggle buttons when they allow selection, or deselection, o
 
 The iOS icon toggle button is only available for use with the iOS [card](../Cards) component. Go to the card article for an [example](../Cards/#card-example-with-icon-buttons).
 
+<!--Theming for Shrine is not available as of 2020.02.26
 ## Theming buttons
 
 Buttons support [Material Theming](https://material.io/components/buttons/#theming) and can be customized in terms of color, typography and shape.
@@ -503,4 +508,6 @@ Include source code implementing text, outlined, and contained buttons using "Sh
 
 Upload a screenshot of the render and update the image.
 ```
+
+-->
 
