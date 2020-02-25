@@ -2,22 +2,14 @@
 title: "Cards"
 layout: detail
 section: components
-excerpt: "<platform> Cards"
-ide_version: "<cIDE name> <compatible IDE version and build number>"
-material_package_version: "<compatible Material platform package version number>"
-iconId:
-path: /
-api_doc_root:
+excerpt: "Cards display content and actions on a single subject."
+iconId: 
+path: /catalog/cards/
 -->
 
 # Cards
 
 [Cards](https://material.io/components/cards/) contain content and actions about a single subject.
-
-There are two types of cards:
-
-1.  [Elevated](#elevated-card)
-2.  [Outlined](#outlined-card)
 
 ![Elevated card with a secondary title and two actions: Action 1 and Action 2 in purple](assets/generic-card-type-elevated.png)
 
@@ -45,7 +37,7 @@ Source code API:
   * [Class definition](https://developer.android.com/reference/com/google/android/material/card/MaterialCardView)
   * [Class source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/card/MaterialCardView.java)
 
-**Note:** You don't need to specify a style tag as long as you are using a Material Components Theme. If not, set the style to `Widget.MaterialComponents.CardView`.
+_**Note:** You don't need to specify a style tag as long as you are using a Material Components Theme. If not, set the style to `Widget.MaterialComponents.CardView`._
 
 #### Elevated card
 
@@ -179,7 +171,7 @@ card.setOnLongClickListener {
 
 #### Making the card draggable
 
-Cards have an `app:state_dragged` that has foreground and elevation changes to convey motion. The recommended way of using the dragged state is via the [`ViewDragHelper`](https://developer.android.com/reference/androidx/customview/widget/ViewDragHelper):
+Cards have an `app:state_dragged` that has foreground and elevation changes to convey motion. We recommend using  [`ViewDragHelper`](https://developer.android.com/reference/androidx/customview/widget/ViewDragHelper) to set the dragged state:
 
 ```kt
 private inner class ViewDragHelperCallback : ViewDragHelper.Callback() {
@@ -273,7 +265,7 @@ private val cardDelegate = object : AccessibilityDelegate() {
 }
 ```
 
-**Note:** Cards also support a swipe-to-dismiss behavior through the use of ['SwipeDismissBehavior'](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/behavior/SwipeDismissBehavior.java). An [example](https://github.com/material-components/material-components-android/blob/master/catalog/java/io/material/catalog/card/CardSwipeDismissFragment.java) can be found on the catalog.
+_**Note:** Cards also support a swipe-to-dismiss behavior through the use of ['SwipeDismissBehavior'](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/behavior/SwipeDismissBehavior.java). You can see an example [here](https://github.com/material-components/material-components-android/blob/master/catalog/java/io/material/catalog/card/CardSwipeDismissFragment.java)._
 
 
 ### Key properties
@@ -289,7 +281,7 @@ private val cardDelegate = object : AccessibilityDelegate() {
 7. Buttons (optional)
 8. Icons (optional)
 
-**Note:** All the optional elements of a card's content are implemented through the use of other views/components, as shown on the [card example](#card-example) section. With the exception of the optional checked icon, explained below.
+_**Note:** All the optional elements of a card's content (with the exception of the optional checked icon) are implemented through the use of other views/components, as shown in the [card example](#card-example) section._
 
 #### Container attributes
 
@@ -306,13 +298,9 @@ private val cardDelegate = object : AccessibilityDelegate() {
 |Ripple color | `app:rippleColor` | `setRippleColor`<br/>`setRippleColorResource`<br/>`getRippleColor` | `?attr/colorOnSurface` at 20% opacity (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/card/res/color/mtrl_card_view_ripple.xml)) |
 |Shape | `app:shapeAppearance` | `setShapeAppearanceModel`<br/>`getShapeAppearanceModel` | `?attr/shapeAppearanceMediumComponent` |
 
-<b>Note about the margins</b>
+_**Note** We recommend that cards on mobile have `8dp` margins. `android:layout_margin` needs to be set directly on a `View` in its layout and not included as part of a style._
 
-It's recommended that cards on mobile have `8dp` margins. `android:layout_margin` needs to be set directly on a `View` in its layout and won't work when included as part of a style.
-
-<b>Note about the stroke</b>
-
-Without an `app:strokeColor`, the card will not render a stroked border, regardless of the `app:strokeWidth` value.
+_**Note** Without an `app:strokeColor`, the card will not render a stroked border, regardless of the `app:strokeWidth` value._
 
 #### Checked icon (optional) attributes
 
@@ -343,12 +331,14 @@ Default style theme attribute: `?attr/materialCardViewStyle`
 See the full list of
 [styles](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/card/res/values/styles.xml)
 and
-[attrs](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/card/res/values/attrs.xml).
+[attributes](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/card/res/values/attrs.xml).
 
 
 ## Theming a card
 
 A card supports [Material Theming](https://material.io/components/cards/#theming) and can be customized in terms of color, typography and shape.
+
+The following example shows a card using the Material [Shrine](https://material.io/design/material-studies/shrine.html) theme.
 
 ![Screenshot of card theming example](assets/cards_theming.png)
 
