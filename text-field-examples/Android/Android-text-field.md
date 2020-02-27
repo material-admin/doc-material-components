@@ -21,7 +21,7 @@ There are two types of text fields:
 both inactive and focused states. The filled text fields show a gray background
 and a darker gray activation indicator that is purple when focused. The outlined
 text fields show a clear background and an outline that is purple when
-focused"](assets/textfields/text-field-generic.png)
+focused"](assets/text-field-generic.png)
 
 ## Using text fields
 
@@ -54,7 +54,7 @@ being used, make sure to set its `android:background` to `@null` so that
 
 ### Adding a leading icon to a text field
 
-!["Text field with a leading icon."](assets/textfields/textfields_leading_icon.png)
+!["Text field with a leading icon."](assets/textfields_leading_icon.png)
 
 ```xml
 <com.google.android.material.textfield.TextInputLayout
@@ -71,7 +71,7 @@ being used, make sure to set its `android:background` to `@null` so that
 
 **Password toggle:**
 
-!["Text field with a password toggle trailing icon."](assets/textfields/textfields_trailing_icon_password_toggle.png)
+!["Text field with a password toggle trailing icon."](assets/textfields_trailing_icon_password_toggle.png)
 
 If set, an icon is displayed to toggle between the password being displayed as
 plain-text or disguised (when the `TextInputEditText` is set to display a
@@ -92,7 +92,7 @@ password).
 
 **Clear text:**
 
-!["Text field with a clear text trailing icon."](assets/textfields/textfields_trailing_icon_clear_text.png)
+!["Text field with a clear text trailing icon."](assets/textfields_trailing_icon_clear_text.png)
 
 If set, an icon is displayed when text is present and pressing it clears the input text.
 
@@ -108,7 +108,7 @@ If set, an icon is displayed when text is present and pressing it clears the inp
 
 **Custom icon:**
 
-!["Text field with a custom trailing icon."](assets/textfields/textfields_trailing_icon_custom.png)
+!["Text field with a custom trailing icon."](assets/textfields_trailing_icon_custom.png)
 
 It is possible to set a custom `Drawable` as the text field's trailing
 icon via `app:endIconMode="custom"`. You should specify a drawable and content
@@ -164,7 +164,7 @@ See the full list of [end icon modes](https://github.com/material-components/mat
 
 ### Implementing an exposed dropdown menu
 
-!["Text field with an exposed dropdown menu."](assets/textfields/textfields_exposed_dropdown_menu.png)
+!["Text field with an exposed dropdown menu."](assets/textfields_exposed_dropdown_menu.png)
 
 In the layout:
 
@@ -206,7 +206,7 @@ In the item layout (`list_item.xml`):
 
 ### Adding helper text to a text field
 
-!["Text field with helper text."](assets/textfields/textfields_helper_text.png)
+!["Text field with helper text."](assets/textfields_helper_text.png)
 
 ```xml
 <com.google.android.material.textfield.TextInputLayout
@@ -221,7 +221,7 @@ In the item layout (`list_item.xml`):
 
 ### Adding a counter to a text field
 
-!["Text field with a counter."](assets/textfields/textfields_counter.png)
+!["Text field with a counter."](assets/textfields_counter.png)
 
 ```xml
 <com.google.android.material.textfield.TextInputLayout
@@ -236,7 +236,7 @@ In the item layout (`list_item.xml`):
 
 ### Adding errors to a text field
 
-!["Text field with an error."](assets/textfields/textfields_error.png)
+!["Text field with an error."](assets/textfields_error.png)
 
 In the layout:
 
@@ -264,7 +264,7 @@ _**Note:** Non-null error text will replace any existing helper text._
 
 ### Adding a prefix/suffix to a text field
 
-!["Text field with a prefix/suffix."](assets/textfields/textfields_prefix_suffix.png)
+!["Text field with a prefix/suffix."](assets/textfields_prefix_suffix.png)
 
 ```xml
 <com.google.android.material.textfield.TextInputLayout
@@ -330,7 +330,7 @@ API and source code:
     
 The following examples shows a filled text field with a label.
 
-![Filled text field](assets/textfields/textfields_filled.png)
+![Filled text field](assets/textfields_filled.png)
 
 In the layout:
 
@@ -366,7 +366,7 @@ See the [using text fields](#using-text-fields) section above for more examples.
 
 A filled text field has a filled container, input text, a label, an activation indicator, optional helper/error text and optional leading/trailing icons.
 
-![Filled text field anatomy](assets/textfields/textfields_filled_anatomy.png)
+![Filled text field anatomy](assets/textfields_filled_anatomy.png)
 
 1.  Container
 2.  Leading icon
@@ -490,7 +490,7 @@ API and source code:
     
 The following examples shows an outlined text field.
 
-![Outlined text field](assets/textfields/textfields_outlined.png)
+![Outlined text field](assets/textfields_outlined.png)
 
 In the layout:
 
@@ -527,7 +527,7 @@ See the [using text fields](#using-text-fields) section above for more examples.
 
 An outlined text field has a stroked container, input text, a label, optional helper/error text and optional leading/trailing icons.
 
-![Outlined text field anatomy](assets/textfields/textfields_outlined_anatomy.png)
+![Outlined text field anatomy](assets/textfields_outlined_anatomy.png)
 
 1.  Container
 2.  Leading icon
@@ -643,7 +643,7 @@ API and source code:
 The following example shows filled and outlined text field types with
 Material Theming.
 
-!["Filled and outlined text field theming with pink and brown colors and cut corners"](assets/textfields/textfields_theming.png)
+!["Filled and outlined text field theming with pink and brown colors and cut corners"](assets/textfields_theming.png)
 
 Using theme attributes and styles in `res/values/styles.xml` (themes all text fields
 and affects other components):
