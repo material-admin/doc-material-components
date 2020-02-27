@@ -174,7 +174,7 @@ The following example shows a text button with a text label that uses Material T
 For more information on Material Theming for iOS, go to the [iOS Material Theming page](../theming).
 
 !["iOS Text button with purple text 'Text' over a white background."](assets/text-button.svg)
-  <!--<div class="material-code-render" markdown="1">-->
+<!--<div class="material-code-render" markdown="1">-->
 **Swift**
 
 ```swift
@@ -188,24 +188,21 @@ button.applyTextTheme(withScheme: MyMaterialTheme)
 MDCButton *button = [[MDCButton alloc] init];
 [button applyTextThemeWithScheme:MyMaterialTheme];
 ```
-  <!--</div>-->
+<!--</div>-->
 
 <!--
 The following example shows a text button with an icon.
-
 !["iOS text button with purple text 'Text button' and '+' icon over a white background."](assets/text-button-icon.svg)
-
-  <!--<div class="material-code-render" markdown="1">-->
-```swift
-
-```
-
-
-```objc
-
-```
-  <!--</div>-->
 -->
+
+<!--<div class="material-code-render" markdown="1">-->
+<!--
+```swift
+```
+```objc
+```
+-->
+<!--</div>-->
 
 
 ### Anatomy and key properties
@@ -241,7 +238,7 @@ _**Note** A container in iOS refers to a set of components with an applied Mater
 | | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)inkStyle"><code>inkStyle</code></a> |  `MDCInkStyleBounded` |  
 | | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)inkMaxRippleRadius"><code>inkMaxRippleRadius</code></a> |  Dynamic |  
 | | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)enableRippleBehavior"><code>enableRippleBehavior</code></a> |  `NO` | 
-| 
+
 ## Outlined button
 
 [Outlined buttons](https://material.io/components/buttons/#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
@@ -387,7 +384,7 @@ _**Note** A container in iOS refers to a set of components with an applied Mater
 | | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)inkStyle"><code>inkStyle</code></a> |  `MDCInkStyleBounded` |  
 | | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)inkMaxRippleRadius"><code>inkMaxRippleRadius</code></a> |  Dynamic |  
 | | <a href="https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html#/c:objc(cs)MDCButton(py)enableRippleBehavior"><code>enableRippleBehavior</code></a> |  `NO` | 
-| 
+
 
 ## Contained button
 
