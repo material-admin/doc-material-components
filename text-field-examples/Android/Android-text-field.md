@@ -1,10 +1,10 @@
 <!--docs:
-title: "Text Fields"
+title: "Text fields"
 layout: detail
 section: components
 excerpt: "A text field with an animated floating label and other Material Design features."
-iconId: text_field
-path: /catalog/text-input-layout/
+iconId:
+path: /catalog/text-fields/
 -->
 
 # Text fields
@@ -18,10 +18,7 @@ There are two types of text fields:
 2.   [Outlined text field](#outlined-text-field)
 
 !["Text field examples of both filled and outlined types, and each type showing
-both inactive and focused states. The filled text fields show a gray background
-and a darker gray activation indicator that is purple when focused. The outlined
-text fields show a clear background and an outline that is purple when
-focused"](assets/text-field-generic.png)
+both inactive and focused states."](assets/text-field-generic.png)
 
 ## Using text fields
 
@@ -29,6 +26,8 @@ Before you can use Material text fields, you need to add a dependency to the
 Material Components for Android library. For more information, go to the
 [Getting started](/third_party/java_src/android_libs/material_components/g3doc/getting-started.md)
 page.
+
+In the layout:
 
 ```xml
 <com.google.android.material.textfield.TextInputLayout
@@ -45,16 +44,16 @@ page.
 </com.google.android.material.textfield.TextInputLayout>
 ```
 
-_**Note:** A text field is composed of a `TextInputLayout` and a `TextInputEditText` as a
-direct child. Using an `EditText` as the child might work, but `TextInputEditText`
-provides accessibility support for the text field and allows `TextInputLayout`
-greater control over the visual aspects of the input text. If an `EditText` is
-being used, make sure to set its `android:background` to `@null` so that
-`TextInputLayout` can set the proper background on it._
+_**Note:** A text field consists of a `TextInputLayout` and a `TextInputEditText` as a
+direct child. You can use `EditText` as the child, but `TextInputEditText`
+provides accessibility support and allows `TextInputLayout`
+greater control over the visual aspects of the input text. If you use `EditText`, set its `android:background` to `@null` so that `TextInputLayout` can set the background._
 
 ### Adding a leading icon to a text field
 
 !["Text field with a leading icon."](assets/textfields_leading_icon.png)
+
+In the layout:
 
 ```xml
 <com.google.android.material.textfield.TextInputLayout
@@ -73,9 +72,9 @@ being used, make sure to set its `android:background` to `@null` so that
 
 !["Text field with a password toggle trailing icon."](assets/textfields_trailing_icon_password_toggle.png)
 
-If set, an icon is displayed to toggle between the password being displayed as
-plain-text or disguised (when the `TextInputEditText` is set to display a
-password).
+If set, an icon is displayed to toggle between displaying and hiding the password (when the `TextInputEditText` is set to display a password).
+
+In the layout:
 
 ```xml
 <com.google.android.material.textfield.TextInputLayout
@@ -94,7 +93,9 @@ password).
 
 !["Text field with a clear text trailing icon."](assets/textfields_trailing_icon_clear_text.png)
 
-If set, an icon is displayed when text is present and pressing it clears the input text.
+If set, an icon is displayed when text is present. Clicking the icon clears the input text.
+
+In the layout:
 
 ```xml
 <com.google.android.material.textfield.TextInputLayout
@@ -156,7 +157,7 @@ textField.addOnEndIconChangedListener {
 }
 ```
 
-_**Note:** You should opt to use the `EndIconMode` API instead of setting an
+_**Note:** Use the `EndIconMode` API instead of setting an
 end/right compound `Drawable` on the `TextInputEditText`. The same applies to
 the now-deprecated `passwordToggle*` attributes._
 
@@ -208,6 +209,8 @@ In the item layout (`list_item.xml`):
 
 !["Text field with helper text."](assets/textfields_helper_text.png)
 
+In the layout:
+
 ```xml
 <com.google.android.material.textfield.TextInputLayout
     ...
@@ -222,6 +225,8 @@ In the item layout (`list_item.xml`):
 ### Adding a counter to a text field
 
 !["Text field with a counter."](assets/textfields_counter.png)
+
+In the layout:
 
 ```xml
 <com.google.android.material.textfield.TextInputLayout
@@ -266,6 +271,8 @@ _**Note:** Non-null error text will replace any existing helper text._
 
 !["Text field with a prefix/suffix."](assets/textfields_prefix_suffix.png)
 
+In the layout:
+
 ```xml
 <com.google.android.material.textfield.TextInputLayout
     ...
@@ -279,26 +286,25 @@ _**Note:** Non-null error text will replace any existing helper text._
 
 ### Making text fields accessible
 
-Android's text field component APIs support both label text and helper text for
-informing the user as to what information is requested for a text field. While
-optional, their use is strongly encouraged.
+Android's text field component APIs support both label text and helper text to describe the information requested for a text field. While
+optional, strongly encourage their use.
 
 #### Content description
 
-When using **custom icons**, you should set a content description on them so
-that screen readers like TalkBack are able to announce their purpose or action,
-if any.
+When using **custom icons**, set their content description so
+that screen readers like TalkBack can announce any purpose or action.
 
-For the leading icon, that can be achieved via the
+* For the leading icon, use the
 `app:startIconContentDescription` attribute or `setStartIconContentDescription`
-method. For the trailing icon, that can be achieved via the
+method. 
+* For the trailing icon, use the
 `app:endIconContentDescription` attribute or `setEndIconContentDescription`
 method.
 
 When setting an **error message** that contains special characters that screen
-readers or other accessibility systems are not able to read, you should set a
-content description via the `app:errorContentDescription` attribute or
-`setErrorContentDescription` method. That way, when the error needs to be
+readers or other accessibility systems are not able to read, use the `app:errorContentDescription` attribute or
+`setErrorContentDescription` method to set a
+content description to ensure that when the error needs to be
 announced, it will announce the content description instead.
 
 #### Custom `EditText`
