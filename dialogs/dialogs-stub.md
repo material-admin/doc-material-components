@@ -23,8 +23,8 @@ There are four types of dialogs:
 
 1. <img src="assets/alert-dialog.png" alt="Alert dialog: discard" width=50%>
 1. <img src="assets/simple-dialog.png" alt="Simple dialog: selection" width=50%>
-1. <img src="assets/alert-dialog.png" alt="Confirmation dialog: selection confirmation" width=50%>
-1. <img src="assets/alert-dialog.png" alt="Full-screen dialog: event" width=50%>
+1. <img src="assets/confirmation-dialog.png" alt="Confirmation dialog: selection confirmation" width=50%>
+1. <img src="assets/full-screen-dialog.png" alt="Full-screen dialog: event" width=50%>
 
 ## Using dialogs
 
