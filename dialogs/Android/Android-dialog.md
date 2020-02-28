@@ -33,10 +33,9 @@ A dialog is a type of modal window that appears in front of app content to provi
 Dialogs are purposefully interruptive, so they should be used sparingly.
 
 
-
-### Installing dialogs
-
 ### Making dialogs accessible
+
+__Note to developers: Do the dialogs include any dialog-specific accessibility info?__
 
 ## Alert dialog
 
@@ -48,6 +47,57 @@ Alert dialogs interrupt users with urgent information, details, or actions.
 
 ![alert dialog anatomy diagram](assets/dialog-anatomy.png)
 
+1. Container
+1. Title (optional)
+1. Supporting text
+1. Buttons
+1. Scrim
+
+**Container attributes**
+| &mbsp; | **Attribute** | **Related methods**  | **Default value** |
+| **Color** | | | |
+| **Stroke color** | | | |
+| **Stroke width** | | | |
+| **Shape** | | | |
+| **Elevation** | | | |
+| **Ripple color** | | | |
+
+
+**Title attributes**
+
+| &mbsp; | **Attribute** | **Related methods**  | **Default value** |
+| **Text label** | | | |
+| **Color** | | | |
+| **Typography** | | | |
+
+
+
+**Supporting text attributes**
+
+| &mbsp; | **Attribute** | **Related methods**  | **Default value** |
+| | | | |
+| **Text label** | | | |
+| **Color** | | | |
+| **Typography** | | | |
+
+
+**Buttons attributes**
+
+| &mbsp; | **Attribute** | **Related methods**  | **Default value** |
+| | | | |
+
+
+
+**Scrip attributes**
+
+| &mbsp; | **Attribute** | **Related methods**  | **Default value** |
+| | | | |
+
+**Styles**
+| &nbsp; | **Style** |
+| **Default style** | |
+| **Icon style** | |
+ 
 ## Simple dialog
 
 Simple dialogs can display items that are immediately actionable when selected. They don’t have text buttons.
