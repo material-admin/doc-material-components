@@ -45,6 +45,8 @@ The following example shows an elevated card.
 
 !["Elevated card with a title, a secondary title, text, and Action 1 and Action 2 buttons in purple"](assets/cards_elevated.png)
 
+In the layout:
+
 ```xml
 <com.google.android.material.card.MaterialCardView
     android:id="@+id/card"
@@ -187,6 +189,8 @@ card.setOnLongClickListener {
 ![Elevated card with a light grey overlay; secondary title and Action 1 and Action 2 buttons](assets/cards_dragged.png)
 
 Cards have an `app:state_dragged` that has foreground and elevation changes to convey motion. We recommend using [`ViewDragHelper`](https://developer.android.com/reference/androidx/customview/widget/ViewDragHelper) to set the dragged state:
+
+In code:
 
 ```kt
 private inner class ViewDragHelperCallback : ViewDragHelper.Callback() {
