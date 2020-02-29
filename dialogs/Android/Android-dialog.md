@@ -54,7 +54,9 @@ Alert dialogs interrupt users with urgent information, details, or actions.
 1. Scrim
 
 **Container attributes**
-| &mbsp; | **Attribute** | **Related methods**  | **Default value** |
+
+| &nbsp; | **Attribute** | **Related methods**  | **Default value** |
+| --- | --- | --- | --- |
 | **Color** | | | |
 | **Stroke color** | | | |
 | **Stroke width** | | | |
@@ -65,7 +67,7 @@ Alert dialogs interrupt users with urgent information, details, or actions.
 
 **Title attributes**
 
-| &mbsp; | **Attribute** | **Related methods**  | **Default value** |
+| &nbsp; | **Attribute** | **Related methods**  | **Default value** |
 | **Text label** | | | |
 | **Color** | | | |
 | **Typography** | | | |
@@ -74,8 +76,8 @@ Alert dialogs interrupt users with urgent information, details, or actions.
 
 **Supporting text attributes**
 
-| &mbsp; | **Attribute** | **Related methods**  | **Default value** |
-| | | | |
+| &nbsp; | **Attribute** | **Related methods**  | **Default value** |
+| --- | --- | --- | --- |
 | **Text label** | | | |
 | **Color** | | | |
 | **Typography** | | | |
@@ -83,18 +85,22 @@ Alert dialogs interrupt users with urgent information, details, or actions.
 
 **Buttons attributes**
 
-| &mbsp; | **Attribute** | **Related methods**  | **Default value** |
+| &nbsp; | **Attribute** | **Related methods**  | **Default value** |
+| --- | --- | --- | --- |
 | | | | |
 
 
 
 **Scrip attributes**
 
-| &mbsp; | **Attribute** | **Related methods**  | **Default value** |
+| &nbsp; | **Attribute** | **Related methods**  | **Default value** |
+| --- | --- | --- | --- |
 | | | | |
 
 **Styles**
+
 | &nbsp; | **Style** |
+| --- | --- |
 | **Default style** | |
 | **Icon style** | |
  
