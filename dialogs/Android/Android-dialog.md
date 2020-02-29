@@ -130,3 +130,15 @@ Full-screen dialogs group a series of tasks, such as creating a calendar entry w
 ## Dialog theming
 
 ### Dialog theming example
+
+__**Note to developers** Provide an example with the following features using the [Shrine theme](https://material.io/design/material-studies/shrine.html#about-shrine)__
+* Create a simple dialog
+* Add a title "Title"
+* Add 3 radio buttons with the following options:
+  * "option 1"
+  * "option 2"
+  * "option 3"
+* Add two text buttons to the bottom:
+  * "Action 1"
+  * "Action 2"
+* Use the [Cards](https://github.com/mingjane-work/doc-material-components/blob/mingjane-doc-branch/cards-examples/Android/assets/cards_theming.png) themed image as the scrim
