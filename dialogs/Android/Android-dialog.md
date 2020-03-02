@@ -68,6 +68,7 @@ Alert dialogs interrupt users with urgent information, details, or actions.
 **Title attributes**
 
 | &nbsp; | **Attribute** | **Related methods**  | **Default value** |
+| --- | --- | --- | --- |
 | **Text label** | | | |
 | **Color** | | | |
 | **Typography** | | | |
