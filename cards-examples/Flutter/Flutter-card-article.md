@@ -235,7 +235,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 <b>Container</b>
 
-| &nsbp; | Property |
+| &nbsp; | Property |
 |---|---|
 |Container width |  Wrap `Card` widget with `Container` widget and use `width` property |
 |Container heigh|  Wrap `Card` widget with `Container` widget and use `height` property|
@@ -246,13 +246,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
 <b>Thumbnail (optional)</b>
 
-| &nsbp; | Property |
+| &nbsp; | Property |
 |---|---|
 |Desc. 1 | Not by default but can be made by using `ListTile()` and use property `leading` |
 
 <b>Header text (optional)</b>
 
-| &nsbp; | Property |
+| &nbsp; | Property |
 |---|---|
 | Text label | Not by default but can be made by using `ListTile()` and use property `title` |
 | Text color | Within `title` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property |
@@ -260,7 +260,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 <b>Subhead (optional)</b>
 
-| &nsbp; | Property |
+| &nbsp; | Property |
 |---|---|
 | Text label | Not by default but can be made by using `ListTile()` and use property `subtitle` |
 | Text color | Within `subtitle` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property|
@@ -268,13 +268,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
 <b>Media (optional)</b>
 
-| &nsbp; | Property |
+| &nbsp; | Property |
 |---|---|
 |Desc. 1 | Can be made using `Image.asset()` within Card |
 
 <b>Supporting text (optional)</b>
 
-| &nsbp; | Property |
+| &nbsp; | Property |
 |---|---|
 | Text label | Can be made using `text` property |
 | Text color | Within `text` property you can customize the Text color by using the `style` property. The `style` property uses a `TextStyle` property and within that class use the `color` property|
@@ -284,13 +284,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
 [Material button API:](https://api.flutter.dev/flutter/material/MaterialButton-class.html)
 
-| &nsbp; | Property |
+| &nbsp; | Property |
 |---|---|
 |Desc. 1 | Can be made using `ButtonBar`, within `ButtonBar` use `FlatButtons` |
 
 <b>Icon (optional)</b>
 
-| &nsbp; | Property |
+| &nbsp; | Property |
 |---|---|
 |Desc. 1 | Can be made using `ButtonBar`, within `ButtonBar` use `IconButton` or `Icon`|
 
