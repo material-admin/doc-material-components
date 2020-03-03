@@ -27,7 +27,7 @@ There are four types of buttons:
 
 ### Install `MDCButtons`
 
-Before using the `MDCButtons` API to implement its types you must install `MCDButtons`. In your source files import the component, and then apply your theme:
+Before using the `MDCButtons` API to implement its types you must install `MDCButtons`. In your source files import the component, and then apply your theme:
 1. Install `MDCButtons`
    * Use CocoaPods to install `MDCButtons`
      1. Add the following line to your `Podfile`:
