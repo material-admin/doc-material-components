@@ -50,6 +50,10 @@ Alert dialogs interrupt users with urgent information, details, or actions.
 
 ### Alert dialog example
 
+`Dialog`
+* [Class description](https://api.flutter.dev/flutter/material/Dialog-class.html)
+* [API document](https://api.flutter.dev/flutter/material/Dialog/Dialog.html)
+
 ### Alert dialog anatomy and key properties
 
 ![alert dialog anatomy diagram](assets/dialog-anatomy.png)
@@ -108,6 +112,10 @@ Simple dialogs can display items that are immediately actionable when selected. 
 As simple dialogs are interruptive, they should be used sparingly. Alternatively, dropdown menus provide options in a non-modal, less disruptive way.
 
 ### Simple dialog example
+
+`Dialog`
+* [Class description](https://api.flutter.dev/flutter/material/Dialog-class.html)
+* [API document](https://api.flutter.dev/flutter/material/Dialog/Dialog.html)
 
 ### Simple dialog anatomy and key properties
 
@@ -168,6 +176,10 @@ If the user confirms a choice, it’s carried out. Otherwise, the user can dismi
 
 ### Confirmation dialog example
 
+`Dialog`
+* [Class description](https://api.flutter.dev/flutter/material/Dialog-class.html)
+* [API document](https://api.flutter.dev/flutter/material/Dialog/Dialog.html)
+
 ### Confirmation dialog anatomy and key properties
 
 1. Container
@@ -223,6 +235,10 @@ If the user confirms a choice, it’s carried out. Otherwise, the user can dismi
 Full-screen dialogs group a series of tasks, such as creating a calendar entry with the event title, date, location, and time. Because they take up the entire screen, full-screen dialogs are the only dialogs over which other dialogs can appear.dia
 
 ### Full-screen dialog example
+
+`Dialog`
+* [Class description](https://api.flutter.dev/flutter/material/Dialog-class.html)
+* [API document](https://api.flutter.dev/flutter/material/Dialog/Dialog.html)
 
 ### Full-screen dialog anatomy and key properties
 

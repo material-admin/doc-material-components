@@ -43,6 +43,10 @@ Alert dialogs interrupt users with urgent information, details, or actions.
 
 ### Alert dialog example
 
+`AlertDialog`
+* [Class description](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/dialog/MaterialAlertDialogBuilder.java)
+* [API reference](https://developer.android.com/reference/android/app/AlertDialog)
+
 ### Alert dialog anatomy and key properties
 
 ![alert dialog anatomy diagram](assets/dialog-anatomy.png)

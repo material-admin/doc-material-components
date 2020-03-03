@@ -36,7 +36,7 @@ Source code API:
 
 The following example shows an elevated card. The card has a title, a secondary title, text, and two actions: Action 1 and Action 2 in purple (#6200EE).
 
-<img src="assets/card-sample.png" alt="elevated card example for Flutter showing ...">
+![Elevated card example for Flutter showing...](assets/card-example.png) 
 
 The example code below generates the card:
 
