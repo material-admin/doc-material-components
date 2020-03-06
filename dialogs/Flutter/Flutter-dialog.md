@@ -101,7 +101,7 @@ The alert dialog contains the following:
 | | | 
 
 
-**Scrip attributes**
+**Scrim attributes**
 | &nbsp; | **Properties** |
 | --- | --- |
 | | |
@@ -178,7 +178,7 @@ A simple dialog contains the following:
 | | | 
 
 
-**Scrip attributes**
+**Scrim attributes**
 | &nbsp; | **Properties** |
 | --- | --- |
 | | |
@@ -255,7 +255,7 @@ A confirmation dialog contains the following:
 | | | 
 
 
-**Scrip attributes**
+**Scrim attributes**
 | &nbsp; | **Properties** |
 | --- | --- |
 | | |
@@ -319,7 +319,7 @@ The full-screen dialog contains the following properties:
 | | | 
 
 
-**Scrip attributes**
+**Scrim attributes**
 | &nbsp; | **Properties** |
 | --- | --- |
 | | |
