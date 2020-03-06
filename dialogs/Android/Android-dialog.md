@@ -98,7 +98,7 @@ The alert dialog contains the following:
 
 
 
-**Scrip attributes**
+**Scrim attributes**
 
 | &nbsp; | **Attribute** | **Related methods**  | **Default value** |
 | --- | --- | --- | --- |
@@ -125,6 +125,58 @@ A simple dialog contains the following:
 
 ![simple dialog anatomy diagram](assets/Dialogs_SimpleDIalog_anatomy.png)
 
+1. Container
+1. Title 
+1. (?)
+1. Button
+1. Scrim
+
+**Container attributes**
+
+| &nbsp; | **Attribute** | **Related methods**  | **Default value** |
+| --- | --- | --- | --- |
+| **Color** | | | |
+| **Stroke color** | | | |
+| **Stroke width** | | | |
+| **Shape** | | | |
+| **Elevation** | | | |
+| **Ripple color** | | | |
+
+
+**Title attributes**
+
+| &nbsp; | **Attribute** | **Related methods**  | **Default value** |
+| --- | --- | --- | --- |
+| **Text label** | | | |
+| **Color** | | | |
+| **Typography** | | | |
+
+**(?) attributes**
+
+| &nbsp; | **Attribute** | **Related methods**  | **Default value** |
+| --- | --- | --- | --- |
+| | | | |
+
+**Buttons attributes**
+
+| &nbsp; | **Attribute** | **Related methods**  | **Default value** |
+| --- | --- | --- | --- |
+| | | | |
+
+**Scrim attributes**
+
+| &nbsp; | **Attribute** | **Related methods**  | **Default value** |
+| --- | --- | --- | --- |
+| | | | |
+
+**Styles**
+
+| &nbsp; | **Style** |
+| --- | --- |
+| **Default style** | |
+| **Icon style** | |
+
+
 ## Confirmation dialog
 
 Confirmation dialogs give users the ability to provide final confirmation of a choice before committing to it, so they have a chance to change their minds if necessary.
@@ -137,7 +189,65 @@ If the user confirms a choice, it’s carried out. Otherwise, the user can dismi
 
 A confirmation dialog contains the following:
 
-![confirmatio dialog anatomy diagram](Dialog_Confirmation_anatomy.png)
+![confirmatio dialog anatomy diagram](assets/Dialog_Confirmation_anatomy.png)
+
+
+1. Container
+1. Title
+1. Selectors
+1. Buttons
+1. Scrim
+
+**Container attributes**
+
+| &nbsp; | **Attribute** | **Related methods**  | **Default value** |
+| --- | --- | --- | --- |
+| **Color** | | | |
+| **Stroke color** | | | |
+| **Stroke width** | | | |
+| **Shape** | | | |
+| **Elevation** | | | |
+| **Ripple color** | | | |
+
+
+**Title attributes**
+
+| &nbsp; | **Attribute** | **Related methods**  | **Default value** |
+| --- | --- | --- | --- |
+| **Text label** | | | |
+| **Color** | | | |
+| **Typography** | | | |
+
+
+
+**Selectors**
+
+| &nbsp; | **Attribute** | **Related methods**  | **Default value** |
+| --- | --- | --- | --- |
+| **Text label** | | | |
+| **Color** | | | |
+| **Typography** | | | |
+
+
+**Buttons attributes**
+
+| &nbsp; | **Attribute** | **Related methods**  | **Default value** |
+| --- | --- | --- | --- |
+| | | | |
+
+**Scrim attributes**
+
+| &nbsp; | **Attribute** | **Related methods**  | **Default value** |
+| --- | --- | --- | --- |
+| | | | |
+
+**Styles**
+
+| &nbsp; | **Style** |
+| --- | --- |
+| **Default style** | |
+| **Icon style** | |
+
 
 ## Full-screen dialog
 
@@ -150,6 +260,42 @@ Full-screen dialogs group a series of tasks, such as creating a calendar entry w
 The full-screen dialog contains the following properties:
 
 ![full-screen dialog anatomy](assets/Dialogs_FullScreen_anatomy_no-container.png)
+
+1. Title
+1. Icon Button
+1. Buttons
+1. Scrim
+
+
+**Title attributes**
+
+| &nbsp; | **Attribute** | **Related methods**  | **Default value** |
+| --- | --- | --- | --- |
+| **Text label** | | | |
+| **Color** | | | |
+| **Typography** | | | |
+
+**Icon button attributes**
+
+| &nbsp; | **Attribute** | **Related methods**  | **Default value** |
+| --- | --- | --- | --- |
+| | | | |
+
+
+**Buttons attributes**
+
+| &nbsp; | **Attribute** | **Related methods**  | **Default value** |
+| --- | --- | --- | --- |
+| | | | |
+
+
+**Styles**
+
+| &nbsp; | **Style** |
+| --- | --- |
+| **Default style** | |
+| **Icon style** | |
+
 
 ## Dialog theming
 
