@@ -130,7 +130,45 @@ Alert dialogs interrupt users with urgent information, details, or actions.
 
 ### Alert dialog anatomy and key properties
 
+The alert dialog contains the following:
+
 ![alert dialog anatomy diagram](assets/dialog-anatomy.png)
+
+1. Container
+1. Title (optional)
+1. Supporting text
+1. Buttons
+1. Scrim
+
+**Container**
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+| |
+
+**Title (optional)**
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+| |
+
+**Supporting text**
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+| |
+
+**Buttons**
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+| |
+
+**Scrim**
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+
 
 ## Simple dialog
 
@@ -153,6 +191,56 @@ __**Note to developers: provide an example and screenshot of a simple dialog wit
 
 ### Simple dialog anatomy and key properties
 
+A simple dialog contains the following:
+
+
+![simple dialog anatomy diagram](assets/Dialogs_SimpleDIalog_anatomy.png)
+
+1. Container
+1. Title 
+1. List item
+  1. Supporting visual
+  1. Primary text
+1. Button
+1. Scrim
+
+**Container**
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+| |
+
+**Title**
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+| |
+
+
+**List item supporting visual**
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+| |
+
+**List item primary text**
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+| |
+**Button**
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+| |
+**Scrim**
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+| |
+
+
+
 ## Confirmation dialog
 
 Confirmation dialogs give users the ability to provide final confirmation of a choice before committing to it, so they have a chance to change their minds if necessary.
@@ -167,6 +255,55 @@ If the user confirms a choice, it’s carried out. Otherwise, the user can dismi
 
 ### Confirmation dialog anatomy and key properties
 
+A confirmation dialog contains the following:
+![confirmation dialog anatomy diagram](assets/Dialog_Confirmation_anatomy.png)
+
+
+1. Container
+1. Title
+1. List item
+  1. List control
+  1. Primary text
+1. Buttons
+1. Scrim
+
+**Container**
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+| |
+
+**Title**
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+| |
+
+**List item List control**
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+| |
+
+**List item primary text**
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+| |
+
+**Buttons**
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+| |
+
+**Scrim**
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+| |
+
+
 ## Full-screen dialog
 
 Full-screen dialogs group a series of tasks, such as creating a calendar entry with the event title, date, location, and time. Because they take up the entire screen, full-screen dialogs are the only dialogs over which other dialogs can appear.dia
@@ -178,6 +315,39 @@ Full-screen dialogs group a series of tasks, such as creating a calendar entry w
 
 
 ### Full-screen dialog anatomy and key properties
+
+The full-screen dialog contains the following properties:
+
+![full-screen dialog anatomy](assets/Dialogs_FullScreen_anatomy_no-container.png)
+
+1. Title
+1. Icon button
+1. Button
+1. Scrim
+
+**Container**
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+| |
+
+**Icon button**
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+| |
+
+**Button**
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+| |
+
+**Scrim**
+
+ Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+| |
 
 
 ## Dialog theming

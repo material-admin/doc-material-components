@@ -127,7 +127,35 @@ __**Note to developers: provide an example alert dialog with the following featu
 
 ### Alert dialog anatomy and key properties
 
+The alert dialog contains the following:
+
 ![alert dialog anatomy diagram](assets/dialog-anatomy.png)
+1. Container
+1. Title (optional)
+1. Supporting text
+1. Buttons
+1. Scrim
+
+**Container **
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
+
+**Title (optional **
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
+
+**Supporting text **
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
+
+**Buttons **
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
+
+**Scrim **
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
+
 
 ## Simple dialog
 
@@ -155,6 +183,46 @@ __**Note to developers: provide an example simple (modal?) dialog with the follo
 
 ### Simple dialog anatomy and key properties
 
+A simple dialog contains the following:
+
+
+![simple dialog anatomy diagram](assets/Dialogs_SimpleDIalog_anatomy.png)
+
+1. Container
+1. Title 
+1. List item
+  1. Supporting visual
+  1. Primary text
+1. Button
+1. Scrim
+
+**Container**
+
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
+
+**Title**
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
+
+**List item supporting visual**
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
+
+**List item primary text**
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
+
+**Button**
+
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
+
+**Scrim**
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
+
+
 
 ## Confirmation dialog
 __**Note to developers: Does iOS support this type?**__
@@ -167,6 +235,44 @@ If the user confirms a choice, it’s carried out. Otherwise, the user can dismi
 
 ### Confirmation dialog anatomy and key properties
 
+A confirmation dialog contains the following:
+
+![confirmation dialog anatomy diagram](assets/Dialog_Confirmation_anatomy.png)
+
+
+1. Container
+1. Title
+1. List item
+  1. List control
+  1. Primary text
+1. Buttons
+1. Scrim
+
+**Container **
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
+
+**Title **
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
+
+**List item control **
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
+
+**List item primary text **
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
+
+**Buttons **
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
+
+**Scrim **
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
+
+
 ## Full-screen dialog
 __**Note to developers: Does iOS support this type?**__
 
@@ -176,6 +282,30 @@ Full-screen dialogs group a series of tasks, such as creating a calendar entry w
 ### Full-screen dialog example
 
 ### Full-screen dialog anatomy and key properties
+The full-screen dialog contains the following properties:
+
+![full-screen dialog anatomy](assets/Dialogs_FullScreen_anatomy_no-container.png)
+
+1. Title
+1. Icon button
+1. Buttons
+1. Scrim
+
+**Title **
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
+
+**Icon button **
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
+
+**Buttons **
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
+
+**Scrim **
+| &nbsp;  | Attribute |  Default value |
+| --- | --- | --- |
 
 
 ## Dialog theming
