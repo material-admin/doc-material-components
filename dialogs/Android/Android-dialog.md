@@ -49,7 +49,9 @@ Alert dialogs interrupt users with urgent information, details, or actions.
 
 ### Alert dialog anatomy and key properties
 
-![alert dialog anatomy diagram](assets/dialog-anatomy.png)
+The alert dialog contains the following:
+
+![alert dialog anatomy diagram](assets/Dialogs_AlertDialog_anatomy.png)
 
 1. Container
 1. Title (optional)
@@ -119,6 +121,10 @@ As simple dialogs are interruptive, they should be used sparingly. Alternatively
 
 ### Simple dialog anatomy and key properties
 
+A simple dialog contains the following:
+
+![simple dialog anatomy diagram](assets/Dialogs_SimpleDIalog_anatomy.png)
+
 ## Confirmation dialog
 
 Confirmation dialogs give users the ability to provide final confirmation of a choice before committing to it, so they have a chance to change their minds if necessary.
@@ -129,6 +135,10 @@ If the user confirms a choice, it’s carried out. Otherwise, the user can dismi
 
 ### Confirmation dialog anatomy and key properties
 
+A confirmation dialog contains the following:
+
+![confirmatio dialog anatomy diagram](Dialog_Confirmation_anatomy.png)
+
 ## Full-screen dialog
 
 Full-screen dialogs group a series of tasks, such as creating a calendar entry with the event title, date, location, and time. Because they take up the entire screen, full-screen dialogs are the only dialogs over which other dialogs can appear.dia
@@ -137,6 +147,9 @@ Full-screen dialogs group a series of tasks, such as creating a calendar entry w
 
 ### Full-screen dialog anatomy and key properties
 
+The full-screen dialog contains the following properties:
+
+![full-screen dialog anatomy](assets/Dialogs_FullScreen_anatomy_no-container.png)
 
 ## Dialog theming
 
