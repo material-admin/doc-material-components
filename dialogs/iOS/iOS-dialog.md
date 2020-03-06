@@ -191,8 +191,8 @@ A simple dialog contains the following:
 1. Container
 1. Title 
 1. List item
-  1. Supporting visual
-  1. Primary text
+    1. Supporting visual
+    1. Primary text
 1. Button
 1. Scrim
 
@@ -243,8 +243,8 @@ A confirmation dialog contains the following:
 1. Container
 1. Title
 1. List item
-  1. List control
-  1. Primary text
+    1. List control
+    1. Primary text
 1. Buttons
 1. Scrim
 
