@@ -136,23 +136,23 @@ The alert dialog contains the following:
 1. Buttons
 1. Scrim
 
-**Container **
+**Container**
 | &nbsp;  | Attribute |  Default value |
 | --- | --- | --- |
 
-**Title (optional **
+**Title (optional)**
 | &nbsp;  | Attribute |  Default value |
 | --- | --- | --- |
 
-**Supporting text **
+**Supporting text**
 | &nbsp;  | Attribute |  Default value |
 | --- | --- | --- |
 
-**Buttons **
+**Buttons**
 | &nbsp;  | Attribute |  Default value |
 | --- | --- | --- |
 
-**Scrim **
+**Scrim**
 | &nbsp;  | Attribute |  Default value |
 | --- | --- | --- |
 
@@ -237,7 +237,7 @@ If the user confirms a choice, it’s carried out. Otherwise, the user can dismi
 
 A confirmation dialog contains the following:
 
-![confirmation dialog anatomy diagram](assets/Dialog_Confirmation_anatomy.png)
+![confirmation dialog anatomy diagram](assets/Dialogs_Confirmation_anatomy.png)
 
 
 1. Container
@@ -248,27 +248,27 @@ A confirmation dialog contains the following:
 1. Buttons
 1. Scrim
 
-**Container **
+**Container**
 | &nbsp;  | Attribute |  Default value |
 | --- | --- | --- |
 
-**Title **
+**Title**
 | &nbsp;  | Attribute |  Default value |
 | --- | --- | --- |
 
-**List item control **
+**List item control**
 | &nbsp;  | Attribute |  Default value |
 | --- | --- | --- |
 
-**List item primary text **
+**List item primary text**
 | &nbsp;  | Attribute |  Default value |
 | --- | --- | --- |
 
-**Buttons **
+**Buttons**
 | &nbsp;  | Attribute |  Default value |
 | --- | --- | --- |
 
-**Scrim **
+**Scrim**
 | &nbsp;  | Attribute |  Default value |
 | --- | --- | --- |
 
@@ -291,19 +291,19 @@ The full-screen dialog contains the following properties:
 1. Buttons
 1. Scrim
 
-**Title **
+**Title**
 | &nbsp;  | Attribute |  Default value |
 | --- | --- | --- |
 
-**Icon button **
+**Icon button**
 | &nbsp;  | Attribute |  Default value |
 | --- | --- | --- |
 
-**Buttons **
+**Buttons**
 | &nbsp;  | Attribute |  Default value |
 | --- | --- | --- |
 
-**Scrim **
+**Scrim**
 | &nbsp;  | Attribute |  Default value |
 | --- | --- | --- |
 
