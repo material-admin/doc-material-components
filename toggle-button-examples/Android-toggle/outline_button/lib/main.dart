@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'toggleIconDemo.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,7 +23,13 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(title: 'Flutter Demo Home Page'),
+      initialRoute: '/toggleIconPage',
+      routes: {
+        '/toggleIconPage': (context) => ToggleIconDemo(title: 'Toggle Icon Demo'),
+      },
+
     );
+
   }
 }
 
@@ -65,6 +73,9 @@ class _MyHomePageState extends State<MyHomePage> {
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
+
+    List<bool> isSelected = List<bool>.filled(3, false);
+
     return Scaffold(
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
@@ -99,10 +110,13 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.display1,
             ),
             OutlineButton(
+              textColor: Color(0xFF6200EE),
               onPressed: _incrementCounter,
               child: Text('Outlined Button', style: TextStyle(fontSize: 20)),
             ),
             RaisedButton(
+              textColor: Colors.white,
+              color: Color(0xFF6200EE),
               onPressed: _incrementCounter,
               child: const Text(
                   'Contained Button',
@@ -110,9 +124,25 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
               FlatButton(
+                textColor: Color(0xFF6200EE),
                 onPressed: _incrementCounter,
                 child: Text('Text Button', style: TextStyle(fontSize: 20)),
               ),
+            ToggleButtons(
+
+              children: <Widget>[
+                Icon(Icons.favorite),
+                Icon(Icons.remove_red_eye),
+                Icon(Icons.notifications),
+              ],
+              onPressed: (int index) {
+                setState(() {
+                  isSelected[index] = !isSelected[index];
+                });
+              },
+              isSelected: isSelected,
+            )
+
           ],
         ),
       ),
