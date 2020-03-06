@@ -57,3 +57,4 @@ class _ToggleBarDemoState extends State<ToggleBarDemo> {
     );
   }
 }
+

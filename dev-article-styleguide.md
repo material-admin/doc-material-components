@@ -6,6 +6,7 @@ This is a checklist for developers to ensure that their usage documents maintain
 - [ ]  Your documentation's tone, language, grammar, and images follow the [Google developer documentation style guide highlights](https://developers.google.com/style/highlights).
 - [ ]  Your document uses the language platform-specific language ("dependencies" vs "installs" for instance)
 - [ ]  Your document is free of all text related to document instructions, such as `\<your platform\>` or `\<insert your code here\>`
+- [ ]  Your document has metadata in the top comment of the file that contains the appropriate information for your platform's component
 - [ ]  Your document uses the  &ndash; ('\&ndash;') and not &mdash; ('\&mdash;')
 - [ ]  All components (all elements, images, videos, icons, any other critical graphical element) are labelled correctly for screen reader use (see the [greenlines for elements](https://sites.google.com/corp/google.com/greenlinesv2/how-to-greenline/greenlines-for-elements) for more details on what to include in your labels)
 - [ ]  Your document's images of text have correct screen readable labels
