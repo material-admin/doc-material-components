@@ -128,8 +128,8 @@ A simple dialog contains the following:
 1. Container
 1. Title 
 1. List item
-  1. Supporting visual
-  1. Primary text
+    1. Supporting visual
+    1. Primary text
 1. Button
 1. Scrim
 
@@ -201,14 +201,13 @@ If the user confirms a choice, it’s carried out. Otherwise, the user can dismi
 
 A confirmation dialog contains the following:
 
-![confirmation dialog anatomy diagram](assets/Dialog_Confirmation_anatomy.png)
-
+![confirmation dialog anatomy diagram](assets/Dialogs_Confirmation_anatomy.png)
 
 1. Container
 1. Title
 1. List item
-  1. List control
-  1. Primary text
+    1. List control
+    1. Primary text
 1. Buttons
 1. Scrim
 
