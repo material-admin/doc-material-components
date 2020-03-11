@@ -25,48 +25,45 @@ There are four types of buttons:
 
 ## Using buttons
 
-Before you can use a button, you will need to install and import the following:
+Before you can use a button, you will need to first:
 
 * Install the Material button component
 * Import JavaScript
 
 ### Install the Material button component
 
-Install the `mdc-button` (for text, outlined, or contained button) or `mdc-icon-button` (for the icon toggle button) component before including it in your source.
+Install the `mdc-button` component before including it in your source.
 
+<details><summary><b>Expand for installation commands for <code>mdc-button</code></b></summary>
 
 **`mdc-button`**
 ```bash
-npm install @material/buttons
+npm install @material/button
 ```
 
-**`mdc-icon-button`**
-```bash
-npm install @material/icon-button
-```
+</details>
 
-### Import JavaScript
+### Import JavaScript ripple effect
 
-You can optionally add a JavaScript ripple effect (see [MDC Ripple](https://github.com/material-components/material-components-web/blob/master/packages/mdc-ripple)) to your buttons by importing and then instantiating `MDCRipple` in your `*.js` file. See the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md) for more information.
+You can optionally add a JavaScript ripple effect (see [MDC Ripple](https://github.com/material-components/material-components-web/blob/master/packages/mdc-ripple)) to your buttons by importing and then instantiating `MDCRipple` in your `*.js` file. For more information, see the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md).
 
 To bundle your `*.js` file, go to the [quickstart page](https://github.com/material-components/material-components-web/blob/master/docs/getting-started.md#quick-start-cdn).
+
+<details><summary><b>Expand for instructions to add JavaScript ripple effect</b></summary>
 
 ```js
 import {MDCRipple} from '@material/ripple';
 
-// The following line applies to the `mdc-button` class
 const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
-
-
-// The following line applies to the `mdc-icon-button` class
-const iconButtonRipple = new MDCRipple(document.querySelector(`.mdc-icon-button`));
-iconButtonRipple.unbounded = true;
 ```
 
+</details>
 
 ### Add an icon to `mdc-button`
 
-Add an icon to your `mdc-button` instance using the following steps:
+<details><summary><b>Expand for instructions to add an icon to your <code>mdc-button</code></b></summary>
+
+Add an icon to your `mdc-button` instance as follows:
 
 1. In your HTML file, reference the icon font library you would like to use (we recommend the [Material Icons](https://material.io/tools/icons/) from Google Fonts):
     ```HTML
@@ -75,7 +72,7 @@ Add an icon to your `mdc-button` instance using the following steps:
     </head>
     ```
 1. Include the `mdc-button__icon` class inside your button element. Set the attribute `aria-hidden="true"`.
-    **Note** The location of the icon element determines if the icon comes before (*leading*) or after (*trailing icon*) the button label.
+    **Note**: The location of the icon element determines if the icon comes before (*leading*) or after (*trailing icon*) the button label.
 
     **Example using [Material Icons](https://material.io/tools/icons/)**
     ```HTML
@@ -90,13 +87,13 @@ Add an icon to your `mdc-button` instance using the following steps:
     ```html
     <button class="mdc-button">
       <div class="mdc-button__ripple"></div>
-      <<svg class="mdc-button__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="...">
-  ...svg class="mdc-button__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="...">
-        /*...*/
+      <svg class="mdc-button__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="...">
+      ...
       </svg>
       <span class="mdc-button__label">Button</span>
     </button>
     ```
+</details>
 
 ### Making buttons accessible
 
@@ -113,37 +110,7 @@ To meet this requirement, add the following to your button:
 </div>
 ```
 
-_**Note** The outer `mdc-touch-target-wrapper` element is only necessary if you want to avoid potentially overlapping touch targets on adjacent elements (due to collapsing margins)._
-
-### Sass mixins
-
-Use Sass mixins when you want to customize the look and feel of your buttons. Go to [sass-lang.com](https://sass-lang.com/install) for installation instructions.
-
-Go to the bottom of this document for a [theming example](#button-theming-example) using Sass mixins.
-
-#### Sass mixins for `mdc-button`
-
-The following mixins are available to customize your `mdc-button` instance.
-
-Mixin | Description
----|---
-`container-fill-color($color)` | Sets the container fill color to the given color.
-`icon-color($color)` | Sets the icon color to the given color.
-`ink-color($color)` | Sets the ink color to the given color, and sets the icon color to the given color unless `icon-color` is also used.
-`shape-radius($radius, $rtl-reflexive)` | Sets rounded shape to button with given radius size. Set `$rtl-reflexive` to true to flip radius values in RTL context, defaults to false.
-`horizontal-padding($padding)` | Sets horizontal padding to the given number.
-`outline-color($color)` | Sets the outline color to the given color.
-`outline-width($width, $padding)` | Sets the outline width to the given number (defaults to 2px) and adjusts padding accordingly. `$padding` is only required in cases where `horizontal-padding` is also included with a custom value.
-
-#### Sass mixins for `mdc-icon-button`
-
-The following mixins are available to customize your `mdc-icon-button` instance.
-
-Mixin | Description
----|---
-`size($width, $height, $padding)` | Sets the width, height, font-size and padding for the icon and ripple. `$height` is optional and defaults to `$width`. `$padding` is optional and defaults to `max($width, $height)/2`. `font-size` is set to `max($width, $height)`.
-`ink-color($color)` | Sets the font color and the ripple color to the provided color value.
-
+_**Note**: The outer `mdc-touch-target-wrapper` element is only necessary if you want to avoid potentially overlapping touch targets on adjacent elements (due to collapsing margins)._
 
 ## Text button
 
@@ -166,7 +133,7 @@ Source code API:
 </button>
 ```
 
-<b>Text button with icon example</b>
+<details><summary><b>Text button with icon example</b></summary>
 
 <img src="assets/web-text-icon-button.png" alt="Text button with bookmark icon example">
 
@@ -180,6 +147,7 @@ Source code API:
 </button>
 
 ```
+</details>
 
 ### Anatomy and key properties
 
@@ -191,29 +159,39 @@ A text button has a text label, a transparent container and an optional icon.
 1. Container
 1. Icon
 
-<b>Text label attributes</b>
+<details>
+<summary><b>Text label</b> attributes</summary>
+<br>
 
 Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
-Text color | Primary color | `mdc-button-ink-color($color)`
-Accessible text color | Calculated | `mdc-button-filled-accessible($container-fill-color)`
+Text label | N/A |  N/A
+Text color | Primary color |
+Typography | Default |
 
-<b>Container</b>
+</details>
+
+<details>
+<summary><b>Container</b> attributes</summary>
+<br>
 
 Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
-Container ink color | Primary color | `mdc-button-container-fill-color($color)`
-Container density | Default (`0`) | `mdc-button-density($density-scale)`
-Container height | Default | `mdc-button-height($height)`
-Container shape radius | Default | `mdc-button-shape-radius($radius, $density-scale, $rtl-reflexive)`
-Container horizontal padding | Default | `mdc-button-horizontal-padding($padding)`
+Container ink color | Primary color | `mdc-button-ink-color($color)`
+</details>
 
-<b>Icon</b> 
+<details>
+<summary><b>Icon</b> attributes</summary>
+<br>
 
 
  Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
-Icon color | Primary color | ` mdc-button-icon-color($color)`
+ Icon | N/A |
+C | Icon color | Primary color | ` mdc-button-icon-color($color)`
+
+</details>
+
 
 ## Outlined button
 
@@ -235,7 +213,9 @@ Source code API:
   <span class="mdc-button__label">Outlined Button</span>
 </button>
 ```
-<b>Outlined button with icon example</b>
+
+<details><summary><b>Outlined button with icon example</b></summary>
+
 
 <img src="assets/web-outlined-icon-button.png" alt="Outlined button with bookmark icon">
 
@@ -246,6 +226,7 @@ Source code API:
   <span class="mdc-button__label">Outlined Button plus Icon</span>
 </button>
 ```
+</details>
 
 ### Anatomy and key properties
 
@@ -258,32 +239,42 @@ An outline button has text, a container, and an optional icon.
 1. Container
 1. Icon
 
-<b>Text label attributes</b>
+
+<details><summary><b>Text label attributes</b></summary>
 
 Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
-Text color | Primary color | `mdc-button-ink-color($color)`
-Accessible text color | Calculated | `mdc-button-filled-accessible($container-fill-color)`
+Text label | N/A |  N/A
+Text color | Primary color |
+Typography | Default |
 
-<b>Container</b>
+</details>
+
+<details><summary><b>Container attributes</b></summary>
 
 Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
-Container ink color | Primary color | `mdc-button-container-fill-color($color)`
-Container density | Default (`0`) | `mdc-button-density($density-scale)`
-Container height | Default | `mdc-button-height($height)`
-Container shape radius | Default | `mdc-button-shape-radius($radius, $density-scale, $rtl-reflexive)`
-Container horizontal padding | Default | `mdc-button-horizontal-padding($padding)`
-Container outline color | Primary Color | `mdc-button-outline-color($color)`
-Container outline width | Default (`2px`) | `mdc-button-outline-width($width, $padding)`
+Container ink color | Primary color | `mdc-button-ink-color($color)`
+Container shape radius | Default | `mdc-button-shape-radius($radius, $rtl-reflexive)`
+Container outline color | Secondary color | `mdc-button-outline-color($color)`
+Container outline width | | `mdc-button-outline-width($width, $padding)`
+Container horizontal padding | | `mdc-button-horizontal-padding($padding)`
 
-<b>Icon</b>
+</details>
+
+
+<details><summary><b>Icon attributes</b></summary>
 
  Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
-Icon color | Primary color | ` mdc-button-icon-color($color)`
+ Icon | N/A |
+C | Icon color | Primary color | ` mdc-button-icon-color($color)`
 
 We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Outlined button API doc]()
+
+
+</details>
+
 
 ## Contained button
 
@@ -305,7 +296,8 @@ Source code API:
   <span class="mdc-button__label">Contained Button</span>
 </button>
 ```
-<b>Contained button with icon example</b>
+
+<details><summary><b>Contained button with icon example</b></summary>
 
 Source code API:
 
@@ -320,42 +312,53 @@ Source code API:
   <span class="mdc-button__label">Contained Button plus Icon</span>
 </button>
 ```
+</details>
 
 ### Anatomy and key attributes
 
 A contained button has text, a container, and an optional icon.
 
-![Contained button anatomy diagram](assets/contained_button_anatomy.png)
+[Contained button anatomy diagram](assets/contained_button_anatomy.png)
 
 1. Text label
 1. Container
 1. Icon
 
-<b>Text label attributes</b>
+<details><summary><b>Text label attributes</b></summary>
 
 Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
-Text color | Primary color | `mdc-button-ink-color($color)`
-Accessible text color | Calculated | `mdc-button-filled-accessible($container-fill-color)`
+Text label | N/A |  N/A
+Text color | Secondary color |
+Typography | Default |
 
-<b>Container</b>
+</details>
+
+<details><summary><b>Container attributes</b></summary>
 
 Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
-Container ink color | Primary color | `mdc-button-container-fill-color($color)`
-Container density | Default (`0`) | `mdc-button-density($density-scale)`
-Container height | Default | `mdc-button-height($height)`
-Container shape radius | Default | `mdc-button-shape-radius($radius, $density-scale, $rtl-reflexive)`
-Container horizontal padding | Default | `mdc-button-horizontal-padding($padding)`
+Container fill color| Primary color | ` mdc-button-container-fill-color($color)`
+Container ink color | Primary color | `mdc-button-ink-color($color)`
+Container shape radius | Default | `mdc-button-shape-radius($radius, $rtl-reflexive)`
+Container outline color | Secondary color | `mdc-button-outline-color($color)`
+Container outline width | | `mdc-button-outline-width($width, $padding)`
+Container horizontal padding | | `mdc-button-horizontal-padding($padding)`
 
-<b>Icon</b>
+</details>
+
+
+<details><summary><b>Icon attributes</b></summary>
 
  Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
-Icon color | Primary color | ` mdc-button-icon-color($color)`
+Icon | N/A |
+Icon color | Secondary color | ` mdc-button-icon-color($color)`
 
-We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Outlined button API doc]()
 
+We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [contained button API doc]()
+
+</details>
 
 ## Toggle button
 
@@ -369,150 +372,117 @@ There are two types of toggle buttons:
 
 ### Toggle button
 
-The Material.io framework for Web currently does not support toggle button groups, such as:
-
 <img src="toggle-bar.png" alt="toggle button group">
 
-If your application needs a toggle button group, you will need to use a different framework such as [Vuetify](https://vuetifyjs.com/en/components/button-groups#button-groups).
+MDC Web currently does not support toggle button groups.
 
 ### Icon
 
 Icons can be used as toggle buttons when they allow selection, or deselection, of a single choice, such as marking an item as a favorite.
 
-
-#### Toggle icon bar example with background images
-
-Source code API:
-
-* mdc-icon-button
-    * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-icon-button)
-    * [Demo site](https://glitch.com/edit/#!/join/8ef9db8e-e36f-4e03-ba14-39b1a8b69405)
-
-<img src="assets/web-toggle-icon-button.png" alt="4 images arranged in a 2 by 2 array, each image with a favorite icon in the upper-right corner" width="50%">
-To generate the example with background images of your choosing, you will need containers for your tiled images, and containers to resize your images. You may also need to change the icon color to ensure that the icon is visible on your image (see the `index.scss` file for the tiled container \[`container`\] and the image container \[`image-with-fav`\] and the icon button color \[`favve-button`\]).
-
-* In your `*.js` file,
-    1. Import `MDCIconButtonToggle`:
-        ```js
-        import {MDCIconButtonToggle} from '@material/icon-button';
-        ```
-    1. Instantiate the icon button toggle for each button:
-        ```js
-		const iconToggle0 = new MDCIconButtonToggle(document.querySelector('.btn1'));
-		iconToggle0.unbounded = true;
-
-		const iconToggle1 = new MDCIconButtonToggle(document.querySelector('.btn2'));
-		iconToggle1.unbounded = true;
-	```
-* In your `*.html` file, you can now add the iterations of the following, which shows containers with background images:
-    ```html
-    <div class="container">
-          <div class="image-with-fave">
-            <img src="https://cdn.glitch.com/4f0b2993-dd70-46bf-916f-a6e81af58957%2Fimage1.jpeg?v=1570131499813" />
-            <button
-              id="bookmark-0"
-              class="mdc-icon-button btn1 fave-button"
-              aria-label="Add to favorites"
-              aria-hidden="true"
-              aria-pressed="false"
-            >
-              <i
-                class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on"
-                >favorite</i
-              >
-              <i class="material-icons mdc-icon-button__icon">favorite_border</i>
-            </button>
-          </div>
-          <div class="image-with-fave">
-            <img
-          src="https://cdn.glitch.com/4f0b2993-dd70-46bf-916f-a6e81af58957%2Fimage2.jpeg?v=1570131499876" />
-            <button
-              id="bookmark-1"
-              class="mdc-icon-button btn2 fave-button"
-              aria-label="Add to favorites"
-              aria-hidden="true"
-              aria-pressed="false"
-            >
-              <i
-                class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on"
-                >favorite</i>
-              <i class="material-icons mdc-icon-button__icon">favorite_border</i>
-              </button>
-          </div>
-          ...
-        </div>
-    ```
-
-#### Anatomy and key properties
-
-The icon button consists of two icons for 'on' and 'off'.
-
-![Toggle button anatomy](assets/toggle_button_anatomy.png)
-
-1. Container
-1. Icon
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-Icon | N/A |
-Icon color | Secondary color | ` mdc-button-icon-color($color)`|
-
-We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Icon button API doc]()
-
+For more details, see the <TODO: Add link to icon-button docs>
 
 ### Button theming example
 
-API and source code:
+The following example shows text, outlined and contained button types with Material Theming.
 
-* `mdc-button`
-    * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
+<img src="assets/button-theming.png" width="400" alt="Button theming with three buttons - text, outlined, and contained - with Shrine theming.">
 
-Buttons support [Material Theming](https://material.io/components/buttons/#theming) and can be customized in terms of color, typography and shape.
+<details>
+<summary><b>Implementing button theming</b></summary>
 
-Before using Sass mixins for your project you will need to do the following:
+#### Theming with Sass variables
 
-* Add the Sass package to your `*.json file` under `devDependencies`:
-```json
-"devDependencies": {
-  "sass": "^1.24.3"
+Before importing any MDC Web modules, set `$mdc-theme-primary` and
+`mdc-theme-on-primary` in your Sass file:
+
+```scss
+$mdc-theme-primary: #FEDBD0;
+$mdc-theme-on-primary: #442C2E;
+```
+
+In this case we also want to customize the label color of the text and outlined
+buttons, to fulfill color contrast requirements:
+
+```scss
+@use "@material/button/mdc-button" as button;
+
+.mdc-button.my-custom-text-button,
+.mdc-button.my-custom-outlined-button {
+  @include button.mdc-button-ink-color(#84565E);
 }
 ```
 
-* Add a `.sassrc.js` file to your project root directory:
+#### Theming with CSS Custom Properties
 
-```js
-const path = require("path");
+If you want to customize the theme for buttons without changing the theme
+across the app, you can also use CSS custom properties:
 
-const CWD = process.cwd();
-
-module.exports = {
-  includePaths: [path.resolve(CWD, "node_modules"), path.resolve(CWD, "src")]
-};
-```
-
-
-Import base styles of button into your `*.scss` stylesheet using :
-
-**mdc-button**
 ```scss
-@use '@material/button/mdc-button';
+@use "@material/button/mdc-button" as button;
+
+.mdc-button.my-custom-text-button,
+.mdc-button.my-custom-outlined-button {
+  --mdc-theme-primary: #FEDBD0;
+  --mdc-theme-on-primary: #442C2E;
+
+  @include button.mdc-button-ink-color(#84565E);
+}
 ```
 
-**mdc-icon-button**
-```scss
-@use '@material/icon-button/mdc-icon-button';
-```
+For a more information on theming in general, see
+[this page](../../docs/theming.md).
 
-The following example shows text, outlined and contained button types with Material Theming.
-
-!["Button theming with three buttons - text, outlined and contained - with shrine theming."](assets/button-theming.svg)
-
-<b>Implementing button theming</b>
-
-[Shrine theme](https://material.io/design/material-studies/shrine.html)
-```
-Include source code implementing text, outlined, and contained buttons using "Shrine" theme.
-
-Upload a screenshot of the render and update the image.
-```
-
+</details>
+ 
+## Style Customization
+ 
+### CSS Classes
+ 
+CSS Class | Description
+--- | ---
+`mdc-button` | Mandatory. Defaults to a text button that is flush with the surface.
+`mdc-button__ripple` | Mandatory. Indicates the element which shows the ripple styling.
+`mdc-button--raised` | Optional. Styles a contained button that is elevated above the surface.
+`mdc-button--unelevated` | Optional. Styles a contained button that is flush with the surface.
+`mdc-button--outlined` | Optional. Styles an outlined button that is flush with the surface.
+`mdc-button__label` | Recommended.\* Indicates the element containing the button's text label.
+`mdc-button__icon` | Optional. Indicates the element containing the button's icon.
+ 
+> \*_NOTE_: The `mdc-button__label` element is required for buttons with a trailing icon, but it is currently optional for
+> buttons with no icon or a leading icon. In the latter cases, it is acceptable for the text label to simply exist
+> directly within the `mdc-button` element.
+> However, the `mdc-button__label` class may become mandatory for all cases in the future, so it is recommended to
+> always include it to be future-proof.
+ 
+### Sass Mixins
+ 
+To customize a button's color and properties, you can use the following mixins.
+ 
+#### Basic Sass Mixins
+ 
+MDC Button uses [MDC Theme](../mdc-theme)'s `primary` color by default. Use the following mixins to customize it.
+ 
+Mixin | Description
+--- | ---
+`mdc-button-filled-accessible($container-fill-color)` | Sets the container fill color for a contained (_raised_ or _unelevated_) button, and updates the button's ink, icon, and ripple colors to meet accessibility standards
+ 
+#### Advanced Sass Mixins
+ 
+These mixins will override the color of the container, ink, outline or ripple. It is up to you to ensure your button meets accessibility standards.
+ 
+Mixin | Description
+--- | ---
+`mdc-button-container-fill-color($color)` | Sets the container fill color to the given color for an enabled button.
+`mdc-button-disabled-container-fill-color($color)` | Sets the container fill color to the given color for a disabled button.
+`mdc-button-icon-color($color)` | Sets the icon color to the given color for an enabled button.
+`mdc-button-disabled-icon-color($color)` | Sets the icon color to the given color for a disabled button.
+`mdc-button-ink-color($color)` | Sets the ink color to the given color for an enabled button, and sets the icon color to the given color unless `mdc-button-icon-color` is also used.
+`mdc-button-disabled-ink-color($color)` | Sets the ink color to the given color for a disabled button, and sets the icon color to the given color unless `mdc-button-icon-color` is also used.
+`mdc-button-density($density-scale)` | Sets density scale for button. Supported density scale values (`-3`, `-2`, `-1`, `0`).
+`mdc-button-height($height)` | Sets custom height for button.
+`mdc-button-shape-radius($radius, $density-scale, $rtl-reflexive)` | Sets rounded shape to button with given radius size. `$density-scale` is only required when `$radius` value is in percentage unit, defaults to `$mdc-button-density-default-scale`. Set `$rtl-reflexive` to true to flip radius values in RTL context, defaults to false.
+`mdc-button-horizontal-padding($padding)` | Sets horizontal padding to the given number.
+`mdc-button-outline-color($color)` | Sets the outline color to the given color for an enabled button.
+`mdc-button-disabled-outline-color($color)` | Sets the outline color to the given color for a disabled button.
+`mdc-button-outline-width($width, $padding)` | Sets the outline width to the given number (defaults to 2px) and adjusts padding accordingly. `$padding` is only required in cases where `mdc-button-horizontal-padding` is also included with a custom value.
