@@ -23,12 +23,13 @@ _**Instructions**_
 
 [Text fields](https://material.io/components/text-fields) let users enter and edit text.
 
-For more information, go the the [`mdc-text-field` API](#mdc-text-field-api) documentation.
+For more information, see the [API](#mdc-text-field-api) documentation.
 
 The text field class consists of the following types:
 
 * [Filled text](#filled-text)
 * [Outlined text](#outlined-text)
+* [Textarea](#textarea)
 
 
 <img src="assets/text-field-generic.png" alt="Text field examples of both filled and outlined types, and each type showing both inactive and focused states. The filled text fields show a gray background and a darker gray activation indicator that is purple when focused. The outlined text fields show a clear background and an outline that is purple when focused">
@@ -39,7 +40,7 @@ Text fields allow users to enter text into a UI. They typically appear in forms 
 
 ### Install the Material text field component
 
-Install the `textfield` component before including it in you source:
+Install the `textfield` component before including it in your source:
 
 ```bash
 npm install @material/textfield
@@ -55,80 +56,8 @@ To bundle your `*.js` file, go to the [quickstart page](https://github.com/mater
 ```js
 import {MDCTextField} from '@material/textfield';
 
-<!-- The following line applies to the `mdc-text-field` class-->
 const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
-
 ```
-
-
-### Sass mixins
-
-Before using Sass mixins for your project you will need to do the following:
-
-* Add the Sass package to your `*.json file` under `devDependencies`:
-```json
-"devDependencies": {
-  "sass": "^1.14.3"
-}
-````
-
-* Add a `.sassrc.js` file to your project directory:
-```js
-
-const path = require("path");
-
-const CWD = process.cwd();
-
-module.exports = {
-  includePaths: [path.resolve(CWD, "node_modules"), path.resolve(CWD, "src")]
-};
-```
-
-* In your `*.scss` file for your application, create an instance of your text field with the Sass mixins settings of your choice. For example, if you have a text field:
-
-```css
-.text-field-instance {
-  @include mdc-text-field-label-color(orange);
-  @include mdc-text-field-label-caret-color(green);
-  ...
-}
-```
-
-<img src="assets/web-sass-mixins-example.png" alt="Example text field instance rendered for an orange label and a green cursor caret">
-
-
-#### Sass mixins for `mdc-text-field`
-
-Use Sass mixins when you want to customize the look and feel of your text fields. Go to [sass-lang.com](https://sass-lang.com/install) for installation instructions.
-
-Text fields support [Material Theming](https://material.io/components/text-fields/#theming) and can be customized in terms of color, typography, and shape.
-
-Before using Sass mixins for your project you will need to do the following:
-
-* Add the Sass package to your `*.json file` under `devDependencies`:
-```json
-"devDependencies": {
-  "sass": "^1.24.3"
-}
-```
-
-* Add a `.sassrc.js` file to your project root directory:
-
-```js
-const path = require("path");
-
-const CWD = process.cwd();
-
-module.exports = {
-  includePaths: [path.resolve(CWD, "node_modules"), path.resolve(CWD, "src")]
-};
-```
-
-
-Import base styles of button into your `*.scss` stylesheet using :
-
-**NOTE are there theming instructions for text fields? Include them in the collapsible section**
-
 
 ### Making text fields accessible
 
@@ -151,9 +80,7 @@ Source code API:
 
 The following examples shows a filled text field.
 
-
 _**Copy the image to your platform's assets folder. Use a screenshot of your render.**_
-
 
 <img src="assets/.png" alt="filled text field for Android">
 
@@ -182,13 +109,13 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | Design Attribute | Theme value | Equivalent Sass mixin attribute |
 | --- | --- | --- |
 | **Color** | |`mdc-text-field-fill-color($color)` | 
-| **Stroke color** | |`mdc-text-field-bottom-line-color($color) | 
+| **Stroke color** | |`mdc-text-field-bottom-line-color($color)` | 
 | **Stroke color(hover)** | |`mdc-text-field-hover-bottom-line-color($color)`  |
 | **Shape** | |`mdc-text-field-shape-radius($radius, $rtl-reflexive)`| 
 | **Elevation** | | | 
 | **Ripple color** | |`mdc-text-field-line-ripple-color($color)` | 
 
-<<b>Leading icon (optional) </b>
+<b>Leading icon (optional) </b>
 
 |  Design attribute | Theme value | Equivalent Sass mixin attribute |
 | --- | --- | --- |
@@ -286,7 +213,7 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | Design Attribute | Theme value | Equivalent Sass mixin attribute |
 | --- | --- | --- |
 | **Color** | |`mdc-text-field-fill-color($color)` | 
-| **Stroke color** | |`mdc-text-field-outline-color($color) | 
+| **Stroke color** | |`mdc-text-field-outline-color($color)` | 
 | **Stroke color(hover)** | |`mdc-text-field-hover-outline-color($color)`  |
 | **Shape** | |`mdc-text-field-shape-radius($radius, $rtl-reflexive)`| 
 | **Elevation** | | | 
@@ -346,6 +273,149 @@ _**Copy the image to your platform's assets folder. Use a screenshot of your ren
 | **Typography** | | | 
 | **Color** | | | 
 
+### Textarea
+
+```html
+<label class="mdc-text-field mdc-text-field--textarea mdc-text-field--no-label">
+  <textarea class="mdc-text-field__input" rows="8" cols="40" aria-label="Label"></textarea>
+  <span class="mdc-notched-outline">
+    <span class="mdc-notched-outline__leading"></span>
+    <span class="mdc-notched-outline__trailing"></span>
+  </span>
+</label>
+```
+
+## Other Variations
+
+### Text Field with Helper Text
+
+The helper text provides supplemental information and/or validation messages to users. It appears on input field focus
+and disappears on input field blur by default, or it can be persistent. Helper text should be rendered inside `.mdc-text-field-helper-line` element
+which is immediate sibling of `.mdc-text-field`. See [here](helper-text/) for more information on using helper text.
+
+```html
+<label class="mdc-text-field">
+  <span class="mdc-text-field__ripple"></span>
+  <input class="mdc-text-field__input" type="text"
+         aria-labelledby="my-label-id"
+         aria-controls="my-helper-id"
+         aria-describedby="my-helper-id">
+  <span class="mdc-floating-label" id="my-label-id">My Label</span>
+  <span class="mdc-line-ripple"></span>
+</label>
+<div class="mdc-text-field-helper-line">
+  <div class="mdc-text-field-helper-text" id="my-helper-id" aria-hidden="true">helper text</div>
+</div>
+```
+
+### Text Field with Character Counter
+
+Character counter is used if there is a character limit. It displays the ratio of characters used and the total character limit.
+Character counter should be rendered inside `.mdc-text-field-helper-line` element which is immediate sibling of `.mdc-text-field`.
+See [here](character-counter/) for more information on using character counter.
+
+```html
+<label class="mdc-text-field">
+  <span class="mdc-text-field__ripple"></span>
+  <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id" maxlength="10">
+  <span class="mdc-floating-label" id="my-label-id">My Label</span>
+  <span class="mdc-line-ripple"></span>
+</label>
+<div class="mdc-text-field-helper-line">
+  <div class="mdc-text-field-character-counter">0 / 10</div>
+</div>
+```
+
+### Multi-line Text Field (Textarea) with Character Counter
+
+The layout structure of character counter for multi-line text field (textarea) is slightly different since it is rendered
+inside of text field component.
+
+```html
+<label class="mdc-text-field mdc-text-field--textarea">
+  <div class="mdc-text-field-character-counter">0 / 140</div>
+  <textarea class="mdc-text-field__input" aria-labelledby="my-label-id" rows="8" cols="40" maxlength="140"></textarea>
+  <span class="mdc-notched-outline">
+    <span class="mdc-notched-outline__leading"></span>
+    <span class="mdc-notched-outline__notch">
+      <span class="mdc-floating-label" id="my-label-id">Textarea Label</span>
+    </span>
+    <span class="mdc-notched-outline__trailing"></span>
+  </span>
+</label>
+```
+
+Helper text and Character counter are optional subcomponents of text field that can co-exist independently.
+It is recommended that `.mdc-text-field` and `.mdc-text-field-helper-line` elements have same width for correct layout.
+
+### Text Field with Leading and Trailing Icons
+
+Leading and trailing icons can be added within the default or outlined variant of MDC Text Field as visual indicators as
+well as interaction targets. See [here](icon/) for more information on using icons.
+
+## Other Features
+
+### HTML5 Validation
+
+`MDCTextFieldFoundation` provides validity styling by using the `:invalid` and `:required` attributes provided
+by HTML5's form validation API.
+
+```html
+<label class="mdc-text-field">
+  <span class="mdc-text-field__ripple"></span>
+  <input class="mdc-text-field__input" type="password" aria-labelledby="my-label-id" required minlength="8">
+  <span class="mdc-floating-label" id="my-label-id">Password</span>
+  <span class="mdc-line-ripple"></span>
+</label>
+```
+
+`MDCTextFieldFoundation` automatically appends an asterisk to the label text if the required attribute is set.
+
+### Pre-filled
+
+When dealing with JS-driven text fields that already have values, you'll want to ensure that you
+render `mdc-floating-label` with the `mdc-floating-label--float-above` modifier class. This will
+ensure that the label moves out of the way of the text field's value and prevents a Flash Of
+Un-styled Content (**FOUC**).
+
+```html
+<label class="mdc-text-field">
+  <span class="mdc-text-field__ripple"></span>
+  <input class="mdc-text-field__input" type="text" aria-labelledby="my-label-id" value="Pre-filled value">
+  <span class="mdc-floating-label mdc-floating-label--float-above" id="my-label-id">
+    Label in correct place
+  </span>
+  <span class="mdc-line-ripple"></span>
+</label>
+```
+
+### Baseline Alignment
+
+By default, text fields will be aligned with other elements relative to their
+baseline. The input text's baseline is used to determine where a text field
+should be aligned to and is different between variants. To force alignment to
+the text field's container instead of its baseline, align the element using
+flexbox.
+
+```html
+<div>
+  <label class="mdc-text-field mdc-text-field--outlined">
+    <input type="text" class="mdc-text-field__input" value="Baseline">
+    <span class="mdc-notched-outline__leading"></span>
+    <span class="mdc-notched-outline__trailing"></span>
+  </label>
+  <span>Text that is aligned with the text field's value</span>
+</div>
+
+<div style="display: flex; flex-direction: row; align-items: flex-end;">
+  <label class="mdc-text-field mdc-text-field--outlined">
+    <input type="text" class="mdc-text-field__input" value="Baseline">
+    <span class="mdc-notched-outline__leading"></span>
+    <span class="mdc-notched-outline__trailing"></span>
+  </label>
+  <span>Text that is aligned to the bottom of the text field's outline</span>
+</div>
+```
 
 ## Theming text fields
 
@@ -382,7 +452,7 @@ _Use the [Shrine theme](https://material.io/design/material-studies/shrine.html)
     * The container should have cut corners instead of rounded
 ```
 
-## `mdc-text-field` API
+## API
 
 ### CSS Classes
 
