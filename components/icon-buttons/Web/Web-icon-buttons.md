@@ -8,10 +8,18 @@ path: /components/buttons
 api_doc_root:
 -->
 
+# Icon buttons
+
 [Icon buttons](https://material.io/components/buttons/) allow users to take actions, and make choices, with a single tap.
 
+**Note: for buttons with both icons and text, use the `mdc-button` component. For more information, go to the ['mdc-button' page](components/buttons)**
 
 ## Using icon buttons
+
+Before you can use an icon button, you will need to first:
+
+* Install the Material icon button component
+* Import JavaScript
 
 ### Install the Material icon button component
 
@@ -32,6 +40,24 @@ import {MDCRipple} from '@material/ripple';
 const iconButtonRipple = new MDCRipple(document.querySelector(`.mdc-icon-button`));
 iconButtonRipple.unbounded = true;
 ```
+
+### Making icon buttons accessible
+
+Material Design spec advises that touch targets should be at least 48 x 48 px.
+To meet this requirement, add the following to your button:
+
+```html
+<div class="mdc-touch-target-wrapper">
+  <button class="mdc-icon-button mdc-icon-button--touch">
+    <div class="mdc-icob-button__ripple"></div>
+    <span class="mdc-icon-button__label">My Accessible Icon Button</span>
+    <div class="mdc-icon-button__touch"></div>
+  </button>
+</div>
+```
+
+_**Note**: The outer `mdc-touch-target-wrapper` element is only necessary if you want to avoid potentially overlapping touch targets on adjacent elements (due to collapsing margins)._
+
 
 ## Toggle button
 
@@ -128,11 +154,81 @@ The icon button consists of two icons for 'on' and 'off'.
 1. Container
 1. Icon
 
+<b>Container attributes</b>
+<br>
+
+Design Attribute | Theme value | Equivalent Sass mixin attribute
+---|---|---
+Container ink color | Primary color | `mdc-button-ink-color($color)`
+
+<b>Icon attributes</b>
+
  Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
 Icon | N/A |
 Icon color | Secondary color | ` mdc-button-icon-color($color)`|
 
-We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Icon button API doc]()
+We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application.
+
+## Icon button theming example
+
+The following example shows an icon button with Shrine theming:
+
+![Icon button with Shrine theming](assets/.png)
+
+x
+### Theming with Sass variables
+
+Before importing any MDC Web modules, set `$mdc-theme-primary` and
+`mdc-theme-on-primary` in your Sass file:
+
+```scss
+$mdc-theme-primary: #FEDBD0;
+$mdc-theme-on-primary: #442C2E;
+```
+
+In this case we also want to customize the icon color:
+
+```scss
+
+```
+
+### Theming with CSS Custom Properties
+
+If you want to customize the theme for icon buttons without changing the theme
+across the app, you can also use CSS custom properties:
+
+```scss
+```
+
+For a more information on theming in general, see
+[this page](../../docs/theming.md).
 
 
+## Style Customization
+ 
+### CSS Classes
+ 
+CSS Class | Description
+--- | ---
+ | 
+ 
+### Sass Mixins
+ 
+To customize a button's color and properties, you can use the following mixins.
+ 
+#### Basic Sass Mixins
+ 
+MDC Button uses [MDC Theme](../mdc-theme)'s `primary` color by default. Use the following mixins to customize it.
+ 
+Mixin | Description
+--- | ---
+ | 
+ 
+#### Advanced Sass Mixins
+ 
+These mixins will override the color of the container, ink, outline or ripple. It is up to you to ensure your icon button meets accessibility standards.
+ 
+Mixin | Description
+--- | ---
+ | 
