@@ -175,7 +175,7 @@ Container ink color | Primary color | `mdc-button-ink-color($color)`
  Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
  Icon | N/A |
-C | Icon color | Primary color | ` mdc-button-icon-color($color)`
+ Icon color | Primary color | ` mdc-button-icon-color($color)`
 
 
 ## Outlined button
@@ -247,7 +247,7 @@ Container horizontal padding | | `mdc-button-horizontal-padding($padding)`
  Design Attribute | Theme value | Equivalent Sass mixin attribute
 ---|---|---
  Icon | N/A |
-C | Icon color | Primary color | ` mdc-button-icon-color($color)`
+Icon color | Primary color | ` mdc-button-icon-color($color)`
 
 We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Outlined button API doc]()
 
