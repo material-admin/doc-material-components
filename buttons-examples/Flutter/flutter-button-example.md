@@ -152,7 +152,6 @@ A text button has a text label, a transparent container and an optional icon.
 | **Disabled Text Color** | `disabledTextColor` |
 | **Typography** | `style` on `child` or `label` |
 
-</details>
 
 <b>Container</b>
 
@@ -1018,7 +1017,3 @@ const Color shrineSurfaceWhite = Color(0xFFFFFBFA);
 const Color shrineBackgroundWhite = Colors.white;
 
 ```
-
-
-
-
