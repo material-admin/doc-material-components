@@ -24,13 +24,9 @@ Source code API:
 
 _**Note to developers: link to approprite sites as applicable**_ 
 
-* \<source class name\>
-    * [Class description](developer site here)
+* `BottomNavigationBar`
+    * [Class description](https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html)
     * [GitHub source](https://github.com/materials-components/)
-    * [Demo site](demo site here)
-
-
-
 
 
 The following example shows a bottom navigation bar with four icons:
