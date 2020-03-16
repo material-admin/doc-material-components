@@ -156,7 +156,7 @@ The source code should render the following:
 
 The following is an anatomy diagram for the bottom navigation bar:
 
-![bottom nav anatomy diagram](bottom-nav-anatomy.png)
+![bottom nav anatomy diagram](assets/bottom-nav-anatomy.png)
 
 1. Container
 1. Inactive icon
