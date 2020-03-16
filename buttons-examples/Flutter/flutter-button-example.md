@@ -74,6 +74,7 @@ FlatButton.icon(
     label: Text("TEXT BUTTON"),
 )
 ```
+<!-- **Test code may eventually be replaced with dartpad link**
 
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
@@ -132,6 +133,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 ```
+-->
 
 ### Anatomy and key properties
 
@@ -222,7 +224,7 @@ OutlineButton.icon(
     label: Text("OUTLINED BUTTON"),
 )
 ```
-
+<!-- **Test code may eventually be replaced with dartpad link**
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 ```
@@ -282,6 +284,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 ```
+-->
 
 ### Anatomy and key properties
 
@@ -371,7 +374,7 @@ RaisedButton.icon(
     label: Text("CONTAINED BUTTON"),
 )
 ```
-
+<!-- **Test code may eventually be replaced with dartpad link**
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 ```
@@ -431,7 +434,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 ```
-
+-->
 
 ### Anatomy and key properties
 
@@ -573,7 +576,7 @@ ToggleButtons(
     ],
 )
 ```
-
+<!-- **Test code may eventually be replaced with dartpad link**
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 ```
@@ -670,6 +673,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 ```
+-->
 
 #### Anatomy and key properties
 
@@ -730,7 +734,7 @@ IconButton(
     },
 )
 ```
-
+<!-- **Test code may eventually be replaced with dartpad link**
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 ```
@@ -827,6 +831,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 ```
+-->
 
 ## Theming buttons
 
@@ -880,7 +885,7 @@ theme: ThemeData(
   ),
 ),
 ```
-
+<!-- **Test code may eventually be replaced with dartpad link**
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/)
 ```
 import 'package:flutter/material.dart';
@@ -1017,3 +1022,4 @@ const Color shrineSurfaceWhite = Color(0xFFFFFBFA);
 const Color shrineBackgroundWhite = Colors.white;
 
 ```
+-->
