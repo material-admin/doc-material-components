@@ -11,68 +11,68 @@ path: /catalog/FAB/
 
 A floating action button (FAB) represents the primary action of a screen.
 
-# Usage
+There are three types of FABS:
 
-A floating action button (FAB) performs the primary, or most common, action on a screen. It appears in front of all screen content, typically as a circular shape with an icon in its center. FABs come in three types: regular, mini, and extended.
+1. [Regular FABs](#regular-fabs)
+2. [Mini FABs](#mini-fabs)
+3. [Extended FABs](#extended-fabs)
+
+<!--Get an image of a floating action button-->
+
+# Using FABs
+
+A FAB performs the primary, or most common, action on a screen. It appears in front of all screen content, typically as a circular shape with an icon in its center. 
+
+FABs are implemented by `MDCFloatingButton`, a subclass of [https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html).
+* [API documentation](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCFloatingButton.html)
+* [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCFloatingButton.h)
 
 Only use a FAB if it is the most suitable way to present a screen’s primary action.
 
-### Install `MDCButtons`
+FABs should be provided with a templated image for their normal state and then themed accordingly.
 
-MDCFloatingButton is a subclass of [MDCButton](ios-button.md) that implements the Material Design floating action button style and behavior. Floating action buttons should be provided with a templated image for their normal state and then themed accordingly.
+### Installing FABs
 
-Before using the `MDCButtons` API to implement its types you must install `MCDButtons`. In your source files import the component, and then apply your theme:
-1. Install `MDCButtons`
-   * Use CocoaPods to install `MDCButtons`
-     1. Add the following line to your `Podfile`:
-       ```java
-      pod MaterialComponents/Buttons
-       ```
-     1. Run the installer:
-       ```bash
-       pod install
-       ```
-1. Import `MDCButtons` and MDC button theming and initialize `MDCButtons` using `alloc`/`init`. You will need to Initialize your theme  before applying it to your button.
+Because MDCFloatingButton is a subclass of [MDCButton](ios-button.md), the steps for installing it are the same.
 
-    **Note** For more information about themes, go to the [Theming page](https://material.io/develop/ios/components/theming/) for iOS.
-<!--<div class="material-code-render" markdown="1">-->
-   **Swift**
-   ```swift
-   import MaterialComponents.MaterialButtons
-   import MaterialComponents.MaterialButtons_Theming
-   /*...*/
-  let plusImage = UIImage(named: "plus").withRenderingMode(.alwaysTemplate)
-  let floatingButton = MDCFloatingButton()
-  floatingButton.setImage(plusImage, forState: .normal)
-  floatingButton.applySecondaryTheme(withScheme: containerScheme)
-   ```
-   
-   **Objective-C**
-   ```objc
-   #import "MaterialButtons.h"
-   #import <MaterialComponentsBeta/MaterialButtons+Theming.h>
-   /*...*/
-   UIImage *plusImage =
-    [[UIImage imageNamed:@"plus"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-   MDCFloatingButton *floatingButton = [[MDCFloatingButton alloc] init];
-   [floatingButton setImage:plusImage forState:UIControlStateNormal];
-   [self.floatingButton applySecondaryThemeWithScheme: self.containerScheme];
-   ```
-<!--</div>-->
+<details><summary><b>Expand for installation instructions for <code>MDCButton</code></b></summary>
 
-    For our examples, we used the following theming values:
+<br>
+
+`MDCButton` is used to implement all four Material Buttons. In order to use `MCDButton`, do the following:
+
+1. Install with Cocoapods
+    Add the following line to your `Podfile`:
+
+    ```
+    pod MaterialComponents/Buttons
+    ```
+    
+    Run the installer:
+    
+    ```
+    pod install
+    ```
+
+1. Import the Buttons and initialize them using `alloc`/`init`.
 
 <!--<div class="material-code-render" markdown="1">-->
-   **Swift**
-   ```swift
-   let MyMaterialTheme = MDCContainerScheme()
-   ```
-   **Objective-C**
-   ```objc
-   MDCContainerScheme *MyMaterialTheme = [[MDCFloatingButton alloc] init]
-   ```
-<!--</div>-->
+#### Swift
+```swift
+import MaterialComponents.MaterialButtons
+import MaterialComponents.MaterialButtons_Theming
 
+let button = MDCButton()
+```
+#### Objective-C
+```objc
+#import "MaterialButtons.h"
+#import <MaterialComponents/MaterialButtons+Theming.h>
+
+MDCButton *button = [[MDCButton alloc] init];
+```
+
+</details>
 
 ### Making FABs accessible
  
@@ -152,80 +152,204 @@ in the spec.
     (representing a day of the week) has the `accessibilityHint` value, "Toggles
     this day."
 
+## Regular FABs
 
-## Floating action button
+Regular FABs are FABs that are not expanded and are a regular size.
 
-You can apply a theme to the FAB using `Themes`.
+### Regular FABs example
 
-Source Code APIs:
+To create a regular FAB use the `+floatingButtonWithShape:` constructor with a value of `MDCFloatingButtonShapeDefault` and make sure the `mode` property is set to `MDCFloatingButtonModeNormal`.
 
-* MDCButton  (a subclass of [UIButton](https://developer.apple.com/documentation/uikit/uibutton))
-    * [Class description](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html)
-    * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
-* [Themes class description](https://material.io/develop/ios/components/theming/)  <!-- This is slated to be deprected, though the examples from https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html appear to use this class--> 
+For more information on theming FABs see the [Theming section](#theming). 
 
+<!--<div class="material-code-render" markdown="1">-->
+#### Swift
+```swift
+let fab = MDCFloatingButton(shape: `default`)
+```
 
-<!-- To do:
-* add example code
-* add example code render screenshot
+#### Objective-C
+```objc
+MDCFloatingButton *fab =
+    [MDCFloatingButton floatingButtonWithShape:MDCFloatingButtonShapeDefault];
+```
+<!--</div>-->
 
 ### Anatomy and key properties
 
-A FAB has a container and an icon.
-
-![FAB anatomy diagram](assets/FAB-anatomy.png)
+A regular FAB has a container and an icon.
 
 1. Container
 1. Icon
 
-Tables can be copy/pasted from iOS-buttons.md when they're done 
+#### Container attributes
 
-<b>Container</b>
+&nbsp;           | Attribute             | Related method(s)                                                            | Default value
+---------------- | --------------------- | ---------------------------------------------------------------------------- | -------------
+**Color**        | `backgroundColor`  | `setBackgroundColor:forState:`<br/>`backgroundColorForState`<br/> | blue 500 from this [Theming doc](https://material.io/go/design-color-theming#color-color-palette).
+**Stroke color** |  | `setBorderColor:forState:`<br/>`borderColorForState:` | `nil`
+**Stroke width** |  | `setBorderWidth:forState:`<br/>`borderWidthForState:` | `0`
+**Ripple color** | `inkColor`   | `setInkColor`<br/>`inkColor` | White at 20% opacity
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Color** |  |  | |
-| **Stroke color** | |  | |
-| **Stroke width** |  |  |  |
-| **Shape** |  | | |
-| **Elevation** | | | |
-| **Ripple color** | | | | 
+#### Icon attributes
 
-<b>Icon</b>
+&nbsp;                                          | Attribute         | Related method(s)                                         | Default value
+----------------------------------------------- | ----------------- | --------------------------------------------------------- | -------------
+**Icon**                                        | `imageView`        | `setImage:forState:`<br/>`imageForState:` | `nil`
+**Color**                                       | `imageView.tintColor` | `setImageViewTintColor:forState:`<br/>`imageViewTintColorForState:` | `nil`
 
-|  | Attribute | Related method(s) | Default value |
-| --- | --- | --- | --- |
-| **Color** |  | | |
-| **Icon** | | | |
-| **Size** | | | |
-| **Gravity** (position relative to text label) | | | |
-| **Padding** (space between icon and text label) | | | |
+## Mini FABs
 
- to do:
-Add Shrine theming example
+A mini FAB should be used on smaller screens.
 
+Mini FABs can also be used to create visual continuity with other screen elements.
 
-## Theming buttons
+### Mini FABs example
 
-FABs support [Material Theming](https://material.io/components/buttons/#theming) and can be customized in terms of color, typography and shape.
+To create a mini FAB use the `+floatingButtonWithShape:` constructor with a value of `MDCFloatingButtonShapeMini` and make sure the `mode` property is set to `MDCFloatingButtonModeNormal`.
+
+For more information on theming FABs see the [Theming section](#theming). 
+
+<!--<div class="material-code-render" markdown="1">-->
+#### Swift
+```swift
+let fab = MDCFloatingButton(shape: mini)
+```
+
+#### Objective-C
+```objc
+MDCFloatingButton *fab =
+    [MDCFloatingButton floatingButtonWithShape:MDCFloatingButtonShapeMini];
+```
+<!--</div>-->
+
+### Anatomy and key properties
+
+A mini FAB has a container and an icon.
+
+1. Container
+1. Icon
+
+#### Container attributes
+
+&nbsp;           | Attribute             | Related method(s)                                                            | Default value
+---------------- | --------------------- | ---------------------------------------------------------------------------- | -------------
+**Color**        | `backgroundColor`  | `setBackgroundColor:forState:`<br/>`backgroundColorForState`<br/> | blue 500 from this [Theming doc](https://material.io/go/design-color-theming#color-color-palette).
+**Stroke color** |  | `setBorderColor:forState:`<br/>`borderColorForState:` | `nil`
+**Stroke width** |  | `setBorderWidth:forState:`<br/>`borderWidthForState:` | `0`
+**Ripple color** | `inkColor`   | `setInkColor`<br/>`inkColor` | White at 20% opacity
+
+#### Icon attributes
+
+&nbsp;                                          | Attribute         | Related method(s)                                         | Default value
+----------------------------------------------- | ----------------- | --------------------------------------------------------- | -------------
+**Icon**                                        | `imageView`        | `setImage:forState:`<br/>`imageForState:` | `nil`
+**Color**                                       | `imageView.tintColor` | `setImageViewTintColor:forState:`<br/>`imageViewTintColorForState:` | `nil`
+
+## Extended FABs
+
+The extended FAB is wider, and it includes a text label.
+
+### Extended FABs example
+
+To create a mini FAB use the `+floatingButtonWithShape:` constructor with a value of `MDCFloatingButtonShapeMini` and make sure the `mode` property is set to `MDCFloatingButtonModeNormal`.
+
+For more information on theming FABs see the [Theming section](#theming). 
+
+<!--<div class="material-code-render" markdown="1">-->
+#### Swift
+```swift
+let fab = MDCFloatingButton(shape: mini)
+```
+
+#### Objective-C
+```objc
+MDCFloatingButton *fab =
+    [MDCFloatingButton floatingButtonWithShape:MDCFloatingButtonShapeMini];
+```
+<!--</div>-->
+
+### Anatomy and key properties
+
+A mini FAB has a text label, a transparent container and an optional icon.
+
+1. Container
+1. Icon
+1. Text label
+
+#### Container attributes
+
+&nbsp;           | Attribute             | Related method(s)                                                            | Default value
+---------------- | --------------------- | ---------------------------------------------------------------------------- | -------------
+**Color**        | `backgroundColor`  | `setBackgroundColor:forState:`<br/>`backgroundColorForState`<br/> | blue 500 from this [Theming doc](https://material.io/go/design-color-theming#color-color-palette).
+**Stroke color** |  | `setBorderColor:forState:`<br/>`borderColorForState:` | `nil`
+**Stroke width** |  | `setBorderWidth:forState:`<br/>`borderWidthForState:` | `0`
+**Ripple color** | `inkColor`   | `setInkColor`<br/>`inkColor` | White at 20% opacity
+
+#### Icon attributes
+
+&nbsp;                                          | Attribute         | Related method(s)                                         | Default value
+----------------------------------------------- | ----------------- | --------------------------------------------------------- | -------------
+**Icon**                                        | `imageView`        | `setImage:forState:`<br/>`imageForState:` | `nil`
+**Color**                                       | `imageView.tintColor` | `setImageViewTintColor:forState:`<br/>`imageViewTintColorForState:` | `nil`
+
+#### Text label attributes
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+**Text label** | `titleLabel` | `setTitle:forState:`<br/>`titleForState:` | `nil`
+**Color**      | `titleLabel.textColor` | `setTitleColor:forState:`<br/>`titleColorForState:` | `UIColor.blackColor`
+**Typography** | `titleLabel.font` | `setFont:` and `font` on `titleLabel` | Button
+
+## Theming
+
+You can theme an MDCFloatingButton to have a secondary theme using the MDCFloatingButton theming
+extension. [Learn more about theming extensions and container schemes](../../docs/theming.md).
 
 ### FAB theming example
 
-API and source code:
+To make use of the theming methods shown in the examples above do the following:
 
-* `MaterialButton` (a subclass of [UIButton](https://developer.apple.com/documentation/uikit/uibutton))
-    * [Class description](https://)
-    * [GitHub source](https://github.com/material-components/)
+1. Install the theming extensions with Cocoapods
+    Add the following line to your `Podfile`:
+
+    ```
+    pod MaterialComponents/Buttons+Theming
+    ```
     
-The following example shows a FAB with Material Theming.
+    Run the installer:
+    
+    ```
+    pod install
+    ```
 
-!["FAB theming examples for iOS with pink and black FAB"](assets/FAB-theming.png)
+1. Import the Buttons theming target
 
-[Shrine theme](https://material.io/design/material-studies/shrine.html)
-
+<!--<div class="material-code-render" markdown="1">-->
+#### Swift
+```swift
+import MaterialComponents.MaterialButtons
+import MaterialComponents.MaterialButtons_Theming
 ```
-Include source code implementing FAB with a plus icon using "Shrine" theme.
-
-Upload a screenshot of the render and update the image.
+#### Objective-C
+```objc
+#import "MaterialButtons.h"
+#import <MaterialComponents/MaterialButtons+Theming.h>
 ```
--->
+
+From there, pass a container scheme into the following theming method on an MDCFloatingButton instance:
+
+<!--<div class="material-code-render" markdown="1">-->
+#### Swift
+```swift
+let fab = MDCFloatingButton(shape: `default`)
+fab.applySecondaryThemeWith(withScheme:containerScheme)
+```
+#### Objective-C
+```objc
+MDCFloatingButton *fab =
+    [MDCFloatingButton floatingButtonWithShape:MDCFloatingButtonShapeMini];
+[fab applySecondaryThemeWithScheme:self.containerScheme];
+```
+
+
