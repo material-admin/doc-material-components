@@ -35,6 +35,10 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 
 ## Data tables
 
+`DataTable`
+* [Class description](https://api.flutter.dev/flutter/material/DataTable-class.html)
+* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/data_table.dart)
+
 **Note to developers: provide source code and screenshot for an example data table the following properties**
 **
 * 5 columns
@@ -42,7 +46,6 @@ For more guidance on writing labels, go to [our page on how to write a good acce
 * Top row consists of a checkbox followed by "Header A", "Header B" ... "Header D"
 * First column consists of checkboxes
 * Cells labeled "Cell A1" ... "Cell D4" numbered like the hero image
-
 
 
 ### Key properties
