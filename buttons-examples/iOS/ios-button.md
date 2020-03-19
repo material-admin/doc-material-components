@@ -6,7 +6,7 @@ excerpt: "iOS Buttons"
 ide_version: "<cIDE name> <compatible IDE version and build number>"
 material_package_version: "<compatible Material platform package version number>"
 iconId:
-path: /
+path: /catalog/buttons
 api_doc_root:
 -->
 
@@ -40,6 +40,7 @@ All Material buttons are implemented by `MDCButton`, a subclass of [UIButton](ht
     ```
     pod MaterialComponents/Buttons
     ```
+<!--{: .code-renderer.code-renderer--install }-->
     
     Run the installer:
     
@@ -50,13 +51,6 @@ All Material buttons are implemented by `MDCButton`, a subclass of [UIButton](ht
 1. Import the Buttons and initialize them using `alloc`/`init`.
 
 <!--<div class="material-code-render" markdown="1">-->
-#### Swift
-```swift
-import MaterialComponents.MaterialButtons
-import MaterialComponents.MaterialButtons_Theming
-
-let button = MDCButton()
-```
 #### Objective-C
 ```objc
 #import "MaterialButtons.h"
@@ -64,6 +58,15 @@ let button = MDCButton()
 
 MDCButton *button = [[MDCButton alloc] init];
 ```
+
+#### Swift
+```swift
+import MaterialComponents.MaterialButtons
+import MaterialComponents.MaterialButtons_Theming
+
+let button = MDCButton()
+```
+<!--</div>-->
 
 ### Making Buttons accessible
 
@@ -77,17 +80,17 @@ Set an appropriate
 value if your button does not have a title. This is often the case with Floating
 Action Button instances which typically only have an icon.
 
+<!--<div class="material-code-render" markdown="1">-->
 ##### Objective-C
-
 ```objc
 button.accessibilityLabel = @"Create";
 ```
 
 ##### Swift
-
 ```swift
 button.accessibilityLabel = "Create"
 ```
+<!--</div>-->
 
 #### Minimum touch size
 
@@ -108,8 +111,8 @@ while maintaining the desired visual appearance. For more see the [Touch and cli
 targets](https://material.io/design/layout/spacing-methods.html#touch-click-targets)
 in the spec.
 
+<!--<div class="material-code-render" markdown="1">-->
 ##### Objective-C
-
 ```objc
 CGFloat verticalInset = MIN(0, -(48 - CGRectGetHeight(button.bounds)) / 2);
 CGFloat horizontalInset = MIN(0, -(48 - CGRectGetWidth(button.bounds)) / 2);
@@ -117,7 +120,6 @@ button.hitAreaInsets = UIEdgeInsetsMake(verticalInset, horizontalInset, vertical
 ```
 
 ##### Swift
-
 ```swift
 let buttonVerticalInset =
 min(0, -(kMinimumAccessibleButtonSize.height - button.bounds.height) / 2);
@@ -127,6 +129,7 @@ button.hitAreaInsets =
 UIEdgeInsetsMake(buttonVerticalInset, buttonHorizontalInset,
 buttonVerticalInset, buttonHorizontalInset);
 ```
+<!--</div>-->
 
 #### Set the minimum visual size of the button
 
@@ -135,17 +138,17 @@ guidelines](https://material.io/design/components/buttons.html#specs)
 typically recommend [a minimum height of 36 points and a minimum width of 64
 points](https://material.io/design/components/buttons.html#specs).
 
+<!--<div class="material-code-render" markdown="1">-->
 ##### Objective-C
-
 ```objc
 button.minimumSize = CGSizeMake(64, 36);
 ```
 
 ##### Swift
-
 ```swift
 button.minimumSize = CGSize(width: 64, height: 48)
 ```
+<!--</div>-->
 
 #### Exceptions
 
@@ -175,6 +178,8 @@ this day."
 
 ## Text button
 
+<img src="assets/ios-text-button.gif" alt="An animation showing a Material Design text button." width="128">
+
 [Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
 
 ### Text button example
@@ -182,14 +187,14 @@ this day."
 To use a text button use the text button theming method on the MDCButton theming extension. For more information on theming extensions see the [Theming section](#theming). 
 
 <!--<div class="material-code-render" markdown="1">-->
-#### Swift
-```swift
-button.applyTextTheme(withScheme: containerScheme)
-```
-
 #### Objective-C
 ```objc
 [self.button applyTextThemeWithScheme:self.containerScheme];
+```
+
+#### Swift
+```swift
+button.applyTextTheme(withScheme: containerScheme)
 ```
 <!--</div>-->
 
@@ -229,7 +234,7 @@ A text button has a text label, a transparent container and an optional icon.
 
 ## Outlined button
 
-<img src="assets/outlined.gif" alt="An animation showing a Material Design outlined button." width="115">
+<img src="assets/ios-outlined.gif" alt="An animation showing a Material Design outlined button." width="115">
 
 [Outlined buttons](https://material.io/components/buttons/#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
@@ -238,15 +243,14 @@ A text button has a text label, a transparent container and an optional icon.
 To achieve an outlined button use the outlined button theming method on the MDCButton theming extension. To access the theming extension see the [Theming section](#theming). 
 
 <!--<div class="material-code-render" markdown="1">-->
+#### Objective-C
+```objc
+[self.button applyOutlinedThemeWithScheme:self.containerScheme];
+```
+
 #### Swift
 ```swift
 button.applyOutlinedTheme(withScheme: containerScheme)
-```
-
-#### Objective-C
-
-```objc
-[self.button applyOutlinedThemeWithScheme:self.containerScheme];
 ```
 <!--</div>-->
 
@@ -254,11 +258,11 @@ button.applyOutlinedTheme(withScheme: containerScheme)
 
 An outlined button has a text label, a container, and an optional icon.
 
-![Outlined button anatomy diagram](docs/assets/outlined-button-diagram.png)
+![Outlined button anatomy diagram](assets/outlined_button_anatomy.png)
 
-A. Text label<br>
-B. Container<br>
-C. Icon<br>
+1. Text label
+1. Container
+1. Icon
 
 #### Text label attributes
 
@@ -286,6 +290,8 @@ C. Icon<br>
 
 ## Contained button
 
+<img src="assets/ios-contained.gif" alt="An animation showing a Material Design contained button." width="128">
+
 [Contained buttons](https://material.io/components/buttons/#contained-button) are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
 ### Contained button example
@@ -293,27 +299,26 @@ C. Icon<br>
 Contained buttons are implemented by [MDCButton](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html). To achieve a contained button use the contained button theming method on the MDCButton theming extension. To access the theming extension see the [Theming section](#theming). 
 
 <!--<div class="material-code-render" markdown="1">-->
+#### Objective-C
+```objc
+[self.button applyContainedThemeWithScheme:self.containerScheme];
+```
+
 #### Swift
 ```swift
 button.applyContainedTheme(withScheme: containerScheme)
-```
-
-#### Objective-C
-
-```objc
-[self.button applyContainedThemeWithScheme:self.containerScheme];
 ```
 <!--</div>-->
 
 ### Anatomy and Key properties
 
-An outlined button has a text label, a container, and an optional icon.
+A contained button has a text label, a container, and an optional icon.
 
-![Outlined button anatomy diagram](docs/assets/outlined-button-diagram.png)
+![Contained button anatomy diagram](assets/contained_button_anatomy.png)
 
-A. Text label<br>
-B. Container<br>
-C. Icon<br>
+1. Text label
+1. Container
+1. Icon
 
 #### Text label attributes
 
@@ -379,6 +384,7 @@ To make use of the theming methods shown in the examples above do the following:
     ```
     pod MaterialComponents/Buttons+Theming
     ```
+<!--{: .code-renderer.code-renderer--install }-->
     
     Run the installer:
     
@@ -389,13 +395,6 @@ To make use of the theming methods shown in the examples above do the following:
 1. Import the Buttons theming target
 
 <!--<div class="material-code-render" markdown="1">-->
-#### Swift
-```swift
-import MaterialComponents.MaterialButtons
-import MaterialComponents.MaterialButtons_Theming
-
-let button = MDCButton()
-```
 #### Objective-C
 ```objc
 #import "MaterialButtons.h"
@@ -403,5 +402,14 @@ let button = MDCButton()
 
 MDCButton *button = [[MDCButton alloc] init];
 ```
+
+#### Swift
+```swift
+import MaterialComponents.MaterialButtons
+import MaterialComponents.MaterialButtons_Theming
+
+let button = MDCButton()
+```
+<!--</div>-->
 
 From there, use the theming methods from the examples to achieve your preferred button style.
