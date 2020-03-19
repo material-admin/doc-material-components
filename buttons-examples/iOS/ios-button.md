@@ -1,5 +1,5 @@
 <!--docs:
-title: ttons"<component name>"
+title: Buttons
 layout: detail
 section: components
 excerpt: "iOS Buttons"
@@ -31,10 +31,6 @@ All Material buttons are implemented by `MDCButton`, a subclass of [UIButton](ht
 * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCButton.h)
 
 ### Install `MDCButton`
-
-<details><summary><b>Expand for installation instructions for <code>MDCButton</code></b></summary>
-
-<br>
 
 `MDCButton` is used to implement all four Material Buttons. In order to use `MCDButton`, do the following:
 
@@ -68,8 +64,6 @@ let button = MDCButton()
 
 MDCButton *button = [[MDCButton alloc] init];
 ```
-
-</details>
 
 ### Making Buttons accessible
 
