@@ -35,10 +35,6 @@ FABs should be provided with a templated image for their normal state and then t
 
 Because MDCFloatingButton is a subclass of [MDCButton](ios-button.md), the steps for installing it are the same.
 
-<details><summary><b>Expand for installation instructions for <code>MDCButton</code></b></summary>
-
-<br>
-
 `MDCButton` is used to implement all four Material Buttons. In order to use `MCDButton`, do the following:
 
 1. Install with Cocoapods
@@ -47,6 +43,7 @@ Because MDCFloatingButton is a subclass of [MDCButton](ios-button.md), the steps
     ```
     pod MaterialComponents/Buttons
     ```
+<!--{: .code-renderer.code-renderer--install }-->
     
     Run the installer:
     
@@ -57,13 +54,6 @@ Because MDCFloatingButton is a subclass of [MDCButton](ios-button.md), the steps
 1. Import the Buttons and initialize them using `alloc`/`init`.
 
 <!--<div class="material-code-render" markdown="1">-->
-#### Swift
-```swift
-import MaterialComponents.MaterialButtons
-import MaterialComponents.MaterialButtons_Theming
-
-let button = MDCButton()
-```
 #### Objective-C
 ```objc
 #import "MaterialButtons.h"
@@ -72,38 +62,46 @@ let button = MDCButton()
 MDCButton *button = [[MDCButton alloc] init];
 ```
 
-</details>
+#### Swift
+```swift
+import MaterialComponents.MaterialButtons
+import MaterialComponents.MaterialButtons_Theming
+
+let button = MDCButton()
+```
+<!--</div>-->
 
 ### Making FABs accessible
  
 To help make your FABs usable to as many users as possible, apply the following:
 
 * Set an appropriate [`accessibilityLabel`](https://developer.apple.com/documentation/uikit/uiaccessibilityelement/1619577-accessibilitylabel) value if your button does not have a title or only has an icon:
+
 <!--<div class="material-code-render" markdown="1">-->
-  **Objective-C**
-  ```objc
-  floatingButton.accessibilityLabel = @"Create";
-  ```
-  **Swift**
-  ```swift
-  floatingButton.accessibilityLabel = "Create"
-  ```
+#### Objective-C
+```objc
+floatingButton.accessibilityLabel = @"Create";
+```
+
+#### Swift
+```swift
+floatingButton.accessibilityLabel = "Create"
+```
 <!--</div>-->
 
 * Set the minimum [visual height to
 36 and miniumum visual width to 64](https://material.io/design/components/buttons.html#specs)
+
 <!--<div class="material-code-render" markdown="1">-->
-  **Objective-C**
+#### Objective-C
+```objc
+floatingButton.minimumSize = CGSizeMake(64, 36);
+```
 
-  ```objc
-  floatingButton.minimumSize = CGSizeMake(64, 36);
-  ```
-
-  **Swift**
-
-  ```swift
-  floatingButton.minimumSize = CGSize(width: 64, height: 48)
-  ```
+#### Swift
+```swift
+floatingButton.minimumSize = CGSize(width: 64, height: 48)
+```
 <!--</div>-->
 
 
@@ -112,24 +110,25 @@ wide](https://material.io/design/layout/spacing-methods.html#touch-click-targets
     To minimize FAB's visual size while allowing for larger [touchable areas](https://material.io/design/layout/spacing-methods.html#touch-click-targets), set the `hitAreaInsets` to a negative value. Maintain sufficient distance between the FAB touch targets. For more see the [Touch and click
 targets](https://material.io/design/layout/spacing-methods.html#touch-click-targets)
 in the spec.
-<!--<div class="material-code-render" markdown="1">-->
-  **Objective C**
-  ```objc
-  CGFloat verticalInset = MIN(0, -(48 - CGRectGetHeight(fab.bounds)) / 2);
-  CGFloat horizontalInset = MIN(0, -(48 - CGRectGetWidth(fab.bounds)) / 2);
-  floatingButton.hitAreaInsets = UIEdgeInsetsMake(verticalInset, horizontalInset, verticalInset, horizontalInset);
-  ```
 
-  **Swift**
-  ```swift
-  let buttonVerticalInset =
-  min(0, -(kMinimumAccessibleButtonSize.height - button.bounds.height) / 2);
-  let buttonHorizontalInset =
-  min(0, -(kMinimumAccessibleButtonSize.width - button.bounds.width) / 2);
-  floatingButton.hitAreaInsets =
-  UIEdgeInsetsMake(buttonVerticalInset, buttonHorizontalInset,
-  buttonVerticalInset, buttonHorizontalInset);
-  ```
+<!--<div class="material-code-render" markdown="1">-->
+#### Objective-C
+```objc
+CGFloat verticalInset = MIN(0, -(48 - CGRectGetHeight(fab.bounds)) / 2);
+CGFloat horizontalInset = MIN(0, -(48 - CGRectGetWidth(fab.bounds)) / 2);
+floatingButton.hitAreaInsets = UIEdgeInsetsMake(verticalInset, horizontalInset, verticalInset, horizontalInset);
+```
+
+#### Swift
+```swift
+let buttonVerticalInset =
+min(0, -(kMinimumAccessibleButtonSize.height - button.bounds.height) / 2);
+let buttonHorizontalInset =
+min(0, -(kMinimumAccessibleButtonSize.width - button.bounds.width) / 2);
+floatingButton.hitAreaInsets =
+UIEdgeInsetsMake(buttonVerticalInset, buttonHorizontalInset,
+buttonVerticalInset, buttonHorizontalInset);
+```
 <!--</div>-->
 
   _**Note** There are [some](https://material.io/design/components/buttons.html#toggle-button) clear [exceptions](https://material.io/design/components/app-bars-bottom.html#specs) for these rules. Please adjust your buttons sizes accordingly._
@@ -154,6 +153,8 @@ in the spec.
 
 ## Regular FABs
 
+![Regular FAB](assets/regular-fab.png)
+
 Regular FABs are FABs that are not expanded and are a regular size.
 
 ### Regular FABs example
@@ -163,19 +164,21 @@ To create a regular FAB use the `+floatingButtonWithShape:` constructor with a v
 For more information on theming FABs see the [Theming section](#theming). 
 
 <!--<div class="material-code-render" markdown="1">-->
-#### Swift
-```swift
-let fab = MDCFloatingButton(shape: `default`)
-```
-
 #### Objective-C
 ```objc
 MDCFloatingButton *fab =
     [MDCFloatingButton floatingButtonWithShape:MDCFloatingButtonShapeDefault];
 ```
+
+#### Swift
+```swift
+let fab = MDCFloatingButton(shape: `default`)
+```
 <!--</div>-->
 
 ### Anatomy and key properties
+
+<img src="assets/FAB-anatomy.png" alt="Regular FAB anatomy" width="128">
 
 A regular FAB has a container and an icon.
 
@@ -200,6 +203,8 @@ A regular FAB has a container and an icon.
 
 ## Mini FABs
 
+![Mini FAB](assets/mini-fab.png)
+
 A mini FAB should be used on smaller screens.
 
 Mini FABs can also be used to create visual continuity with other screen elements.
@@ -211,15 +216,15 @@ To create a mini FAB use the `+floatingButtonWithShape:` constructor with a valu
 For more information on theming FABs see the [Theming section](#theming). 
 
 <!--<div class="material-code-render" markdown="1">-->
-#### Swift
-```swift
-let fab = MDCFloatingButton(shape: mini)
-```
-
 #### Objective-C
 ```objc
 MDCFloatingButton *fab =
     [MDCFloatingButton floatingButtonWithShape:MDCFloatingButtonShapeMini];
+```
+
+#### Swift
+```swift
+let fab = MDCFloatingButton(shape: mini)
 ```
 <!--</div>-->
 
@@ -248,24 +253,27 @@ A mini FAB has a container and an icon.
 
 ## Extended FABs
 
+![Extended FAB](assets/extended-fab.png)
+
 The extended FAB is wider, and it includes a text label.
 
 ### Extended FABs example
+
 
 To create a mini FAB use the `+floatingButtonWithShape:` constructor with a value of `MDCFloatingButtonShapeMini` and make sure the `mode` property is set to `MDCFloatingButtonModeNormal`.
 
 For more information on theming FABs see the [Theming section](#theming). 
 
 <!--<div class="material-code-render" markdown="1">-->
-#### Swift
-```swift
-let fab = MDCFloatingButton(shape: mini)
-```
-
 #### Objective-C
 ```objc
 MDCFloatingButton *fab =
     [MDCFloatingButton floatingButtonWithShape:MDCFloatingButtonShapeMini];
+```
+
+#### Swift
+```swift
+let fab = MDCFloatingButton(shape: mini)
 ```
 <!--</div>-->
 
@@ -316,6 +324,7 @@ To make use of the theming methods shown in the examples above do the following:
     ```
     pod MaterialComponents/Buttons+Theming
     ```
+<!--{: .code-renderer.code-renderer--install }-->
     
     Run the installer:
     
@@ -326,25 +335,22 @@ To make use of the theming methods shown in the examples above do the following:
 1. Import the Buttons theming target
 
 <!--<div class="material-code-render" markdown="1">-->
-#### Swift
-```swift
-import MaterialComponents.MaterialButtons
-import MaterialComponents.MaterialButtons_Theming
-```
 #### Objective-C
 ```objc
 #import "MaterialButtons.h"
 #import <MaterialComponents/MaterialButtons+Theming.h>
 ```
 
+#### Swift
+```swift
+import MaterialComponents.MaterialButtons
+import MaterialComponents.MaterialButtons_Theming
+```
+<!--</div>-->
+
 From there, pass a container scheme into the following theming method on an MDCFloatingButton instance:
 
 <!--<div class="material-code-render" markdown="1">-->
-#### Swift
-```swift
-let fab = MDCFloatingButton(shape: `default`)
-fab.applySecondaryThemeWith(withScheme:containerScheme)
-```
 #### Objective-C
 ```objc
 MDCFloatingButton *fab =
@@ -352,4 +358,9 @@ MDCFloatingButton *fab =
 [fab applySecondaryThemeWithScheme:self.containerScheme];
 ```
 
-
+#### Swift
+```swift
+let fab = MDCFloatingButton(shape: `default`)
+fab.applySecondaryThemeWith(withScheme:containerScheme)
+```
+<!--</div>-->
