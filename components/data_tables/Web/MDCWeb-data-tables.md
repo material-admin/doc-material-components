@@ -12,7 +12,7 @@ api_doc_root: true
 
 [Data tables](https://material.io/components/data-tables/#) display sets of data across rows and columns.
 
-![Data table with 5 rows: 1 header row, 4 rows, one column of checkboxes](/assets/data-table-hero.png)
+![Data table with 5 rows: 1 header row, 4 rows, one column of checkboxes](assets/data-table-hero.png)
 
 ## Using data tables
 
@@ -82,7 +82,7 @@ _**Note**: The outer `mdc-touch-target-wrapper` element is only necessary if you
 
 The following is an anatomy diagram of a data table:
 
-![Data table anatomy diagram](/assets/data-table-anatomy.png)
+![Data table anatomy diagram](assets/data-table-anatomy.png)
 
 A data table consists of the following properties:
 
