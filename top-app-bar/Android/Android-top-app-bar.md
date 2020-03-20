@@ -373,7 +373,7 @@ In the layout:
 4. Action items (optional)
 5. Overflow menu (optional)
 
-**Container attributes**
+#### Container attributes
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
@@ -381,14 +381,14 @@ In the layout:
 **`MaterialToolbar` Elevation** | `android:elevation` | `setElevation`<br>`getElevation` | `4dp`
 **`AppBarLayout` elevation** | `android:stateListAnimator` | `setStateListAnimator`<br>`getStateListAnimator` | `0dp` to `4dp` (see all [states](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/appbar/res/animator-v21/design_appbar_state_list_animator.xml))
 
-**Navigation icon attributes**
+#### Navigation icon attributes
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
 **`MaterialToolbar` icon** | `app:navigationIcon` | `setNavigationIcon`<br>`getNavigationIcon` | `null`
 **`MaterialToolbar` icon color** | N/A | N/A | `?attr/colorControlNormal` (as `Drawable` tint)
 
-**Title attributes**
+#### Title attributes
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
@@ -405,14 +405,14 @@ In the layout:
 **`CollapsingToolbarLayout` expanded title margins** | `app:expandedTitleMargin*` | `setExpandedTitleMargin*` | `32dp`
 **`CollapsingToolbarLayout` title max lines** | `app:maxLines` | `setMaxLines`<br>`getMaxLines` | `1`
 
-**Action items attributes**
+#### Action items attributes
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
 **`MaterialToolbar` menu** | `app:menu` | `inflateMenu`<br>`getMenu` | `null`
 **`MaterialToolbar` icon color** | N/A | N/A | `?attr/colorControlNormal` (as `Drawable` tint)
 
-**Overflow menu attributes**
+#### Overflow menu attributes
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
@@ -420,7 +420,7 @@ In the layout:
 **`MaterialToolbar` overflow theme** | `app:popupTheme` | `setPopupTheme`<br>`getPopupTheme` | `@style/ThemeOverlay.MaterialComponents.*`
 **`MaterialToolbar` overflow item typography** | `textAppearanceSmallPopupMenu` and `textAppearanceLargePopupMenu` in `app:popupTheme` or app theme | N/A | `?attr/textAppearanceSubtitle1`
 
-**Scrolling behavior attributes**
+#### Scrolling behavior attributes
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
@@ -431,7 +431,7 @@ In the layout:
 **`CollapsingToolbarLayout` scrim animation duration** | `app:scrimAnimationDuration` | `setScrimAnimationDuration`<br>`getScrimAnimationDuration` | `600`
 **`AppBarLayout` lift on scroll** | `app:liftOnScroll` | `setLiftOnScroll`<br>`isLiftOnScroll` | `false`
 
-**`AppBarLayout` styles**
+#### `AppBarLayout` styles
 
 &nbsp; | Style
 ------ | -----
@@ -441,7 +441,7 @@ In the layout:
 
 Default style theme attribute: `?attr/appBarLayoutStyle`
 
-**`MaterialToolbar` styles**
+#### `MaterialToolbar` styles
 
 &nbsp; | Style
 ------ | -----
@@ -452,7 +452,7 @@ Default style theme attribute: `?attr/appBarLayoutStyle`
 
 Default style theme attribute: `?attr/toolbarStyle`
 
-**`CollapsingToolbarLayout` styles**
+#### `CollapsingToolbarLayout` styles
 
 &nbsp; | Style
 ------ | -----
@@ -588,14 +588,14 @@ In menu/navigation icons:
 4. Overflow menu (optional)
 5. Container (not shown)
 
-**Close button  attributes**
+#### Close button attributes
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
 **Icon** | `app:actionModeCloseDrawable` (in app theme) | N/A | `@drawable/abc_ic_ab_back_material`
 **Color** | N/A | N/A | `?attr/colorControlNormal` (as `Drawable` tint)
 
-**Contextual title  attributes**
+#### Contextual title attributes
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
@@ -604,21 +604,21 @@ In menu/navigation icons:
 **Title typography** | `app:titleTextStyle` | N/A | `@style/TextAppearance.AppCompat.Widget.ActionMode.Title`
 **Subtitle typography** | `app:subtitleTextStyle` | N/A | `@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle`
 
-**Contextual actions  attributes**
+#### Contextual actions attributes
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
 **Menu** | N/A | `menuInflater.inflate` in `ActionMode.Callback` | `null`
 **Icon color** | N/A | N/A | `?attr/colorControlNormal` (as `Drawable` tint)
 
-**Overflow menu  attributes**
+#### Overflow menu attributes
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
 **Icon** | `android:src` and `app:srcCompat` in `actionOverflowButtonStyle` (in app theme) | `setOverflowIcon`<br>`getOverflowIcon` | `@drawable/abc_ic_menu_overflow_material` (before API 23) or `@drawable/ic_menu_moreoverflow_material` (after API 23)
 **Overflow item typography** | `textAppearanceSmallPopupMenu` and `textAppearanceLargePopupMenu` in app theme | N/A | `?attr/textAppearanceSubtitle1`
 
-**Container  attributes**
+#### Container attributes
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
@@ -626,7 +626,7 @@ In menu/navigation icons:
 **Height** | `app:height` | N/A | `?attr/actionBarSize`
 **Overlay window** | `app:windowActionModeOverlay` (in app theme) | N/A | `false`
 
-**Styles**
+#### Styles
 
 &nbsp; | Style
 ------ | -----
