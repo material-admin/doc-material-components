@@ -38,6 +38,7 @@ For an overall content description of the top app bar, set an `android:contentDe
 For the navigation icon, this can be achieved via the `app:navigationContentDescription` attribute or `setNavigationContentDescription` method.
 
 For action items and items within the overflow menu, the content description needs to be set in the menu:
+
 ```xml
 <menu ...>
     ...
