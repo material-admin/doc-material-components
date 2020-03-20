@@ -2,11 +2,10 @@
 title: "Top app bar"
 layout: detail
 section: components
-excerpt: "Android top app bar"
-latest_update: "2020-02-xx"
-iconId:
-path: /
-api_doc_root:
+excerpt: "Android top app bar."
+latest_update: "2020-03-20"
+iconId: top_app_bar
+path: /catalog/top-app-bar/
 -->
 
 # Top app bar
