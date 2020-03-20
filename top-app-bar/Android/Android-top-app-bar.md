@@ -424,11 +424,11 @@ In the layout:
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
-`MaterialToolbar` or `CollapsingToolbarLayout` scroll flags | `app:layout_scrollFlags` | `setScrollFlags`<br>`getScrollFlags`<br>(on `AppBarLayout.LayoutParams`) | `noScroll`
-`MaterialToolbar` collapse mode | `app:collapseMode` | `setCollapseMode`<br>`getCollapseMode`<br>(on `CollapsingToolbar`) | `none`
-`CollapsingToolbarLayout` content scrim color | `app:contentScrim` | `setContentScrim`<br>`setContentScrimColor`<br>`setContentScrimResource`<br>`getContentScrim` | `null`
-`CollapsingToolbarLayout` status bar scrim color | `app:statusBarScrim` | `setStatusBarScrim`<br>`setStatusBarScrimColor`<br>`setStatusBarScrimResource`<br>`getStatusBarScrim` | `?attr/colorPrimaryDark`
-`CollapsingToolbarLayout` scrim animation duration | `app:scrimAnimationDuration` | `setScrimAnimationDuration`<br>`getScrimAnimationDuration` | `600`
+**`MaterialToolbar` or `CollapsingToolbarLayout` scroll flags** | `app:layout_scrollFlags` | `setScrollFlags`<br>`getScrollFlags`<br>(on `AppBarLayout.LayoutParams`) | `noScroll`
+**`MaterialToolbar` collapse mode** | `app:collapseMode` | `setCollapseMode`<br>`getCollapseMode`<br>(on `CollapsingToolbar`) | `none`
+**`CollapsingToolbarLayout` content scrim color** | `app:contentScrim` | `setContentScrim`<br>`setContentScrimColor`<br>`setContentScrimResource`<br>`getContentScrim` | `null`
+**`CollapsingToolbarLayout` status bar scrim color** | `app:statusBarScrim` | `setStatusBarScrim`<br>`setStatusBarScrimColor`<br>`setStatusBarScrimResource`<br>`getStatusBarScrim` | `?attr/colorPrimaryDark`
+**`CollapsingToolbarLayout` scrim animation duration** | `app:scrimAnimationDuration` | `setScrimAnimationDuration`<br>`getScrimAnimationDuration` | `600`
 
 #### `AppBarLayout` styles
 
