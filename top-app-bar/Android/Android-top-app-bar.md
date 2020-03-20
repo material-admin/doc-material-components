@@ -23,7 +23,7 @@ There are two types of top app bar:
 
 ## Using the top app bar
 
-Before you can use Material buttons, you need to add a dependency to the Material Components for Android library. For more information, go to the [Getting started](https://github.com/material-components/material-components-android/blob/master/docs/getting-started.md) page.
+Before you can use Material buttons, you need to add a dependency to the Material Components for Android library. For more information, go to the [Getting started](https://github.com/material-components/material-components-android/tree/master/docs/getting-started.md) page.
 
 ### Making the top app bar accessible
 
@@ -64,13 +64,13 @@ API and source code:
     *   [Class definition](https://developer.android.com/reference/androidx/coordinatorlayout/widget/CoordinatorLayout)
 *   `AppBarLayout`
     *   [Class definition](https://developer.android.com/reference/com/google/android/material/appbar/AppBarLayout)
-    *   [Class source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/appbar/AppBarLayout.java)
+    *   [Class source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/appbar/AppBarLayout.java)
 *   `MaterialToolbar`
     *   [Class definition](https://developer.android.com/reference/com/google/android/material/appbar/MaterialToolbar)
-    *   [Class source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/appbar/MaterialToolbar.java)
+    *   [Class source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/appbar/MaterialToolbar.java)
 *   `CollapsingToolbarLayout`
     *   [Class definition](https://developer.android.com/reference/com/google/android/material/appbar/CollapsingToolbarLayout)
-    *   [Class source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/appbar/CollapsingToolbarLayout.java)
+    *   [Class source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/appbar/CollapsingToolbarLayout.java)
 
 The following example shows a top app bar with a page title, a navigation icon, two action icons, and an overflow menu.
 
@@ -643,10 +643,10 @@ API and source code:
 
 *   `AppBarLayout`
     *   [Class definition](https://developer.android.com/reference/com/google/android/material/appbar/AppBarLayout)
-    *   [Class source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/appbar/AppBarLayout.java)
+    *   [Class source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/appbar/AppBarLayout.java)
 *   `MaterialToolbar`
     *   [Class definition](https://developer.android.com/reference/com/google/android/material/appbar/MaterialToolbar)
-    *   [Class source](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/appbar/MaterialToolbar.java)
+    *   [Class source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/appbar/MaterialToolbar.java)
 
 The following example shows a refular top app bar with Material Theming.
 
