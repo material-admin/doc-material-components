@@ -428,6 +428,7 @@ In the layout:
 **`CollapsingToolbarLayout` content scrim color** | `app:contentScrim` | `setContentScrim`<br>`setContentScrimColor`<br>`setContentScrimResource`<br>`getContentScrim` | `null`
 **`CollapsingToolbarLayout` status bar scrim color** | `app:statusBarScrim` | `setStatusBarScrim`<br>`setStatusBarScrimColor`<br>`setStatusBarScrimResource`<br>`getStatusBarScrim` | `?attr/colorPrimaryDark`
 **`CollapsingToolbarLayout` scrim animation duration** | `app:scrimAnimationDuration` | `setScrimAnimationDuration`<br>`getScrimAnimationDuration` | `600`
+**`AppBarLayout` lift on scroll** | `app:liftOnScroll` | `setLiftOnScroll`<br>`isLiftOnScroll` | `false`
 
 #### `AppBarLayout` styles
 
