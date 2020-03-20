@@ -27,15 +27,15 @@ Before you can use Material buttons, you need to add a dependency to the Materia
 
 ### Making the top app bar accessible
 
-Android's top app bar component APIs provide support for the navigation icon, action items, overflow menu and more for informing the user as to what each action performs. While optional, their use is strongly encouraged.
+Android's top app bar component APIs provide accessibilty support to describe the navigation icon, action items, overflow menu, etc. While optional, we highly recommend using accessibility support.
 
 #### Content descriptions
 
-When using icons for navigation icons, action items and other elements of top app bars, you should set a content description on them so that screen readers like TalkBack are able to announce their purpose or action, if any.
+Set a content description when using icons for navigation icons, action items, and other top app bar elements so that screen readers like TalkBack can read back their purpose or action.
 
 For an overall content description of the top app bar, set an `android:contentDescription` or use the `setContentDescription` method on the `MaterialToolbar`.
 
-For the navigation icon, this can be achieved via the `app:navigationContentDescription` attribute or `setNavigationContentDescription` method.
+For the navigation icon, set the `app:navigationContentDescription` attribute or `setNavigationContentDescription` method.
 
 For action items and items within the overflow menu, the content description needs to be set in the menu:
 
@@ -180,7 +180,7 @@ _**Note:** The above example is the recommended approach and, in order for it to
 
 #### Applying scrolling behavior to the top app bar
 
-The following example shows the top app bar positioned at the same elevation as content. Upon scroll, it increases elevation and lets content scroll behind it.
+The following example shows the top app bar positioned at the same elevation as content. When scrolling, the top app bar's elevation increases and lets content scroll behind it.
 
 In the layout:
 
@@ -203,7 +203,7 @@ In the layout:
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 ```
 
-The following example shows the top app bar disappearring upon scrolling up, and appearring upon scrolling down.
+The following example shows the top app bar disappearing when scrolling up, and reappearing when scrolling down.
 
 In the layout:
 
@@ -330,7 +330,7 @@ In `res/values/themes.xml`:
 
 #### Applying scrolling behavior to the prominent top app bar
 
-The following example shows, when scrolling up, the prominent top app bar transforming into a normal top app bar.
+The following example shows the prominent top app bar transforming into a normal top app bar when scrolling up.
 
 In the layout:
 
@@ -373,7 +373,7 @@ In the layout:
 4. Action items (optional)
 5. Overflow menu (optional)
 
-#### Container attributes
+**Container attributes**
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
@@ -381,14 +381,14 @@ In the layout:
 **`MaterialToolbar` Elevation** | `android:elevation` | `setElevation`<br>`getElevation` | `4dp`
 **`AppBarLayout` elevation** | `android:stateListAnimator` | `setStateListAnimator`<br>`getStateListAnimator` | `0dp` to `4dp` (see all [states](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/appbar/res/animator-v21/design_appbar_state_list_animator.xml))
 
-#### Navigation icon attributes
+**Navigation icon attributes**
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
 **`MaterialToolbar` icon** | `app:navigationIcon` | `setNavigationIcon`<br>`getNavigationIcon` | `null`
 **`MaterialToolbar` icon color** | N/A | N/A | `?attr/colorControlNormal` (as `Drawable` tint)
 
-#### Title attributes
+**Title attributes**
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
@@ -405,14 +405,14 @@ In the layout:
 **`CollapsingToolbarLayout` expanded title margins** | `app:expandedTitleMargin*` | `setExpandedTitleMargin*` | `32dp`
 **`CollapsingToolbarLayout` title max lines** | `app:maxLines` | `setMaxLines`<br>`getMaxLines` | `1`
 
-#### Action items attributes
+**Action items attributes**
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
 **`MaterialToolbar` menu** | `app:menu` | `inflateMenu`<br>`getMenu` | `null`
 **`MaterialToolbar` icon color** | N/A | N/A | `?attr/colorControlNormal` (as `Drawable` tint)
 
-#### Overflow menu attributes
+**Overflow menu attributes**
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
@@ -420,7 +420,7 @@ In the layout:
 **`MaterialToolbar` overflow theme** | `app:popupTheme` | `setPopupTheme`<br>`getPopupTheme` | `@style/ThemeOverlay.MaterialComponents.*`
 **`MaterialToolbar` overflow item typography** | `textAppearanceSmallPopupMenu` and `textAppearanceLargePopupMenu` in `app:popupTheme` or app theme | N/A | `?attr/textAppearanceSubtitle1`
 
-#### Scrolling behavior attributes
+**Scrolling behavior attributes**
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
@@ -431,7 +431,7 @@ In the layout:
 **`CollapsingToolbarLayout` scrim animation duration** | `app:scrimAnimationDuration` | `setScrimAnimationDuration`<br>`getScrimAnimationDuration` | `600`
 **`AppBarLayout` lift on scroll** | `app:liftOnScroll` | `setLiftOnScroll`<br>`isLiftOnScroll` | `false`
 
-#### `AppBarLayout` styles
+**`AppBarLayout` styles**
 
 &nbsp; | Style
 ------ | -----
@@ -441,7 +441,7 @@ In the layout:
 
 Default style theme attribute: `?attr/appBarLayoutStyle`
 
-#### `MaterialToolbar` styles
+**`MaterialToolbar` styles**
 
 &nbsp; | Style
 ------ | -----
@@ -452,7 +452,7 @@ Default style theme attribute: `?attr/appBarLayoutStyle`
 
 Default style theme attribute: `?attr/toolbarStyle`
 
-#### `CollapsingToolbarLayout` styles
+**`CollapsingToolbarLayout` styles**
 
 &nbsp; | Style
 ------ | -----
@@ -588,14 +588,14 @@ In menu/navigation icons:
 4. Overflow menu (optional)
 5. Container (not shown)
 
-#### Close button  attributes
+**Close button  attributes**
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
 **Icon** | `app:actionModeCloseDrawable` (in app theme) | N/A | `@drawable/abc_ic_ab_back_material`
 **Color** | N/A | N/A | `?attr/colorControlNormal` (as `Drawable` tint)
 
-#### Contextual title  attributes
+**Contextual title  attributes**
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
@@ -604,21 +604,21 @@ In menu/navigation icons:
 **Title typography** | `app:titleTextStyle` | N/A | `@style/TextAppearance.AppCompat.Widget.ActionMode.Title`
 **Subtitle typography** | `app:subtitleTextStyle` | N/A | `@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle`
 
-#### Contextual actions  attributes
+**Contextual actions  attributes**
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
 **Menu** | N/A | `menuInflater.inflate` in `ActionMode.Callback` | `null`
 **Icon color** | N/A | N/A | `?attr/colorControlNormal` (as `Drawable` tint)
 
-#### Overflow menu  attributes
+**Overflow menu  attributes**
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
 **Icon** | `android:src` and `app:srcCompat` in `actionOverflowButtonStyle` (in app theme) | `setOverflowIcon`<br>`getOverflowIcon` | `@drawable/abc_ic_menu_overflow_material` (before API 23) or `@drawable/ic_menu_moreoverflow_material` (after API 23)
 **Overflow item typography** | `textAppearanceSmallPopupMenu` and `textAppearanceLargePopupMenu` in app theme | N/A | `?attr/textAppearanceSubtitle1`
 
-#### Container  attributes
+**Container  attributes**
 
 &nbsp; | Attribute | Related method(s) | Default value
 ------ | --------- | ----------------- | -------------
@@ -626,7 +626,7 @@ In menu/navigation icons:
 **Height** | `app:height` | N/A | `?attr/actionBarSize`
 **Overlay window** | `app:windowActionModeOverlay` (in app theme) | N/A | `false`
 
-#### Styles
+**Styles**
 
 &nbsp; | Style
 ------ | -----
