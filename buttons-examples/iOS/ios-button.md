@@ -40,7 +40,7 @@ All Material buttons are implemented by `MDCButton`, a subclass of [UIButton](ht
     ```
     pod MaterialComponents/Buttons
     ```
-<!--{: .code-renderer.code-renderer--install }-->
+    <!--{: .code-renderer.code-renderer--install }-->
     
     Run the installer:
     
@@ -50,23 +50,23 @@ All Material buttons are implemented by `MDCButton`, a subclass of [UIButton](ht
 
 1. Import the Buttons and initialize them using `alloc`/`init`.
 
-<!--<div class="material-code-render" markdown="1">-->
-#### Objective-C
-```objc
-#import "MaterialButtons.h"
-#import <MaterialComponents/MaterialButtons+Theming.h>
+    <!--<div class="material-code-render" markdown="1">-->
+    #### Objective-C
+    ```objc
+    #import "MaterialButtons.h"
+    #import <MaterialComponents/MaterialButtons+Theming.h>
 
-MDCButton *button = [[MDCButton alloc] init];
-```
+    MDCButton *button = [[MDCButton alloc] init];
+    ```
 
-#### Swift
-```swift
-import MaterialComponents.MaterialButtons
-import MaterialComponents.MaterialButtons_Theming
+    #### Swift
+    ```swift
+    import MaterialComponents.MaterialButtons
+    import MaterialComponents.MaterialButtons_Theming
 
-let button = MDCButton()
-```
-<!--</div>-->
+    let button = MDCButton()
+    ```
+    <!--</div>-->
 
 ### Making Buttons accessible
 
@@ -178,7 +178,7 @@ this day."
 
 ## Text button
 
-<img src="assets/ios-text-button.gif" alt="An animation showing a Material Design text button." width="128">
+<img src="assets/ios-text-button.gif" alt="An animated Material Design text button." width="128">
 
 [Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
 
@@ -234,7 +234,7 @@ A text button has a text label, a transparent container and an optional icon.
 
 ## Outlined button
 
-<img src="assets/ios-outlined.gif" alt="An animation showing a Material Design outlined button." width="115">
+<img src="assets/ios-outlined.gif" alt="An animated Material Design outlined button." width="115">
 
 [Outlined buttons](https://material.io/components/buttons/#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
@@ -290,7 +290,7 @@ An outlined button has a text label, a container, and an optional icon.
 
 ## Contained button
 
-<img src="assets/ios-contained.gif" alt="An animation showing a Material Design contained button." width="128">
+<img src="assets/ios-contained.gif" alt="An animated Material Design contained button." width="128">
 
 [Contained buttons](https://material.io/components/buttons/#contained-button) are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
@@ -386,7 +386,7 @@ To make use of the theming methods shown in the examples above do the following:
     ```
     pod MaterialComponents/Buttons+Theming
     ```
-<!--{: .code-renderer.code-renderer--install }-->
+    <!--{: .code-renderer.code-renderer--install }-->
     
     Run the installer:
     
@@ -396,22 +396,22 @@ To make use of the theming methods shown in the examples above do the following:
 
 1. Import the Buttons theming target
 
-<!--<div class="material-code-render" markdown="1">-->
-#### Objective-C
-```objc
-#import "MaterialButtons.h"
-#import "MaterialButtons+Theming.h"
+    <!--<div class="material-code-render" markdown="1">-->
+    #### Objective-C
+    ```objc
+    #import "MaterialButtons.h"
+    #import "MaterialButtons+Theming.h"
 
-MDCButton *button = [[MDCButton alloc] init];
-```
+    MDCButton *button = [[MDCButton alloc] init];
+    ```
 
-#### Swift
-```swift
-import MaterialComponents.MaterialButtons
-import MaterialComponents.MaterialButtons_Theming
+    #### Swift
+    ```swift
+    import MaterialComponents.MaterialButtons
+    import MaterialComponents.MaterialButtons_Theming
 
-let button = MDCButton()
-```
-<!--</div>-->
+    let button = MDCButton()
+    ```
+    <!--</div>-->
 
 From there, use the theming methods from the examples to achieve your preferred button style.
