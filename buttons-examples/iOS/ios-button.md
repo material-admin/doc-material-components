@@ -372,7 +372,9 @@ The iOS icon toggle button is only available for use with the iOS [card](../Card
 ## Theming buttons
 
 You can theme an MDCButton to match any of the Material Button styles using theming
-extensions. [Learn more about theming extensions](../../docs/theming.md).
+extensions. [Learn more about theming extensions](../../docs/theming.md). Below is a screenshot of Material Buttons with the Material Design Shrine theme:
+
+![Shrine buttons](assets/shrine_buttons.png)
 
 ### Buttons theming example
 
