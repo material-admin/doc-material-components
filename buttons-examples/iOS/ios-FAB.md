@@ -54,23 +54,23 @@ In order to use `MDCFloatingButton`, do the following:
 
 1. Import Buttons and initialize an MDCFloatingButton using `alloc`/`init`.
 
-<!--<div class="material-code-render" markdown="1">-->
-#### Objective-C
-```objc
-#import "MaterialButtons.h"
-#import <MaterialComponents/MaterialButtons+Theming.h>
+    <!--<div class="material-code-render" markdown="1">-->
+    #### Objective-C
+    ```objc
+    #import "MaterialButtons.h"
+    #import <MaterialComponents/MaterialButtons+Theming.h>
 
-MDCFloatingButton *fab = [[MDCFloatingButton alloc] init];
-```
+    MDCFloatingButton *fab = [[MDCFloatingButton alloc] init];
+    ```
 
-#### Swift
-```swift
-import MaterialComponents.MaterialButtons
-import MaterialComponents.MaterialButtons_Theming
+    #### Swift
+    ```swift
+    import MaterialComponents.MaterialButtons
+    import MaterialComponents.MaterialButtons_Theming
 
-let fab = MDCFloatingButton()
-```
-<!--</div>-->
+    let fab = MDCFloatingButton()
+    ```
+    <!--</div>-->
 
 ### Making FABs accessible
  
@@ -154,7 +154,7 @@ buttonVerticalInset, buttonHorizontalInset);
 
 ## Regular FABs
 
-![Regular FAB](assets/regular-fab.png)
+![Regular FAB example](assets/regular-fab.png)
 
 Regular FABs are FABs that are not expanded and are a regular size.
 
@@ -204,7 +204,7 @@ A regular FAB has a container and an icon.
 
 ## Mini FABs
 
-![Mini FAB](assets/mini-fab.png)
+![Mini FAB example](assets/mini-fab.png)
 
 A mini FAB should be used on smaller screens.
 
@@ -256,7 +256,7 @@ A mini FAB has a container and an icon.
 
 ## Extended FABs
 
-![Extended FAB](assets/extended-fab.png)
+![Extended FAB example](assets/extended-fab.png)
 
 The extended FAB is wider, and it includes a text label.
 
@@ -342,33 +342,33 @@ To make use of the theming methods shown in the examples above do the following:
 
 1. Import the Buttons theming target
 
-<!--<div class="material-code-render" markdown="1">-->
-#### Objective-C
-```objc
-#import "MaterialButtons.h"
-#import <MaterialComponents/MaterialButtons+Theming.h>
-```
+    <!--<div class="material-code-render" markdown="1">-->
+    #### Objective-C
+    ```objc
+    #import "MaterialButtons.h"
+    #import <MaterialComponents/MaterialButtons+Theming.h>
+    ```
 
-#### Swift
-```swift
-import MaterialComponents.MaterialButtons
-import MaterialComponents.MaterialButtons_Theming
-```
-<!--</div>-->
+    #### Swift
+    ```swift
+    import MaterialComponents.MaterialButtons
+    import MaterialComponents.MaterialButtons_Theming
+    ```
+    <!--</div>-->
 
-From there, pass a container scheme into the following theming method on an MDCFloatingButton instance:
+1. From there, pass a container scheme into the following theming method on an MDCFloatingButton instance:
 
-<!--<div class="material-code-render" markdown="1">-->
-#### Objective-C
-```objc
-MDCFloatingButton *fab =
-    [MDCFloatingButton floatingButtonWithShape:MDCFloatingButtonShapeMini];
-[fab applySecondaryThemeWithScheme:self.containerScheme];
-```
+    <!--<div class="material-code-render" markdown="1">-->
+    #### Objective-C
+    ```objc
+    MDCFloatingButton *fab =
+        [MDCFloatingButton floatingButtonWithShape:MDCFloatingButtonShapeMini];
+    [fab applySecondaryThemeWithScheme:self.containerScheme];
+    ```
 
-#### Swift
-```swift
-let fab = MDCFloatingButton(shape: `default`)
-fab.applySecondaryThemeWith(withScheme:containerScheme)
-```
-<!--</div>-->
+    #### Swift
+    ```swift
+    let fab = MDCFloatingButton(shape: `default`)
+    fab.applySecondaryThemeWith(withScheme:containerScheme)
+    ```
+    <!--</div>-->
