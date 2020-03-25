@@ -312,7 +312,9 @@ A mini FAB has a text label, a transparent container and an optional icon.
 ## Theming
 
 You can theme an MDCFloatingButton to have a secondary theme using the MDCFloatingButton theming
-extension. [Learn more about theming extensions and container schemes](../../docs/theming.md).
+extension. [Learn more about theming extensions and container schemes](../../docs/theming.md). Below is a screenshot of Material FABs with the Material Design Shrine theme:
+
+![Shrine FABs](assets/shrine_fabs.png)
 
 ### FAB theming example
 
