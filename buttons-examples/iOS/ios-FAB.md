@@ -23,7 +23,7 @@ There are three types of FABS:
 
 A FAB performs the primary, or most common, action on a screen. It appears in front of all screen content, typically as a circular shape with an icon in its center. 
 
-FABs are implemented by `MDCFloatingButton`, a subclass of [https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html).
+FABs are implemented by `MDCFloatingButton`, a subclass of [MDCButton](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCButton.html).
 * [API documentation](https://material.io/develop/ios/components/buttons/api-docs/Classes/MDCFloatingButton.html)
 * [GitHub source](https://github.com/material-components/material-components-ios/blob/develop/components/Buttons/src/MDCFloatingButton.h)
 
@@ -38,19 +38,19 @@ Because MDCFloatingButton is a subclass of [MDCButton](ios-button.md), the steps
 In order to use `MDCFloatingButton`, do the following:
 
 1. Install with Cocoapods
-Add the following line to your `Podfile`:
+    Add the following line to your `Podfile`:
 
-```
-pod MaterialComponents/Buttons
-```
-<!--{: .code-renderer.code-renderer--install }-->
+    ```
+    pod MaterialComponents/Buttons
+    ```
+    <!--{: .code-renderer.code-renderer--install }-->
 
-Run the installer:
+    Run the installer:
 
-```
-pod install
-```
-<!--</div>-->
+    ```
+    pod install
+    ```
+    <!--</div>-->
 
 1. Import Buttons and initialize an MDCFloatingButton using `alloc`/`init`.
 
@@ -328,17 +328,17 @@ To make use of the theming methods shown in the examples above do the following:
 1. Install the Buttons theming extensions with Cocoapods
     Add the following line to your `Podfile`:
 
-```
-pod MaterialComponents/Buttons+Theming
-```
-<!--{: .code-renderer.code-renderer--install }-->
+  ```
+  pod MaterialComponents/Buttons+Theming
+  ```
+  <!--{: .code-renderer.code-renderer--install }-->
 
-Run the installer:
+  Run the installer:
 
-```
-pod install
-```
-<!--</div>-->
+  ```
+  pod install
+  ```
+  <!--</div>-->
 
 1. Import the Buttons theming target
 
