@@ -27,6 +27,12 @@ The text field class consists of the following types:
 
 Text fields allow users to enter text into a UI. They typically appear in forms and dialogs.
 
+### Installation
+
+```
+npm install @material/textfield
+```
+
 ### Styles
 
 ```scss
