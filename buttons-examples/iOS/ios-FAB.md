@@ -35,23 +35,24 @@ FABs should be provided with a templated image for their normal state and then t
 
 Because MDCFloatingButton is a subclass of [MDCButton](ios-button.md), the steps for installing it are the same.
 
-`MDCButton` is used to implement all four Material Buttons. In order to use `MCDButton`, do the following:
+In order to use `MDCFloatingButton`, do the following:
 
 1. Install with Cocoapods
-    Add the following line to your `Podfile`:
+Add the following line to your `Podfile`:
 
-    ```
-    pod MaterialComponents/Buttons
-    ```
+```
+pod MaterialComponents/Buttons
+```
 <!--{: .code-renderer.code-renderer--install }-->
-    
-    Run the installer:
-    
-    ```
-    pod install
-    ```
 
-1. Import the Buttons and initialize them using `alloc`/`init`.
+Run the installer:
+
+```
+pod install
+```
+<!--</div>-->
+
+1. Import Buttons and initialize an MDCFloatingButton using `alloc`/`init`.
 
 <!--<div class="material-code-render" markdown="1">-->
 #### Objective-C
@@ -59,7 +60,7 @@ Because MDCFloatingButton is a subclass of [MDCButton](ios-button.md), the steps
 #import "MaterialButtons.h"
 #import <MaterialComponents/MaterialButtons+Theming.h>
 
-MDCButton *button = [[MDCButton alloc] init];
+MDCFloatingButton *fab = [[MDCFloatingButton alloc] init];
 ```
 
 #### Swift
@@ -67,7 +68,7 @@ MDCButton *button = [[MDCButton alloc] init];
 import MaterialComponents.MaterialButtons
 import MaterialComponents.MaterialButtons_Theming
 
-let button = MDCButton()
+let fab = MDCFloatingButton()
 ```
 <!--</div>-->
 
@@ -327,16 +328,17 @@ To make use of the theming methods shown in the examples above do the following:
 1. Install the Buttons theming extensions with Cocoapods
     Add the following line to your `Podfile`:
 
-    ```
-    pod MaterialComponents/Buttons+Theming
-    ```
+```
+pod MaterialComponents/Buttons+Theming
+```
 <!--{: .code-renderer.code-renderer--install }-->
-    
-    Run the installer:
-    
-    ```
-    pod install
-    ```
+
+Run the installer:
+
+```
+pod install
+```
+<!--</div>-->
 
 1. Import the Buttons theming target
 
