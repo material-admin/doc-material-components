@@ -1,8 +1,8 @@
 <!--docs:
-title: "Alert Dialogs"
+title: "Dialogs"
 layout: detail
 section: components
-excerpt: "Alert Dialogs are modal windows that must be interacted."
+excerpt: "Dialogs are modal windows that require interaction."
 iconId: dialog
 path: /catalog/dialogs/
 -->
