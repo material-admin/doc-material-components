@@ -86,7 +86,7 @@ The example code below generates the card:
           ),
 ```
 
- 
+<!-- **Test code may eventually be replaced with dartpad link** 
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 ```
 import 'package:flutter/material.dart';
@@ -216,7 +216,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 ```
-
+-->
 
 ### Key properties
 
@@ -305,7 +305,6 @@ Source code API:
   * [Class definition](https://api.flutter.dev/flutter/material/Card-class.html)
 
 <img src="assets/shrine_card.png" alt="Shrine Card for Flutter">
-
 
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 ```
@@ -528,3 +527,4 @@ const defaultLetterSpacing = 0.03;
 
 
 ```
+

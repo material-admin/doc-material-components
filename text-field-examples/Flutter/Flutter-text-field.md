@@ -66,7 +66,7 @@ The following example shows a filled text field.
    ),
  ),
 ```
-
+<!-- **Test code may eventually be replaced with dartpad link**
 To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 ```
@@ -120,6 +120,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 ```
+-->
 
 ### Anatomy and key properties
 
@@ -233,7 +234,7 @@ TextFormField(
   ),
 ),
 ```
-
+<!-- **Test code may eventually be replaced with dartpad link**
  To test code copy and paste code into [dartpad.dev](https://dartpad.dev/).
 
 
@@ -280,7 +281,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 ```
-</details>
+-->
 
 ### Anatomy and key properties
 
