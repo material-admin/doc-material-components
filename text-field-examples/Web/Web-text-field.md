@@ -21,7 +21,7 @@ The text field class consists of the following types:
 * [Filled text](#filled-text)
 * [Outlined text](#outlined-text)
 
-<img src="assets/text-field-generic.png" alt="Text field examples of both filled and outlined types, and each type showing both inactive and focused states. The filled text fields show a gray background and a darker gray activation indicator that is purple when focused. The outlined text fields show a clear background and an outline that is purple when focused">
+<img src="assets/text-field-generic.png" alt="Text field examples of both filled and outlined types, and each type showing both inactive and focused states.">
 
 ## Using text fields
 
@@ -47,7 +47,7 @@ import {MDCTextField} from '@material/textfield';
 const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
 ```
 
-> See [Importing the JS component](../../docs/importing-js.md) for more information on how to import JavaScript.
+**Note: See [Importing the JS component](../../docs/importing-js.md) for more information on how to import JavaScript.**
 
 ## Filled text
 
@@ -85,7 +85,7 @@ const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
 
 See [here](../mdc-notched-outline/) for more information on using the notched outline sub-component.
 
-> _NOTE_: Do not use `mdc-line-ripple` inside of `mdc-text-field` _if you plan on using `mdc-text-field--outlined`_. Line Ripple should not be included as part of the DOM structure of an outlined text field.
+**Note: Do not use `mdc-line-ripple` inside of `mdc-text-field` _if you plan on using `mdc-text-field--outlined`_. Line Ripple should not be included as part of the DOM structure of an outlined text field.**
 
 ## Other Variations
 
@@ -104,10 +104,10 @@ Full width text fields are useful for in-depth tasks or entering complex informa
 </label>
 ```
 
-> _NOTE_: Do not use `mdc-text-field--outlined` to style a full width text field.
+**Note: Do not use `mdc-text-field--outlined` to style a full width text field.**
 
-> _NOTE_: Do not use `mdc-floating-label` within `mdc-text-field--fullwidth`. Labels should not be
-included as part of the DOM structure of a full width text field.
+**Note: Do not use `mdc-floating-label` within `mdc-text-field--fullwidth`. Labels should not be
+included as part of the DOM structure of a full width text field.**
 
 ### Textarea
 
