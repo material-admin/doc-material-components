@@ -3,7 +3,7 @@ title: "Dialogs"
 layout: detail
 section: components
 excerpt: "Dialogs are modal windows that require interaction."
-iconId: dialog
+iconId:
 path: /catalog/dialogs/
 -->
 
@@ -14,9 +14,9 @@ path: /catalog/dialogs/
 There are four types of dialogs:
 
 1. [Alert](#alert-dialog)
-2. [Simple](#simple-dialog)
-3. [Confirmation](#confirmation-dialog)
-4. [Full-screen](#full-screen-dialog)
+1. [Simple](#simple-dialog)
+1. [Confirmation](#confirmation-dialog)
+1. [Full-screen](#full-screen-dialog)
 
 <br>
 
@@ -161,10 +161,10 @@ A dialog has a container, content (either supporting text or a set of items of a
 ![anatomy](assets/dialog-anatomy.png)
 
 1. Container
-2. Title (optional)
-3. Content
-4. Buttons (optional)
-5. Scrim
+1. Title (optional)
+1. Content
+1. Buttons (optional)
+1. Scrim
 
 #### Container attributes
 
