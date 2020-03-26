@@ -9,8 +9,6 @@ path: /catalog/dialogs/
 
 # Dialogs
 
-<!--* freshness: { owner: 'dniz' reviewed: '2020-03-26' } *-->
-
 [Dialogs](https://material.io/components/dialogs/) inform users about a task and can contain critical information, require decisions, or involve multiple tasks.
 
 There are four types of dialogs:
@@ -160,7 +158,7 @@ There is no specific Material implementation of a full-screen dialog. You can im
 
 A dialog has a container, content (either supporting text or a set of items of a particular type), a background scrim, and, optionally, title and buttons.
 
-![anatomy](assets/dialogs_anatomy.png)
+![anatomy](assets/dialog-anatomy.png)
 
 1. Container
 2. Title (optional)
