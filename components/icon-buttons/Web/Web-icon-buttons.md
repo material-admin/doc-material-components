@@ -14,7 +14,7 @@ api_doc_root:
 
 **Note**: For buttons with both icons and text, use the `mdc-button` component. For more information, see the `mdc-button` [docs](components/buttons).
 
-## Using Icon Buttons
+## Using icon buttons
 
 ### Installation
 
@@ -60,9 +60,9 @@ However, you can also use SVG, [Font Awesome](https://fontawesome.com/), or any 
 <button class="mdc-icon-button material-icons">favorite</button>
 ```
 
-> Note: The MDC Icon Button can be used with both `<button>` and `<a>` tags.
+**Note**: The MDC Icon Button can be used with both `<button>` and `<a>` tags.
 
-> Note: IE11 will not center the icon properly if there is a newline or space after the material icon text.
+**Note**: IE11 will not center the icon properly if there is a newline or space after the material icon text.
 
 ## Icon Button Toggle
 
