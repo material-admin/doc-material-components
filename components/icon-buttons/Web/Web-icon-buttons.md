@@ -8,227 +8,167 @@ path: /components/buttons
 api_doc_root:
 -->
 
-# Icon buttons
+# Icon Buttons
 
 [Icon buttons](https://material.io/components/buttons/) allow users to take actions, and make choices, with a single tap.
 
-**Note: for buttons with both icons and text, use the `mdc-button` component. For more information, go to the ['mdc-button' page](components/buttons)**
+**Note**: For buttons with both icons and text, use the `mdc-button` component. For more information, see the `mdc-button` [docs](components/buttons).
 
-## Using icon buttons
+## Using Icon Buttons
 
-Before you can use an icon button, you will need to first:
+### Installation
 
-* Install the Material icon button component
-* Import JavaScript
-
-### Install the Material icon button component
-
-**`mdc-icon-button`**
-```bash
+```
 npm install @material/icon-button
 ```
 
-### Import JavaScript
+### Styles
 
-You can optionally add a JavaScript ripple effect (see [MDC Ripple](https://github.com/material-components/material-components-web/blob/master/packages/mdc-ripple)) to your buttons by importing and then instantiating `MDCRipple` in your `*.js` file. See the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md) for more information.
+```scss
+@use "@material/icon-button/mdc-icon-button";
+```
 
-To bundle your `*.js` file, go to the [quickstart page](https://github.com/material-components/material-components-web/blob/master/docs/getting-started.md#quick-start-cdn).
+### JavaScript Instantiation
+
+The icon button will work without JavaScript, but you can enhance it to have a ripple effect by instantiating `MDCRipple` on the root element.
+See [MDC Ripple](../mdc-ripple) for details.
 
 ```js
 import {MDCRipple} from '@material/ripple';
 
-const iconButtonRipple = new MDCRipple(document.querySelector(`.mdc-icon-button`));
+const iconButtonRipple = new MDCRipple(document.querySelector('.mdc-icon-button'));
 iconButtonRipple.unbounded = true;
 ```
 
-### Making icon buttons accessible
+> See [Importing the JS component](../../docs/importing-js.md) for more information on how to import JavaScript.
 
-Material Design spec advises that touch targets should be at least 48 x 48 px.
-To meet this requirement, add the following to your button:
+### Icons
+
+We recommend using [Material Icons](https://material.io/tools/icons/) from Google Fonts:
 
 ```html
-<div class="mdc-touch-target-wrapper">
-  <button class="mdc-icon-button mdc-icon-button--touch">
-    <div class="mdc-icob-button__ripple"></div>
-    <span class="mdc-icon-button__label">My Accessible Icon Button</span>
-    <div class="mdc-icon-button__touch"></div>
-  </button>
-</div>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
 ```
 
-_**Note**: The outer `mdc-touch-target-wrapper` element is only necessary if you want to avoid potentially overlapping touch targets on adjacent elements (due to collapsing margins)._
+However, you can also use SVG, [Font Awesome](https://fontawesome.com/), or any other icon library you wish.
 
+## Icon Button
 
-## Toggle button
-
-
-[Toggle buttons](https://material.io/components/buttons/#toggle-button) can be used to select from a group of choices.
-
-There are two types of toggle buttons:
-
-* [Toggle button](#toggle-button)
-* [Icon](#icon)
-
-### Toggle button
-
-The Material.io framework for Web currently does not support toggle button groups, such as:
-
-<img src="toggle-bar.png" alt="toggle button group">
-
-If your application needs a toggle button group, you will need to use a different framework such as [Vuetify](https://vuetifyjs.com/en/components/button-groups#button-groups).
-
-### Icon
-
-Icons can be used as toggle buttons when they allow selection, or deselection, of a single choice, such as marking an item as a favorite.
-
-
-#### Toggle icon bar example with background images
-
-Source code API:
-
-* mdc-icon-button
-    * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-icon-button)
-    * [Demo site](https://glitch.com/edit/#!/join/8ef9db8e-e36f-4e03-ba14-39b1a8b69405)
-
-<img src="assets/web-toggle-icon-button.png" alt="4 images arranged in a 2 by 2 array, each image with a favorite icon in the upper-right corner" width="50%">
-To generate the example with background images of your choosing, you will need containers for your tiled images, and containers to resize your images. You may also need to change the icon color to ensure that the icon is visible on your image (see the `index.scss` file for the tiled container \[`container`\] and the image container \[`image-with-fav`\] and the icon button color \[`favve-button`\]).
-
-* In your `*.js` file,
-    1. Import `MDCIconButtonToggle`:
-        ```js
-        import {MDCIconButtonToggle} from '@material/icon-button';
-        ```
-    1. Instantiate the icon button toggle for each button:
-        ```js
-		const iconToggle0 = new MDCIconButtonToggle(document.querySelector('.btn1'));
-		iconToggle0.unbounded = true;
-
-		const iconToggle1 = new MDCIconButtonToggle(document.querySelector('.btn2'));
-		iconToggle1.unbounded = true;
-	```
-* In your `*.html` file, you can now add the iterations of the following, which shows containers with background images:
-    ```html
-    <div class="container">
-          <div class="image-with-fave">
-            <img src="https://cdn.glitch.com/4f0b2993-dd70-46bf-916f-a6e81af58957%2Fimage1.jpeg?v=1570131499813" />
-            <button
-              id="bookmark-0"
-              class="mdc-icon-button btn1 fave-button"
-              aria-label="Add to favorites"
-              aria-hidden="true"
-              aria-pressed="false"
-            >
-              <i
-                class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on"
-                >favorite</i
-              >
-              <i class="material-icons mdc-icon-button__icon">favorite_border</i>
-            </button>
-          </div>
-          <div class="image-with-fave">
-            <img
-          src="https://cdn.glitch.com/4f0b2993-dd70-46bf-916f-a6e81af58957%2Fimage2.jpeg?v=1570131499876" />
-            <button
-              id="bookmark-1"
-              class="mdc-icon-button btn2 fave-button"
-              aria-label="Add to favorites"
-              aria-hidden="true"
-              aria-pressed="false"
-            >
-              <i
-                class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on"
-                >favorite</i>
-              <i class="material-icons mdc-icon-button__icon">favorite_border</i>
-              </button>
-          </div>
-          ...
-        </div>
-    ```
-
-#### Anatomy and key properties
-
-The icon button consists of two icons for 'on' and 'off'.
-
-![Toggle button anatomy](assets/toggle_button_anatomy.png)
-
-1. Container
-1. Icon
-
-<b>Container attributes</b>
-<br>
-
-Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-Container ink color | Primary color | `mdc-button-ink-color($color)`
-
-<b>Icon attributes</b>
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-Icon | N/A |
-Icon color | Secondary color | ` mdc-button-icon-color($color)`|
-
-We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application.
-
-## Icon button theming example
-
-The following example shows an icon button with Shrine theming:
-
-![Icon button with Shrine theming](assets/.png)
-
-x
-### Theming with Sass variables
-
-Before importing any MDC Web modules, set `$mdc-theme-primary` and
-`mdc-theme-on-primary` in your Sass file:
-
-```scss
-$mdc-theme-primary: #FEDBD0;
-$mdc-theme-on-primary: #442C2E;
+```html
+<button class="mdc-icon-button material-icons">favorite</button>
 ```
 
-In this case we also want to customize the icon color:
+> Note: The MDC Icon Button can be used with both `<button>` and `<a>` tags.
 
-```scss
+> Note: IE11 will not center the icon properly if there is a newline or space after the material icon text.
 
+## Icon Button Toggle
+
+The icon button can be used to toggle between an on and off icon.
+
+To style an icon button as an icon button toggle, add
+both icons as child elements and place the `mdc-icon-button__icon--on` class on the icon that represents the on element.
+If the button should be initialized in the "on" state, then add the `mdc-icon-button--on` class to the parent `button`.
+
+```html
+<button id="add-to-favorites"
+   class="mdc-icon-button"
+   aria-label="Add to favorites"
+   aria-pressed="false">
+   <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">favorite</i>
+   <i class="material-icons mdc-icon-button__icon">favorite_border</i>
+</button>
 ```
 
-### Theming with CSS Custom Properties
+Then, instantiate an `MDCIconButtonToggle` on the root element.
 
-If you want to customize the theme for icon buttons without changing the theme
-across the app, you can also use CSS custom properties:
-
-```scss
+```js
+import {MDCIconButtonToggle} from '@material/icon-button';
+const iconToggle = new MDCIconButtonToggle(document.querySelector('.mdc-icon-button'));
 ```
 
-For a more information on theming in general, see
-[this page](../../docs/theming.md).
+### Icon Button Toggle with SVG
 
+The icon button toggle can be used with SVGs.
 
-## Style Customization
- 
+```html
+<button id="star-this-item"
+   class="mdc-icon-button mdc-icon-button--on"
+   aria-label="Unstar this item"
+   aria-pressed="true">
+   <svg class="mdc-icon-button__icon">
+     ...
+   </svg>
+   <svg class="mdc-icon-button__icon mdc-icon-button__icon--on">
+     ...
+  </svg>
+</button>
+```
+
+### Icon Button Toggle with an Image
+
+The icon button toggle can be used with `img` tags.
+
+```html
+<button id="star-this-item"
+   class="mdc-icon-button mdc-icon-button--on"
+   aria-label="Unstar this item"
+   aria-pressed="true">
+   <img src="" class="mdc-icon-button__icon"/>
+   <img src="" class="mdc-icon-button__icon mdc-icon-button__icon--on"/>
+</button>
+```
+
+## API
+
 ### CSS Classes
- 
+
 CSS Class | Description
 --- | ---
- | 
- 
+`mdc-icon-button` | Mandatory.
+`mdc-icon-button--on` | This class is applied to the root element and is used to indicate if the icon button toggle is in the "on" state.
+`mdc-icon-button__icon` | This class is applied to each icon element for the icon button toggle.
+`mdc-icon-button__icon--on` | This class is applied to a icon element and is used to indicate the toggle button icon that is represents the "on" icon.
+
 ### Sass Mixins
- 
-To customize a button's color and properties, you can use the following mixins.
- 
-#### Basic Sass Mixins
- 
-MDC Button uses [MDC Theme](../mdc-theme)'s `primary` color by default. Use the following mixins to customize it.
- 
+
+To customize an icon button's color and properties, you can use the following mixins.
+
 Mixin | Description
 --- | ---
- | 
- 
-#### Advanced Sass Mixins
- 
-These mixins will override the color of the container, ink, outline or ripple. It is up to you to ensure your icon button meets accessibility standards.
- 
-Mixin | Description
+`density($density-scale)` | Sets density scale for icon button. Supported density scales range from `-5` to `0`, (`0` being the default).
+`size($size)` | Sets the padding for the icon button based on overall size.
+`icon-size($width, $height, $padding)` | Sets the width, height, font-size and padding for the icon and ripple. `$height` is optional and defaults to `$width`. `$padding` is optional and defaults to `max($width, $height)/2`. `font-size` is set to `max($width, $height)`.
+`ink-color($color)` | Sets the font color and the ripple color to the provided color value.
+`disabled-ink-color($color)` | Sets the font color to the provided color value for a disabled icon button.
+
+### `MDCIconButtonToggle` Properties and Methods
+
+Property | Value Type | Description
+--- | --- | ---
+`on` | Boolean | Sets the toggle state to the provided `isOn` value.
+
+### Events
+
+Event Name | Event Data Structure | Description
+--- | --- | ---
+`MDCIconButtonToggle:change` | `{"detail": {"isOn": boolean}}` | Emits when the icon is toggled.
+
+### `MDCIconButtonToggleAdapter`
+
+Method Signature | Description
 --- | ---
- | 
+`addClass(className: string) => void` | Adds a class to the root element.
+`removeClass(className: string) => void` | Removes a class from the root element.
+`hasClass(className: string) => boolean` | Determines whether the root element has the given CSS class name.
+`setAttr(name: string, value: string) => void` | Sets the attribute `name` to `value` on the root element.
+`notifyChange(evtData: {isOn: boolean}) => void` | Broadcasts a change notification, passing along the `evtData` to the environment's event handling system. In our vanilla implementation, Custom Events are used for this.
+
+### `MDCIconButtonToggleFoundation`
+
+Method Signature | Description
+--- | ---
+`handleClick()` | Event handler triggered on the click event. It will toggle the icon from on/off and update aria attributes.
+
