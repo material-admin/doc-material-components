@@ -8,7 +8,7 @@ path: /components/buttons
 api_doc_root:
 -->
 
-# Icon Buttons
+# Icon buttons
 
 [Icon buttons](https://material.io/components/buttons/) allow users to take actions, and make choices, with a single tap.
 
@@ -28,7 +28,7 @@ npm install @material/icon-button
 @use "@material/icon-button/mdc-icon-button";
 ```
 
-### JavaScript Instantiation
+### JavaScript instantiation
 
 The icon button will work without JavaScript, but you can enhance it to have a ripple effect by instantiating `MDCRipple` on the root element.
 See [MDC Ripple](../mdc-ripple) for details.
@@ -40,7 +40,7 @@ const iconButtonRipple = new MDCRipple(document.querySelector('.mdc-icon-button'
 iconButtonRipple.unbounded = true;
 ```
 
-> See [Importing the JS component](../../docs/importing-js.md) for more information on how to import JavaScript.
+**Note**: See [Importing the JS component](../../docs/importing-js.md) for more information on how to import JavaScript.
 
 ### Icons
 
@@ -54,7 +54,7 @@ We recommend using [Material Icons](https://material.io/tools/icons/) from Googl
 
 However, you can also use SVG, [Font Awesome](https://fontawesome.com/), or any other icon library you wish.
 
-## Icon Button
+## Icon button
 
 ```html
 <button class="mdc-icon-button material-icons">favorite</button>
@@ -64,7 +64,7 @@ However, you can also use SVG, [Font Awesome](https://fontawesome.com/), or any 
 
 **Note**: IE11 will not center the icon properly if there is a newline or space after the material icon text.
 
-## Icon Button Toggle
+## Icon button toggle
 
 The icon button can be used to toggle between an on and off icon.
 
@@ -89,7 +89,7 @@ import {MDCIconButtonToggle} from '@material/icon-button';
 const iconToggle = new MDCIconButtonToggle(document.querySelector('.mdc-icon-button'));
 ```
 
-### Icon Button Toggle with SVG
+### Icon button toggle with SVG
 
 The icon button toggle can be used with SVGs.
 
@@ -107,7 +107,7 @@ The icon button toggle can be used with SVGs.
 </button>
 ```
 
-### Icon Button Toggle with an Image
+### Icon button toggle with an image
 
 The icon button toggle can be used with `img` tags.
 
@@ -123,7 +123,7 @@ The icon button toggle can be used with `img` tags.
 
 ## API
 
-### CSS Classes
+### CSS classes
 
 CSS Class | Description
 --- | ---
@@ -132,7 +132,7 @@ CSS Class | Description
 `mdc-icon-button__icon` | This class is applied to each icon element for the icon button toggle.
 `mdc-icon-button__icon--on` | This class is applied to a icon element and is used to indicate the toggle button icon that is represents the "on" icon.
 
-### Sass Mixins
+### Sass mixins
 
 To customize an icon button's color and properties, you can use the following mixins.
 
@@ -144,7 +144,7 @@ Mixin | Description
 `ink-color($color)` | Sets the font color and the ripple color to the provided color value.
 `disabled-ink-color($color)` | Sets the font color to the provided color value for a disabled icon button.
 
-### `MDCIconButtonToggle` Properties and Methods
+### `MDCIconButtonToggle` properties and methods
 
 Property | Value Type | Description
 --- | --- | ---
