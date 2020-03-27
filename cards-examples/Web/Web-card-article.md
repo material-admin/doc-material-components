@@ -42,7 +42,7 @@ include padding styles on the root element. When adding free-form text content t
 }
 ```
 
-> _NOTE_: MDC Card's predefined classes for content areas (e.g. `mdc-card__actions`) take care of their own padding.
+**Note**: MDC Card's predefined classes for content areas (e.g. `mdc-card__actions`) take care of their own padding.
 
 By default, cards expand horizontally to fill all available space, and vertically to fit their contents.
 If you'd like to maintain a consistent width and height across cards, you'll need to set it in your styles:
@@ -71,7 +71,7 @@ const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
 });
 ```
 
-> _NOTE_: If your card includes any [icon button toggles](../mdc-icon-button#icon-button-toggle), you will want to
+**Note**: If your card includes any [icon button toggles](../mdc-icon-button#icon-button-toggle), you will want to
 > instantiate `MDCIconButtonToggle` instead of `MDCRipple`.
 
 ## Card 
@@ -86,9 +86,9 @@ const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
 
 **Note**: MDC Card is designed to accommodate a wide variety of use cases. See the [Card Contents](#card-contents) section for information on helpers for specific types of content within cards.
 
-## Other Variants
+## Other variants
 
-### Outlined Card
+### Outlined card
 
 By default, cards are elevated with no outline. You can render unelevated outlined cards instead by adding the
 `mdc-card--outlined` modifier class.
@@ -99,11 +99,11 @@ By default, cards are elevated with no outline. You can render unelevated outlin
 </div>
 ```
 
-### Card Contents
+### Card contents
 
 MDC Card can be used for a wide variety of use cases, but it includes styles for a few common ones.
 
-#### Primary Action
+#### Primary action
 
 If a majority of the card (or even the entire card) should be actionable, you can add the `mdc-card__primary-action`
 class to the region to give it MDC Ripple styles. You should also assign `tabindex="0"` to ensure it can also be
@@ -118,7 +118,7 @@ interacted with via keyboard.
 </div>
 ```
 
-> _NOTE_: We recommend avoiding adding other actionable items within `mdc-card__primary-action`, due to the overlapping
+**Note**: We recommend avoiding adding other actionable items within `mdc-card__primary-action`, due to the overlapping
 > effect of multiple nested elements with ripple and states applied at once.
 
 #### Rich media
@@ -221,7 +221,7 @@ We recommend using [Material Icons](https://material.io/tools/icons/) from Googl
 
 However, you can also use SVG, [Font Awesome](https://fontawesome.com/), or any other icon library you wish.
 
-#### Combined Example
+#### Combined example
 
 The following is an example incorporating all of the above elements:
 
@@ -254,9 +254,9 @@ The following is an example incorporating all of the above elements:
 
 ## API
 
-## Style Customization
+## Style customization
 
-### CSS Classes
+### CSS classes
 
 CSS Class | Description
 --- | ---
@@ -275,7 +275,7 @@ CSS Class | Description
 `mdc-card__action--button` | Optional. An action button with text.
 `mdc-card__action--icon` | Optional. An action icon with no text. We recommend using [Material Icons](https://material.io/tools/icons/) from Google Fonts.
 
-### Sass Mixins
+### Sass mixins
 
 Mixin | Description
 --- | ---
