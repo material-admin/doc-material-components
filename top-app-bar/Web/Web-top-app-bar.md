@@ -9,10 +9,6 @@ path: /
 api_doc_root:
 -->
 
-**Instructions to authors:**
-* _Follow the instructions in each section &ndash; see the [accompanying examples](button-examples) for futher guidance._
-* _Delete these instructions before submitting your document_
-
 # Top app bar
 
 The [top app bar](https://material.io/components/app-bars-top/#) displays information and actions relating to the current screen.
