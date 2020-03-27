@@ -10,25 +10,13 @@ path: /
 api_doc_root:
 -->
 
-_**Instructions**_
-* [Using cards](#using-cards)
-    * Add a link under [Using cards](#using-cards) to your getting started page if you have one
-    * Insert [installation](#installation) and [theming](#theming) as appropriate for your platform
-    * Insert any additional instructions that apply to your platform with a separte level 3 header
-    * If you have no getting started links or instructions, delete the [Using cards](#using-cards) sections
-* [Elevated](#elevated-card) ane [Outlined](#outlined-card) sections
-    * Add links to your platform 
-
-
-
 # Cards
 
 [Cards](https://material.io/components/cards/) contain content and actions about a single subject.
 
-For additional information, go to the [`mdc-card` API](#mdc-card-api).
+For additional information, see the [`mdc-card` API](#api).
 
-![Elevated card wtih a secondary title and two actions: Action 1 and Action 2 in purple](assets/generic-card-type-elevated.png) 
-
+![Elevated card with a secondary title and two actions: Action 1 and Action 2 in purple](assets/generic-card-type-elevated.png) 
 
 ## Using cards
 Before you can use a cards, you will need to install and import the following:
