@@ -14,9 +14,11 @@ api_doc_root:
 
 [Cards](https://material.io/components/cards/) contain content and actions about a single subject.
 
+
 For additional information, see the [API](#api).
 
 ![Elevated card wtih a secondary title and two actions: Action 1 and Action 2 in purple](assets/generic-card-type-elevated.png) 
+
 
 ## Using cards
 
