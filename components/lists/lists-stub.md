@@ -25,7 +25,7 @@ There are three list types:
 
 The following anatomy diagram applies to all three list types:
 
-![List anatomy diagram showing list, row, and list item content](/assets/lists-content-anatomy.png)
+![List anatomy diagram showing list, row, and list item content](/assets/lists-anatomy.png)
 
 The following anatomy diagrams apply  to the list item content:
 
