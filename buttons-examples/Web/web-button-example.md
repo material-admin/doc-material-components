@@ -25,26 +25,24 @@ There are four types of buttons:
 
 ## Using buttons
 
-Before you can use a button, you will need to first:
 
-* Install the Material button component
-* Import JavaScript
+### Installation
 
-### Install the Material button component
 
-Install the `mdc-button` component before including it in your source.
-
-**`mdc-button`**
-```bash
+```
 npm install @material/button
 ```
 
+### Styles
 
-### Import JavaScript ripple effect
+```scss
+@use "@material/button/mdc-button";
+```
 
-You can optionally add a JavaScript ripple effect (see [MDC Ripple](https://github.com/material-components/material-components-web/blob/master/packages/mdc-ripple)) to your buttons by importing and then instantiating `MDCRipple` in your `*.js` file. For more information, see the page on importing the [JavaScript component](https://github.com/material-components/material-components-web/blob/master/docs/importing-js.md).
+### JavaScript Instantiation
 
-To bundle your `*.js` file, go to the [quickstart page](https://github.com/material-components/material-components-web/blob/master/docs/getting-started.md#quick-start-cdn).
+
+The button will work without JavaScript, but you can enhance it to have a ripple effect by instantiating `MDCRipple` on the root element. See [MDC Ripple](../mdc-ripple) for details.
 
 
 ```js
@@ -54,39 +52,8 @@ const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'));
 ```
 
 
-### Add an icon to `mdc-button`
+**Note: See [Importing the JS component](../../docs/importing-js.md) for more information on how to import JavaScript.**
 
-
-Add an icon to your `mdc-button` instance as follows:
-
-1. In your HTML file, reference the icon font library you would like to use (we recommend the [Material Icons](https://material.io/tools/icons/) from Google Fonts):
-    ```HTML
-    <head>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    </head>
-    ```
-1. Include the `mdc-button__icon` class inside your button element. Set the attribute `aria-hidden="true"`.
-    **Note**: The location of the icon element determines if the icon comes before (*leading*) or after (*trailing icon*) the button label.
-
-    **Example using [Material Icons](https://material.io/tools/icons/)**
-    ```HTML
-    <button class="mdc-button">
-      <div class="mdc-button__ripple"></div>
-      <i class="material-icons mdc-button__icon" aria-hidden="true">favorite</i>
-      <span class="mdc-button__label">Button</span>
-    </button>
-    ```
-
-    **Example using SVG Icons**
-    ```html
-    <button class="mdc-button">
-      <div class="mdc-button__ripple"></div>
-      <svg class="mdc-button__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="...">
-      ...
-      </svg>
-      <span class="mdc-button__label">Button</span>
-    </button>
-    ```
 
 ### Making buttons accessible
 
@@ -102,20 +69,13 @@ To meet this requirement, add the following to your button:
   </button>
 </div>
 ```
-
-_**Note**: The outer `mdc-touch-target-wrapper` element is only necessary if you want to avoid potentially overlapping touch targets on adjacent elements (due to collapsing margins)._
+**Note: The outer `mdc-touch-target-wrapper` element is only necessary if you want to avoid potentially overlapping touch targets on adjacent elements (due to collapsing margins).**
 
 ## Text button
 
 [Text buttons](https://material.io/components/buttons/#text-button) are typically used for less-pronounced actions, including those located in dialogs and cards. In cards, text buttons help maintain an emphasis on card content.
 
 ### Text button example
-
-Source code API:
-
-* `mdc-button`
-    * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
-    * [Demo site](https://glitch.com/~shadow-jobaria)
 
 <img src="assets/web-text-button.png" alt="Text button example">
 
@@ -141,54 +101,12 @@ Source code API:
 
 ```
 
-### Anatomy and key properties
-
-A text button has a text label, a transparent container and an optional icon.
-
-![Text button anatomy diagram](assets/text_button_anatomy.png)
-
-1. Text label
-1. Container
-1. Icon
-
-<b>Text label attributes</b>
-<br>
-
-Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-Text label | N/A |  N/A
-Text color | Primary color |
-Typography | Default |
-
-
-<b>Container attributes</b>
-<br>
-
-Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-Container ink color | Primary color | `mdc-button-ink-color($color)`
-
-<b>Icon attributes</b>
-<br>
-
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
- Icon | N/A |
- Icon color | Primary color | ` mdc-button-icon-color($color)`
-
 
 ## Outlined button
 
 [Outlined buttons](https://material.io/components/buttons/#outlined-button) are medium-emphasis buttons. They contain actions that are important, but aren’t the primary action in an app.
 
 ### Outlined button example
-
-Source code API:
-
-* `mdc-button`
-    * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
-    * [Demo site](https://glitch.com/~shadow-jobaria):
 
 <img src="assets/web-outlined-button.png" alt="Outlined button example">
 
@@ -201,7 +119,6 @@ Source code API:
 
 <b>Outlined button with icon example</b>
 
-
 <img src="assets/web-outlined-icon-button.png" alt="Outlined button with bookmark icon">
 
 ```html
@@ -212,58 +129,12 @@ Source code API:
 </button>
 ```
 
-### Anatomy and key properties
-
-An outline button has text, a container, and an optional icon.
-
-
-![Outlined button anatomy diagram](assets/outlined_button_anatomy.png)
-
-1. Text label
-1. Container
-1. Icon
-
-
-<b>Text label attributes</b>
-
-Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-Text label | N/A |  N/A
-Text color | Primary color |
-Typography | Default |
-
-<b>Container attributes</b>
-
-Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-Container ink color | Primary color | `mdc-button-ink-color($color)`
-Container shape radius | Default | `mdc-button-shape-radius($radius, $rtl-reflexive)`
-Container outline color | Secondary color | `mdc-button-outline-color($color)`
-Container outline width | | `mdc-button-outline-width($width, $padding)`
-Container horizontal padding | | `mdc-button-horizontal-padding($padding)`
-
-<b>Icon attributes</b>
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
- Icon | N/A |
-Icon color | Primary color | ` mdc-button-icon-color($color)`
-
-We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [Outlined button API doc]()
-
 
 ## Contained button
 
 [Contained buttons](https://material.io/components/buttons/#contained-button) are high-emphasis, distinguished by their use of elevation and fill. They contain actions that are primary to your app.
 
 #### Contained button example
-
-Source code API:
-
-* mdc-button
-    * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-button)
-    * [Demo site](https://glitch.com/~shadow-jobaria)
-
 
 <img src="assets/web-contained-button.png" alt="Contained button example">
 
@@ -274,8 +145,6 @@ Source code API:
 ```
 
 <b>Contained button with icon example</b>
-
-Source code API:
 
 <img src="assets/web-contained-icon-button.png" alt="Contained button with a bookmark icon">
 
@@ -289,45 +158,92 @@ Source code API:
 </button>
 ```
 
-### Anatomy and key attributes
+## Toggle button
 
-A contained button has text, a container, and an optional icon.
+[Toggle buttons](https://material.io/components/buttons/#toggle-button) can be used to select from a group of choices.
 
-[Contained button anatomy diagram](assets/contained_button_anatomy.png)
+There are two types of toggle buttons:
 
-1. Text label
-1. Container
-1. Icon
-
-<b>Text label attributes</b>
-
-Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-Text label | N/A |  N/A
-Text color | Secondary color |
-Typography | Default |
-
-<b>Container attributes</b>
-
-Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-Container fill color| Primary color | ` mdc-button-container-fill-color($color)`
-Container ink color | Primary color | `mdc-button-ink-color($color)`
-Container shape radius | Default | `mdc-button-shape-radius($radius, $rtl-reflexive)`
-Container outline color | Secondary color | `mdc-button-outline-color($color)`
-Container outline width | | `mdc-button-outline-width($width, $padding)`
-Container horizontal padding | | `mdc-button-horizontal-padding($padding)`
+* [Toggle button](#toggle-button)
+* [Icon](#icon)
 
 
-<b>Icon attributes</b>
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-Icon | N/A |
-Icon color | Secondary color | ` mdc-button-icon-color($color)`
+<img src="toggle-bar.png" alt="toggle button group">
 
 
-We recommend using [Material Theming](https://material.io/components/buttons/#theming) to apply your customizations across your application. For a full list of component properties, go to the [contained button API doc]()
+MDC Web currently does not support toggle button groups.
+
+### Icon
+
+
+Icons can be used as toggle buttons when they allow selection, or deselection, of a single choice, such as marking an item as a favorite.
+
+
+For more details, see the <TODO: Add link to icon-button docs>
+
+## Other Variants
+
+### Icon
+
+We recommend using [Material Icons](https://material.io/tools/icons/) from Google Fonts:
+
+```html
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+```
+
+
+However, you can also use SVG, [Font Awesome](https://fontawesome.com/), or any other icon library you wish.
+
+To add an icon, add an element with the `mdc-button__icon` class inside the button element and set the attribute `aria-hidden="true"`. The icon is set to 18px to meet legibility requirements.
+
+```html
+<button class="mdc-button">
+  <div class="mdc-button__ripple"></div>
+  <i class="material-icons mdc-button__icon" aria-hidden="true">favorite</i>
+  <span class="mdc-button__label">Button</span>
+</button>
+```
+
+It's also possible to use an SVG icon:
+
+```html
+<button class="mdc-button">
+  <div class="mdc-button__ripple"></div>
+  <svg class="mdc-button__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="...">
+  ...
+  </svg>
+  <span class="mdc-button__label">Button</span>
+</button>
+```
+
+#### Trailing Icon
+
+Certain icons make more sense to appear after the button's text label rather than before. This can be accomplished by
+putting the icon markup _after_ the `mdc-button__label` element.
+
+```html
+<button class="mdc-button">
+  <div class="mdc-button__ripple"></div>
+  <span class="mdc-button__label">Button</span>
+  <i class="material-icons mdc-button__icon" aria-hidden="true">favorite</i>
+</button>
+```
+
+> _NOTE_: The `mdc-button__label` element is _required_ in order for the trailing icon to be styled appropriately.
+
+### Disabled
+
+To disable a button, add the `disabled` attribute directly to the `<button>`, or set the `disabled` attribute on the `<fieldset>` containing the button.
+Disabled buttons cannot be interacted with and have no visual interaction effect.
+
+```html
+<button class="mdc-button" disabled>
+  <div class="mdc-button__ripple"></div>
+  <span class="mdc-button__label">Button</span>
+</button>
+```
 
 
 ## Button theming example
@@ -381,7 +297,7 @@ For a more information on theming in general, see
 [this page](../../docs/theming.md).
 
  
-## Style Customization
+## API
  
 ### CSS Classes
  
