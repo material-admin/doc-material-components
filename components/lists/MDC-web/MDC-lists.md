@@ -20,7 +20,12 @@ There are three list types:
 
 ## Using lists
 
-### Making lists accessible
+### Installation
+
+### Styles
+
+### JavaScript
+
 
 ## List anatomy
 
@@ -56,27 +61,9 @@ Single-line list items contain a maximum of one line of text.
 **Note to developers**
 Provide a single-line list example screenshot and example code with the following:
 * List item titles for 3+ list items, starting with "List item 1"
-* 	
+* Each item should have a 'label' icon as its supporting visual
+* Each item shoud have metadata numbering from '01' to '0n'
 
-### Single-line list key properties
-
-
-#### List properties
-
-#### Row properties
-
-#### List item content
-
-The following are tables of the list item contents:
-
-
-##### Supporting visuals
-
-##### Primary text
-
-##### Metadata
-
-##### Controls
 
 
 
@@ -89,18 +76,12 @@ Two-line list items contain a maximum of two lines of text.
 
 
 **Note to developers**
-### Two-line list key properties
+Provide a two-line list example screenshot and example code with the following:
+* List item titles for 3+ list items, starting with "List item 1"
+* Each list item should have a secondary text line that reads 'Secondary text'
+* Each item should have a 'label' icon as its supporting visual
+* Each item shoud have a radio control
 
-The following are tables of the list item contents:
-
-
-##### Supporting visuals
-
-##### Primary text
-
-##### Metadata
-
-##### Controls
 
 
 
@@ -111,21 +92,13 @@ Three-line list items contains a maximum of three lines of text.
 
 ### Three-line list example
 
-
 **Note to developers**
-
-### Three-line list key properties
-
-The following are tables of the list item contents:
-
-
-##### Supporting visuals
-
-##### Primary text
-
-##### Metadata
-
-##### Controls
+Provide a three-line list example screenshot and example code with the following:
+* List item titles for 3+ list items, starting with "List item 1"
+* Each list item should have a secondary text line that reads 'Secondary text'
+* Each list item should have a tertiary text line that reads 'Tertiary text'
+* Each item should have a 'label' icon as its supporting visual
+* Each item shoud have a checkbox
 
 
 ### Theming lists
@@ -135,5 +108,12 @@ customized in terms of color, typography and shape.
 
 
 **Note to developers**
-Provide a example list using Shrine theming with the following properties:
-* 
+Provide a screenshot and code for an example list using Shrine theming with the following properties:
+
+* A three-line list example
+* List item titles for 3+ list items, starting with "List item 1"
+* Each list item should have a secondary text line that reads 'Secondary text'
+* Each list item should have a tertiary text line that reads 'Tertiary text'
+* Each item should have a 'label' icon as its supporting visual
+* Each item shoud have a checkbox
+

@@ -21,10 +21,10 @@ There are four types of dialogs:
 
 <br>
 
-1. <img src="assets/alert-dialog.png" alt="Alert dialog: discard" width=50%>
-1. <img src="assets/simple-dialog.png" alt="Simple dialog: selection" width=50%>
-1. <img src="assets/confirmation-dialog.png" alt="Confirmation dialog: selection confirmation" width=50%>
-1. <img src="assets/full-screen-dialog.png" alt="Full-screen dialog: event" width=50%>
+<img src="assets/alert-dialog.png" alt="Alert dialog: discard" width=250px>
+<img src="assets/simple-dialog.png" alt="Simple dialog: selection" width=250px>
+<img src="assets/confirmation-dialog.png" alt="Confirmation dialog: selection confirmation" width=250px>
+<img src="assets/full-screen-dialog.png" alt="Full-screen dialog: event" width=250px>
 
 ## Using dialogs
 
@@ -35,38 +35,37 @@ Dialogs are purposefully interruptive, so they should be used sparingly.
 
 For additional guidance, refer to the [Material guidelines](https://material.io/go/design-dialogs)
 
-### Installing dialogs
+### Installation
 
-Before you can use dialogs, you will need to install and import the following:
-
-* Install the Material dialog component
-* Import JavaScript
-
-### Install the Material dialog component
-
-Install the `mdc-dialog` component before including it in your source.
-
-
-**`mdc-dialog`**
-```bash
+```
 npm install @material/dialog
 ```
 
-### Import JavaScript
 
+### Styles
+
+```scss
+@use "@material/dialog/mdc-dialog";
+```
+
+**Note**: Styles for any components you intend to include within dialogs (e.g. List, Checkboxes, etc.) must also be imported.
+
+### JavaScript Instantiation
 
 ```js
 import {MDCDialog} from '@material/dialog';
 const dialog = new MDCDialog(document.querySelector('.mdc-dialog'));
 ```
 
-See [Importing the JS component](../../docs/importing-js.md) for more information on how to import JavaScript.
 
-MDC Dialog makes no assumptions about what will be added to the `mdc-dialog__content` element. Any List, Checkboxes,
-etc. must also be instantiated. If your dialog contains any layout-sensitive components, you should wait until the dialog is open (`MDCDialog:opened`) before instantiating them (or call `layout` on them) so that the dialog's transition finishes
+**Note**: See [Importing the JS component](../../docs/importing-js.md) for more information on how to import JavaScript.
+
+MDC Dialog makes no assumptions about what will be added to the `mdc-dialog__content` element. Any list, checkboxes,
+etc. must also be instantiated. If your dialog contains any layout-sensitive components, you should wait until
+`MDCDialog:opened` is emitted to instantiate them (or call `layout` on them) so that the dialog's transition finishes
 first.
 
-For example, to instantiate an MDC List inside of a Simple or Confirmation Dialog in your JavaScript file:
+For example, to instantiate an MDC List inside of a simple or confirmation dialog:
 
 ```js
 import {MDCList} from '@material/list';
@@ -77,7 +76,12 @@ dialog.listen('MDCDialog:opened', () => {
 });
 ```
 
+**Note**: Mispositioned or incorrectly-sized elements (e.g. ripples, floating labels, notched outlines) are a strong
+indication that child components are being instantiated before the dialog has finished opening.
+
 ### Making dialogs accessible
+
+##### Using `aria-hidden` as a fallback for `aria-modal`
 
 `aria-modal` is part of the ARIA 1.1 specification, and indicates to screen readers that they should confine themselves to a single element. We recommend adding `aria-modal="true"` to the root element of its DOM structure.
 
@@ -97,78 +101,40 @@ dialog.listen('MDCDialog:closing', function() {
 
 **Note:** The example above intentionally listens to the opened (not opening) event and the closing (not closed) event in order to avoid additional jumping between elements by screen readers due to one element becoming hidden before others become visible.
 
-__**Note to developers: What types of dialogs are actually supported in Web?**__
-
-### Sass mixins
-
-Use Sass mixins when you want to customize the look and feel of your dialogs. Go to [sass-lang.com](https://sass-lang.com/install) for installation instructions.
-
-Go to the bottom of this document for a [theming example](#dialog-theming-example) using Sass mixins.
-
-The following mixins are available to customize your `mdc-dialog` instance.
-
-Mixin | Description
----|---
-`container-fill-color($color)` | Sets the container fill color to the given color.
-`icon-color($color)` | Sets the icon color to the given color.
-`ink-color($color)` | Sets the ink color to the given color, and sets the icon color to the given color unless `icon-color` is also used.
-`shape-radius($radius, $rtl-reflexive)` | Sets rounded shape to dialog with given radius size. Set `$rtl-reflexive` to true to flip radius values in RTL context, defaults to false.
-`horizontal-padding($padding)` | Sets horizontal padding to the given number.
-`outline-color($color)` | Sets the outline color to the given color.
-`outline-width($width, $padding)` | Sets the outline width to the given number (defaults to 2px) and adjusts padding accordingly. `$padding` is only required in cases where `horizontal-padding` is also included with a custom value.
-
-
 ## Alert dialog
 
 Alert dialogs interrupt users with urgent information, details, or actions.
 
 ### Alert dialog example
 
-* `mdc-dialog`
-  * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-dialog)
 
 
-### Alert dialog anatomy and key properties
-
-The alert dialog contains the following:
-
-![alert dialog anatomy diagram](assets/dialog-anatomy.png)
-
-1. Container
-1. Title (optional)
-1. Supporting text
-1. Buttons
-1. Scrim
-
-**Container**
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-| |
-
-**Title (optional)**
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-| |
-
-**Supporting text**
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-| |
-
-**Buttons**
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-| |
-
-**Scrim**
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-
+```html
+<div class="mdc-dialog">
+  <div class="mdc-dialog__container">
+    <div class="mdc-dialog__surface"
+      role="alertdialog"
+      aria-modal="true"
+      aria-labelledby="my-dialog-title"
+      aria-describedby="my-dialog-content">
+      <div class="mdc-dialog__content" id="my-dialog-content">
+        Discard draft?
+      </div>
+      <footer class="mdc-dialog__actions">
+        <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="cancel">
+          <div class="mdc-button__ripple"></div>
+          <span class="mdc-button__label">Cancel</span>
+        </button>
+        <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="discard">
+          <div class="mdc-button__ripple"></div>
+          <span class="mdc-button__label">Discard</span>
+        </button>
+      </footer>
+    </div>
+  </div>
+  <div class="mdc-dialog__scrim"></div>
+</div>
+```
 
 ## Simple dialog
 
@@ -178,68 +144,36 @@ As simple dialogs are interruptive, they should be used sparingly. Alternatively
 
 ### Simple dialog example
 
-* `mdc-dialog`
-  * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-dialog)
+```html
+<div class="mdc-dialog">
+  <div class="mdc-dialog__container">
+    <div class="mdc-dialog__surface"
+      role="alertdialog"
+      aria-modal="true"
+      aria-labelledby="my-dialog-title"
+      aria-describedby="my-dialog-content">
+      <!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
+      <h2 class="mdc-dialog__title" id="my-dialog-title"><!--
+     -->Choose a Ringtone<!--
+   --></h2>
+      <div class="mdc-dialog__content" id="my-dialog-content">
+        <ul class="mdc-list mdc-list--avatar-list">
+          <li class="mdc-list-item" tabindex="0" data-mdc-dialog-action="none">
+            <span class="mdc-list-item__text">None</span>
+          </li>
+          <li class="mdc-list-item" data-mdc-dialog-action="callisto">
+            <span class="mdc-list-item__text">Callisto</span>
+          </li>
+          <!-- ... -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="mdc-dialog__scrim"></div>
+</div>
+```
 
-__**Note to developers: provide an example and screenshot of a simple dialog with the following features:**__
-
-* Title reading "Simple dialog text"
-* Two buttons reading "Action 1" and "Action 2"
-* A list of radio buttons and choices reading "Choice 1", "Choice 2", "Choice 3" ... up to "Choice 5"
-* Scrim of your choice
-
-
-### Simple dialog anatomy and key properties
-
-A simple dialog contains the following:
-
-
-![simple dialog anatomy diagram](assets/Dialogs_SimpleDIalog_anatomy.png)
-
-1. Container
-1. Title 
-1. List item
-    1. Supporting visual
-    1. Primary text
-1. Button
-1. Scrim
-
-**Container**
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-| |
-
-**Title**
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-| |
-
-
-**List item supporting visual**
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-| |
-
-**List item primary text**
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-| |
-**Button**
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-| |
-**Scrim**
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-| |
-
-
+**Note**: Note the inclusion of the `mdc-list--avatar-list` class, which aligns with the Simple Dialog spec.
 
 ## Confirmation dialog
 
@@ -249,128 +183,143 @@ If the user confirms a choice, it’s carried out. Otherwise, the user can dismi
 
 ### Confirmation dialog example
 
-* `mdc-dialog`
-  * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-dialog)
 
+```html
+<div class="mdc-dialog">
+  <div class="mdc-dialog__container">
+    <div class="mdc-dialog__surface"
+      role="alertdialog"
+      aria-modal="true"
+      aria-labelledby="my-dialog-title"
+      aria-describedby="my-dialog-content">
+      <!-- Title cannot contain leading whitespace due to mdc-typography-baseline-top() -->
+      <h2 class="mdc-dialog__title" id="my-dialog-title"><!--
+     -->Choose a Ringtone<!--
+   --></h2>
+      <div class="mdc-dialog__content" id="my-dialog-content">
+        <ul class="mdc-list">
+          <li class="mdc-list-item" tabindex="0">
+            <span class="mdc-list-item__graphic">
+              <div class="mdc-radio">
+                <input class="mdc-radio__native-control"
+                       type="radio"
+                       id="test-dialog-baseline-confirmation-radio-1"
+                       name="test-dialog-baseline-confirmation-radio-group"
+                       checked>
+                <div class="mdc-radio__background">
+                  <div class="mdc-radio__outer-circle"></div>
+                  <div class="mdc-radio__inner-circle"></div>
+                </div>
+              </div>
+            </span>
+            <label id="test-dialog-baseline-confirmation-radio-1-label"
+                   for="test-dialog-baseline-confirmation-radio-1"
+                   class="mdc-list-item__text">None</label>
+          </li>
+          <!-- ... -->
+        </ul>
+      </div>
+      <footer class="mdc-dialog__actions">
+        <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="close">
+          <div class="mdc-button__ripple"></div>
+          <span class="mdc-button__label">Cancel</span>
+        </button>
+        <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="accept">
+          <div class="mdc-button__ripple"></div>
+          <span class="mdc-button__label">OK</span>
+        </button>
+      </footer>
+    </div>
+  </div>
+  <div class="mdc-dialog__scrim"></div>
+</div>
+```
 
-### Confirmation dialog anatomy and key properties
-
-A confirmation dialog contains the following:
-![confirmation dialog anatomy diagram](assets/Dialogs_Confirmation_anatomy.png)
-
-
-1. Container
-1. Title
-1. List item
-    1. List control
-    1. Primary text
-1. Buttons
-1. Scrim
-
-**Container**
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-| |
-
-**Title**
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-| |
-
-**List item List control**
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-| |
-
-**List item primary text**
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-| |
-
-**Buttons**
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-| |
-
-**Scrim**
-
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-| |
-
+**Note**: In the example above, the Cancel button intentionally has the `close` action to align with the behavior of
+clicking the scrim or pressing the Escape key, allowing all interactions involving dismissal without taking an action
+to be detected the same way.
 
 ## Full-screen dialog
 
 Full-screen dialogs group a series of tasks, such as creating a calendar entry with the event title, date, location, and time. Because they take up the entire screen, full-screen dialogs are the only dialogs over which other dialogs can appear.dia
 
-### Full-screen dialog example
+MDC Web does not yet support full-screen dialogs.
 
-* `mdc-dialog`
-  * [GitHub source](https://github.com/material-components/material-components-web/tree/master/packages/mdc-dialog)
+## Additional Information
 
+### Dialog actions
 
-### Full-screen dialog anatomy and key properties
+All dialog variants support the concept of dialog actions. Any element within a dialog may include the
+`data-mdc-dialog-action` attribute to indicate that interacting with it should close the dialog with the specified action.
+This action is then reflected via `event.detail.action` in the `MDCDialog:closing` and `MDCDialog:closed` events.
 
-The full-screen dialog contains the following properties:
+Additionally, two interactions have defined actions by default:
 
-![full-screen dialog anatomy](assets/Dialogs_FullScreen_anatomy_no-container.png)
+* Clicking on the scrim
+* Pressing the Escape key within the dialog
 
-1. Title
-1. Icon button
-1. Button
-1. Scrim
+Both of these map to the `close` action by default. This can be accessed and customized via the component's
+`scrimClickAction` and `escapeKeyAction` properties, respectively.
 
-**Container**
+Setting either of these properties to an empty string will result in that interaction being disabled (i.e. the dialog
+will no longer close in response to the interaction). Exercise caution when doing this - it should always be possible
+for a user to dismiss the dialog.
 
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-| |
+Any action buttons within the dialog which equate strictly to a dismissal with no further action should also use the
+`close` action; this will make it easy to handle all such interactions consistently, while separately handling other
+actions.
 
-**Icon button**
+### Action button arrangement
 
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-| |
+As indicated in the [Dialog design article](https://material.io/design/components/dialogs.html#anatomy), buttons within
+the `mdc-dialog__actions` element are arranged horizontally by default, with the confirming action _last_.
 
-**Button**
+In cases where the button text is too long for all buttons to fit on a single line, the buttons are stacked vertically,
+with the confirming action _first_.
 
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-| |
+MDC Dialog detects and handles this automatically by default, reversing the buttons when applying the stacked layout.
+This automatic behavior can be disabled by setting `autoStackButtons` to `false` on the component instance:
 
-**Scrim**
+```js
+dialog.autoStackButtons = false;
+```
 
- Design Attribute | Theme value | Equivalent Sass mixin attribute
----|---|---
-| |
+This will also be disabled if the `mdc-dialog--stacked` modifier class is applied manually to the root element before the
+component is instantiated, but note that dialog action button labels are recommended to be short enough to fit on a
+single line if possible.
 
+### Default action button
 
-## Dialog theming
+MDC Dialog supports indicating that one of its action buttons represents the default action, triggered by pressing the
+Enter key. This can be used e.g. for single-choice Confirmation Dialogs to accelerate the process of making a selection,
+avoiding the need to tab through to the appropriate button to confirm the choice.
 
-### Dialog theming example
+To indicate that a button represents the default action, add the `data-mdc-dialog-button-default` data attribute.
+For example:
+```html
+...
+<footer class="mdc-dialog__actions">
+  <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="close">
+    <div class="mdc-button__ripple"></div>
+    <span class="mdc-button__label">Cancel</span>
+  </button>
+  <button type="button" class="mdc-button mdc-dialog__button" data-mdc-dialog-action="accept" data-mdc-dialog-button-default>
+    <div class="mdc-button__ripple"></div>
+    <span class="mdc-button__label">OK</span>
+  </button>
+</footer>
+...
+```
 
+### Actions and selections
 
-__**Note to developers** Provide an example with the following features using the [Shrine theme](https://material.io/design/material-studies/shrine.html#about-shrine)__
-* Create a simple dialog
-* Add a title "Title"
-* Add 3 radio buttons with the following options:
-  * "option 1"
-  * "option 2"
-  * "option 3"
-* Add two text buttons to the bottom:
-  * "Action 1"
-  * "Action 2"
-* Use the [Cards](https://github.com/mingjane-work/doc-material-components/blob/mingjane-doc-branch/cards-examples/Web/assets/cards_theming.png) themed image as the scrim (incomplete as of 2020-03-03)
+Dialogs which require making a choice via selection controls should initially disable any button which performs an
+action if no choice is selected by default. MDC Dialog does not include built-in logic for this, since it aims to remain
+as unopinionated as possible regarding dialog contents, aside from relaying information on which action is taken.
 
+## Style customizations
 
-## `mdc-dialog` APIs and customizations
-
-### CSS Classes
+### CSS classes
 
 CSS Class | Description
 --- | ---
@@ -388,7 +337,7 @@ CSS Class | Description
 `mdc-dialog--scrollable` | Optional. Applied automatically when the dialog has overflowing content to warrant scrolling.
 `mdc-dialog--stacked` | Optional. Applied automatically when the dialog's action buttons can't fit on a single line and must be stacked.
 
-### Sass Mixins
+### Sass mixins
 
 Mixin | Description
 --- | ---
@@ -404,13 +353,14 @@ Mixin | Description
 
 > *NOTE*: The `max-width` and `max-height` mixins only apply their maximum when the viewport is large enough to accommodate the specified value when accounting for the specified margin on either side. When the viewport is smaller, the dialog is sized such that the given margin is retained around the edges.
 
-## Other Customizations
+## Other customizations
+
 Data Attributes | Description
 --- | ---
 `data-mdc-dialog-button-default` | Optional. Add to a button to indicate that it is the default action button (see Default Action Button section above).
 `data-mdc-dialog-initial-focus` | Optional. Add to an element to indicate that it is the element to initially focus on after the dialog has opened.
 
-## `MDCDialog` Properties and Methods
+## `MDCDialog` properties and methods
 
 Property | Value Type | Description
 --- | --- | ---
@@ -434,7 +384,7 @@ Event Name | `event.detail` | Description
 `MDCDialog:closing` | `{action: string?}` | Indicates when the dialog begins its closing animation. `action` represents the action which closed the dialog.
 `MDCDialog:closed` | `{action: string?}` | Indicates when the dialog finishes its closing animation. `action` represents the action which closed the dialog.
 
-## Usage within Web Frameworks
+## Usage within web frameworks
 
 If you are using a JavaScript framework, such as React or Angular, you can create a Dialog for your framework. Depending on your needs, you can use the _Simple Approach: Wrapping MDC Web Vanilla Components_, or the _Advanced Approach: Using Foundations and Adapters_. Please follow the instructions [here](../../docs/integrating-into-frameworks.md).
 
@@ -479,7 +429,7 @@ Method Signature | Description
 `handleKeydown(event: KeyboardEvent)` | Handles `keydown` events on or within the dialog's root element.
 `handleDocumentKeydown(event: Event)` | Handles `keydown` events on or within the document while the dialog is open.
 
-#### Event Handlers
+#### Event handlers
 
 When wrapping the Dialog foundation, the following events must be bound to the indicated foundation methods:
 
@@ -491,7 +441,7 @@ Event | Target | Foundation Handler | Register | Deregister
 `resize` | `window` | `layout` | On `MDCDialog:opening` | On `MDCDialog:closing`
 `orientationchange` | `window` | `layout` | On `MDCDialog:opening` | On `MDCDialog:closing`
 
-### The Util API
+### The `util` API
 
 External frameworks and libraries can use the following utility methods from the `util` module when implementing their own component.
 
@@ -501,7 +451,7 @@ Method Signature | Description
 `isScrollable(el: Element \| null) => boolean` | Determines if the given element is scrollable.
 `areTopsMisaligned(els: Element[]) => boolean` | Determines if two or more of the given elements have different `offsetTop` values.
 
-### Handling Focus Trapping
+### Handling focus trapping
 
 In order for dialogs to be fully accessible, they must conform to the guidelines outlined in:
 
