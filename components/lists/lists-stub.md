@@ -16,6 +16,7 @@ There are three list types:
 1. [Two-line list](#two-line-list)
 1. [Three-line list](#three-line-list)
 
+![Composite image of the three list types](assets/lists-types.png)
 
 ## Using lists
 
@@ -25,11 +26,11 @@ There are three list types:
 
 The following anatomy diagram applies to all three list types:
 
-![List anatomy diagram showing list, row, and list item content](/assets/lists-content-anatomy.png)
+![List anatomy diagram showing list, row, and list item content](assets/list-content-anatomy.png)
 
 The following anatomy diagrams apply  to the list item content:
 
-![List item content showing supporting visuals, primary text, metadata, and controls in two lists](/assets/combined-list-content.png)
+![List item content showing supporting visuals, primary text, metadata, and controls in two list components](assets/combined-list-content.png)
 
 
 A list consists of the following attributes:
