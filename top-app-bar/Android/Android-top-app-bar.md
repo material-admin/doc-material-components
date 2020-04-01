@@ -17,9 +17,7 @@ There are two types of top app bar:
 1. [Regular top app bar](#regular-top-app-bar)
 2. [Contextual action bar](#contextual-action-bar)
 
-<!-- TODO: Replace with proper, numbered top app bar types image? -->
-1. ![Regular app bar: purple background, white text and icons](assets/regular_app_bar_example.png)
-2. ![Contextual app bar: black background, white text and icons](assets/contextual_app_bar_example.png)
+![Image of regular and contextual app bars](Top-app-bars_types_side-by-side.png)
 
 ## Using the top app bar
 
