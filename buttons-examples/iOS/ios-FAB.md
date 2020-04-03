@@ -17,6 +17,8 @@ There are three types of FABS:
 2. [Mini FABs](#mini-fabs)
 3. [Extended FABs](#extended-fabs)
 
+![Regular FAB example](assets/FAB_types.png)
+
 <!--Get an image of a floating action button-->
 
 # Using FABs
@@ -179,7 +181,7 @@ let fab = MDCFloatingButton(shape: `default`)
 
 ### Anatomy and key properties
 
-![Regular FAB anatomy diagram](assets/regular-fab-anatomy.png)
+![Regular FAB anatomy diagram](assets/FAB_anatomy-long.png)
 
 A regular FAB has a container and an icon.
 
@@ -204,7 +206,7 @@ A regular FAB has a container and an icon.
 
 ## Mini FABs
 
-![Mini FAB example](assets/mini-fab.png)
+![Mini FAB example](assets/miniFAB_anatomy-long.png)
 
 A mini FAB should be used on smaller screens.
 
@@ -282,7 +284,7 @@ let fab = MDCFloatingButton(shape: mini)
 
 ### Anatomy and key properties
 
-![Extended FAB anatomy diagram](assets/extended-fab-anatomy.png)
+![Extended FAB anatomy diagram](assets/extended-FAB_anatomy-long.png)
 
 An extended FAB has a text label, a transparent container and an optional icon.
 
