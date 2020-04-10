@@ -296,7 +296,7 @@ A contained button has text, a container, and an optional icon.
 #### Text label attributes
 
 Design Attribute | Theme value | HTML attribute | CSS property
----|---|---
+---|---|---|---
 Text label | N/A | `label` | N/A
 Text color | On-primary color | N/A | None (can override `--mdc-theme-on-primary`)
 Typography | Default button text style | `--mdc-typography-font-family`, `--mdc-typography-button-*`
