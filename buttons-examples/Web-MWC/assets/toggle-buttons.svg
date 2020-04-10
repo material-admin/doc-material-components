@@ -1,0 +1,53 @@
+<svg width="146" height="48" viewBox="0 0 146 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="toggle-buttons">
+<g id="4. Toggle/&#206;&#169;Elements/B. Center/b. Active">
+<g id="Container">
+<rect id="Outline" x="49.25" y="0.25" width="47.5" height="0.5" stroke="#212121" stroke-opacity="0.08" stroke-width="0.5"/>
+<rect id="Outline_2" x="49.25" y="47.25" width="47.5" height="0.5" stroke="#212121" stroke-opacity="0.08" stroke-width="0.5"/>
+</g>
+<rect id="&#240;&#159;&#146;&#161;States" x="49" width="48" height="48" fill="#BB86FC" fill-opacity="0.12"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="49" y="0" width="48" height="48">
+<rect id="&#240;&#159;&#146;&#161;States_2" x="49" width="48" height="48" fill="white"/>
+</mask>
+<g mask="url(#mask0)">
+<g id="&#240;&#159;&#147;&#141; icon">
+<path id=" &#226;&#134;&#179;Color" fill-rule="evenodd" clip-rule="evenodd" d="M73 17C68 17 63.73 20.11 62 24.5C63.73 28.89 68 32 73 32C78 32 82.27 28.89 84 24.5C82.27 20.11 78 17 73 17ZM73 29.5C70.24 29.5 68 27.26 68 24.5C68 21.74 70.24 19.5 73 19.5C75.76 19.5 78 21.74 78 24.5C78 27.26 75.76 29.5 73 29.5ZM73 21.5C71.34 21.5 70 22.84 70 24.5C70 26.16 71.34 27.5 73 27.5C74.66 27.5 76 26.16 76 24.5C76 22.84 74.66 21.5 73 21.5Z" fill="#6200EE"/>
+</g>
+</g>
+</g>
+<g id="4. Toggle/&#206;&#169;Elements/A. Left/a. Resting">
+<g id="Container_2">
+<path id="&#240;&#159;&#148;&#178;&#240;&#159;&#142;&#168; Container l Color" d="M0.5 4C0.5 2.067 2.067 0.5 4 0.5H49.5V47.5H4C2.067 47.5 0.5 45.933 0.5 44V4Z" stroke="black" stroke-opacity="0.12"/>
+</g>
+<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="1" y="0" width="48" height="48">
+<path id="&#240;&#159;&#146;&#161;States_3" d="M1 4C1 1.79086 2.79086 0 5 0H49V48H5C2.79086 48 1 46.2091 1 44V4Z" fill="white"/>
+</mask>
+<g mask="url(#mask1)">
+<g id="&#240;&#159;&#147;&#141;icon">
+<path id=" Color" fill-rule="evenodd" clip-rule="evenodd" d="M25 33.35L23.55 32.03C18.4 27.36 15 24.28 15 20.5C15 17.42 17.42 15 20.5 15C22.24 15 23.91 15.81 25 17.09C26.09 15.81 27.76 15 29.5 15C32.58 15 35 17.42 35 20.5C35 24.28 31.6 27.36 26.45 32.04L25 33.35Z" fill="black" fill-opacity="0.6"/>
+</g>
+</g>
+</g>
+<g id="4. Toggle/&#206;&#169;Elements/C. Right/a. active">
+<g id="Container_3">
+<mask id="mask2" mask-type="alpha" maskUnits="userSpaceOnUse" x="97" y="0" width="49" height="48">
+<rect id="Mask" width="49" height="48" transform="matrix(-1 0 0 1 146 0)" fill="white"/>
+</mask>
+<g mask="url(#mask2)">
+<path id="&#240;&#159;&#148;&#178;&#240;&#159;&#142;&#168; Container l Color_2" d="M145.5 4C145.5 2.067 143.933 0.5 142 0.5H96.5V47.5H142C143.933 47.5 145.5 45.933 145.5 44V4Z" stroke="black" stroke-opacity="0.12"/>
+</g>
+</g>
+<g id="&#226;&#158;&#150;Divider">
+<rect id="&#226;&#158;&#150;Divider_2" x="98" y="1" width="46" height="1" transform="rotate(90 98 1)" fill="#212121" fill-opacity="0.08"/>
+</g>
+<mask id="mask3" mask-type="alpha" maskUnits="userSpaceOnUse" x="97" y="0" width="48" height="48">
+<path id="&#240;&#159;&#146;&#161;States_4" d="M97 0H141C143.209 0 145 1.79086 145 4V44C145 46.2091 143.209 48 141 48H97V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask3)">
+<g id="&#240;&#159;&#147;&#141; icon_2">
+<path id=" &#226;&#134;&#179;Color_2" fill-rule="evenodd" clip-rule="evenodd" d="M121 34C122.1 34 123 33.1 123 32H119C119 33.1 119.89 34 121 34ZM127 28V23C127 19.93 125.36 17.36 122.5 16.68V16C122.5 15.17 121.83 14.5 121 14.5C120.17 14.5 119.5 15.17 119.5 16V16.68C116.63 17.36 115 19.92 115 23V28L113 30V31H129V30L127 28Z" fill="black" fill-opacity="0.6"/>
+</g>
+</g>
+</g>
+</g>
+</svg>
