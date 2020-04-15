@@ -21,7 +21,9 @@ There are two types of top app bar:
 1. [Contextual action bar](#contextual-top-app-bar)
 <br>
 
-![Image of regular and contextual app bars](Top-app-bars_types_side-by-side.png)
+![Regular app bar: purple background, white text and icons](assets/regular_app_bar_example.png)
+![Contextual app bar: black background, white text and icons](assets/contextual_app_bar_example.png)
+<!-- ![Image of regular and contextual app bars](Top-app-bars_types_side-by-side.png) -->
 
 ## Using the top app bar
 
@@ -30,7 +32,7 @@ The top app bar provides content and actions related to the current screen. Itâ€
 A regular top app bar can transform into a contextual action bar.
 
 Before you can use Material buttons, you need to import the Material Components package for Flutter: 
-```
+```dart
 package:flutter/material.dart
 ```
 
@@ -54,21 +56,26 @@ The top app bar provides content and actions related to the current screen. Itâ€
 `AppBar`
 * [Class definition](https://api.flutter.dev/flutter/material/AppBar-class.html)
 * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/app_bar.dart)
+* [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/regular&gh_ref=develop)
 
 The following example shows a top app bar with a page title, a navigation icon, two action icons, and an overflow menu:
 
-![insert screenshot here]()
+![assets/top_app_bar_screenshot.png](assets/top_app_bar_screenshot.png)
 
-```
-The source code for the regular top app bar should include the following:
-* A purple container
-* A navigation icon
-* A title "Page title" in white
-* Two action items:
-    * favorite icon
-    * search icon
-* Overflow menu
-* The top app bar should remain in place while the user scrolls
+```dart
+AppBar(
+    leading: Icon(Icons.menu),
+    title: Text('Page title'),
+    actions: <Widget>[
+        Icon(Icons.favorite),
+        Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16),
+            child: Icon(Icons.search),
+        ),
+        Icon(Icons.more_vert),
+    ],
+    backgroundColor: Colors.purple,
+),
 
 ```
 
@@ -86,29 +93,28 @@ The source code for the regular top app bar should include the following:
 
 | &nbsp; | Property |
 | --- | --- |
-| **Color** | |
-| **Stroke color** |  |
-| **Stroke width** | |
-| **Shape** |  |
-| **Elevation** |  |
+| **Color** | color parameter |
+| **Stroke color** |  In leading parameter, use Icon widget. Set color|
+| **Shape** | shape parameter |
+| **Elevation** | elevation parameter|
 | **Ripple color** |  |
 
 <b>Navigation icon (optional)</b>
 
 | &nbsp; | Property |
 | --- | --- |
-| **Icon** |  |
-| **Color** | |
-| **Size** |  |
-| **Gravity** (position relative to text label) |  |
-| **Padding** (space between icon and text label) |  |
+| **Icon** |  In leading parameter, use Icon Widget |
+| **Color** | In leading parameter, use Icon Widget and set parameter color |
+| **Size** | In leading parameter, use Icon Widget and set parameter size |
+| **Gravity** | titleSpacing parameter |
+| **Padding** | Wrap Icon wiget with Padding widget |
 
 <b>Title (optional)</b>
 
 | &nbsp; | Property |
 | --- | --- |
-| **Text label** |  |
-| **Color** |  | 
+| **Text label** | In title parameter, use Text widget |
+| **Color** | In title parameter, use Text Widget and and set parameter style |
 | **Typography** |  |
 
 <b>Action item (optional)</b>
@@ -148,22 +154,26 @@ When a top app bar transforms into a contextual action bar, the following change
 `AppBar`
 * [Class definition](https://api.flutter.dev/flutter/material/AppBar-class.html)
 * [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/app_bar.dart)
+* [Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/contextual&gh_ref=develop)
 
 The following example shows a contextual action bar with a contextual title, a close icon, two contextual action icons, and an overflow menu:
 
-![insert screenshot here]()
+![assets/contextual_screenshot.png](assets/contextual_screenshot.png)
 
-```
-The source code for the contextual action bar should switch from the regular app bar example to the 
-contextual action bar and include the following:
-* A black contextual container color
-* A close button icon
-* A contextual title that reads "Contextual title" in white
-* Two action items:
-    * download icon
-    * garbage icon
-* Overflow menu
-* The top app bar should remain in place while the user scrolls
+```dart
+AppBar(
+    leading: Icon(Icons.close),
+    title: Text('1 selected'),
+    actions: <Widget>[
+        Icon(Icons.file_upload),
+        Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16),
+            child: Icon(Icons.delete),
+        ),
+        Icon(Icons.more_vert),
+    ],
+    backgroundColor: Colors.black87,
+),
 
 ```
 
@@ -225,21 +235,126 @@ _If the component API implements multiple types, include any style information t
 The top app bar supports [Material Theming](https://material.io/components/app-bars-top/#theming) and can be customized in terms of color, typography and shape.
 
 ### Top app bar theming example
+* [Regular Top App Bar with Theme Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/theme&gh_ref=develop)
+* [Contextual Action Bar with Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/contextual_theme&gh_ref=develop)
 
-* Provide a screenshot of the regular app bar that uses the [Shrine](https://material.io/design/material-studies/shrine.html) theme with the following features:
-    * title: "Page title" 
-    * Two action items:
-        * favorite icon
-        * search icon
-    * Overflow menu
-    * The top app bar should remain in place while the user scrolls
-* Provide a second screenshot of the contextual app bar that uses the [Shrine](https://material.io/design/material-studies/shrine.html) theme with the following features:
-    * title: "Contextual title"
-    * Two action items:
-        * download icon
-        * garbage icon
-    * Overflow menu
-    * The top app bar should remain in place while the user scrolls
+![assets/shrine_theme.png](assets/shrine_theme.png)
+![assets/contextual_theming.png](assets/contextual_theming.png)
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      home: MyHomePage(),
+      theme: _buildShrineTheme(),
+    );
+  }
+}
+
+class MyHomePage extends StatelessWidget {
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        leading: Icon(Icons.menu),
+        title: Text('Page title'),
+        actions: [
+          Icon(Icons.favorite),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16),
+            child: Icon(Icons.search),
+          ),
+          Icon(Icons.more_vert),
+        ],
+      ),
+      body: Container(),
+    );
+  }
+}
+
+ThemeData _buildShrineTheme() {
+  final ThemeData base = ThemeData.light();
+  return base.copyWith(
+    colorScheme: _shrineColorScheme,
+    accentColor: shrineBrown900,
+    primaryColor: shrinePink100,
+    buttonColor: shrinePink100,
+    scaffoldBackgroundColor: shrineBackgroundWhite,
+    cardColor: shrineBackgroundWhite,
+    textSelectionColor: shrinePink100,
+    errorColor: shrineErrorRed,
+    buttonTheme: const ButtonThemeData(
+      colorScheme: _shrineColorScheme,
+      textTheme: ButtonTextTheme.normal,
+    ),
+    primaryIconTheme: _customIconTheme(base.iconTheme),
+    textTheme: _buildShrineTextTheme(base.textTheme),
+    primaryTextTheme: _buildShrineTextTheme(base.primaryTextTheme),
+    accentTextTheme: _buildShrineTextTheme(base.accentTextTheme),
+    iconTheme: _customIconTheme(base.iconTheme),
+  );
+}
+
+IconThemeData _customIconTheme(IconThemeData original) {
+  return original.copyWith(color: shrineBrown900);
+}
+
+TextTheme _buildShrineTextTheme(TextTheme base) {
+  return base
+      .copyWith(
+        caption: base.caption.copyWith(
+          fontWeight: FontWeight.w400,
+          fontSize: 14,
+          letterSpacing: defaultLetterSpacing,
+        ),
+        button: base.button.copyWith(
+          fontWeight: FontWeight.w500,
+          fontSize: 14,
+          letterSpacing: defaultLetterSpacing,
+        ),
+      )
+      .apply(
+        fontFamily: 'Rubik',
+        displayColor: shrineBrown900,
+        bodyColor: shrineBrown900,
+      );
+}
+
+const ColorScheme _shrineColorScheme = ColorScheme(
+  primary: shrinePink100,
+  primaryVariant: shrineBrown900,
+  secondary: shrinePink50,
+  secondaryVariant: shrineBrown900,
+  surface: shrineSurfaceWhite,
+  background: shrineBackgroundWhite,
+  error: shrineErrorRed,
+  onPrimary: shrineBrown900,
+  onSecondary: shrineBrown900,
+  onSurface: shrineBrown900,
+  onBackground: shrineBrown900,
+  onError: shrineSurfaceWhite,
+  brightness: Brightness.light,
+);
+
+const Color shrinePink50 = Color(0xFFFEEAE6);
+const Color shrinePink100 = Color(0xFFFEDBD0);
+const Color shrinePink300 = Color(0xFFFBB8AC);
+const Color shrinePink400 = Color(0xFFEAA4A4);
+
+const Color shrineBrown900 = Color(0xFF442B2D);
+const Color shrineBrown600 = Color(0xFF7D4F52);
+
+const Color shrineErrorRed = Color(0xFFC5032B);
+
+const Color shrineSurfaceWhite = Color(0xFFFFFBFA);
+const Color shrineBackgroundWhite = Colors.white;
+
+const defaultLetterSpacing = 0.03;
 
 
-_Provide example code that corresponds to the component type screenshot_
+```
