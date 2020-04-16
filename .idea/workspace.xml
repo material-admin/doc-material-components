@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d015c359-67e8-4ff2-aef6-63b1003d742d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/doc-material-components.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/doc-material-components.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/top-app-bar/Flutter/Flutter-top-app-bar.md" beforeDir="false" afterPath="$PROJECT_DIR$/top-app-bar/Flutter/Flutter-top-app-bar.md" afterDir="false" />
     </list>
@@ -22,43 +21,6 @@
         <option value="Dart File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>button</find>
-      <find>iconbutton</find>
-      <find>iconbuttontoggle</find>
-      <find>themeda</find>
-      <find>toog</find>
-      <find>tilestyle</find>
-      <find>image</find>
-      <find>Photo</find>
-      <find>Photo.assetname</find>
-      <find>kGalleryAssetsPackage</find>
-      <find>asset</find>
-      <find>As</find>
-      <find>Image.asset</find>
-      <find>image.asset</find>
-      <find>oneline</find>
-      <find>griddemo</find>
-      <find>onbannertap</find>
-      <find>tileStyle</find>
-      <find>appbar</find>
-      <find>favorite</find>
-      <find>isfav</find>
-      <find>iconWidget</find>
-      <find>fl</find>
-      <find>flatbutton</find>
-      <find>outline_text_field_</find>
-      <find>isselected</find>
-      <find>generic-card-type-elevated.png</find>
-      <find>shrine_card</find>
-      <find>expand</find>
-      <find>color</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

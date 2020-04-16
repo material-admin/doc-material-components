@@ -21,9 +21,7 @@ There are two types of top app bar:
 1. [Contextual action bar](#contextual-top-app-bar)
 <br>
 
-![Regular app bar: purple background, white text and icons](assets/regular_app_bar_example.png)
-![Contextual app bar: black background, white text and icons](assets/contextual_app_bar_example.png)
-<!-- ![Image of regular and contextual app bars](Top-app-bars_types_side-by-side.png) -->
+![Regular app bar: purple background, white text and icons](assets/Top-app-bars_types_side-by-side.png)
 
 ## Using the top app bar
 
@@ -60,7 +58,7 @@ The top app bar provides content and actions related to the current screen. Itâ€
 
 The following example shows a top app bar with a page title, a navigation icon, two action icons, and an overflow menu:
 
-![assets/top_app_bar_screenshot.png](assets/top_app_bar_screenshot.png)
+![Top app bar with nav icon, page title, favorite icon, and search icon](assets/top_app_bar_screenshot.png)
 
 ```dart
 AppBar(
@@ -158,7 +156,7 @@ When a top app bar transforms into a contextual action bar, the following change
 
 The following example shows a contextual action bar with a contextual title, a close icon, two contextual action icons, and an overflow menu:
 
-![assets/contextual_screenshot.png](assets/contextual_screenshot.png)
+![Contextual top app bar with close button, download, garbage, and overflow menu icons](assets/contextual_screenshot.png)
 
 ```dart
 AppBar(
@@ -238,8 +236,8 @@ The top app bar supports [Material Theming](https://material.io/components/app-b
 * [Regular Top App Bar with Theme Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/theme&gh_ref=develop)
 * [Contextual Action Bar with Dartpad Demo](https://dartpad.dev/embed-flutter.html?gh_owner=material-components&gh_repo=material-components-flutter&gh_path=docs/components/dartpad/top-app-bar/contextual_theme&gh_ref=develop)
 
-![assets/shrine_theme.png](assets/shrine_theme.png)
-![assets/contextual_theming.png](assets/contextual_theming.png)
+![Top app bar with Shrine theming](assets/shrine_theme.png)
+![Contextual app bar with Shrine theming](assets/contextual_theming.png)
 
 ```dart
 import 'package:flutter/material.dart';
