@@ -1,5 +1,5 @@
 <!--docs:
-title: "Bottom Navigation"
+title: "Bottom navigation"
 layout: detail
 section: components
 excerpt: "Bottom navigation bars make it easy to explore and switch between top-level views in a single tap."
@@ -131,7 +131,7 @@ Remove any `BadgeDrawable`s that are no longer needed:
 bottomNavigation.removeBadge(menuItemId)
 ```
 
-Or, as best practice, if you only need to temporarily hide the badge (e.g. until the next notification is received), the recommended/lightweight alternative is to change the visibility of the BadgeDrawable instead:
+As best practice if you need to temporarily hide the badge (e.g. until the next notification is received), change the visibility of `BadgeDrawable`:
 
 ```kt
 val badgeDrawable = bottomNavigation.getBadge(menuItemId)
@@ -307,7 +307,7 @@ Using theme attributes and a style in `res/values/styles.xml` (themes all bottom
 </style>
 ```
 
-Or using a default style theme attribute, styles and a theme overlay (themes all bottom navigation bars but does not affect other components):
+Or using a default style theme attribute, styles, and a theme overlay (themes all bottom navigation bars but does not affect other components):
 
 ```xml
 <style name="Theme.App" parent="Theme.MaterialComponents.*">
