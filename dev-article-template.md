@@ -31,17 +31,25 @@ Start with a concise (1-2 sentence) description of the component.
 * Link the first mention of the component (e.g., "Button") to the design article.
 * If the component is known by an alias on your platform, include that in the description, e.g. "... Ripples are known as 'Ink' in MDC-iOS."
 
-If there are any component types, list them here in an unordered bulleted list.
-
-* Use the same ordering as in the design article.
-* Link each item in the list to the corresponding type section below. (If a section is called "Foo The Bar", then the anchor to link to is `#foo-the-bar`.)
-
-Insert an image showing the component or all the component types.
-
-* If no such image exists, file a bug and add a TODO with the bug in an HTML comment in the source.
+Insert a hero image selected from spec. For example, the `assets` folder might include an image such as the following for Tabs:
+    https://storage.googleapis.com/spec-host/mio-staging%2Fmio-components%2F1584058305895%2Fassets%2F1EQno9oequgSkF7kHM5A802blbxrKl75F%2Ftabs-usage-do1.png
 
 
-## Using \<Component name\>
+## Contents
+
+Include TOC here of the major sections with relative links, including:
+* [Using \<component name\>](#relative link here)
+* [Making \<component name\> accessible](#relative link here)
+* [Installing \<component name\> (if available)](#relative link here)
+* [Import \<component name\> (if available)](#relative link here)
+* [\<First component type\>](#relative link here)
+* [\<Second component type\>](#relative link here)
+* [\<any additional component types\>](#relative link here)
+* [Theming](#theming)
+
+**Note: Do not nest the TOC levels**
+
+## Using \<component name\>
 
 <!-- Include the following sentence:
    "Update your IDE and your Material Components library to the latest version if you are using Material Components for the first time."
@@ -58,7 +66,17 @@ If all types use exactly the same list of API docs/source location links, or if 
 
 List any accessiblity setting or attributes (such as labels), describe how to use them and link to any guidelines on the m.io site (for example, [how to write a good accessibility label for your component](https://material.io/design/usability/accessibility.html#writing))
 
+## Types
 
+
+If there are any component types, list them here in a numbered inline list.
+
+* Use the same ordering as in the design article.
+* Link each item in the inline list to the corresponding type section below. (If a section is called "Foo The Bar", then the anchor to link to is `#foo-the-bar`.)
+
+Insert an image showing the component or all the component types.
+
+* If no such image exists, file a bug and add a TODO with the bug in an HTML comment in the source.
 
 ## \<First component type\>
 
