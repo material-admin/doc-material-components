@@ -41,7 +41,7 @@ Before using the `Tabs` API to implement its types you must install `Tabs`. In y
 
   **Note** For more information about themes, go to the [Theming page](https://material.io/develop/ios/components/theming/) for iOS.
 
-    <!--<div class="material-code-render" markdown="1">-->
+<!--<div class="material-code-render" markdown="1">-->
    **Swift**
    ```swift
    import MaterialComponents.MaterialTabs
@@ -71,7 +71,7 @@ Before using the `Tabs` API to implement its types you must install `Tabs`. In y
    // Or Surface Theme
    [self.tabController applySurfaceThemeWithScheme:containerScheme];
    ```
-   <!--</div>-->
+<!--</div>-->
 
 ### Making tabs accessible
 
@@ -205,6 +205,17 @@ The following example shows a row of of scrollable tabs.
 Tabs support [Material Theming](https://material.io/components/app-bars-top/#theming) and can be customized in terms of color, typography and shape.
 
 ### Tabs theming example
+`Tabs`
+* [Class definition](https://material.io/components/ios/catalog/tabs/api-docs/Classes/MDCTabBar.html)
+* [GitHub source](https://github.com/material-components/material-components-ios/tree/develop/components/Tabs)
 
-* Provide a screenshot of the regular app bar that uses the [Shrine](https://material.io/design/material-studies/shrine.html) theme with the following features:
+**Note to developers: Create a code example and screenshot with the following using Shrine themeing**
+* A scrollable row of five tabs, labeled:
+    * "Tab 1"
+    * "Tab 2"
+    * "Tab 3"
+    * "Tab 4"
+    * "Tab 5"
+* The screen shows only 3 tabs
+* Screenshot only: Tab 3 is selected.
 
