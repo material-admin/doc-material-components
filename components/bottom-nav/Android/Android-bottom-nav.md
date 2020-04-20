@@ -2,11 +2,10 @@
 title: "Bottom navigation"
 layout: detail
 section: components
-excerpt: "Bottom navation bars allow movement between primary distinations in an app"
-iconId:
-path: /components/bottom-navigation
+excerpt: "Bottom navigation bars make it easy to explore and switch between top-level views in a single tap."
+iconId: bottom_navigation
+path: /catalog/bottom-navigation/
 -->
-
 
 # Bottom navigation
 
@@ -17,155 +16,140 @@ path: /components/bottom-navigation
 
 ## Using bottom navigation
 
-Bottom navigation bars display three to five destinations at the bottom of a screen. Each destination is represented by an icon and an optional text label. When a bottom navigation icon is tapped, the user is taken to the top-level navigation destination associated with that icon.
+Before you can use the Material bottom navigation, you need to add a dependency to the Material Components for Android library. For more information, go to the [Getting started](/third_party/java_src/android_libs/material_components/g3doc/getting-started.md) page.
 
-Do the following to implement a bottom navigation bar for Android:
-
-1.  Create a
-    [menu resource](https://developer.android.com/guide/topics/resources/menu-resource.html)
-    with up to 5 navigation targets (`BottomNavigationView` does not support
-    more than 5 items)
-2.  Lay out your `BottomNavigationView` below your content
-3.  Set the `app:menu` attribute on your `BottomNavigationView` to your menu
-    resource
-4.  Listen for selection events using
-    `setOnNavigationItemSelectedListener(...)`
-
-A typical XML layout file would look something like this:
+A typical layout will look similar to this:
 
 ```xml
-<FrameLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-  <!-- Main content -->
-
+    android:layout_height="wrap_content">
+  ...
   <com.google.android.material.bottomnavigation.BottomNavigationView
       android:id="@+id/bottom_navigation"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_gravity="bottom"
-      android:background="@color/colorPrimary"
-      app:itemIconTint="@color/white"
-      app:itemTextColor="@color/white"
       app:menu="@menu/bottom_navigation_menu" />
 
-</FrameLayout>
+</LinearLayout>
 ```
 
-### Badges
-
-![3 bottom navigation icons with badges numbering 0, 99, and 999+](assets/bottom-navigation-badges.png)
-
-`BottomNavigationView` supports displaying icon and number badges.
-
-Initializes and shows a BadgeDrawable associated with` menuItemId`. Subsequent
-calls to this method will reuse the existing `BadgeDrawable`.
-
-```java
-BadgeDrawable badge = bottomNavigationView.getOrCreateBadge(menuItemId);
-badge.setVisible(true);
-```
-NOTE: Don't forget to remove any BadgeDrawables that are no longer needed.
-
-```java
-bottomNavigationView.removeBadge(menuItemId);
-```
-
-#### Best Practice
-
-If you only need to temporarily hide the badge (for example, until the next
-notification is received), we recommended changing
-the visibility of the `BadgeDrawable`.
-
-Please see [`BadgeDrawable`](BadgeDrawable.md) for details on how to update the
-badge content being displayed.
-
-### Handling States
-
-The `app:itemIconTint` and `app:itemTextColor` take a
-[ColorStateList](https://developer.android.com/reference/android/content/res/ColorStateList.html)
-instead of a simple color. This means that you can write a `selector` for these
-colors that responds to the items' state changes.
-
-For example, you could have a `bottom_navigation_colors.xml` `ColorStateList`
-that contains:
+In `bottom_navigation_menu.xml` inside a `menu` resource directory:
 
 ```xml
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
   <item
-      android:state_checked="true"
-      android:color="@color/colorPrimary" />
+      android:id="@+id/page_1"
+      android:enabled="true"
+      android:icon="@drawable/icon_1"
+      android:title="@string/text_label_1"/>
   <item
-      android:state_checked="false"
-      android:color="@color/colorOnSurface" />
- </selector>
+      android:id="@+id/page_2"
+      android:enabled="true"
+      android:icon="@drawable/icon_2"
+      android:title="@string/text_label_2"/>
+</menu>
 ```
 
-And you would use it like this on your `BottomNavigationView`:
+**Note:** `BottomNavigationView` does not support more than 5 `menu` items.
 
-```xml
-<com.google.android.material.bottomnavigation.BottomNavigationView
-    android:id="@+id/bottom_navigation"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    style="@style/Widget.MaterialComponents.BottomNavigationView"
-    app:menu="@menu/bottom_navigation_menu" />
+In code:
+
+```kt
+BottomNavigationView.OnNavigationItemSelectedListener { item ->
+    when(item.itemId) {
+        R.id.item1 -> {
+            // Respond to navigation item 1 click
+            true
+        }
+        R.id.item2 -> {
+            // Respond to navigation item 2 click
+            true
+        }
+        else -> false
+    }
+}
 ```
 
-### Material Styles
+There's also a method for detecting when navigation items have been reselected:
 
-Using `BottomNavigationView` with an updated Material theme
-(`Theme.MaterialComponents`) will provide the correct updated Material styles to
-your `BottomNavigationView`s by default. If you need to use an updated
-`BottomNavigationView` and your application theme does not inherit from an
-updated Material theme, or if you'd like to use a variant style, you can apply
-one of the updated Material styles directly to your widget in XML:
-
-#### Updated Material Style (Default)
-
-The default Material `BottomNavigationView` style consists of updated colors,
-text sizing, and behavior. The default BottomNavigationView has white background
-and icons and text colored with `colorPrimary`.
-
-```
-style="@style/Widget.MaterialComponents.BottomNavigationView"
+```kt
+bottomNavigation.setOnNavigationItemReselectedListener { item ->
+    when(item.itemId) {
+        R.id.item1 -> {
+            // Respond to navigation item 1 reselection
+        }
+        R.id.item2 -> {
+            // Respond to navigation item 2 reselection
+        }
+    }
+}
 ```
 
-#### Colored Material Style
+That results in:
 
-This style inherits from the default style but sets the colors to different
-mappings. Use the colored style to get a bottom navigation bar with a
-`colorPrimary` background and shades of white for the icon and text colors.
-
-```
-style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
-```
-
-#### Legacy Style
-
-You can set this style on your `BottomNavigationView` if you'd like a bottom
-navigation bar with the old behavior. However, we recommend you use the updated
-Material style where possible.
-
-```
-style="@style/Widget.Design.BottomNavigationView"
-```
+![Bottom navigation bar with a white background, one selected purple icon and another unselected icon.](assets/bottom-nav-default.png)
 
 ### Making bottom navigation accessible
 
-_**NOTE to developers: Are there any accessibility settings aside from the icon labels?**_
+You should set an `android:title` for each of your `menu` items so that screen readers like TalkBack can properly announce what each navigation item represents:
 
+```xml
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+      ...
+      android:title="@string/text_label"/>
+  ...
+</menu>
+```
+
+The `labelVisibilityMode` attribute can be used to adjust the behavior of the text labels for each navigation item. There are four visibility modes:
+
+* `LABEL_VISIBILITY_AUTO` (default): The label behaves as “labeled” when there are 3 items or less, or “selected” when there are 4 items or more
+* `LABEL_VISIBILITY_SELECTED`: The label is only shown on the selected navigation item
+* `LABEL_VISIBILITY_LABELED`: The label is shown on all navigation items
+* `LABEL_VISIBILITY_UNLABELED`: The label is hidden for all navigation items
+
+### Adding badges
+
+![Bottom navigation with 3 icons with badges, an icon only badge and two numbered badges showing 99 and 999+](assets/bottom-navigation-badges.png)
+
+Initialize and show a `BadgeDrawable` associated with `menuItemId`, subsequent calls to this method will reuse the existing `BadgeDrawable`:
+
+```kt
+var badge = bottomNavigation.getOrCreateBadge(menuItemId)
+badge.isVisible = true
+// An icon only badge will be displayed unless a number is set:
+badge.number = 99
+```
+
+Remove any `BadgeDrawable`s that are no longer needed:
+
+```kt
+bottomNavigation.removeBadge(menuItemId)
+```
+
+As best practice if you need to temporarily hide the badge (e.g. until the next notification is received), change the visibility of `BadgeDrawable`:
+
+```kt
+val badgeDrawable = bottomNavigation.getBadge(menuItemId)
+    if (badgeDrawable != null) {
+        badgeDrawable.isVisible = false
+        badgeDrawable.clearNumber()
+    }
+```
+
+See the [`BadgeDrawable`](BadgeDrawable.md) documentation for more information about it.
 
 ## Bottom navigation example
 
-Source code API:
+API and source code:
 
 * `BottonNavigationView`
     * [Class description](https://developer.android.com/reference/com/google/android/material/bottomnavigation/BottomNavigationView)
-    * [GitHub source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/bottomnavigation/BottomNavigationView.java)
+    * [Class source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/bottomnavigation/BottomNavigationView.java)
 
 
 The following example shows a bottom navigation bar with four icons:
@@ -175,96 +159,177 @@ The following example shows a bottom navigation bar with four icons:
 * places
 * news
 
-<img src="assets/<platform>-bottom-nav.png" alt="bottom navigation bar with favorites, music note, places, and news icons">
+![Bottom navigation bar with favorites, music note, places, and news icons](assets/bottom-nav-generic.png)
 
+In `layout.xml`:
+
+```xml
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+  <com.google.android.material.bottomnavigation.BottomNavigationView
+      android:id="@+id/bottom_navigation"
+      style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:menu="@menu/bottom_navigation_menu" />
+
+</LinearLayout>
 ```
-<code snippet here>
-The source code should render the following:
-* bottom navigation bar with purple fill (#6200EE)
-* four icons:
-    * favorites
-    * music note
-    * places (not part of material.io icons)
-    * news (not part of material.io icons)
-* active icon should show up as white
-* inactive icons should be show a 60% opacity
+
+In `bottom_navigation_menu.xml` inside a `menu` resource directory:
+
+```xml
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+      android:id="@+id/page_1"
+      android:enabled="true"
+      android:icon="@drawable/ic_favorite"
+      android:title="@string/favorites"/>
+  <item
+      android:id="@+id/page_2"
+      android:enabled="true"
+      android:icon="@drawable/ic_music"
+      android:title="@string/music"/>
+  <item
+      android:id="@+id/page_3"
+      android:enabled="true"
+      android:icon="@drawable/ic_places"
+      android:title="@string/places"/>
+  <item
+      android:id="@+id/page_4"
+      android:enabled="true"
+      android:icon="@drawable/ic_new"
+      android:title="@string/news"/>
+</menu>
+```
+
+In code:
+
+```kt
+bottomNavigation.selectedItemId = R.id.page_2
 ```
 
 ### Anatomy and key properties
 
 The following is an anatomy diagram for the bottom navigation bar:
 
-![bottom nav anatomy diagram](bottom-nav-anatomy.png)
+![Bottom navigation anatomy diagram](assets/bottom-nav-anatomy.png)
 
-1. Container
-1. Inactive icon
-1. Inactive text label
-1. Active icon
-1. Active text label
+* 1. Container
+* Navigation items:
+  * 2. Inactive icon
+  * 3. Inactive text label
+  * 4. Active icon
+  * 5. Active text label
 
-**Container attributes**
+#### Container attributes
+
 | &nbsp; | **Attribute** | **Related methods**  | **Default value** |
 | --- | --- | --- | --- |
-| **Color** | | | |
-| **Stroke color** | | | |
-| **Stroke width** | | | |
-| **Shape** | | | |
-| **Elevation** | | | |
-| **Ripple color** | | | |
+| **Color** | `app:backgroundTint` | N/A | `?attr/colorSurface` |
+| **Elevation** | `app:elevation` | `setElevation` | `8dp` |
 
+#### Navigation item attributes
 
-**Inactive icon attributes**
 | &nbsp; | **Attribute** | **Related methods**  | **Default value** |
 | --- | --- | --- | --- |
-| **Icon** | | | |
-| **Color** | | | |
-| **Typography** | | | |
+| **Menu resource** | `app:menu` | `inflateMenu`<br/>`getMenu` | N/A |
+| **Ripple (inactive)** | `app:itemRippleColor` | `setItemRippleColor`<br/>`getItemRippleColor` | `?attr/colorOnSurface` at 8% (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/bottomnavigation/res/color/mtrl_bottom_nav_ripple_color.xml)) |
+| **Ripple (active)** | " | " | `?attr/colorPrimary` at 8% (see all [states](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/bottomnavigation/res/color/mtrl_bottom_nav_ripple_color.xml)) |
+| **Label visibility mode** | `app:labelVisibilityMode` | `setLabelVisibilityMode`<br/>`getLabelVisibilityMode`  | `LABEL_VISIBILITY_AUTO` |
 
+#### Icon attributes
 
-**Inactive text label attributes**
 | &nbsp; | **Attribute** | **Related methods**  | **Default value** |
 | --- | --- | --- | --- |
-| **Text label** | | | |
-| **Color** | | | |
-| **Typography** | | | |
+| **Icon** | `android:icon` in the `menu` resource | N/A | N/A |
+| **Size** | `app:itemIconSize` | `setItemIconSize`<br/>`setItemIconSizeRes`<br/>`getItemIconSize` | `24dp` |
+| **Color (inactive)** | `app:itemIconTint` | `setItemIconTintList`<br/>`getItemIconTintList` | `?attr/colorOnSurface` at 60% |
+| **Color (active)** | " | " | `?attr/colorPrimary` |
 
+#### Text label attributes
 
-**Active icon attributes**
 | &nbsp; | **Attribute** | **Related methods**  | **Default value** |
 | --- | --- | --- | --- |
-| **Icon** | | | |
-| **Color** | | | |
-| **Typography** | | | |
+| **Text label** | `android:title` in the `menu` resource | N/A | N/A |
+| **Color (inactive)** | `app:itemIconTint` | `setItemTextColor`<br/>`getItemTextColor` | `?attr/colorOnSurface` at 60% |
+| **Color (active)** | " | " | `?attr/colorPrimary` |
+| **Typography (inactive)** | `app:itemTextAppearanceInactive` | `setItemTextAppearanceInactive`<br/>`getItemTextAppearanceInactive` | `?attr/textAppearanceCaption` |
+| **Typography (active)** | `app:itemTextAppearanceActive` | `setItemTextAppearanceActive`<br/>`getItemTextAppearanceActive` | `?attr/textAppearanceCaption` |
+
+#### Styles
+
+| &nbsp; | **Style** | **Container color** | **Icon/Text label color (inactive)** | **Icon/Text label color (active)** |
+| --- | --- | --- | --- | --- |
+| **Default style** | `Widget.MaterialComponents.BottomNavigationView` | `?attr/colorSurface` | `?attr/colorOnSurface` at 60% | `?attr/colorPrimary` |
+| **Colored style** | `Widget.MaterialComponents.BottomNavigationView.Colored` | `?attr/colorPrimary` | `?attr/colorOnPrimary` at 60% | `?attr/colorOnPrimary` |
+
+Default style theme attribute: `?attr/bottomNavigationStyle`
+
+**Note:** The `Widget.MaterialComponents.BottomNavigationView.PrimarySurface` style will automatically switch between between the component's primary colored style in light theme and surface colored style in dark theme. More information in the [Dark theme documentation](/third_party/java_src/android_libs/material_components/g3doc/theming/Dark.md#primary-vs-surface-coloring-for-large-surfaces).
+
+See the full list of
+[styles](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/bottomnavigation/res/values/styles.xml)
+and
+[attributes](https://github.com/material-components/material-components-android/blob/master/lib/java/com/google/android/material/bottomnavigation/res/values/attrs.xml).
 
 
-**Active text label attributes**
-| &nbsp; | **Attribute** | **Related methods**  | **Default value** |
-| --- | --- | --- | --- |
-| **Text label** | | | |
-| **Color** | | | |
-| **Typography** | | | |
+## Theming a bottom navigation bar
 
+Bottom navigation supports [Material Theming](https://material.io/components/bottom-navigation#theming) and can be customized in terms of color and typography.
 
-**Styles**
+### Bottom navigation theming example
 
-| &nbsp; | **Style** |
-| --- | --- |
-| **Default style** | |
-| **Icon style** | |
+API and source code:
 
+* `BottonNavigationView`
+    * [Class description](https://developer.android.com/reference/com/google/android/material/bottomnavigation/BottomNavigationView)
+    * [Class source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/bottomnavigation/BottomNavigationView.java)
 
-## Theming a bottom nav bar
+The following example shows a bottom navigation bar with Material Theming.
 
-_Use the [Shrine theme](https://material.io/design/material-studies/shrine.html) for this example_
+![Bottom navigation theming example, it has a pink background and four dark brown icons: favorites, music note, places, and news](assets/bottom-nav-theming.png)
 
+#### Implementing bottom navigation theming
+
+Using theme attributes and a style in `res/values/styles.xml` (themes all bottom navigation bars and affects other components):
+
+```xml
+<style name="Theme.App" parent="Theme.MaterialComponents.*">
+    ...
+    <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView.Colored</item>
+    <item name="colorPrimary">@color/shrine_pink_100</item>
+    <item name="colorOnPrimary">@color/shrine_pink_900</item>
+</style>
 ```
-<code snippet here>
-The source code should render the following:
-* bottom navigation bar
-* four icons:
-    * favorites
-    * music note
-    * places (not part of material.io icons)
-    * news (not part of material.io icons)
+
+Or using a default style theme attribute, styles, and a theme overlay (themes all bottom navigation bars but does not affect other components):
+
+```xml
+<style name="Theme.App" parent="Theme.MaterialComponents.*">
+    ...
+    <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
+</style>
+
+<style name="Widget.App.BottomNavigationView" parent="WWidget.MaterialComponents.BottomNavigationView.Colored">
+    <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+</style>
+
+<style name="ThemeOverlay.App.BottomNavigationView" parent="">
+    <item name="colorPrimary">@color/shrine_pink_100</item>
+    <item name="colorOnPrimary">@color/shrine_pink_900</item>
+</style>
 ```
 
+Or using the style in the layout (affects only this specific bottom navigation bar):
+
+```xml
+<com.google.android.material.bottomnavigation.BottomNavigationView
+    ...
+    style="@style/Widget.App.BottomNavigationView"
+/>
+```
