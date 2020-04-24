@@ -7,9 +7,9 @@ iconId:
 path: /catalog/NavigationDrawers/
 -->
 
-# Navigation drawers
+# Navigation drawer
 
-[Navigation drawers](https://material.io/components/navigation-drawer) provide access to destinations in your app.
+A [navigation drawers](https://material.io/components/navigation-drawer) provide access to destinations in your app.
 
 ![Hero navigation drawer image](assets/NavDrawer-hero.png)
 
@@ -26,11 +26,11 @@ path: /catalog/NavigationDrawers/
 * [Bottom navigation drawers](#bottom-navigation-drawers)
 * [Theming navigation drawers](#theming-navigation-drawers)
 
-## Using navigation drawers
+## Using a navigation drawer
 
-Navigation drawers provide access to destinations and app functionality, such as switching accounts. They can either be permanently on-screen or controlled by a navigation menu icon.
+A navigation drawer provides access to destinations and app functionality, such as switching accounts. It can either be permanently on-screen or controlled by a navigation menu icon.
 
-Navigation drawers are recommended for:
+A navigation drawer is recommended for:
 
 * Apps with five or more top-level destinations
 * Apps with two or more levels of navigation hierarchy
@@ -40,10 +40,112 @@ Navigation drawers are recommended for:
 
 **Note to developers: include platform-specific accessibility information/settings**
 
+## Anatomy
+
+![Navigation drawer anatomy](assets/NavDrawer-anatomy.png)
+
+1. Container
+2. Header (optional)
+3. Divider (optional)
+4. Active text overlay
+5. Active text
+6. Inactive text
+7. Subtitle
+8. Scrim (modal only)
+
+
 ## Types
 
 There are three types of navigation drawer, which include 1. [standard](#standard-navigation-drawers) 2. [modal](#modal-navigation-drawers) 3. [bottom](#bottom-navigation-drawers)
 
+<!--Replace the image with a resized; composite-->
 1. ![Left-side standard nav drawer that pushes content to the right](assets/standard-nav-drawer-hero.png)
 1. ![Left-side modal nav drawer that partially covers the left side of the contents](assets/modal-nav-drawer-hero.png)
 1. ![Bottom nav drawer that partially covers the bottom of the contents](assets/bottom-nav-drawer-hero.png)
+
+## Standard navigation drawer
+
+[Standard navigation drawers](https://material.io/components/navigation-drawer#standard-drawer) allow interaction with both screen content and the drawer at the same time. They can be used on tablet and desktop, but they aren’t suitable for mobile due to limited screen size.
+
+### Standard navigation drawer example
+
+The following is an example of a standard navigation drawer:
+
+**Note to developers**
+Create example code/screenshot with the following features using the Material.io color theming:
+* Tile the following images in the background container:
+    * assets/nav-drawer-1.jpg
+    * assets/nav-drawer-2.jpg
+    * assets/nav-drawer-3.jpg
+    * assets/nav-drawer-4.jpg
+* Include a header title "Header"
+* Include a divider below the header
+* Include 3 items  below the divider
+    * Each item is labeled "Item 1," "Item 2," and "Item 3"
+    * Each item has an icon: favorites, garbage, and label
+* Include a second divider below the 3 items
+    * Include a label "Label" below the second divider
+    * Add an item labeled "Item A" with a bookmark icon
+
+
+## Model navigation drawer
+
+![Modal navigation drawers](https://material.io/components/navigation-drawer#modal-drawer) block interaction with the rest of an app’s content with a scrim. They are elevated above most of the app’s UI and don’t affect the screen’s layout grid.
+
+**Note to developers**
+Create example code/screenshot with the following features using the Material.io color theming:
+* Tile the following images in the background container:
+    * assets/nav-drawer-1.jpg
+    * assets/nav-drawer-2.jpg
+    * assets/nav-drawer-3.jpg
+    * assets/nav-drawer-4.jpg
+* Include a header title "Header"
+* Include a divider below the header
+* Include 3 items  below the divider
+    * Each item is labeled "Item 1," "Item 2," and "Item 3"
+    * Each item has an icon: favorites, garbage, and label
+* Include a second divider below the 3 items
+    * Include a label "Label" below the second divider
+    * Add an item labeled "Item A" with a bookmark icon
+* Include a scrim for the background container
+
+
+## Bottom navigation drawer
+
+![Bottom navigation drawers](https://material.io/components/navigation-drawer#bottom-drawer) are modal drawers that are anchored to the bottom of the screen instead of the left or right edge. They are only used with bottom app bars.
+
+**Note to developers**
+Create example code/screenshot with the following features using the Material.io color theming:
+* Tile the following images in the background container:
+    * assets/nav-drawer-1.jpg
+    * assets/nav-drawer-2.jpg
+    * assets/nav-drawer-3.jpg
+    * assets/nav-drawer-4.jpg
+* Include a header title "Header"
+* Include a divider below the header
+* Include 3 items  below the divider
+    * Each item is labeled "Item 1," "Item 2," and "Item 3"
+    * Each item has an icon: favorites, garbage, and label
+* Include a second divider below the 3 items
+    * Include a label "Label" below the second divider
+    * Add an item labeled "Item A" with a bookmark icon
+
+
+## Theming a navigation drawer
+
+**Note to developers**
+Create bottom navigation drawer example code/screenshot with the following features using the Material.io [Shrine]((https://material.io/design/material-studies/shrine.html) color theming:
+* Tile the following images in the background container:
+    * assets/nav-drawer-1.jpg
+    * assets/nav-drawer-2.jpg
+    * assets/nav-drawer-3.jpg
+    * assets/nav-drawer-4.jpg
+* Include a header title "Header"
+* Include a divider below the header
+* Include 3 items  below the divider
+    * Each item is labeled "Item 1," "Item 2," and "Item 3"
+    * Each item has an icon: favorites, garbage, and label
+* Include a second divider below the 3 items
+    * Include a label "Label" below the second divider
+    * Add an item labeled "Item A" with a bookmark icon
+
