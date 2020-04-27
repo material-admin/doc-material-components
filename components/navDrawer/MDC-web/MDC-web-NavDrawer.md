@@ -21,9 +21,9 @@ A [navigation drawers](https://material.io/components/navigation-drawer) provide
 * [Making navigation drawers accessible](#making-navigation-drawers-accessibl)
 * [Installing navigation drawers](#installing-navigation-drawers)
 * [Import navigation drawers](#import-navigation-drawers)
-* [Standard navigation drawers](#standard-navigation-drawers)
-* [Modal navigation drawers](#modal-navigation-drawers)
-* [Bottom navigation drawers](#bottom-navigation-drawers)
+* [Standard navigation drawers](#standard-navigation-drawer)
+* [Modal navigation drawers](#modal-navigation-drawer)
+* [Bottom navigation drawers](#bottom-navigation-drawer)
 
 ## Using a navigation drawer
 
