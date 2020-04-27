@@ -24,7 +24,6 @@ A [navigation drawers](https://material.io/components/navigation-drawer) provide
 * [Standard navigation drawers](#standard-navigation-drawers)
 * [Modal navigation drawers](#modal-navigation-drawers)
 * [Bottom navigation drawers](#bottom-navigation-drawers)
-* [Theming navigation drawers](#theming-navigation-drawers)
 
 ## Using a navigation drawer
 
@@ -63,12 +62,12 @@ There are three types of navigation drawer, which include 1. [standard](#standar
 
 ## Model navigation drawer
 
-![Modal navigation drawers](https://material.io/components/navigation-drawer#modal-drawer) block interaction with the rest of an app’s content with a scrim. They are elevated above most of the app’s UI and don’t affect the screen’s layout grid.
+[Modal navigation drawers](https://material.io/components/navigation-drawer#modal-drawer) block interaction with the rest of an app’s content with a scrim. They are elevated above most of the app’s UI and don’t affect the screen’s layout grid.
 
 
 ## Bottom navigation drawer
 
-![Bottom navigation drawers](https://material.io/components/navigation-drawer#bottom-drawer) are modal drawers that are anchored to the bottom of the screen instead of the left or right edge. They are only used with bottom app bars.
+[Bottom navigation drawers](https://material.io/components/navigation-drawer#bottom-drawer) are modal drawers that are anchored to the bottom of the screen instead of the left or right edge. They are only used with bottom app bars.
 
 
 
