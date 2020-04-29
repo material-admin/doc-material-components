@@ -1,0 +1,230 @@
+<!--docs:
+title: "Material <component>"
+layout: detail
+section: components
+excerpt: "Navigation drawers provide access to destinations in your app."
+iconId: 
+path: /catalog/NavigationDrawers/
+-->
+
+# Navigation drawer
+
+A [navigation drawers](https://material.io/components/navigation-drawer) provide access to destinations in your app.
+
+![Hero navigation drawer image](assets/NavDrawer-hero.png)
+
+## Contents
+
+**Note to developers: review the TOC contents to ensure that all rel links apply to your platform dev doc**
+
+* [Using navigation drawers](#using-navigation-drawers)
+* [Making navigation drawers accessible](#making-navigation-drawers-accessibl)
+* [Installing navigation drawers](#installing-navigation-drawers)
+* [Import navigation drawers](#import-navigation-drawers)
+* [Standard navigation drawers](#standard-navigation-drawers)
+* [Modal navigation drawers](#modal-navigation-drawers)
+* [Bottom navigation drawers](#bottom-navigation-drawers)
+* [Theming navigation drawers](#theming-navigation-drawers)
+
+## Using a navigation drawer
+
+A navigation drawer provides access to destinations and app functionality, such as switching accounts. It can either be permanently on-screen or controlled by a navigation menu icon.
+
+A navigation drawer is recommended for:
+
+* Apps with five or more top-level destinations
+* Apps with two or more levels of navigation hierarchy
+* Quick navigation between unrelated destinations
+
+### Making navigation drawers accessible
+
+**Note to developers: include platform-specific accessibility information/settings**
+
+## Anatomy
+
+![Navigation drawer anatomy](assets/NavDrawer-anatomy.png)
+
+1. Container
+2. Header (optional)
+3. Divider (optional)
+4. Active text overlay
+5. Active text
+6. Inactive text
+7. Subtitle
+8. Scrim (modal only)
+
+### Container attributes
+
+&nbsp; | Attribute | Related method(s) | Default value
+------ | --------- | ----------------- | -------------
+**Color** | `app:background` | N/A | 
+**Height** | `app:height` | N/A | 
+**Overlay window** | `app:windowActionModeOverlay` (in app theme) | N/A | 
+
+### Header attributes
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+**Text label** | `android:text`           | `setText`<br/>`getText`           | 
+**Color**      | `android:textColor`      | `setTextColor`<br/>`getTextColor` | 
+**Typography**
+
+### Divider attributes
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+ | | | 
+
+### Active text overlay attributes
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+**Text label** | `android:text`           | `setText`<br/>`getText`           | 
+**Color**      | `android:textColor`      | `setTextColor`<br/>`getTextColor` | 
+**Typography**
+
+### Active text attributes
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+**Text label** | `android:text`           | `setText`<br/>`getText`           | 
+**Color**      | `android:textColor`      | `setTextColor`<br/>`getTextColor` | 
+**Typography**
+
+### Inactive text attributes
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+**Text label** | `android:text`           | `setText`<br/>`getText`           | 
+**Color**      | `android:textColor`      | `setTextColor`<br/>`getTextColor` | 
+**Typography**
+
+### Subtitle attributes
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+**Text label** | `android:text`           | `setText`<br/>`getText`           | 
+**Color**      | `android:textColor`      | `setTextColor`<br/>`getTextColor` | 
+**Typography**
+
+### Scrim attributes
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+ | | | 
+
+## Types
+
+There are three types of navigation drawer, which include 1. [standard](#standard-navigation-drawers) 2. [modal](#modal-navigation-drawers) 3. [bottom](#bottom-navigation-drawers)
+
+
+**Note to developers: Replace the image with a resized composite (see http://b/154749964 for updates)**
+1. ![Left-side standard nav drawer that pushes content to the right](assets/standard-nav-drawer-hero.png)
+1. ![Left-side modal nav drawer that partially covers the left side of the contents](assets/modal-nav-drawer-hero.png)
+1. ![Bottom nav drawer that partially covers the bottom of the contents](assets/bottom-nav-drawer-hero.png)
+
+## Standard navigation drawer
+
+[Standard navigation drawers](https://material.io/components/navigation-drawer#standard-drawer) allow interaction with both screen content and the drawer at the same time. They can be used on tablet and desktop, but they aren’t suitable for mobile due to limited screen size.
+
+### Standard navigation drawer example
+
+`NavigationView`
+* [Class definition](https://developer.android.com/reference/com/google/android/material/navigation/NavigationView)
+* [GitHub source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/navigation/NavigationView.java)
+
+
+The following is an example of a standard navigation drawer:
+
+**Note to developers**
+Create example code/screenshot with the following features using the Material.io color theming:
+* Tile the following images in the background container:
+    * assets/nav-drawer-1.jpg
+    * assets/nav-drawer-2.jpg
+    * assets/nav-drawer-3.jpg
+    * assets/nav-drawer-4.jpg
+* Include a header title "Header"
+* Include a divider below the header
+* Include 3 items  below the divider
+    * Each item is labeled "Item 1," "Item 2," and "Item 3"
+    * Each item has an icon: favorites, garbage, and label
+* Include a second divider below the 3 items
+    * Include a label "Label" below the second divider
+    * Add an item labeled "Item A" with a bookmark icon
+
+
+## Model navigation drawer
+
+`NavigationView`
+* [Class definition](https://developer.android.com/reference/com/google/android/material/navigation/NavigationView)
+* [GitHub source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/navigation/NavigationView.java)
+
+
+![Modal navigation drawers](https://material.io/components/navigation-drawer#modal-drawer) block interaction with the rest of an app’s content with a scrim. They are elevated above most of the app’s UI and don’t affect the screen’s layout grid.
+
+**Note to developers**
+Create example code/screenshot with the following features using the Material.io color theming:
+* Tile the following images in the background container:
+    * assets/nav-drawer-1.jpg
+    * assets/nav-drawer-2.jpg
+    * assets/nav-drawer-3.jpg
+    * assets/nav-drawer-4.jpg
+* Include a header title "Header"
+* Include a divider below the header
+* Include 3 items  below the divider
+    * Each item is labeled "Item 1," "Item 2," and "Item 3"
+    * Each item has an icon: favorites, garbage, and label
+* Include a second divider below the 3 items
+    * Include a label "Label" below the second divider
+    * Add an item labeled "Item A" with a bookmark icon
+* Include a scrim for the background container
+
+
+## Bottom navigation drawer
+
+`NavigationView`
+* [Class definition](https://developer.android.com/reference/com/google/android/material/navigation/NavigationView)
+* [GitHub source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/navigation/NavigationView.java)
+
+![Bottom navigation drawers](https://material.io/components/navigation-drawer#bottom-drawer) are modal drawers that are anchored to the bottom of the screen instead of the left or right edge. They are only used with bottom app bars.
+
+**Note to developers**
+Create example code/screenshot with the following features using the Material.io color theming:
+* Tile the following images in the background container:
+    * assets/nav-drawer-1.jpg
+    * assets/nav-drawer-2.jpg
+    * assets/nav-drawer-3.jpg
+    * assets/nav-drawer-4.jpg
+* Include a header title "Header"
+* Include a divider below the header
+* Include 3 items  below the divider
+    * Each item is labeled "Item 1," "Item 2," and "Item 3"
+    * Each item has an icon: favorites, garbage, and label
+* Include a second divider below the 3 items
+    * Include a label "Label" below the second divider
+    * Add an item labeled "Item A" with a bookmark icon
+
+
+## Theming a navigation drawer
+
+`NavigationView`
+* [Class definition](https://developer.android.com/reference/com/google/android/material/navigation/NavigationView)
+* [GitHub source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/navigation/NavigationView.java)
+
+
+**Note to developers**
+Create bottom navigation drawer example code/screenshot with the following features using the Material.io [Shrine]((https://material.io/design/material-studies/shrine.html) color theming:
+* Tile the following images in the background container:
+    * assets/nav-drawer-1.jpg
+    * assets/nav-drawer-2.jpg
+    * assets/nav-drawer-3.jpg
+    * assets/nav-drawer-4.jpg
+* Include a header title "Header"
+* Include a divider below the header
+* Include 3 items  below the divider
+    * Each item is labeled "Item 1," "Item 2," and "Item 3"
+    * Each item has an icon: favorites, garbage, and label
+* Include a second divider below the 3 items
+    * Include a label "Label" below the second divider
+    * Add an item labeled "Item A" with a bookmark icon
+
