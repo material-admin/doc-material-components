@@ -58,10 +58,7 @@ A navigation drawer is recommended for:
 
 There are three types of navigation drawer, which include 1. [standard](#standard-navigation-drawers) 2. [modal](#modal-navigation-drawers) 3. [bottom](#bottom-navigation-drawers)
 
-<!--Replace the image with a resized; composite-->
-1. ![Left-side standard nav drawer that pushes content to the right](assets/standard-nav-drawer-hero.png)
-1. ![Left-side modal nav drawer that partially covers the left side of the contents](assets/modal-nav-drawer-hero.png)
-1. ![Bottom nav drawer that partially covers the bottom of the contents](assets/bottom-nav-drawer-hero.png)
+![Standard, modal, and bottom navigation drawers](assets/Navigation-drawer_composite.png)
 
 ## Standard navigation drawer
 
