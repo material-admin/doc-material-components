@@ -58,11 +58,7 @@ A navigation drawer is recommended for:
 
 There are three types of navigation drawer, which include 1. [standard](#standard-navigation-drawers) 2. [modal](#modal-navigation-drawers) 3. [bottom](#bottom-navigation-drawers)
 
-
-**Note to developers: Replace the image with a resized composite (see http://b/154749964 for updates)**
-1. ![Left-side standard nav drawer that pushes content to the right](assets/standard-nav-drawer-hero.png)
-1. ![Left-side modal nav drawer that partially covers the left side of the contents](assets/modal-nav-drawer-hero.png)
-1. ![Bottom nav drawer that partially covers the bottom of the contents](assets/bottom-nav-drawer-hero.png)
+![Standard, modal, and bottom navigation drawers](assets/Navigation-drawer_composite.png)
 
 ## Standard navigation drawer
 
@@ -91,7 +87,7 @@ Create example code/screenshot with the following features using the Material.io
 
 ## Model navigation drawer
 
-![Modal navigation drawers](https://material.io/components/navigation-drawer#modal-drawer) block interaction with the rest of an app’s content with a scrim. They are elevated above most of the app’s UI and don’t affect the screen’s layout grid.
+[Modal navigation drawers](https://material.io/components/navigation-drawer#modal-drawer) block interaction with the rest of an app’s content with a scrim. They are elevated above most of the app’s UI and don’t affect the screen’s layout grid.
 
 **Note to developers**
 Create example code/screenshot with the following features using the Material.io color theming:
@@ -113,7 +109,7 @@ Create example code/screenshot with the following features using the Material.io
 
 ## Bottom navigation drawer
 
-![Bottom navigation drawers](https://material.io/components/navigation-drawer#bottom-drawer) are modal drawers that are anchored to the bottom of the screen instead of the left or right edge. They are only used with bottom app bars.
+[Bottom navigation drawers](https://material.io/components/navigation-drawer#bottom-drawer) are modal drawers that are anchored to the bottom of the screen instead of the left or right edge. They are only used with bottom app bars.
 
 **Note to developers**
 Create example code/screenshot with the following features using the Material.io color theming:

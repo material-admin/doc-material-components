@@ -126,9 +126,9 @@ There are three types of navigation drawer, which include 1. [standard](#standar
 ### Standard navigation drawer example
 
 `Drawer`
-[Class definition](https://api.flutter.dev/flutter/material/Drawer-class.html)
-[GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/drawer.dart)
-[Demo site](link to dartpad demo)
+* [Class definition](https://api.flutter.dev/flutter/material/Drawer-class.html)
+* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/drawer.dart)
+* [Demo site](link to dartpad demo)
 
 The following is an example of a standard navigation drawer:
 
@@ -152,12 +152,12 @@ Create example code/screenshot with the following features using the Material.io
 ## Model navigation drawer
 
 `Drawer`
-[Class definition](https://api.flutter.dev/flutter/material/Drawer-class.html)
-[GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/drawer.dart)
-[Demo site](link to dartpad demo)
+* [Class definition](https://api.flutter.dev/flutter/material/Drawer-class.html)
+* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/drawer.dart)
+* [Demo site](link to dartpad demo)
 
 
-![Modal navigation drawers](https://material.io/components/navigation-drawer#modal-drawer) block interaction with the rest of an app’s content with a scrim. They are elevated above most of the app’s UI and don’t affect the screen’s layout grid.
+[Modal navigation drawers](https://material.io/components/navigation-drawer#modal-drawer) block interaction with the rest of an app’s content with a scrim. They are elevated above most of the app’s UI and don’t affect the screen’s layout grid.
 
 **Note to developers**
 Create example code/screenshot with the following features using the Material.io color theming:
@@ -180,12 +180,12 @@ Create example code/screenshot with the following features using the Material.io
 ## Bottom navigation drawer
 
 `Drawer`
-[Class definition](https://api.flutter.dev/flutter/material/Drawer-class.html)
-[GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/drawer.dart)
-[Demo site](link to dartpad demo)
+* [Class definition](https://api.flutter.dev/flutter/material/Drawer-class.html)
+* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/drawer.dart)
+* [Demo site](link to dartpad demo)
 
 
-![Bottom navigation drawers](https://material.io/components/navigation-drawer#bottom-drawer) are modal drawers that are anchored to the bottom of the screen instead of the left or right edge. They are only used with bottom app bars.
+[Bottom navigation drawers](https://material.io/components/navigation-drawer#bottom-drawer) are modal drawers that are anchored to the bottom of the screen instead of the left or right edge. They are only used with bottom app bars.
 
 **Note to developers**
 Create example code/screenshot with the following features using the Material.io color theming:
