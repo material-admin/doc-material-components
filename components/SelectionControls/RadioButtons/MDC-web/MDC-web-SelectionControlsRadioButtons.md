@@ -21,10 +21,10 @@ Use radio buttons to:
 
 ## Contents
 
-* Using radio buttons
-* Installing radio buttons
-* Import radio buttons
-* Making radio buttons accessible
+* [Using radio buttons](#using-radio-buttons)
+* [Installing radio buttons](#installing-radio-buttons)
+* [Import radio buttons](#import-radio-buttons)
+* [Making radio buttons accessible](#making-radio-buttons-accessible)
 
 ## Using radio buttons
 
