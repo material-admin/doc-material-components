@@ -37,7 +37,7 @@ Use switches to:
 
 The following is an anatomy diagram that shows a switch thumb and a switch track:
 
-![Switch anatomy diagram](assets/switch-anatomy.png)
+![Switch anatomy diagram](assets/switches-anatomy.png)
 
 1. Thumb
 1. Track
