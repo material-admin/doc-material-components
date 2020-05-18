@@ -60,9 +60,9 @@ The following is an example of a snackbar with an action button:
 
 ## Theming example
 
-The following is an example of a snackbar with an action button that uses the Material.io [Shrine]((https://material.io/design/material-studies/shrine.html) color theming::
+The following is an example of a snackbar with an action button that uses the Material.io [Shrine](https://material.io/design/material-studies/shrine.html) color theming::
 
-**Note to developers: Provide code source and a screenshot that shows a snackbar with Material.io [Shrine]((https://material.io/design/material-studies/shrine.html) color theming:**
+**Note to developers: Provide code source and a screenshot that shows a snackbar with Material.io [Shrine](https://material.io/design/material-studies/shrine.html) color theming:**
 
 * A text label that reads "Text label"
 * A container with a background image:
