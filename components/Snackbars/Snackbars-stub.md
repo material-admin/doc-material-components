@@ -4,10 +4,10 @@ layout: detail
 section: components
 excerpt: "Snackbars provide brief messages about app processes at the bottom of the screen."
 iconId: 
-path: /catalog/NavigationDrawers/
+path: /catalog/Snackbars/
 -->
 
-# Navigation drawer
+# Snackbars
 
 [Snackbars](https://material.io/components/snackbars) provide brief messages about app processes at the bottom of the screen.
 
