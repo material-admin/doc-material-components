@@ -18,19 +18,13 @@ path: /catalog/Snackbars/
 **Note to developers: review the TOC contents to ensure that all rel links apply to your platform dev doc**
 
 * [Using snackbars](#using-snackbars)
-* [Installing snackbars](#installing-snackbars)
-* [Importing snackbars](#importing-snackbars)
-* [Making snackbars accessible](#making-snackbars-accessible)
+* [Making snackbars accessible](#making-snackbars-accessibl)
 * [Snackbars example](#snackbar-example)
 * [Theming snackbars](#theming-snackbars)
 
 ## Using snackbars
 
 Snackbars inform users of a process that an app has performed or will perform. They appear temporarily, towards the bottom of the screen. They shouldn’t interrupt the user experience, and they don’t require user input to disappear.
-
-### Installing snackbars
-
-### Importing snackbars
 
 ### Making snackbars accessible
 
@@ -46,7 +40,35 @@ The following is an anatomy diagram of a snackbar:
 1. Container
 1. Action (optional)
 
+### Text label attributes
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+**Text label** | `android:text`           | `setText`<br/>`getText`           | 
+**Color**      | `android:textColor`      | `setTextColor`<br/>`getTextColor` | 
+**Typography**
+
+
+### Container attributes
+
+&nbsp; | Attribute | Related method(s) | Default value
+------ | --------- | ----------------- | -------------
+**Color** | `app:background` | N/A | 
+**Height** | `app:height` | N/A | 
+**Overlay window** | `app:windowActionModeOverlay` (in app theme) | N/A | 
+
+### Action attributes
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+ | | | 
+
+
 ## Snackbars example
+
+`Snackbar`
+* [Class definition](https://developer.android.com/reference/com/google/android/material/snackbar/Snackbar)
+* [GitHub source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/snackbar/Snackbar.java)
 
 The following is an example of a snackbar with an action button:
 
@@ -58,6 +80,11 @@ The following is an example of a snackbar with an action button:
 * A text button with a label "Action"
 
 ## Theming example
+
+`Snackbar`
+* [Class definition](https://developer.android.com/reference/com/google/android/material/snackbar/Snackbar)
+* [GitHub source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/snackbar/Snackbar.java)
+
 
 The following is an example of a snackbar with an action button that uses the Material.io [Shrine](https://material.io/design/material-studies/shrine.html) color theming::
 
