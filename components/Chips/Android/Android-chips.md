@@ -16,8 +16,6 @@ path: /catalog/material-chips/
 ## Contents
 
 * [Using chips](#using-chips)
-* [Installing chips](#installing-chips)
-* [Importing chips](#importing-chips)
 * [Making chips accessible](#making-chips-accessible)
 * [Input chips](#input-chips)
 * [Choice chips](#choice-chips)
@@ -27,19 +25,14 @@ path: /catalog/material-chips/
 
 ## Using chips
 
+
 Chips allow users to enter information, make selections, filter content, or trigger actions. While buttons are expected to appear consistently and with familiar calls to action, chips should appear dynamically as a group of multiple interactive elements.
 
-### Installing chips
-
-
-### Importing chips
 
 
 ### Making chips accessible
 
-
 **Note to developers: List/describe any accessibility settings or attributes associated with chips**
-
 
 ## Anatomy and key properties
 
@@ -55,13 +48,33 @@ The following is an anatomy diagram of a chip:
 ### Container
 
 
+&nbsp; | Attribute | Related method(s) | Default value
+------ | --------- | ----------------- | -------------
+**Color** | `app:background` | N/A | 
+**Height** | `app:height` | N/A | 
+**Overlay window** | `app:windowActionModeOverlay` (in app theme) | N/A | 
+
 ### Thumbnail
 
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+ | | | 
 
 ### Text
 
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+**Text label** | `android:text`           | `setText`<br/>`getText`           | 
+**Color**      | `android:textColor`      | `setTextColor`<br/>`getTextColor` | 
+**Typography**
+
 
 ### Remove icon
+
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+ | | | 
 
 ## Types
 
@@ -71,9 +84,13 @@ There are four different types of chips, including [input](#input-chips), [choic
 
 ### Input chips
 
-Input chips represent a complex piece of information in compact form, such as an entity (person, place, or thing) or text. They enable user input and verify that input by converting text into chips.
+Input chips (refered to as "entry" chips in Android) represent a complex piece of information in compact form, such as an entity (person, place, or thing) or text. They enable user input and verify that input by converting text into chips.
 
 #### Input chips example
+
+`Chip`
+* [Class definition](https://developer.android.com/reference/com/google/android/material/chip/Chip)
+* [GitHub source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/chip/Chip.java)
 
 **Note to developers** Create an input chips example with the following features:
 
@@ -91,6 +108,11 @@ Choice chips allow selection of a single chip from a set of options.
 Choice chips clearly delineate and display options in a compact area. They are a good alternative to toggle buttons, radio buttons, and single select menus.
 
 #### Choice chips example
+
+`Chip`
+* [Class definition](https://developer.android.com/reference/com/google/android/material/chip/Chip)
+* [GitHub source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/chip/Chip.java)
+
 
 **Note to developers** Create a choice chips example with the following features:
 
@@ -110,6 +132,11 @@ Filter chips clearly delineate and display options in a compact area. They are a
 
 #### Filter chips example
 
+`Chip`
+* [Class definition](https://developer.android.com/reference/com/google/android/material/chip/Chip)
+* [GitHub source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/chip/Chip.java)
+
+
 **Note to developers** Create a filter chips example with the following features:
 
 * Generate six filter chips, each labeled "Filter 1", "Filter 2" ... "Filter 6"
@@ -123,6 +150,11 @@ An alternative to action chips are buttons, which should appear persistently and
 
 
 #### Action chips example
+
+`Chip`
+* [Class definition](https://developer.android.com/reference/com/google/android/material/chip/Chip)
+* [GitHub source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/chip/Chip.java)
+
 
 **Note to developers** Create an action chips example with the following features:
 
@@ -138,6 +170,11 @@ An alternative to action chips are buttons, which should appear persistently and
 Chips support [Material Theming](https://material.io/components/chips/#theming) and can be customized in terms of color, typography and shape.
 
 ### Theming example
+
+`Chip`
+* [Class definition](https://developer.android.com/reference/com/google/android/material/chip/Chip)
+* [GitHub source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/chip/Chip.java)
+
 
 **Note to developers** Create an input chips example with the following features using the [Shrine theme](https://material.io/design/material-studies/shrine.html):
 
