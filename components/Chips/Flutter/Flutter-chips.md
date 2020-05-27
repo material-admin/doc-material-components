@@ -45,7 +45,7 @@ Chips allow users to enter information, make selections, filter content, or trig
 
 The following is an anatomy diagram of a chip:
 
-![Chip anatomy diagram](assets/chips-anatomy.png)
+![Chip anatomy diagram](assets/Chips_anatomy.png)
 
 1. Container
 1. Thumbnail (optional)
@@ -86,7 +86,7 @@ The following is an anatomy diagram of a chip:
 
 There are four different types of chips that are subclasses of [`Chip`](https://api.flutter.dev/flutter/material/Chip-class.html), including [input](#input-chips), [choice](#choice-chips), [filter](#filter-chips), and [action](#action-chips).
 
-![Examples of the four different chip types](assets/chip composite image here)
+![Examples of the four different chip types](assets/Chips_composite.png)
 
 ### Input chips
 
