@@ -39,9 +39,9 @@ Insert a hero image selected from spec. For example, the `assets` folder might i
 
 Include TOC here of the major sections with relative links, including:
 * [Using \<component name\>](#relative link here)
-* [Making \<component name\> accessible](#relative link here)
 * [Installing \<component name\> (if available)](#relative link here)
 * [Import \<component name\> (if available)](#relative link here)
+* [Making \<component name\> accessible](#relative link here)
 * [\<First component type\>](#relative link here)
 * [\<Second component type\>](#relative link here)
 * [\<any additional component types\>](#relative link here)
