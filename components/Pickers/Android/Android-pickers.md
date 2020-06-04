@@ -115,7 +115,7 @@ Mobile calendar pickers allow selection of a single date and year.
 * [Class definition](https://developer.android.com/reference/com/google/android/material/datepicker/MaterialDatePicker)
 * [GitHub source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/datepicker/MaterialDatePicker.java)
 
-'CalendarConstraints'
+`CalendarConstraints`
 * [Class definition](https://developer.android.com/reference/com/google/android/material/datepicker/CalendarConstraints)
 * [GitHub source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/datepicker/CalendarConstraints.java)
 
@@ -134,7 +134,7 @@ Mobile calendar pickers allow selection of a single date and year.
 * [Class definition](https://developer.android.com/reference/com/google/android/material/datepicker/MaterialDatePicker)
 * [GitHub source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/datepicker/MaterialDatePicker.java)
 
-'CalendarConstraints'
+`CalendarConstraints`
 * [Class definition](https://developer.android.com/reference/com/google/android/material/datepicker/CalendarConstraints)
 * [GitHub source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/datepicker/CalendarConstraints.java)
 
