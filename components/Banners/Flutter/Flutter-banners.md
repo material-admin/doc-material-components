@@ -11,7 +11,7 @@ path: /catalog/material-banners/
 
 A [banner](https://material.io/components/banners) displays a prominent message and related optional actions.
 
-![Hero image of a banner showing a transaction error message](assets/banner_hero.png)
+![Hero image of a banner showing a transaction error message](assets/banners_hero.png)
 
 ## Contents
 
