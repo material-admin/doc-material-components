@@ -78,6 +78,11 @@ Banners consist of the following:
 
 ## Banners example
 
+`MaterialBanner`
+* [Class definition](https://master-api.flutter.dev/flutter/material/MaterialBanner-class.html)
+* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/banner.dart)
+* [Demo site](link to dartpad demo)
+
 **Note to developers: Provide source and a screenshot of a banner with the following:**
 * A trash icon supporting illustration
 * A text message that reads "Error message text"
@@ -87,6 +92,12 @@ Banners consist of the following:
 
 
 ## Theming banners
+
+`MaterialBanner`
+* [Class definition](https://master-api.flutter.dev/flutter/material/MaterialBanner-class.html)
+* [GitHub source](https://github.com/flutter/flutter/blob/master/packages/flutter/lib/src/material/banner.dart)
+* [Demo site](link to dartpad demo)
+
 
 **Note to developers: Provide source and a screenshot of a banner with the following using [Shrine theming](https://material.io/design/material-studies/shrine.html):**
 * A trash icon supporting illustration
