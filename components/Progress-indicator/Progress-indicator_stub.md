@@ -12,7 +12,7 @@ path: /catalog/material-progress-indicators/
 [Progress indicators](https://material.io/components/progress-indicators) express an unspecified wait time or display the length of a process.
 
 
-![Progress indicator example](insert progress indicator image here)
+![Progress indicator hero](assets/hero-1.gif)
 
 # Contents
 
@@ -39,7 +39,7 @@ _**Note: When displaying progress for a sequence of processes, indicate overall 
 
 Material Design offers two visually distinct types of progress indicators:  1. [linear](#linear-progress-indicators) 2. [circular](#circular-progress-indicators) progress indicators. Only one type should represent each kind of activity in an app. For example, if a refresh action displays a circular indicator on one screen, that same action shouldn’t use a linear indicator elsewhere in the app.
 
-![Composite image of progress indicator types](insert progress indicator types here)
+![Composite image of progress indicator types](assets/composite-1.gif)
 
 ## Linear progress indicators
 
@@ -99,6 +99,7 @@ Circular progress indicators support both determinate and indeterminate processe
 `\<API name\>`
 * [Class definition](link here)
 * [GitHub source](link here)
+
 The following shows a determinate circular progress indicator
 
 **Note to developers: Generate code/screenshot of the following**
