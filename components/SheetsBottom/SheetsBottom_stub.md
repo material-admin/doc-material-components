@@ -36,7 +36,7 @@ Bottom sheets are supplementary surfaces primarily used on mobile.
 
 The following shows the anatomy of a bottom sheet:
 
-![Bottom sheet anatomy](assets/BottomSheet_anatomy.png)
+![Bottom sheet anatomy](assets/SheetsBottom_anatomy.png)
 
 1. Sheet
 2. Contents
