@@ -32,16 +32,6 @@ Bottom sheets are supplementary surfaces primarily used on mobile.
 ### Making bottom sheets accessible
 
 
-## Anatomy and key properties
-
-The following shows the anatomy of a bottom sheet:
-
-![Bottom sheet anatomy](assets/SheetsBottom_anatomy.png)
-
-1. Sheet
-2. Contents
-3. Scrim (Modal only)
-
 ### Sheet
 
 ### Contents
@@ -68,6 +58,16 @@ Modal bottom sheets present a set of choices while blocking interaction with the
 Modal bottom sheets are used in mobile apps only.
 
 ### Modal bottom sheet example
+
+## Anatomy and key properties
+
+The following shows the anatomy of a bottom sheet:
+
+![Bottom sheet anatomy](assets/SheetBottom_modal_anatomy.png)
+
+1. Sheet
+2. Contents
+3. Scrim (Modal only)
 
 ## Expanding bottom sheet
 
