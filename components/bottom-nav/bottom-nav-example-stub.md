@@ -5,18 +5,9 @@ section: components
 excerpt: "Bottom navation bars allow movement between primary distinations in an app"
 iconId:
 path: /components/bottom-navigation
-api_doc_root:
 -->
 
-_**Instructions**_
-* [Using bottom navigation](#using-bottom-navigation)
-    * Add a link under [Using bottom navigation](#using-bottom-navigation) to your getting started page if you have one
-    * Insert [installation](#installation) and [theming](#theming) as appropriate for your platform
-    * Insert any additional instructions that apply to your platform with a separte level 3 header
-    * If you have no getting started links or instructions, delete the [Using bottom navigation](#using-bottom-navigation) sections
 
-
-<!-- How do we make sure that this template (and therefore all proceeding docs) meet accessibility guidelines -->
 # Bottom navigation
 
 [Bottom navigation](https://material.io/components/bottom-navigation/#) bars allow movement between primary destinations in an app.
@@ -26,31 +17,24 @@ _**Instructions**_
 
 ## Using bottom navigation
 
-If there are any instructions on using the component that applies to all component variants (for example, installation or theming, accessiblity), include them here.
 
-* Use an ordered list for ordered steps (`1.`)
-* Use an unorered list for steps that have no particular order (`* `)
-
-If there is a separate page that has instructions, link to that page.
-<!-- What are the best ways to integrate component accessbility features into the template? -->
-
-### Anatomy and key properties
-
-
-
-## Bottom navigation example <!-- No variants, so no need for variant sections -->
+## Bottom navigation example
 
 Source code API:
 
+_**Note to developers: link to approprite sites as applicable**_ 
+
 * \<source class name\>
-  * [Class description](developer site here)
-  * [GitHub source](https://github.com/materials-components/)
+    * [Class description](developer site here)
+    * [GitHub source](https://github.com/materials-components/)
+    * [Demo site](demo site here)
 
 
 
 
 
 The following example shows a bottom navigation bar with four icons:
+
 * favorites
 * music note
 * places
@@ -71,9 +55,42 @@ The source code should render the following:
 * inactive icons should be show a 60% opacity
 ```
 
+### Anatomy and key properties
+
+The following is an anatomy diagram for the bottom navigation bar:
+
+![bottom nav anatomy diagram](bottom-nav-anatomy.png)
+
+1. Container
+1. Inactive icon
+1. Inactive text label
+1. Active icon
+1. Active text label
+
+**Container attributes**
+
+**Inactive icon attributes**
+
+**Inactive text label attributes**
+
+**Active icon attributes**
+
+**Active text label attributes**
+
+
 
 ## Theming a bottom nav bar
 
 _Use the [Shrine theme](https://material.io/design/material-studies/shrine.html) for this example_
 
+```
+<code snippet here>
+The source code should render the following:
+* bottom navigation bar
+* four icons:
+    * favorites
+    * music note
+    * places (not part of material.io icons)
+    * news (not part of material.io icons)
+```
 

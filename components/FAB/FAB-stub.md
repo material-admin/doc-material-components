@@ -105,5 +105,7 @@ An extended FAB has a text label, a transparent container and an optional icon.
 
 ### FAB theming example
 
+**Note to developers: Provide sample code and a screenshot of a regular FAB, mini FAB, and extended FAB using the [Shrine](https://material.io/design/material-studies/shrine.html) theme**
+
 
 
