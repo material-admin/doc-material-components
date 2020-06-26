@@ -46,13 +46,11 @@ Standard bottom sheets co-exist with the screen’s main UI region and allow for
 
 **Note to developers: Generate code and screenshots (expanded and collapsed) for a standard bottom sheet showing the following:**
 * A phone home screen appropriate for your platform (app icons, background of your choice)
-* A standard bottom sheet (collapsed) of a music app that shows:
-    * An album thumbnail (use [this](assets/SheetsBottom_standard_image))
-    * A track title "Track 1"
-    * A "play" icon
-* A standard bottom sheet (expanded) of a music app that shows:
-    * The album thumbnail, track title, and "play" icon from  the collapsed standard bottom sheet
-    * The contents should show tracks "Track 1", "Track 2" ... "Track 5"
+* A standard bottom sheet (collapsed) that shows:
+    * An thumbnail (use [this](assets/SheetsBottom_standard_image))
+    * A header "Header"
+* A standard bottom sheet (expanded) of an app that shows:
+    * "Title 1", "Title 2" ... "Title 5"
 
 ### Anatomy and key properties
 
@@ -112,15 +110,15 @@ Expanding bottom sheets are recommended for use on mobile and tablet.
 * [GitHub source](link here)
 
 
-**Note to developers: Generate code and screenshots (collapsed and expanded) for a modal bottom sheet showing the following:**
+**Note to developers: Generate code and screenshots (collapsed and expanded) for an expanding bottom sheet showing the following:**
 * Collapsed:
-    * A menu app that shows [pasta](assets/SheetsBottom_expanding_1.jpg) and [soup](assets/SheetsBottom_expanding_2.jpg)
+    * An image of [pasta](assets/SheetsBottom_expanding_1.jpg)
     * A collapsed expanding bottom sheet container with a "cart" icon and a label that reads "Cart"
 * Expanded:
     * A header
     * A "close action" icon
     * A label "Cart"
-    * Content showing a thumbnail of  [pasta](assets/SheetsBottom_expanding_1.jpg), a title "Pasta", and a "delete" icon
+    * Content showing a title "Pasta", and a "delete" icon
 
 ### Anatomy and key properties
 
