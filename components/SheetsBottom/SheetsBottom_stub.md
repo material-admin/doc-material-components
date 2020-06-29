@@ -126,16 +126,16 @@ The following shows the anatomy of an expanding bottom sheet:
 
 ![Expanding bottom sheet anatomy](assets/expanding-anatomy.png)
 
-**Collapsed state**
-1.Container
-2.Icon
+**Collapsed state**</br>
+1.Container</br>
+2.Icon</br>
 3.Label (Optional)
 
-**Expanded state**
-4.Header
-5.Close action
-6.Label
-7.Content
+**Expanded state**</br>
+4.Header</br>
+5.Close action</br>
+6.Label</br>
+7.Content</br>
 
 ## Theming bottom sheets
 
