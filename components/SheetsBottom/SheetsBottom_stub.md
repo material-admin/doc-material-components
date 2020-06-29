@@ -34,7 +34,7 @@ Bottom sheets are supplementary surfaces primarily used on mobile.
 
 ## Types
 
-There are three types suitable for different use cases: 1. [Standard bottom sheets](#standard-bottom-sheet) display content that complements the screen’s primary content and remain visible while users interact with the primary content, 2. [Modal bottom sheets](#modal-bottom-sheet) are an alternative to inline menus or simple dialogs on mobile and provide room for additional items, longer descriptions, and iconography, and must be dismissed in order to interact with the underlying content, and 3. [Expanding bottom sheets](#expadning-bottom-sheet) provide a small, collapsed surface that can be expanded by the user to access a key feature or task to offer the persistent access of a standard sheet with the space and focus of a modal sheet.
+There are three types suitable for different use cases: 1. [Standard bottom sheets](#standard-bottom-sheet) display content that complements the screen’s primary content and remain visible while users interact with the primary content, 2. [Modal bottom sheets](#modal-bottom-sheet) are an alternative to inline menus or simple dialogs on mobile and provide room for additional items, longer descriptions, and iconography, and must be dismissed in order to interact with the underlying content, and 3. [Expanding bottom sheets](#expanding-bottom-sheet) provide a small, collapsed surface that can be expanded by the user to access a key feature or task to offer the persistent access of a standard sheet with the space and focus of a modal sheet.
 
 ![Composite image of bottom sheet types](assets/bottom-sheet_types_composite.png)
 
@@ -45,9 +45,8 @@ Standard bottom sheets co-exist with the screen’s main UI region and allow for
 ### Standard bottom sheet example
 
 **Note to developers: Generate code and screenshots (expanded and collapsed) for a standard bottom sheet showing the following:**
-* A phone home screen appropriate for your platform (app icons, background of your choice)
+* An app screen showing an [example image]((assets/SheetsBottom_standard_image)	
 * A standard bottom sheet (collapsed) that shows:
-    * An thumbnail (use [this](assets/SheetsBottom_standard_image))
     * A header "Header"
 * A standard bottom sheet (expanded) of an app that shows:
     * "Title 1", "Title 2" ... "Title 5"
@@ -126,16 +125,16 @@ The following shows the anatomy of an expanding bottom sheet:
 
 ![Expanding bottom sheet anatomy](assets/expanding-anatomy.png)
 
-**Collapsed state**
-1.Container
-2.Icon
+**Collapsed state**</br>
+1.Container</br>
+2.Icon</br>
 3.Label (Optional)
 
-**Expanded state**
-4.Header
-5.Close action
-6.Label
-7.Content
+**Expanded state**</br>
+4.Header</br>
+5.Close action</br>
+6.Label</br>
+7.Content</br>
 
 ## Theming bottom sheets
 
