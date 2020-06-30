@@ -62,6 +62,19 @@ The following shows the anatomy of a standard bottom sheet:
 1. Sheet
 1. Contents
 
+
+#### Sheet attributes
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+ | | |
+
+#### Content attributes
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+ | | | 
+
 ## Modal bottom sheet
 
 Modal bottom sheets present a set of choices while blocking interaction with the rest of the screen. They are an alternative to inline menus and simple dialogs on mobile, providing additional room for content, iconography, and actions.
@@ -92,6 +105,28 @@ The following shows the anatomy of a modal bottom sheet:
 1. Sheet
 2. Contents
 3. Scrim
+
+
+#### Sheet attributes
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+| | | 
+
+#### Content attributes
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+ | | | 
+
+#### Scrim attributes
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+ | | | 
+
+
+
 
 ## Expanding bottom sheet
 
@@ -137,6 +172,58 @@ The following shows the anatomy of an expanding bottom sheet:
 5.Close action</br>
 6.Label</br>
 7.Content</br>
+
+
+#### Container attributes
+
+&nbsp; | Attribute | Related method(s) | Default value
+------ | --------- | ----------------- | -------------
+**Color** | `app:background` | N/A | 
+**Height** | `app:height` | N/A | 
+**Overlay window** | `app:windowActionModeOverlay` (in app theme) | N/A | 
+
+#### Icon attributes
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+ | | | 
+
+#### Label attribues
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+**Text label** | `android:text`           | `setText`<br/>`getText`           | 
+**Color**      | `android:textColor`      | `setTextColor`<br/>`getTextColor` | 
+**Typography** | | | 
+
+#### Header attributes
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+**Text label** | `android:text`           | `setText`<br/>`getText`           | 
+**Color**      | `android:textColor`      | `setTextColor`<br/>`getTextColor` | 
+**Typography** | | | 
+
+#### Close action attributes
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+ | | | 
+
+#### Label attribues
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+**Text label** | `android:text`           | `setText`<br/>`getText`           | 
+**Color**      | `android:textColor`      | `setTextColor`<br/>`getTextColor` | 
+**Typography** | | | 
+
+#### Content attributes
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+ | | | 
+
 
 ## Theming bottom sheets
 
