@@ -13,7 +13,7 @@ path: /catalog/sliders/
 [Sliders](https://material.io/components/sliders/) allow users to make
 selections from a range of values.
 
-!["Slider with sound icon buttons on each end."](assets/slider_hero.png)
+!["Slider with sound icon buttons on each end."](assets/sliders_hero.png)
 
 ## Contents
 
@@ -33,7 +33,7 @@ selections from a range of values.
 There are two types of sliders: 1\. [Continuous slider](#continuous-slider) and 2\.
 [Discrete slider](#discrete-slider)
 
-!["Slider examples of both continuous and discrete sliders."](assets/slider_types.png)
+!["Slider examples of both continuous and discrete sliders."](assets/sliders_types.png)
 
 A slider with one thumb is called a single point slider, and a slider with two thumbs is called a range slider.
 ### Anatomy and key properties
@@ -41,7 +41,7 @@ A slider with one thumb is called a single point slider, and a slider with two t
 A slider has a track, one or two thumbs, and optional value label. A discrete
 slider also has tick marks.
 
-![Slider anatomy diagram](assets/slider_anatomy.png)
+![Slider anatomy diagram](assets/sliders_anatomy.png)
 
 1.  Track
 2.  Thumb
