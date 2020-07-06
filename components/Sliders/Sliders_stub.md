@@ -32,6 +32,9 @@ Sliders can have icons on both ends of the bar that reflect a range of values.
 
 ### Making sliders accessible
 
+**Note to developers: Add platform-specific accessibility instructions**
+
+
 ## Types
 
 There are two types of sliders: 1\. [Continuous slider](#continuous-slider) and 2\.
