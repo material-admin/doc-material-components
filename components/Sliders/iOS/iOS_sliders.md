@@ -24,9 +24,47 @@ selections from a range of values.
 
 ## Using sliders
 
+
+Sliders reflect a range of values along a bar, from which users may select a single value. They are ideal for adjusting settings such as volume, brightness, or applying image filters.
+
+Sliders can have icons on both ends of the bar that reflect a range of values.
+
 ### Installing sliders
 
+In order to install with [Cocoapods](https://guides.cocoapods.org/using/getting-started.html) first add the component to your `Podfile`:
+
+```bash
+pod 'MaterialComponents/Slider'
+```
+
+Then run the installer:
+
+```bash
+pod install
+```
+
+Then import the Slider target:
+
+
+<!--<div class="material-code-render" markdown="1">-->
+
+#### Swift
+```swift
+import MaterialComponents.MaterialSlider
+```
+
+#### Objective-C
+```objc
+#import "MaterialSlider.h"
+```
+<!--</div>-->
+
+
+
 ### Making sliders accessible
+
+**Note to developers: include platform-specific accessibility information/settings**
+
 
 ## Types
 
@@ -77,9 +115,10 @@ a specific value.
 
 API and source code:
 
-*   ``
-    *   [Class definition]()
-    *   [Class source]()
+*   `MDCSlider`
+    *   [Class definition](https://material.io/components/ios/catalog/sliders/api-docs/Classes/MDCSlider.html)
+    *   [Class source](https://github.com/material-components/material-components-ios/tree/develop/components/Slider)
+
 
 **Note to developers: Provide a continuous single point slider example with code and screenshot with the following:**
 * A track range from 0 to 100
@@ -89,9 +128,6 @@ API and source code:
 
 API and source code:
 
-*   ``
-    *   [Class definition]()
-    *   [Class source]()
 
 **Note to developers: Provide a continuous range slider example with code and screenshot with the following:**
 * A track range from 0 to 100
@@ -107,10 +143,11 @@ allows a user to input an exact value.
 
 API and source code:
 
-*   ``
-    *   [Class definition]()
-    *   [Class source]()
+*   `MDCSlider`
+    *   [Class definition](https://material.io/components/ios/catalog/sliders/api-docs/Classes/MDCSlider.html)
+    *   [Class source](https://github.com/material-components/material-components-ios/tree/develop/components/Slider)
 
+*
 **Note to developers: Provide a discrete single point slider example with code and screenshot with the following:**
 * A track range from 0 to 100
 * A thumb set to 70
@@ -141,12 +178,10 @@ customized in terms of color and typography.
 
 API and source code:
 
-*   ``
-    *   [Class definition]()
-    *   [Class source]()
-*   ``
-    *   [Class definition]()
-    *   [Class source]()
+*   `MDCSlider`
+    *   [Class definition](https://material.io/components/ios/catalog/sliders/api-docs/Classes/MDCSlider.html)
+    *   [Class source](https://github.com/material-components/material-components-ios/tree/develop/components/Slider)
+
 
 The following example shows a discrete range slider with Material's [Shrine](https://material.io/design/material-studies/shrine.html) theme.
 

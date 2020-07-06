@@ -24,6 +24,10 @@ selections from a range of values.
 
 ## Using sliders
 
+Sliders reflect a range of values along a bar, from which users may select a single value. They are ideal for adjusting settings such as volume, brightness, or applying image filters.
+
+Sliders can have icons on both ends of the bar that reflect a range of values.
+
 ### Installing sliders
 
 ### Making sliders accessible
@@ -89,11 +93,7 @@ API and source code:
 
 API and source code:
 
-*   ``
-    *   [Class definition]()
-    *   [Class source]()
-
-**Note to developers: Provide a continuous range slider example with code and screenshot with the following:**
+*Note to developers: Provide a continuous range slider example with code and screenshot with the following:**
 * A track range from 0 to 100
 * A lower-bound thumb set to 20
 * An upper-bound thumb set to 70
@@ -141,9 +141,6 @@ customized in terms of color and typography.
 
 API and source code:
 
-*   ``
-    *   [Class definition]()
-    *   [Class source]()
 *   ``
     *   [Class definition]()
     *   [Class source]()
