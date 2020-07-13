@@ -15,14 +15,14 @@ path: /catalog/imagelists/
 
 ## Contents
 
-[Using image lists](#using-image-lists)
-[Installing image lists](#installing-image-lists)
-[Making image lists accessible](#making-image-lists-accessible)
-[Standard image lists](#standard-image-lists)
-[Quilted image lists](#quilted-image-lists)
-[Woven image lists](#woven-image-lists)
-[Masonry image lists](#masonry-image-lists)
-[Theming image lists](#theming-image-lists)
+* [Using image lists](#using-image-lists)
+* [Installing image lists](#installing-image-lists)
+* [Making image lists accessible](#making-image-lists-accessible)
+* [Standard image lists](#standard-image-lists)
+* [Quilted image lists](#quilted-image-lists)
+* [Woven image lists](#woven-image-lists)
+* [Masonry image lists](#masonry-image-lists)
+* [Theming image lists](#theming-image-lists)
 
 ## Using image lists
 
@@ -60,7 +60,7 @@ An image list consists of the following item:
 
 There are four types of image lists: 1\. [Standard image lists](#standard-image-lists) are best for items of equal importance. They have a uniform container size, ratio, and padding. 2\. [Quilted image lists](#quilted-image-lists) emphasize certain items over others in a collection. They create hierarchy using varied container sizes and ratios 3\. [Woven image lists](#woven-image-lists) facilitate the browsing of peer content. They display content in containers of varying ratios to create a rhythmic layout. 4\. [Masonry image lists](#masonry-image-lists) facilitate the browsing of uncropped peer content. Container heights are sized based on the image size.
 
-![Composite topography of image list types](assets/ImageLists_composite.png)
+![Composite topography of image list types](assets/ImageList_composite.png)
 
 ### Standard image lists
 
