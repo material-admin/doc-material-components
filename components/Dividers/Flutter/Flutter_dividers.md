@@ -22,6 +22,7 @@ A [divider](https://material.io/components/dividers) is a thin line that groups 
 * [Full-bleed dividers](#full-bleed-dividers)
 * [Inset dividers](#inset-dividers)
 * [Middle dividers](#middle-dividers)
+* [Theming dividers](#theming-dividers)
 
 ## Installing dividers
 
