@@ -23,6 +23,14 @@ A [divider](https://material.io/components/dividers) is a thin line that groups 
 * [Inset dividers](#inset-dividers)
 * [Middle dividers](#middle-dividers)
 
+## Installing dividers
+
+_**Note to developers: add any installtion instructions here**_
+
+## Making dividers accessible
+
+_**Note to developers: add any accessibility information here**_
+
 ## Anatomy and key properties
 
 The following shows the anatomy of a divider:
