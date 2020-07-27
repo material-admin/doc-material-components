@@ -7,31 +7,31 @@ iconId:
 path: /catalog/Pickers/
 -->
 
-# Pickers
+# Date pickers
 
 [Date pickers](https://material.io/components/pickers) let users select a date or range of dates. 
 
-![Example of mobile pickers](assets/pickers_hero.png)
+![Example of mobile date pickers](assets/pickers_hero.png)
 
 ## Contents
 
 **Note to developers: review the TOC contents to ensure that all rel links apply to your platform dev doc**
 
-* [Using pickers](#using-pickers)
-* [Installing pickers](#installing-pickers)
-* [Making pickers accessible](#making-pickers-accessible)
-* [Mobile pickers](#mobile-pickers)
-* [Theming pickers](#theming-pickers)
+* [Using date pickers](#using-date-pickers)
+* [Installing date pickers](#installing-date-pickers)
+* [Making date pickers accessible](#making-date-pickers-accessible)
+* [Mobile date pickers](#mobile-date-pickers)
+* [Theming date pickers](#theming-date-pickers)
 
-## Using pickers
+## Using date pickers
 
 Date pickers let users select a date or range of dates. They should be suitable for the context in which they appear.
 
 Date pickers can be embedded into dialogs on mobile.
 
-## Installing pickers
+## Installing date pickers
 
-### Making pickers accessible 
+### Making date pickers accessible 
 
 **Note to developers: include platform-specific accessibility information/settings**
 
@@ -97,9 +97,9 @@ Date pickers can be embedded into dialogs on mobile.
 -------------- | ------------------------ | --------------------------------- | -------------
  | | | 
 
-## Mobile pickers
+## Mobile date pickers
 
-Mobile calendar pickers can be used to select dates in the near future or past, when it’s useful to see them in a calendar month format. They are displayed in a dialog.
+Mobile calendar date pickers can be used to select dates in the near future or past, when it’s useful to see them in a calendar month format. They are displayed in a dialog.
 
 Common use cases include:
 
@@ -107,9 +107,9 @@ Making a restaurant reservation
 Scheduling a meeting
 They aren’t ideal for selecting dates in the distant past or future that require more navigation, such as entering a birth date or expiration date.
 
-Mobile calendar pickers allow selection of a single date and year.
+Mobile calendar date pickers allow selection of a single date and year.
 
-### Mobile pickers example
+### Mobile date pickers example
 
 `MaterialDatePicker`
 * [Class definition](https://developer.android.com/reference/com/google/android/material/datepicker/MaterialDatePicker)
@@ -128,7 +128,7 @@ Mobile calendar pickers allow selection of a single date and year.
 * Current date
 * Selected date (your choice)
 
-## Theming pickers
+## Theming date pickers
 
 `MaterialDatePicker`
 * [Class definition](https://developer.android.com/reference/com/google/android/material/datepicker/MaterialDatePicker)
@@ -138,7 +138,7 @@ Mobile calendar pickers allow selection of a single date and year.
 * [Class definition](https://developer.android.com/reference/com/google/android/material/datepicker/CalendarConstraints)
 * [GitHub source](https://github.com/material-components/material-components-android/tree/master/lib/java/com/google/android/material/datepicker/CalendarConstraints.java)
 
-The following pickers example uses the [Material Shrine theme](https://material.io/design/material-studies/shrine.html):
+The following date pickers example uses the [Material Shrine theme](https://material.io/design/material-studies/shrine.html):
 _Use the [Shrine theme](https://material.io/design/material-studies/shrine.html) for this example_
 
 **Note to developers: provide code and a screenshot an example mobile picker with the following:**
