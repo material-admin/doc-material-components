@@ -35,8 +35,6 @@ Common use cases include:
 Mobile time pickers are displayed in dialogs and can be used to select hours, minutes, and a period of time
 
 
-## Installing time pickers
-
 ### Making time pickers accessible 
 
 **Note to developers: include platform-specific accessibility information/settings**
@@ -44,7 +42,6 @@ Mobile time pickers are displayed in dialogs and can be used to select hours, mi
 
 ## Types
 
-_**The following types are for non-iOS platforms**_
 
 There are two types of time pickers: 1\. [mobile time pickers](#mobile-time-pickers), and 2\. [mobile time input pickers](#mobile-time-input-pickers):
 
@@ -72,7 +69,7 @@ Mobile time pickers allow selection of hours and minutes. They aren’t ideal fo
 **Note to developers: Generate code/screenshot of the following**
 * Create a mobile time picker that selects 7:15AM
 
-##### Anatomy and key properties
+#### Anatomy and key properties
 
 ![Mobile time picker anatomy diagram](assets/picker_dial_type.png)
 
@@ -84,20 +81,42 @@ Mobile time pickers allow selection of hours and minutes. They aren’t ideal fo
 
 ##### Title
 
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+ | | | 
+
 ##### Interactive display
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+ | | | 
+
 
 ##### Clock dial
 
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+ | | | 
+
+
 ##### Input type toggle
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+ | | | 
 
 ##### AM/PM selector
 
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+ | | | 
 
 ### Mobile time input pickers
 
 Mobile time input pickers allow users to specify time using the numbers on a keyboard. The mobile time input picker can be accessed from any other mobile time picker interface by tapping the keyboard icon
 
 #### Mobile time input picker example
+
 
 `\<API name\>`
 * [Class definition](link here)
@@ -106,7 +125,7 @@ Mobile time input pickers allow users to specify time using the numbers on a key
 **Note to developers: Generate code/screenshot of the following**
 * Create a mobile time input picker that enters "7:15 AM"
 
-##### Anatomy and key properties
+#### Anatomy and key properties
 
 ![Mobile time minput picker anatomy diagram](assets/input_anatomy.png)
 
@@ -117,48 +136,33 @@ Mobile time input pickers allow users to specify time using the numbers on a key
 
 ##### Title
 
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+ | | | 
+
 ##### Hour and minute input
+
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+ | | | 
 
 ##### Input type toggle
 
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+ | | | 
+
 ##### AM/PM selector
 
-
-### Mobile carousel time picker (iOS only)
-
-#### Mobile carousel time picker example (iOS only)
-
-
-`\<API name\>`
-* [Class definition](link here)
-* [GitHub source](link here)
-
-**Note to developers: Generate code/screenshot of the following**
-* Create a mobile carousel time input picker that selects "7:15 AM"
-
-## Anatomy and key properties
-
-![Carousel time picker anatomy diagram](assets/ something)
-
-
-### Mobile text picker (iOS only)
-
-#### Mobile text picker example (iOS only)
-
-
-`\<API name\>`
-* [Class definition](link here)
-* [GitHub source](link here)
-
-**Note to developers: Generate code/screenshot of the following**
-* Create a mobile text picker that enters "7:15 AM"
-
-## Anatomy and key properties
-
-![Mobile text picker anatomy diagram](assets/ something)
-
+&nbsp;         | Attribute                | Related method(s)                 | Default value
+-------------- | ------------------------ | --------------------------------- | -------------
+ | | | 
 
 ## Theming time pickers
+
+`\<API name\>`
+* [Class definition](link here)
+* [GitHub source](link here)
 
 The following example shows a mobile time picker that uses the [Shrine theme](https://material.io/design/material-studies/shrine.html):
 
