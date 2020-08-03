@@ -7,7 +7,7 @@ iconId:
 path: /catalog/Pickers/
 -->
 
-# Pickers
+# Date pickers
 
 [Date pickers](https://material.io/components/pickers) let users select a date or range of dates. 
 
