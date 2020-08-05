@@ -71,7 +71,7 @@ Mobile time pickers allow selection of hours and minutes. They aren’t ideal fo
 
 #### Anatomy and key properties
 
-![Mobile time picker anatomy diagram](assets/picker_dial_type.png)
+![Mobile time picker anatomy diagram](assets/dial_anatomy.png)
 
 1. Title
 1. Interactive display and time input for hour and minutes
