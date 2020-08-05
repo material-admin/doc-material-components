@@ -4,12 +4,12 @@ layout: detail
 section: components
 excerpt: "Date pickers let users select a date or range of dates."
 iconId: 
-path: /catalog/Pickers/
+path: /catalog/date-pickers/
 -->
 
 # Date pickers
 
-[Date pickers](https://material.io/components/pickers) let users select a date or range of dates. 
+[Date pickers](https://material.io/components/date-pickers) let users select a date or range of dates. 
 
 ![Example of mobile date pickers](assets/pickers_hero.png)
 
