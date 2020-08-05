@@ -4,12 +4,12 @@ layout: detail
 section: components
 excerpt: "Time pickers help users select and set a specific time."
 iconId: 
-path: /catalog/Pickers/
+path: /catalog/time-pickers/
 -->
 
 # Pickers
 
-[Time pickers](https://material.io/components/ something) help users select and set a specific time. 
+[Time pickers](https://material.io/components/time-pickers) help users select and set a specific time. 
 
 ![Time picker hero image](assets/TimePicker_hero.png)
 
