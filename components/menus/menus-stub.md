@@ -14,7 +14,7 @@ api_doc_root: true
 
 ![Menu hero example showing two cascading menus](assets/menus-hero.png)
 
-#Contents
+# Contents
 
 * [Using menus](#using-menus)
 * [Installing menus](#installing-menus)
@@ -53,7 +53,7 @@ Menus allow users to make a selection from multiple options. They are less promi
 
 There are two types of menus: 1\. [dropdown menus](#dropdown-menus), 2\. [exposed dropdown menus](#exposed-dropdown-menus).
 
-![Composite image of example dropdown and exposed dropdown menu types](assets/composite image here)
+![Composite image of example dropdown and exposed dropdown menu types](assets/menu_types_composite.png)
 
 ### Dropdown menus
 
