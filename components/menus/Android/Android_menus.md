@@ -145,7 +145,7 @@ Menus support [Material Theming](https://material.io/components/chips/#theming) 
 ### Theming example
 
 **Note to developers**
-Create bottom navigation drawer example code/screenshot with the following features using the Material.io [Shrine]((https://material.io/design/material-studies/shrine.html) color theming:
+Create bottom navigation drawer example code/screenshot with the following features using the Material.io [Shrine](https://material.io/design/material-studies/shrine.html) color theming:
 * Create a dropdown menu that appears near a `more_vert` icon
 * The dropdown menu should include the following in order:
     * `add_task` icon, "Item 1"
