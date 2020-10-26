@@ -11,7 +11,7 @@ path: /catalog/date-pickers/
 
 [Date pickers](https://material.io/components/date-pickers) let users select a date or range of dates. 
 
-![Example of mobile date pickers](assets/pickers_hero.png)
+![Mobile date picker for November 2018 with "17" selected.](assets/pickers_hero.png)
 
 ## Contents
 
@@ -20,8 +20,8 @@ path: /catalog/date-pickers/
 * [Using date pickers](#using-pickers)
 * [Installing date pickers](#installing-pickers)
 * [Making date pickers accessible](#making-pickers-accessible)
-* [Mobile date pickers](#mobile-pickers)
-* [Desktop date pickers](#desktop-pickers)
+* [Date pickers](#date-pickers)
+* [Date range pickers](#date-range-pickers)
 * [Theming date pickers](#theming-pickers)
 
 ## Using date pickers
@@ -40,6 +40,8 @@ Date pickers can be embedded into:
 **Note to developers: include platform-specific accessibility information/settings**
 
 ## Anatomy and key properties
+
+The following diagram shows the elements of a date picker:
 
 ![Date pickers anatomy diagram](assets/pickers_anatomy.png)
 
@@ -94,7 +96,7 @@ Date pickers can be embedded into:
 --------------------------------------- | ------------------------
  | 
 
-## Mobile date pickers
+## Date pickers
 
 Mobile date pickers can be used to select dates in the near future or past, when it’s useful to see them in a calendar month format. They are displayed in a dialog.
 
@@ -106,7 +108,7 @@ They aren’t ideal for selecting dates in the distant past or future that requi
 
 Mobile date pickers allow selection of a single date and year.
 
-### Mobile date pickers example
+### Date pickers example
 
 `DateTimeRange`
 * [Class definition](https://api.flutter.dev/flutter/material/DateTimeRange-class.html)
@@ -120,6 +122,29 @@ Mobile date pickers allow selection of a single date and year.
 * Month pagination
 * Current date
 * Selected date (your choice)
+
+## Date range pickers
+
+Mobile date range pickers allow selection of a range of dates. They cover the entire screen.
+
+Common use cases include:
+
+* Booking a flight
+* Reserving a hotel
+
+### Date range picker example
+
+`DateTimeRange`
+* [Class definition](https://api.flutter.dev/flutter/material/DateTimeRange-class.html)
+* _**Note to developers: confirm that this is the right directory for the `DateTimeRange` class**_[GitHub souce](https://github.com/flutter/flutter/tree/master/packages/flutter/lib/src/material/pickers)
+
+
+**Note to developers: provide code and a screenshot an example mobile date range picker with the following:**
+* A title that reads "Select a date range"
+* A current date
+* A month of your choice
+* Selected date range (your choice)
+
 
 
 ## Theming date pickers
