@@ -15,9 +15,9 @@ path: /catalog/sliders/
 
 ## Contents
 
-[Using tooltips](#using-tooltips)
-[Tooltips example](#tooltips-example)
-[Theming tooltips](#theming-tooltips)
+* [Using tooltips](#using-tooltips)
+* [Tooltips example](#tooltips-example)
+* [Theming tooltips](#theming-tooltips)
 
 ## Using tooltips
 
