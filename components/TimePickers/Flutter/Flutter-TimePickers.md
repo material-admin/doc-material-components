@@ -11,7 +11,7 @@ path: /catalog/time-pickers/
 
 [Time pickers](https://material.io/components/time-pickers) help users select and set a specific time. 
 
-![Time picker hero image](assets/TimePicker_hero.png)
+![Time picker with input and dial set to 7PM](assets/TimePicker_hero.png)
 
 
 ## Contents
