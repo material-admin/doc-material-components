@@ -35,7 +35,7 @@ Insert a hero image selected from spec. For example, the `assets` folder might i
     https://storage.googleapis.com/spec-host/mio-staging%2Fmio-components%2F1584058305895%2Fassets%2F1EQno9oequgSkF7kHM5A802blbxrKl75F%2Ftabs-usage-do1.png
 
 
-__CONTENTS__
+**CONTENTS**
 
 Include TOC here of the major sections with relative links, including:
 * [Using \<component name\>](#relative link here)
