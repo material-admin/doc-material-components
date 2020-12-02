@@ -21,7 +21,7 @@ path: /catalog/material-<component>/
 * What information do we need to provide the site team to update the components site?
 
 -->
-
+<!--start mio-exclude-->
 # \<Component name\>
 
 Start with a concise (1-2 sentence) description of the component.
@@ -48,7 +48,7 @@ Include TOC here of the major sections with relative links, including:
 * [Theming](#theming)
 
 **Note: Do not nest the TOC levels**
-
+<!--end mio-exclude-->
 ## Using \<component name\>
 
 <!-- Include the following sentence:
