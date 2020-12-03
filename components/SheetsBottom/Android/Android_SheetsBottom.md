@@ -13,7 +13,7 @@ path: /catalog/material-sheets-bottom/
 
 ![Example bottom sheet: modal bottom sheet](assets/SheetsBottom_hero.png)
 
-## Contents
+**Contents**
 
 * [Using bottom sheets](#using-bottom-sheets)
 * [Installing bottom sheets](#installing-bottom-sheets)

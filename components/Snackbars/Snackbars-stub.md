@@ -13,7 +13,7 @@ path: /catalog/Snackbars/
 
 ![Snackbars hero image](assets/snackbars-hero.png)
 
-## Contents
+**Contents**
 
 **Note to developers: review the TOC contents to ensure that all rel links apply to your platform dev doc**
 

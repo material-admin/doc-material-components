@@ -14,7 +14,7 @@ A [divider](https://material.io/components/dividers) is a thin line that groups 
 
 ![Example divider: full-bleed dividers](assets/Dividers_hero.png)
 
-## Contents
+**Contents**
 
 * [Using dividers](#using-dividers)
 * [Installing dividers](#installing-dividers)

@@ -13,7 +13,7 @@ path: /catalog/date-pickers/
 
 ![Mobile date picker for November 2018 with "17" selected.](assets/pickers_hero.png)
 
-## Contents
+**Contents**
 
 **Note to developers: review the TOC contents to ensure that all rel links apply to your platform dev doc**
 

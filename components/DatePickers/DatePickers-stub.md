@@ -13,7 +13,7 @@ path: /catalog/date-pickers/
 
 ![Mobile date picker for November 2018 with "17" selected.](assets/pickers_hero.png)
 
-## Contents
+**Contents**
 
 **Note to developers: review the TOC contents to ensure that all rel links apply to your platform dev doc**
 
@@ -42,7 +42,7 @@ Date pickers can be embedded into:
 
 ## Anatomy and key properties
 
-The following diagram shows the customizable elements of a date picker:
+The following diagram shows the elements of a date picker:
 
 ![Pickers anatomy diagram](assets/pickers_anatomy.png)
 

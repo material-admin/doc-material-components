@@ -13,7 +13,7 @@ A [navigation drawers](https://material.io/components/navigation-drawer) provide
 
 ![Hero navigation drawer image](assets/NavDrawer-hero.png)
 
-## Contents
+**Contents**
 
 **Note to developers: review the TOC contents to ensure that all rel links apply to your platform dev doc**
 

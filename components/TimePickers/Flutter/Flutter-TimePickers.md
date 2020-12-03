@@ -14,7 +14,7 @@ path: /catalog/time-pickers/
 ![Time picker with input and dial set to 7PM](assets/TimePicker_hero.png)
 
 
-## Contents
+**Contents**
 
 **Note to developers: review the TOC contents to ensure that all rel links apply to your platform dev doc**
 

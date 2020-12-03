@@ -13,7 +13,7 @@ path: /catalog/sliders/
 
 ![Tooltip example in a text editor app](assets/Tooltips_hero.png)
 
-## Contents
+**Contents**
 
 [Using tooltips](#using-tooltips)
 [Tooltips example](#tooltips-example)

@@ -14,7 +14,7 @@ path: /catalog/Pickers/
 ![Time picker hero image](assets/TimePicker_hero.png)
 
 
-## Contents
+**Contents**
 
 **Note to developers: review the TOC contents to ensure that all rel links apply to your platform dev doc**
 

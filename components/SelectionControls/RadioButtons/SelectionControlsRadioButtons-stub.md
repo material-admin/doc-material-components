@@ -19,7 +19,7 @@ Use radio buttons to:
 
 ![Radio button hero example for menu options](assets/RadioButton-hero.png)
 
-## Contents
+**Contents**
 
 * [Using radio buttons](#using-radio-buttons)
 * [Installing radio buttons](#installing-radio-buttons)

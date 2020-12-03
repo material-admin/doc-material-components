@@ -13,7 +13,7 @@ path: /catalog/imagelists/
 
 ![Image list example of a standard image list](assets/ImageList_hero.png)
 
-## Contents
+**Contents**
 
 * [Using image lists](#using-image-lists)
 * [Installing image lists](#installing-image-lists)
