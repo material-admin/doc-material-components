@@ -11,20 +11,20 @@ path: /catalog/tabs
 
 [Tabs](https://material.io/components/tabs/) organize content across different screens, data sets, and other interactions.
 
-There are two types of tabs:
-1. [Fixed tabs](#fixed-tabs)
-1. [Scrollable tabs](#scrollable-tabs)
+![Example travel app with Explore, Flights, and Trips tabs](assets/tabs-hero.png)
 
-<br>
+**Contents**
 
-1. ![fixed tab example](assets/tabs-fixed-hero.png)
-1. ![scrollabe tab example](assets/tabs-scrollable-hero.png)
+#[Using tabs](#using-tabs)
+#[Fixed tabs](#fixed-tabs)
+#[Scrollable tabs](#scrollable-tabs)
+#[Theming](#Theming)
 
 ## Using tabs
 
 Tabs organize and allow navigation between groups of content that are related and at the same level of hierarchy.
 
-### Installing 
+### Installing tabs
 
 ### Making tabs accessible
 
@@ -39,6 +39,12 @@ Tabs organize and allow navigation between groups of content that are related an
 1. Inactive icon (Optional if there’s a label)
 1. Inactive text label (Optional if there’s an icon)
 1. Tab item
+
+There are two types of tabs: 1. [Fixed tabs](#fixed-tabs) 2. [Scrollable tabs](#scrollable-tabs):
+
+![Composite image: Pets with Dogs, Cats, and Birds tabs; Dog breeds with Pitbulls, Terrier, Poodle, Labrador (partial)](assets/tabs-types.png)
+
+
 
 ## Fixed tabs
 
@@ -92,4 +98,25 @@ The following example shows a row of of scrollable tabs.
 * The screen shows only 3 tabs
 * Screenshot only: Tab 3 is selected.
 
+## Theming
+
+`api name`
+* [Class definition](link to class API doc)
+* [GitHub source](link to GitHub source)
+* [Demo site](link to relevant demo)
+
+The following example shows a row of of scrollable tabs.
+
+![Scrollable tab example with 5 tabs with only 3 tabs showing.](link to screenshot)
+
+**NOTE TO DEVELOPERS** Create code and a screenshot that can generate the following with [Shrine](https://material.io/design/material-studies/shrine.html) theming:
+
+* A scrollable row of five tabs, labeled:
+    * "Tab 1"
+    * "Tab 2"
+    * "Tab 3"
+    * "Tab 4"
+    * "Tab 5"
+* The screen shows only 3 tabs
+* Screenshot only: Tab 3 is selected.
 
