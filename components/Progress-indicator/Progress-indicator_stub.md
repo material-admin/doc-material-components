@@ -14,7 +14,7 @@ path: /catalog/material-progress-indicators/
 
 ![Progress indicator hero](assets/hero-1.gif)
 
-# Contents
+**Contents**
 
 * [Using progress indicators](#using-progress-indicators)
 * [Installing progress indicators](#installing-progress-indicators)
