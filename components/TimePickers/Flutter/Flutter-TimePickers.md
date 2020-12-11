@@ -42,7 +42,7 @@ Mobile time pickers are displayed in dialogs and can be used to select hours, mi
 **Note to developers: include platform-specific accessibility information/settings**
 
 
-## Types
+**Types**
 
 _**The following types are for non-iOS platforms**_
 

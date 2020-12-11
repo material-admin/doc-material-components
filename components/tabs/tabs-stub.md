@@ -40,6 +40,8 @@ Tabs organize and allow navigation between groups of content that are related an
 1. Inactive text label (Optional if there’s an icon)
 1. Tab item
 
+**Types**
+
 There are two types of tabs: 1. [Fixed tabs](#fixed-tabs) 2. [Scrollable tabs](#scrollable-tabs):
 
 ![Composite image: Pets with Dogs, Cats, and Birds tabs; Dog breeds with Pitbulls, Terrier, Poodle, Labrador (partial)](assets/tabs-types.png)

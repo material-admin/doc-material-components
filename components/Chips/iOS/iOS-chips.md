@@ -106,7 +106,7 @@ The following is an anatomy diagram of a chip:
 -------------- | ------------------------ | --------------------------------- | -------------
  | | |
 
-## Types
+**Types**
 
 There are four different types of chips, including [input](#input-chips), [choice](#choice-chips), [filter](#filter-chips), and [action](#action-chips).
 

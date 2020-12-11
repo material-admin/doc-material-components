@@ -31,7 +31,7 @@ Image lists represent a collection of items in a repeated pattern. They help imp
 
 ### Making image lists accessible
 
-## Types
+**Types**
 
 There are four types of image lists: 1\. [Standard image lists](#standard-image-lists),  2\. [Quilted image lists](#quilted-image-lists), 3\. [Woven image lists](#woven-image-lists), 4\. [Masonry image lists](#masonry-image-lists).
 

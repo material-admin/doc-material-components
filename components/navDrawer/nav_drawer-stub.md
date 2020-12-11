@@ -54,7 +54,7 @@ A navigation drawer is recommended for:
 8. Scrim (modal only)
 
 
-## Types
+**Types**
 
 There are three types of navigation drawer, which include 1. [standard](#standard-navigation-drawers) 2. [modal](#modal-navigation-drawers) 3. [bottom](#bottom-navigation-drawers)
 

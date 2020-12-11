@@ -66,7 +66,7 @@ import MaterialComponents.MaterialSlider
 **Note to developers: include platform-specific accessibility information/settings**
 
 
-## Types
+**Types**
 
 There are two types of sliders: 1\. [Continuous slider](#continuous-slider) and 2\.
 [Discrete slider](#discrete-slider)

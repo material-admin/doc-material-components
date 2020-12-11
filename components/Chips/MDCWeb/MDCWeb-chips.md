@@ -40,7 +40,7 @@ Chips allow users to enter information, make selections, filter content, or trig
 **Note to developers: List/describe any accessibility settings or attributes associated with chips**
 
 
-## Types
+**Types**
 
 There are four different types of chips, including [input](#input-chips), [choice](#choice-chips), [filter](#filter-chips), and [action](#action-chips).
 

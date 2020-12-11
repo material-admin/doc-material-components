@@ -11,13 +11,6 @@ path: /catalog/floating-action-button/
 
 A floating action button (FAB) represents the primary action of a screen.
 
-There are three types of FABS:
-
-1. [Regular FABs](#regular-fabs)
-2. [Mini FABs](#mini-fabs)
-3. [Extended FABs](#extended-fabs)
-
-![Regular FAB example](assets/FAB_types.png)
 
 ## Using FABs
 
@@ -47,6 +40,16 @@ A regular FAB has a container and an icon.
 
 1. Container
 1. Icon
+
+**Types**
+
+There are three types of FABS:
+
+1. [Regular FABs](#regular-fabs)
+2. [Mini FABs](#mini-fabs)
+3. [Extended FABs](#extended-fabs)
+
+![Regular FAB example](assets/FAB_types.png)
 
 
 ## Mini FABs

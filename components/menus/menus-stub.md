@@ -59,7 +59,7 @@ The following are menu anatomy diagrams showing all possible elements:
 
 ### Selection state
 
-## Types
+**Types**
 
 Menus allow users to make a selection from multiple options. They are less prominent and take up less space than selection controls, such as a set of radio buttons.
 

@@ -46,7 +46,7 @@ The following shows the anatomy of a divider:
 
 ### Subheader
 
-## Types
+**Types**
 
 There are 3 types of dividers: 1\. [full-bleed](#full-bleed-dividers), 2\. [inset dividers](#inset-dividers), 3\. [middle dividers](#middle-dividers).
 

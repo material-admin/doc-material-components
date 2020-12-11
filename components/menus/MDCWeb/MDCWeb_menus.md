@@ -34,7 +34,7 @@ A menu displays a list of choices on a temporary surface. They appear when users
 
 ### Making menus accessible
 
-## Types
+**Types**
 
 Menus allow users to make a selection from multiple options. They are less prominent and take up less space than selection controls, such as a set of radio buttons.
 

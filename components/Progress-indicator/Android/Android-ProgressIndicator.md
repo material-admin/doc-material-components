@@ -35,7 +35,7 @@ _**Note: When displaying progress for a sequence of processes, indicate overall 
 
 _**Note to developers: Add any accessibility information here**_
 
-## Types
+**Types**
 
 Material Design offers two visually distinct types of progress indicators:  1. [linear](#linear-progress-indicators) 2. [circular](#circular-progress-indicators) progress indicators. Only one type should represent each kind of activity in an app. For example, if a refresh action displays a circular indicator on one screen, that same action shouldn’t use a linear indicator elsewhere in the app.
 

@@ -40,7 +40,7 @@ npm install @material/slider
 
 **Note to developers: Add platform-specific accessibility instructions**
 
-## Types
+**Types**
 
 There are two types of sliders: 1\. [Continuous slider](#continuous-slider) and 2\.
 [Discrete slider](#discrete-slider)

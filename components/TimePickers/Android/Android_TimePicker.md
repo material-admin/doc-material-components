@@ -40,7 +40,7 @@ Mobile time pickers are displayed in dialogs and can be used to select hours, mi
 **Note to developers: include platform-specific accessibility information/settings**
 
 
-## Types
+**Types**
 
 
 There are two types of time pickers: 1\. [mobile time pickers](#mobile-time-pickers), and 2\. [mobile time input pickers](#mobile-time-input-pickers):

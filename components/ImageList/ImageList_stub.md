@@ -56,7 +56,7 @@ An image list consists of the following item:
 
 ### Image list item
 
-## Types
+**Types**
 
 There are four types of image lists: 1\. [Standard image lists](#standard-image-lists) are best for items of equal importance. They have a uniform container size, ratio, and padding. 2\. [Quilted image lists](#quilted-image-lists) emphasize certain items over others in a collection. They create hierarchy using varied container sizes and ratios 3\. [Woven image lists](#woven-image-lists) facilitate the browsing of peer content. They display content in containers of varying ratios to create a rhythmic layout. 4\. [Masonry image lists](#masonry-image-lists) facilitate the browsing of uncropped peer content. Container heights are sized based on the image size.
 

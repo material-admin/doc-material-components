@@ -82,7 +82,7 @@ The following is an anatomy diagram of a chip:
 -------------- | ------------------------ 
  | 
 
-## Types
+**Types**
 
 There are four different types of chips that are subclasses of [`Chip`](https://api.flutter.dev/flutter/material/Chip-class.html), including [input](#input-chips), [choice](#choice-chips), [filter](#filter-chips), and [action](#action-chips).
 
