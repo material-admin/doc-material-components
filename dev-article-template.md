@@ -66,7 +66,7 @@ If all types use exactly the same list of API docs/source location links, or if 
 
 List any accessiblity setting or attributes (such as labels), describe how to use them and link to any guidelines on the m.io site (for example, [how to write a good accessibility label for your component](https://material.io/design/usability/accessibility.html#writing))
 
-**Types**
+### Types
 
 
 If there are any component types, list them here in a numbered inline list.
