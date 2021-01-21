@@ -129,6 +129,9 @@ Include a table of the theme description for each theme element and the theme's 
 ### Anatomy and Key properties
 
 ...
+| Element | Property |
+| --- | --- |
+|   | |
 
 
 _Continue describing the rest of the component types as necessary._
